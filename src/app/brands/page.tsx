@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import Layout from '@/components/Layout';
 import brands from '@/data/brands.json';
 
@@ -25,9 +26,16 @@ export default function BrandsPage() {
               href={`/brands/${brand.id}`}
               className="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300"
             >
-              <div className="h-48 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center group-hover:from-blue-50 group-hover:to-blue-100 transition-colors">
-                <div className="text-center">
-                  <div className="text-6xl mb-4">🏢</div>
+              <div className="h-48 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center group-hover:from-blue-50 group-hover:to-blue-100 transition-colors p-8">
+                <div className="text-center w-full h-full">
+                  <div className="relative w-32 h-16 mx-auto mb-4">
+                    <Image
+                      src={brand.logo}
+                      alt={`${brand.name} logo`}
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
                   <h2 className="text-2xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
                     {brand.name}
                   </h2>

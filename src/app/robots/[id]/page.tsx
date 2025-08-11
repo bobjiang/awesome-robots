@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useParams } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import Layout from '@/components/Layout';
 import ProductCard from '@/components/ProductCard';
 import { Robot } from '@/types/robot';
@@ -40,13 +41,22 @@ export default function RobotDetailPage() {
     return `$${price.toLocaleString()}`;
   };
 
-  const getCategoryEmoji = (category: string) => {
-    switch (category) {
-      case 'humanoid': return '🤖';
-      case 'quadruped': return '🐕';
-      case 'accessory': return '🔧';
-      default: return '⚙️';
-    }
+  const getRobotImage = (robotId: string, category: string) => {
+    const imageMap: { [key: string]: string } = {
+      'unitree-g1': '/images/robots/unitree-g1.png',
+      'unitree-h1': '/images/robots/unitree-h1.png',
+      'unitree-go2': '/images/robots/unitree-go2.png',
+      'unitree-go2-w': '/images/robots/unitree-go2.png',
+      'unitree-b2': '/images/robots/unitree-b2.png',
+      'unitree-a2': '/images/robots/unitree-b2.png',
+    };
+    
+    return imageMap[robotId] || (
+      category === 'humanoid' ? '/images/categories/humanoid.png' :
+      category === 'quadruped' ? '/images/categories/quadruped.png' :
+      category === 'accessory' ? '/images/categories/accessories.svg' :
+      '/images/categories/other.svg'
+    );
   };
 
   return (
@@ -67,8 +77,15 @@ export default function RobotDetailPage() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
           {/* Product Image/Visual */}
-          <div className="aspect-square bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl flex items-center justify-center">
-            <span className="text-9xl">{getCategoryEmoji(robot.category)}</span>
+          <div className="aspect-square bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl flex items-center justify-center p-8">
+            <div className="relative w-full h-full">
+              <Image
+                src={getRobotImage(robot.id, robot.category)}
+                alt={robot.name}
+                fill
+                className="object-contain"
+              />
+            </div>
           </div>
 
           {/* Product Info */}

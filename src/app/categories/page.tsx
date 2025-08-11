@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import Layout from '@/components/Layout';
 import categories from '@/data/categories.json';
 
@@ -25,13 +26,20 @@ export default function CategoriesPage() {
               href={`/categories/${category.id}`}
               className="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300"
             >
-              <div className="h-64 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center group-hover:from-blue-50 group-hover:to-blue-100 transition-colors">
-                <div className="text-center">
-                  <div className="text-8xl mb-4">
-                    {category.id === 'humanoid' && '🤖'}
-                    {category.id === 'quadruped' && '🐕'}
-                    {category.id === 'accessory' && '🔧'}
-                    {category.id === 'other' && '⚙️'}
+              <div className="h-64 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center group-hover:from-blue-50 group-hover:to-blue-100 transition-colors p-8">
+                <div className="text-center w-full h-full">
+                  <div className="relative w-32 h-32 mx-auto mb-4">
+                    <Image
+                      src={
+                        category.id === 'humanoid' ? '/images/categories/humanoid.png' :
+                        category.id === 'quadruped' ? '/images/categories/quadruped.png' :
+                        category.id === 'accessory' ? '/images/categories/accessories.svg' :
+                        '/images/categories/other.svg'
+                      }
+                      alt={category.name}
+                      fill
+                      className="object-contain"
+                    />
                   </div>
                   <h2 className="text-2xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
                     {category.name}

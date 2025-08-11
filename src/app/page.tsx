@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import Layout from '@/components/Layout';
 import categories from '@/data/categories.json';
 
@@ -53,11 +54,18 @@ export default function Home() {
                 href={`/categories/${category.id}`}
                 className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 hover:shadow-lg transition-all duration-300"
               >
-                <div className="text-4xl mb-4">
-                  {category.id === 'humanoid' && '🤖'}
-                  {category.id === 'quadruped' && '🐕'}
-                  {category.id === 'accessory' && '🔧'}
-                  {category.id === 'other' && '⚙️'}
+                <div className="mb-4 w-16 h-16 mx-auto relative">
+                  <Image
+                    src={
+                      category.id === 'humanoid' ? '/images/categories/humanoid.png' :
+                      category.id === 'quadruped' ? '/images/categories/quadruped.png' :
+                      category.id === 'accessory' ? '/images/categories/accessories.svg' :
+                      '/images/categories/other.svg'
+                    }
+                    alt={category.name}
+                    fill
+                    className="object-contain"
+                  />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
                   {category.name}
@@ -85,8 +93,15 @@ export default function Home() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow">
-              <div className="h-48 bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
-                <span className="text-6xl">🤖</span>
+              <div className="h-48 bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center p-8">
+                <div className="relative w-full h-full">
+                  <Image
+                    src="/images/robots/unitree-g1.png"
+                    alt="Unitree G1"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Unitree G1</h3>
@@ -104,8 +119,15 @@ export default function Home() {
             </div>
 
             <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow">
-              <div className="h-48 bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center">
-                <span className="text-6xl">🐕</span>
+              <div className="h-48 bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center p-8">
+                <div className="relative w-full h-full">
+                  <Image
+                    src="/images/robots/unitree-go2.png"
+                    alt="Unitree Go2"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Unitree Go2</h3>
@@ -123,8 +145,15 @@ export default function Home() {
             </div>
 
             <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow">
-              <div className="h-48 bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
-                <span className="text-6xl">🏃</span>
+              <div className="h-48 bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center p-8">
+                <div className="relative w-full h-full">
+                  <Image
+                    src="/images/robots/unitree-h1.png"
+                    alt="Unitree H1"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Unitree H1</h3>

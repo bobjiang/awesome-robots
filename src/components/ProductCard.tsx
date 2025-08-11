@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { Robot } from '@/types/robot';
 
 interface ProductCardProps {
@@ -13,17 +14,23 @@ export default function ProductCard({ robot }: ProductCardProps) {
     return `$${price.toLocaleString()}`;
   };
 
-  const getCategoryEmoji = (category: string) => {
-    switch (category) {
-      case 'humanoid':
-        return '🤖';
-      case 'quadruped':
-        return '🐕';
-      case 'accessory':
-        return '🔧';
-      default:
-        return '⚙️';
-    }
+  const getRobotImage = (robotId: string, category: string) => {
+    // Map specific robots to their images
+    const imageMap: { [key: string]: string } = {
+      'unitree-g1': '/images/robots/unitree-g1.png',
+      'unitree-h1': '/images/robots/unitree-h1.png',
+      'unitree-go2': '/images/robots/unitree-go2.png',
+      'unitree-go2-w': '/images/robots/unitree-go2.png',
+      'unitree-b2': '/images/robots/unitree-b2.png',
+      'unitree-a2': '/images/robots/unitree-b2.png', // Use B2 image for A2 as fallback
+    };
+    
+    return imageMap[robotId] || (
+      category === 'humanoid' ? '/images/categories/humanoid.png' :
+      category === 'quadruped' ? '/images/categories/quadruped.png' :
+      category === 'accessory' ? '/images/categories/accessories.svg' :
+      '/images/categories/other.svg'
+    );
   };
 
   const getCategoryColor = (category: string) => {
@@ -41,10 +48,15 @@ export default function ProductCard({ robot }: ProductCardProps) {
 
   return (
     <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 group">
-      <div className={`h-48 bg-gradient-to-br ${getCategoryColor(robot.category)} flex items-center justify-center`}>
-        <span className="text-6xl group-hover:scale-110 transition-transform">
-          {getCategoryEmoji(robot.category)}
-        </span>
+      <div className={`h-48 bg-gradient-to-br ${getCategoryColor(robot.category)} flex items-center justify-center p-4`}>
+        <div className="relative w-full h-full group-hover:scale-110 transition-transform">
+          <Image
+            src={getRobotImage(robot.id, robot.category)}
+            alt={robot.name}
+            fill
+            className="object-contain"
+          />
+        </div>
       </div>
       
       <div className="p-6">

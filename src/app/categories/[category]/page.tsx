@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import { useParams } from 'next/navigation';
+import Image from 'next/image';
 import Layout from '@/components/Layout';
 import ProductCard from '@/components/ProductCard';
 import SearchBar from '@/components/SearchBar';
@@ -94,11 +95,18 @@ export default function CategoryPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Category Header */}
         <div className="text-center mb-12">
-          <div className="text-8xl mb-6">
-            {categoryId === 'humanoid' && '🤖'}
-            {categoryId === 'quadruped' && '🐕'}
-            {categoryId === 'accessory' && '🔧'}
-            {categoryId === 'other' && '⚙️'}
+          <div className="w-32 h-32 mx-auto mb-6 relative">
+            <Image
+              src={
+                categoryId === 'humanoid' ? '/images/categories/humanoid.png' :
+                categoryId === 'quadruped' ? '/images/categories/quadruped.png' :
+                categoryId === 'accessory' ? '/images/categories/accessories.svg' :
+                '/images/categories/other.svg'
+              }
+              alt={category.name}
+              fill
+              className="object-contain"
+            />
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             {category.name}
