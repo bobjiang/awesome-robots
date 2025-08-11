@@ -20,7 +20,7 @@ export default function BrandPage() {
   const brand = brands.find(b => b.id === brandId);
   
   const brandRobots = useMemo(() => {
-    let filtered = (robots as Robot[]).filter((robot: Robot) => {
+    const filtered = (robots as Robot[]).filter((robot: Robot) => {
       // Brand filter
       if (robot.brand.toLowerCase() !== brandId.replace('-', ' ')) return false;
       
