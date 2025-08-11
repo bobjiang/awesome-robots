@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.unitree.com)",
+      "Bash(npx next dev:*)"
+    ],
+    "deny": []
+  }
+}

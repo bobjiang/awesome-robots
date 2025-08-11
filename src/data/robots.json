@@ -1,0 +1,195 @@
+[
+  {
+    "id": "unitree-go2",
+    "name": "Go2",
+    "brand": "Unitree",
+    "category": "quadruped",
+    "price": {
+      "starting": 1600,
+      "currency": "USD",
+      "models": [
+        {"name": "AIR", "price": 1600},
+        {"name": "PRO", "price": 2800},
+        {"name": "EDU", "price": "request"}
+      ]
+    },
+    "specifications": {
+      "dimensions": "70x31x40 cm (standing), 76x31x20 cm (crouching)",
+      "weight": "~15 kg",
+      "battery": "28V-33.6V, 1-4 hours runtime",
+      "maxSpeed": "~5 m/s",
+      "payload": "~7-8 kg (max ~10-12 kg)",
+      "sensors": ["4D LiDAR L1 360°x90°", "HD wide-angle camera", "Wi-Fi 6", "Bluetooth 5.2", "Optional 4G"]
+    },
+    "features": [
+      "GPT-powered AI integration",
+      "Advanced AI modes including upside-down walking",
+      "Intelligent Side-follow System (ISS 2.0)",
+      "Over-the-Air (OTA) software upgrades",
+      "12 aluminum knee joint motors",
+      "8-core high-performance CPU",
+      "Max climb height: ~15-16 cm",
+      "Max climb angle: 30-40°"
+    ],
+    "images": ["/images/robots/unitree-go2-1.jpg"],
+    "videos": [],
+    "documentation": ["User Manual", "SDK Documentation"],
+    "officialUrl": "https://www.unitree.com/go2",
+    "description": "New Creature of Embodied AI - Consumer/Education quadruped robot with advanced AI capabilities and robust performance for various terrains."
+  },
+  {
+    "id": "unitree-go2-w",
+    "name": "Go2-W",
+    "brand": "Unitree",
+    "category": "quadruped", 
+    "price": {
+      "starting": 2000,
+      "currency": "USD",
+      "models": [
+        {"name": "Standard", "price": "request"}
+      ]
+    },
+    "specifications": {
+      "dimensions": "Similar to Go2",
+      "weight": "~15 kg",
+      "battery": "Extended range for wheeled operation",
+      "sensors": ["4D LiDAR", "HD cameras", "Wi-Fi 6", "Bluetooth 5.2"]
+    },
+    "features": [
+      "Driving All Terrain capability",
+      "Wheeled locomotion",
+      "Enhanced mobility",
+      "AI-powered navigation"
+    ],
+    "images": ["/images/robots/unitree-go2-w-1.jpg"],
+    "officialUrl": "https://www.unitree.com/go2-w",
+    "description": "Driving All Terrain - Enhanced Go2 variant with wheeled capabilities for improved mobility across diverse surfaces."
+  },
+  {
+    "id": "unitree-g1",
+    "name": "G1",
+    "brand": "Unitree",
+    "category": "humanoid",
+    "price": {
+      "starting": 16000,
+      "currency": "USD",
+      "models": [
+        {"name": "G1", "price": 16000},
+        {"name": "G1 EDU", "price": "request"}
+      ]
+    },
+    "specifications": {
+      "dimensions": "1320x450x200mm (standing), 690x450x300mm (folded)",
+      "weight": "~35kg",
+      "battery": "~2 hours runtime",
+      "dof": 43,
+      "sensors": ["Depth Camera", "3D LiDAR", "4-mic array", "5W speaker"]
+    },
+    "features": [
+      "23-43 joint motors with large movement angles",
+      "Industrial-grade crossed roller bearings",
+      "Low inertia permanent magnet synchronous motors",
+      "8-core high-performance CPU",
+      "Optional force-controlled three-fingered hand",
+      "NVIDIA Jetson Orin high-computing module (EDU)",
+      "UnifoLM (Unified Robot Large Model) platform",
+      "OTA software upgrades",
+      "18-month warranty (EDU model)"
+    ],
+    "images": ["/images/robots/unitree-g1-1.jpg"],
+    "documentation": ["Secondary development manual", "SDK Documentation"],
+    "officialUrl": "https://www.unitree.com/g1",
+    "description": "Humanoid agent AI avatar - Advanced humanoid robot with high degrees of freedom and AI capabilities for research and development."
+  },
+  {
+    "id": "unitree-h1",
+    "name": "H1",
+    "brand": "Unitree",
+    "category": "humanoid",
+    "price": {
+      "starting": 150000,
+      "currency": "USD",
+      "models": [
+        {"name": "H1", "price": "request"},
+        {"name": "H1-2", "price": "request"}
+      ]
+    },
+    "specifications": {
+      "dimensions": "About 180 cm height",
+      "weight": "47 kg",
+      "battery": "864 Wh, quickly replaceable",
+      "maxSpeed": "3.3 m/s (potential >5 m/s)",
+      "sensors": ["360° depth perception", "3D LiDAR", "depth camera"]
+    },
+    "features": [
+      "First full-size general-purpose humanoid robot that can run in China",
+      "Peak Torque Density: 189 N.m/Kg",
+      "Maximum Joint Torque: 360 N.m",
+      "Stable gait and flexible movement in complex terrains",
+      "Continuous Over-The-Air (OTA) software upgrades",
+      "Quick-replaceable battery system"
+    ],
+    "images": ["/images/robots/unitree-h1-1.jpg"],
+    "officialUrl": "https://www.unitree.com/h1",
+    "description": "Unitree's First Universal Humanoid Robot - Full-size humanoid robot capable of running and navigating complex terrains with advanced mobility."
+  },
+  {
+    "id": "unitree-b2",
+    "name": "B2",
+    "brand": "Unitree",
+    "category": "quadruped",
+    "price": {
+      "starting": 25000,
+      "currency": "USD",
+      "models": [
+        {"name": "Industrial", "price": "request"}
+      ]
+    },
+    "specifications": {
+      "dimensions": "Industrial grade dimensions",
+      "weight": "~40 kg",
+      "battery": "Extended industrial runtime",
+      "payload": "High payload capacity",
+      "sensors": ["Industrial-grade sensors", "Environmental protection"]
+    },
+    "features": [
+      "Go Beyond the Limits",
+      "Industrial-grade construction",
+      "Enhanced durability",
+      "Heavy-duty performance",
+      "Environmental resistance"
+    ],
+    "images": ["/images/robots/unitree-b2-1.jpg"],
+    "officialUrl": "https://www.unitree.com/b2",
+    "description": "Go Beyond the Limits - Industrial quadruped robot designed for demanding environments and heavy-duty applications."
+  },
+  {
+    "id": "unitree-a2",
+    "name": "A2",
+    "brand": "Unitree",
+    "category": "quadruped",
+    "price": {
+      "starting": 30000,
+      "currency": "USD", 
+      "models": [
+        {"name": "Industrial", "price": "request"}
+      ]
+    },
+    "specifications": {
+      "dimensions": "Industrial specifications",
+      "weight": "~50 kg",
+      "battery": "Extended runtime for exploration",
+      "sensors": ["Advanced exploration sensors", "Environmental monitoring"]
+    },
+    "features": [
+      "Stellar Explorer capabilities",
+      "Advanced exploration AI",
+      "Environmental monitoring",
+      "Autonomous navigation",
+      "Research-grade sensors"
+    ],
+    "images": ["/images/robots/unitree-a2-1.jpg"],
+    "officialUrl": "https://www.unitree.com/A2",
+    "description": "Stellar Explorer - Advanced industrial quadruped robot designed for exploration and research applications."
+  }
+]
