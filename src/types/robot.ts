@@ -27,8 +27,20 @@ export interface Robot {
     singleHandDOF?: string;
     jointOutputBearing?: string;
     jointMotor?: string;
-    maxTorqueKneeJoint?: string;
-    armMaxLoad?: string;
+    maxTorqueKneeJoint?: string | {
+      G1?: string;
+      G1_EDU?: string;
+    };
+    armMaxLoad?: string | {
+      G1?: string;
+      G1_EDU?: string;
+    };
+    computing?: string;
+    connectivity?: string[];
+    warranty?: {
+      G1?: string;
+      G1_EDU?: string;
+    };
     calfThighLength?: string;
     armSpan?: string;
     // H1 specific fields

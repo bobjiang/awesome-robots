@@ -127,6 +127,11 @@ export default function SpecificationTable({ robot }: SpecificationTableProps) {
 
   // For G1 robot with detailed specs
   if (robot.id === 'unitree-g1' && specs.totalDegreesOfFreedom) {
+    const standDimensions = specs.dimensions?.includes('standing') ? 
+      specs.dimensions.match(/([\d,]+x[\d,]+x[\d,]+mm)\s*\(standing\)/)?.[1] || '1320x450x200mm' : '1320x450x200mm';
+    const foldDimensions = specs.dimensions?.includes('folded') ? 
+      specs.dimensions.match(/([\d,]+x[\d,]+x[\d,]+mm)\s*\(folded\)/)?.[1] || '690x450x300mm' : '690x450x300mm';
+    
     return (
       <div className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-lg">
         <div className="grid grid-cols-3 bg-blue-600 text-white">
@@ -138,20 +143,20 @@ export default function SpecificationTable({ robot }: SpecificationTableProps) {
         <div className="divide-y divide-gray-200">
           <div className="grid grid-cols-3">
             <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Height, Width and Thickness (Stand)</div>
-            <div className="p-4 text-sm border-r border-gray-200 text-gray-700">{specs.dimensions?.split(', ')[0]}</div>
-            <div className="p-4 text-sm text-gray-700">{specs.dimensions?.split(', ')[0]}</div>
+            <div className="p-4 text-sm border-r border-gray-200 text-gray-700">{standDimensions}</div>
+            <div className="p-4 text-sm text-gray-700">{standDimensions}</div>
           </div>
           
           <div className="grid grid-cols-3">
             <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Height, Width and Thickness (Fold)</div>
-            <div className="p-4 text-sm border-r border-gray-200 text-gray-700">{specs.dimensions?.split(', ')[1]}</div>
-            <div className="p-4 text-sm text-gray-700">{specs.dimensions?.split(', ')[1]}</div>
+            <div className="p-4 text-sm border-r border-gray-200 text-gray-700">{foldDimensions}</div>
+            <div className="p-4 text-sm text-gray-700">{foldDimensions}</div>
           </div>
           
           <div className="grid grid-cols-3">
             <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Weight (With Battery)</div>
             <div className="p-4 text-sm border-r border-gray-200 text-gray-700">{specs.weight}</div>
-            <div className="p-4 text-sm text-gray-700">{specs.weight}+</div>
+            <div className="p-4 text-sm text-gray-700">{specs.weight}</div>
           </div>
           
           <div className="grid grid-cols-3">
@@ -180,12 +185,11 @@ export default function SpecificationTable({ robot }: SpecificationTableProps) {
           
           <div className="grid grid-cols-3">
             <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Single Hand Degrees of Freedom</div>
-            <div className="p-4 text-sm border-r border-gray-200 text-gray-700">/</div>
+            <div className="p-4 text-sm border-r border-gray-200 text-gray-700">0</div>
             <div className="p-4 text-sm text-gray-700">{specs.singleHandDOF}<br/>
-              +2(Optional 2 additional wrist degrees of freedom)<br/>
-              *Three-fingered dexterous hand Dex3-1 Parameter:<br/>
-              The thumb has 3 active degrees of freedom; the index finger has 2 active degrees of freedom; the middle finger has 2 active degrees of freedom.<br/>
-              **Dex3-1 can optionally be installed with tactile sensor arrays
+              <span className="text-xs text-gray-500">Force-controlled three-fingered hand<br/>
+              Dexterous manipulation capabilities<br/>
+              Optional tactile sensor arrays</span>
             </div>
           </div>
           
@@ -201,14 +205,22 @@ export default function SpecificationTable({ robot }: SpecificationTableProps) {
           
           <div className="grid grid-cols-3">
             <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Maximum Torque of Knee Joint [1]</div>
-            <div className="p-4 text-sm border-r border-gray-200 text-gray-700">90N.m</div>
-            <div className="p-4 text-sm text-gray-700">{specs.maxTorqueKneeJoint}</div>
+            <div className="p-4 text-sm border-r border-gray-200 text-gray-700">
+              {typeof specs.maxTorqueKneeJoint === 'object' ? specs.maxTorqueKneeJoint.G1 : '90N.m'}
+            </div>
+            <div className="p-4 text-sm text-gray-700">
+              {typeof specs.maxTorqueKneeJoint === 'object' ? specs.maxTorqueKneeJoint.G1_EDU : specs.maxTorqueKneeJoint}
+            </div>
           </div>
           
           <div className="grid grid-cols-3">
             <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Arm Maximum Load [2]</div>
-            <div className="p-4 text-sm border-r border-gray-200 text-gray-700">About 2Kg</div>
-            <div className="p-4 text-sm text-gray-700">{specs.armMaxLoad}</div>
+            <div className="p-4 text-sm border-r border-gray-200 text-gray-700">
+              {typeof specs.armMaxLoad === 'object' ? specs.armMaxLoad.G1 : 'About 2Kg'}
+            </div>
+            <div className="p-4 text-sm text-gray-700">
+              {typeof specs.armMaxLoad === 'object' ? specs.armMaxLoad.G1_EDU : specs.armMaxLoad}
+            </div>
           </div>
           
           <div className="grid grid-cols-3">
@@ -219,6 +231,36 @@ export default function SpecificationTable({ robot }: SpecificationTableProps) {
           <div className="grid grid-cols-3">
             <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Arm Span</div>
             <div className="p-4 text-sm text-gray-700 col-span-2">{specs.armSpan}</div>
+          </div>
+          
+          <div className="grid grid-cols-3">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Battery</div>
+            <div className="p-4 text-sm text-gray-700 col-span-2">{specs.battery}</div>
+          </div>
+          
+          <div className="grid grid-cols-3">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Computing Power</div>
+            <div className="p-4 text-sm text-gray-700 col-span-2">{specs.computing}</div>
+          </div>
+          
+          <div className="grid grid-cols-3">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Connectivity</div>
+            <div className="p-4 text-sm text-gray-700 col-span-2">
+              {specs.connectivity?.join(', ')}
+            </div>
+          </div>
+          
+          <div className="grid grid-cols-3">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Sensors</div>
+            <div className="p-4 text-sm text-gray-700 col-span-2">
+              {specs.sensors?.join(', ')}
+            </div>
+          </div>
+          
+          <div className="grid grid-cols-3">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Warranty</div>
+            <div className="p-4 text-sm border-r border-gray-200 text-gray-700">{specs.warranty?.G1}</div>
+            <div className="p-4 text-sm text-gray-700">{specs.warranty?.G1_EDU}</div>
           </div>
         </div>
       </div>
