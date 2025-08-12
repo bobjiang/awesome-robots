@@ -80,9 +80,20 @@
     },
     "specifications": {
       "dimensions": "1320x450x200mm (standing), 690x450x300mm (folded)",
-      "weight": "~35kg",
+      "weight": "About 35kg",
       "battery": "~2 hours runtime",
       "dof": 43,
+      "totalDegreesOfFreedom": "23-43 (Joint Freedom)",
+      "singleLegDOF": 6,
+      "waistDOF": "1+(Optional 2 additional waist degrees of freedom)",
+      "singleArmDOF": 5,
+      "singleHandDOF": "7 (Optional Force control of three-fingered hand)",
+      "jointOutputBearing": "Industrial grade crossed roller bearings (high precision, high load capacity)",
+      "jointMotor": "Low inertia high-speed internal rotor PMSM(permanent magnet synchronous motor;better response speed and heat dissipation)",
+      "maxTorqueKneeJoint": "120N.m",
+      "armMaxLoad": "About 3Kg",
+      "calfThighLength": "0.6M",
+      "armSpan": "About 0.45M",
       "sensors": ["Depth Camera", "3D LiDAR", "4-mic array", "5W speaker"]
     },
     "features": [
@@ -115,11 +126,63 @@
       ]
     },
     "specifications": {
-      "dimensions": "About 180 cm height",
-      "weight": "47 kg",
-      "battery": "864 Wh, quickly replaceable",
-      "maxSpeed": "3.3 m/s (potential >5 m/s)",
-      "sensors": ["360° depth perception", "3D LiDAR", "depth camera"]
+      "keyDimensions": {
+        "H1": "(1520+285)mm × 570mm × 220mm",
+        "H1_2": "(1503+285)mm × 510mm × 287mm"
+      },
+      "thighCalfLength": {
+        "H1": "400mm × 2",
+        "H1_2": "400mm × 2"
+      },
+      "totalArmLength": {
+        "H1": "338mm × 2",
+        "H1_2": "685mm"
+      },
+      "dofEachLeg": {
+        "H1": "5 (Hip × 3 + Knee × 1 + Ankle × 1)",
+        "H1_2": "6 (Hip × 3 + Knee × 1 + Ankle × 2)"
+      },
+      "dofEachArm": {
+        "H1": "4 (Expandable)",
+        "H1_2": "7 (Shoulder × 3 + Elbow × 1 + Wrist × 3)"
+      },
+      "totalWeight": {
+        "H1": "About 47kg",
+        "H1_2": "About 70kg"
+      },
+      "jointOutputBearing": "Industrial grade crossed roller bearings (high precision, high load capacity)",
+      "coreJointMotor": "Low inertia high-speed internal rotor PMSM (permanent magnet synchronous motor;better response speed and heat dissipation)",
+      "ultimateTorqueJointUnit": {
+        "kneeTorque": "About 360N.m",
+        "hipJointTorque": "About 220 N.m",
+        "ankleTorque": {
+          "H1": "About 59N.m",
+          "H1_2": "About 75×2N.m"
+        },
+        "armJointTorque": {
+          "H1": "About 75N.m",
+          "H1_2": "Waist Joint About 220N.m, Ankle Joint About 75×2N.m"
+        }
+      },
+      "mobility": {
+        "H1": "Moving speed of 3.3m/s(world record), Potential mobility > 5m/s",
+        "H1_2": "Moving speed <2m/s"
+      },
+      "battery": "Battery capacity 15Ah(0.864KWh), Max Voltage 67.2V",
+      "controlPerceptionComputingPower": "Standard configuration: Intel Core i5(Platform Function) ,Intel Core i7(User Development) Optional Configuration: Intel Core i7 or Nvidia Jetson Orin NX",
+      "sensorConfiguration": "3D LiDAR + Depth Camera",
+      "dexterousHand": {
+        "H1": "Optional",
+        "H1_2": "Optional Dex5-1 or other ambidextrous hands"
+      },
+      "armJointPerformance": {
+        "H1": "/",
+        "H1_2": "Shoulder: About 120N.m, Elbow: About 120N.m Wrist: About 30N.m"
+      },
+      "armNormalLoad": {
+        "H1": "/",
+        "H1_2": "Peak: About 21Kg; Rated: About 7Kg"
+      }
     },
     "features": [
       "First full-size general-purpose humanoid robot that can run in China",

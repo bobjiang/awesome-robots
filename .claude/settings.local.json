@@ -5,7 +5,8 @@
       "Bash(npx next dev:*)",
       "Bash(npx next:*)",
       "Bash(curl:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git push:*)"
     ],
     "deny": []
   }

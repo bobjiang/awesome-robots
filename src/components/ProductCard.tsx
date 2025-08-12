@@ -76,7 +76,7 @@ export default function ProductCard({ robot }: ProductCardProps) {
         <div className="mb-4">
           <div className="text-sm text-gray-500 mb-1">Key Specs:</div>
           <div className="text-sm text-gray-700">
-            {robot.specifications.weight} • {robot.specifications.battery.split(',')[0]}
+            {robot.specifications.weight || robot.specifications.totalWeight?.H1 || 'Weight N/A'} • {robot.specifications.battery?.split(',')[0] || robot.specifications.battery || 'Battery N/A'}
           </div>
         </div>
         

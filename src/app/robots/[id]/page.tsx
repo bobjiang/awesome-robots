@@ -6,6 +6,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Layout from '@/components/Layout';
 import ProductCard from '@/components/ProductCard';
+import SpecificationTable from '@/components/SpecificationTable';
 import { Robot } from '@/types/robot';
 import robots from '@/data/robots.json';
 
@@ -143,72 +144,23 @@ export default function RobotDetailPage() {
           </div>
         </div>
 
-        {/* Detailed Information Tabs */}
+        {/* Detailed Specifications Table */}
         <div className="mb-16">
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
-              {/* Specifications */}
-              <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">Specifications</h3>
-                <dl className="space-y-3">
-                  <div>
-                    <dt className="text-sm font-medium text-gray-500">Dimensions</dt>
-                    <dd className="text-sm text-gray-900">{robot.specifications.dimensions}</dd>
-                  </div>
-                  <div>
-                    <dt className="text-sm font-medium text-gray-500">Weight</dt>
-                    <dd className="text-sm text-gray-900">{robot.specifications.weight}</dd>
-                  </div>
-                  <div>
-                    <dt className="text-sm font-medium text-gray-500">Battery</dt>
-                    <dd className="text-sm text-gray-900">{robot.specifications.battery}</dd>
-                  </div>
-                  {robot.specifications.dof && (
-                    <div>
-                      <dt className="text-sm font-medium text-gray-500">Degrees of Freedom</dt>
-                      <dd className="text-sm text-gray-900">{robot.specifications.dof}</dd>
-                    </div>
-                  )}
-                  {robot.specifications.maxSpeed && (
-                    <div>
-                      <dt className="text-sm font-medium text-gray-500">Max Speed</dt>
-                      <dd className="text-sm text-gray-900">{robot.specifications.maxSpeed}</dd>
-                    </div>
-                  )}
-                  {robot.specifications.payload && (
-                    <div>
-                      <dt className="text-sm font-medium text-gray-500">Payload</dt>
-                      <dd className="text-sm text-gray-900">{robot.specifications.payload}</dd>
-                    </div>
-                  )}
-                </dl>
-              </div>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Technical Specifications</h2>
+          <SpecificationTable robot={robot} />
+        </div>
 
-              {/* Sensors */}
-              <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">Sensors & Connectivity</h3>
-                <ul className="space-y-2">
-                  {robot.specifications.sensors.map((sensor, index) => (
-                    <li key={index} className="text-sm text-gray-700 flex items-center">
-                      <span className="w-2 h-2 bg-blue-600 rounded-full mr-3 flex-shrink-0"></span>
-                      {sensor}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* Features */}
-              <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">Key Features</h3>
-                <ul className="space-y-2">
-                  {robot.features.slice(0, 6).map((feature, index) => (
-                    <li key={index} className="text-sm text-gray-700 flex items-start">
-                      <span className="w-2 h-2 bg-green-500 rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-              </div>
+        {/* Features Section */}
+        <div className="mb-16">
+          <div className="bg-white rounded-xl shadow-lg p-8">
+            <h3 className="text-2xl font-semibold text-gray-900 mb-6">Key Features</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {robot.features.map((feature, index) => (
+                <div key={index} className="flex items-start">
+                  <span className="w-2 h-2 bg-blue-600 rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                  <span className="text-gray-700">{feature}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>
