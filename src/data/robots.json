@@ -371,5 +371,608 @@
     "images": ["/images/robots/unitree-a2-1.jpg"],
     "officialUrl": "https://www.unitree.com/A2",
     "description": "Stellar Explorer - Advanced industrial quadruped robot designed for exploration and research applications."
+  },
+  {
+    "id": "unitree-go1",
+    "name": "Go1",
+    "brand": "Unitree",
+    "category": "quadruped",
+    "price": {
+      "starting": 2700,
+      "currency": "USD",
+      "models": [
+        {"name": "AIR", "price": 2700},
+        {"name": "PRO", "price": 3500},
+        {"name": "EDU", "price": "request"}
+      ]
+    },
+    "specifications": {
+      "dimensions": "58.8cm x 22cm x 29cm (folded)",
+      "weight": "12kg",
+      "material": "Aluminum alloy + High strength engineering plastic",
+      "maxSpeed": {
+        "AIR": "0 ~ 2.5m/s",
+        "PRO": "0 ~ 3.5m/s", 
+        "EDU": "0 ~ 3.7m/s (MAX 4.7m/s)"
+      },
+      "payload": "3-5kg adaptive load capacity",
+      "sensors": {
+        "AIR": ["1 pair of fisheye binocular depth sensors"],
+        "PRO": ["5 pairs of fisheye binocular depth sensors"],
+        "EDU": ["5 pairs of fisheye binocular depth sensors", "4G connectivity", "Human sensing"]
+      },
+      "computing": "16-core CPU + GPU (384 Core, 1.5 TFLOPS)",
+      "warranty": {
+        "AIR": "6 months (core components)",
+        "PRO": "3 months (non-core components)",
+        "EDU": "12 months full warranty"
+      },
+      "connectivity": ["WiFi", "Bluetooth"],
+      "additionalFeatures": ["Intelligent Concomitant System", "Flexible adaptive joints", "Heat pipe-assisted cooling system"]
+    },
+    "features": [
+      "Ultra-fast performance up to 17 km/h",
+      "5 sets of fisheye binocular depth sensors",
+      "Advanced AI processing capabilities",
+      "Python programming support (EDU)",
+      "Lightweight 12kg design",
+      "Adaptive joint flexibility"
+    ],
+    "images": ["/images/robots/unitree-go1-1.jpg"],
+    "officialUrl": "https://www.unitree.com/go1",
+    "description": "Advanced quadruped robot with high-speed capabilities and intelligent sensing for education and research applications."
+  },
+  {
+    "id": "unitree-b1",
+    "name": "B1",
+    "brand": "Unitree",
+    "category": "quadruped",
+    "price": {
+      "starting": 40000,
+      "currency": "USD",
+      "models": [
+        {"name": "Industrial", "price": "request"}
+      ]
+    },
+    "specifications": {
+      "dimensionsStanding": "1126 x 467 x 636 mm",
+      "dimensionsLying": "1202 x 467 x 297 mm",
+      "weight": "~50kg (with battery)",
+      "batteryWeight": "~5kg",
+      "continuousWalkingLoad": "20kg",
+      "maxStandingLoad": "80kg",
+      "batteryCapacity": "18000mAh (932.4Wh)",
+      "batteryVoltage": "51.8V",
+      "chargingTime": "1-2 hours",
+      "operatingTemperature": "-5°C to 45°C",
+      "computing": "Intel i5-1135G7",
+      "sensingPlatform": "3x Jetson XavierNX",
+      "sensors": ["5x Intel RealSense D430"],
+      "maxStairClimbHeight": "20cm",
+      "standingEndurance": "5 hours",
+      "continuousWalkingTime": "2 hours (unloaded)"
+    },
+    "features": [
+      "Industrial-grade quadruped design",
+      "Heavy payload capacity up to 80kg",
+      "Advanced sensing with 5 RealSense cameras",
+      "Long endurance operation",
+      "Complex terrain navigation",
+      "Multiple application scenarios"
+    ],
+    "images": ["/images/robots/unitree-b1-1.jpg"],
+    "officialUrl": "https://www.unitree.com/b1",
+    "description": "Industrial quadruped robot designed for agriculture, security patrols, surveys, and public rescue operations."
+  },
+  {
+    "id": "unitree-aliengo",
+    "name": "Aliengo",
+    "brand": "Unitree",
+    "category": "quadruped",
+    "price": {
+      "starting": 35000,
+      "currency": "USD",
+      "models": [
+        {"name": "Standard", "price": "request"}
+      ]
+    },
+    "specifications": {
+      "weight": "21.5kg ±1kg (without battery)",
+      "dimensionsStanding": "65cm x 31cm x 60cm",
+      "dimensionsLying": "60cm x 31cm x 15cm",
+      "maxWalkingSpeed": ">1.5m/s",
+      "climbingAngle": "≤25°",
+      "payload": "13kg",
+      "endurance": "2.5-4.6 hours",
+      "degreesOfFreedom": "12 (12 motors)",
+      "batteryCapacity": "12,600mAh",
+      "outputPower": ["5V", "12V", "19V", "24-30V"],
+      "depthCameras": "2 sets (1280x720 resolution)",
+      "visualOdometer": "1 set",
+      "interfaces": ["2x Ethernet", "2x USB 3.0", "1x USB 2.0", "1x 485 port"],
+      "sensors": ["Depth Camera", "Visual Odometer", "Optional LiDAR"]
+    },
+    "features": [
+      "12 high-performance servo motors",
+      "Fast running and backward running capabilities",
+      "Side shifting, turning, creeping, rolling, jumping",
+      "Advanced depth sensing system",
+      "Flexible external interfaces",
+      "Optional LiDAR integration"
+    ],
+    "images": ["/images/robots/unitree-aliengo-1.jpg"],
+    "officialUrl": "https://www.unitree.com/aliengo",
+    "description": "Versatile quadruped robot with advanced mobility and sensing capabilities for research and industrial applications."
+  },
+  {
+    "id": "unitree-r1",
+    "name": "R1",
+    "brand": "Unitree",
+    "category": "humanoid",
+    "price": {
+      "starting": 5900,
+      "currency": "USD",
+      "models": [
+        {"name": "Base Model", "price": 5900},
+        {"name": "R1 EDU", "price": "request"}
+      ]
+    },
+    "specifications": {
+      "dimensions": "1210 × 357 × 190 mm",
+      "weight": "~25kg",
+      "totalDOF": "24-40",
+      "legDOF": "6 per leg",
+      "armDOF": "5 per arm",
+      "waistDOF": "2",
+      "optionalHeadDOF": "2",
+      "batteryLife": "~1 hour",
+      "computing": "8-core high-performance CPU",
+      "optionalComputing": "NVIDIA Jetson Orin (40-100 TOPS)",
+      "sensors": ["4-microphone array", "Binocular camera"],
+      "connectivity": ["WiFi 6", "Bluetooth 5.2"],
+      "warranty": {
+        "Base": "8 months",
+        "EDU": "12 months"
+      }
+    },
+    "features": [
+      "Ultra-lightweight design",
+      "Fully customizable platform",
+      "Open control interfaces",
+      "Mainstream simulation platform support",
+      "Advanced AI processing capabilities",
+      "Compact form factor"
+    ],
+    "images": ["/images/robots/unitree-r1-1.jpg"],
+    "officialUrl": "https://www.unitree.com/r1",
+    "description": "Ultra-lightweight, fully customizable humanoid robot platform for research and development applications."
+  },
+  {
+    "id": "unitree-g1-comp",
+    "name": "G1-Comp",
+    "brand": "Unitree",
+    "category": "humanoid",
+    "price": {
+      "starting": 20000,
+      "currency": "USD",
+      "models": [
+        {"name": "Competition", "price": "request"}
+      ]
+    },
+    "specifications": {
+      "dimensions": "1320x450x200mm (standing), 690x450x300mm (folded)",
+      "weight": "About 35kg",
+      "totalDOF": "45",
+      "sprintingSpeed": "3.3m/s",
+      "kneeTorque": "120N.m",
+      "computing": "NVIDIA Jetson Orin NX (157 TOPS AI compute)",
+      "battery": "13-string lithium battery, 9000mAh, ~2 hours runtime",
+      "connectivity": ["WiFi 6", "Bluetooth 5.2"],
+      "sensors": ["Depth Camera", "3D LiDAR", "4-mic array", "5W speaker"]
+    },
+    "features": [
+      "Athletic competition specialization",
+      "Enhanced DOF for complex movements",
+      "High-speed sprinting capabilities",
+      "Advanced AI processing for sports",
+      "Motion-capture integration",
+      "Professional athletic performance"
+    ],
+    "images": ["/images/robots/unitree-g1-comp-1.jpg"],
+    "officialUrl": "https://www.unitree.com/g1",
+    "description": "Competition-specialized variant of G1 humanoid robot designed for athletic performance and RoboCup competitions."
+  },
+  {
+    "id": "unitree-g1-boxing",
+    "name": "G1-Boxing",
+    "brand": "Unitree",
+    "category": "humanoid",
+    "price": {
+      "starting": 18000,
+      "currency": "USD",
+      "models": [
+        {"name": "Boxing", "price": "request"}
+      ]
+    },
+    "specifications": {
+      "dimensions": "1320x450x200mm (standing), 690x450x300mm (folded)",
+      "weight": "About 35kg",
+      "totalDOF": "43",
+      "specialization": "Combat sports and martial arts",
+      "computing": "8-core high-performance CPU",
+      "battery": "13-string lithium battery, 9000mAh, ~2 hours runtime",
+      "controlMethods": ["Motion-sensing", "Controller", "Voice commands"],
+      "connectivity": ["WiFi 6", "Bluetooth 5.2"],
+      "sensors": ["Depth Camera", "3D LiDAR", "4-mic array", "5W speaker"]
+    },
+    "features": [
+      "Professional boxing capabilities",
+      "Motion-capture training system integration", 
+      "Advanced balance and agility systems",
+      "Combat sports specialization",
+      "Punches, hooks, and kicks execution",
+      "Martial arts movement patterns"
+    ],
+    "images": ["/images/robots/unitree-g1-boxing-1.jpg"],
+    "officialUrl": "https://www.unitree.com/g1",
+    "description": "Boxing-specialized variant of G1 humanoid robot designed for combat sports and martial arts applications."
+  },
+  {
+    "id": "unitree-z1",
+    "name": "Z1 Robotic Arm",
+    "brand": "Unitree",
+    "category": "other",
+    "price": {
+      "starting": 15999,
+      "currency": "USD",
+      "models": [
+        {"name": "Z1 AIR", "price": 15999},
+        {"name": "Z1 PRO", "price": "request"}
+      ]
+    },
+    "specifications": {
+      "degreesOfFreedom": "6-axis",
+      "weight": {
+        "AIR": "4.3kg",
+        "PRO": "4.5kg"
+      },
+      "payload": {
+        "AIR": "2kg",
+        "PRO": "≥3kg"
+      },
+      "reach": "740mm",
+      "repeatability": "~0.1mm",
+      "communication": "RS 485",
+      "maxTorque": "33N·m",
+      "encoderResolution": "15bit",
+      "controlFrequency": "1KHz",
+      "powerSupply": "24V, Current > 20A",
+      "maxPower": "500W",
+      "operatingSystem": "Ubuntu"
+    },
+    "features": [
+      "Compact & Lightweight design",
+      "Dexterous & Flexible operation",
+      "Force Feedback and Collision Detection",
+      "Position + Force Control Interface",
+      "Compatible with mobile robots",
+      "Open programming interface",
+      "Quick actuator replacement support"
+    ],
+    "images": ["/images/robots/unitree-z1-1.jpg"],
+    "officialUrl": "https://www.unitree.com/z1",
+    "description": "6-axis robotic arm designed for mobile robots with force feedback and precision control capabilities."
+  },
+  {
+    "id": "unitree-d1-t",
+    "name": "D1-T Teleoperation Arm",
+    "brand": "Unitree",
+    "category": "other",
+    "price": {
+      "starting": 8500,
+      "currency": "USD",
+      "models": [
+        {"name": "Dual-Arm Standard", "price": 8500},
+        {"name": "Quad-Arm Full", "price": 16000}
+      ]
+    },
+    "specifications": {
+      "weight": "2.37kg",
+      "armLength": "670mm (with gripper)",
+      "material": "Aluminum alloy",
+      "degreesOfFreedom": "6 Axis + 1 Gripper",
+      "payloadCapacity": "500g",
+      "powerSupply": "24V, 2.5A (Max 5A)",
+      "motorType": "Bus Servo",
+      "power": "60W",
+      "interfaces": ["DC5.5-2.1 (Power)", "RJ45 (Communication)", "Type-C (Serial Debug)"]
+    },
+    "features": [
+      "Ultra-Precision Force-Controlled Digital Servo Motor",
+      "AI Teleoperation capabilities",
+      "Force control capabilities",
+      "Position and velocity control",
+      "Lightweight design",
+      "Flexible hardware compatibility",
+      "External device connectivity"
+    ],
+    "images": ["/images/robots/unitree-d1-t-1.jpg"],
+    "officialUrl": "https://www.unitree.com/D1-T",
+    "description": "Ultra-precision teleoperation robot arm kit with force control and AI capabilities for research and development."
+  },
+  {
+    "id": "unitree-dex3-1",
+    "name": "Dex3-1 Dexterous Hand",
+    "brand": "Unitree",
+    "category": "other",
+    "price": {
+      "starting": 8000,
+      "currency": "USD",
+      "models": [
+        {"name": "Standard", "price": "request"}
+      ]
+    },
+    "specifications": {
+      "dimensions": "175 × 88 × 77 mm",
+      "weight": "710g",
+      "degreesOfFreedom": "7 total",
+      "thumbJoints": "3",
+      "indexFingerJoints": "2",
+      "middleFingerJoints": "2",
+      "fingertipAccuracy": "±2mm",
+      "maxWeight": "500g",
+      "maxPower": "400W (3-second duration)",
+      "tactileSensors": "33 total",
+      "pressureSensorArrays": "9",
+      "perceptionRange": "10g-2500g",
+      "maxAcceptance": "20kg",
+      "workingVoltage": "12-58V",
+      "communicationRate": "1000Hz",
+      "interface": "USB2.0",
+      "operatingTemperature": "-20°C to 60°C",
+      "compatibility": ["G1 humanoid robot"]
+    },
+    "features": [
+      "Advanced tactile sensing system",
+      "High-precision fingertip control",
+      "Real-time feedback capabilities",
+      "Robust grip strength",
+      "G1 robot compatibility",
+      "Professional manipulation tasks"
+    ],
+    "images": ["/images/robots/unitree-dex3-1-1.jpg"],
+    "officialUrl": "https://www.unitree.com/dex3-1",
+    "description": "3-finger dexterous hand with advanced tactile sensing for G1 humanoid robot manipulation tasks."
+  },
+  {
+    "id": "unitree-dex5-1",
+    "name": "Dex5-1 Dexterous Hand",
+    "brand": "Unitree",
+    "category": "other",
+    "price": {
+      "starting": 12000,
+      "currency": "USD",
+      "models": [
+        {"name": "Standard", "price": "request"}
+      ]
+    },
+    "specifications": {
+      "dimensions": "217.3 × 127.5 × 72.1 mm",
+      "weight": "1000g",
+      "degreesOfFreedom": "20 total (16 active + 4 passive)",
+      "thumbJoints": "4",
+      "fingerJoints": "3 each (index, middle, ring, little)",
+      "fingertipAccuracy": "±1mm",
+      "fingertipStrength": "10N",
+      "fourFingerLateralSwing": "±22°",
+      "maxLoad": "3.5-4.5kg",
+      "minGripDiameter": "10mm",
+      "tactileSensors": "94 per hand",
+      "workingVoltage": "24-60V",
+      "communicationRate": "1000Hz",
+      "interface": "USB2.0",
+      "operatingTemperature": "-20°C to 60°C",
+      "compatibility": ["H1/H1-2 robots", "Mountable on G1"]
+    },
+    "features": [
+      "5-finger human-like dexterity",
+      "94 tactile sensors per hand",
+      "Real-time multi-modal feedback",
+      "High precision manipulation",
+      "Heavy load capacity",
+      "Universal robot compatibility"
+    ],
+    "images": ["/images/robots/unitree-dex5-1-1.jpg"],
+    "officialUrl": "https://www.unitree.com/dex5-1",
+    "description": "5-finger dexterous hand with 94 tactile sensors for advanced manipulation tasks on H1/H1-2 and G1 robots."
+  },
+  {
+    "id": "unitree-go2-battery",
+    "name": "Go2 Battery",
+    "brand": "Unitree",
+    "category": "accessory",
+    "price": {
+      "starting": 500,
+      "currency": "USD",
+      "models": [
+        {"name": "BT2-05 Standard", "price": 500},
+        {"name": "BT2-06 Long Endurance", "price": 650}
+      ]
+    },
+    "specifications": {
+      "ratedVoltage": "DC 29.6V",
+      "chargeLimitVoltage": "DC 33.6V",
+      "chargingCurrent": "3.5A-9A",
+      "ratedCapacity": "8000mAh (236.8Wh)",
+      "dimensions": "120mm x 80mm x 182mm",
+      "compatibility": ["Unitree Go2"],
+      "safetyFeatures": [
+        "Battery storage protection",
+        "Balanced charge protection", 
+        "Overcharge protection",
+        "Charging temperature protection",
+        "Charging current protection",
+        "Short circuit protection",
+        "Over discharge protection",
+        "Battery load detection protection"
+      ],
+      "standard": "IS 16046(Part 2)/IEC 62133-2"
+    },
+    "features": [
+      "High performance battery cell",
+      "Unitree self-developed battery management system",
+      "Eight-fold protection system",
+      "Designed specifically for Go2",
+      "Long endurance version available",
+      "Industry standard compliance"
+    ],
+    "images": ["/images/robots/unitree-go2-battery-1.jpg"],
+    "officialUrl": "https://www.unitree.com/go2/battery",
+    "description": "High-performance lithium battery with advanced safety features designed specifically for Go2 quadruped robot."
+  },
+  {
+    "id": "unitree-go2-charger",
+    "name": "Go2 Charger",
+    "brand": "Unitree",
+    "category": "accessory",
+    "price": {
+      "starting": 100,
+      "currency": "USD",
+      "models": [
+        {"name": "Standard", "price": 100},
+        {"name": "Quick Charger", "price": 150}
+      ]
+    },
+    "specifications": {
+      "chargeVoltage": "DC 33.6V",
+      "chargingTime": "2-4 hours",
+      "chargingCurrent": "3.5A",
+      "dimensions": "154mm x 60mm x 40mm",
+      "compatibility": ["Unitree Go2 Battery"],
+      "safetyFeatures": [
+        "Battery storage and self-discharge protection",
+        "Balanced charge protection",
+        "Overcharge protection", 
+        "Charging temperature protection",
+        "Charging current protection",
+        "Short circuit protection",
+        "Over discharge protection",
+        "Battery load detection protection"
+      ]
+    },
+    "features": [
+      "Compact and lightweight design",
+      "Eight-fold protection system",
+      "Stable power delivery",
+      "Quick charging option available",
+      "Portable design",
+      "Go2 battery optimized"
+    ],
+    "images": ["/images/robots/unitree-go2-charger-1.jpg"],
+    "officialUrl": "https://www.unitree.com/go2/charger",
+    "description": "Compact and safe battery charger designed specifically for Go2 robot with advanced protection features."
+  },
+  {
+    "id": "unitree-r3-controller",
+    "name": "R3 Controller",
+    "brand": "Unitree",
+    "category": "accessory",
+    "price": {
+      "starting": 300,
+      "currency": "USD",
+      "models": [
+        {"name": "Standard", "price": 300}
+      ]
+    },
+    "specifications": {
+      "dimensions": "216.43 × 100 × 41.42 mm",
+      "weight": "300g",
+      "batteryCapacity": "780mAh",
+      "batteryLife": "5 hours",
+      "chargingVoltage": "5.0V",
+      "chargingCurrent": "700mA",
+      "communication": "Wireless/Bluetooth",
+      "controlDistance": ">100m (open, interference-free environment)",
+      "controls": "2 joysticks + 12 buttons + 4 shoulder buttons",
+      "compatibility": ["G1", "H1", "Go2", "B2"],
+      "additionalFeatures": ["Smartphone mount", "Vibration motor", "Buzzer"]
+    },
+    "features": [
+      "Versatile controller for multiple Unitree robots",
+      "Long-range wireless control",
+      "Ergonomic streamlined design",
+      "Smartphone app integration",
+      "Built-in haptic feedback",
+      "5-hour battery life"
+    ],
+    "images": ["/images/robots/unitree-r3-controller-1.jpg"],
+    "officialUrl": "https://www.unitree.com/R3",
+    "description": "Universal wireless controller for immersive robotic interaction across Unitree's robot product line."
+  },
+  {
+    "id": "unitree-go2-foot",
+    "name": "Go2 Foot End",
+    "brand": "Unitree",
+    "category": "accessory",
+    "price": {
+      "starting": 200,
+      "currency": "USD",
+      "models": [
+        {"name": "Standard", "price": 200}
+      ]
+    },
+    "specifications": {
+      "dimensions": "45mm x 39.5mm x 48mm",
+      "weight": "56g",
+      "compatibility": ["Unitree Go2"],
+      "sensitivity": "Highly sensitive",
+      "dataAcquisition": "Quick foot end data collection",
+      "designFeature": "Quick replacement with ingenious design"
+    },
+    "features": [
+      "Highly sensitive foot end sensors",
+      "Quick foot end data acquisition",
+      "Precise control data support",
+      "Quick replacement design",
+      "Lightweight construction",
+      "Go2 optimized compatibility"
+    ],
+    "images": ["/images/robots/unitree-go2-foot-1.jpg"],
+    "officialUrl": "https://www.unitree.com/go2/foot",
+    "description": "Highly sensitive foot end sensor for Go2 robot providing precise control data for advanced movement."
+  },
+  {
+    "id": "unitree-4d-lidar-l2",
+    "name": "4D LiDAR L2",
+    "brand": "Unitree",
+    "category": "accessory",
+    "price": {
+      "starting": 419,
+      "currency": "USD",
+      "models": [
+        {"name": "Standard", "price": 419}
+      ]
+    },
+    "specifications": {
+      "fieldOfView": "360° × 96°",
+      "weight": "230g",
+      "dimensions": "75 × 75 × 65 mm",
+      "range": "30m (90% reflectivity)",
+      "blindSpot": "0.05m minimum",
+      "frequency": "64,000 points/s",
+      "power": "10W",
+      "compatibility": ["All Unitree robots"]
+    },
+    "features": [
+      "360-degree environmental sensing",
+      "High-frequency point cloud generation",
+      "Compact and lightweight",
+      "Low power consumption",
+      "Universal robot compatibility",
+      "Professional grade LiDAR"
+    ],
+    "images": ["/images/robots/unitree-4d-lidar-l2-1.jpg"],
+    "officialUrl": "https://www.unitree.com/",
+    "description": "Professional 4D LiDAR sensor for environmental sensing and navigation on Unitree robots."
   }
 ]
