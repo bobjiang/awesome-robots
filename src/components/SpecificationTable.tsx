@@ -771,7 +771,9 @@ export default function SpecificationTable({ robot }: SpecificationTableProps) {
           <div className="grid grid-cols-2 p-4">
             <div className="font-medium text-gray-700">Battery</div>
             <div className="text-gray-900">
-              {typeof specs.battery === 'string' ? specs.battery : 'N/A'}
+              {typeof specs.battery === 'string' ? specs.battery : 
+               typeof specs.battery === 'object' && specs.battery ? 
+                 Object.values(specs.battery).join(', ') : 'N/A'}
             </div>
           </div>
         )}
@@ -779,7 +781,9 @@ export default function SpecificationTable({ robot }: SpecificationTableProps) {
           <div className="grid grid-cols-2 p-4">
             <div className="font-medium text-gray-700">Max Speed</div>
             <div className="text-gray-900">
-              {typeof specs.maxSpeed === 'string' ? specs.maxSpeed : 'N/A'}
+              {typeof specs.maxSpeed === 'string' ? specs.maxSpeed : 
+               typeof specs.maxSpeed === 'object' && specs.maxSpeed ? 
+                 Object.values(specs.maxSpeed).join(', ') : 'N/A'}
             </div>
           </div>
         )}
@@ -787,7 +791,9 @@ export default function SpecificationTable({ robot }: SpecificationTableProps) {
           <div className="grid grid-cols-2 p-4">
             <div className="font-medium text-gray-700">Payload</div>
             <div className="text-gray-900">
-              {typeof specs.payload === 'string' ? specs.payload : 'N/A'}
+              {typeof specs.payload === 'string' ? specs.payload : 
+               typeof specs.payload === 'object' && specs.payload ? 
+                 Object.values(specs.payload).join(', ') : 'N/A'}
             </div>
           </div>
         )}
@@ -797,15 +803,25 @@ export default function SpecificationTable({ robot }: SpecificationTableProps) {
             <div className="text-gray-900">{specs.dof}</div>
           </div>
         )}
-        {Array.isArray(specs.sensors) && specs.sensors.length > 0 && (
+        {(Array.isArray(specs.sensors) || (typeof specs.sensors === 'object' && specs.sensors)) && (
           <div className="grid grid-cols-2 p-4">
             <div className="font-medium text-gray-700">Sensors</div>
             <div className="text-gray-900">
-              <ul className="list-disc list-inside space-y-1">
-                {specs.sensors.map((sensor, index) => (
-                  <li key={index} className="text-sm">{sensor}</li>
-                ))}
-              </ul>
+              {Array.isArray(specs.sensors) ? (
+                <ul className="list-disc list-inside space-y-1">
+                  {specs.sensors.map((sensor, index) => (
+                    <li key={index} className="text-sm">{sensor}</li>
+                  ))}
+                </ul>
+              ) : (
+                <div className="space-y-2">
+                  {typeof specs.sensors === 'object' && specs.sensors && Object.entries(specs.sensors).map(([variant, sensorList]) => (
+                    <div key={variant} className="text-sm">
+                      <span className="font-medium text-blue-600">{variant}:</span> {Array.isArray(sensorList) ? sensorList.join(', ') : String(sensorList)}
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
         )}

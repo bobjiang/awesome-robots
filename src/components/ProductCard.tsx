@@ -76,7 +76,22 @@ export default function ProductCard({ robot }: ProductCardProps) {
         <div className="mb-4">
           <div className="text-sm text-gray-500 mb-1">Key Specs:</div>
           <div className="text-sm text-gray-700">
-            {robot.specifications.weight || robot.specifications.totalWeight?.H1 || 'Weight N/A'} • {
+            {(() => {
+              // Handle weight
+              if (typeof robot.specifications.weight === 'string') {
+                return robot.specifications.weight;
+              } else if (robot.specifications.totalWeight) {
+                if (typeof robot.specifications.totalWeight === 'string') {
+                  return robot.specifications.totalWeight;
+                } else if (typeof robot.specifications.totalWeight === 'object') {
+                  return robot.specifications.totalWeight.H1 || robot.specifications.totalWeight.H1_2 || 'Weight N/A';
+                } else {
+                  return 'Weight N/A';
+                }
+              } else {
+                return 'Weight N/A';
+              }
+            })()} • {
               (() => {
                 if (typeof robot.specifications.battery === 'string') {
                   return robot.specifications.battery.split(',')[0];
