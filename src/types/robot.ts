@@ -35,12 +35,12 @@ export interface Robot {
     material?: string;
     voltage?: string;
     workingMaxPower?: string;
-    maxClimbHeight?: {
+    maxClimbHeight?: string | {
       AIR?: string;
       PRO?: string;
       EDU?: string;
     };
-    maxClimbAngle?: {
+    maxClimbAngle?: string | {
       AIR?: string;
       PRO?: string;
       EDU?: string;
@@ -60,6 +60,12 @@ export interface Robot {
       PRO?: string;
       EDU?: string;
     };
+    // Go2-W specific fields
+    jointMotors?: string;
+    maxJointTorque?: string;
+    tires?: string;
+    charger?: string;
+    additionalFeatures?: string[];
     // G1 specific fields
     totalDegreesOfFreedom?: string;
     singleLegDOF?: number;
@@ -78,7 +84,7 @@ export interface Robot {
     };
     computing?: string;
     connectivity?: string[];
-    warranty?: {
+    warranty?: string | {
       G1?: string;
       G1_EDU?: string;
     };

@@ -67,16 +67,16 @@ export default function SpecificationTable({ robot }: SpecificationTableProps) {
           
           <div className="grid grid-cols-4">
             <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Max Climb Height</div>
-            <div className="p-4 text-sm border-r border-gray-200 text-gray-700">{specs.maxClimbHeight?.AIR}</div>
-            <div className="p-4 text-sm border-r border-gray-200 text-gray-700">{specs.maxClimbHeight?.PRO}</div>
-            <div className="p-4 text-sm text-gray-700">{specs.maxClimbHeight?.EDU}</div>
+            <div className="p-4 text-sm border-r border-gray-200 text-gray-700">{typeof specs.maxClimbHeight === 'object' ? specs.maxClimbHeight?.AIR : ''}</div>
+            <div className="p-4 text-sm border-r border-gray-200 text-gray-700">{typeof specs.maxClimbHeight === 'object' ? specs.maxClimbHeight?.PRO : ''}</div>
+            <div className="p-4 text-sm text-gray-700">{typeof specs.maxClimbHeight === 'object' ? specs.maxClimbHeight?.EDU : ''}</div>
           </div>
           
           <div className="grid grid-cols-4">
             <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Max Climb Angle</div>
-            <div className="p-4 text-sm border-r border-gray-200 text-gray-700">{specs.maxClimbAngle?.AIR}</div>
-            <div className="p-4 text-sm border-r border-gray-200 text-gray-700">{specs.maxClimbAngle?.PRO}</div>
-            <div className="p-4 text-sm text-gray-700">{specs.maxClimbAngle?.EDU}</div>
+            <div className="p-4 text-sm border-r border-gray-200 text-gray-700">{typeof specs.maxClimbAngle === 'object' ? specs.maxClimbAngle?.AIR : ''}</div>
+            <div className="p-4 text-sm border-r border-gray-200 text-gray-700">{typeof specs.maxClimbAngle === 'object' ? specs.maxClimbAngle?.PRO : ''}</div>
+            <div className="p-4 text-sm text-gray-700">{typeof specs.maxClimbAngle === 'object' ? specs.maxClimbAngle?.EDU : ''}</div>
           </div>
           
           <div className="grid grid-cols-4">
@@ -110,6 +110,108 @@ export default function SpecificationTable({ robot }: SpecificationTableProps) {
           <div className="grid grid-cols-4">
             <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Sensors</div>
             <div className="p-4 text-sm text-gray-700 col-span-3">{specs.sensors?.join(', ')}</div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // For Go2-W robot with detailed specs
+  if (robot.id === 'unitree-go2-w' && specs.jointMotors) {
+    return (
+      <div className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-lg">
+        <div className="grid grid-cols-2 bg-blue-600 text-white">
+          <div className="p-4 font-semibold border-r border-blue-500">Specification</div>
+          <div className="p-4 font-semibold text-center">Go2-W</div>
+        </div>
+        
+        <div className="divide-y divide-gray-200">
+          <div className="grid grid-cols-2">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Dimensions</div>
+            <div className="p-4 text-sm text-gray-700">{specs.dimensions}</div>
+          </div>
+          
+          <div className="grid grid-cols-2">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Weight (with Battery)</div>
+            <div className="p-4 text-sm text-gray-700">{specs.weight}</div>
+          </div>
+          
+          <div className="grid grid-cols-2">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Voltage</div>
+            <div className="p-4 text-sm text-gray-700">{specs.voltage}</div>
+          </div>
+          
+          <div className="grid grid-cols-2">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Payload</div>
+            <div className="p-4 text-sm text-gray-700">{typeof specs.payload === 'string' ? specs.payload : 'N/A'}</div>
+          </div>
+          
+          <div className="grid grid-cols-2">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Maximum Speed</div>
+            <div className="p-4 text-sm text-gray-700">{typeof specs.maxSpeed === 'string' ? specs.maxSpeed : 'N/A'}</div>
+          </div>
+          
+          <div className="grid grid-cols-2">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Max Climb Height</div>
+            <div className="p-4 text-sm text-gray-700">{typeof specs.maxClimbHeight === 'string' ? specs.maxClimbHeight : 'N/A'}</div>
+          </div>
+          
+          <div className="grid grid-cols-2">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Max Climb Angle</div>
+            <div className="p-4 text-sm text-gray-700">{typeof specs.maxClimbAngle === 'string' ? specs.maxClimbAngle : 'N/A'}</div>
+          </div>
+          
+          <div className="grid grid-cols-2">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Computing Power</div>
+            <div className="p-4 text-sm text-gray-700">{typeof specs.computingPower === 'string' ? specs.computingPower : 'N/A'}</div>
+          </div>
+          
+          <div className="grid grid-cols-2">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Joint Motors</div>
+            <div className="p-4 text-sm text-gray-700">{specs.jointMotors}</div>
+          </div>
+          
+          <div className="grid grid-cols-2">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Max Joint Torque</div>
+            <div className="p-4 text-sm text-gray-700">{specs.maxJointTorque}</div>
+          </div>
+          
+          <div className="grid grid-cols-2">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Tires</div>
+            <div className="p-4 text-sm text-gray-700">{specs.tires}</div>
+          </div>
+          
+          <div className="grid grid-cols-2">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Battery</div>
+            <div className="p-4 text-sm text-gray-700">{typeof specs.battery === 'string' ? specs.battery : 'N/A'}</div>
+          </div>
+          
+          <div className="grid grid-cols-2">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Charger</div>
+            <div className="p-4 text-sm text-gray-700">{specs.charger}</div>
+          </div>
+          
+          <div className="grid grid-cols-2">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Warranty</div>
+            <div className="p-4 text-sm text-gray-700">
+              {typeof specs.warranty === 'string' ? specs.warranty : 'N/A'}
+            </div>
+          </div>
+          
+          <div className="grid grid-cols-2">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Sensors</div>
+            <div className="p-4 text-sm text-gray-700">{specs.sensors?.join(', ')}</div>
+          </div>
+          
+          <div className="grid grid-cols-2">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Additional Features</div>
+            <div className="p-4 text-sm text-gray-700">
+              <ul className="list-disc list-inside space-y-1">
+                {specs.additionalFeatures?.map((feature, index) => (
+                  <li key={index} className="text-sm">{feature}</li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -370,8 +472,12 @@ export default function SpecificationTable({ robot }: SpecificationTableProps) {
           
           <div className="grid grid-cols-3">
             <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Warranty</div>
-            <div className="p-4 text-sm border-r border-gray-200 text-gray-700">{specs.warranty?.G1}</div>
-            <div className="p-4 text-sm text-gray-700">{specs.warranty?.G1_EDU}</div>
+            <div className="p-4 text-sm border-r border-gray-200 text-gray-700">
+              {typeof specs.warranty === 'object' && specs.warranty ? (specs.warranty as {G1?: string}).G1 : 'N/A'}
+            </div>
+            <div className="p-4 text-sm text-gray-700">
+              {typeof specs.warranty === 'object' && specs.warranty ? (specs.warranty as {G1_EDU?: string}).G1_EDU : 'N/A'}
+            </div>
           </div>
         </div>
       </div>

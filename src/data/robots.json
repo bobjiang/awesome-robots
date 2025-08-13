@@ -90,10 +90,22 @@
       ]
     },
     "specifications": {
-      "dimensions": "Similar to Go2",
-      "weight": "~15 kg",
-      "battery": "Extended range for wheeled operation",
-      "sensors": ["4D LiDAR", "HD cameras", "Wi-Fi 6", "Bluetooth 5.2"]
+      "dimensions": "70cm x 43cm x 50cm",
+      "weight": "~18kg (with battery)",
+      "voltage": "33.6V",
+      "payload": "≈8kg (MAX ~12kg)",
+      "maxSpeed": "0~2.5m/s",
+      "maxClimbHeight": "< 70cm",
+      "maxClimbAngle": "35°",
+      "computingPower": "8-core High-performance CPU",
+      "jointMotors": "16 aluminum knee joint motors",
+      "maxJointTorque": "~45N.m",
+      "tires": "7-inch Pneumatic Tire",
+      "battery": "Long endurance 15000mAh, 1.5-3 hours runtime",
+      "charger": "Fast charge (33.6V 9A)",
+      "warranty": "12 months",
+      "sensors": ["Super-wide-angle 3D LIDAR", "HD Wide-angle Camera", "WIFI6", "4G", "Bluetooth"],
+      "additionalFeatures": ["Upgraded Intelligent OTA", "APP Support", "Manual Controller", "Front Lighting Lamp", "Voice Function", "Secondary Development Support"]
     },
     "features": [
       "Driving All Terrain capability",
