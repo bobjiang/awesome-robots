@@ -6,7 +6,10 @@
       "Bash(npx next:*)",
       "Bash(curl:*)",
       "Bash(git add:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(npm run build:*)",
+      "WebFetch(domain:forms.gle)",
+      "WebFetch(domain:docs.google.com)"
     ],
     "deny": []
   }
