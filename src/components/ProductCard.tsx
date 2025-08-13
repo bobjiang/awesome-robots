@@ -77,11 +77,19 @@ export default function ProductCard({ robot }: ProductCardProps) {
           <div className="text-sm text-gray-500 mb-1">Key Specs:</div>
           <div className="text-sm text-gray-700">
             {robot.specifications.weight || robot.specifications.totalWeight?.H1 || 'Weight N/A'} • {
-              typeof robot.specifications.battery === 'string' 
-                ? robot.specifications.battery.split(',')[0] 
-                : typeof robot.specifications.battery === 'object'
-                  ? robot.specifications.battery.AIR || robot.specifications.battery.PRO || robot.specifications.battery.EDU || 'Battery N/A'
-                  : 'Battery N/A'
+              (() => {
+                if (typeof robot.specifications.battery === 'string') {
+                  return robot.specifications.battery.split(',')[0];
+                } else if (typeof robot.specifications.battery === 'object' && robot.specifications.battery) {
+                  return robot.specifications.battery.AIR || robot.specifications.battery.PRO || robot.specifications.battery.EDU || 'Battery N/A';
+                } else if (robot.specifications.batteryLife) {
+                  return typeof robot.specifications.batteryLife === 'string' ? robot.specifications.batteryLife : 'Battery Info Available';
+                } else if (robot.specifications.batteryCapacity) {
+                  return typeof robot.specifications.batteryCapacity === 'string' ? robot.specifications.batteryCapacity : 'Battery Available';
+                } else {
+                  return 'Battery N/A';
+                }
+              })()
             }
           </div>
         </div>

@@ -22,6 +22,9 @@ export interface Robot {
     sensors?: string[] | {
       A2?: string[];
       A2_PRO?: string[];
+      AIR?: string[];
+      PRO?: string[];
+      EDU?: string[];
     };
     dof?: number;
     maxSpeed?: string | {
