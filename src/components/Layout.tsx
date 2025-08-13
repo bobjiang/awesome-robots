@@ -19,8 +19,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
-              <Link href="/categories" className="text-gray-700 hover:text-blue-600 transition-colors">
-                Categories
+              <Link href="/browse" className="text-gray-700 hover:text-blue-600 transition-colors">
+                Browse All
               </Link>
               <Link href="/brands" className="text-gray-700 hover:text-blue-600 transition-colors">
                 Brands
@@ -48,11 +48,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <div className="md:hidden">
               <div className="px-2 pt-2 pb-3 space-y-1">
                 <Link 
-                  href="/categories" 
+                  href="/browse" 
                   className="block px-3 py-2 text-gray-700 hover:text-blue-600 transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Categories
+                  Browse All
                 </Link>
                 <Link 
                   href="/brands" 

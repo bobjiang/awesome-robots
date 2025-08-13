@@ -23,10 +23,10 @@ export default function RobotDetailPage() {
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Robot Not Found</h1>
           <p className="text-lg text-gray-600 mb-8">The robot you&apos;re looking for doesn&apos;t exist in our catalog.</p>
           <Link 
-            href="/categories"
+            href="/browse"
             className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors"
           >
-            Browse All Categories
+            Browse All Robots
           </Link>
         </div>
       </Layout>
@@ -68,7 +68,7 @@ export default function RobotDetailPage() {
         <nav className="mb-8 text-sm text-gray-500">
           <Link href="/" className="hover:text-blue-600">Home</Link>
           {' > '}
-          <Link href="/categories" className="hover:text-blue-600">Categories</Link>
+          <Link href="/browse" className="hover:text-blue-600">Browse All</Link>
           {' > '}
           <Link href={`/categories/${robot.category}`} className="hover:text-blue-600 capitalize">
             {robot.category}

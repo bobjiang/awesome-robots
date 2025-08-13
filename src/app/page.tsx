@@ -19,10 +19,10 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="/categories"
+                href="/browse"
                 className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
               >
-                Browse Categories
+                Browse All
               </Link>
               <Link
                 href="/brands"
@@ -183,7 +183,7 @@ export default function Home() {
             Browse our comprehensive catalog and discover the AI-powered robot that meets your needs.
           </p>
           <Link
-            href="/categories"
+            href="/browse"
             className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors inline-block"
           >
             Start Exploring
