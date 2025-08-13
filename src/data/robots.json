@@ -15,24 +15,26 @@
     },
     "specifications": {
       "dimensions": "70x31x40 cm (standing), 76x31x20 cm (crouching)",
-      "weight": "About 15kg (with battery)",
-      "material": "Aluminum alloy + High strength engineering plastic",
-      "voltage": "28V~33.6V",
-      "workingMaxPower": "About 3000W",
+      "weight": "~15kg (with battery)",
+      "material": "Aluminum alloy + high-strength engineering plastic",
+      "voltage": "28V-33.6V",
+      "workingMaxPower": "~3000W",
+      "jointMotors": "12 aluminum knee joint motors",
+      "maxJointTorque": "~45 N.m",
       "payload": {
-        "AIR": "≈7kg (MAX ~10kg)",
-        "PRO": "≈8kg (MAX ~10kg)",
-        "EDU": "≈8kg (MAX ~12kg)"
+        "AIR": "~7kg (max ~10kg)",
+        "PRO": "~8kg (max ~10kg)",
+        "EDU": "~8kg (max ~12kg)"
       },
       "maxSpeed": {
-        "AIR": "0 ~ 2.5m/s",
-        "PRO": "0 ~ 3.5m/s",
-        "EDU": "0 ~ 3.7m/s (MAX ~5m/s)"
+        "AIR": "0-2.5 m/s",
+        "PRO": "0-3.5 m/s",
+        "EDU": "0-3.7 m/s (max ~5 m/s)"
       },
       "maxClimbHeight": {
-        "AIR": "About 15cm",
-        "PRO": "About 16cm",
-        "EDU": "About 16cm"
+        "AIR": "15cm",
+        "PRO": "16cm",
+        "EDU": "16cm"
       },
       "maxClimbAngle": {
         "AIR": "30°",
@@ -40,9 +42,9 @@
         "EDU": "40°"
       },
       "computingPower": {
-        "AIR": "Basic",
-        "PRO": "8-core High-performance CPU",
-        "EDU": "8-core High-performance CPU"
+        "AIR": "Basic computing",
+        "PRO": "8-core high-performance CPU",
+        "EDU": "8-core high-performance CPU"
       },
       "wirelessVectorPositioning": {
         "AIR": "Not included",
@@ -55,11 +57,19 @@
         "EDU": "Included"
       },
       "battery": {
-        "AIR": "Standard 8000mAh, About 1-2 hours",
-        "PRO": "Standard 8000mAh, About 1-2 hours",
-        "EDU": "Long endurance 15000mAh, About 2-4 hours"
+        "AIR": "8000mAh, 1-2 hours endurance",
+        "PRO": "8000mAh, 1-2 hours endurance",
+        "EDU": "15000mAh, 2-4 hours endurance"
       },
-      "sensors": ["4D LiDAR L1 360°x90°", "HD wide-angle camera", "Wi-Fi 6", "Bluetooth 5.2", "Optional 4G"]
+      "batteryLife": {
+        "AIR": "1-2 hours",
+        "PRO": "1-2 hours", 
+        "EDU": "2-4 hours"
+      },
+      "connectivity": ["Wi-Fi 6", "Bluetooth 5.2", "Optional 4G"],
+      "sensors": ["3D LiDAR", "HD wide-angle camera", "Wireless vector positioning", "Foot-end force sensors (EDU)"],
+      "aiFeatures": ["GPT-powered AI integration", "Advanced AI modes", "Intelligent Side-follow System (ISS 2.0)"],
+      "softwareUpdates": "Over-the-Air (OTA) upgrades"
     },
     "features": [
       "GPT-powered AI integration",
@@ -93,19 +103,28 @@
       "dimensions": "70cm x 43cm x 50cm",
       "weight": "~18kg (with battery)",
       "voltage": "33.6V",
-      "payload": "≈8kg (MAX ~12kg)",
-      "maxSpeed": "0~2.5m/s",
-      "maxClimbHeight": "< 70cm",
+      "payload": "8kg (max up to 12kg)",
+      "maxSpeed": "0-2.5 m/s",
+      "maxClimbHeight": "70cm",
       "maxClimbAngle": "35°",
-      "computingPower": "8-core High-performance CPU",
+      "computingPower": "8-core high-performance CPU",
       "jointMotors": "16 aluminum knee joint motors",
-      "maxJointTorque": "~45N.m",
-      "tires": "7-inch Pneumatic Tire",
-      "battery": "Long endurance 15000mAh, 1.5-3 hours runtime",
+      "maxJointTorque": "~45 N.m",
+      "tires": "7-inch pneumatic tires",
+      "battery": "15000mAh lithium battery",
+      "batteryLife": "1.5-3 hours runtime",
       "charger": "Fast charge (33.6V 9A)",
       "warranty": "12 months",
-      "sensors": ["Super-wide-angle 3D LIDAR", "HD Wide-angle Camera", "WIFI6", "4G", "Bluetooth"],
-      "additionalFeatures": ["Upgraded Intelligent OTA", "APP Support", "Manual Controller", "Front Lighting Lamp", "Voice Function", "Secondary Development Support"]
+      "connectivity": ["Wi-Fi 6", "4G", "Bluetooth"],
+      "sensors": ["Super-wide-angle 3D LiDAR", "HD wide-angle camera"],
+      "additionalFeatures": [
+        "Continuous OTA software upgrades",
+        "In-wheel motor",
+        "Manual controller included",
+        "Front lighting",
+        "Voice functionality",
+        "Secondary development support"
+      ]
     },
     "features": [
       "Driving All Terrain capability",
@@ -152,13 +171,28 @@
       },
       "calfThighLength": "0.6M",
       "armSpan": "About 0.45M",
-      "computing": "8-core high-performance CPU",
-      "connectivity": ["WiFi 6", "Bluetooth 5.2"],
+      "computing": "8-core CPU",
+      "connectivity": ["Wi-Fi 6", "Bluetooth 5.2"],
       "warranty": {
         "G1": "8 months",
         "G1_EDU": "18 months"
       },
-      "sensors": ["Depth Camera", "3D LiDAR", "4-mic array", "5W speaker"]
+      "sensors": ["Depth Camera", "3D LiDAR"],
+      "movementCapabilities": {
+        "waistJoint": "Z±155°",
+        "kneeJoint": "0-165°",
+        "hipJoint": "Multiple complex angle ranges"
+      },
+      "batteryLife": "~2 hours",
+      "motorType": "Low inertia high-speed internal rotor PMSM",
+      "optionalFeatures": {
+        "G1_EDU": [
+          "Force-controlled three-fingered hand",
+          "Dexterous manipulation capabilities", 
+          "Optional tactile sensor arrays",
+          "NVIDIA Jetson Orin high-computing module"
+        ]
+      }
     },
     "features": [
       "23-43 joint motors with large movement angles",
@@ -389,19 +423,39 @@
     "specifications": {
       "dimensions": "58.8cm x 22cm x 29cm (folded)",
       "weight": "12kg",
-      "material": "Aluminum alloy + High strength engineering plastic",
+      "material": "Aluminum alloy + high strength engineering plastic",
+      "jointMotors": "12 silver alloy precision joint motors",
       "maxSpeed": {
-        "AIR": "0 ~ 2.5m/s",
-        "PRO": "0 ~ 3.5m/s", 
-        "EDU": "0 ~ 3.7m/s (MAX 4.7m/s)"
+        "AIR": "0-2.5 m/s",
+        "PRO": "0-3.5 m/s", 
+        "EDU": "0-3.7 m/s (max 4.7 m/s)"
       },
+      "maxSpeedRecord": "17 km/h (4.7 m/s)",
       "payload": "3-5kg adaptive load capacity",
+      "jointMovementSpace": {
+        "body": "-49° to 49°",
+        "thigh": "-39° to 257°",
+        "shank": "-161° to -51°"
+      },
+      "sensingSystem": "SSS Super-sensing System",
+      "sensingAngle": "≈150 x 170°",
       "sensors": {
         "AIR": ["1 pair of fisheye binocular depth sensors"],
         "PRO": ["5 pairs of fisheye binocular depth sensors"],
-        "EDU": ["5 pairs of fisheye binocular depth sensors", "4G connectivity", "Human sensing"]
+        "EDU": ["5 pairs of fisheye binocular depth sensors", "4G connectivity", "Human sensing", "Foot-end force sensors"]
       },
-      "computing": "16-core CPU + GPU (384 Core, 1.5 TFLOPS)",
+      "computing": {
+        "AIR": "1x (4x1.43GHz, 128Core 0.5T)",
+        "PRO": "3x (4x1.43GHz, 128Core 0.5T)",
+        "EDU": "2 Nano+ (1 Nano or 1NX)"
+      },
+      "processingPower": "16-core top CPU + GPU (384 Core, 1.5 TFLOPS)",
+      "batteryCharging": {
+        "AIR": "24V, 4A",
+        "PRO": "24V, 6A",
+        "EDU": "24V, 6A"
+      },
+      "aiCapabilities": ["Human recognition", "Python programming (EDU)"],
       "warranty": {
         "AIR": "6 months (core components)",
         "PRO": "3 months (non-core components)",
