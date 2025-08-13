@@ -19,7 +19,10 @@ export interface Robot {
       PRO?: string;
       EDU?: string;
     };
-    sensors?: string[];
+    sensors?: string[] | {
+      A2?: string[];
+      A2_PRO?: string[];
+    };
     dof?: number;
     maxSpeed?: string | {
       AIR?: string;
@@ -66,6 +69,48 @@ export interface Robot {
     tires?: string;
     charger?: string;
     additionalFeatures?: string[];
+    // A2 and B2 specific fields
+    dimensionsStanding?: string;
+    dimensionsLying?: string;
+    weightWithoutBattery?: string;
+    supplyVoltage?: string;
+    degreesOfFreedom?: string;
+    jointBearings?: string;
+    batteryCapacity?: string | {
+      single?: string;
+      dual?: string;
+    };
+    batteryLife?: string | {
+      noLoad?: string;
+      withLoad?: string;
+    };
+    maxStandingLoad?: string;
+    continuousWalkingLoad?: string;
+    slopeWalking?: string;
+    stairClimbing?: string;
+    operatingTemperature?: string;
+    ingressProtection?: string | {
+      A2?: string;
+      A2_PRO?: string;
+    };
+    // B2 specific fields  
+    maxRunningSpeed?: string;
+    longestJumpDistance?: string;
+    standingLoad?: string;
+    obstacleCrossing?: string;
+    slopeAngle?: string;
+    batteryVoltage?: string;
+    endurance?: {
+      unloaded?: string;
+      loaded?: string;
+    };
+    ditchJumping?: string;
+    controlPlatform?: string | {
+      standard?: string;
+      userDevelopment?: string;
+      optional?: string;
+    };
+    powerOutputs?: string[];
     // G1 specific fields
     totalDegreesOfFreedom?: string;
     singleLegDOF?: number;

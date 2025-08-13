@@ -273,11 +273,34 @@
       ]
     },
     "specifications": {
-      "dimensions": "Industrial grade dimensions",
-      "weight": "~40 kg",
-      "battery": "Extended industrial runtime",
-      "payload": "High payload capacity",
-      "sensors": ["Industrial-grade sensors", "Environmental protection"]
+      "dimensionsStanding": "≈ 1098mm × 450mm × 645mm",
+      "dimensionsLying": "≈ 880mm × 460mm × 330mm",
+      "weight": "≈ 60kg (including battery)",
+      "maxRunningSpeed": "> 6 m/s",
+      "maxJointTorque": "About 360 N.m",
+      "longestJumpDistance": "> 1.6m",
+      "standingLoad": "120kg max",
+      "continuousWalkingLoad": "> 40kg",
+      "obstacleCrossing": "Max 40cm",
+      "slopeAngle": "> 45°",
+      "batteryCapacity": "45Ah (2250Wh)",
+      "batteryVoltage": "58V",
+      "batteryLife": "4-6 hours",
+      "endurance": {
+        "unloaded": "> 5 hours, > 20km",
+        "loaded": "> 4 hours, > 15km (20kg load)"
+      },
+      "operatingTemperature": "-20℃ ~ 55℃",
+      "ingressProtection": "IP67",
+      "ditchJumping": "0.5~1.2m",
+      "controlPlatform": {
+        "standard": "Intel Core i5",
+        "userDevelopment": "Intel Core i7",
+        "optional": "Intel Core i7 + Jetson Orin NX"
+      },
+      "connectivity": ["1000M-Base-Ethernet × 4", "USB3.0 × 4"],
+      "powerOutputs": ["12V × 4", "5V × 1", "24V × 4"],
+      "sensors": ["3D LiDAR × 1", "Depth camera × 2", "Optical camera × 2"]
     },
     "features": [
       "Go Beyond the Limits",
@@ -299,14 +322,44 @@
       "starting": 30000,
       "currency": "USD", 
       "models": [
-        {"name": "Industrial", "price": "request"}
+        {"name": "A2", "price": "request"},
+        {"name": "A2-PRO", "price": "request"}
       ]
     },
     "specifications": {
-      "dimensions": "Industrial specifications",
-      "weight": "~50 kg",
-      "battery": "Extended runtime for exploration",
-      "sensors": ["Advanced exploration sensors", "Environmental monitoring"]
+      "dimensionsStanding": "820mm x 440mm x 570mm",
+      "dimensionsLying": "720mm x 550mm x 220mm",
+      "material": "Aluminum Alloy + High-Strength Engineering Plastic",
+      "weightWithoutBattery": "~31kg",
+      "weight": "~37kg (with battery)",
+      "supplyVoltage": "50.4V",
+      "degreesOfFreedom": "12 joint motors",
+      "jointBearings": "Industrial-grade crossed roller bearings",
+      "maxJointTorque": "~180 N.m",
+      "batteryCapacity": {
+        "single": "9000mAh (453.6Wh)",
+        "dual": "18000mAh (907.2Wh)"
+      },
+      "batteryLife": {
+        "noLoad": ">5 hours, ~20km", 
+        "withLoad": ">3 hours, ~12.5km (25kg load)"
+      },
+      "maxStandingLoad": "~100kg",
+      "continuousWalkingLoad": "~25kg",
+      "slopeWalking": "~45°",
+      "maxSpeed": "0-3.7 m/s (up to ~5 m/s)",
+      "stairClimbing": "Max 30cm step height",
+      "operatingTemperature": "-20°C to 55°C",
+      "ingressProtection": {
+        "A2": "IP56",
+        "A2_PRO": "IP56-IP67"
+      },
+      "computing": "8-Core high-performance CPU + Intel Core i7",
+      "connectivity": ["Wi-Fi 6", "Bluetooth 5.2"],
+      "sensors": {
+        "A2": ["1x LiDAR", "1x HD Camera"],
+        "A2_PRO": ["2x LiDAR", "1x HD Camera"]
+      }
     },
     "features": [
       "Stellar Explorer capabilities",

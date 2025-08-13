@@ -109,7 +109,9 @@ export default function SpecificationTable({ robot }: SpecificationTableProps) {
           
           <div className="grid grid-cols-4">
             <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Sensors</div>
-            <div className="p-4 text-sm text-gray-700 col-span-3">{specs.sensors?.join(', ')}</div>
+            <div className="p-4 text-sm text-gray-700 col-span-3">
+              {Array.isArray(specs.sensors) ? specs.sensors.join(', ') : 'N/A'}
+            </div>
           </div>
         </div>
       </div>
@@ -200,7 +202,7 @@ export default function SpecificationTable({ robot }: SpecificationTableProps) {
           
           <div className="grid grid-cols-2">
             <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Sensors</div>
-            <div className="p-4 text-sm text-gray-700">{specs.sensors?.join(', ')}</div>
+            <div className="p-4 text-sm text-gray-700">{Array.isArray(specs.sensors) ? specs.sensors.join(', ') : 'N/A'}</div>
           </div>
           
           <div className="grid grid-cols-2">
@@ -212,6 +214,271 @@ export default function SpecificationTable({ robot }: SpecificationTableProps) {
                 ))}
               </ul>
             </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // For A2 robot with detailed specs
+  if (robot.id === 'unitree-a2' && specs.dimensionsStanding) {
+    return (
+      <div className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-lg">
+        <div className="grid grid-cols-3 bg-blue-600 text-white">
+          <div className="p-4 font-semibold border-r border-blue-500">Specification</div>
+          <div className="p-4 font-semibold text-center border-r border-blue-500">A2</div>
+          <div className="p-4 font-semibold text-center">A2-PRO</div>
+        </div>
+        
+        <div className="divide-y divide-gray-200">
+          <div className="grid grid-cols-3">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Size (Standing)</div>
+            <div className="p-4 text-sm text-gray-700 col-span-2">{specs.dimensionsStanding}</div>
+          </div>
+          
+          <div className="grid grid-cols-3">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Size (Lying Prone)</div>
+            <div className="p-4 text-sm text-gray-700 col-span-2">{specs.dimensionsLying}</div>
+          </div>
+          
+          <div className="grid grid-cols-3">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Material</div>
+            <div className="p-4 text-sm text-gray-700 col-span-2">{specs.material}</div>
+          </div>
+          
+          <div className="grid grid-cols-3">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Weight (with battery)</div>
+            <div className="p-4 text-sm text-gray-700 col-span-2">{specs.weight}</div>
+          </div>
+          
+          <div className="grid grid-cols-3">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Weight (without battery)</div>
+            <div className="p-4 text-sm text-gray-700 col-span-2">{specs.weightWithoutBattery}</div>
+          </div>
+          
+          <div className="grid grid-cols-3">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Supply Voltage</div>
+            <div className="p-4 text-sm text-gray-700 col-span-2">{specs.supplyVoltage}</div>
+          </div>
+          
+          <div className="grid grid-cols-3">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Degrees of Freedom</div>
+            <div className="p-4 text-sm text-gray-700 col-span-2">{specs.degreesOfFreedom}</div>
+          </div>
+          
+          <div className="grid grid-cols-3">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Joint Bearings</div>
+            <div className="p-4 text-sm text-gray-700 col-span-2">{specs.jointBearings}</div>
+          </div>
+          
+          <div className="grid grid-cols-3">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Max Joint Torque</div>
+            <div className="p-4 text-sm text-gray-700 col-span-2">{specs.maxJointTorque}</div>
+          </div>
+          
+          <div className="grid grid-cols-3">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Battery Capacity</div>
+            <div className="p-4 text-sm text-gray-700 col-span-2">
+              {typeof specs.batteryCapacity === 'object' ? 
+                `Single: ${specs.batteryCapacity.single}, Dual: ${specs.batteryCapacity.dual}` : 
+                specs.batteryCapacity || 'N/A'}
+            </div>
+          </div>
+          
+          <div className="grid grid-cols-3">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Battery Life</div>
+            <div className="p-4 text-sm text-gray-700 col-span-2">
+              {typeof specs.batteryLife === 'object' ? 
+                `No Load: ${specs.batteryLife.noLoad}, With Load: ${specs.batteryLife.withLoad}` : 
+                specs.batteryLife || 'N/A'}
+            </div>
+          </div>
+          
+          <div className="grid grid-cols-3">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Max Standing Load</div>
+            <div className="p-4 text-sm text-gray-700 col-span-2">{specs.maxStandingLoad}</div>
+          </div>
+          
+          <div className="grid grid-cols-3">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Continuous Walking Load</div>
+            <div className="p-4 text-sm text-gray-700 col-span-2">{specs.continuousWalkingLoad}</div>
+          </div>
+          
+          <div className="grid grid-cols-3">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Slope Walking</div>
+            <div className="p-4 text-sm text-gray-700 col-span-2">{specs.slopeWalking}</div>
+          </div>
+          
+          <div className="grid grid-cols-3">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Max Speed</div>
+            <div className="p-4 text-sm text-gray-700 col-span-2">{typeof specs.maxSpeed === 'string' ? specs.maxSpeed : 'N/A'}</div>
+          </div>
+          
+          <div className="grid grid-cols-3">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Stair Climbing</div>
+            <div className="p-4 text-sm text-gray-700 col-span-2">{specs.stairClimbing}</div>
+          </div>
+          
+          <div className="grid grid-cols-3">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Operating Temperature</div>
+            <div className="p-4 text-sm text-gray-700 col-span-2">{specs.operatingTemperature}</div>
+          </div>
+          
+          <div className="grid grid-cols-3">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Ingress Protection</div>
+            <div className="p-4 text-sm border-r border-gray-200 text-gray-700">
+              {typeof specs.ingressProtection === 'object' ? specs.ingressProtection.A2 : specs.ingressProtection}
+            </div>
+            <div className="p-4 text-sm text-gray-700">
+              {typeof specs.ingressProtection === 'object' ? specs.ingressProtection.A2_PRO : specs.ingressProtection}
+            </div>
+          </div>
+          
+          <div className="grid grid-cols-3">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Computing</div>
+            <div className="p-4 text-sm text-gray-700 col-span-2">{typeof specs.computingPower === 'string' ? specs.computingPower : specs.computing}</div>
+          </div>
+          
+          <div className="grid grid-cols-3">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Connectivity</div>
+            <div className="p-4 text-sm text-gray-700 col-span-2">{specs.connectivity?.join(', ')}</div>
+          </div>
+          
+          <div className="grid grid-cols-3">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Sensors</div>
+            <div className="p-4 text-sm border-r border-gray-200 text-gray-700">
+              {typeof specs.sensors === 'object' && !Array.isArray(specs.sensors) && 'A2' in specs.sensors && specs.sensors.A2 ? 
+                specs.sensors.A2.join(', ') : 
+                (Array.isArray(specs.sensors) ? specs.sensors.join(', ') : 'N/A')}
+            </div>
+            <div className="p-4 text-sm text-gray-700">
+              {typeof specs.sensors === 'object' && !Array.isArray(specs.sensors) && 'A2_PRO' in specs.sensors && specs.sensors.A2_PRO ? 
+                specs.sensors.A2_PRO.join(', ') : 
+                (Array.isArray(specs.sensors) ? specs.sensors.join(', ') : 'N/A')}
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // For B2 robot with detailed specs
+  if (robot.id === 'unitree-b2' && specs.dimensionsStanding) {
+    return (
+      <div className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-lg">
+        <div className="grid grid-cols-2 bg-blue-600 text-white">
+          <div className="p-4 font-semibold border-r border-blue-500">Specification</div>
+          <div className="p-4 font-semibold text-center">B2</div>
+        </div>
+        
+        <div className="divide-y divide-gray-200">
+          <div className="grid grid-cols-2">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Size (Standing)</div>
+            <div className="p-4 text-sm text-gray-700">{specs.dimensionsStanding}</div>
+          </div>
+          
+          <div className="grid grid-cols-2">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Size (Lying Prone)</div>
+            <div className="p-4 text-sm text-gray-700">{specs.dimensionsLying}</div>
+          </div>
+          
+          <div className="grid grid-cols-2">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Weight (including battery)</div>
+            <div className="p-4 text-sm text-gray-700">{specs.weight}</div>
+          </div>
+          
+          <div className="grid grid-cols-2">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Max Running Speed</div>
+            <div className="p-4 text-sm text-gray-700">{specs.maxRunningSpeed}</div>
+          </div>
+          
+          <div className="grid grid-cols-2">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Max Joint Torque</div>
+            <div className="p-4 text-sm text-gray-700">{specs.maxJointTorque}</div>
+          </div>
+          
+          <div className="grid grid-cols-2">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Longest Jump Distance</div>
+            <div className="p-4 text-sm text-gray-700">{specs.longestJumpDistance}</div>
+          </div>
+          
+          <div className="grid grid-cols-2">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Standing Load</div>
+            <div className="p-4 text-sm text-gray-700">{specs.standingLoad}</div>
+          </div>
+          
+          <div className="grid grid-cols-2">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Continuous Walking Load</div>
+            <div className="p-4 text-sm text-gray-700">{specs.continuousWalkingLoad}</div>
+          </div>
+          
+          <div className="grid grid-cols-2">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Obstacle Crossing</div>
+            <div className="p-4 text-sm text-gray-700">{specs.obstacleCrossing}</div>
+          </div>
+          
+          <div className="grid grid-cols-2">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Slope Angle</div>
+            <div className="p-4 text-sm text-gray-700">{specs.slopeAngle}</div>
+          </div>
+          
+          <div className="grid grid-cols-2">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Battery</div>
+            <div className="p-4 text-sm text-gray-700">
+              {typeof specs.batteryCapacity === 'string' ? specs.batteryCapacity : 'N/A'} @ {specs.batteryVoltage}
+            </div>
+          </div>
+          
+          <div className="grid grid-cols-2">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Battery Life</div>
+            <div className="p-4 text-sm text-gray-700">{typeof specs.batteryLife === 'string' ? specs.batteryLife : 'N/A'}</div>
+          </div>
+          
+          <div className="grid grid-cols-2">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Endurance</div>
+            <div className="p-4 text-sm text-gray-700">
+              Unloaded: {specs.endurance?.unloaded}<br/>
+              Loaded: {specs.endurance?.loaded}
+            </div>
+          </div>
+          
+          <div className="grid grid-cols-2">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Operating Temperature</div>
+            <div className="p-4 text-sm text-gray-700">{specs.operatingTemperature}</div>
+          </div>
+          
+          <div className="grid grid-cols-2">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Ingress Protection</div>
+            <div className="p-4 text-sm text-gray-700">{typeof specs.ingressProtection === 'string' ? specs.ingressProtection : 'N/A'}</div>
+          </div>
+          
+          <div className="grid grid-cols-2">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Ditch Jumping</div>
+            <div className="p-4 text-sm text-gray-700">{specs.ditchJumping}</div>
+          </div>
+          
+          <div className="grid grid-cols-2">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Control Platform</div>
+            <div className="p-4 text-sm text-gray-700">
+              {typeof specs.controlPlatform === 'object' ? 
+                `Standard: ${specs.controlPlatform.standard}, User Dev: ${specs.controlPlatform.userDevelopment}, Optional: ${specs.controlPlatform.optional}` : 
+                specs.controlPlatform || 'N/A'}
+            </div>
+          </div>
+          
+          <div className="grid grid-cols-2">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Connectivity</div>
+            <div className="p-4 text-sm text-gray-700">{specs.connectivity?.join(', ')}</div>
+          </div>
+          
+          <div className="grid grid-cols-2">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Power Outputs</div>
+            <div className="p-4 text-sm text-gray-700">{specs.powerOutputs?.join(', ')}</div>
+          </div>
+          
+          <div className="grid grid-cols-2">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Sensors</div>
+            <div className="p-4 text-sm text-gray-700">{Array.isArray(specs.sensors) ? specs.sensors.join(', ') : 'N/A'}</div>
           </div>
         </div>
       </div>
@@ -466,7 +733,7 @@ export default function SpecificationTable({ robot }: SpecificationTableProps) {
           <div className="grid grid-cols-3">
             <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Sensors</div>
             <div className="p-4 text-sm text-gray-700 col-span-2">
-              {specs.sensors?.join(', ')}
+              {Array.isArray(specs.sensors) ? specs.sensors.join(', ') : 'N/A'}
             </div>
           </div>
           
@@ -530,7 +797,7 @@ export default function SpecificationTable({ robot }: SpecificationTableProps) {
             <div className="text-gray-900">{specs.dof}</div>
           </div>
         )}
-        {specs.sensors && specs.sensors.length > 0 && (
+        {Array.isArray(specs.sensors) && specs.sensors.length > 0 && (
           <div className="grid grid-cols-2 p-4">
             <div className="font-medium text-gray-700">Sensors</div>
             <div className="text-gray-900">
