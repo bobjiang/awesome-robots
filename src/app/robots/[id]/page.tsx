@@ -15,8 +15,6 @@ export default function RobotDetailPage() {
   const robotId = params.id as string;
   const robot = (robots as Robot[]).find((r: Robot) => r.id === robotId);
   const [showQuoteForm, setShowQuoteForm] = useState(false);
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitMessage, setSubmitMessage] = useState('');
 
   if (!robot) {
     return (
@@ -62,52 +60,6 @@ export default function RobotDetailPage() {
     );
   };
 
-  const handleQuoteSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setSubmitMessage('');
-
-    const formData = new FormData(e.currentTarget);
-    
-    // Create Google Form submission data
-    const googleFormData = new FormData();
-    googleFormData.append('entry.597028772', formData.get('brand') as string); // Brand
-    googleFormData.append('entry.1231966112', formData.get('product') as string); // Product
-    googleFormData.append('entry.1373275608', formData.get('name') as string); // Name
-    googleFormData.append('entry.810095641', formData.get('email') as string); // Email
-    googleFormData.append('entry.1631538843', formData.get('company') as string || ''); // Company
-    googleFormData.append('entry.835337774', formData.get('message') as string || ''); // Message
-
-    try {
-      await fetch(
-        'https://docs.google.com/forms/d/e/1FAIpQLSeFwatUYu2WK7uDIOKml7goBtFWdVEl9mFkyAh-I75UPNkHSg/formResponse',
-        {
-          method: 'POST',
-          body: googleFormData,
-          mode: 'no-cors' // Required for Google Forms
-        }
-      );
-      
-      // Since we use no-cors, we can't check the actual response
-      // but if we reach here without error, the submission likely succeeded
-      setSubmitMessage('Quote request submitted successfully! We will contact you soon.');
-      
-      // Reset form
-      (e.target as HTMLFormElement).reset();
-      
-      // Close modal after delay
-      setTimeout(() => {
-        setShowQuoteForm(false);
-        setSubmitMessage('');
-      }, 3000);
-      
-    } catch (error) {
-      console.error('Error submitting form:', error);
-      setSubmitMessage('Failed to submit request. Please try again or contact us directly.');
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
 
   return (
     <Layout>
@@ -230,8 +182,8 @@ export default function RobotDetailPage() {
       {/* Quote Form Modal */}
       {showQuoteForm && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
-          <div className="bg-white rounded-xl max-w-md w-full p-6">
-            <div className="flex justify-between items-center mb-6">
+          <div className="bg-white rounded-xl max-w-2xl w-full max-h-[90vh] overflow-hidden">
+            <div className="flex justify-between items-center p-6 border-b border-gray-200">
               <h3 className="text-xl font-semibold text-gray-900">Request Quote</h3>
               <button
                 onClick={() => setShowQuoteForm(false)}
@@ -243,96 +195,26 @@ export default function RobotDetailPage() {
               </button>
             </div>
             
-            <div className="mb-4">
+            <div className="p-6 border-b border-gray-200">
               <p className="text-gray-600">Product: <strong>{robot.name}</strong></p>
               <p className="text-gray-600">Brand: <strong>{robot.brand}</strong></p>
+              <p className="text-sm text-gray-500 mt-2">Please fill out the form below to request a quote for this robot.</p>
             </div>
             
-            {submitMessage && (
-              <div className={`mb-4 p-3 rounded-md ${
-                submitMessage.includes('successful') 
-                  ? 'bg-green-100 text-green-800' 
-                  : 'bg-red-100 text-red-800'
-              }`}>
-                {submitMessage}
-              </div>
-            )}
-            
-            <form className="space-y-4" onSubmit={handleQuoteSubmit}>
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Brand</label>
-                <input
-                  type="text"
-                  name="brand"
-                  value={robot.brand}
-                  readOnly
-                  required
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md bg-gray-50 text-gray-700"
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Product</label>
-                <input
-                  type="text"
-                  name="product"
-                  value={robot.name}
-                  readOnly
-                  required
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md bg-gray-50 text-gray-700"
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Name</label>
-                <input
-                  type="text"
-                  name="name"
-                  required
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
-                <input
-                  type="email"
-                  name="email"
-                  required
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Company (Optional)</label>
-                <input
-                  type="text"
-                  name="company"
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Message</label>
-                <textarea
-                  name="message"
-                  rows={4}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
-                  placeholder="Please describe your requirements and intended use case..."
-                ></textarea>
-              </div>
-              <div className="flex gap-3">
-                <button
-                  type="button"
-                  onClick={() => setShowQuoteForm(false)}
-                  className="flex-1 border border-gray-300 text-gray-700 py-2 rounded-md hover:bg-gray-50 transition-colors"
-                >
-                  Cancel
-                </button>
-                <button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="flex-1 bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-                >
-                  {isSubmitting ? 'Sending...' : 'Send Request'}
-                </button>
-              </div>
-            </form>
+            <div className="overflow-y-auto" style={{ height: 'calc(90vh - 200px)' }}>
+              <iframe 
+                src="https://docs.google.com/forms/d/e/1FAIpQLSeFwatUYu2WK7uDIOKml7goBtFWdVEl9mFkyAh-I75UPNkHSg/viewform?embedded=true" 
+                width="100%" 
+                height="1094" 
+                frameBorder="0" 
+                marginHeight={0} 
+                marginWidth={0}
+                title="Quote Request Form"
+                className="border-0"
+              >
+                Loading…
+              </iframe>
+            </div>
           </div>
         </div>
       )}
