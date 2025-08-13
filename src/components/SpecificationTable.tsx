@@ -9,6 +9,113 @@ interface SpecificationTableProps {
 export default function SpecificationTable({ robot }: SpecificationTableProps) {
   const specs = robot.specifications;
 
+  // For Go2 robot with detailed variant specs
+  if (robot.id === 'unitree-go2' && specs.payload && typeof specs.payload === 'object') {
+    return (
+      <div className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-lg">
+        <div className="grid grid-cols-4 bg-blue-600 text-white">
+          <div className="p-4 font-semibold border-r border-blue-500">Model</div>
+          <div className="p-4 font-semibold text-center border-r border-blue-500">Go2 AIR</div>
+          <div className="p-4 font-semibold text-center border-r border-blue-500">Go2 PRO</div>
+          <div className="p-4 font-semibold text-center">Go2 EDU</div>
+        </div>
+        
+        <div className="divide-y divide-gray-200">
+          <div className="grid grid-cols-4">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Dimensions (Standing)</div>
+            <div className="p-4 text-sm border-r border-gray-200 text-gray-700 col-span-3">{specs.dimensions?.split(', ')[0]}</div>
+          </div>
+          
+          <div className="grid grid-cols-4">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Dimensions (Crouching)</div>
+            <div className="p-4 text-sm border-r border-gray-200 text-gray-700 col-span-3">{specs.dimensions?.split(', ')[1]}</div>
+          </div>
+          
+          <div className="grid grid-cols-4">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Weight (with Battery)</div>
+            <div className="p-4 text-sm border-r border-gray-200 text-gray-700 col-span-3">{specs.weight}</div>
+          </div>
+          
+          <div className="grid grid-cols-4">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Material</div>
+            <div className="p-4 text-sm border-r border-gray-200 text-gray-700 col-span-3">{specs.material}</div>
+          </div>
+          
+          <div className="grid grid-cols-4">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Voltage</div>
+            <div className="p-4 text-sm border-r border-gray-200 text-gray-700 col-span-3">{specs.voltage}</div>
+          </div>
+          
+          <div className="grid grid-cols-4">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Working Maximum Power</div>
+            <div className="p-4 text-sm border-r border-gray-200 text-gray-700 col-span-3">{specs.workingMaxPower}</div>
+          </div>
+          
+          <div className="grid grid-cols-4">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Payload</div>
+            <div className="p-4 text-sm border-r border-gray-200 text-gray-700">{typeof specs.payload === 'object' ? specs.payload.AIR : ''}</div>
+            <div className="p-4 text-sm border-r border-gray-200 text-gray-700">{typeof specs.payload === 'object' ? specs.payload.PRO : ''}</div>
+            <div className="p-4 text-sm text-gray-700">{typeof specs.payload === 'object' ? specs.payload.EDU : ''}</div>
+          </div>
+          
+          <div className="grid grid-cols-4">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Maximum Speed</div>
+            <div className="p-4 text-sm border-r border-gray-200 text-gray-700">{typeof specs.maxSpeed === 'object' ? specs.maxSpeed.AIR : ''}</div>
+            <div className="p-4 text-sm border-r border-gray-200 text-gray-700">{typeof specs.maxSpeed === 'object' ? specs.maxSpeed.PRO : ''}</div>
+            <div className="p-4 text-sm text-gray-700">{typeof specs.maxSpeed === 'object' ? specs.maxSpeed.EDU : ''}</div>
+          </div>
+          
+          <div className="grid grid-cols-4">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Max Climb Height</div>
+            <div className="p-4 text-sm border-r border-gray-200 text-gray-700">{specs.maxClimbHeight?.AIR}</div>
+            <div className="p-4 text-sm border-r border-gray-200 text-gray-700">{specs.maxClimbHeight?.PRO}</div>
+            <div className="p-4 text-sm text-gray-700">{specs.maxClimbHeight?.EDU}</div>
+          </div>
+          
+          <div className="grid grid-cols-4">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Max Climb Angle</div>
+            <div className="p-4 text-sm border-r border-gray-200 text-gray-700">{specs.maxClimbAngle?.AIR}</div>
+            <div className="p-4 text-sm border-r border-gray-200 text-gray-700">{specs.maxClimbAngle?.PRO}</div>
+            <div className="p-4 text-sm text-gray-700">{specs.maxClimbAngle?.EDU}</div>
+          </div>
+          
+          <div className="grid grid-cols-4">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Computing Power</div>
+            <div className="p-4 text-sm border-r border-gray-200 text-gray-700">{typeof specs.computingPower === 'object' ? specs.computingPower.AIR : ''}</div>
+            <div className="p-4 text-sm border-r border-gray-200 text-gray-700">{typeof specs.computingPower === 'object' ? specs.computingPower.PRO : ''}</div>
+            <div className="p-4 text-sm text-gray-700">{typeof specs.computingPower === 'object' ? specs.computingPower.EDU : ''}</div>
+          </div>
+          
+          <div className="grid grid-cols-4">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Wireless Vector Positioning</div>
+            <div className="p-4 text-sm border-r border-gray-200 text-gray-700">{specs.wirelessVectorPositioning?.AIR}</div>
+            <div className="p-4 text-sm border-r border-gray-200 text-gray-700">{specs.wirelessVectorPositioning?.PRO}</div>
+            <div className="p-4 text-sm text-gray-700">{specs.wirelessVectorPositioning?.EDU}</div>
+          </div>
+          
+          <div className="grid grid-cols-4">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Foot-end Force Sensor</div>
+            <div className="p-4 text-sm border-r border-gray-200 text-gray-700">{specs.footEndForceSensor?.AIR}</div>
+            <div className="p-4 text-sm border-r border-gray-200 text-gray-700">{specs.footEndForceSensor?.PRO}</div>
+            <div className="p-4 text-sm text-gray-700">{specs.footEndForceSensor?.EDU}</div>
+          </div>
+          
+          <div className="grid grid-cols-4">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Battery</div>
+            <div className="p-4 text-sm border-r border-gray-200 text-gray-700">{typeof specs.battery === 'object' ? specs.battery.AIR : ''}</div>
+            <div className="p-4 text-sm border-r border-gray-200 text-gray-700">{typeof specs.battery === 'object' ? specs.battery.PRO : ''}</div>
+            <div className="p-4 text-sm text-gray-700">{typeof specs.battery === 'object' ? specs.battery.EDU : ''}</div>
+          </div>
+          
+          <div className="grid grid-cols-4">
+            <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Sensors</div>
+            <div className="p-4 text-sm text-gray-700 col-span-3">{specs.sensors?.join(', ')}</div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   // For H1/H1-2 robots with detailed comparative specs
   if (robot.id === 'unitree-h1' && specs.keyDimensions) {
     return (
@@ -90,7 +197,9 @@ export default function SpecificationTable({ robot }: SpecificationTableProps) {
           
           <div className="grid grid-cols-3">
             <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Battery</div>
-            <div className="p-4 text-sm text-gray-700 col-span-2">{specs.battery}</div>
+            <div className="p-4 text-sm text-gray-700 col-span-2">
+              {typeof specs.battery === 'string' ? specs.battery : 'N/A'}
+            </div>
           </div>
           
           <div className="grid grid-cols-3">
@@ -235,7 +344,9 @@ export default function SpecificationTable({ robot }: SpecificationTableProps) {
           
           <div className="grid grid-cols-3">
             <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Battery</div>
-            <div className="p-4 text-sm text-gray-700 col-span-2">{specs.battery}</div>
+            <div className="p-4 text-sm text-gray-700 col-span-2">
+              {typeof specs.battery === 'string' ? specs.battery : 'N/A'}
+            </div>
           </div>
           
           <div className="grid grid-cols-3">
@@ -286,19 +397,25 @@ export default function SpecificationTable({ robot }: SpecificationTableProps) {
         {specs.battery && (
           <div className="grid grid-cols-2 p-4">
             <div className="font-medium text-gray-700">Battery</div>
-            <div className="text-gray-900">{specs.battery}</div>
+            <div className="text-gray-900">
+              {typeof specs.battery === 'string' ? specs.battery : 'N/A'}
+            </div>
           </div>
         )}
         {specs.maxSpeed && (
           <div className="grid grid-cols-2 p-4">
             <div className="font-medium text-gray-700">Max Speed</div>
-            <div className="text-gray-900">{specs.maxSpeed}</div>
+            <div className="text-gray-900">
+              {typeof specs.maxSpeed === 'string' ? specs.maxSpeed : 'N/A'}
+            </div>
           </div>
         )}
         {specs.payload && (
           <div className="grid grid-cols-2 p-4">
             <div className="font-medium text-gray-700">Payload</div>
-            <div className="text-gray-900">{specs.payload}</div>
+            <div className="text-gray-900">
+              {typeof specs.payload === 'string' ? specs.payload : 'N/A'}
+            </div>
           </div>
         )}
         {specs.dof && (

@@ -15,10 +15,50 @@
     },
     "specifications": {
       "dimensions": "70x31x40 cm (standing), 76x31x20 cm (crouching)",
-      "weight": "~15 kg",
-      "battery": "28V-33.6V, 1-4 hours runtime",
-      "maxSpeed": "~5 m/s",
-      "payload": "~7-8 kg (max ~10-12 kg)",
+      "weight": "About 15kg (with battery)",
+      "material": "Aluminum alloy + High strength engineering plastic",
+      "voltage": "28V~33.6V",
+      "workingMaxPower": "About 3000W",
+      "payload": {
+        "AIR": "≈7kg (MAX ~10kg)",
+        "PRO": "≈8kg (MAX ~10kg)",
+        "EDU": "≈8kg (MAX ~12kg)"
+      },
+      "maxSpeed": {
+        "AIR": "0 ~ 2.5m/s",
+        "PRO": "0 ~ 3.5m/s",
+        "EDU": "0 ~ 3.7m/s (MAX ~5m/s)"
+      },
+      "maxClimbHeight": {
+        "AIR": "About 15cm",
+        "PRO": "About 16cm",
+        "EDU": "About 16cm"
+      },
+      "maxClimbAngle": {
+        "AIR": "30°",
+        "PRO": "40°",
+        "EDU": "40°"
+      },
+      "computingPower": {
+        "AIR": "Basic",
+        "PRO": "8-core High-performance CPU",
+        "EDU": "8-core High-performance CPU"
+      },
+      "wirelessVectorPositioning": {
+        "AIR": "Not included",
+        "PRO": "Included",
+        "EDU": "Included"
+      },
+      "footEndForceSensor": {
+        "AIR": "Not included",
+        "PRO": "Not included",
+        "EDU": "Included"
+      },
+      "battery": {
+        "AIR": "Standard 8000mAh, About 1-2 hours",
+        "PRO": "Standard 8000mAh, About 1-2 hours",
+        "EDU": "Long endurance 15000mAh, About 2-4 hours"
+      },
       "sensors": ["4D LiDAR L1 360°x90°", "HD wide-angle camera", "Wi-Fi 6", "Bluetooth 5.2", "Optional 4G"]
     },
     "features": [

@@ -14,11 +14,52 @@ export interface Robot {
   specifications: {
     dimensions?: string;
     weight?: string;
-    battery?: string;
+    battery?: string | {
+      AIR?: string;
+      PRO?: string;
+      EDU?: string;
+    };
     sensors?: string[];
     dof?: number;
-    maxSpeed?: string;
-    payload?: string;
+    maxSpeed?: string | {
+      AIR?: string;
+      PRO?: string;
+      EDU?: string;
+    };
+    payload?: string | {
+      AIR?: string;
+      PRO?: string;
+      EDU?: string;
+    };
+    // Go2 specific fields
+    material?: string;
+    voltage?: string;
+    workingMaxPower?: string;
+    maxClimbHeight?: {
+      AIR?: string;
+      PRO?: string;
+      EDU?: string;
+    };
+    maxClimbAngle?: {
+      AIR?: string;
+      PRO?: string;
+      EDU?: string;
+    };
+    computingPower?: string | {
+      AIR?: string;
+      PRO?: string;
+      EDU?: string;
+    };
+    wirelessVectorPositioning?: {
+      AIR?: string;
+      PRO?: string;
+      EDU?: string;
+    };
+    footEndForceSensor?: {
+      AIR?: string;
+      PRO?: string;
+      EDU?: string;
+    };
     // G1 specific fields
     totalDegreesOfFreedom?: string;
     singleLegDOF?: number;
