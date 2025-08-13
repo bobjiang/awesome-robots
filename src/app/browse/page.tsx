@@ -1,6 +1,7 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect, Suspense } from 'react';
+import { useSearchParams } from 'next/navigation';
 import Layout from '@/components/Layout';
 import ProductCard from '@/components/ProductCard';
 import SearchBar from '@/components/SearchBar';
@@ -9,7 +10,8 @@ import { Robot, FilterOptions } from '@/types/robot';
 import robots from '@/data/robots.json';
 import categories from '@/data/categories.json';
 
-export default function BrowseAllPage() {
+function BrowseContent() {
+  const searchParams = useSearchParams();
   const [searchQuery, setSearchQuery] = useState('');
   const [sortBy, setSortBy] = useState('name');
   const [filters, setFilters] = useState<FilterOptions>({
@@ -17,6 +19,20 @@ export default function BrowseAllPage() {
     brands: [],
     priceRange: { min: 0, max: 200000 }
   });
+
+  // Initialize filters from URL parameters
+  useEffect(() => {
+    const categoryParam = searchParams.get('category');
+    const brandParam = searchParams.get('brand');
+    
+    if (categoryParam || brandParam) {
+      setFilters(prev => ({
+        ...prev,
+        categories: categoryParam ? [categoryParam] : prev.categories,
+        brands: brandParam ? [brandParam] : prev.brands
+      }));
+    }
+  }, [searchParams]);
 
   const filteredRobots = useMemo(() => {
     const filtered = (robots as Robot[]).filter((robot: Robot) => {
@@ -226,5 +242,22 @@ export default function BrowseAllPage() {
         </div>
       </div>
     </Layout>
+  );
+}
+
+export default function BrowseAllPage() {
+  return (
+    <Suspense fallback={
+      <Layout>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div className="text-center">
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
+            <p className="text-gray-600">Loading robots...</p>
+          </div>
+        </div>
+      </Layout>
+    }>
+      <BrowseContent />
+    </Suspense>
   );
 }

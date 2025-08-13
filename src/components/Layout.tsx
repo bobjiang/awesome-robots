@@ -89,19 +89,19 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <div>
               <h4 className="text-md font-medium mb-4">Categories</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><Link href="/categories/humanoid" className="hover:text-white">Humanoid Robots</Link></li>
-                <li><Link href="/categories/quadruped" className="hover:text-white">Quadruped Robots</Link></li>
-                <li><Link href="/categories/accessory" className="hover:text-white">Accessories</Link></li>
-                <li><Link href="/categories/other" className="hover:text-white">Other Robots</Link></li>
+                <li><Link href="/browse?category=humanoid" className="hover:text-white">Humanoid Robots</Link></li>
+                <li><Link href="/browse?category=quadruped" className="hover:text-white">Quadruped Robots</Link></li>
+                <li><Link href="/browse?category=accessory" className="hover:text-white">Accessories</Link></li>
+                <li><Link href="/browse?category=other" className="hover:text-white">Other Robots</Link></li>
               </ul>
             </div>
             
             <div>
               <h4 className="text-md font-medium mb-4">Brands</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><Link href="/brands/unitree" className="hover:text-white">Unitree</Link></li>
-                <li><Link href="/brands/boston-dynamics" className="hover:text-white">Boston Dynamics</Link></li>
-                <li><Link href="/brands/ubtech" className="hover:text-white">UBTech</Link></li>
+                <li><Link href="/browse?brand=Unitree" className="hover:text-white">Unitree</Link></li>
+                <li><Link href="/browse?brand=Boston Dynamics" className="hover:text-white">Boston Dynamics</Link></li>
+                <li><Link href="/browse?brand=UBTech" className="hover:text-white">UBTech</Link></li>
               </ul>
             </div>
             

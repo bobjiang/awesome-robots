@@ -51,7 +51,7 @@ export default function Home() {
             {categories.map((category) => (
               <Link
                 key={category.id}
-                href={`/categories/${category.id}`}
+                href={`/browse?category=${category.id}`}
                 className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 hover:shadow-lg transition-all duration-300"
               >
                 <div className="mb-4 w-16 h-16 mx-auto relative">

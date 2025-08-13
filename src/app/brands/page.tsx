@@ -23,7 +23,7 @@ export default function BrandsPage() {
           {brands.map((brand) => (
             <Link
               key={brand.id}
-              href={`/brands/${brand.id}`}
+              href={`/browse?brand=${brand.name}`}
               className="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300"
             >
               <div className="h-48 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center group-hover:from-blue-50 group-hover:to-blue-100 transition-colors p-8">
@@ -49,7 +49,7 @@ export default function BrandsPage() {
                 
                 <div className="flex items-center justify-between">
                   <div className="flex items-center text-blue-600 group-hover:text-blue-700 transition-colors">
-                    <span className="font-medium">View Products</span>
+                    <span className="font-medium">View {brand.name} Robots</span>
                     <svg 
                       className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" 
                       fill="none" 
