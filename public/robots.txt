@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://awesome-robots.vercel.app/sitemap.xml
+
+# Allow crawling of all important pages
+Allow: /robots/
+Allow: /categories/
+Allow: /brands
+Allow: /browse
+
+# Block any development or admin paths (if they exist)
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Crawl delay (optional - be respectful to search engines)
+Crawl-delay: 1

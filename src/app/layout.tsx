@@ -15,6 +15,38 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Awesome Robots - AI-Powered Robot Catalog",
   description: "Discover the latest AI-powered robots including humanoids, quadrupeds, and accessories. Browse comprehensive robot specifications, compare models, and find the perfect robot for research, education, or industry.",
+  keywords: "AI robots, humanoid robots, quadruped robots, robot catalog, Unitree robots, robot specifications, robotics research, educational robots, industrial robots",
+  authors: [{ name: "Awesome Robots Team" }],
+  creator: "Awesome Robots",
+  publisher: "Awesome Robots",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://awesome-robots.vercel.app'),
+  alternates: {
+    canonical: '/',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: '/',
+    title: 'Awesome Robots - AI-Powered Robot Catalog',
+    description: 'Discover the latest AI-powered robots including humanoids, quadrupeds, and accessories.',
+    siteName: 'Awesome Robots',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Awesome Robots - AI-Powered Robot Catalog',
+    description: 'Discover the latest AI-powered robots including humanoids, quadrupeds, and accessories.',
+  },
 };
 
 export default function RootLayout({
