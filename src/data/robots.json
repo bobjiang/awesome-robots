@@ -81,7 +81,11 @@
       "Max climb height: ~15-16 cm",
       "Max climb angle: 30-40°"
     ],
-    "images": ["/images/robots/unitree-go2-1.jpg"],
+    "images": [
+      "/images/robots/go2-1.jpg",
+      "/images/robots/go2-2.jpg",
+      "/images/robots/go2-3.jpg"
+    ],
     "videos": [],
     "documentation": ["User Manual", "SDK Documentation"],
     "officialUrl": "https://www.unitree.com/go2",
@@ -132,7 +136,9 @@
       "Enhanced mobility",
       "AI-powered navigation"
     ],
-    "images": ["/images/robots/unitree-go2-w-1.jpg"],
+    "images": [
+      "/images/robots/quadruped/go2-w-1.png"
+    ],
     "officialUrl": "https://www.unitree.com/go2-w",
     "description": "Driving All Terrain - Enhanced Go2 variant with wheeled capabilities for improved mobility across diverse surfaces."
   },
@@ -205,7 +211,11 @@
       "OTA software upgrades",
       "18-month warranty (EDU model)"
     ],
-    "images": ["/images/robots/unitree-g1-1.jpg"],
+    "images": [
+      "/images/robots/g1-1.jpg",
+      "/images/robots/g1-2.jpg",
+      "/images/robots/g1-3.jpg"
+    ],
     "documentation": ["Secondary development manual", "SDK Documentation"],
     "officialUrl": "https://www.unitree.com/g1",
     "description": "Humanoid agent AI avatar - Advanced humanoid robot with high degrees of freedom and AI capabilities for research and development."
@@ -290,7 +300,10 @@
       "Continuous Over-The-Air (OTA) software upgrades",
       "Quick-replaceable battery system"
     ],
-    "images": ["/images/robots/unitree-h1-1.jpg"],
+    "images": [
+      "/images/robots/h1-1.jpg",
+      "/images/robots/h1-2.png"
+    ],
     "officialUrl": "https://www.unitree.com/h1",
     "description": "Unitree's First Universal Humanoid Robot - Full-size humanoid robot capable of running and navigating complex terrains with advanced mobility."
   },
@@ -343,7 +356,9 @@
       "Heavy-duty performance",
       "Environmental resistance"
     ],
-    "images": ["/images/robots/unitree-b2-1.jpg"],
+    "images": [
+      "/images/robots/unitree-b2.png"
+    ],
     "officialUrl": "https://www.unitree.com/b2",
     "description": "Go Beyond the Limits - Industrial quadruped robot designed for demanding environments and heavy-duty applications."
   },
@@ -402,7 +417,9 @@
       "Autonomous navigation",
       "Research-grade sensors"
     ],
-    "images": ["/images/robots/unitree-a2-1.jpg"],
+    "images": [
+      "/images/robots/unitree-b2.png"
+    ],
     "officialUrl": "https://www.unitree.com/A2",
     "description": "Stellar Explorer - Advanced industrial quadruped robot designed for exploration and research applications."
   },
@@ -472,7 +489,9 @@
       "Lightweight 12kg design",
       "Adaptive joint flexibility"
     ],
-    "images": ["/images/robots/unitree-go1-1.jpg"],
+    "images": [
+      "/images/robots/unitree-go2.png"
+    ],
     "officialUrl": "https://www.unitree.com/go1",
     "description": "Advanced quadruped robot with high-speed capabilities and intelligent sensing for education and research applications."
   },
@@ -514,7 +533,11 @@
       "Complex terrain navigation",
       "Multiple application scenarios"
     ],
-    "images": ["/images/robots/unitree-b1-1.jpg"],
+    "images": [
+      "/images/robots/quadruped/b1-1.png",
+      "/images/robots/quadruped/b1-2.png",
+      "/images/robots/quadruped/b1-3.png"
+    ],
     "officialUrl": "https://www.unitree.com/b1",
     "description": "Industrial quadruped robot designed for agriculture, security patrols, surveys, and public rescue operations."
   },
@@ -554,7 +577,9 @@
       "Flexible external interfaces",
       "Optional LiDAR integration"
     ],
-    "images": ["/images/robots/unitree-aliengo-1.jpg"],
+    "images": [
+      "/images/robots/unitree-go2.png"
+    ],
     "officialUrl": "https://www.unitree.com/aliengo",
     "description": "Versatile quadruped robot with advanced mobility and sensing capabilities for research and industrial applications."
   },
@@ -597,7 +622,10 @@
       "Advanced AI processing capabilities",
       "Compact form factor"
     ],
-    "images": ["/images/robots/unitree-r1-1.jpg"],
+    "images": [
+      "/images/robots/humanoid/r1-1.png",
+      "/images/robots/humanoid/r1-2.png"
+    ],
     "officialUrl": "https://www.unitree.com/r1",
     "description": "Ultra-lightweight, fully customizable humanoid robot platform for research and development applications."
   },
@@ -632,7 +660,10 @@
       "Motion-capture integration",
       "Professional athletic performance"
     ],
-    "images": ["/images/robots/unitree-g1-comp-1.jpg"],
+    "images": [
+      "/images/robots/humanoid/g1-comp-1.jpg",
+      "/images/robots/humanoid/g1-comp-2.png"
+    ],
     "officialUrl": "https://www.unitree.com/g1",
     "description": "Competition-specialized variant of G1 humanoid robot designed for athletic performance and RoboCup competitions."
   },
@@ -667,7 +698,9 @@
       "Punches, hooks, and kicks execution",
       "Martial arts movement patterns"
     ],
-    "images": ["/images/robots/unitree-g1-boxing-1.jpg"],
+    "images": [
+      "/images/robots/humanoid/g1-boxing-1.png"
+    ],
     "officialUrl": "https://www.unitree.com/g1",
     "description": "Boxing-specialized variant of G1 humanoid robot designed for combat sports and martial arts applications."
   },
@@ -713,7 +746,9 @@
       "Open programming interface",
       "Quick actuator replacement support"
     ],
-    "images": ["/images/robots/unitree-z1-1.jpg"],
+    "images": [
+      "/images/robots/unitree-h1.png"
+    ],
     "officialUrl": "https://www.unitree.com/z1",
     "description": "6-axis robotic arm designed for mobile robots with force feedback and precision control capabilities."
   },
@@ -750,7 +785,9 @@
       "Flexible hardware compatibility",
       "External device connectivity"
     ],
-    "images": ["/images/robots/unitree-d1-t-1.jpg"],
+    "images": [
+      "/images/robots/unitree-g1.png"
+    ],
     "officialUrl": "https://www.unitree.com/D1-T",
     "description": "Ultra-precision teleoperation robot arm kit with force control and AI capabilities for research and development."
   },
@@ -794,7 +831,9 @@
       "G1 robot compatibility",
       "Professional manipulation tasks"
     ],
-    "images": ["/images/robots/unitree-dex3-1-1.jpg"],
+    "images": [
+      "/images/robots/unitree-h1.png"
+    ],
     "officialUrl": "https://www.unitree.com/dex3-1",
     "description": "3-finger dexterous hand with advanced tactile sensing for G1 humanoid robot manipulation tasks."
   },
@@ -836,7 +875,9 @@
       "Heavy load capacity",
       "Universal robot compatibility"
     ],
-    "images": ["/images/robots/unitree-dex5-1-1.jpg"],
+    "images": [
+      "/images/robots/unitree-g1.png"
+    ],
     "officialUrl": "https://www.unitree.com/dex5-1",
     "description": "5-finger dexterous hand with 94 tactile sensors for advanced manipulation tasks on H1/H1-2 and G1 robots."
   },
@@ -880,7 +921,9 @@
       "Long endurance version available",
       "Industry standard compliance"
     ],
-    "images": ["/images/robots/unitree-go2-battery-1.jpg"],
+    "images": [
+      "/images/robots/unitree-b2.png"
+    ],
     "officialUrl": "https://www.unitree.com/go2/battery",
     "description": "High-performance lithium battery with advanced safety features designed specifically for Go2 quadruped robot."
   },
@@ -922,7 +965,9 @@
       "Portable design",
       "Go2 battery optimized"
     ],
-    "images": ["/images/robots/unitree-go2-charger-1.jpg"],
+    "images": [
+      "/images/robots/unitree-go2.png"
+    ],
     "officialUrl": "https://www.unitree.com/go2/charger",
     "description": "Compact and safe battery charger designed specifically for Go2 robot with advanced protection features."
   },
@@ -959,7 +1004,9 @@
       "Built-in haptic feedback",
       "5-hour battery life"
     ],
-    "images": ["/images/robots/unitree-r3-controller-1.jpg"],
+    "images": [
+      "/images/robots/unitree-h1.png"
+    ],
     "officialUrl": "https://www.unitree.com/R3",
     "description": "Universal wireless controller for immersive robotic interaction across Unitree's robot product line."
   },
@@ -991,7 +1038,9 @@
       "Lightweight construction",
       "Go2 optimized compatibility"
     ],
-    "images": ["/images/robots/unitree-go2-foot-1.jpg"],
+    "images": [
+      "/images/robots/unitree-go2.png"
+    ],
     "officialUrl": "https://www.unitree.com/go2/foot",
     "description": "Highly sensitive foot end sensor for Go2 robot providing precise control data for advanced movement."
   },
@@ -1025,7 +1074,9 @@
       "Universal robot compatibility",
       "Professional grade LiDAR"
     ],
-    "images": ["/images/robots/unitree-4d-lidar-l2-1.jpg"],
+    "images": [
+      "/images/robots/unitree-b2.png"
+    ],
     "officialUrl": "https://www.unitree.com/",
     "description": "Professional 4D LiDAR sensor for environmental sensing and navigation on Unitree robots."
   }

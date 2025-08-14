@@ -145,13 +145,13 @@ export default function RobotDetailPage() {
           </div>
         </div>
 
-        {/* Detailed Specifications Table */}
+        {/* Technical Specifications */}
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Technical Specifications</h2>
           <SpecificationTable robot={robot} />
         </div>
 
-        {/* Features Section */}
+        {/* Key Features */}
         <div className="mb-16">
           <div className="bg-white rounded-xl shadow-lg p-8">
             <h3 className="text-2xl font-semibold text-gray-900 mb-6">Key Features</h3>
@@ -165,6 +165,32 @@ export default function RobotDetailPage() {
             </div>
           </div>
         </div>
+
+        {/* Product Photos */}
+        {robot.images && robot.images.length > 0 && (
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Product Photos</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {robot.images.slice(0, 3).map((imageUrl, index) => (
+                <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden">
+                  <div className="aspect-square bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center p-6">
+                    <div className="relative w-full h-full">
+                      <Image
+                        src={imageUrl}
+                        alt={`${robot.name} Photo ${index + 1}`}
+                        fill
+                        className="object-contain rounded-lg"
+                      />
+                    </div>
+                  </div>
+                  <div className="p-4 text-center">
+                    <p className="text-sm text-gray-600">Photo {index + 1}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Related Robots */}
         {relatedRobots.length > 0 && (
