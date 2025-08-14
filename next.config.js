@@ -9,7 +9,6 @@ const nextConfig = {
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
   experimental: {
-    optimizeCss: true,
     optimizePackageImports: ['lucide-react'],
   },
   compiler: {
@@ -17,7 +16,6 @@ const nextConfig = {
   },
   poweredByHeader: false,
   compress: true,
-  swcMinify: true,
 }
 
 module.exports = nextConfig
