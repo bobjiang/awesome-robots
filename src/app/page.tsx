@@ -27,6 +27,8 @@ export default function Home() {
                     alt="Unitree G1"
                     fill
                     className="object-contain"
+                    priority
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
               </div>
@@ -38,6 +40,7 @@ export default function Home() {
                   <Link
                     href="/robots/unitree-g1"
                     className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+                    prefetch={true}
                   >
                     View Details
                   </Link>
@@ -53,6 +56,8 @@ export default function Home() {
                     alt="Unitree Go2"
                     fill
                     className="object-contain"
+                    priority
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
               </div>
@@ -64,6 +69,7 @@ export default function Home() {
                   <Link
                     href="/robots/unitree-go2"
                     className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors"
+                    prefetch={true}
                   >
                     View Details
                   </Link>
@@ -79,6 +85,8 @@ export default function Home() {
                     alt="Unitree H1"
                     fill
                     className="object-contain"
+                    priority
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
               </div>
@@ -90,6 +98,7 @@ export default function Home() {
                   <Link
                     href="/robots/unitree-h1"
                     className="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors"
+                    prefetch={true}
                   >
                     View Details
                   </Link>
@@ -130,6 +139,8 @@ export default function Home() {
                     alt={category.name}
                     fill
                     className="object-contain"
+                    loading="lazy"
+                    sizes="64px"
                   />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">

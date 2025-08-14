@@ -14,21 +14,26 @@ export default function ProductCard({ robot }: ProductCardProps) {
     return `$${price.toLocaleString()}`;
   };
 
-  const getRobotImage = (robotId: string, category: string) => {
-    // Map specific robots to their images
+  const getRobotImage = (robot: Robot) => {
+    // Use the first image from robot.images if available, otherwise fallback
+    if (robot.images && robot.images.length > 0) {
+      return robot.images[0];
+    }
+    
+    // Fallback mapping
     const imageMap: { [key: string]: string } = {
       'unitree-g1': '/images/robots/unitree-g1.png',
       'unitree-h1': '/images/robots/unitree-h1.png',
-      'unitree-go2': '/images/robots/unitree-go2.png',
-      'unitree-go2-w': '/images/robots/unitree-go2.png',
+      'unitree-go2': '/images/robots/unitree-go2.jpg',
+      'unitree-go2-w': '/images/robots/quadruped/go2-w-1.png',
       'unitree-b2': '/images/robots/unitree-b2.png',
-      'unitree-a2': '/images/robots/unitree-b2.png', // Use B2 image for A2 as fallback
+      'unitree-a2': '/images/robots/unitree-b2.png',
     };
     
-    return imageMap[robotId] || (
-      category === 'humanoid' ? '/images/categories/humanoid.png' :
-      category === 'quadruped' ? '/images/categories/quadruped.png' :
-      category === 'accessory' ? '/images/categories/accessories.svg' :
+    return imageMap[robot.id] || (
+      robot.category === 'humanoid' ? '/images/categories/humanoid.png' :
+      robot.category === 'quadruped' ? '/images/categories/quadruped.png' :
+      robot.category === 'accessory' ? '/images/categories/accessories.svg' :
       '/images/categories/other.svg'
     );
   };
@@ -51,10 +56,12 @@ export default function ProductCard({ robot }: ProductCardProps) {
       <div className={`h-48 bg-gradient-to-br ${getCategoryColor(robot.category)} flex items-center justify-center p-4`}>
         <div className="relative w-full h-full group-hover:scale-110 transition-transform">
           <Image
-            src={getRobotImage(robot.id, robot.category)}
+            src={getRobotImage(robot)}
             alt={robot.name}
             fill
             className="object-contain"
+            loading="lazy"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </div>
       </div>
@@ -120,6 +127,7 @@ export default function ProductCard({ robot }: ProductCardProps) {
           <Link
             href={`/robots/${robot.id}`}
             className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors font-medium"
+            prefetch={true}
           >
             View Details
           </Link>

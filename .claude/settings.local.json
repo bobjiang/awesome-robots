@@ -10,7 +10,10 @@
       "Bash(npm run build:*)",
       "WebFetch(domain:forms.gle)",
       "WebFetch(domain:docs.google.com)",
-      "Bash(npm run dev:*)"
+      "Bash(npm run dev:*)",
+      "Bash(mv:*)",
+      "Bash(cp:*)",
+      "Bash(rm:*)"
     ],
     "deny": [],
     "defaultMode": "acceptEdits"

@@ -43,11 +43,16 @@ export default function RobotDetailPage() {
   };
 
   const getRobotImage = (robotId: string, category: string) => {
+    // Use robot.images if available, otherwise fallback to mapping
+    if (robot.images && robot.images.length > 0) {
+      return robot.images[0];
+    }
+    
     const imageMap: { [key: string]: string } = {
       'unitree-g1': '/images/robots/unitree-g1.png',
       'unitree-h1': '/images/robots/unitree-h1.png',
-      'unitree-go2': '/images/robots/unitree-go2.png',
-      'unitree-go2-w': '/images/robots/unitree-go2.png',
+      'unitree-go2': '/images/robots/unitree-go2.jpg',
+      'unitree-go2-w': '/images/robots/quadruped/go2-w-1.png',
       'unitree-b2': '/images/robots/unitree-b2.png',
       'unitree-a2': '/images/robots/unitree-b2.png',
     };
@@ -86,6 +91,8 @@ export default function RobotDetailPage() {
                 alt={robot.name}
                 fill
                 className="object-contain"
+                priority
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
           </div>
@@ -180,6 +187,8 @@ export default function RobotDetailPage() {
                         alt={`${robot.name} Photo ${index + 1}`}
                         fill
                         className="object-contain rounded-lg"
+                        loading="lazy"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       />
                     </div>
                   </div>
