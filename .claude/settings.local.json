@@ -12,6 +12,7 @@
       "WebFetch(domain:docs.google.com)",
       "Bash(npm run dev:*)"
     ],
-    "deny": []
+    "deny": [],
+    "defaultMode": "acceptEdits"
   }
 }
