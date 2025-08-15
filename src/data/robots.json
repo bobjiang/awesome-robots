@@ -1087,5 +1087,378 @@
     ],
     "officialUrl": "https://www.unitree.com/",
     "description": "Professional 4D LiDAR sensor for environmental sensing and navigation on Unitree robots."
+  },
+  {
+    "id": "deep-robotics-x20",
+    "name": "X20",
+    "brand": "Deep Robotics",
+    "category": "quadruped",
+    "price": {
+      "starting": "request",
+      "currency": "USD",
+      "models": [
+        {"name": "Standard", "price": "request"}
+      ]
+    },
+    "specifications": {
+      "dimensions": "950mm x 470mm x 700mm (standing)",
+      "weight": "53kg",
+      "maxSpeed": "≥4 m/s",
+      "slopeCapability": "≥30°",
+      "stepHeight": "≥20 cm",
+      "payload": "20 kg",
+      "batteryLife": "2-4 hours",
+      "maxMileage": "15 km",
+      "ingressProtection": "IP66",
+      "operatingTemperature": "Variable (designed for complex environments)",
+      "connectivity": ["Peripheral integration capabilities"],
+      "sensors": ["Navigation system", "Obstacle avoidance", "Terrain recognition"],
+      "additionalFeatures": [
+        "Modular design",
+        "Complex terrain adaptation",
+        "Grass, sand, snow, gravel compatibility"
+      ]
+    },
+    "features": [
+      "Industrial-grade performance",
+      "Modular design with peripheral integration",
+      "Advanced navigation and obstacle avoidance",
+      "Multi-terrain capability",
+      "IP66 weather resistance",
+      "High payload capacity of 20kg",
+      "Extended range up to 15km"
+    ],
+    "images": [
+      "/images/categories/quadruped.png"
+    ],
+    "officialUrl": "https://www.deeprobotics.cn/en/index/product.html",
+    "description": "Industrial quadruped robot designed for complex environments with advanced navigation and 20kg payload capacity."
+  },
+  {
+    "id": "deep-robotics-x30",
+    "name": "X30",
+    "brand": "Deep Robotics",
+    "category": "quadruped",
+    "price": {
+      "starting": "request",
+      "currency": "USD",
+      "models": [
+        {"name": "X30", "price": "request"},
+        {"name": "X30 Pro", "price": "request"}
+      ]
+    },
+    "specifications": {
+      "dimensions": {
+        "X30": "1000 x 695 x 470 mm (standing)",
+        "X30_Pro": "1000 x 715 x 470 mm (standing)"
+      },
+      "weight": {
+        "X30": "56 kg (battery included)",
+        "X30_Pro": "59 kg (battery included)"
+      },
+      "maxSpeed": "≥4 m/s",
+      "maxSlope": "45 degrees",
+      "stepHeight": "≥20 cm",
+      "ingressProtection": "IP67",
+      "operatingTemperature": "-20°C to 55°C",
+      "batteryLife": "2.5-4 hours",
+      "maxMileage": "≥10 km",
+      "connectivity": {
+        "X30": ["Ethernet", "Power output"],
+        "X30_Pro": ["USB2.0", "USB3.0", "Ethernet", "WiFi", "5V/12V/24V power outputs"]
+      }
+    },
+    "features": [
+      "Industrial inspection and investigation",
+      "Security and mapping applications",
+      "Extreme weather operation",
+      "45-degree stair climbing capability",
+      "Advanced perception system",
+      "IP67 environmental protection"
+    ],
+    "images": [
+      "/images/categories/quadruped.png"
+    ],
+    "officialUrl": "https://www.deeprobotics.cn/en/index/product3.html",
+    "description": "Advanced industrial quadruped robot for inspection, security, and mapping with extreme weather resistance."
+  },
+  {
+    "id": "deep-robotics-lite3",
+    "name": "Lite3",
+    "brand": "Deep Robotics",
+    "category": "quadruped",
+    "price": {
+      "starting": "request",
+      "currency": "USD",
+      "models": [
+        {"name": "Basic", "price": "request"},
+        {"name": "Venture", "price": "request"},
+        {"name": "Pro", "price": "request"},
+        {"name": "LIDAR", "price": "request"}
+      ]
+    },
+    "specifications": {
+      "dimensions": "610mm x 370mm x 406-496mm (varies by model)",
+      "weight": "12-13.5 kg (including battery)",
+      "walkingLoad": "2.5-5 kg",
+      "maxSlope": "40°",
+      "stairClimbing": "18 cm",
+      "batteryLife": "1.5-2 hours",
+      "maxMileage": "2.7-5 km",
+      "improvements": "50% increased joint torque"
+    },
+    "features": [
+      "Extraordinary locomotion capabilities",
+      "50% increased joint torque",
+      "Advanced motion algorithms",
+      "Enhanced environmental interaction",
+      "Modular design for customization",
+      "Motion control SDK provided",
+      "APIs and perception development interfaces"
+    ],
+    "images": [
+      "/images/categories/quadruped.png"
+    ],
+    "officialUrl": "https://www.deeprobotics.cn/en/index/product1.html",
+    "description": "Bionic robot dog with extraordinary locomotion and modular customization for education and development."
+  },
+  {
+    "id": "deep-robotics-lynx",
+    "name": "Lynx",
+    "brand": "Deep Robotics",
+    "category": "quadruped",
+    "price": {
+      "starting": "request",
+      "currency": "USD",
+      "models": [
+        {"name": "Standard", "price": "request"}
+      ]
+    },
+    "specifications": {
+      "dimensions": "0.8m × 0.5m × 0.6m (standing)",
+      "weight": "30kg",
+      "payload": "12kg",
+      "maxSpeed": "5 m/s",
+      "batteryLife": "3 hours",
+      "maxMileage": "15 km",
+      "stepHeight": "22 cm",
+      "camera": "1080P wide-angle lens",
+      "ingressProtection": "IP54",
+      "operatingTemperature": "0-40°C",
+      "connectivity": ["Wi-Fi", "GPS"],
+      "battery": "Dual battery system, hot-swappable",
+      "warranty": "1 year",
+      "climbingCapability": "80 cm platforms"
+    },
+    "features": [
+      "Wheel-leg motion design",
+      "Compact and agile",
+      "Can climb platforms up to 80 cm",
+      "Intelligent OTA updates",
+      "Handheld remote control",
+      "Dual hot-swappable battery system",
+      "All-terrain exploration capability"
+    ],
+    "images": [
+      "/images/categories/quadruped.png"
+    ],
+    "officialUrl": "https://www.deeprobotics.cn/en/index/deeproboticslynx.html",
+    "description": "Compact wheel-leg quadruped robot with exceptional terrain adaptability and Embodied AI+ capabilities."
+  },
+  {
+    "id": "deep-robotics-m20",
+    "name": "M20",
+    "brand": "Deep Robotics",
+    "category": "quadruped",
+    "price": {
+      "starting": "request",
+      "currency": "USD",
+      "models": [
+        {"name": "Standard", "price": "request"}
+      ]
+    },
+    "specifications": {
+      "dimensions": "820mm × 430mm × 570mm",
+      "weight": "33kg (including battery)",
+      "payload": "15kg standard, 50kg max",
+      "maxSpeed": "5 m/s (lab), 3 m/s (safety-limited)",
+      "operatingSpeed": "2 m/s",
+      "maxStairHeight": "25cm continuous",
+      "maxSingleStep": "80cm",
+      "maxSlope": "45°",
+      "batteryLife": {
+        "unloaded": "3h/15km",
+        "loaded": "2.5h/12km (15kg)"
+      },
+      "chargingTime": "1.5h (single battery)",
+      "ingressProtection": "IP66",
+      "operatingTemperature": "-20°C to 55°C",
+      "processors": "Dual octa-core 64-bit",
+      "sensors": ["2x 96-line LiDAR (360°×90°)", "2x Wide-angle cameras"]
+    },
+    "features": [
+      "Challenging terrain navigation",
+      "Hazardous environment operation",
+      "Omnidirectional obstacle avoidance",
+      "Dual high-performance processors",
+      "Advanced LiDAR and camera system",
+      "Heavy payload capacity",
+      "Industrial-grade environmental protection"
+    ],
+    "images": [
+      "/images/categories/quadruped.png"
+    ],
+    "officialUrl": "https://www.deeprobotics.cn/en/index/lynx.html",
+    "description": "Industrial quadruped robot designed for challenging terrains and hazardous environments with advanced perception."
+  },
+  {
+    "id": "deep-robotics-dr01",
+    "name": "DR01",
+    "brand": "Deep Robotics",
+    "category": "humanoid",
+    "price": {
+      "starting": "request",
+      "currency": "USD",
+      "models": [
+        {"name": "Standard", "price": "request"}
+      ]
+    },
+    "specifications": {
+      "walkingSpeed": "Over 1.6 m/s",
+      "stepHeight": "18 cm",
+      "slopeCapability": "25°",
+      "terrainHandling": "Uneven terrain capable",
+      "joints": ["J60 lightweight joints", "J100 high-torque joints"],
+      "capabilities": [
+        "Balance recovery under disturbances",
+        "Stable walking on unknown terrain",
+        "Fusion perception (robot + environment)",
+        "Autonomous learning through AI and big data"
+      ]
+    },
+    "features": [
+      "Embodied intelligence explorer",
+      "Flexible mobility with balance recovery",
+      "Fusion perception capability",
+      "Autonomous learning ability",
+      "Self-developed joint systems",
+      "AI and big data training integration",
+      "Advanced terrain navigation"
+    ],
+    "images": [
+      "/images/categories/humanoid.png"
+    ],
+    "officialUrl": "https://www.deeprobotics.cn/en/index/humanoid.html",
+    "description": "Embodied intelligence humanoid robot with advanced AI capabilities and autonomous learning for industrial applications."
+  },
+  {
+    "id": "deep-robotics-j60",
+    "name": "J60 Robot Joint",
+    "brand": "Deep Robotics",
+    "category": "accessory",
+    "price": {
+      "starting": "request",
+      "currency": "USD",
+      "models": [
+        {"name": "J60-6", "price": "request"},
+        {"name": "J60-10", "price": "request"}
+      ]
+    },
+    "specifications": {
+      "J60_6": {
+        "dimensions": "76.5mm x 63mm",
+        "weight": "480g",
+        "peakTorque": "19.94 Nm",
+        "peakSpeed": "24.18 rad/s",
+        "torqueWeightRatio": "41.54 Nm/kg"
+      },
+      "J60_10": {
+        "dimensions": "76.5mm x 72.5mm",
+        "weight": "540g",
+        "peakTorque": "30.50 Nm",
+        "peakSpeed": "15.49 rad/s",
+        "torqueWeightRatio": "56.48 Nm/kg"
+      },
+      "commonSpecs": {
+        "encoder": "14-bit absolute value encoder",
+        "communication": "CAN, 1 Mbps baud rate",
+        "operatingVoltage": "DC 18V-36V",
+        "standardVoltage": "DC 24V",
+        "maxCurrent": "30A",
+        "controlFrequency": "1 kHz"
+      }
+    },
+    "features": [
+      "High torque-to-weight ratio",
+      "Precision 14-bit encoder",
+      "CAN communication interface",
+      "Lightweight design",
+      "Two model variants available",
+      "Industrial-grade performance"
+    ],
+    "images": [
+      "/images/categories/other.svg"
+    ],
+    "officialUrl": "https://www.deeprobotics.cn/en/index/j60.html",
+    "description": "High-performance lightweight robot joint with precision control and excellent torque-to-weight ratio."
+  },
+  {
+    "id": "deep-robotics-j80-j100",
+    "name": "J80 & J100 Robot Joints",
+    "brand": "Deep Robotics",
+    "category": "accessory",
+    "price": {
+      "starting": "request",
+      "currency": "USD",
+      "models": [
+        {"name": "J80-27P", "price": "request"},
+        {"name": "J100-64P", "price": "request"},
+        {"name": "J100-116P", "price": "request"}
+      ]
+    },
+    "specifications": {
+      "J80_27P": {
+        "dimensions": "105mm x 85.5mm",
+        "weight": "1.48 kg",
+        "peakTorque": "84 Nm",
+        "ratedTorque": "28 Nm",
+        "maxSpeed": "17 rad/s"
+      },
+      "J100_64P": {
+        "dimensions": "126mm x 88mm",
+        "weight": "2.72 kg",
+        "peakTorque": "180 Nm",
+        "ratedTorque": "65 Nm",
+        "maxSpeed": "18 rad/s"
+      },
+      "J100_116P": {
+        "dimensions": "126mm x 105mm",
+        "weight": "2.93 kg",
+        "peakTorque": "315 Nm",
+        "ratedTorque": "115.5 Nm",
+        "maxSpeed": "19.4 rad/s"
+      },
+      "commonSpecs": {
+        "voltageRange": "DC 28-95V",
+        "ingressProtection": "IP67",
+        "encoder": "Absolute multi-turn encoder",
+        "communication": "High-speed EtherCAT",
+        "driverCompatibility": "Mainstream drivers"
+      }
+    },
+    "features": [
+      "High-torque industrial joints",
+      "IP67 weatherproof protection",
+      "Absolute multi-turn encoder",
+      "High-speed EtherCAT communication",
+      "Multiple torque variants",
+      "Mainstream driver compatibility",
+      "Industrial-grade reliability"
+    ],
+    "images": [
+      "/images/categories/other.svg"
+    ],
+    "officialUrl": "https://www.deeprobotics.cn/en/index/j80j100.html",
+    "description": "High-torque industrial robot joints with IP67 protection and EtherCAT communication for demanding applications."
   }
 ]

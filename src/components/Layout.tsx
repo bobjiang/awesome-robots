@@ -100,6 +100,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <h4 className="text-md font-medium mb-4">Brands</h4>
               <ul className="space-y-2 text-gray-400">
                 <li><Link href="/browse?brand=Unitree" className="hover:text-white">Unitree</Link></li>
+                <li><Link href="/browse?brand=Deep Robotics" className="hover:text-white">Deep Robotics</Link></li>
               </ul>
             </div>
             

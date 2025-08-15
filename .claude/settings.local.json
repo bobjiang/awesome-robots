@@ -13,7 +13,8 @@
       "Bash(npm run dev:*)",
       "Bash(mv:*)",
       "Bash(cp:*)",
-      "Bash(rm:*)"
+      "Bash(rm:*)",
+      "WebFetch(domain:www.deeprobotics.cn)"
     ],
     "deny": [],
     "defaultMode": "acceptEdits"

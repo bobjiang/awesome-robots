@@ -5,5 +5,12 @@
     "description": "Leading manufacturer of quadruped and humanoid robots, pioneering AI-powered robotics for consumer, educational, and industrial applications.",
     "website": "https://www.unitree.com/",
     "logo": "/images/brands/unitree-logo.svg"
+  },
+  {
+    "id": "deep-robotics",
+    "name": "Deep Robotics",
+    "description": "Global quadruped robot leader focused on pioneering innovation & application of embodied AI for industrial, rescue, and research applications.",
+    "website": "https://www.deeprobotics.cn/en/",
+    "logo": "/images/brands/deep-robotics-logo.svg"
   }
 ]
