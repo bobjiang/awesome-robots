@@ -14,8 +14,8 @@ export default function BrandsPage() {
             Robot Brands
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Explore leading robotics companies and their innovative AI-powered robots. 
-            From established industry leaders to cutting-edge startups, discover the brands shaping the future of robotics.
+            Discover Unitree&apos;s innovative AI-powered robots. 
+            Explore our comprehensive catalog of quadruped and humanoid robots shaping the future of robotics.
           </p>
         </div>
 
@@ -79,11 +79,11 @@ export default function BrandsPage() {
         <div className="mt-16 bg-blue-50 rounded-xl p-8">
           <div className="text-center">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
-              Looking for a Specific Brand?
+              Explore Unitree&apos;s Complete Robot Lineup
             </h2>
             <p className="text-lg text-gray-600 mb-6 max-w-2xl mx-auto">
-              We&apos;re constantly expanding our catalog. If you don&apos;t see the brand you&apos;re looking for, 
-              let us know and we&apos;ll work to add it to our collection.
+              From advanced quadruped robots to cutting-edge humanoids, discover Unitree&apos;s full range of 
+              AI-powered robotics solutions for education, research, and industrial applications.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

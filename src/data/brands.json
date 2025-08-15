@@ -5,19 +5,5 @@
     "description": "Leading manufacturer of quadruped and humanoid robots, pioneering AI-powered robotics for consumer, educational, and industrial applications.",
     "website": "https://www.unitree.com/",
     "logo": "/images/brands/unitree-logo.svg"
-  },
-  {
-    "id": "boston-dynamics",
-    "name": "Boston Dynamics",
-    "description": "Renowned robotics company famous for advanced humanoid and quadruped robots with exceptional mobility and AI capabilities.",
-    "website": "https://www.bostondynamics.com/",
-    "logo": "/images/brands/boston-dynamics-logo.svg"
-  },
-  {
-    "id": "ubtech",
-    "name": "UBTech",
-    "description": "Global leader in AI and humanoid robotics, specializing in educational and consumer robots with advanced AI integration.",
-    "website": "https://www.ubtrobot.com/",
-    "logo": "/images/brands/ubtech-logo.svg"
   }
 ]
