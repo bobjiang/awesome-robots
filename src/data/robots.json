@@ -418,7 +418,9 @@
       "Research-grade sensors"
     ],
     "images": [
-      "/images/robots/unitree-b2.png"
+      "/images/robots/a2-1.jpg",
+      "/images/robots/a2-2.jpg",
+      "/images/robots/a2-3.jpg"
     ],
     "officialUrl": "https://www.unitree.com/A2",
     "description": "Stellar Explorer - Advanced industrial quadruped robot designed for exploration and research applications."
@@ -490,7 +492,9 @@
       "Adaptive joint flexibility"
     ],
     "images": [
-      "/images/robots/unitree-go2.png"
+      "/images/robots/go1-1.jpg",
+      "/images/robots/go1-2.jpg",
+      "/images/robots/go1-3.png"
     ],
     "officialUrl": "https://www.unitree.com/go1",
     "description": "Advanced quadruped robot with high-speed capabilities and intelligent sensing for education and research applications."
@@ -578,7 +582,9 @@
       "Optional LiDAR integration"
     ],
     "images": [
-      "/images/robots/unitree-go2.png"
+      "/images/robots/aliengo-1.jpg",
+      "/images/robots/aliengo-2.jpg",
+      "/images/robots/aliengo-3.png"
     ],
     "officialUrl": "https://www.unitree.com/aliengo",
     "description": "Versatile quadruped robot with advanced mobility and sensing capabilities for research and industrial applications."
@@ -747,7 +753,9 @@
       "Quick actuator replacement support"
     ],
     "images": [
-      "/images/robots/unitree-h1.png"
+      "/images/robots/accessories/z1-1.png",
+      "/images/robots/accessories/z1-2.png",
+      "/images/robots/accessories/z1-3.png"
     ],
     "officialUrl": "https://www.unitree.com/z1",
     "description": "6-axis robotic arm designed for mobile robots with force feedback and precision control capabilities."
@@ -786,7 +794,7 @@
       "External device connectivity"
     ],
     "images": [
-      "/images/robots/unitree-g1.png"
+      "/images/categories/other.svg"
     ],
     "officialUrl": "https://www.unitree.com/D1-T",
     "description": "Ultra-precision teleoperation robot arm kit with force control and AI capabilities for research and development."
@@ -832,7 +840,7 @@
       "Professional manipulation tasks"
     ],
     "images": [
-      "/images/robots/unitree-h1.png"
+      "/images/categories/other.svg"
     ],
     "officialUrl": "https://www.unitree.com/dex3-1",
     "description": "3-finger dexterous hand with advanced tactile sensing for G1 humanoid robot manipulation tasks."
@@ -876,7 +884,7 @@
       "Universal robot compatibility"
     ],
     "images": [
-      "/images/robots/unitree-g1.png"
+      "/images/categories/other.svg"
     ],
     "officialUrl": "https://www.unitree.com/dex5-1",
     "description": "5-finger dexterous hand with 94 tactile sensors for advanced manipulation tasks on H1/H1-2 and G1 robots."
@@ -922,7 +930,7 @@
       "Industry standard compliance"
     ],
     "images": [
-      "/images/robots/unitree-b2.png"
+      "/images/categories/accessories.svg"
     ],
     "officialUrl": "https://www.unitree.com/go2/battery",
     "description": "High-performance lithium battery with advanced safety features designed specifically for Go2 quadruped robot."
@@ -966,7 +974,7 @@
       "Go2 battery optimized"
     ],
     "images": [
-      "/images/robots/unitree-go2.png"
+      "/images/categories/accessories.svg"
     ],
     "officialUrl": "https://www.unitree.com/go2/charger",
     "description": "Compact and safe battery charger designed specifically for Go2 robot with advanced protection features."
@@ -1005,7 +1013,7 @@
       "5-hour battery life"
     ],
     "images": [
-      "/images/robots/unitree-h1.png"
+      "/images/categories/accessories.svg"
     ],
     "officialUrl": "https://www.unitree.com/R3",
     "description": "Universal wireless controller for immersive robotic interaction across Unitree's robot product line."
@@ -1039,7 +1047,7 @@
       "Go2 optimized compatibility"
     ],
     "images": [
-      "/images/robots/unitree-go2.png"
+      "/images/categories/accessories.svg"
     ],
     "officialUrl": "https://www.unitree.com/go2/foot",
     "description": "Highly sensitive foot end sensor for Go2 robot providing precise control data for advanced movement."
@@ -1075,7 +1083,7 @@
       "Professional grade LiDAR"
     ],
     "images": [
-      "/images/robots/unitree-b2.png"
+      "/images/categories/accessories.svg"
     ],
     "officialUrl": "https://www.unitree.com/",
     "description": "Professional 4D LiDAR sensor for environmental sensing and navigation on Unitree robots."
