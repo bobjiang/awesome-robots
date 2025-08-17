@@ -17,7 +17,7 @@ function BrowseContent() {
   const [filters, setFilters] = useState<FilterOptions>({
     categories: [],
     brands: [],
-    priceRange: { min: 0, max: 200000 }
+    priceRange: { min: 0, max: 1000000 }
   });
 
   // Initialize filters from URL parameters
@@ -164,7 +164,7 @@ function BrowseContent() {
                         setFilters({
                           categories: [],
                           brands: [],
-                          priceRange: { min: 0, max: 200000 }
+                          priceRange: { min: 0, max: 1000000 }
                         });
                       }}
                       className="text-blue-600 hover:text-blue-700 text-sm font-medium"
@@ -195,7 +195,7 @@ function BrowseContent() {
                     setFilters({
                       categories: [],
                       brands: [],
-                      priceRange: { min: 0, max: 200000 }
+                      priceRange: { min: 0, max: 1000000 }
                     });
                   }}
                   className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors"

@@ -21,26 +21,27 @@ export default function BrandsPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {brands.map((brand) => (
-            <Link
+            <div
               key={brand.id}
-              href={`/browse?brand=${brand.name}`}
               className="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300"
             >
-              <div className="h-48 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center group-hover:from-blue-50 group-hover:to-blue-100 transition-colors p-8">
-                <div className="text-center w-full h-full">
-                  <div className="relative w-32 h-16 mx-auto mb-4">
-                    <Image
-                      src={brand.logo}
-                      alt={`${brand.name} logo`}
-                      fill
-                      className="object-contain"
-                    />
+              <Link href={`/browse?brand=${brand.name}`}>
+                <div className="h-48 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center group-hover:from-blue-50 group-hover:to-blue-100 transition-colors p-8">
+                  <div className="text-center w-full h-full">
+                    <div className="relative w-32 h-16 mx-auto mb-4">
+                      <Image
+                        src={brand.logo}
+                        alt={`${brand.name} logo`}
+                        fill
+                        className="object-contain"
+                      />
+                    </div>
+                    <h2 className="text-2xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
+                      {brand.name}
+                    </h2>
                   </div>
-                  <h2 className="text-2xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
-                    {brand.name}
-                  </h2>
                 </div>
-              </div>
+              </Link>
               
               <div className="p-6">
                 <p className="text-gray-600 text-base leading-relaxed mb-4">
@@ -48,7 +49,10 @@ export default function BrandsPage() {
                 </p>
                 
                 <div className="flex items-center justify-between">
-                  <div className="flex items-center text-blue-600 group-hover:text-blue-700 transition-colors">
+                  <Link 
+                    href={`/browse?brand=${brand.name}`}
+                    className="flex items-center text-blue-600 group-hover:text-blue-700 transition-colors"
+                  >
                     <span className="font-medium">View {brand.name} Robots</span>
                     <svg 
                       className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" 
@@ -58,20 +62,19 @@ export default function BrandsPage() {
                     >
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
-                  </div>
+                  </Link>
                   
                   <a
                     href={brand.website}
                     target="_blank"
                     rel="noopener noreferrer"
-                    onClick={(e) => e.stopPropagation()}
                     className="text-sm text-gray-500 hover:text-gray-700 transition-colors"
                   >
                     Official Site →
                   </a>
                 </div>
               </div>
-            </Link>
+            </div>
           ))}
         </div>
 

@@ -14,7 +14,8 @@
       "Bash(mv:*)",
       "Bash(cp:*)",
       "Bash(rm:*)",
-      "WebFetch(domain:www.deeprobotics.cn)"
+      "WebFetch(domain:www.deeprobotics.cn)",
+      "Bash(node:*)"
     ],
     "deny": [],
     "defaultMode": "acceptEdits"

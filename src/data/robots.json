@@ -1129,7 +1129,9 @@
       "Extended range up to 15km"
     ],
     "images": [
-      "/images/categories/quadruped.png"
+      "/images/robots/deep-robotics-x20/x20-1.jpg",
+      "/images/robots/deep-robotics-x20/x20-2.jpg",
+      "/images/robots/deep-robotics-x20/x20-3.jpg"
     ],
     "officialUrl": "https://www.deeprobotics.cn/en/index/product.html",
     "description": "Industrial quadruped robot designed for complex environments with advanced navigation and 20kg payload capacity."
@@ -1177,7 +1179,9 @@
       "IP67 environmental protection"
     ],
     "images": [
-      "/images/categories/quadruped.png"
+      "/images/robots/deep-robotics-x30/x30-1.jpg",
+      "/images/robots/deep-robotics-x30/x30-2.jpg",
+      "/images/robots/deep-robotics-x30/x30-3.jpg"
     ],
     "officialUrl": "https://www.deeprobotics.cn/en/index/product3.html",
     "description": "Advanced industrial quadruped robot for inspection, security, and mapping with extreme weather resistance."
@@ -1217,7 +1221,9 @@
       "APIs and perception development interfaces"
     ],
     "images": [
-      "/images/categories/quadruped.png"
+      "/images/robots/deep-robotics-lite3/lite3-1.jpg",
+      "/images/robots/deep-robotics-lite3/lite3-2.jpg",
+      "/images/robots/deep-robotics-lite3/lite3-3.jpg"
     ],
     "officialUrl": "https://www.deeprobotics.cn/en/index/product1.html",
     "description": "Bionic robot dog with extraordinary locomotion and modular customization for education and development."
@@ -1260,7 +1266,8 @@
       "All-terrain exploration capability"
     ],
     "images": [
-      "/images/categories/quadruped.png"
+      "/images/robots/deep-robotics-lynx/lynx-1.jpg",
+      "/images/robots/deep-robotics-lynx/lynx-2.jpg"
     ],
     "officialUrl": "https://www.deeprobotics.cn/en/index/deeproboticslynx.html",
     "description": "Compact wheel-leg quadruped robot with exceptional terrain adaptability and Embodied AI+ capabilities."
@@ -1306,7 +1313,8 @@
       "Industrial-grade environmental protection"
     ],
     "images": [
-      "/images/categories/quadruped.png"
+      "/images/robots/deep-robotics-m20/m20-1.jpg",
+      "/images/robots/deep-robotics-m20/m20-2.jpg"
     ],
     "officialUrl": "https://www.deeprobotics.cn/en/index/lynx.html",
     "description": "Industrial quadruped robot designed for challenging terrains and hazardous environments with advanced perception."
@@ -1346,7 +1354,9 @@
       "Advanced terrain navigation"
     ],
     "images": [
-      "/images/categories/humanoid.png"
+      "/images/robots/deep-robotics-dr01/dr01-1.jpg",
+      "/images/robots/deep-robotics-dr01/dr01-2.jpg",
+      "/images/robots/deep-robotics-dr01/dr01-3.jpg"
     ],
     "officialUrl": "https://www.deeprobotics.cn/en/index/humanoid.html",
     "description": "Embodied intelligence humanoid robot with advanced AI capabilities and autonomous learning for industrial applications."
@@ -1397,7 +1407,9 @@
       "Industrial-grade performance"
     ],
     "images": [
-      "/images/categories/other.svg"
+      "/images/robots/deep-robotics-j60/j60-1.jpg",
+      "/images/robots/deep-robotics-j60/j60-2.jpg",
+      "/images/robots/deep-robotics-j60/j60-3.jpg"
     ],
     "officialUrl": "https://www.deeprobotics.cn/en/index/j60.html",
     "description": "High-performance lightweight robot joint with precision control and excellent torque-to-weight ratio."
@@ -1456,7 +1468,9 @@
       "Industrial-grade reliability"
     ],
     "images": [
-      "/images/categories/other.svg"
+      "/images/robots/deep-robotics-j80-j100/j80-j100-1.jpg",
+      "/images/robots/deep-robotics-j80-j100/j80-j100-2.jpg",
+      "/images/robots/deep-robotics-j80-j100/j80-j100-3.jpg"
     ],
     "officialUrl": "https://www.deeprobotics.cn/en/index/j80j100.html",
     "description": "High-torque industrial robot joints with IP67 protection and EtherCAT communication for demanding applications."

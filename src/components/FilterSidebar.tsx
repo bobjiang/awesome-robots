@@ -54,7 +54,7 @@ export default function FilterSidebar({
     onFiltersChange({
       categories: [],
       brands: [],
-      priceRange: { min: 0, max: 200000 }
+      priceRange: { min: 0, max: 1000000 }
     });
   };
 
@@ -148,7 +148,7 @@ export default function FilterSidebar({
                 onChange={(e) => handlePriceChange('max', e.target.value)}
                 min="0"
                 className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
-                placeholder="200000"
+                placeholder="1000000"
               />
             </div>
           </div>
