@@ -1,5 +1,28 @@
+import { build } from 'velite'
+
+class VeliteWebpackPlugin {
+  static started = false
+  constructor(options = {}) {
+    this.options = options
+  }
+  apply(compiler) {
+    // executed three times in nextjs !!!
+    // twice for the server (nodejs / edge-runtime) and once for the client
+    compiler.hooks.beforeCompile.tapPromise('VeliteWebpackPlugin', async () => {
+      if (VeliteWebpackPlugin.started) return
+      VeliteWebpackPlugin.started = true
+      const dev = compiler.options.mode === 'development'
+      await build({ watch: dev, clean: !dev })
+    })
+  }
+}
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  webpack: (config) => {
+    config.plugins.push(new VeliteWebpackPlugin())
+    return config
+  },
   images: {
     formats: ['image/webp', 'image/avif'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
@@ -18,4 +41,4 @@ const nextConfig = {
   compress: true,
 }
 
-module.exports = nextConfig
+export default nextConfig

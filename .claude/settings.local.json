@@ -15,7 +15,10 @@
       "Bash(cp:*)",
       "Bash(rm:*)",
       "WebFetch(domain:www.deeprobotics.cn)",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "WebFetch(domain:velite.js.org)",
+      "Bash(npm install:*)",
+      "Bash(npx velite:*)"
     ],
     "deny": [],
     "defaultMode": "acceptEdits"
