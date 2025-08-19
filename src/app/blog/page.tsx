@@ -1,6 +1,7 @@
 import { posts } from '#site/content'
 import Layout from '@/components/Layout'
 import BlogCard from '@/components/blog/BlogCard'
+import Link from 'next/link'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -76,7 +77,7 @@ export default function BlogPage() {
               Browse by Category
             </h2>
             <p className="text-lg text-gray-600">
-              Find exactly what you're looking for with our organized content categories.
+              Find exactly what you&apos;re looking for with our organized content categories.
             </p>
           </div>
           
@@ -88,7 +89,7 @@ export default function BlogPage() {
               { id: 'buying-guides', name: 'Buying Guides', icon: '🛒', description: 'Purchase recommendations' },
               { id: 'case-studies', name: 'Case Studies', icon: '📊', description: 'Real-world applications' },
             ].map((category) => (
-              <a
+              <Link
                 key={category.id}
                 href={`/blog/category/${category.id}`}
                 className="bg-white rounded-lg p-4 text-center hover:shadow-md transition-shadow group"
@@ -100,7 +101,7 @@ export default function BlogPage() {
                 <div className="text-xs text-gray-500">
                   {category.description}
                 </div>
-              </a>
+              </Link>
             ))}
           </div>
         </section>

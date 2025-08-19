@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation'
 import { posts } from '#site/content'
 import Layout from '@/components/Layout'
 import BlogCard from '@/components/blog/BlogCard'
+import Link from 'next/link'
 import { Metadata } from 'next'
 
 interface CategoryPageProps {
@@ -19,13 +20,12 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: CategoryPageProps): Promise<Metadata> {
   const { category } = await params
   
-  if (!categories.includes(category as any)) {
+  if (!categories.includes(category as typeof categories[number])) {
     return {
       title: 'Category Not Found',
     }
   }
 
-  const categoryName = category.replace('-', ' ')
   const categoryData = {
     reviews: {
       title: 'Robot Reviews',
@@ -60,7 +60,7 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
 export default async function CategoryPage({ params }: CategoryPageProps) {
   const { category } = await params
   
-  if (!categories.includes(category as any)) {
+  if (!categories.includes(category as typeof categories[number])) {
     notFound()
   }
 
@@ -104,8 +104,8 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
         {/* Breadcrumb */}
         <nav className="mb-8">
           <ol className="flex items-center space-x-2 text-sm text-gray-500">
-            <li><a href="/blog" className="hover:text-blue-600">Blog</a></li>
-            <li className="before:content-['/'] before:mx-2 text-gray-900 capitalize">{categoryName}</li>
+            <li><Link href="/blog" className="hover:text-blue-600">Blog</Link></li>
+            <li className="before:content-['/'] before:mx-2 text-gray-900 capitalize">{category.replace('-', ' ')}</li>
           </ol>
         </nav>
 
@@ -113,7 +113,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
         <div className="text-center mb-12">
           <div className="text-6xl mb-4">{categoryInfo.icon}</div>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 capitalize">
-            {categoryName}
+            {category.replace('-', ' ')}
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             {categoryInfo.description}
@@ -134,14 +134,14 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
               No posts in this category yet
             </h3>
             <p className="text-gray-600 mb-6">
-              Check back soon for new {categoryName} content!
+              Check back soon for new {category.replace('-', ' ')} content!
             </p>
-            <a
+            <Link
               href="/blog"
               className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium"
             >
               ← Browse all posts
-            </a>
+            </Link>
           </div>
         )}
 
@@ -163,7 +163,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
                 const info = getCategoryInfo(cat)
                 const postCount = posts.filter(p => p.published && p.category === cat).length
                 return (
-                  <a
+                  <Link
                     key={cat}
                     href={`/blog/category/${cat}`}
                     className="bg-white rounded-lg p-4 text-center hover:shadow-md transition-shadow group"
@@ -175,7 +175,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
                     <div className="text-xs text-gray-500">
                       {postCount} post{postCount !== 1 ? 's' : ''}
                     </div>
-                  </a>
+                  </Link>
                 )
               })}
           </div>

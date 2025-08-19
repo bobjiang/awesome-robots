@@ -3,6 +3,7 @@ import { posts, authors } from '#site/content'
 import Layout from '@/components/Layout'
 import BlogPost from '@/components/blog/BlogPost'
 import BlogCard from '@/components/blog/BlogCard'
+import Link from 'next/link'
 import { Metadata } from 'next'
 
 interface BlogPostPageProps {
@@ -83,12 +84,12 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
         {/* Back to Blog */}
         <div className="mt-12 text-center">
-          <a
+          <Link
             href="/blog"
             className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium"
           >
             ← Back to Blog
-          </a>
+          </Link>
         </div>
       </div>
     </Layout>
