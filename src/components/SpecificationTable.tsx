@@ -6,14 +6,32 @@ interface SpecificationTableProps {
   robot: Robot;
 }
 
-interface X30Specifications {
-  X30?: string;
-  X30_Pro?: string;
-  [key: string]: string | string[] | undefined;
+
+interface ExtendedSpecifications {
+  maxSlope?: string;
+  stepHeight?: string;
+  ingressProtection?: string;
+  operatingTemperature?: string;
+  batteryLife?: string;
+  maxMileage?: string;
+  [key: string]: unknown;
 }
 
 export default function SpecificationTable({ robot }: SpecificationTableProps) {
   const specs = robot.specifications;
+
+
+  // Helper function to safely access object spec properties
+  const getObjectSpecValue = (obj: unknown, key: string): string => {
+    if (typeof obj === 'object' && obj && key in obj) {
+      const value = (obj as Record<string, unknown>)[key];
+      if (Array.isArray(value)) {
+        return value.join(', ');
+      }
+      return typeof value === 'string' ? value : 'N/A';
+    }
+    return 'N/A';
+  };
 
   // For Go2 robot with detailed variant specs
   if (robot.id === 'unitree-go2' && specs.payload && typeof specs.payload === 'object') {
@@ -623,20 +641,20 @@ export default function SpecificationTable({ robot }: SpecificationTableProps) {
           <div className="grid grid-cols-3">
             <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Dimensions</div>
             <div className="p-4 text-sm border-r border-gray-200 text-gray-700">
-              {typeof specs.dimensions === 'object' && specs.dimensions && 'X30' in specs.dimensions ? (specs.dimensions as X30Specifications).X30 : 'N/A'}
+              {getObjectSpecValue(specs.dimensions, 'X30')}
             </div>
             <div className="p-4 text-sm text-gray-700">
-              {typeof specs.dimensions === 'object' && specs.dimensions && 'X30_Pro' in specs.dimensions ? (specs.dimensions as X30Specifications).X30_Pro : 'N/A'}
+              {getObjectSpecValue(specs.dimensions, 'X30_Pro')}
             </div>
           </div>
           
           <div className="grid grid-cols-3">
             <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Weight</div>
             <div className="p-4 text-sm border-r border-gray-200 text-gray-700">
-              {typeof specs.weight === 'object' && specs.weight && 'X30' in specs.weight ? (specs.weight as X30Specifications).X30 : 'N/A'}
+              {getObjectSpecValue(specs.weight, 'X30')}
             </div>
             <div className="p-4 text-sm text-gray-700">
-              {typeof specs.weight === 'object' && specs.weight && 'X30_Pro' in specs.weight ? (specs.weight as X30Specifications).X30_Pro : 'N/A'}
+              {getObjectSpecValue(specs.weight, 'X30_Pro')}
             </div>
           </div>
           
@@ -651,43 +669,41 @@ export default function SpecificationTable({ robot }: SpecificationTableProps) {
           
           <div className="grid grid-cols-3">
             <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Max Slope</div>
-            <div className="p-4 text-sm text-gray-700 col-span-2">{(specs as any).maxSlope || 'N/A'}</div>
+            <div className="p-4 text-sm text-gray-700 col-span-2">{(specs as ExtendedSpecifications).maxSlope || 'N/A'}</div>
           </div>
           
           <div className="grid grid-cols-3">
             <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Step Height</div>
-            <div className="p-4 text-sm text-gray-700 col-span-2">{(specs as any).stepHeight || 'N/A'}</div>
+            <div className="p-4 text-sm text-gray-700 col-span-2">{(specs as ExtendedSpecifications).stepHeight || 'N/A'}</div>
           </div>
           
           <div className="grid grid-cols-3">
             <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Ingress Protection</div>
-            <div className="p-4 text-sm text-gray-700 col-span-2">{(specs as any).ingressProtection || 'N/A'}</div>
+            <div className="p-4 text-sm text-gray-700 col-span-2">{(specs as ExtendedSpecifications).ingressProtection || 'N/A'}</div>
           </div>
           
           <div className="grid grid-cols-3">
             <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Operating Temperature</div>
-            <div className="p-4 text-sm text-gray-700 col-span-2">{(specs as any).operatingTemperature || 'N/A'}</div>
+            <div className="p-4 text-sm text-gray-700 col-span-2">{(specs as ExtendedSpecifications).operatingTemperature || 'N/A'}</div>
           </div>
           
           <div className="grid grid-cols-3">
             <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Battery Life</div>
-            <div className="p-4 text-sm text-gray-700 col-span-2">{(specs as any).batteryLife || 'N/A'}</div>
+            <div className="p-4 text-sm text-gray-700 col-span-2">{(specs as ExtendedSpecifications).batteryLife || 'N/A'}</div>
           </div>
           
           <div className="grid grid-cols-3">
             <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Max Mileage</div>
-            <div className="p-4 text-sm text-gray-700 col-span-2">{(specs as any).maxMileage || 'N/A'}</div>
+            <div className="p-4 text-sm text-gray-700 col-span-2">{(specs as ExtendedSpecifications).maxMileage || 'N/A'}</div>
           </div>
           
           <div className="grid grid-cols-3">
             <div className="p-4 font-medium border-r border-gray-200 bg-gray-50 text-gray-900">Connectivity</div>
             <div className="p-4 text-sm border-r border-gray-200 text-gray-700">
-              {typeof specs.connectivity === 'object' && specs.connectivity && 'X30' in specs.connectivity ? 
-                (Array.isArray((specs.connectivity as X30Specifications).X30) ? ((specs.connectivity as X30Specifications).X30 as string[]).join(', ') : (specs.connectivity as X30Specifications).X30) : 'N/A'}
+              {getObjectSpecValue(specs.connectivity, 'X30')}
             </div>
             <div className="p-4 text-sm text-gray-700">
-              {typeof specs.connectivity === 'object' && specs.connectivity && 'X30_Pro' in specs.connectivity ? 
-                (Array.isArray((specs.connectivity as X30Specifications).X30_Pro) ? ((specs.connectivity as X30Specifications).X30_Pro as string[]).join(', ') : (specs.connectivity as X30Specifications).X30_Pro) : 'N/A'}
+              {getObjectSpecValue(specs.connectivity, 'X30_Pro')}
             </div>
           </div>
         </div>
