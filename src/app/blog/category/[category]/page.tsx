@@ -68,8 +68,6 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
     .filter((post) => post.published && post.category === category)
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
 
-  const categoryName = category.replace('-', ' ')
-  
   const getCategoryInfo = (cat: string) => {
     const info = {
       reviews: {
