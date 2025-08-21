@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Robot } from '@/types/robot';
+import { trackRobotView } from '@/lib/gtag';
 
 interface ProductCardProps {
   robot: Robot;
@@ -12,6 +13,10 @@ export default function ProductCard({ robot }: ProductCardProps) {
   const formatPrice = (price: number | 'request') => {
     if (price === 'request') return 'Request Quote';
     return `$${price.toLocaleString()}`;
+  };
+
+  const handleViewDetails = () => {
+    trackRobotView(robot.id, robot.name, robot.brand);
   };
 
   const getRobotImage = (robot: Robot) => {
@@ -128,6 +133,7 @@ export default function ProductCard({ robot }: ProductCardProps) {
             href={`/robots/${robot.id}`}
             className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors font-medium"
             prefetch={true}
+            onClick={handleViewDetails}
           >
             View Details
           </Link>

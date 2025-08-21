@@ -8,6 +8,7 @@ import Layout from '@/components/Layout';
 import ProductCard from '@/components/ProductCard';
 import SpecificationTable from '@/components/SpecificationTable';
 import { Robot } from '@/types/robot';
+import { trackRobotQuote } from '@/lib/gtag';
 import robots from '@/data/robots.json';
 
 export default function RobotDetailPage() {
@@ -15,6 +16,13 @@ export default function RobotDetailPage() {
   const robotId = params.id as string;
   const robot = (robots as Robot[]).find((r: Robot) => r.id === robotId);
   const [showQuoteForm, setShowQuoteForm] = useState(false);
+
+  const handleQuoteRequest = () => {
+    if (robot) {
+      trackRobotQuote(robot.id, robot.name, robot.brand);
+    }
+    setShowQuoteForm(true);
+  };
 
   if (!robot) {
     return (
@@ -135,7 +143,7 @@ export default function RobotDetailPage() {
 
             {/* Quote Button */}
             <button
-              onClick={() => setShowQuoteForm(true)}
+              onClick={handleQuoteRequest}
               className="w-full bg-blue-600 text-white text-lg font-semibold py-4 rounded-lg hover:bg-blue-700 transition-colors mb-4"
             >
               Request Quote

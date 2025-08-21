@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { useParams } from 'next/navigation';
 import Image from 'next/image';
 import Layout from '@/components/Layout';
@@ -8,6 +8,7 @@ import ProductCard from '@/components/ProductCard';
 import SearchBar from '@/components/SearchBar';
 import FilterSidebar from '@/components/FilterSidebar';
 import { Robot, FilterOptions } from '@/types/robot';
+import { trackCategoryView } from '@/lib/gtag';
 import robots from '@/data/robots.json';
 import categories from '@/data/categories.json';
 
@@ -78,6 +79,13 @@ export default function CategoryPage() {
     .filter((robot: Robot) => robot.category === categoryId)
     .map((robot: Robot) => robot.brand)
   ));
+
+  // Track category view
+  useEffect(() => {
+    if (category) {
+      trackCategoryView(category.name, filteredRobots.length);
+    }
+  }, [category, filteredRobots.length]);
 
   if (!category) {
     return (
