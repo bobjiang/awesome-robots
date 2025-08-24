@@ -7,6 +7,7 @@ import Image from 'next/image';
 import Layout from '@/components/Layout';
 import ProductCard from '@/components/ProductCard';
 import SpecificationTable from '@/components/SpecificationTable';
+import RobotDetailTemplate from '@/components/RobotDetailTemplate';
 import { Robot } from '@/types/robot';
 import { trackRobotQuote } from '@/lib/gtag';
 import robots from '@/data/robots.json';
@@ -160,54 +161,17 @@ export default function RobotDetailPage() {
           </div>
         </div>
 
+        {/* Enhanced Robot Details Template */}
+        <div className="mb-16">
+          <RobotDetailTemplate robot={robot} />
+        </div>
+
         {/* Technical Specifications */}
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Technical Specifications</h2>
           <SpecificationTable robot={robot} />
         </div>
 
-        {/* Key Features */}
-        <div className="mb-16">
-          <div className="bg-white rounded-xl shadow-lg p-8">
-            <h3 className="text-2xl font-semibold text-gray-900 mb-6">Key Features</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {robot.features.map((feature, index) => (
-                <div key={index} className="flex items-start">
-                  <span className="w-2 h-2 bg-blue-600 rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                  <span className="text-gray-700">{feature}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        {/* Product Photos */}
-        {robot.images && robot.images.length > 0 && (
-          <div className="mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Product Photos</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {robot.images.slice(0, 3).map((imageUrl, index) => (
-                <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden">
-                  <div className="aspect-square bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center p-6">
-                    <div className="relative w-full h-full">
-                      <Image
-                        src={imageUrl}
-                        alt={`${robot.name} Photo ${index + 1}`}
-                        fill
-                        className="object-contain rounded-lg"
-                        loading="lazy"
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                      />
-                    </div>
-                  </div>
-                  <div className="p-4 text-center">
-                    <p className="text-sm text-gray-600">Photo {index + 1}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
 
         {/* Related Robots */}
         {relatedRobots.length > 0 && (

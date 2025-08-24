@@ -155,6 +155,49 @@
         {"name": "G1 EDU", "price": "request"}
       ]
     },
+    "generalInfo": {
+      "manufacturer": "Unitree",
+      "modelName": "G1",
+      "dimensions": {
+        "standing": "1320x450x200mm",
+        "folded": "690x450x300mm",
+        "weight": "35kg"
+      }
+    },
+    "keyFeatures": [
+      "23-43 joint motors with large movement angles",
+      "Industrial-grade crossed roller bearings",
+      "Low inertia permanent magnet synchronous motors",
+      "8-core high-performance CPU",
+      "Optional force-controlled three-fingered hand",
+      "NVIDIA Jetson Orin high-computing module (EDU)",
+      "UnifoLM (Unified Robot Large Model) platform",
+      "OTA software upgrades",
+      "18-month warranty (EDU model)"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "23-43",
+      "payloadCapacity": "2-3kg (arm load)",
+      "batteryCapacityRuntime": "9000mAh, ~2h battery life",
+      "charger": "54V 5A",
+      "sensorsIncluded": ["3D LiDAR", "Depth Camera", "4-microphone array", "5W Speaker"],
+      "interfaces": ["WiFi 6", "Bluetooth 5.2"]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Yes (ROS/ROS2)",
+      "sdkLanguages": ["C++", "Python"],
+      "openSourceRepos": "https://github.com/unitreerobotics",
+      "aiFrameworksSupported": ["Jetson (EDU model)"],
+      "apiDocumentationQuality": "Good"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "8 months (G1), 18 months (EDU)",
+        "coverage": "Hardware components and software support"
+      },
+      "postSalesSupport": "English docs, online support, GitHub community",
+      "trackRecord": "Founded in 2013, 11+ years in robotics"
+    },
     "specifications": {
       "dimensions": "1320x450x200mm (standing), 690x450x300mm (folded)",
       "weight": "About 35kg",
@@ -215,6 +258,10 @@
       "/images/robots/g1-1.jpg",
       "/images/robots/g1-2.jpg",
       "/images/robots/g1-3.jpg"
+    ],
+    "highResPhotos": [
+      "https://www.unitree.com/images/52688de58de044358e4792a5b7c1593d_2740x1720.jpg",
+      "https://www.unitree.com/images/a7458205b63e4ff5a501c1ae84d0988b_2740x1720.jpg"
     ],
     "documentation": ["Secondary development manual", "SDK Documentation"],
     "officialUrl": "https://www.unitree.com/g1",

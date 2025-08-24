@@ -18,7 +18,8 @@
       "Bash(node:*)",
       "WebFetch(domain:velite.js.org)",
       "Bash(npm install:*)",
-      "Bash(npx velite:*)"
+      "Bash(npx velite:*)",
+      "WebFetch(domain:github.com)"
     ],
     "deny": [],
     "defaultMode": "acceptEdits"
