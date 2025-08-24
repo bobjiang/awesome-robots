@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Awesome Robots Team" }],
   creator: "Awesome Robots",
   publisher: "Awesome Robots",
-  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://awesome-robots.vercel.app'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://www.awesomerobots.xyz'),
   alternates: {
     canonical: '/',
   },
