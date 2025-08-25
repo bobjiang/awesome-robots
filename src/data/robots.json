@@ -130,8 +130,7 @@
       "/images/robots/go2-3.jpg"
     ],
     "highResPhotos": [
-      "https://www.unitree.com/images/b5fffd3e4fc04e6f9fcafedb9516b341_3840x2146.jpg",
-      "https://www.unitree.com/images/21c6d8ba030b4377ac0547c2e1606dd7_3839x2742.jpg"
+      "/images/robots/high-res/unitree-go2/go2-official-1.jpg"
     ],
     "videos": [],
     "documentation": ["User Manual", "SDK Documentation"],
@@ -307,8 +306,8 @@
       "/images/robots/g1-3.jpg"
     ],
     "highResPhotos": [
-      "https://www.unitree.com/images/52688de58de044358e4792a5b7c1593d_2740x1720.jpg",
-      "https://www.unitree.com/images/a7458205b63e4ff5a501c1ae84d0988b_2740x1720.jpg"
+      "/images/robots/high-res/unitree-g1/g1-official-1.jpg",
+      "/images/robots/high-res/unitree-g1/g1-official-2.jpg"
     ],
     "documentation": ["Secondary development manual", "SDK Documentation"],
     "officialUrl": "https://www.unitree.com/g1",
@@ -442,8 +441,8 @@
       "/images/robots/h1-2.png"
     ],
     "highResPhotos": [
-      "https://www.unitree.com/images/da1ecbd107434a03b068aa503311f43a_3840x7000.jpg",
-      "https://www.unitree.com/images/d01aae29f6ed4165b0b2e01c811fb3b8_1419x852.png"
+      "/images/robots/high-res/unitree-h1/h1-official-1.jpg",
+      "/images/robots/high-res/unitree-h1/h1-official-2.jpg"
     ],
     "officialUrl": "https://www.unitree.com/h1",
     "description": "Unitree's First Universal Humanoid Robot - Full-size humanoid robot capable of running and navigating complex terrains with advanced mobility."
@@ -545,8 +544,8 @@
       "/images/robots/unitree-b2.png"
     ],
     "highResPhotos": [
-      "https://www.unitree.com/images/b2/b2-standing.jpg",
-      "https://www.unitree.com/images/b2/b2-action.jpg"
+      "/images/robots/high-res/unitree-go1/go1-official-1.jpg",
+      "/images/robots/high-res/unitree-go1/go1-official-2.jpg"
     ],
     "officialUrl": "https://www.unitree.com/b2",
     "description": "Go Beyond the Limits - Industrial quadruped robot designed for demanding environments and heavy-duty applications."
@@ -656,8 +655,8 @@
       "/images/robots/a2-3.jpg"
     ],
     "highResPhotos": [
-      "https://www.unitree.com/images/a2/a2-profile.jpg",
-      "https://www.unitree.com/images/a2/a2-action.jpg"
+      "/images/robots/high-res/unitree-z1/z1-official-1.png",
+      "/images/robots/high-res/unitree-z1/z1-official-2.png"
     ],
     "officialUrl": "https://www.unitree.com/A2",
     "description": "Stellar Explorer - Advanced industrial quadruped robot designed for exploration and research applications."
@@ -872,8 +871,8 @@
       "/images/robots/quadruped/b1-3.png"
     ],
     "highResPhotos": [
-      "https://www.unitree.com/images/b1/b1-profile.jpg",
-      "https://www.unitree.com/images/b1/b1-industrial.jpg"
+      "/images/robots/unitree-b1-1.jpg",
+      "/images/robots/unitree-b1-2.jpg"
     ],
     "officialUrl": "https://www.unitree.com/b1",
     "description": "Industrial quadruped robot designed for agriculture, security patrols, surveys, and public rescue operations."
@@ -969,8 +968,8 @@
       "/images/robots/aliengo-3.png"
     ],
     "highResPhotos": [
-      "https://www.unitree.com/images/aliengo/aliengo-profile.jpg",
-      "https://www.unitree.com/images/aliengo/aliengo-action.jpg"
+      "/images/robots/unitree-aliengo-1.jpg",
+      "/images/robots/unitree-aliengo-2.jpg"
     ],
     "officialUrl": "https://www.unitree.com/aliengo",
     "description": "Versatile quadruped robot with advanced mobility and sensing capabilities for research and industrial applications."
