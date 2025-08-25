@@ -6,7 +6,7 @@ date: "2024-12-05"
 category: "buying-guides"
 tags: ["quadruped", "buying-guide", "comparison", "unitree", "deep-robotics"]
 excerpt: "Everything you need to know when choosing your first quadruped robot, from budget considerations to feature comparison and use case analysis."
-featured: true
+featured: false
 published: true
 seo:
   title: "How to Choose the Perfect Quadruped Robot in 2024"

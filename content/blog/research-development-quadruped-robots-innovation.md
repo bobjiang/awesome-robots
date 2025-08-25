@@ -6,7 +6,7 @@ author: "bob-jiang"
 category: "case-studies"
 tags: ["deep-robotics", "x30", "research", "development", "scientific-innovation", "academic"]
 excerpt: "Explore how quadruped robots like the Deep Robotics X30 are transforming scientific research and development, enabling breakthrough discoveries across multiple disciplines from autonomous exploration to laboratory automation."
-featured: true
+featured: false
 published: true
 seo:
   title: "Quadruped Robots Accelerate Scientific Research & Development"

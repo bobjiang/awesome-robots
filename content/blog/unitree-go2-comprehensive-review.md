@@ -6,7 +6,7 @@ date: "2024-12-10"
 category: "reviews"
 tags: ["unitree", "go2", "quadruped", "review", "consumer-robotics"]
 excerpt: "An in-depth review of the Unitree Go2, covering performance, features, pricing, and real-world testing results after 3 months of extensive use."
-featured: true
+featured: false
 published: true
 seo:
   title: "Unitree Go2 Review 2024 - Complete Analysis & Testing"

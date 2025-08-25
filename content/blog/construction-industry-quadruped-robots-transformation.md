@@ -6,7 +6,7 @@ author: "bob-jiang"
 category: "case-studies"
 tags: ["deep-robotics", "x30", "construction", "surveying", "safety", "automation"]
 excerpt: "Discover how quadruped robots like the Deep Robotics X30 are revolutionizing construction operations, from automated surveying and 3D mapping to safety monitoring and quality control on construction sites worldwide."
-featured: true
+featured: false
 published: true
 seo:
   title: "Quadruped Robots Transform Construction Safety & Surveying"

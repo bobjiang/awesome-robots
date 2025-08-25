@@ -19,7 +19,8 @@
       "WebFetch(domain:velite.js.org)",
       "Bash(npm install:*)",
       "Bash(npx velite:*)",
-      "WebFetch(domain:github.com)"
+      "WebFetch(domain:github.com)",
+      "WebSearch"
     ],
     "deny": [],
     "defaultMode": "acceptEdits"

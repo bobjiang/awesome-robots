@@ -6,7 +6,7 @@ author: "bob-jiang"
 category: "case-studies"
 tags: ["deep-robotics", "x30", "emergency-response", "rescue", "first-responders", "disaster-relief"]
 excerpt: "Explore how advanced quadruped robots like the Deep Robotics X30 are transforming emergency response, enabling first responders to save lives while reducing risks in dangerous rescue operations."
-featured: true
+featured: false
 published: true
 seo:
   title: "Quadruped Robots Transform Emergency Response & Rescue Operations"

@@ -6,7 +6,7 @@ author: "bob-jiang"
 category: "case-studies"
 tags: ["deep-robotics", "x30", "tunnel-inspection", "infrastructure", "automation", "underground"]
 excerpt: "Discover how quadruped robots like the Deep Robotics X30 are transforming tunnel inspection and underground infrastructure monitoring, eliminating human risk while improving data quality and operational efficiency."
-featured: true
+featured: false
 published: true
 seo:
   title: "Quadruped Robots Transform Underground Tunnel Inspection Operations"
