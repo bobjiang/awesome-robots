@@ -3,7 +3,7 @@ title: "Top 10 Global AI Robotics Companies (Legged Robots)"
 slug: "top-10-global-ai-robotics-companies"
 date: "2025-08-26"
 author: "bob-jiang"
-category: "industry-analysis"
+category: "news"
 tags: ["robotics", "AI", "legged robots", "quadrupeds", "humanoids", "automation", "boston-dynamics", "deep-robotics", "tesla", "figure-ai"]
 excerpt: "Explore the leading companies revolutionizing legged robotics technology, from Boston Dynamics' Spot to Tesla's Optimus, and discover how these innovators are shaping the future of automation across industries."
 featured: true

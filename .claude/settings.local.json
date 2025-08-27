@@ -20,7 +20,9 @@
       "Bash(npm install:*)",
       "Bash(npx velite:*)",
       "WebFetch(domain:github.com)",
-      "WebSearch"
+      "WebSearch",
+      "Bash(python3:*)",
+      "Bash(grep:*)"
     ],
     "deny": [],
     "defaultMode": "acceptEdits"
