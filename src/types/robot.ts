@@ -201,6 +201,41 @@ export interface Robot {
   documentation?: string[];
   officialUrl: string;
   description: string;
+  // Extended properties for RobotDetailTemplate
+  generalInfo?: {
+    manufacturer: string;
+    modelName: string;
+    dimensions: {
+      standing: string;
+      folded: string;
+      weight: string;
+    };
+  };
+  keyFeatures?: string[];
+  hardwareBuildQuality?: {
+    totalDegreesOfFreedom: string;
+    payloadCapacity: string;
+    batteryCapacityRuntime: string;
+    charger: string;
+    sensorsIncluded: string[];
+    interfaces: string[];
+  };
+  softwareEcosystem?: {
+    rosSupport: string;
+    sdkLanguages: string[];
+    openSourceRepos: string;
+    aiFrameworksSupported: string[];
+    apiDocumentationQuality: string;
+  };
+  supplierReliability?: {
+    warranty: {
+      duration: string;
+      coverage: string;
+    };
+    postSalesSupport: string;
+    trackRecord: string;
+  };
+  highResPhotos?: string[];
 }
 
 export interface Category {

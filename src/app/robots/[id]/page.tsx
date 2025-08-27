@@ -166,11 +166,13 @@ export default function RobotDetailPage() {
           <RobotDetailTemplate robot={robot} />
         </div>
 
-        {/* Technical Specifications */}
-        <div className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Technical Specifications</h2>
-          <SpecificationTable robot={robot} />
-        </div>
+        {/* Technical Specifications - Only show for robots without extended template data */}
+        {!robot.generalInfo && robot.specifications && (
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Technical Specifications</h2>
+            <SpecificationTable robot={robot} />
+          </div>
+        )}
 
 
         {/* Related Robots */}

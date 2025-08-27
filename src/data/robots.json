@@ -1639,42 +1639,60 @@
         {"name": "X30 Pro", "price": "request"}
       ]
     },
-    "specifications": {
+    "generalInfo": {
+      "manufacturer": "Deep Robotics",
+      "modelName": "X30",
       "dimensions": {
-        "X30": "1000 x 695 x 470 mm (standing)",
-        "X30_Pro": "1000 x 715 x 470 mm (standing)"
-      },
-      "weight": {
-        "X30": "56 kg (battery included)",
-        "X30_Pro": "59 kg (battery included)"
-      },
-      "maxSpeed": "≥4 m/s",
-      "maxSlope": "45 degrees",
-      "stepHeight": "≥20 cm",
-      "ingressProtection": "IP67",
-      "operatingTemperature": "-20°C to 55°C",
-      "batteryLife": "2.5-4 hours",
-      "maxMileage": "≥10 km",
-      "connectivity": {
-        "X30": ["Ethernet", "Power output"],
-        "X30_Pro": ["USB2.0", "USB3.0", "Ethernet", "WiFi", "5V/12V/24V power outputs"]
+        "standing": "100cm x 69.5cm x 47cm (X30) / 100cm x 71.5cm x 47cm (X30 Pro)",
+        "folded": "N/A",
+        "weight": "56kg (X30) / 59kg (X30 Pro) with battery"
       }
     },
-    "features": [
-      "Industrial inspection and investigation",
-      "Security and mapping applications",
-      "Extreme weather operation",
-      "45-degree stair climbing capability",
-      "Advanced perception system",
-      "IP67 environmental protection"
+    "keyFeatures": [
+      "Industrial-grade IP67 protection rating",
+      "Maximum speed of 4+ m/s with advanced mobility",
+      "45° slope climbing and 20cm+ obstacle navigation",
+      "Extended battery life: 2.5-4 hours runtime",
+      "Extreme temperature operation: -20°C to 55°C",
+      "Advanced SLAM and autonomous navigation",
+      "Quick battery swap functionality",
+      "Professional inspection and security applications",
+      "Multi-sensor perception system integration"
     ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "12 (quadruped locomotion)",
+      "payloadCapacity": "20kg maximum",
+      "batteryCapacityRuntime": "22.4Ah, 2.5-4h runtime, ≥10km mileage",
+      "charger": "Fast charging system with quick swap capability",
+      "sensorsIncluded": ["360° LiDAR sensors (front & rear)", "Wide-view camera system", "IMU and orientation sensors", "Environmental monitoring sensors"],
+      "interfaces": ["Ethernet", "USB 2.0/3.0 (Pro)", "WiFi (Pro)", "Multiple power outputs (5V/12V/24V)", "RS485/RS232", "4G/5G support"]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Yes (ROS/Ubuntu platform)",
+      "sdkLanguages": ["C++", "Python", "ROS APIs"],
+      "openSourceRepos": "https://github.com/DeepRoboticsLab",
+      "aiFrameworksSupported": ["SLAM mapping", "Autonomous navigation", "Computer vision", "Deep learning integration"],
+      "apiDocumentationQuality": "Professional grade with comprehensive SDK"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "1 year standard warranty",
+        "coverage": "Hardware defects, software support, technical assistance"
+      },
+      "postSalesSupport": "Dedicated technical support team, training programs, maintenance services",
+      "trackRecord": "Established industrial robotics company with global deployments in utilities, mining, and security sectors"
+    },
     "images": [
       "/images/robots/deep-robotics-x30/x30-1.jpg",
       "/images/robots/deep-robotics-x30/x30-2.jpg",
       "/images/robots/deep-robotics-x30/x30-3.jpg"
     ],
+    "highResPhotos": [
+      "/images/robots/high-res/deep-robotics-x30/x30-official-1.jpg",
+      "/images/robots/high-res/deep-robotics-x30/x30-official-2.jpg"
+    ],
     "officialUrl": "https://www.deeprobotics.cn/en/index/product3.html",
-    "description": "Advanced industrial quadruped robot for inspection, security, and mapping with extreme weather resistance."
+    "description": "Professional industrial quadruped robot designed for extreme environments with advanced perception, autonomous navigation, and robust build quality for inspection, security, and mapping applications."
   },
   {
     "id": "deep-robotics-lite3",
@@ -1682,41 +1700,69 @@
     "brand": "Deep Robotics",
     "category": "quadruped",
     "price": {
-      "starting": "request",
+      "starting": 2890,
       "currency": "USD",
       "models": [
-        {"name": "Basic", "price": "request"},
+        {"name": "Basic", "price": 2890},
         {"name": "Venture", "price": "request"},
         {"name": "Pro", "price": "request"},
         {"name": "LIDAR", "price": "request"}
       ]
     },
-    "specifications": {
-      "dimensions": "610mm x 370mm x 406-496mm (varies by model)",
-      "weight": "12-13.5 kg (including battery)",
-      "walkingLoad": "2.5-5 kg",
-      "maxSlope": "40°",
-      "stairClimbing": "18 cm",
-      "batteryLife": "1.5-2 hours",
-      "maxMileage": "2.7-5 km",
-      "improvements": "50% increased joint torque"
+    "generalInfo": {
+      "manufacturer": "Deep Robotics",
+      "modelName": "Lite3",
+      "dimensions": {
+        "standing": "61cm x 37cm x 40.6-49.6cm (varies by configuration)",
+        "folded": "Compact folding design",
+        "weight": "12-13.5kg (with battery)"
+      }
     },
-    "features": [
-      "Extraordinary locomotion capabilities",
-      "50% increased joint torque",
-      "Advanced motion algorithms",
-      "Enhanced environmental interaction",
-      "Modular design for customization",
-      "Motion control SDK provided",
-      "APIs and perception development interfaces"
+    "keyFeatures": [
+      "50% increased joint torque over previous generation",
+      "Advanced locomotion: front flips, jumps, dancing",
+      "Maximum speed of 4 m/s with agile maneuverability",
+      "18cm step climbing and 40° slope navigation",
+      "Modular expansion with open interfaces",
+      "Up to 90 minutes battery life (2 hours max)",
+      "Multiple variants: Basic, Venture, Pro, LIDAR",
+      "Educational and research-focused platform",
+      "Real-time industrial control system"
     ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "12 (with enhanced joint torque)",
+      "payloadCapacity": "2.5-5kg walking load, 7.5kg maximum",
+      "batteryCapacityRuntime": "1.5-2h runtime, 2.7-5km range",
+      "charger": "Standard charging system",
+      "sensorsIncluded": ["Obstacle detection sensors", "Visual following system", "IMU and balance sensors", "Optional LiDAR (LIDAR variant)"],
+      "interfaces": ["Ethernet", "USB 3.0", "HDMI", "24V/12V/5V power inputs", "Modular expansion ports"]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Yes (ROS compatible)",
+      "sdkLanguages": ["C++", "Python", "Motion Control SDK"],
+      "openSourceRepos": "https://github.com/DeepRoboticsLab",
+      "aiFrameworksSupported": ["Computer vision", "Autonomous navigation", "Behavioral learning algorithms"],
+      "apiDocumentationQuality": "Comprehensive with perception development interfaces"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "1 year manufacturer warranty",
+        "coverage": "Hardware components, software support, educational resources"
+      },
+      "postSalesSupport": "Educational support, developer community, technical documentation",
+      "trackRecord": "Popular in research institutions and educational markets with global distribution"
+    },
     "images": [
       "/images/robots/deep-robotics-lite3/lite3-1.jpg",
       "/images/robots/deep-robotics-lite3/lite3-2.jpg",
       "/images/robots/deep-robotics-lite3/lite3-3.jpg"
     ],
+    "highResPhotos": [
+      "/images/robots/high-res/deep-robotics-lite3/lite3-official-1.jpg",
+      "/images/robots/high-res/deep-robotics-lite3/lite3-official-2.jpg"
+    ],
     "officialUrl": "https://www.deeprobotics.cn/en/index/product1.html",
-    "description": "Bionic robot dog with extraordinary locomotion and modular customization for education and development."
+    "description": "Advanced bionic quadruped robot designed for education, research, and development with exceptional locomotion capabilities, modular design, and comprehensive SDK support."
   },
   {
     "id": "deep-robotics-lynx",
@@ -1821,35 +1867,60 @@
         {"name": "Standard", "price": "request"}
       ]
     },
-    "specifications": {
-      "walkingSpeed": "Over 1.6 m/s",
-      "stepHeight": "18 cm",
-      "slopeCapability": "25°",
-      "terrainHandling": "Uneven terrain capable",
-      "joints": ["J60 lightweight joints", "J100 high-torque joints"],
-      "capabilities": [
-        "Balance recovery under disturbances",
-        "Stable walking on unknown terrain",
-        "Fusion perception (robot + environment)",
-        "Autonomous learning through AI and big data"
-      ]
+    "generalInfo": {
+      "manufacturer": "Deep Robotics",
+      "modelName": "DR01",
+      "dimensions": {
+        "standing": "170cm height (5'6\")",
+        "folded": "N/A",
+        "weight": "TBD (proprietary lightweight design)"
+      }
     },
-    "features": [
-      "Embodied intelligence explorer",
-      "Flexible mobility with balance recovery",
-      "Fusion perception capability",
-      "Autonomous learning ability",
-      "Self-developed joint systems",
-      "AI and big data training integration",
-      "Advanced terrain navigation"
+    "keyFeatures": [
+      "Embodied intelligence explorer with advanced AI",
+      "Walking speed over 1.6 m/s with stable locomotion",
+      "18cm step climbing and 25° slope navigation",
+      "Proprietary J60 lightweight and J100 high-torque joints",
+      "Balance recovery under unknown disturbances",
+      "Fusion perception: robot + environmental awareness",
+      "Autonomous learning through AI and big data training",
+      "Real-time adaptation to changing environments",
+      "Stable traversal across complex and discrete terrains"
     ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "TBD (full humanoid configuration)",
+      "payloadCapacity": "TBD (optimized for mobility)",
+      "batteryCapacityRuntime": "TBD (industrial application focused)",
+      "charger": "TBD",
+      "sensorsIncluded": ["Environmental perception array", "Real-time feedback sensors", "Balance and orientation systems", "Computer vision sensors"],
+      "interfaces": ["TBD (development platform interfaces)"]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Yes (expected ROS compatibility)",
+      "sdkLanguages": ["C++", "Python", "AI framework integration"],
+      "openSourceRepos": "https://github.com/DeepRoboticsLab",
+      "aiFrameworksSupported": ["Embodied intelligence", "Big data training", "Adaptive learning algorithms", "Computer vision"],
+      "apiDocumentationQuality": "Professional development platform (in development)"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "TBD (industrial warranty expected)",
+        "coverage": "Hardware, software, AI training support"
+      },
+      "postSalesSupport": "Dedicated AI and robotics engineering support",
+      "trackRecord": "Leading quadruped robotics company expanding into humanoid market, unveiled at World Robot Conference Beijing 2024"
+    },
     "images": [
       "/images/robots/deep-robotics-dr01/dr01-1.jpg",
       "/images/robots/deep-robotics-dr01/dr01-2.jpg",
       "/images/robots/deep-robotics-dr01/dr01-3.jpg"
     ],
-    "officialUrl": "https://www.deeprobotics.cn/en/index/humanoid.html",
-    "description": "Embodied intelligence humanoid robot with advanced AI capabilities and autonomous learning for industrial applications."
+    "highResPhotos": [
+      "/images/robots/high-res/deep-robotics-dr01/dr01-official-1.jpg",
+      "/images/robots/high-res/deep-robotics-dr01/dr01-official-2.jpg"
+    ],
+    "officialUrl": "https://www.deeprobotics.cn/en/wap/humanoid.html",
+    "description": "Revolutionary embodied intelligence humanoid robot featuring advanced AI capabilities, autonomous learning, and exceptional mobility for next-generation industrial and research applications."
   },
   {
     "id": "deep-robotics-j60",

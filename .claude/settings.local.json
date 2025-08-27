@@ -22,7 +22,11 @@
       "WebFetch(domain:github.com)",
       "WebSearch",
       "Bash(python3:*)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "Bash(pkill:*)",
+      "WebFetch(domain:www.awesomerobots.xyz)",
+      "WebFetch(domain:deeprobotics.cn)",
+      "Bash(npx tsc:*)"
     ],
     "deny": [],
     "defaultMode": "acceptEdits"
