@@ -1,10 +1,17 @@
 ---
 title: "Top 10 Global AI Robotics Companies (Legged Robots)"
-description: "Discover the leading companies pushing the boundaries of legged robotics technology, from quadrupeds to humanoids, and their impact on various industries."
-author: "bob-jiang"
+slug: "top-10-global-ai-robotics-companies"
 date: "2025-08-26"
-tags: ["robotics", "AI", "legged robots", "quadrupeds", "humanoids", "automation"]
+author: "bob-jiang"
+category: "industry-analysis"
+tags: ["robotics", "AI", "legged robots", "quadrupeds", "humanoids", "automation", "boston-dynamics", "deep-robotics", "tesla", "figure-ai"]
+excerpt: "Explore the leading companies revolutionizing legged robotics technology, from Boston Dynamics' Spot to Tesla's Optimus, and discover how these innovators are shaping the future of automation across industries."
 featured: true
+published: true
+seo:
+  title: "Top 10 Global AI Robotics Companies Leading Legged Robot Innovation"
+  description: "Discover the world's leading AI robotics companies specializing in legged robots, from quadrupeds to humanoids, and their impact on automation, manufacturing, and industrial applications."
+  keywords: ["AI robotics companies", "legged robots", "quadruped robots", "humanoid robots", "boston dynamics", "tesla optimus", "robotics automation"]
 ---
 
 # Top 10 Global AI Robotics Companies (Legged Robots)
