@@ -89,10 +89,12 @@ export default function ProductCard({ robot }: ProductCardProps) {
           <div className="text-sm text-gray-500 mb-1">Key Specs:</div>
           <div className="text-sm text-gray-700">
             {(() => {
-              // Handle weight
-              if (typeof robot.specifications.weight === 'string') {
+              // Handle weight - check new structure first, then fall back to old
+              if (robot.generalInfo?.dimensions?.weight) {
+                return robot.generalInfo.dimensions.weight;
+              } else if (robot.specifications?.weight && typeof robot.specifications.weight === 'string') {
                 return robot.specifications.weight;
-              } else if (robot.specifications.totalWeight) {
+              } else if (robot.specifications?.totalWeight) {
                 if (typeof robot.specifications.totalWeight === 'string') {
                   return robot.specifications.totalWeight;
                 } else if (typeof robot.specifications.totalWeight === 'object') {
@@ -105,13 +107,16 @@ export default function ProductCard({ robot }: ProductCardProps) {
               }
             })()} • {
               (() => {
-                if (typeof robot.specifications.battery === 'string') {
+                // Handle battery info - check for extended structure first
+                if (robot.hardwareBuildQuality?.batteryCapacityRuntime) {
+                  return robot.hardwareBuildQuality.batteryCapacityRuntime.split(',')[0];
+                } else if (robot.specifications?.battery && typeof robot.specifications.battery === 'string') {
                   return robot.specifications.battery.split(',')[0];
-                } else if (typeof robot.specifications.battery === 'object' && robot.specifications.battery) {
+                } else if (typeof robot.specifications?.battery === 'object' && robot.specifications.battery) {
                   return robot.specifications.battery.AIR || robot.specifications.battery.PRO || robot.specifications.battery.EDU || 'Battery N/A';
-                } else if (robot.specifications.batteryLife) {
+                } else if (robot.specifications?.batteryLife) {
                   return typeof robot.specifications.batteryLife === 'string' ? robot.specifications.batteryLife : 'Battery Info Available';
-                } else if (robot.specifications.batteryCapacity) {
+                } else if (robot.specifications?.batteryCapacity) {
                   return typeof robot.specifications.batteryCapacity === 'string' ? robot.specifications.batteryCapacity : 'Battery Available';
                 } else {
                   return 'Battery N/A';
