@@ -14,8 +14,6 @@ seo:
   keywords: ["robotics news", "AI robotics", "robotics digest", "weekly robotics", "robotics industry", "robotics research"]
 ---
 
-# Awesome Robots Digest - [Issue Number] - [Date]
-
 ## TL;DR; 📋
 
 **[Highlight this digest with key subtitles and main takeaways]**
@@ -161,6 +159,7 @@ A concluding remark to wrap up the digest. This may invite reader engagement (e.
 
 - **Subscribe:** [Newsletter signup link](https://awesomerobotsxyz.substack.com/)
 - **Follow us:** [Twitter (X) links](https://x.com/awesome__robots)
+- **Website:** [Official Website](https://www.awesomerobots.xyz/)
 
 ---
 

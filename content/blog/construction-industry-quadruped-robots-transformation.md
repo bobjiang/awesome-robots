@@ -14,8 +14,6 @@ seo:
   keywords: ["construction robots", "construction site automation", "surveying robots", "x30 robot construction", "construction safety technology"]
 ---
 
-# Building the Future: How Quadruped Robots Are Transforming Construction Safety, Surveying, and Site Management
-
 The construction industry stands at a technological crossroads. While other sectors have embraced automation and digital transformation, construction has remained largely manual, dangerous, and inefficient. This paradigm is shifting dramatically as quadruped robots emerge as game-changing platforms that address construction's most persistent challenges: worker safety, surveying accuracy, project monitoring, and quality control. These four-legged innovators are not just changing how buildings are constructed—they're revolutionizing the entire construction workflow from initial surveying to final inspection.
 
 ## The Construction Challenge: An Industry Under Pressure
