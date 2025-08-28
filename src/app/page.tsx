@@ -52,7 +52,7 @@ export default function Home() {
               <div className="h-48 bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center p-8">
                 <div className="relative w-full h-full">
                   <Image
-                    src="/images/robots/unitree-go2.png"
+                    src="/images/robots/unitree-go2.jpg"
                     alt="Unitree Go2"
                     fill
                     className="object-contain"
