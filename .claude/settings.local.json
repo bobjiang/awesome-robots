@@ -26,7 +26,11 @@
       "Bash(pkill:*)",
       "WebFetch(domain:www.awesomerobots.xyz)",
       "WebFetch(domain:deeprobotics.cn)",
-      "Bash(npx tsc:*)"
+      "Bash(npx tsc:*)",
+      "WebFetch(domain:www.ubtrobot.com)",
+      "WebFetch(domain:localhost)",
+      "WebFetch(domain:www.commercial.ubtrobot.com)",
+      "WebFetch(domain:technologymagazine.com)"
     ],
     "deny": [],
     "defaultMode": "acceptEdits"

@@ -52,8 +52,8 @@ export default function Home() {
               <div className="h-48 bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center p-8">
                 <div className="relative w-full h-full">
                   <Image
-                    src="/images/robots/unitree-go2.jpg"
-                    alt="Unitree Go2"
+                    src="/images/robots/deep-robotics-x30/x30-1.jpg"
+                    alt="Deep Robotics X30"
                     fill
                     className="object-contain"
                     priority
@@ -62,12 +62,12 @@ export default function Home() {
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Unitree Go2</h3>
-                <p className="text-gray-600 mb-4">Consumer quadruped robot with AI integration</p>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Deep Robotics X30</h3>
+                <p className="text-gray-600 mb-4">Industrial quadruped robot with IP67 protection and extreme environment capability</p>
                 <div className="flex justify-between items-center">
-                  <span className="text-2xl font-bold text-green-600">From $1,600</span>
+                  <span className="text-2xl font-bold text-green-600">Request Quote</span>
                   <Link
-                    href="/robots/unitree-go2"
+                    href="/robots/deep-robotics-x30"
                     className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors"
                     prefetch={true}
                   >
@@ -81,8 +81,8 @@ export default function Home() {
               <div className="h-48 bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center p-8">
                 <div className="relative w-full h-full">
                   <Image
-                    src="/images/robots/unitree-h1.png"
-                    alt="Unitree H1"
+                    src="/images/robots/ubtech/walker-s2-1.jpg"
+                    alt="UBTech Walker S2"
                     fill
                     className="object-contain"
                     priority
@@ -91,12 +91,12 @@ export default function Home() {
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Unitree H1</h3>
-                <p className="text-gray-600 mb-4">Full-size humanoid robot capable of running</p>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">UBTech Walker S2</h3>
+                <p className="text-gray-600 mb-4">Industrial humanoid robot with autonomous battery swapping technology</p>
                 <div className="flex justify-between items-center">
                   <span className="text-2xl font-bold text-purple-600">Request Quote</span>
                   <Link
-                    href="/robots/unitree-h1"
+                    href="/robots/ubtech-walker-s2"
                     className="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors"
                     prefetch={true}
                   >

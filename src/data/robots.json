@@ -8,9 +8,18 @@
       "starting": 1600,
       "currency": "USD",
       "models": [
-        {"name": "AIR", "price": 1600},
-        {"name": "PRO", "price": 2800},
-        {"name": "EDU", "price": "request"}
+        {
+          "name": "AIR",
+          "price": 1600
+        },
+        {
+          "name": "PRO",
+          "price": 2800
+        },
+        {
+          "name": "EDU",
+          "price": "request"
+        }
       ]
     },
     "generalInfo": {
@@ -38,14 +47,29 @@
       "payloadCapacity": "~7-8kg (max ~10-12kg depending on model)",
       "batteryCapacityRuntime": "8000mAh (1-2h) / 15000mAh (2-4h)",
       "charger": "28V-33.6V, ~3000W max power",
-      "sensorsIncluded": ["4D LiDAR L1", "HD wide-angle camera", "Wireless vector positioning", "Foot-end force sensors (EDU)"],
-      "interfaces": ["WiFi 6", "Bluetooth 5.2", "Optional 4G"]
+      "sensorsIncluded": [
+        "4D LiDAR L1",
+        "HD wide-angle camera",
+        "Wireless vector positioning",
+        "Foot-end force sensors (EDU)"
+      ],
+      "interfaces": [
+        "WiFi 6",
+        "Bluetooth 5.2",
+        "Optional 4G"
+      ]
     },
     "softwareEcosystem": {
       "rosSupport": "Yes (ROS/ROS2)",
-      "sdkLanguages": ["C++", "Python"],
+      "sdkLanguages": [
+        "C++",
+        "Python"
+      ],
       "openSourceRepos": "https://github.com/unitreerobotics",
-      "aiFrameworksSupported": ["GPT integration", "Embodied AI platform"],
+      "aiFrameworksSupported": [
+        "GPT integration",
+        "Embodied AI platform"
+      ],
       "apiDocumentationQuality": "Good"
     },
     "supplierReliability": {
@@ -106,12 +130,25 @@
       },
       "batteryLife": {
         "AIR": "1-2 hours",
-        "PRO": "1-2 hours", 
+        "PRO": "1-2 hours",
         "EDU": "2-4 hours"
       },
-      "connectivity": ["Wi-Fi 6", "Bluetooth 5.2", "Optional 4G"],
-      "sensors": ["3D LiDAR", "HD wide-angle camera", "Wireless vector positioning", "Foot-end force sensors (EDU)"],
-      "aiFeatures": ["GPT-powered AI integration", "Advanced AI modes", "Intelligent Side-follow System (ISS 2.0)"],
+      "connectivity": [
+        "Wi-Fi 6",
+        "Bluetooth 5.2",
+        "Optional 4G"
+      ],
+      "sensors": [
+        "3D LiDAR",
+        "HD wide-angle camera",
+        "Wireless vector positioning",
+        "Foot-end force sensors (EDU)"
+      ],
+      "aiFeatures": [
+        "GPT-powered AI integration",
+        "Advanced AI modes",
+        "Intelligent Side-follow System (ISS 2.0)"
+      ],
       "softwareUpdates": "Over-the-Air (OTA) upgrades"
     },
     "features": [
@@ -133,7 +170,10 @@
       "/images/robots/high-res/unitree-go2/go2-official-1.jpg"
     ],
     "videos": [],
-    "documentation": ["User Manual", "SDK Documentation"],
+    "documentation": [
+      "User Manual",
+      "SDK Documentation"
+    ],
     "officialUrl": "https://www.unitree.com/go2",
     "description": "New Creature of Embodied AI - Consumer/Education quadruped robot with advanced AI capabilities and robust performance for various terrains."
   },
@@ -141,12 +181,15 @@
     "id": "unitree-go2-w",
     "name": "Go2-W",
     "brand": "Unitree",
-    "category": "quadruped", 
+    "category": "quadruped",
     "price": {
       "starting": 2000,
       "currency": "USD",
       "models": [
-        {"name": "Standard", "price": "request"}
+        {
+          "name": "Standard",
+          "price": "request"
+        }
       ]
     },
     "specifications": {
@@ -165,8 +208,15 @@
       "batteryLife": "1.5-3 hours runtime",
       "charger": "Fast charge (33.6V 9A)",
       "warranty": "12 months",
-      "connectivity": ["Wi-Fi 6", "4G", "Bluetooth"],
-      "sensors": ["Super-wide-angle 3D LiDAR", "HD wide-angle camera"],
+      "connectivity": [
+        "Wi-Fi 6",
+        "4G",
+        "Bluetooth"
+      ],
+      "sensors": [
+        "Super-wide-angle 3D LiDAR",
+        "HD wide-angle camera"
+      ],
       "additionalFeatures": [
         "Continuous OTA software upgrades",
         "In-wheel motor",
@@ -197,8 +247,14 @@
       "starting": 16000,
       "currency": "USD",
       "models": [
-        {"name": "G1", "price": 16000},
-        {"name": "G1 EDU", "price": "request"}
+        {
+          "name": "G1",
+          "price": 16000
+        },
+        {
+          "name": "G1 EDU",
+          "price": "request"
+        }
       ]
     },
     "generalInfo": {
@@ -226,14 +282,27 @@
       "payloadCapacity": "2-3kg (arm load)",
       "batteryCapacityRuntime": "9000mAh, ~2h battery life",
       "charger": "54V 5A",
-      "sensorsIncluded": ["3D LiDAR", "Depth Camera", "4-microphone array", "5W Speaker"],
-      "interfaces": ["WiFi 6", "Bluetooth 5.2"]
+      "sensorsIncluded": [
+        "3D LiDAR",
+        "Depth Camera",
+        "4-microphone array",
+        "5W Speaker"
+      ],
+      "interfaces": [
+        "WiFi 6",
+        "Bluetooth 5.2"
+      ]
     },
     "softwareEcosystem": {
       "rosSupport": "Yes (ROS/ROS2)",
-      "sdkLanguages": ["C++", "Python"],
+      "sdkLanguages": [
+        "C++",
+        "Python"
+      ],
       "openSourceRepos": "https://github.com/unitreerobotics",
-      "aiFrameworksSupported": ["Jetson (EDU model)"],
+      "aiFrameworksSupported": [
+        "Jetson (EDU model)"
+      ],
       "apiDocumentationQuality": "Good"
     },
     "supplierReliability": {
@@ -267,12 +336,18 @@
       "calfThighLength": "0.6M",
       "armSpan": "About 0.45M",
       "computing": "8-core CPU",
-      "connectivity": ["Wi-Fi 6", "Bluetooth 5.2"],
+      "connectivity": [
+        "Wi-Fi 6",
+        "Bluetooth 5.2"
+      ],
       "warranty": {
         "G1": "8 months",
         "G1_EDU": "18 months"
       },
-      "sensors": ["Depth Camera", "3D LiDAR"],
+      "sensors": [
+        "Depth Camera",
+        "3D LiDAR"
+      ],
       "movementCapabilities": {
         "waistJoint": "Z±155°",
         "kneeJoint": "0-165°",
@@ -283,7 +358,7 @@
       "optionalFeatures": {
         "G1_EDU": [
           "Force-controlled three-fingered hand",
-          "Dexterous manipulation capabilities", 
+          "Dexterous manipulation capabilities",
           "Optional tactile sensor arrays",
           "NVIDIA Jetson Orin high-computing module"
         ]
@@ -309,7 +384,10 @@
       "/images/robots/high-res/unitree-g1/g1-official-1.jpg",
       "/images/robots/high-res/unitree-g1/g1-official-2.jpg"
     ],
-    "documentation": ["Secondary development manual", "SDK Documentation"],
+    "documentation": [
+      "Secondary development manual",
+      "SDK Documentation"
+    ],
     "officialUrl": "https://www.unitree.com/g1",
     "description": "Humanoid agent AI avatar - Advanced humanoid robot with high degrees of freedom and AI capabilities for research and development."
   },
@@ -322,8 +400,14 @@
       "starting": 150000,
       "currency": "USD",
       "models": [
-        {"name": "H1", "price": "request"},
-        {"name": "H1-2", "price": "request"}
+        {
+          "name": "H1",
+          "price": "request"
+        },
+        {
+          "name": "H1-2",
+          "price": "request"
+        }
       ]
     },
     "generalInfo": {
@@ -351,14 +435,25 @@
       "payloadCapacity": "Not specified",
       "batteryCapacityRuntime": "864 Wh, 15Ah, max 67.2V, quickly replaceable",
       "charger": "Not specified",
-      "sensorsIncluded": ["3D LiDAR", "Depth Camera", "360° depth perception system"],
-      "interfaces": ["Not specified"]
+      "sensorsIncluded": [
+        "3D LiDAR",
+        "Depth Camera",
+        "360° depth perception system"
+      ],
+      "interfaces": [
+        "Not specified"
+      ]
     },
     "softwareEcosystem": {
       "rosSupport": "Not specified",
-      "sdkLanguages": ["Not specified"],
+      "sdkLanguages": [
+        "Not specified"
+      ],
       "openSourceRepos": "https://github.com/unitreerobotics",
-      "aiFrameworksSupported": ["Intel Core i5/i7", "Optional Nvidia Jetson Orin NX"],
+      "aiFrameworksSupported": [
+        "Intel Core i5/i7",
+        "Optional Nvidia Jetson Orin NX"
+      ],
       "apiDocumentationQuality": "Not specified"
     },
     "supplierReliability": {
@@ -456,7 +551,10 @@
       "starting": 25000,
       "currency": "USD",
       "models": [
-        {"name": "Industrial", "price": "request"}
+        {
+          "name": "Industrial",
+          "price": "request"
+        }
       ]
     },
     "generalInfo": {
@@ -472,7 +570,7 @@
       "Max Running Speed: > 6 m/s",
       "Max Joint Torque: ~360 N.m",
       "Standing Load: Max 120kg",
-      "Walking Load: > 40kg", 
+      "Walking Load: > 40kg",
       "Longest Jump Distance: > 1.6m",
       "45Ah (2250Wh) battery system",
       "IP67 environmental protection",
@@ -485,14 +583,28 @@
       "payloadCapacity": "Standing: 120kg max, Walking: > 40kg",
       "batteryCapacityRuntime": "45Ah (2250Wh), 4-6 hours runtime",
       "charger": "58V charging system",
-      "sensorsIncluded": ["3D LiDAR × 1", "Depth camera × 2", "Optical camera × 2"],
-      "interfaces": ["1000M-Base-Ethernet × 4", "USB3.0 × 4", "Power outputs: 12V × 4, 5V × 1, 24V × 4"]
+      "sensorsIncluded": [
+        "3D LiDAR × 1",
+        "Depth camera × 2",
+        "Optical camera × 2"
+      ],
+      "interfaces": [
+        "1000M-Base-Ethernet × 4",
+        "USB3.0 × 4",
+        "Power outputs: 12V × 4, 5V × 1, 24V × 4"
+      ]
     },
     "softwareEcosystem": {
       "rosSupport": "Yes (ROS/ROS2)",
-      "sdkLanguages": ["C++", "Python"],
+      "sdkLanguages": [
+        "C++",
+        "Python"
+      ],
       "openSourceRepos": "https://github.com/unitreerobotics",
-      "aiFrameworksSupported": ["Intel Core i5/i7", "Optional Jetson Orin NX"],
+      "aiFrameworksSupported": [
+        "Intel Core i5/i7",
+        "Optional Jetson Orin NX"
+      ],
       "apiDocumentationQuality": "Good"
     },
     "supplierReliability": {
@@ -529,9 +641,20 @@
         "userDevelopment": "Intel Core i7",
         "optional": "Intel Core i7 + Jetson Orin NX"
       },
-      "connectivity": ["1000M-Base-Ethernet × 4", "USB3.0 × 4"],
-      "powerOutputs": ["12V × 4", "5V × 1", "24V × 4"],
-      "sensors": ["3D LiDAR × 1", "Depth camera × 2", "Optical camera × 2"]
+      "connectivity": [
+        "1000M-Base-Ethernet × 4",
+        "USB3.0 × 4"
+      ],
+      "powerOutputs": [
+        "12V × 4",
+        "5V × 1",
+        "24V × 4"
+      ],
+      "sensors": [
+        "3D LiDAR × 1",
+        "Depth camera × 2",
+        "Optical camera × 2"
+      ]
     },
     "features": [
       "Go Beyond the Limits",
@@ -557,10 +680,16 @@
     "category": "quadruped",
     "price": {
       "starting": 30000,
-      "currency": "USD", 
+      "currency": "USD",
       "models": [
-        {"name": "A2", "price": "request"},
-        {"name": "A2-PRO", "price": "request"}
+        {
+          "name": "A2",
+          "price": "request"
+        },
+        {
+          "name": "A2-PRO",
+          "price": "request"
+        }
       ]
     },
     "generalInfo": {
@@ -589,14 +718,26 @@
       "payloadCapacity": "Standing: ~100kg, Walking: ~25kg",
       "batteryCapacityRuntime": "9000mAh (453.6Wh), >5 hours no load, >3 hours with 25kg load",
       "charger": "50.4V charging system",
-      "sensorsIncluded": ["1-2x LiDAR", "1x HD Camera (depending on model)"],
-      "interfaces": ["Wi-Fi 6", "Bluetooth 5.2"]
+      "sensorsIncluded": [
+        "1-2x LiDAR",
+        "1x HD Camera (depending on model)"
+      ],
+      "interfaces": [
+        "Wi-Fi 6",
+        "Bluetooth 5.2"
+      ]
     },
     "softwareEcosystem": {
       "rosSupport": "Yes (ROS/ROS2)",
-      "sdkLanguages": ["C++", "Python"],
+      "sdkLanguages": [
+        "C++",
+        "Python"
+      ],
       "openSourceRepos": "https://github.com/unitreerobotics",
-      "aiFrameworksSupported": ["8-Core CPU", "Intel Core i7"],
+      "aiFrameworksSupported": [
+        "8-Core CPU",
+        "Intel Core i7"
+      ],
       "apiDocumentationQuality": "Good"
     },
     "supplierReliability": {
@@ -622,7 +763,7 @@
         "dual": "18000mAh (907.2Wh)"
       },
       "batteryLife": {
-        "noLoad": ">5 hours, ~20km", 
+        "noLoad": ">5 hours, ~20km",
         "withLoad": ">3 hours, ~12.5km (25kg load)"
       },
       "maxStandingLoad": "~100kg",
@@ -636,10 +777,19 @@
         "A2_PRO": "IP56-IP67"
       },
       "computing": "8-Core high-performance CPU + Intel Core i7",
-      "connectivity": ["Wi-Fi 6", "Bluetooth 5.2"],
+      "connectivity": [
+        "Wi-Fi 6",
+        "Bluetooth 5.2"
+      ],
       "sensors": {
-        "A2": ["1x LiDAR", "1x HD Camera"],
-        "A2_PRO": ["2x LiDAR", "1x HD Camera"]
+        "A2": [
+          "1x LiDAR",
+          "1x HD Camera"
+        ],
+        "A2_PRO": [
+          "2x LiDAR",
+          "1x HD Camera"
+        ]
       }
     },
     "features": [
@@ -670,9 +820,18 @@
       "starting": 2700,
       "currency": "USD",
       "models": [
-        {"name": "AIR", "price": 2700},
-        {"name": "PRO", "price": 3500},
-        {"name": "EDU", "price": "request"}
+        {
+          "name": "AIR",
+          "price": 2700
+        },
+        {
+          "name": "PRO",
+          "price": 3500
+        },
+        {
+          "name": "EDU",
+          "price": "request"
+        }
       ]
     },
     "generalInfo": {
@@ -701,14 +860,28 @@
       "payloadCapacity": "3-5kg adaptive load capacity (up to 10kg limit)",
       "batteryCapacityRuntime": "Varies by model and usage",
       "charger": "24V charger (4A-6A depending on model)",
-      "sensorsIncluded": ["5 sets fisheye binocular depth sensors", "AI human recognition", "Foot-end force sensors (EDU)"],
-      "interfaces": ["WiFi", "Bluetooth", "4G connectivity (EDU)"]
+      "sensorsIncluded": [
+        "5 sets fisheye binocular depth sensors",
+        "AI human recognition",
+        "Foot-end force sensors (EDU)"
+      ],
+      "interfaces": [
+        "WiFi",
+        "Bluetooth",
+        "4G connectivity (EDU)"
+      ]
     },
     "softwareEcosystem": {
       "rosSupport": "Yes (ROS/ROS2)",
-      "sdkLanguages": ["C++", "Python"],
+      "sdkLanguages": [
+        "C++",
+        "Python"
+      ],
       "openSourceRepos": "https://github.com/unitreerobotics",
-      "aiFrameworksSupported": ["Human recognition", "Python programming (EDU)"],
+      "aiFrameworksSupported": [
+        "Human recognition",
+        "Python programming (EDU)"
+      ],
       "apiDocumentationQuality": "Good"
     },
     "supplierReliability": {
@@ -726,7 +899,7 @@
       "jointMotors": "12 silver alloy precision joint motors",
       "maxSpeed": {
         "AIR": "0-2.5 m/s",
-        "PRO": "0-3.5 m/s", 
+        "PRO": "0-3.5 m/s",
         "EDU": "0-3.7 m/s (max 4.7 m/s)"
       },
       "maxSpeedRecord": "17 km/h (4.7 m/s)",
@@ -739,9 +912,18 @@
       "sensingSystem": "SSS Super-sensing System",
       "sensingAngle": "≈150 x 170°",
       "sensors": {
-        "AIR": ["1 pair of fisheye binocular depth sensors"],
-        "PRO": ["5 pairs of fisheye binocular depth sensors"],
-        "EDU": ["5 pairs of fisheye binocular depth sensors", "4G connectivity", "Human sensing", "Foot-end force sensors"]
+        "AIR": [
+          "1 pair of fisheye binocular depth sensors"
+        ],
+        "PRO": [
+          "5 pairs of fisheye binocular depth sensors"
+        ],
+        "EDU": [
+          "5 pairs of fisheye binocular depth sensors",
+          "4G connectivity",
+          "Human sensing",
+          "Foot-end force sensors"
+        ]
       },
       "computing": {
         "AIR": "1x (4x1.43GHz, 128Core 0.5T)",
@@ -754,14 +936,24 @@
         "PRO": "24V, 6A",
         "EDU": "24V, 6A"
       },
-      "aiCapabilities": ["Human recognition", "Python programming (EDU)"],
+      "aiCapabilities": [
+        "Human recognition",
+        "Python programming (EDU)"
+      ],
       "warranty": {
         "AIR": "6 months (core components)",
         "PRO": "3 months (non-core components)",
         "EDU": "12 months full warranty"
       },
-      "connectivity": ["WiFi", "Bluetooth"],
-      "additionalFeatures": ["Intelligent Concomitant System", "Flexible adaptive joints", "Heat pipe-assisted cooling system"]
+      "connectivity": [
+        "WiFi",
+        "Bluetooth"
+      ],
+      "additionalFeatures": [
+        "Intelligent Concomitant System",
+        "Flexible adaptive joints",
+        "Heat pipe-assisted cooling system"
+      ]
     },
     "features": [
       "Ultra-fast performance up to 17 km/h",
@@ -792,7 +984,10 @@
       "starting": 40000,
       "currency": "USD",
       "models": [
-        {"name": "Industrial", "price": "request"}
+        {
+          "name": "Industrial",
+          "price": "request"
+        }
       ]
     },
     "generalInfo": {
@@ -821,14 +1016,28 @@
       "payloadCapacity": "Standing: 80kg max, Walking: 20kg continuous",
       "batteryCapacityRuntime": "18,000mAh (932.4Wh), 5 hours standing, 2 hours walking",
       "charger": "51.8V charging system, 1-2 hours charge time",
-      "sensorsIncluded": ["5x Intel RealSense D430"],
-      "interfaces": ["7x Gigabit Ethernet", "4x RS485", "5x USB", "4x CAN", "12V/24V power outputs"]
+      "sensorsIncluded": [
+        "5x Intel RealSense D430"
+      ],
+      "interfaces": [
+        "7x Gigabit Ethernet",
+        "4x RS485",
+        "5x USB",
+        "4x CAN",
+        "12V/24V power outputs"
+      ]
     },
     "softwareEcosystem": {
       "rosSupport": "Yes (ROS/ROS2)",
-      "sdkLanguages": ["C++", "Python"],
+      "sdkLanguages": [
+        "C++",
+        "Python"
+      ],
       "openSourceRepos": "https://github.com/unitreerobotics",
-      "aiFrameworksSupported": ["Intel i5-1135G7", "3x Jetson XavierNX"],
+      "aiFrameworksSupported": [
+        "Intel i5-1135G7",
+        "3x Jetson XavierNX"
+      ],
       "apiDocumentationQuality": "Good"
     },
     "supplierReliability": {
@@ -852,7 +1061,9 @@
       "operatingTemperature": "-5°C to 45°C",
       "computing": "Intel i5-1135G7",
       "sensingPlatform": "3x Jetson XavierNX",
-      "sensors": ["5x Intel RealSense D430"],
+      "sensors": [
+        "5x Intel RealSense D430"
+      ],
       "maxStairClimbHeight": "20cm",
       "standingEndurance": "5 hours",
       "continuousWalkingTime": "2 hours (unloaded)"
@@ -886,7 +1097,10 @@
       "starting": 35000,
       "currency": "USD",
       "models": [
-        {"name": "Standard", "price": "request"}
+        {
+          "name": "Standard",
+          "price": "request"
+        }
       ]
     },
     "generalInfo": {
@@ -915,14 +1129,29 @@
       "payloadCapacity": "13kg",
       "batteryCapacityRuntime": "12,600mAh, 2.5-4.6 hours endurance",
       "charger": "Standard charging system",
-      "sensorsIncluded": ["2x Depth Cameras (1280x720)", "1x Visual Odometer Camera"],
-      "interfaces": ["2x Ethernet", "2x USB 3.0", "1x USB 2.0", "1x 485 port", "Multiple power outputs"]
+      "sensorsIncluded": [
+        "2x Depth Cameras (1280x720)",
+        "1x Visual Odometer Camera"
+      ],
+      "interfaces": [
+        "2x Ethernet",
+        "2x USB 3.0",
+        "1x USB 2.0",
+        "1x 485 port",
+        "Multiple power outputs"
+      ]
     },
     "softwareEcosystem": {
       "rosSupport": "Yes (Ubuntu-ROS)",
-      "sdkLanguages": ["C++", "Python"],
+      "sdkLanguages": [
+        "C++",
+        "Python"
+      ],
       "openSourceRepos": "https://github.com/unitreerobotics",
-      "aiFrameworksSupported": ["Ubuntu", "ROS"],
+      "aiFrameworksSupported": [
+        "Ubuntu",
+        "ROS"
+      ],
       "apiDocumentationQuality": "Good"
     },
     "supplierReliability": {
@@ -943,12 +1172,31 @@
       "endurance": "2.5-4.6 hours",
       "degreesOfFreedom": "12 (12 motors)",
       "batteryCapacity": "12,600mAh",
-      "outputPower": ["5V", "12V", "19V", "24-30V"],
+      "outputPower": [
+        "5V",
+        "12V",
+        "19V",
+        "24-30V"
+      ],
       "depthCameras": "2 sets (1280x720 resolution)",
       "visualOdometer": "1 set",
-      "interfaces": ["2x Ethernet", "2x USB 3.0", "1x USB 2.0", "1x 485 port"],
-      "sensors": ["Depth Camera", "Visual Odometer", "Optional LiDAR"],
-      "safetyFeatures": ["Wireless Emergency Stop Protection", "Fall Protection", "Low Voltage Alarm", "Over-temperature Alarm"],
+      "interfaces": [
+        "2x Ethernet",
+        "2x USB 3.0",
+        "1x USB 2.0",
+        "1x 485 port"
+      ],
+      "sensors": [
+        "Depth Camera",
+        "Visual Odometer",
+        "Optional LiDAR"
+      ],
+      "safetyFeatures": [
+        "Wireless Emergency Stop Protection",
+        "Fall Protection",
+        "Low Voltage Alarm",
+        "Over-temperature Alarm"
+      ],
       "operatingSystems": {
         "movementControl": "Ubuntu",
         "environmentSensing": "Ubuntu-ROS"
@@ -983,8 +1231,14 @@
       "starting": 5900,
       "currency": "USD",
       "models": [
-        {"name": "Base Model", "price": 5900},
-        {"name": "R1 EDU", "price": "request"}
+        {
+          "name": "Base Model",
+          "price": 5900
+        },
+        {
+          "name": "R1 EDU",
+          "price": "request"
+        }
       ]
     },
     "generalInfo": {
@@ -1015,14 +1269,33 @@
       "payloadCapacity": "2-3kg (estimated for lightweight frame)",
       "batteryCapacityRuntime": "~1 hour typical usage",
       "charger": "Standard DC charging system",
-      "sensorsIncluded": ["4-microphone array", "Binocular camera", "IMU sensors", "Joint position encoders"],
-      "interfaces": ["WiFi 6", "Bluetooth 5.2", "USB interfaces", "Serial communication"]
+      "sensorsIncluded": [
+        "4-microphone array",
+        "Binocular camera",
+        "IMU sensors",
+        "Joint position encoders"
+      ],
+      "interfaces": [
+        "WiFi 6",
+        "Bluetooth 5.2",
+        "USB interfaces",
+        "Serial communication"
+      ]
     },
     "softwareEcosystem": {
       "rosSupport": "Yes (ROS/ROS2 compatible, mainstream simulation platform support)",
-      "sdkLanguages": ["C++", "Python"],
+      "sdkLanguages": [
+        "C++",
+        "Python"
+      ],
       "openSourceRepos": "https://github.com/unitreerobotics",
-      "aiFrameworksSupported": ["8-core CPU", "Optional NVIDIA Jetson Orin (40-100 TOPS)", "Large multimodal model integration", "Voice processing", "Image recognition"],
+      "aiFrameworksSupported": [
+        "8-core CPU",
+        "Optional NVIDIA Jetson Orin (40-100 TOPS)",
+        "Large multimodal model integration",
+        "Voice processing",
+        "Image recognition"
+      ],
       "apiDocumentationQuality": "Good with comprehensive development resources"
     },
     "supplierReliability": {
@@ -1044,8 +1317,14 @@
       "batteryLife": "~1 hour",
       "computing": "8-core high-performance CPU",
       "optionalComputing": "NVIDIA Jetson Orin (40-100 TOPS)",
-      "sensors": ["4-microphone array", "Binocular camera"],
-      "connectivity": ["WiFi 6", "Bluetooth 5.2"],
+      "sensors": [
+        "4-microphone array",
+        "Binocular camera"
+      ],
+      "connectivity": [
+        "WiFi 6",
+        "Bluetooth 5.2"
+      ],
       "warranty": {
         "Base": "8 months",
         "EDU": "12 months"
@@ -1080,7 +1359,10 @@
       "starting": 20000,
       "currency": "USD",
       "models": [
-        {"name": "Competition", "price": "request"}
+        {
+          "name": "Competition",
+          "price": "request"
+        }
       ]
     },
     "specifications": {
@@ -1091,8 +1373,16 @@
       "kneeTorque": "120N.m",
       "computing": "NVIDIA Jetson Orin NX (157 TOPS AI compute)",
       "battery": "13-string lithium battery, 9000mAh, ~2 hours runtime",
-      "connectivity": ["WiFi 6", "Bluetooth 5.2"],
-      "sensors": ["Depth Camera", "3D LiDAR", "4-mic array", "5W speaker"]
+      "connectivity": [
+        "WiFi 6",
+        "Bluetooth 5.2"
+      ],
+      "sensors": [
+        "Depth Camera",
+        "3D LiDAR",
+        "4-mic array",
+        "5W speaker"
+      ]
     },
     "features": [
       "Athletic competition specialization",
@@ -1118,7 +1408,10 @@
       "starting": 18000,
       "currency": "USD",
       "models": [
-        {"name": "Boxing", "price": "request"}
+        {
+          "name": "Boxing",
+          "price": "request"
+        }
       ]
     },
     "specifications": {
@@ -1128,13 +1421,25 @@
       "specialization": "Combat sports and martial arts",
       "computing": "8-core high-performance CPU",
       "battery": "13-string lithium battery, 9000mAh, ~2 hours runtime",
-      "controlMethods": ["Motion-sensing", "Controller", "Voice commands"],
-      "connectivity": ["WiFi 6", "Bluetooth 5.2"],
-      "sensors": ["Depth Camera", "3D LiDAR", "4-mic array", "5W speaker"]
+      "controlMethods": [
+        "Motion-sensing",
+        "Controller",
+        "Voice commands"
+      ],
+      "connectivity": [
+        "WiFi 6",
+        "Bluetooth 5.2"
+      ],
+      "sensors": [
+        "Depth Camera",
+        "3D LiDAR",
+        "4-mic array",
+        "5W speaker"
+      ]
     },
     "features": [
       "Professional boxing capabilities",
-      "Motion-capture training system integration", 
+      "Motion-capture training system integration",
       "Advanced balance and agility systems",
       "Combat sports specialization",
       "Punches, hooks, and kicks execution",
@@ -1147,438 +1452,6 @@
     "description": "Boxing-specialized variant of G1 humanoid robot designed for combat sports and martial arts applications."
   },
   {
-    "id": "unitree-z1",
-    "name": "Z1 Robotic Arm",
-    "brand": "Unitree",
-    "category": "other",
-    "price": {
-      "starting": 15999,
-      "currency": "USD",
-      "models": [
-        {"name": "Z1 AIR", "price": 15999},
-        {"name": "Z1 PRO", "price": "request"}
-      ]
-    },
-    "generalInfo": {
-      "manufacturer": "Unitree",
-      "modelName": "Z1 Robotic Arm",
-      "dimensions": {
-        "reach": "740mm",
-        "weight": "4.3kg (AIR), 4.5kg (PRO)"
-      }
-    },
-    "keyFeatures": [
-      "6-axis degrees of freedom for versatile manipulation",
-      "High payload capacity: 2kg (AIR), ≥3kg (PRO)",
-      "Precision repeatability: ~0.1mm",
-      "Force Feedback and Collision Detection",
-      "Position + Force Control Interface",
-      "Compact & Lightweight design",
-      "Compatible with mobile robots",
-      "Ethernet communication interface",
-      "Ubuntu operating system integration",
-      "Quick actuator replacement support"
-    ],
-    "hardwareBuildQuality": {
-      "totalDegreesOfFreedom": "6 Axis",
-      "payloadCapacity": "2kg (AIR), ≥3kg (PRO)",
-      "batteryCapacityRuntime": "Powered by host system",
-      "charger": "24V, >20A, Max 500W power supply",
-      "sensorsIncluded": ["15-bit encoders", "Force feedback sensors", "Collision detection system"],
-      "interfaces": ["Ethernet", "RS 485 backup", "Power input"]
-    },
-    "softwareEcosystem": {
-      "rosSupport": "Yes (ROS/ROS2 compatible)",
-      "sdkLanguages": ["C++", "Python"],
-      "openSourceRepos": "https://github.com/unitreerobotics",
-      "aiFrameworksSupported": ["Ubuntu integration", "Force control algorithms"],
-      "apiDocumentationQuality": "Good with comprehensive programming interfaces"
-    },
-    "supplierReliability": {
-      "warranty": {
-        "duration": "12 months standard warranty",
-        "coverage": "Hardware components and software support"
-      },
-      "postSalesSupport": "English docs, online support, GitHub community",
-      "trackRecord": "Founded in 2013, 11+ years in robotics"
-    },
-    "specifications": {
-      "degreesOfFreedom": "6-axis",
-      "weight": {
-        "AIR": "4.3kg",
-        "PRO": "4.5kg"
-      },
-      "payload": {
-        "AIR": "2kg",
-        "PRO": "≥3kg"
-      },
-      "reach": "740mm",
-      "repeatability": "~0.1mm",
-      "communication": "Ethernet (primary), RS 485 (backup)",
-      "maxTorque": "33N·m",
-      "encoderResolution": "15bit",
-      "controlFrequency": "1KHz",
-      "powerSupply": "24V, Current > 20A",
-      "maxPower": "500W",
-      "operatingSystem": "Ubuntu",
-      "mountingInterface": "Standard robot mounting compatibility",
-      "operatingTemperature": "0°C to 45°C (estimated)",
-      "controlModes": ["Position Control", "Force Control", "Hybrid Position/Force Control"]
-    },
-    "features": [
-      "Compact & Lightweight design",
-      "Dexterous & Flexible operation",
-      "Force Feedback and Collision Detection",
-      "Position + Force Control Interface",
-      "Compatible with mobile robots",
-      "Open programming interface",
-      "Quick actuator replacement support",
-      "High-precision repeatability",
-      "Ethernet communication interface"
-    ],
-    "images": [
-      "/images/robots/accessories/z1-1.png",
-      "/images/robots/accessories/z1-2.png",
-      "/images/robots/accessories/z1-3.png"
-    ],
-    "highResPhotos": [
-      "https://oss-global-cdn.unitree.com/static/04e1a2bf8613432d9cad774da006cd85_564x400.png",
-      "https://oss-global-cdn.unitree.com/static/51fb5ef9578d41e2b3c79092b573890c_564x399.png"
-    ],
-    "videos": [],
-    "documentation": ["User Manual", "SDK Documentation", "Programming Interface Guide"],
-    "officialUrl": "https://www.unitree.com/z1",
-    "description": "6-axis robotic arm designed for mobile robots with force feedback and precision control capabilities."
-  },
-  {
-    "id": "unitree-d1-t",
-    "name": "D1-T Teleoperation Arm",
-    "brand": "Unitree",
-    "category": "other",
-    "price": {
-      "starting": 8500,
-      "currency": "USD",
-      "models": [
-        {"name": "Dual-Arm Standard", "price": 8500},
-        {"name": "Quad-Arm Full", "price": 16000}
-      ]
-    },
-    "specifications": {
-      "weight": "2.37kg",
-      "armLength": "670mm (with gripper)",
-      "material": "Aluminum alloy",
-      "degreesOfFreedom": "6 Axis + 1 Gripper",
-      "payloadCapacity": "500g",
-      "powerSupply": "24V, 2.5A (Max 5A)",
-      "motorType": "Bus Servo",
-      "power": "60W",
-      "interfaces": ["DC5.5-2.1 (Power)", "RJ45 (Communication)", "Type-C (Serial Debug)"]
-    },
-    "features": [
-      "Ultra-Precision Force-Controlled Digital Servo Motor",
-      "AI Teleoperation capabilities",
-      "Force control capabilities",
-      "Position and velocity control",
-      "Lightweight design",
-      "Flexible hardware compatibility",
-      "External device connectivity"
-    ],
-    "images": [
-      "/images/categories/other.svg"
-    ],
-    "officialUrl": "https://www.unitree.com/D1-T",
-    "description": "Ultra-precision teleoperation robot arm kit with force control and AI capabilities for research and development."
-  },
-  {
-    "id": "unitree-dex3-1",
-    "name": "Dex3-1 Dexterous Hand",
-    "brand": "Unitree",
-    "category": "other",
-    "price": {
-      "starting": 8000,
-      "currency": "USD",
-      "models": [
-        {"name": "Standard", "price": "request"}
-      ]
-    },
-    "specifications": {
-      "dimensions": "175 × 88 × 77 mm",
-      "weight": "710g",
-      "degreesOfFreedom": "7 total",
-      "thumbJoints": "3",
-      "indexFingerJoints": "2",
-      "middleFingerJoints": "2",
-      "fingertipAccuracy": "±2mm",
-      "maxWeight": "500g",
-      "maxPower": "400W (3-second duration)",
-      "tactileSensors": "33 total",
-      "pressureSensorArrays": "9",
-      "perceptionRange": "10g-2500g",
-      "maxAcceptance": "20kg",
-      "workingVoltage": "12-58V",
-      "communicationRate": "1000Hz",
-      "interface": "USB2.0",
-      "operatingTemperature": "-20°C to 60°C",
-      "compatibility": ["G1 humanoid robot"]
-    },
-    "features": [
-      "Advanced tactile sensing system",
-      "High-precision fingertip control",
-      "Real-time feedback capabilities",
-      "Robust grip strength",
-      "G1 robot compatibility",
-      "Professional manipulation tasks"
-    ],
-    "images": [
-      "/images/categories/other.svg"
-    ],
-    "officialUrl": "https://www.unitree.com/dex3-1",
-    "description": "3-finger dexterous hand with advanced tactile sensing for G1 humanoid robot manipulation tasks."
-  },
-  {
-    "id": "unitree-dex5-1",
-    "name": "Dex5-1 Dexterous Hand",
-    "brand": "Unitree",
-    "category": "other",
-    "price": {
-      "starting": 12000,
-      "currency": "USD",
-      "models": [
-        {"name": "Standard", "price": "request"}
-      ]
-    },
-    "specifications": {
-      "dimensions": "217.3 × 127.5 × 72.1 mm",
-      "weight": "1000g",
-      "degreesOfFreedom": "20 total (16 active + 4 passive)",
-      "thumbJoints": "4",
-      "fingerJoints": "3 each (index, middle, ring, little)",
-      "fingertipAccuracy": "±1mm",
-      "fingertipStrength": "10N",
-      "fourFingerLateralSwing": "±22°",
-      "maxLoad": "3.5-4.5kg",
-      "minGripDiameter": "10mm",
-      "tactileSensors": "94 per hand",
-      "workingVoltage": "24-60V",
-      "communicationRate": "1000Hz",
-      "interface": "USB2.0",
-      "operatingTemperature": "-20°C to 60°C",
-      "compatibility": ["H1/H1-2 robots", "Mountable on G1"]
-    },
-    "features": [
-      "5-finger human-like dexterity",
-      "94 tactile sensors per hand",
-      "Real-time multi-modal feedback",
-      "High precision manipulation",
-      "Heavy load capacity",
-      "Universal robot compatibility"
-    ],
-    "images": [
-      "/images/categories/other.svg"
-    ],
-    "officialUrl": "https://www.unitree.com/dex5-1",
-    "description": "5-finger dexterous hand with 94 tactile sensors for advanced manipulation tasks on H1/H1-2 and G1 robots."
-  },
-  {
-    "id": "unitree-go2-battery",
-    "name": "Go2 Battery",
-    "brand": "Unitree",
-    "category": "accessory",
-    "price": {
-      "starting": 500,
-      "currency": "USD",
-      "models": [
-        {"name": "BT2-05 Standard", "price": 500},
-        {"name": "BT2-06 Long Endurance", "price": 650}
-      ]
-    },
-    "specifications": {
-      "ratedVoltage": "DC 29.6V",
-      "chargeLimitVoltage": "DC 33.6V",
-      "chargingCurrent": "3.5A-9A",
-      "ratedCapacity": "8000mAh (236.8Wh)",
-      "dimensions": "120mm x 80mm x 182mm",
-      "compatibility": ["Unitree Go2"],
-      "safetyFeatures": [
-        "Battery storage protection",
-        "Balanced charge protection", 
-        "Overcharge protection",
-        "Charging temperature protection",
-        "Charging current protection",
-        "Short circuit protection",
-        "Over discharge protection",
-        "Battery load detection protection"
-      ],
-      "standard": "IS 16046(Part 2)/IEC 62133-2"
-    },
-    "features": [
-      "High performance battery cell",
-      "Unitree self-developed battery management system",
-      "Eight-fold protection system",
-      "Designed specifically for Go2",
-      "Long endurance version available",
-      "Industry standard compliance"
-    ],
-    "images": [
-      "/images/categories/accessories.svg"
-    ],
-    "officialUrl": "https://www.unitree.com/go2/battery",
-    "description": "High-performance lithium battery with advanced safety features designed specifically for Go2 quadruped robot."
-  },
-  {
-    "id": "unitree-go2-charger",
-    "name": "Go2 Charger",
-    "brand": "Unitree",
-    "category": "accessory",
-    "price": {
-      "starting": 100,
-      "currency": "USD",
-      "models": [
-        {"name": "Standard", "price": 100},
-        {"name": "Quick Charger", "price": 150}
-      ]
-    },
-    "specifications": {
-      "chargeVoltage": "DC 33.6V",
-      "chargingTime": "2-4 hours",
-      "chargingCurrent": "3.5A",
-      "dimensions": "154mm x 60mm x 40mm",
-      "compatibility": ["Unitree Go2 Battery"],
-      "safetyFeatures": [
-        "Battery storage and self-discharge protection",
-        "Balanced charge protection",
-        "Overcharge protection", 
-        "Charging temperature protection",
-        "Charging current protection",
-        "Short circuit protection",
-        "Over discharge protection",
-        "Battery load detection protection"
-      ]
-    },
-    "features": [
-      "Compact and lightweight design",
-      "Eight-fold protection system",
-      "Stable power delivery",
-      "Quick charging option available",
-      "Portable design",
-      "Go2 battery optimized"
-    ],
-    "images": [
-      "/images/categories/accessories.svg"
-    ],
-    "officialUrl": "https://www.unitree.com/go2/charger",
-    "description": "Compact and safe battery charger designed specifically for Go2 robot with advanced protection features."
-  },
-  {
-    "id": "unitree-r3-controller",
-    "name": "R3 Controller",
-    "brand": "Unitree",
-    "category": "accessory",
-    "price": {
-      "starting": 300,
-      "currency": "USD",
-      "models": [
-        {"name": "Standard", "price": 300}
-      ]
-    },
-    "specifications": {
-      "dimensions": "216.43 × 100 × 41.42 mm",
-      "weight": "300g",
-      "batteryCapacity": "780mAh",
-      "batteryLife": "5 hours",
-      "chargingVoltage": "5.0V",
-      "chargingCurrent": "700mA",
-      "communication": "Wireless/Bluetooth",
-      "controlDistance": ">100m (open, interference-free environment)",
-      "controls": "2 joysticks + 12 buttons + 4 shoulder buttons",
-      "compatibility": ["G1", "H1", "Go2", "B2"],
-      "additionalFeatures": ["Smartphone mount", "Vibration motor", "Buzzer"]
-    },
-    "features": [
-      "Versatile controller for multiple Unitree robots",
-      "Long-range wireless control",
-      "Ergonomic streamlined design",
-      "Smartphone app integration",
-      "Built-in haptic feedback",
-      "5-hour battery life"
-    ],
-    "images": [
-      "/images/categories/accessories.svg"
-    ],
-    "officialUrl": "https://www.unitree.com/R3",
-    "description": "Universal wireless controller for immersive robotic interaction across Unitree's robot product line."
-  },
-  {
-    "id": "unitree-go2-foot",
-    "name": "Go2 Foot End",
-    "brand": "Unitree",
-    "category": "accessory",
-    "price": {
-      "starting": 200,
-      "currency": "USD",
-      "models": [
-        {"name": "Standard", "price": 200}
-      ]
-    },
-    "specifications": {
-      "dimensions": "45mm x 39.5mm x 48mm",
-      "weight": "56g",
-      "compatibility": ["Unitree Go2"],
-      "sensitivity": "Highly sensitive",
-      "dataAcquisition": "Quick foot end data collection",
-      "designFeature": "Quick replacement with ingenious design"
-    },
-    "features": [
-      "Highly sensitive foot end sensors",
-      "Quick foot end data acquisition",
-      "Precise control data support",
-      "Quick replacement design",
-      "Lightweight construction",
-      "Go2 optimized compatibility"
-    ],
-    "images": [
-      "/images/categories/accessories.svg"
-    ],
-    "officialUrl": "https://www.unitree.com/go2/foot",
-    "description": "Highly sensitive foot end sensor for Go2 robot providing precise control data for advanced movement."
-  },
-  {
-    "id": "unitree-4d-lidar-l2",
-    "name": "4D LiDAR L2",
-    "brand": "Unitree",
-    "category": "accessory",
-    "price": {
-      "starting": 419,
-      "currency": "USD",
-      "models": [
-        {"name": "Standard", "price": 419}
-      ]
-    },
-    "specifications": {
-      "fieldOfView": "360° × 96°",
-      "weight": "230g",
-      "dimensions": "75 × 75 × 65 mm",
-      "range": "30m (90% reflectivity)",
-      "blindSpot": "0.05m minimum",
-      "frequency": "64,000 points/s",
-      "power": "10W",
-      "compatibility": ["All Unitree robots"]
-    },
-    "features": [
-      "360-degree environmental sensing",
-      "High-frequency point cloud generation",
-      "Compact and lightweight",
-      "Low power consumption",
-      "Universal robot compatibility",
-      "Professional grade LiDAR"
-    ],
-    "images": [
-      "/images/categories/accessories.svg"
-    ],
-    "officialUrl": "https://www.unitree.com/",
-    "description": "Professional 4D LiDAR sensor for environmental sensing and navigation on Unitree robots."
-  },
-  {
     "id": "deep-robotics-x20",
     "name": "X20",
     "brand": "Deep Robotics",
@@ -1587,7 +1460,10 @@
       "starting": "request",
       "currency": "USD",
       "models": [
-        {"name": "Standard", "price": "request"}
+        {
+          "name": "Standard",
+          "price": "request"
+        }
       ]
     },
     "specifications": {
@@ -1601,8 +1477,14 @@
       "maxMileage": "15 km",
       "ingressProtection": "IP66",
       "operatingTemperature": "Variable (designed for complex environments)",
-      "connectivity": ["Peripheral integration capabilities"],
-      "sensors": ["Navigation system", "Obstacle avoidance", "Terrain recognition"],
+      "connectivity": [
+        "Peripheral integration capabilities"
+      ],
+      "sensors": [
+        "Navigation system",
+        "Obstacle avoidance",
+        "Terrain recognition"
+      ],
       "additionalFeatures": [
         "Modular design",
         "Complex terrain adaptation",
@@ -1635,8 +1517,14 @@
       "starting": "request",
       "currency": "USD",
       "models": [
-        {"name": "X30", "price": "request"},
-        {"name": "X30 Pro", "price": "request"}
+        {
+          "name": "X30",
+          "price": "request"
+        },
+        {
+          "name": "X30 Pro",
+          "price": "request"
+        }
       ]
     },
     "generalInfo": {
@@ -1664,14 +1552,35 @@
       "payloadCapacity": "20kg maximum",
       "batteryCapacityRuntime": "22.4Ah, 2.5-4h runtime, ≥10km mileage",
       "charger": "Fast charging system with quick swap capability",
-      "sensorsIncluded": ["360° LiDAR sensors (front & rear)", "Wide-view camera system", "IMU and orientation sensors", "Environmental monitoring sensors"],
-      "interfaces": ["Ethernet", "USB 2.0/3.0 (Pro)", "WiFi (Pro)", "Multiple power outputs (5V/12V/24V)", "RS485/RS232", "4G/5G support"]
+      "sensorsIncluded": [
+        "360° LiDAR sensors (front & rear)",
+        "Wide-view camera system",
+        "IMU and orientation sensors",
+        "Environmental monitoring sensors"
+      ],
+      "interfaces": [
+        "Ethernet",
+        "USB 2.0/3.0 (Pro)",
+        "WiFi (Pro)",
+        "Multiple power outputs (5V/12V/24V)",
+        "RS485/RS232",
+        "4G/5G support"
+      ]
     },
     "softwareEcosystem": {
       "rosSupport": "Yes (ROS/Ubuntu platform)",
-      "sdkLanguages": ["C++", "Python", "ROS APIs"],
+      "sdkLanguages": [
+        "C++",
+        "Python",
+        "ROS APIs"
+      ],
       "openSourceRepos": "https://github.com/DeepRoboticsLab",
-      "aiFrameworksSupported": ["SLAM mapping", "Autonomous navigation", "Computer vision", "Deep learning integration"],
+      "aiFrameworksSupported": [
+        "SLAM mapping",
+        "Autonomous navigation",
+        "Computer vision",
+        "Deep learning integration"
+      ],
       "apiDocumentationQuality": "Professional grade with comprehensive SDK"
     },
     "supplierReliability": {
@@ -1703,10 +1612,22 @@
       "starting": 2890,
       "currency": "USD",
       "models": [
-        {"name": "Basic", "price": 2890},
-        {"name": "Venture", "price": "request"},
-        {"name": "Pro", "price": "request"},
-        {"name": "LIDAR", "price": "request"}
+        {
+          "name": "Basic",
+          "price": 2890
+        },
+        {
+          "name": "Venture",
+          "price": "request"
+        },
+        {
+          "name": "Pro",
+          "price": "request"
+        },
+        {
+          "name": "LIDAR",
+          "price": "request"
+        }
       ]
     },
     "generalInfo": {
@@ -1734,14 +1655,33 @@
       "payloadCapacity": "2.5-5kg walking load, 7.5kg maximum",
       "batteryCapacityRuntime": "1.5-2h runtime, 2.7-5km range",
       "charger": "Standard charging system",
-      "sensorsIncluded": ["Obstacle detection sensors", "Visual following system", "IMU and balance sensors", "Optional LiDAR (LIDAR variant)"],
-      "interfaces": ["Ethernet", "USB 3.0", "HDMI", "24V/12V/5V power inputs", "Modular expansion ports"]
+      "sensorsIncluded": [
+        "Obstacle detection sensors",
+        "Visual following system",
+        "IMU and balance sensors",
+        "Optional LiDAR (LIDAR variant)"
+      ],
+      "interfaces": [
+        "Ethernet",
+        "USB 3.0",
+        "HDMI",
+        "24V/12V/5V power inputs",
+        "Modular expansion ports"
+      ]
     },
     "softwareEcosystem": {
       "rosSupport": "Yes (ROS compatible)",
-      "sdkLanguages": ["C++", "Python", "Motion Control SDK"],
+      "sdkLanguages": [
+        "C++",
+        "Python",
+        "Motion Control SDK"
+      ],
       "openSourceRepos": "https://github.com/DeepRoboticsLab",
-      "aiFrameworksSupported": ["Computer vision", "Autonomous navigation", "Behavioral learning algorithms"],
+      "aiFrameworksSupported": [
+        "Computer vision",
+        "Autonomous navigation",
+        "Behavioral learning algorithms"
+      ],
       "apiDocumentationQuality": "Comprehensive with perception development interfaces"
     },
     "supplierReliability": {
@@ -1773,7 +1713,10 @@
       "starting": "request",
       "currency": "USD",
       "models": [
-        {"name": "Standard", "price": "request"}
+        {
+          "name": "Standard",
+          "price": "request"
+        }
       ]
     },
     "specifications": {
@@ -1787,7 +1730,10 @@
       "camera": "1080P wide-angle lens",
       "ingressProtection": "IP54",
       "operatingTemperature": "0-40°C",
-      "connectivity": ["Wi-Fi", "GPS"],
+      "connectivity": [
+        "Wi-Fi",
+        "GPS"
+      ],
       "battery": "Dual battery system, hot-swappable",
       "warranty": "1 year",
       "climbingCapability": "80 cm platforms"
@@ -1817,7 +1763,10 @@
       "starting": "request",
       "currency": "USD",
       "models": [
-        {"name": "Standard", "price": "request"}
+        {
+          "name": "Standard",
+          "price": "request"
+        }
       ]
     },
     "specifications": {
@@ -1837,7 +1786,10 @@
       "ingressProtection": "IP66",
       "operatingTemperature": "-20°C to 55°C",
       "processors": "Dual octa-core 64-bit",
-      "sensors": ["2x 96-line LiDAR (360°×90°)", "2x Wide-angle cameras"]
+      "sensors": [
+        "2x 96-line LiDAR (360°×90°)",
+        "2x Wide-angle cameras"
+      ]
     },
     "features": [
       "Challenging terrain navigation",
@@ -1864,7 +1816,10 @@
       "starting": "request",
       "currency": "USD",
       "models": [
-        {"name": "Standard", "price": "request"}
+        {
+          "name": "Standard",
+          "price": "request"
+        }
       ]
     },
     "generalInfo": {
@@ -1892,14 +1847,30 @@
       "payloadCapacity": "TBD (optimized for mobility)",
       "batteryCapacityRuntime": "TBD (industrial application focused)",
       "charger": "TBD",
-      "sensorsIncluded": ["Environmental perception array", "Real-time feedback sensors", "Balance and orientation systems", "Computer vision sensors"],
-      "interfaces": ["TBD (development platform interfaces)"]
+      "sensorsIncluded": [
+        "Environmental perception array",
+        "Real-time feedback sensors",
+        "Balance and orientation systems",
+        "Computer vision sensors"
+      ],
+      "interfaces": [
+        "TBD (development platform interfaces)"
+      ]
     },
     "softwareEcosystem": {
       "rosSupport": "Yes (expected ROS compatibility)",
-      "sdkLanguages": ["C++", "Python", "AI framework integration"],
+      "sdkLanguages": [
+        "C++",
+        "Python",
+        "AI framework integration"
+      ],
       "openSourceRepos": "https://github.com/DeepRoboticsLab",
-      "aiFrameworksSupported": ["Embodied intelligence", "Big data training", "Adaptive learning algorithms", "Computer vision"],
+      "aiFrameworksSupported": [
+        "Embodied intelligence",
+        "Big data training",
+        "Adaptive learning algorithms",
+        "Computer vision"
+      ],
       "apiDocumentationQuality": "Professional development platform (in development)"
     },
     "supplierReliability": {
@@ -1923,120 +1894,6 @@
     "description": "Revolutionary embodied intelligence humanoid robot featuring advanced AI capabilities, autonomous learning, and exceptional mobility for next-generation industrial and research applications."
   },
   {
-    "id": "deep-robotics-j60",
-    "name": "J60 Robot Joint",
-    "brand": "Deep Robotics",
-    "category": "accessory",
-    "price": {
-      "starting": "request",
-      "currency": "USD",
-      "models": [
-        {"name": "J60-6", "price": "request"},
-        {"name": "J60-10", "price": "request"}
-      ]
-    },
-    "specifications": {
-      "J60_6": {
-        "dimensions": "76.5mm x 63mm",
-        "weight": "480g",
-        "peakTorque": "19.94 Nm",
-        "peakSpeed": "24.18 rad/s",
-        "torqueWeightRatio": "41.54 Nm/kg"
-      },
-      "J60_10": {
-        "dimensions": "76.5mm x 72.5mm",
-        "weight": "540g",
-        "peakTorque": "30.50 Nm",
-        "peakSpeed": "15.49 rad/s",
-        "torqueWeightRatio": "56.48 Nm/kg"
-      },
-      "commonSpecs": {
-        "encoder": "14-bit absolute value encoder",
-        "communication": "CAN, 1 Mbps baud rate",
-        "operatingVoltage": "DC 18V-36V",
-        "standardVoltage": "DC 24V",
-        "maxCurrent": "30A",
-        "controlFrequency": "1 kHz"
-      }
-    },
-    "features": [
-      "High torque-to-weight ratio",
-      "Precision 14-bit encoder",
-      "CAN communication interface",
-      "Lightweight design",
-      "Two model variants available",
-      "Industrial-grade performance"
-    ],
-    "images": [
-      "/images/robots/deep-robotics-j60/j60-1.jpg",
-      "/images/robots/deep-robotics-j60/j60-2.jpg",
-      "/images/robots/deep-robotics-j60/j60-3.jpg"
-    ],
-    "officialUrl": "https://www.deeprobotics.cn/en/index/j60.html",
-    "description": "High-performance lightweight robot joint with precision control and excellent torque-to-weight ratio."
-  },
-  {
-    "id": "deep-robotics-j80-j100",
-    "name": "J80 & J100 Robot Joints",
-    "brand": "Deep Robotics",
-    "category": "accessory",
-    "price": {
-      "starting": "request",
-      "currency": "USD",
-      "models": [
-        {"name": "J80-27P", "price": "request"},
-        {"name": "J100-64P", "price": "request"},
-        {"name": "J100-116P", "price": "request"}
-      ]
-    },
-    "specifications": {
-      "J80_27P": {
-        "dimensions": "105mm x 85.5mm",
-        "weight": "1.48 kg",
-        "peakTorque": "84 Nm",
-        "ratedTorque": "28 Nm",
-        "maxSpeed": "17 rad/s"
-      },
-      "J100_64P": {
-        "dimensions": "126mm x 88mm",
-        "weight": "2.72 kg",
-        "peakTorque": "180 Nm",
-        "ratedTorque": "65 Nm",
-        "maxSpeed": "18 rad/s"
-      },
-      "J100_116P": {
-        "dimensions": "126mm x 105mm",
-        "weight": "2.93 kg",
-        "peakTorque": "315 Nm",
-        "ratedTorque": "115.5 Nm",
-        "maxSpeed": "19.4 rad/s"
-      },
-      "commonSpecs": {
-        "voltageRange": "DC 28-95V",
-        "ingressProtection": "IP67",
-        "encoder": "Absolute multi-turn encoder",
-        "communication": "High-speed EtherCAT",
-        "driverCompatibility": "Mainstream drivers"
-      }
-    },
-    "features": [
-      "High-torque industrial joints",
-      "IP67 weatherproof protection",
-      "Absolute multi-turn encoder",
-      "High-speed EtherCAT communication",
-      "Multiple torque variants",
-      "Mainstream driver compatibility",
-      "Industrial-grade reliability"
-    ],
-    "images": [
-      "/images/robots/deep-robotics-j80-j100/j80-j100-1.jpg",
-      "/images/robots/deep-robotics-j80-j100/j80-j100-2.jpg",
-      "/images/robots/deep-robotics-j80-j100/j80-j100-3.jpg"
-    ],
-    "officialUrl": "https://www.deeprobotics.cn/en/index/j80j100.html",
-    "description": "High-torque industrial robot joints with IP67 protection and EtherCAT communication for demanding applications."
-  },
-  {
     "id": "ubtech-walker-s2",
     "name": "Walker S2",
     "brand": "UBTech",
@@ -2045,7 +1902,10 @@
       "starting": "request",
       "currency": "USD",
       "models": [
-        {"name": "Standard", "price": "request"}
+        {
+          "name": "Standard",
+          "price": "request"
+        }
       ]
     },
     "generalInfo": {
@@ -2074,14 +1934,27 @@
       "payloadCapacity": "15kg maximum",
       "batteryCapacityRuntime": "Dual-battery system with 3-minute autonomous swap",
       "charger": "Autonomous battery swapping system",
-      "sensorsIncluded": ["RGB binocular stereo vision", "Deep learning vision system", "Real-time depth mapping sensors"],
-      "interfaces": ["Industrial communication protocols", "Swarm intelligence network"]
+      "sensorsIncluded": [
+        "RGB binocular stereo vision",
+        "Deep learning vision system",
+        "Real-time depth mapping sensors"
+      ],
+      "interfaces": [
+        "Industrial communication protocols",
+        "Swarm intelligence network"
+      ]
     },
     "softwareEcosystem": {
       "rosSupport": "Industrial robotics framework",
-      "sdkLanguages": ["Industrial automation languages"],
+      "sdkLanguages": [
+        "Industrial automation languages"
+      ],
       "openSourceRepos": "https://github.com/UBTechRobotics",
-      "aiFrameworksSupported": ["BrainNet 2.0", "Co-Agents AI system", "Deep learning frameworks"],
+      "aiFrameworksSupported": [
+        "BrainNet 2.0",
+        "Co-Agents AI system",
+        "Deep learning frameworks"
+      ],
       "apiDocumentationQuality": "Industrial documentation"
     },
     "supplierReliability": {
@@ -2125,7 +1998,10 @@
       "starting": "request",
       "currency": "USD",
       "models": [
-        {"name": "Standard", "price": "request"}
+        {
+          "name": "Standard",
+          "price": "request"
+        }
       ]
     },
     "generalInfo": {
@@ -2153,14 +2029,28 @@
       "payloadCapacity": "Industrial payload capacity",
       "batteryCapacityRuntime": "Extended operational runtime",
       "charger": "Industrial charging system",
-      "sensorsIncluded": ["Semantic VSLAM sensors", "Vision systems", "Navigation sensors"],
-      "interfaces": ["Industrial communication", "AMR/AGV integration", "Manufacturing systems"]
+      "sensorsIncluded": [
+        "Semantic VSLAM sensors",
+        "Vision systems",
+        "Navigation sensors"
+      ],
+      "interfaces": [
+        "Industrial communication",
+        "AMR/AGV integration",
+        "Manufacturing systems"
+      ]
     },
     "softwareEcosystem": {
       "rosSupport": "Industrial robotics framework",
-      "sdkLanguages": ["Industrial programming languages"],
+      "sdkLanguages": [
+        "Industrial programming languages"
+      ],
       "openSourceRepos": "https://github.com/UBTechRobotics",
-      "aiFrameworksSupported": ["Large Language Models", "Semantic VSLAM", "Learning-based control"],
+      "aiFrameworksSupported": [
+        "Large Language Models",
+        "Semantic VSLAM",
+        "Learning-based control"
+      ],
       "apiDocumentationQuality": "Industrial documentation"
     },
     "supplierReliability": {
@@ -2199,8 +2089,14 @@
       "starting": "request",
       "currency": "USD",
       "models": [
-        {"name": "Full Version", "price": "request"},
-        {"name": "Lite Version", "price": "request"}
+        {
+          "name": "Full Version",
+          "price": "request"
+        },
+        {
+          "name": "Lite Version",
+          "price": "request"
+        }
       ]
     },
     "generalInfo": {
@@ -2229,14 +2125,31 @@
       "payloadCapacity": "Industrial manipulation capacity",
       "batteryCapacityRuntime": "Extended operational time",
       "charger": "Industrial charging solution",
-      "sensorsIncluded": ["High-resolution RGBD cameras", "Visual sensors", "Audio sensors", "Distance sensors", "Force feedback sensors"],
-      "interfaces": ["Manufacturing system integration", "Wireless communication", "Industrial protocols"]
+      "sensorsIncluded": [
+        "High-resolution RGBD cameras",
+        "Visual sensors",
+        "Audio sensors",
+        "Distance sensors",
+        "Force feedback sensors"
+      ],
+      "interfaces": [
+        "Manufacturing system integration",
+        "Wireless communication",
+        "Industrial protocols"
+      ]
     },
     "softwareEcosystem": {
       "rosSupport": "Industrial robotics support",
-      "sdkLanguages": ["Industrial programming"],
+      "sdkLanguages": [
+        "Industrial programming"
+      ],
       "openSourceRepos": "https://github.com/UBTechRobotics",
-      "aiFrameworksSupported": ["Large Language Models", "U-SLAM", "3D semantic mapping", "Multimodal AI"],
+      "aiFrameworksSupported": [
+        "Large Language Models",
+        "U-SLAM",
+        "3D semantic mapping",
+        "Multimodal AI"
+      ],
       "apiDocumentationQuality": "Comprehensive industrial docs"
     },
     "supplierReliability": {
@@ -2277,7 +2190,10 @@
       "starting": 25000,
       "currency": "USD",
       "models": [
-        {"name": "Standard", "price": "request"}
+        {
+          "name": "Standard",
+          "price": "request"
+        }
       ]
     },
     "generalInfo": {
@@ -2306,14 +2222,28 @@
       "payloadCapacity": "5kg arm payload",
       "batteryCapacityRuntime": "48V 15Ah lithium battery, 2h walking / 4h standing",
       "charger": "1.5 hour fast charging",
-      "sensorsIncluded": ["2x RGBD cameras", "Binocular structured light 3D camera", "High-precision IMU"],
-      "interfaces": ["WiFi", "Bluetooth", "Service communication protocols"]
+      "sensorsIncluded": [
+        "2x RGBD cameras",
+        "Binocular structured light 3D camera",
+        "High-precision IMU"
+      ],
+      "interfaces": [
+        "WiFi",
+        "Bluetooth",
+        "Service communication protocols"
+      ]
     },
     "softwareEcosystem": {
       "rosSupport": "Service robotics framework",
-      "sdkLanguages": ["Service development languages"],
+      "sdkLanguages": [
+        "Service development languages"
+      ],
       "openSourceRepos": "https://github.com/UBTechRobotics",
-      "aiFrameworksSupported": ["Embodied Interactive Large Model", "Multilingual AI", "Navigation AI"],
+      "aiFrameworksSupported": [
+        "Embodied Interactive Large Model",
+        "Multilingual AI",
+        "Navigation AI"
+      ],
       "apiDocumentationQuality": "Service robotics documentation"
     },
     "supplierReliability": {
@@ -2359,7 +2289,10 @@
       "starting": 35000,
       "currency": "USD",
       "models": [
-        {"name": "Standard", "price": "request"}
+        {
+          "name": "Standard",
+          "price": "request"
+        }
       ]
     },
     "generalInfo": {
@@ -2388,14 +2321,31 @@
       "payloadCapacity": "1.5kg per arm (extended state)",
       "batteryCapacityRuntime": "54.6V 10Ah lithium, 2h usage, 2h charging",
       "charger": "2 hour fast charging system",
-      "sensorsIncluded": ["Vision navigation sensors", "Hand-eye coordination sensors", "Balance sensors"],
-      "interfaces": ["Wi-Fi", "Ethernet", "EtherCAT", "USB 3.0"]
+      "sensorsIncluded": [
+        "Vision navigation sensors",
+        "Hand-eye coordination sensors",
+        "Balance sensors"
+      ],
+      "interfaces": [
+        "Wi-Fi",
+        "Ethernet",
+        "EtherCAT",
+        "USB 3.0"
+      ]
     },
     "softwareEcosystem": {
       "rosSupport": "Advanced robotics framework",
-      "sdkLanguages": ["C++", "Python", "ROS"],
+      "sdkLanguages": [
+        "C++",
+        "Python",
+        "ROS"
+      ],
       "openSourceRepos": "https://github.com/UBTechRobotics",
-      "aiFrameworksSupported": ["Vision-based navigation", "Hand-eye coordination", "Advanced AI"],
+      "aiFrameworksSupported": [
+        "Vision-based navigation",
+        "Hand-eye coordination",
+        "Advanced AI"
+      ],
       "apiDocumentationQuality": "Comprehensive technical documentation"
     },
     "supplierReliability": {
@@ -2422,7 +2372,12 @@
       "chargingTime": "2 hours",
       "usageTime": "2 hours",
       "display": "160° 4.6K HD dual flexible curved screen",
-      "connectivity": ["Wi-Fi", "Ethernet", "EtherCAT", "USB 3.0"]
+      "connectivity": [
+        "Wi-Fi",
+        "Ethernet",
+        "EtherCAT",
+        "USB 3.0"
+      ]
     },
     "features": [
       "41 high-performance servo joints",
@@ -2446,7 +2401,10 @@
       "starting": "request",
       "currency": "USD",
       "models": [
-        {"name": "Industrial", "price": "request"}
+        {
+          "name": "Industrial",
+          "price": "request"
+        }
       ]
     },
     "generalInfo": {
@@ -2475,14 +2433,30 @@
       "payloadCapacity": "15kg maximum payload",
       "batteryCapacityRuntime": "Extended industrial operation time",
       "charger": "Industrial charging system",
-      "sensorsIncluded": ["Binocular stereo vision", "RGB vision sensors", "Deep learning vision", "Navigation sensors"],
-      "interfaces": ["Industrial communication", "Embodied intelligence system", "Real-time control"]
+      "sensorsIncluded": [
+        "Binocular stereo vision",
+        "RGB vision sensors",
+        "Deep learning vision",
+        "Navigation sensors"
+      ],
+      "interfaces": [
+        "Industrial communication",
+        "Embodied intelligence system",
+        "Real-time control"
+      ]
     },
     "softwareEcosystem": {
       "rosSupport": "Industrial robotics framework",
-      "sdkLanguages": ["Industrial programming languages"],
+      "sdkLanguages": [
+        "Industrial programming languages"
+      ],
       "openSourceRepos": "https://github.com/UBTechRobotics",
-      "aiFrameworksSupported": ["Sim-to-real AI", "Co-Agent system", "Deep learning vision", "Embodied intelligence"],
+      "aiFrameworksSupported": [
+        "Sim-to-real AI",
+        "Co-Agent system",
+        "Deep learning vision",
+        "Embodied intelligence"
+      ],
       "apiDocumentationQuality": "Industrial application documentation"
     },
     "supplierReliability": {
@@ -2525,7 +2499,10 @@
       "starting": 30000,
       "currency": "USD",
       "models": [
-        {"name": "Standard", "price": "request"}
+        {
+          "name": "Standard",
+          "price": "request"
+        }
       ]
     },
     "generalInfo": {
@@ -2555,14 +2532,32 @@
       "payloadCapacity": "1.5kg per arm (extended state)",
       "batteryCapacityRuntime": "54.6V 10Ah lithium battery, 2h usage time",
       "charger": "2 hour fast charging system",
-      "sensorsIncluded": ["Vision sensors", "Balance sensors", "Touch sensors", "Audio sensors"],
-      "interfaces": ["Wi-Fi 802.11 a/b/g/n (5G/2.4 GHz dual-band)", "Gigabit Ethernet RJ45", "EtherCAT", "USB 3.0"]
+      "sensorsIncluded": [
+        "Vision sensors",
+        "Balance sensors",
+        "Touch sensors",
+        "Audio sensors"
+      ],
+      "interfaces": [
+        "Wi-Fi 802.11 a/b/g/n (5G/2.4 GHz dual-band)",
+        "Gigabit Ethernet RJ45",
+        "EtherCAT",
+        "USB 3.0"
+      ]
     },
     "softwareEcosystem": {
       "rosSupport": "ROSA framework support",
-      "sdkLanguages": ["C++", "Python", "ROS"],
+      "sdkLanguages": [
+        "C++",
+        "Python",
+        "ROS"
+      ],
       "openSourceRepos": "https://github.com/UBTechRobotics",
-      "aiFrameworksSupported": ["Multi-modal interaction", "Emotion AI", "Advanced robotics AI"],
+      "aiFrameworksSupported": [
+        "Multi-modal interaction",
+        "Emotion AI",
+        "Advanced robotics AI"
+      ],
       "apiDocumentationQuality": "Comprehensive development documentation"
     },
     "supplierReliability": {

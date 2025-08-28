@@ -10,7 +10,7 @@ const posts = defineCollection({
       date: s.isodate(),
       updated: s.isodate().optional(),
       author: s.string(),
-      category: s.enum(['reviews', 'tutorials', 'news', 'buying-guides', 'case-studies']),
+      category: s.enum(['reviews', 'tutorials', 'news', 'buying-guides', 'case-studies', 'digest']),
       tags: s.array(s.string()),
       excerpt: s.string(),
       featured: s.boolean().default(false),

@@ -9,7 +9,7 @@ interface CategoryPageProps {
   params: Promise<{ category: string }>
 }
 
-const categories = ['reviews', 'tutorials', 'news', 'buying-guides', 'case-studies'] as const
+const categories = ['reviews', 'tutorials', 'news', 'buying-guides', 'case-studies', 'digest'] as const
 
 export async function generateStaticParams() {
   return categories.map((category) => ({
@@ -46,6 +46,10 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
     'case-studies': {
       title: 'Robot Case Studies',
       description: 'Real-world applications and success stories featuring robotic systems.',
+    },
+    digest: {
+      title: 'Awesome Robots Digest',
+      description: 'Weekly digest of the latest developments in AI robotics, featuring industry news, research breakthroughs, and community highlights.',
     },
   }
 
@@ -89,6 +93,10 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
       'case-studies': {
         icon: '📊',
         description: 'Real-world applications and success stories featuring robotic systems.'
+      },
+      digest: {
+        icon: '📧',
+        description: 'Weekly digest of the latest developments in AI robotics, featuring industry news, research breakthroughs, and community highlights.'
       },
     }
     return info[cat as keyof typeof info] || { icon: '🤖', description: 'Robotics content' }

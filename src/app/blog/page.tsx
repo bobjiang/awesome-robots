@@ -88,6 +88,7 @@ export default function BlogPage() {
               { id: 'news', name: 'News', icon: '📰', description: 'Latest robotics news' },
               { id: 'buying-guides', name: 'Buying Guides', icon: '🛒', description: 'Purchase recommendations' },
               { id: 'case-studies', name: 'Case Studies', icon: '📊', description: 'Real-world applications' },
+              { id: 'digest', name: 'Digest', icon: '📧', description: 'Weekly robotics digest' },
             ].map((category) => (
               <Link
                 key={category.id}
