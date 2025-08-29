@@ -19,5 +19,12 @@
     "description": "Global leader in humanoid robotics and AI education, developing cutting-edge commercial and industrial humanoid robots with advanced AI capabilities.",
     "website": "https://www.ubtrobot.com/",
     "logo": "/images/brands/ubtech-logo.svg"
+  },
+  {
+    "id": "boston-dynamics",
+    "name": "Boston Dynamics",
+    "description": "Pioneer in advanced robotics with 30+ years of innovation, creating industry-leading quadruped and humanoid robots for industrial, research, and defense applications.",
+    "website": "https://bostondynamics.com/",
+    "logo": "/images/brands/boston-dynamics-logo.svg"
   }
 ]
