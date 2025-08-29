@@ -208,13 +208,17 @@ export default function RobotDetailTemplate({ robot }: RobotDetailTemplateProps)
             <div className="space-y-4">
               <div>
                 <span className="text-sm font-medium text-gray-600 block mb-1">Open-source Repos / Community</span>
-                <Link 
-                  href={robot.softwareEcosystem.openSourceRepos} 
-                  target="_blank"
-                  className="text-blue-600 hover:text-blue-700 underline"
-                >
-                  GitHub Repository
-                </Link>
+                {robot.softwareEcosystem.openSourceRepos === "No" ? (
+                  <span className="text-gray-900">No</span>
+                ) : (
+                  <Link 
+                    href={robot.softwareEcosystem.openSourceRepos} 
+                    target="_blank"
+                    className="text-blue-600 hover:text-blue-700 underline"
+                  >
+                    GitHub Repository
+                  </Link>
+                )}
               </div>
               <div>
                 <span className="text-sm font-medium text-gray-600 block mb-1">AI Frameworks Supported</span>

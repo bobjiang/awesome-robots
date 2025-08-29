@@ -30,7 +30,13 @@
       "WebFetch(domain:www.ubtrobot.com)",
       "WebFetch(domain:localhost)",
       "WebFetch(domain:www.commercial.ubtrobot.com)",
-      "WebFetch(domain:technologymagazine.com)"
+      "WebFetch(domain:technologymagazine.com)",
+      "WebFetch(domain:bostondynamics.com)",
+      "WebFetch(domain:bostondynamics.com)",
+      "WebFetch(domain:www.anybotics.com)",
+      "WebFetch(domain:www.anybotics.com)",
+      "WebFetch(domain:www.ghostrobotics.io)",
+      "WebFetch(domain:www.ghostrobotics.io)"
     ],
     "deny": [],
     "defaultMode": "acceptEdits"

@@ -26,5 +26,19 @@
     "description": "Pioneer in advanced robotics with 30+ years of innovation, creating industry-leading quadruped and humanoid robots for industrial, research, and defense applications.",
     "website": "https://bostondynamics.com/",
     "logo": "/images/brands/boston-dynamics-logo.svg"
+  },
+  {
+    "id": "anybotics",
+    "name": "ANYbotics",
+    "description": "Swiss robotics company specializing in autonomous legged robots for industrial inspection, delivering robust solutions that enhance operational reliability through automated monitoring in harsh environments.",
+    "website": "https://www.anybotics.com/",
+    "logo": "/images/brands/anybotics-logo.svg"
+  },
+  {
+    "id": "ghost-robotics",
+    "name": "Ghost Robotics",
+    "description": "Advanced quadrupedal unmanned ground vehicles for defense, commercial, and industrial applications. Creating versatile robotic solutions with unstoppable agility for the most critical missions.",
+    "website": "https://www.ghostrobotics.io/",
+    "logo": "/images/brands/ghost-robotics-logo.svg"
   }
 ]
