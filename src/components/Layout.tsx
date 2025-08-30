@@ -101,6 +101,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <ul className="space-y-2 text-gray-400">
                 <li><Link href="/browse?brand=Unitree" className="hover:text-white">Unitree</Link></li>
                 <li><Link href="/browse?brand=Deep Robotics" className="hover:text-white">Deep Robotics</Link></li>
+                <li><Link href="/browse?brand=UBTech" className="hover:text-white">UBTech</Link></li>
+                <li><Link href="/browse?brand=Boston Dynamics" className="hover:text-white">Boston Dynamics</Link></li>
+                <li><Link href="/browse?brand=ANYbotics" className="hover:text-white">ANYbotics</Link></li>
+                <li><Link href="/browse?brand=Ghost Robotics" className="hover:text-white">Ghost Robotics</Link></li>
               </ul>
             </div>
             
@@ -109,7 +113,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <ul className="space-y-2 text-gray-400">
                 <li><Link href="/blog" className="hover:text-white">Blog</Link></li>
                 <li><Link href="/blog/category/buying-guides" className="hover:text-white">Buying Guides</Link></li>
-                <li><Link href="/blog/category/tutorials" className="hover:text-white">Tutorials</Link></li>
+                <li><Link href="/blog/category/digest" className="hover:text-white">Weekly Digest</Link></li>
               </ul>
             </div>
           </div>
