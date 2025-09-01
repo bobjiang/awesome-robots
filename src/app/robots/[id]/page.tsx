@@ -8,6 +8,7 @@ import Layout from '@/components/Layout';
 import ProductCard from '@/components/ProductCard';
 import SpecificationTable from '@/components/SpecificationTable';
 import RobotDetailTemplate from '@/components/RobotDetailTemplate';
+import QuoteForm from '@/components/QuoteForm';
 import { Robot } from '@/types/robot';
 import { trackRobotQuote } from '@/lib/gtag';
 import robots from '@/data/robots.json';
@@ -190,42 +191,11 @@ export default function RobotDetailPage() {
 
       {/* Quote Form Modal */}
       {showQuoteForm && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
-          <div className="bg-white rounded-xl max-w-2xl w-full max-h-[90vh] overflow-hidden">
-            <div className="flex justify-between items-center p-6 border-b border-gray-200">
-              <h3 className="text-xl font-semibold text-gray-900">Request Quote</h3>
-              <button
-                onClick={() => setShowQuoteForm(false)}
-                className="text-gray-400 hover:text-gray-600"
-              >
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
-            </div>
-            
-            <div className="p-6 border-b border-gray-200">
-              <p className="text-gray-600">Product: <strong>{robot.name}</strong></p>
-              <p className="text-gray-600">Brand: <strong>{robot.brand}</strong></p>
-              <p className="text-sm text-gray-500 mt-2">Please fill out the form below to request a quote for this robot.</p>
-            </div>
-            
-            <div className="overflow-y-auto" style={{ height: 'calc(90vh - 200px)' }}>
-              <iframe 
-                src="https://docs.google.com/forms/d/e/1FAIpQLSeFwatUYu2WK7uDIOKml7goBtFWdVEl9mFkyAh-I75UPNkHSg/viewform?embedded=true" 
-                width="100%" 
-                height="1094" 
-                frameBorder="0" 
-                marginHeight={0} 
-                marginWidth={0}
-                title="Quote Request Form"
-                className="border-0"
-              >
-                Loading…
-              </iframe>
-            </div>
-          </div>
-        </div>
+        <QuoteForm
+          robotName={robot.name}
+          robotBrand={robot.brand}
+          onClose={() => setShowQuoteForm(false)}
+        />
       )}
     </Layout>
   );
