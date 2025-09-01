@@ -1,5 +1,7 @@
 import { MetadataRoute } from 'next'
 import robotsData from '@/data/robots.json'
+import brandsData from '@/data/brands.json'
+import categoriesData from '@/data/categories.json'
 import { posts } from '../../.velite'
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -26,36 +28,34 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/categories/humanoid`,
+      url: `${baseUrl}/categories`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/categories/quadruped`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/categories/accessory`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/categories/other`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.7,
     },
     {
       url: `${baseUrl}/blog`,
       lastModified: new Date(),
-      changeFrequency: 'weekly',
+      changeFrequency: 'daily',
       priority: 0.8,
     },
   ]
+
+  // Generate category pages dynamically
+  const categoryPages: MetadataRoute.Sitemap = categoriesData.map((category) => ({
+    url: `${baseUrl}/categories/${category.id}`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: category.id === 'humanoid' || category.id === 'quadruped' ? 0.8 : 0.7,
+  }))
+
+  // Generate brand pages dynamically
+  const brandPages: MetadataRoute.Sitemap = brandsData.map((brand) => ({
+    url: `${baseUrl}/brands/${brand.id}`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: 0.7,
+  }))
 
   // Generate robot product pages
   const robotPages: MetadataRoute.Sitemap = robotsData.map((robot) => ({
@@ -82,5 +82,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }))
 
-  return [...staticPages, ...robotPages, ...blogPages, ...blogCategoryPages]
+  return [...staticPages, ...categoryPages, ...brandPages, ...robotPages, ...blogPages, ...blogCategoryPages]
 }

@@ -36,7 +36,12 @@
       "WebFetch(domain:www.anybotics.com)",
       "WebFetch(domain:www.anybotics.com)",
       "WebFetch(domain:www.ghostrobotics.io)",
-      "WebFetch(domain:www.ghostrobotics.io)"
+      "WebFetch(domain:www.ghostrobotics.io)",
+      "WebFetch(domain:www.unix-group.ai)",
+      "WebFetch(domain:www.unix-group.ai)",
+      "WebFetch(domain:www.unix-group.ai)",
+      "Bash(wget:*)",
+      "Bash(/dev/null)"
     ],
     "deny": [],
     "defaultMode": "acceptEdits"
