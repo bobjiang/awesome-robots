@@ -29,7 +29,7 @@ export default function QuoteForm({ robotName, robotBrand, onClose }: QuoteFormP
     }));
   };
 
-  const onSubmit = async (e: React.FormEvent) => {
+  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     await handleSubmit(e);
     if (state.succeeded) {
@@ -47,7 +47,7 @@ export default function QuoteForm({ robotName, robotBrand, onClose }: QuoteFormP
             </svg>
           </div>
           <h3 className="text-xl font-semibold text-gray-900 mb-2">Quote Request Sent!</h3>
-          <p className="text-gray-600 mb-6">We'll get back to you within 24 hours with a detailed quote.</p>
+          <p className="text-gray-600 mb-6">We&apos;ll get back to you within 24 hours with a detailed quote.</p>
           <button
             onClick={onClose}
             className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors"
@@ -188,7 +188,7 @@ export default function QuoteForm({ robotName, robotBrand, onClose }: QuoteFormP
               </button>
             </div>
 
-            {state.errors && state.errors.length > 0 && (
+            {state.error && (
               <div className="mt-4 p-4 bg-red-50 border border-red-200 rounded-md">
                 <p className="text-red-600 text-sm">
                   There was an error sending your quote request. Please try again.
