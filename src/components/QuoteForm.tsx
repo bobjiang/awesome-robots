@@ -20,6 +20,9 @@ export default function QuoteForm({ robotName, robotBrand, onClose }: QuoteFormP
   });
 
   const [state, handleSubmit] = useForm('3jKgm');
+  
+  // Debug: Log state to understand the structure
+  console.log('FormBold state:', state);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -188,7 +191,7 @@ export default function QuoteForm({ robotName, robotBrand, onClose }: QuoteFormP
               </button>
             </div>
 
-            {state.error && (
+            {state.error && !state.succeeded && !state.submitting && typeof state.error === 'string' && state.error.length > 0 && (
               <div className="mt-4 p-4 bg-red-50 border border-red-200 rounded-md">
                 <p className="text-red-600 text-sm">
                   There was an error sending your quote request. Please try again.
