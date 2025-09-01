@@ -41,7 +41,17 @@
       "WebFetch(domain:www.unix-group.ai)",
       "WebFetch(domain:www.unix-group.ai)",
       "Bash(wget:*)",
-      "Bash(/dev/null)"
+      "Bash(/dev/null)",
+      "WebFetch(domain:www.rainbow-robotics.com)",
+      "WebFetch(domain:www.rainbow-robotics.com)",
+      "WebFetch(domain:www.rainbow-robotics.com)",
+      "Read(/tmp/**)",
+      "Read(/tmp/**)",
+      "Read(/tmp/**)",
+      "Read(/tmp/**)",
+      "Read(/tmp/**)",
+      "Bash(find:*)",
+      "Bash(comm:*)"
     ],
     "deny": [],
     "defaultMode": "acceptEdits"

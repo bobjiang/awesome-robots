@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 50" width="250" height="50">
+  <rect width="250" height="50" fill="#ffffff" rx="5" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="125" y="20" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#333333">Rainbow</text>
+  <text x="125" y="35" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666666">Robotics</text>
+  <circle cx="30" cy="25" r="6" fill="#ff0000"/>
+  <circle cx="45" cy="25" r="6" fill="#ff7f00"/>
+  <circle cx="60" cy="25" r="6" fill="#ffff00"/>
+  <circle cx="190" cy="25" r="6" fill="#00ff00"/>
+  <circle cx="205" cy="25" r="6" fill="#0000ff"/>
+  <circle cx="220" cy="25" r="6" fill="#8f00ff"/>
+</svg>

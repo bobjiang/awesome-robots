@@ -3,24 +3,24 @@
     "id": "humanoid",
     "name": "Humanoid Robots",
     "description": "Human-like robots with bipedal locomotion, designed for interaction, research, and various applications requiring human-like movement and presence.",
-    "image": "/images/categories/humanoid.jpg"
+    "image": "/images/categories/humanoid.png"
   },
   {
     "id": "quadruped", 
     "name": "Quadruped Robots",
     "description": "Four-legged robot dogs designed for mobility, exploration, and various terrain navigation. Perfect for research, security, and industrial applications.",
-    "image": "/images/categories/quadruped.jpg"
+    "image": "/images/categories/quadruped.png"
   },
   {
     "id": "accessory",
     "name": "Accessories",
     "description": "Essential accessories, spare parts, and add-on components to enhance and maintain your robot systems.",
-    "image": "/images/categories/accessories.jpg"
+    "image": "/images/categories/accessories.png"
   },
   {
     "id": "other",
     "name": "Other Robots",
     "description": "Specialized robots including wheeled robots, drones, robotic arms, and other AI-powered robotic systems that don't fit traditional categories.",
-    "image": "/images/categories/other.jpg"
+    "image": "/images/categories/other.svg"
   }
 ]

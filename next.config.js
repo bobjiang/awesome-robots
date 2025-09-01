@@ -61,6 +61,24 @@ const nextConfig = {
         port: '',
         pathname: '/public/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'www.rainbow-robotics.com',
+        port: '',
+        pathname: '/storage/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'spectrum.ieee.org',
+        port: '',
+        pathname: '/media-library/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'rainbowrobotics.github.io',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
   experimental: {

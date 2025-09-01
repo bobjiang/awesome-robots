@@ -47,5 +47,12 @@
     "description": "Embodied intelligent robotics company founded in 2024 in Suzhou, China. Develops full-size wheeled and bipedal humanoid robots with Unitouch visual-tactile large model technology for commercial service applications.",
     "website": "https://www.unix-group.ai/",
     "logo": "/images/brands/unix-ai-logo.svg"
+  },
+  {
+    "id": "rainbow-robotics",
+    "name": "Rainbow Robotics",
+    "description": "Founded in 2011 by researchers from KAIST Humanoid Robot Research Center, Rainbow Robotics specializes in developing advanced humanoid robotic systems. Creator of the world's first commercialized humanoid robot platform HUBO2, with robots deployed at world-class institutions like MIT and Google.",
+    "website": "https://www.rainbow-robotics.com/",
+    "logo": "/images/brands/rainbow-robotics-logo.svg"
   }
 ]
