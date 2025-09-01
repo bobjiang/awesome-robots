@@ -55,6 +55,12 @@ const nextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'www.unix-group.ai',
+        port: '',
+        pathname: '/public/**',
+      },
     ],
   },
   experimental: {

@@ -40,5 +40,12 @@
     "description": "Advanced quadrupedal unmanned ground vehicles for defense, commercial, and industrial applications. Creating versatile robotic solutions with unstoppable agility for the most critical missions.",
     "website": "https://www.ghostrobotics.io/",
     "logo": "/images/brands/ghost-robotics-logo.svg"
+  },
+  {
+    "id": "unix-ai",
+    "name": "UniX AI",
+    "description": "Embodied intelligent robotics company founded in 2024 in Suzhou, China. Develops full-size wheeled and bipedal humanoid robots with Unitouch visual-tactile large model technology for commercial service applications.",
+    "website": "https://www.unix-group.ai/",
+    "logo": "/images/brands/unix-ai-logo.svg"
   }
 ]

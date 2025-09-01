@@ -105,6 +105,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <li><Link href="/browse?brand=Boston Dynamics" className="hover:text-white">Boston Dynamics</Link></li>
                 <li><Link href="/browse?brand=ANYbotics" className="hover:text-white">ANYbotics</Link></li>
                 <li><Link href="/browse?brand=Ghost Robotics" className="hover:text-white">Ghost Robotics</Link></li>
+                <li><Link href="/browse?brand=UniX AI" className="hover:text-white">UniX AI</Link></li>
               </ul>
             </div>
             
