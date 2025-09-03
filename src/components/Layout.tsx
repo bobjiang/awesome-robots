@@ -108,6 +108,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <li><Link href="/browse?brand=UniX AI" className="hover:text-white">UniX AI</Link></li>
                 <li><Link href="/browse?brand=Rainbow Robotics" className="hover:text-white">Rainbow Robotics</Link></li>
                 <li><Link href="/browse?brand=EngineAI" className="hover:text-white">EngineAI</Link></li>
+                <li><Link href="/browse?brand=Galaxea AI" className="hover:text-white">Galaxea AI</Link></li>
               </ul>
             </div>
             

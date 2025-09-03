@@ -61,5 +61,12 @@
     "description": "Shenzhen-based robotics company founded in 2023, specializing in general intelligent humanoid robots for research, education, industrial manufacturing, commercial services, and home applications. Develops full-stack robotics technology from core components to embodied intelligence.",
     "website": "https://www.engineai.com.cn/",
     "logo": "/images/brands/engineai-logo.svg"
+  },
+  {
+    "id": "galaxea-ai",
+    "name": "Galaxea AI",
+    "description": "Beijing-based embodied intelligence company founded in 2023, focused on embodied intelligence basic models and embodied intelligent robot research and development. Vision to deploy 10 billion AI robots serving the global population with advanced teleoperation and multi-dimensional perception capabilities.",
+    "website": "https://galaxea-ai.com/",
+    "logo": "/images/brands/galaxea-ai-logo.svg"
   }
 ]

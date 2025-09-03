@@ -91,6 +91,12 @@ const nextConfig = {
         port: '2390',
         pathname: '/files/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'galaxea-ai.com',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
   experimental: {
