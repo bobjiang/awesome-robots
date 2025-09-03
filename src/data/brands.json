@@ -54,5 +54,12 @@
     "description": "Founded in 2011 by researchers from KAIST Humanoid Robot Research Center, Rainbow Robotics specializes in developing advanced humanoid robotic systems. Creator of the world's first commercialized humanoid robot platform HUBO2, with robots deployed at world-class institutions like MIT and Google.",
     "website": "https://www.rainbow-robotics.com/",
     "logo": "/images/brands/rainbow-robotics-logo.svg"
+  },
+  {
+    "id": "engineai",
+    "name": "EngineAI",
+    "description": "Shenzhen-based robotics company founded in 2023, specializing in general intelligent humanoid robots for research, education, industrial manufacturing, commercial services, and home applications. Develops full-stack robotics technology from core components to embodied intelligence.",
+    "website": "https://www.engineai.com.cn/",
+    "logo": "/images/brands/engineai-logo.svg"
   }
 ]

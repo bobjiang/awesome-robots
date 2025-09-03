@@ -79,6 +79,18 @@ const nextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'www.engineai.com.cn',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'file.engineai.com.cn',
+        port: '2390',
+        pathname: '/files/**',
+      },
     ],
   },
   experimental: {
