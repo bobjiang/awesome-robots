@@ -16,7 +16,12 @@ seo:
 
 ## TL;DR; 📋
 
-**Humanoid headlines dominated this week: Figure's Helix tackles dishwasher loading, Musk predicts Optimus will drive 80% of Tesla's value, Unitree prepares Q4 IPO filing, and the Humanoid Olympiad showcases real-world performance. Research focuses on loco-manipulation for legged platforms, while major conferences (ROSCon UK, CoRL, Humanoids, IROS) approach rapidly.**
+- **Figure's Helix** tackles dishwasher loading with data-driven learning approach
+- **Tesla/Musk** predicts Optimus will drive 80% of Tesla's future value
+- **Unitree** prepares Q4 IPO filing, signaling China's robotics market maturation
+- **Humanoid Olympiad** showcases real-world performance constraints in Ancient Olympia
+- **Research focus** on loco-manipulation for legged platforms integration
+- **Major conferences** (ROSCon UK, CoRL, Humanoids, IROS) approach rapidly
 
 ---
 
