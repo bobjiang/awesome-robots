@@ -97,6 +97,12 @@ const nextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'www.boosterobotics.com',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
   experimental: {

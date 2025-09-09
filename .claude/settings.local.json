@@ -51,7 +51,12 @@
       "Read(/tmp/**)",
       "Read(/tmp/**)",
       "Bash(find:*)",
-      "Bash(comm:*)"
+      "Bash(comm:*)",
+      "Bash(git commit:*)",
+      "WebFetch(domain:www.engineai.com.cn)",
+      "Read(/tmp/**)",
+      "WebFetch(domain:galaxea-ai.com)",
+      "WebFetch(domain:www.boosterobotics.com)"
     ],
     "deny": [],
     "defaultMode": "acceptEdits"

@@ -3874,5 +3874,168 @@
     ],
     "officialUrl": "https://galaxea-ai.com/cn/products/R1-Lite",
     "description": "R1 Lite is Galaxea AI's research-optimized embodied intelligence robot platform. With 23 DOF, efficient top-mounted design, and strong data collection capabilities, it accelerates model deployment and supports generalized task applications for research institutions."
+  },
+  {
+    "id": "booster-t1",
+    "name": "T1",
+    "brand": "Booster Robotics",
+    "category": "humanoid",
+    "price": {
+      "starting": "request",
+      "currency": "USD",
+      "models": [
+        {
+          "name": "T1 Standard",
+          "price": "request"
+        }
+      ]
+    },
+    "generalInfo": {
+      "manufacturer": "Booster Robotics",
+      "modelName": "T1",
+      "dimensions": {
+        "standing": "TBD",
+        "folded": "TBD",
+        "weight": "TBD"
+      }
+    },
+    "keyFeatures": [
+      "Made for developers",
+      "Lightweight, flexible, and durable design",
+      "Humanoid robotics platform",
+      "Research and education focused",
+      "Software and hardware integration",
+      "Embodied intelligence capabilities"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "TBD",
+      "payloadCapacity": "TBD",
+      "batteryCapacityRuntime": "TBD",
+      "charger": "TBD",
+      "sensorsIncluded": [
+        "TBD"
+      ],
+      "interfaces": [
+        "TBD"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Expected (developer-focused)",
+      "sdkLanguages": [
+        "TBD"
+      ],
+      "openSourceRepos": "TBD",
+      "aiFrameworksSupported": [
+        "TBD"
+      ],
+      "apiDocumentationQuality": "TBD"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "TBD",
+        "coverage": "TBD"
+      },
+      "postSalesSupport": "TBD",
+      "trackRecord": "Founded in June 2023, pre-A round financing completed"
+    },
+    "features": [
+      "Developer-centric humanoid platform",
+      "Lightweight and flexible construction",
+      "Durable design for research use",
+      "Embodied intelligence integration",
+      "Educational applications"
+    ],
+    "images": [
+      "/images/robots/booster-t1.webp"
+    ],
+    "highResPhotos": [
+      "/images/robots/booster-t1.webp"
+    ],
+    "officialUrl": "https://www.boosterobotics.com/booster-t1/",
+    "description": "T1 is Booster Robotics' humanoid robot designed specifically for developers. Made to be lightweight, flexible, and durable, it serves as a platform for research, education, and embodied intelligence development."
+  },
+  {
+    "id": "booster-k1",
+    "name": "K1",
+    "brand": "Booster Robotics",
+    "category": "humanoid",
+    "price": {
+      "starting": "request",
+      "currency": "USD",
+      "models": [
+        {
+          "name": "K1 Standard",
+          "price": "request"
+        }
+      ]
+    },
+    "generalInfo": {
+      "manufacturer": "Booster Robotics",
+      "modelName": "K1",
+      "dimensions": {
+        "standing": "TBD",
+        "folded": "TBD",
+        "weight": "TBD"
+      }
+    },
+    "keyFeatures": [
+      "Brazil RoboCup Champion Robot",
+      "Safe, reliable, and education-empowering",
+      "Compact size with powerful computing",
+      "Competition-proven performance",
+      "Educational robotics platform",
+      "Advanced soccer playing capabilities"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "TBD",
+      "payloadCapacity": "TBD",
+      "batteryCapacityRuntime": "TBD",
+      "charger": "TBD",
+      "sensorsIncluded": [
+        "Competition-grade sensors",
+        "Vision system",
+        "Navigation sensors"
+      ],
+      "interfaces": [
+        "TBD"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Expected (RoboCup standard)",
+      "sdkLanguages": [
+        "C++",
+        "Python"
+      ],
+      "openSourceRepos": "TBD",
+      "aiFrameworksSupported": [
+        "TBD"
+      ],
+      "apiDocumentationQuality": "TBD"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "TBD",
+        "coverage": "TBD"
+      },
+      "postSalesSupport": "TBD",
+      "trackRecord": "Brazil RoboCup Champion, Founded June 2023"
+    },
+    "features": [
+      "RoboCup champion proven design",
+      "Competition-grade robotics platform",
+      "Safe and reliable operation",
+      "Educational applications focus",
+      "Compact form factor",
+      "Powerful computing capabilities",
+      "Soccer playing optimization"
+    ],
+    "images": [
+      "/images/robots/booster-k1.webp"
+    ],
+    "highResPhotos": [
+      "/images/robots/booster-k1.webp"
+    ],
+    "officialUrl": "https://www.boosterobotics.com/booster-k1/",
+    "description": "K1 is Booster Robotics' Brazil RoboCup Champion humanoid robot. Designed to be safe, reliable, and education-empowering, it features a compact size with powerful computing capabilities, making it ideal for competitive robotics and educational applications."
   }
 ]
