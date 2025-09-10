@@ -4,7 +4,9 @@ import Layout from '@/components/Layout'
 import BlogPost from '@/components/blog/BlogPost'
 import BlogCard from '@/components/blog/BlogCard'
 import Link from 'next/link'
+import Script from 'next/script'
 import { Metadata } from 'next'
+import { generateArticleSchema, generateBreadcrumbSchema } from '@/lib/structured-data'
 
 interface BlogPostPageProps {
   params: Promise<{ slug: string }>
@@ -65,8 +67,42 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     )
     .slice(0, 3)
 
+  // Generate structured data
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.awesomerobots.xyz';
+  const postUrl = `${baseUrl}/blog/${post.slug}`;
+  const wordCount = post.content ? post.content.split(/\s+/).length : 1000;
+  
+  const articleSchema = generateArticleSchema(
+    post.title,
+    post.excerpt,
+    author?.name || post.author,
+    post.date,
+    post.updated || post.date,
+    post.category,
+    post.tags,
+    wordCount,
+    postUrl,
+    baseUrl,
+    author
+  );
+
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'Blog', url: '/blog' },
+    { name: post.category, url: `/blog/category/${post.category}` },
+    { name: post.title, url: `/blog/${post.slug}` }
+  ], baseUrl);
+
   return (
     <Layout>
+      {/* Structured Data */}
+      <Script id="article-schema" type="application/ld+json">
+        {JSON.stringify(articleSchema)}
+      </Script>
+      <Script id="breadcrumb-schema" type="application/ld+json">
+        {JSON.stringify(breadcrumbSchema)}
+      </Script>
+      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <BlogPost post={post} author={author} />
 

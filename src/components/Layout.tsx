@@ -28,6 +28,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <Link href="/blog" className="text-gray-700 hover:text-blue-600 transition-colors">
                 Blog
               </Link>
+              <Link href="/faq" className="text-gray-700 hover:text-blue-600 transition-colors">
+                FAQ
+              </Link>
             </div>
 
             {/* Mobile menu button */}
@@ -67,6 +70,13 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Blog
+                </Link>
+                <Link 
+                  href="/faq" 
+                  className="block px-3 py-2 text-gray-700 hover:text-blue-600 transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  FAQ
                 </Link>
               </div>
             </div>
@@ -119,6 +129,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <li><Link href="/blog" className="hover:text-white">Blog</Link></li>
                 <li><Link href="/blog/category/buying-guides" className="hover:text-white">Buying Guides</Link></li>
                 <li><Link href="/blog/category/digest" className="hover:text-white">Weekly Digest</Link></li>
+                <li><Link href="/faq" className="hover:text-white">FAQ</Link></li>
               </ul>
             </div>
           </div>

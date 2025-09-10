@@ -108,7 +108,7 @@ export default function CategoryPage() {
               src={
                 categoryId === 'humanoid' ? '/images/categories/humanoid.png' :
                 categoryId === 'quadruped' ? '/images/categories/quadruped.png' :
-                categoryId === 'accessory' ? '/images/categories/accessories.svg' :
+                categoryId === 'accessory' ? '/images/categories/accessories.png' :
                 '/images/categories/other.svg'
               }
               alt={category.name}

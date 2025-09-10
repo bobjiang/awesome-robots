@@ -4,13 +4,17 @@ import { useState } from 'react';
 import { useParams } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
+import Script from 'next/script';
 import Layout from '@/components/Layout';
 import ProductCard from '@/components/ProductCard';
 import SpecificationTable from '@/components/SpecificationTable';
 import RobotDetailTemplate from '@/components/RobotDetailTemplate';
 import QuoteForm from '@/components/QuoteForm';
+import AISpecificationSummary from '@/components/AISpecificationSummary';
+import ContentRelationships from '@/components/ContentRelationships';
 import { Robot } from '@/types/robot';
 import { trackRobotQuote } from '@/lib/gtag';
+import { generateProductSchema, generateBreadcrumbSchema } from '@/lib/structured-data';
 import robots from '@/data/robots.json';
 
 export default function RobotDetailPage() {
@@ -18,6 +22,16 @@ export default function RobotDetailPage() {
   const robotId = params.id as string;
   const robot = (robots as Robot[]).find((r: Robot) => r.id === robotId);
   const [showQuoteForm, setShowQuoteForm] = useState(false);
+
+  // Generate structured data
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.awesomerobots.xyz';
+  const productSchema = robot ? generateProductSchema(robot, baseUrl) : null;
+  const breadcrumbSchema = robot ? generateBreadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'Browse All', url: '/browse' },
+    { name: robot.category, url: `/categories/${robot.category}` },
+    { name: `${robot.brand} ${robot.name}`, url: `/robots/${robot.id}` }
+  ], baseUrl) : null;
 
   const handleQuoteRequest = () => {
     if (robot) {
@@ -60,8 +74,8 @@ export default function RobotDetailPage() {
     
     const imageMap: { [key: string]: string } = {
       'unitree-g1': '/images/robots/unitree-g1.png',
-      'unitree-h1': '/images/robots/unitree-h1.png',
-      'unitree-go2': '/images/robots/unitree-go2.jpg',
+      'unitree-h1': '/images/robots/h1-1.jpg',
+      'unitree-go2': '/images/robots/go2-1.jpg',
       'unitree-go2-w': '/images/robots/quadruped/go2-w-1.png',
       'unitree-b2': '/images/robots/unitree-b2.png',
       'unitree-a2': '/images/robots/unitree-b2.png',
@@ -70,7 +84,7 @@ export default function RobotDetailPage() {
     return imageMap[robotId] || (
       category === 'humanoid' ? '/images/categories/humanoid.png' :
       category === 'quadruped' ? '/images/categories/quadruped.png' :
-      category === 'accessory' ? '/images/categories/accessories.svg' :
+      category === 'accessory' ? '/images/categories/accessories.png' :
       '/images/categories/other.svg'
     );
   };
@@ -78,18 +92,40 @@ export default function RobotDetailPage() {
 
   return (
     <Layout>
+      {/* Structured Data */}
+      {productSchema && (
+        <Script id="product-schema" type="application/ld+json">
+          {JSON.stringify(productSchema)}
+        </Script>
+      )}
+      {breadcrumbSchema && (
+        <Script id="breadcrumb-schema" type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
+        </Script>
+      )}
+      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        {/* Breadcrumb */}
-        <nav className="mb-8 text-sm text-gray-500">
-          <Link href="/" className="hover:text-blue-600">Home</Link>
-          {' > '}
-          <Link href="/browse" className="hover:text-blue-600">Browse All</Link>
-          {' > '}
-          <Link href={`/categories/${robot.category}`} className="hover:text-blue-600 capitalize">
-            {robot.category}
-          </Link>
-          {' > '}
-          <span className="text-gray-900">{robot.name}</span>
+        {/* Breadcrumb with semantic markup */}
+        <nav className="mb-8 text-sm text-gray-500" aria-label="Breadcrumb">
+          <ol className="inline-flex items-center space-x-1">
+            <li className="inline-flex items-center">
+              <Link href="/" className="hover:text-blue-600">Home</Link>
+            </li>
+            <li aria-hidden="true">{' > '}</li>
+            <li className="inline-flex items-center">
+              <Link href="/browse" className="hover:text-blue-600">Browse All</Link>
+            </li>
+            <li aria-hidden="true">{' > '}</li>
+            <li className="inline-flex items-center">
+              <Link href={`/categories/${robot.category}`} className="hover:text-blue-600 capitalize">
+                {robot.category}
+              </Link>
+            </li>
+            <li aria-hidden="true">{' > '}</li>
+            <li>
+              <span className="text-gray-900" aria-current="page">{robot.name}</span>
+            </li>
+          </ol>
         </nav>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
@@ -161,6 +197,12 @@ export default function RobotDetailPage() {
             </Link>
           </div>
         </div>
+
+        {/* AI-Friendly Specification Summary */}
+        <AISpecificationSummary robot={robot} />
+
+        {/* Content Relationships */}
+        <ContentRelationships currentRobot={robot} allRobots={robots as Robot[]} />
 
         {/* Enhanced Robot Details Template */}
         <div className="mb-16">
