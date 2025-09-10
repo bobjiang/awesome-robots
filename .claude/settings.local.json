@@ -56,7 +56,10 @@
       "WebFetch(domain:www.engineai.com.cn)",
       "Read(/tmp/**)",
       "WebFetch(domain:galaxea-ai.com)",
-      "WebFetch(domain:www.boosterobotics.com)"
+      "WebFetch(domain:www.boosterobotics.com)",
+      "WebFetch(domain:developers.forem.com)",
+      "WebFetch(domain:dev.to)",
+      "Bash(npm run publish-blog:*)"
     ],
     "deny": [],
     "defaultMode": "acceptEdits"

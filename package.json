@@ -7,14 +7,18 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "publish-blog": "tsx scripts/publish-blog.ts"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.16",
+    "dotenv": "^17.2.2",
     "formbold-react": "^1.1.1",
+    "gray-matter": "^4.0.3",
     "next": "15.4.6",
     "react": "19.1.0",
     "react-dom": "19.1.0",
+    "tsx": "^4.20.5",
     "velite": "^0.2.4",
     "zod": "^4.0.17"
   },
