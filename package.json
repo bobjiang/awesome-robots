@@ -8,7 +8,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "publish-blog": "tsx scripts/publish-blog.ts"
+    "publish-blog": "tsx scripts/publish-blog.ts",
+    "generate-digest": "tsx scripts/generate-digest.ts",
+    "digest-and-publish": "tsx scripts/generate-digest.ts --publish-draft"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.16",

@@ -59,7 +59,8 @@
       "WebFetch(domain:www.boosterobotics.com)",
       "WebFetch(domain:developers.forem.com)",
       "WebFetch(domain:dev.to)",
-      "Bash(npm run publish-blog:*)"
+      "Bash(npm run publish-blog:*)",
+      "Bash(npm run generate-digest:*)"
     ],
     "deny": [],
     "defaultMode": "acceptEdits"
