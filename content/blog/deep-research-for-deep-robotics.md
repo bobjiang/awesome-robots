@@ -3,7 +3,7 @@ title: "Deep Research for Deep Robotics: Comprehensive Strategic Analysis"
 slug: "deep-research-for-deep-robotics"
 date: "2025-09-16"
 author: "bob-jiang"
-category: "analysis"
+category: "case-studies"
 tags: ["deeprobotics", "quadruped", "robotics", "investment", "china", "automation", "ai", "analysis", "research"]
 excerpt: "Comprehensive strategic analysis of Deep Robotics, China's leading quadruped robotics company. Explores market positioning, technology leadership, competitive advantages, and investment potential in the rapidly expanding robotics industry."
 featured: true
