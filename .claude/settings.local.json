@@ -60,7 +60,10 @@
       "WebFetch(domain:developers.forem.com)",
       "WebFetch(domain:dev.to)",
       "Bash(npm run publish-blog:*)",
-      "Bash(npm run generate-digest:*)"
+      "Bash(npm run generate-digest:*)",
+      "Bash(chmod:*)",
+      "Bash(crontab:*)",
+      "Bash(./scripts/weekly-digest-cron.sh:*)"
     ],
     "deny": [],
     "defaultMode": "acceptEdits"
