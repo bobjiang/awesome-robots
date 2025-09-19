@@ -14,148 +14,154 @@ seo:
   keywords: ["robotics news", "AI robotics", "robotics digest", "weekly robotics", "robotics industry", "robotics research"]
 ---
 
-## TL;DR; 📋
+## TL;DR 📋
 
-**[This week (Sep 12–18) highlights - to be filled with key developments]**
+**This week's highlights - From promising demos to serious scaling moves**
 
-- **[Key Development 1]** - [Brief description]
-- **[Key Development 2]** - [Brief description]
-- **[Key Development 3]** - [Brief description]
-- **[Research Focus]** - [Research highlights]
-- **[Upcoming Events]** - [Conference/event highlights]
+- **Figure hits $39B valuation** - Massive $1B+ Series C funding round with major tech investors
+- **OpenAI doubles down on robotics** - Heavy hiring for humanoid systems and embodied AI
+- **Research advances in torque-aware VLAs** - Better physical constraints and safety in robot learning
+- **CoRL 2025 accepts key papers** - Multi-arm manipulation and long-horizon robot learning
+- **Competition scene in China** - Intelligent Bionic Robot Competition showcases innovation
 
 ---
 
 ## Introduction 🚀
 
-This week's developments (Sep 12–18) brought [description of key themes]. [Brief overview of major trends, announcements, or shifts in the AI robotics space]. This issue explores [what topics will be covered].
+Over the past week, things have edged from "promising demos" toward serious scaling and organizational moves in humanoid robotics. We saw massive funding rounds, companies doubling down on embodied intelligence, and community scale-ups in robotics competitions. The gap between research lab innovation and market expectation continues to pose friction—but the field is accelerating. Below are the most relevant updates, papers, and trends shaping where things may go next.
 
 ---
 
 ## Top News & Breakthroughs 📰
 
 ### 🏢 Company News
-- **[Company Name]** announced [specific news] - [brief explanation of significance]
-- **[Company Name]** [development/milestone] - [impact on industry]
+- **Figure** hits $39B valuation in massive funding round - Secured over $1 billion in Series C with NVIDIA, Intel Capital, LG Technology Ventures leading
+- **OpenAI** is revving up robotics work with AGI ambitions - Heavy hiring in robotics-centric roles for humanoid systems and embodied AI
 
 ### 🚀 Product Launches
-- **[Product Name]** by **[Company]** - [key features and market impact]
-- **[New Technology]** breakthrough in [specific area] - [technical significance]
+- **Figure's BotQ facility** expansion for manufacturing - Scaling humanoid robots for household and commercial use
+- **OpenAI's physical AI platform** development - Connecting agents with physical world through teleoperation and simulation
 
 ### 💰 Funding & Investments
-- **[Startup]** raised $[X]M Series [X] led by **[Investor]** - [use case and market potential]
-- **[Corporate]** invested in **[Robotics Company]** - [strategic implications]
+- **Figure** raised $1B+ Series C led by Parkway Venture Capital, NVIDIA, Intel Capital - Funds earmarked for scaling robots and AI platform Helix
+- **Humanoid-Global** invested ~$75,000 in RideScan - Signals market interest in robot safety and performance analytics
 
 ### 🌐 Industry Developments
-- **[Industry]** adoption of **[Technology]** accelerates - [market trends and implications]
-- **[Regulation/Standard]** announced for **[Robotics Application]** - [compliance and market impact]
+- **Wired's "Move Aside, Chatbots: AI Humanoids Are Here"** - Examines current landscape with Figure, Apptronik, Tesla, Boston Dynamics racing development
+- **Humanoid robotics competition** scene accelerating - Events serving as testbeds for motion and interaction technologies
 
 ---
 
 ## Research Spotlight 🔬
 
 ### 📄 Research Papers
-- **[Paper Title]** by **[Authors]** - [key findings and practical applications]
-  - *Published in: [Journal/Conference]*
-  - *Key Innovation: [specific technical advancement]*
+- **TA-VLA: Design space of Torque-aware Vision-Language-Action Models** - CoRL 2025 accepts paper on VLAs integrating torque sensing for safer interaction
+  - *Published in: CoRL 2025*
+  - *Key Innovation: Better physical constraints and safety in learned models*
+
+- **Graph-Fused Vision-Language-Action for Multi-Arm Manipulation** - Advances in coordinating multiple manipulators under VLA policies
+  - *Key Innovation: Graph-based fusion for action coordination reasoning*
+
+- **RaC: Recovery & Correction in Long-Horizon Robot Learning** - Framework for long-horizon tasks with recovery from partial failures
+  - *Key Innovation: Correction strategies maintaining performance over extended sequences*
 
 ### 🔧 Open Source Projects
-- **[Project Name]** - [description of functionality and community impact]
-  - *GitHub: [link]*
-  - *Use Cases: [specific applications]*
+- **Programmable Locking Cells for Modular Robots** - Hardware modules with adjustable stiffness/tunability
+  - *Use Cases: Robots with changing morphology and task-specific adaptation*
+
+- **Fault-Tolerant RL for Quadcopter Control** - RL-based control strategies for UAV stability under component failure
+  - *Use Cases: Robust deployment in real-world risky settings*
 
 ### 🎓 Academic Breakthroughs
-- **[University]** researchers develop **[Technology]** - [scientific significance and potential applications]
-
-**Why it matters:** [Explanation of significance for the field]
+- **CoRL 2025** researchers advance torque-aware learning - Integration of physical feedback into VLA models
+- **Chongqing competition** teams present novel tech - Bio-inspiration and bionics for robotics designs
 
 ---
 
 ## Event Horizon 📅
 
 ### 🗓️ This Week
-- **[Event Name]** - [Date] at [Location/Platform]
-  - *Focus: [main topics or themes]*
-  - *Registration: [link if available]*
+- **Intelligent Bionic Robot Competition** - Chongqing, China
+  - *Focus: Bionics and bio-inspiration for robotics designs*
+  - *Innovation: Novel tech in motion and interaction*
 
 ### 📅 Next Week
-- **[Conference Name]** - [Date Range] in [City/Online]
-  - *Keynote Speakers: [notable presenters]*
-  - *Topics: [main areas of focus]*
+- **TechCrunch Disrupt 2025** - Oct 27-29 in San Francisco, USA
+  - *Keynote Speakers: Raquel Urtasun (Waabi), Jeff Cardenas (Apptronik)*
+  - *Topics: Robotics, AVs, and AI hardware as major themes*
 
 ### 🎯 Upcoming Deadlines
-- **[Call for Papers/Submissions]** - Deadline: [Date]
-  - *Requirements: [brief description]*
-  - *Submission Link: [URL]*
+- **CoRL 2025** - Paper acceptance notifications released
+  - *Requirements: Research in robot learning and control*
 
 ### 🌍 Major Conferences (Next 3 Months)
-- **[Conference]** - [Date] in [Location]
-- **[Workshop]** - [Date] at [Venue]
-- **[Exhibition]** - [Date] in [City]
+- **TechCrunch Disrupt 2025** - Oct 27-29 in San Francisco
+- **Humanoids Conference** - Paper presentations and demos
+- **Regional robotics competitions** - Ongoing across China and globally
 
 ---
 
 ## Tool/Resource of the Week 🛠️
 
-### 🎯 Featured Resource: **[Resource Name]**
+### 🎯 Featured Resource: **RideScan by Humanoid-Global**
 
-**[Brief description of what this tool/resource is and its primary purpose]**
+**Robot safety and performance analytics platform with recent investment backing for pilot deployments**
 
 **Key Features:**
-- **[Feature 1]** - [benefit]
-- **[Feature 2]** - [benefit]
-- **[Feature 3]** - [benefit]
+- **Safety Analytics** - Performance measurement and validation systems
+- **Go-to-market Validation** - Pilot deployment strategies for robotics companies
+- **Performance Metrics** - Data collection and analysis for robot deployment
 
 **Why It's Useful:**
-[Explanation of why this resource is valuable for robotics practitioners]
+While modest in scale (~$75,000 investment), this move signals growing market interest in robot safety and performance analytics. Measurement, safety, and data infrastructure are becoming increasingly fundable areas in robotics.
 
 **Getting Started:**
-- **Website:** [URL]
-- **Documentation:** [link]
-- **Community:** [forum/discord/slack link if applicable]
+- **Investment Backing:** Humanoid-Global partnership
+- **Pilot Deployments:** Validation of market strategies
+- **Focus Areas:** Safety analytics and performance measurement
 
 **Use Cases:**
-- [Specific application 1]
-- [Specific application 2]
-- [Specific application 3]
+- Robot deployment safety validation
+- Performance analytics for commercial robotics
+- Go-to-market strategy validation for robotics startups
 
 ---
 
 ## Community Corner 👥
 
 ### 💬 Trending Discussions
-- **[Forum/Platform]** - "[Discussion Topic]" - [summary of key points and community engagement]
-- **[Social Media]** - "[Hashtag/Trend]" - [community response and significance]
+- **Robotics forums** - "Valuation vs Reality in Humanoids" - Community debates whether high valuations create pressure for demos over durability
+- **Competition scene** - "China's Robotics Innovation" - Inspiring yet humbling displays of new designs with visible limitations
 
 ### 🛠️ Cool Projects
-- **[Project Name]** by **[Creator]** - [description of the project and its innovation]
-  - *Demo: [video/link]*
-  - *Innovation: [what makes it special]*
+- **Chongqing Competition Entries** - Novel bionic designs with ambitious motions
+  - *Innovation: Bio-inspired locomotion and manipulation*
+  - *Reality Check: Battery life, precision, and control under disturbance still challenging*
 
 ### 🎉 Community Highlights
-- **[Person/Group]** released **[Project]** - [impact on community]
-- **[Event]** organized by **[Community]** - [participation and outcomes]
+- **CoRL 2025** accepted papers on torque-aware learning - Community advancing physical constraints in AI
+- **Regional competitions** driving benchmark improvements - Collective effort raising performance standards
 
-### 🌟 Spotlight: **[Community Member/Project]**
-[Detailed feature of an outstanding community contribution, project, or individual]
+### 🌟 Spotlight: **Intelligent Bionic Robot Competition**
+The competition scene in China continues to prove both inspiring and humbling: new designs, ambitious motions, but still visible limitations in battery life, precision, and control under disturbance. These events are collectively dragging the benchmark higher and serving as crucial testbeds for real-world robotics applications.
 
 ---
 
-## Trends to Watch (from this week's signals)
+## Trends to Watch 🔍
 
-1. **[Trend 1]**: [Description of emerging trend and its implications]
+1. **Valuation vs Reality**: With Figure's $39B valuation, increasing scrutiny on whether companies can deliver safe, usable humanoids at scale, not just flashy demos
 
-2. **[Trend 2]**: [Description of market/technical development to monitor]
+2. **Torque/Physical Constraints in Learning**: Research like TA-VLA emphasizes integrating physical feedback/safety into learned models, counterbalancing over-reliance on perception systems
 
-3. **[Trend 3]**: [Description of research direction or industry shift]
+3. **Hybrid Hardware/Competitions as Test Platforms**: Competitions becoming standard competence check-ins for motion, robustness, control under disturbance, and endurance
 
 ---
 
 ## Conclusion 🎯
 
-Week in summary: [Brief recap of the week's developments]. [Forward-looking statement about expected developments]. [Engagement prompt for readers].
+Issue #4 reinforces the theme that humanoid robotics is no longer just exciting proposals and vision—scale, validation, and robustness are now under the spotlight. Big money is flowing, but expectations are rising. If you're building humanoids or generalist VLA stacks, the next 2-3 months will likely be decisive: either hardware, data, control, and safety converge—or the gap between hype and field performance opens up.
 
-[Closing thought about the state of AI robotics and what to expect next week/month].
+Looking ahead: I'll keep an eye on results from CoRL and Humanoids (papers, open-source), Tesla / Apptronik / Figure's deployment signals, and ways for smaller labs to piggyback on infrastructure (simulation, safety tools, modular morphology).
 
 ---
 
@@ -167,7 +173,7 @@ Week in summary: [Brief recap of the week's developments]. [Forward-looking stat
 
 ---
 
-*This digest is curated by the Awesome Robots team. Have a story to share? [Contact information]*
+*This digest is curated by the Awesome Robots team. Have a story to share? Contact us through our website*
 
 **Archive, resources, and partner robots:** [awesomerobots.xyz](https://www.awesomerobots.xyz/)
 
@@ -175,4 +181,4 @@ Week in summary: [Brief recap of the week's developments]. [Forward-looking stat
 
 **Want a printable version of the digest? Say the word and I'll export a PDF in your template.**
 
-*Curated for the Awesome Robots community. If you want this tailored to specific robot types or focus areas next issue, just let us know!*
+*If you want an issue focused on quadrupeds, field robots, or "robotic sensing + perception" only — I can do that. As always, I appreciate feedback: what parts matter most to you (e.g. funding, papers, demos)? I can bias accordingly.*
