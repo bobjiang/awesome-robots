@@ -7,7 +7,7 @@ category: "digest"
 tags: ["digest", "newsletter", "robotics", "AI", "weekly", "industry-news", "research"]
 excerpt: "Weekly digest of the latest developments in AI robotics, featuring industry news, research breakthroughs, upcoming events, and community highlights from the robotics world."
 featured: false
-published: false
+published: true
 seo:
   title: "Awesome Robots Digest - Issue #4 - Latest AI Robotics News & Updates"
   description: "Stay updated with the latest AI robotics developments, research breakthroughs, industry news, and community highlights in our weekly digest."
