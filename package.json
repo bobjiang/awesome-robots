@@ -8,6 +8,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "validate-data": "node scripts/validate-robot-data.cjs",
+    "update-configs": "node scripts/update-image-patterns.cjs",
+    "organize-brands": "node scripts/organize-by-brands.cjs",
+    "pre-build": "npm run validate-data && npm run update-configs",
     "publish-blog": "tsx scripts/publish-blog.ts",
     "generate-digest": "tsx scripts/generate-digest.ts",
     "digest-and-publish": "tsx scripts/generate-digest.ts --publish-draft"

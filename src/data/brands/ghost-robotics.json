@@ -1,0 +1,122 @@
+{
+  "brand": {
+    "id": "ghost-robotics",
+    "name": "Ghost Robotics",
+    "description": "Advanced quadrupedal unmanned ground vehicles for defense, commercial, and industrial applications. Creating versatile robotic solutions with unstoppable agility for the most critical missions.",
+    "website": "https://www.ghostrobotics.io/",
+    "logo": "/images/brands/ghost-robotics-logo.svg"
+  },
+  "robots": [
+    {
+      "id": "ghost-robotics-vision-60",
+      "name": "Vision 60",
+      "brand": "Ghost Robotics",
+      "category": "quadruped",
+      "price": {
+        "starting": "request",
+        "currency": "USD",
+        "models": [
+          {
+            "name": "Vision 60 Q-UGV",
+            "price": "request"
+          }
+        ]
+      },
+      "generalInfo": {
+        "manufacturer": "Ghost Robotics",
+        "modelName": "Vision 60",
+        "dimensions": {
+          "length": "95cm",
+          "width": "57cm",
+          "height": "68.5cm",
+          "weight": "51kg (112 lbs)"
+        }
+      },
+      "keyFeatures": [
+        "IP67 environmental protection",
+        "Modular design with field-replaceable legs",
+        "Vibram® all-terrain foot treads",
+        "Autonomous navigation capabilities",
+        "All-weather operation (-40°C to +55°C)",
+        "Advanced sensor integration",
+        "Multi-terrain adaptability",
+        "Defense-grade durability"
+      ],
+      "hardwareBuildQuality": {
+        "totalDegreesOfFreedom": "12 (3 DOF per leg)",
+        "payloadCapacity": "10kg (22 lbs)",
+        "batteryCapacityRuntime": "3.15 hours continuous walking, 21 hours standby",
+        "charger": "Integrated charging system",
+        "sensorsIncluded": [
+          "5x RGB cameras",
+          "4x depth sensors",
+          "Dual antenna RTK GPS",
+          "IMU sensors",
+          "Environmental sensors"
+        ],
+        "interfaces": [
+          "Wi-Fi",
+          "4G/LTE",
+          "Ethernet",
+          "Payload interfaces"
+        ]
+      },
+      "softwareEcosystem": {
+        "rosSupport": "Yes (ROS, ROS2)",
+        "sdkLanguages": [
+          "C++",
+          "Python",
+          "MAVLink"
+        ],
+        "openSourceRepos": "No",
+        "aiFrameworksSupported": [
+          "Autonomous navigation",
+          "Mission planning",
+          "Sensor fusion AI"
+        ],
+        "apiDocumentationQuality": "Commercial documentation"
+      },
+      "supplierReliability": {
+        "warranty": {
+          "duration": "Commercial warranty",
+          "coverage": "Hardware and software platform support"
+        },
+        "postSalesSupport": "Training, technical support, field service",
+        "trackRecord": "Defense and commercial deployments worldwide"
+      },
+      "specifications": {
+        "dimensions": "95cm x 57cm x 68.5cm",
+        "weight": "51kg",
+        "material": "Military-grade construction",
+        "maxSpeed": "2.4 m/s (sprint), 1.2 m/s (fast walk)",
+        "standardSpeed": "0.9 m/s",
+        "operatingTemperature": "-40°C to +55°C",
+        "ingressProtection": "IP67",
+        "processor": "NVIDIA Xavier",
+        "memory": "32GB RAM",
+        "storage": "2TB NVMe SSD",
+        "batteryLife": "3.15 hours walking, 21 hours standby"
+      },
+      "features": [
+        "Extreme terrain navigation",
+        "Military-grade reliability",
+        "Modular payload system",
+        "Autonomous operation",
+        "All-weather capability",
+        "Advanced perception"
+      ],
+      "images": [
+        "/images/robots/ghost-robotics/vision-60/vision-60-1.jpg"
+      ],
+      "officialUrl": "https://www.ghostrobotics.io/vision-60",
+      "description": "Military-grade quadrupedal unmanned ground vehicle designed for defense, security, and commercial applications with extreme terrain capability and autonomous operation in harsh environments."
+    }
+  ],
+  "metadata": {
+    "totalRobots": 1,
+    "categories": [
+      "quadruped"
+    ],
+    "lastUpdated": "2025-09-25T04:47:42.326Z"
+  }
+}

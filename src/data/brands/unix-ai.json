@@ -1,0 +1,228 @@
+{
+  "brand": {
+    "id": "unix-ai",
+    "name": "UniX AI",
+    "description": "Embodied intelligent robotics company founded in 2024 in Suzhou, China. Develops full-size wheeled and bipedal humanoid robots with Unitouch visual-tactile large model technology for commercial service applications.",
+    "website": "https://www.unix-group.ai/",
+    "logo": "/images/brands/unix-ai-logo.svg"
+  },
+  "robots": [
+    {
+      "id": "unix-wanda-2",
+      "name": "Wanda 2.0",
+      "brand": "UniX AI",
+      "category": "humanoid",
+      "price": {
+        "starting": "request",
+        "currency": "USD",
+        "models": [
+          {
+            "name": "Wanda 2.0 Standard",
+            "price": "request"
+          }
+        ]
+      },
+      "generalInfo": {
+        "manufacturer": "UniX AI",
+        "modelName": "Wanda 2.0",
+        "dimensions": {
+          "standing": "1420-1680 mm (adjustable height)",
+          "folded": "N/A (wheeled design)",
+          "weight": "N/A"
+        }
+      },
+      "keyFeatures": [
+        "8 DoF Biomimetic Arms with end-point positioning accuracy ≤0.5mm",
+        "Zero Noise Chassis for quiet operation",
+        "Adaptive Smart Gripper for versatile manipulation",
+        "Dual-Axis Flexible Head with comprehensive sensors",
+        "Unitouch Visual-Tactile Multi-Modal Large Model",
+        "275 TOPs maximum computing power",
+        "8-16 hours battery life with fast charging",
+        "982 mm arm span with 6kg payload per arm"
+      ],
+      "hardwareBuildQuality": {
+        "totalDegreesOfFreedom": "8 DoF biomimetic arms with shoulder-elbow-wrist design (4+1+3 configuration)",
+        "payloadCapacity": "6 kg per arm, suitable for precise manipulation tasks",
+        "batteryCapacityRuntime": "8-16 hours operation time with intelligent power management",
+        "charger": "Fast charging system with intelligent battery management",
+        "sensorsIncluded": [
+          "Ultrasonic radar",
+          "Laser radar (LiDAR)",
+          "RGBD camera",
+          "Visual-tactile sensors",
+          "IMU (Inertial Measurement Unit)"
+        ],
+        "interfaces": [
+          "Ethernet",
+          "USB 3.0",
+          "Wi-Fi 6",
+          "Bluetooth 5.0",
+          "CAN bus"
+        ]
+      },
+      "softwareEcosystem": {
+        "rosSupport": "ROS/ROS2 compatible with full API support",
+        "sdkLanguages": [
+          "Python",
+          "C++",
+          "JavaScript"
+        ],
+        "openSourceRepos": "https://github.com/unix-group-ai",
+        "aiFrameworksSupported": [
+          "TensorFlow",
+          "PyTorch",
+          "OpenCV",
+          "Unitouch AI Model"
+        ],
+        "apiDocumentationQuality": "Comprehensive documentation with examples and tutorials"
+      },
+      "supplierReliability": {
+        "warranty": {
+          "duration": "1 year standard warranty",
+          "coverage": "Hardware defects, software support, and technical assistance"
+        },
+        "postSalesSupport": "24/7 technical support with remote diagnostics and on-site service",
+        "trackRecord": "New company founded 2024 with experienced team from top robotics institutions"
+      },
+      "specifications": {
+        "height": "1420-1680 mm (adjustable)",
+        "walkingSpeed": "90 m/min",
+        "batteryLife": "8-16 hours",
+        "armLoadCapacity": "6 kg per arm",
+        "armSpan": "982 mm",
+        "computingPower": "275 TOPs",
+        "positioningAccuracy": "≤0.5mm"
+      },
+      "features": [
+        "Wheeled dual-arm humanoid design",
+        "Precise manipulation capabilities",
+        "Comprehensive sensor system",
+        "Multi-modal large model integration",
+        "Home and office service applications",
+        "Reception and guidance capabilities"
+      ],
+      "images": [
+        "/images/robots/unix-ai/wanda-2.png"
+      ],
+      "officialUrl": "https://www.unix-group.ai/wanda/181.html",
+      "description": "Wheeled dual-arm humanoid robot with 8 DoF biomimetic arms and zero-noise chassis, designed for versatile home services, office cleaning, and intelligent reception scenarios."
+    },
+    {
+      "id": "unix-martian",
+      "name": "Martian",
+      "brand": "UniX AI",
+      "category": "humanoid",
+      "price": {
+        "starting": "request",
+        "currency": "USD",
+        "models": [
+          {
+            "name": "Martian Standard",
+            "price": "request"
+          }
+        ]
+      },
+      "generalInfo": {
+        "manufacturer": "UniX AI",
+        "modelName": "Martian",
+        "dimensions": {
+          "standing": "160 cm height",
+          "folded": "Compact bipedal stance",
+          "weight": "50 kg"
+        }
+      },
+      "keyFeatures": [
+        "Full-size bipedal humanoid with 160cm height",
+        "High-speed movement up to 3 m/s",
+        "Heavy payload capacity 30-50 kg",
+        "450 N.m maximum motor torque",
+        "Total 23 degrees of freedom (6 legs + 7 arms + 1 waist + 2 head)",
+        "100T computing platform with 64GB memory",
+        "Ground-level object retrieval capability",
+        "EtherCAT bus system for precise control"
+      ],
+      "hardwareBuildQuality": {
+        "totalDegreesOfFreedom": "23 DoF total (6 per leg, 7 per arm, 1 waist, 2 head)",
+        "payloadCapacity": "30-50 kg heavy payload capacity for commercial applications",
+        "batteryCapacityRuntime": "9 Ah battery capacity at 57.6V (max 67.2V) with intelligent power management",
+        "charger": "High-voltage fast charging system with safety protection",
+        "sensorsIncluded": [
+          "Depth camera",
+          "3x RGB cameras",
+          "IMU (Inertial Measurement Unit)",
+          "Force/torque sensors",
+          "Encoder sensors for all joints"
+        ],
+        "interfaces": [
+          "EtherCAT bus",
+          "Ethernet",
+          "USB 3.0",
+          "Wi-Fi 6",
+          "Bluetooth 5.0",
+          "CAN bus"
+        ]
+      },
+      "softwareEcosystem": {
+        "rosSupport": "Full ROS/ROS2 support with comprehensive API",
+        "sdkLanguages": [
+          "Python",
+          "C++",
+          "JavaScript"
+        ],
+        "openSourceRepos": "https://github.com/unix-group-ai",
+        "aiFrameworksSupported": [
+          "TensorFlow",
+          "PyTorch",
+          "OpenCV",
+          "Embodied AI frameworks"
+        ],
+        "apiDocumentationQuality": "High/low layer API interfaces with comprehensive documentation"
+      },
+      "supplierReliability": {
+        "warranty": {
+          "duration": "1 year standard warranty",
+          "coverage": "Hardware defects, software support, OTA updates, and technical assistance"
+        },
+        "postSalesSupport": "24/7 technical support with OTA upgrade capability and remote diagnostics",
+        "trackRecord": "New company founded 2024 with experienced team from top robotics and AI institutions"
+      },
+      "specifications": {
+        "height": "160 cm",
+        "weight": "50 kg",
+        "maxSpeed": "3 m/s",
+        "maxTorque": "450 N.m",
+        "payloadCapacity": "30-50 kg",
+        "legDoF": "6 per leg",
+        "armDoF": "7 per arm",
+        "waistDoF": "1",
+        "headDoF": "2",
+        "computingPower": "100T platform",
+        "memory": "64GB",
+        "batteryCapacity": "9 Ah",
+        "voltage": "57.6V (Max 67.2V)"
+      },
+      "features": [
+        "Full-size bipedal locomotion",
+        "Ground-level object retrieval",
+        "High-torque motor system",
+        "Multi-sensor perception",
+        "OTA upgrade support",
+        "EtherCAT bus system",
+        "Commercial service applications"
+      ],
+      "images": [
+        "/images/robots/unix-ai/martian.png"
+      ],
+      "officialUrl": "https://www.unix-group.ai/martian/182.html",
+      "description": "Full-size bipedal humanoid robot with high-speed movement capabilities and heavy payload capacity, designed for family service, office cleaning, and commercial applications."
+    }
+  ],
+  "metadata": {
+    "totalRobots": 2,
+    "categories": [
+      "humanoid"
+    ],
+    "lastUpdated": "2025-09-25T04:47:42.326Z"
+  }
+}

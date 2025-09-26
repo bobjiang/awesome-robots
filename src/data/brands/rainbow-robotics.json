@@ -1,0 +1,226 @@
+{
+  "brand": {
+    "id": "rainbow-robotics",
+    "name": "Rainbow Robotics",
+    "description": "Founded in 2011 by researchers from KAIST Humanoid Robot Research Center, Rainbow Robotics specializes in developing advanced humanoid robotic systems. Creator of the world's first commercialized humanoid robot platform HUBO2, with robots deployed at world-class institutions like MIT and Google.",
+    "website": "https://www.rainbow-robotics.com/",
+    "logo": "/images/brands/rainbow-robotics-logo.svg"
+  },
+  "robots": [
+    {
+      "id": "rainbow-robotics-hubo2",
+      "name": "HUBO2",
+      "brand": "Rainbow Robotics",
+      "category": "humanoid",
+      "price": {
+        "starting": "request",
+        "currency": "USD",
+        "models": [
+          {
+            "name": "HUBO2",
+            "price": "request"
+          },
+          {
+            "name": "HUBO2+",
+            "price": "request"
+          }
+        ]
+      },
+      "generalInfo": {
+        "manufacturer": "Rainbow Robotics",
+        "modelName": "HUBO2",
+        "dimensions": {
+          "standing": "1.37m (height)",
+          "folded": "N/A",
+          "weight": "57kg (Albert HUBO variant)"
+        }
+      },
+      "keyFeatures": [
+        "World's first commercialized humanoid robot platform",
+        "Cable-driven adaptive five-finger hand system with independent finger movement",
+        "Advanced straight-leg walking gait technology",
+        "Full-size humanoid capable of walking, running, dancing, and object manipulation",
+        "Sign language capability with dexterous fingers",
+        "Dual on-board computer system with real-time control",
+        "Deployed at 20+ world-class research institutions (MIT, Google, CMU, etc.)",
+        "Aluminum endoskeleton with polycarbonate frame for lightweight construction"
+      ],
+      "hardwareBuildQuality": {
+        "totalDegreesOfFreedom": "44 brushless DC motors (19x200W, 6x100W, 9x11W, 10x0.75W)",
+        "payloadCapacity": "Object manipulation with adaptive five-finger hands",
+        "batteryCapacityRuntime": "2 hours continuous operation",
+        "charger": "48V power system (multiple motor voltages: 48V, 12V)",
+        "sensorsIncluded": [
+          "Camera",
+          "Three-axis force-torque sensor",
+          "Two-axis inertial sensor",
+          "Two-axis tilt sensor"
+        ],
+        "interfaces": [
+          "Ethernet",
+          "USB",
+          "Real-time control interfaces"
+        ]
+      },
+      "softwareEcosystem": {
+        "rosSupport": "ROS interface development in progress, simple joint control available",
+        "sdkLanguages": [
+          "C++",
+          "Rainbow API",
+          "Linux/Xenomai"
+        ],
+        "openSourceRepos": "https://github.com/RainbowRobotics",
+        "aiFrameworksSupported": [
+          "Custom Rainbow API",
+          "Real-time frameworks"
+        ],
+        "apiDocumentationQuality": "Rainbow API with Xenomai real-time framework support"
+      },
+      "supplierReliability": {
+        "warranty": {
+          "duration": "Contact Rainbow Robotics for warranty details",
+          "coverage": "Research platform support and maintenance"
+        },
+        "postSalesSupport": "Technical support for research institutions, software updates",
+        "trackRecord": "Founded by KAIST researchers, delivered to 20+ institutions worldwide including MIT, Google, CMU"
+      },
+      "specifications": {
+        "dimensions": "1.37m height, human-like proportions",
+        "weight": "57kg (lighter variants available at 42kg)",
+        "dof": "44 brushless DC motors",
+        "maxSpeed": "Walking: 1.25 km/h (0.95s cycle, 32cm stride), Running capable",
+        "battery": "2 hours continuous operation",
+        "walkingGait": "Advanced straight-leg walking technology"
+      },
+      "features": [
+        "World's first commercialized humanoid robot platform",
+        "Cable-driven adaptive five-finger hand system",
+        "Fingers can close according to object shape for versatile grasping",
+        "Full-size humanoid that can walk, run, dance, and grasp objects",
+        "Straight-leg walking gait technology",
+        "Lightweight aluminum and polycarbonate construction",
+        "44 motor system for complex movements",
+        "2-hour continuous operation capability",
+        "Real-time control system with Windows XP and RTX",
+        "Dual on-board computer system",
+        "Used by world-class research institutes (MIT, Google, CMU, etc.)",
+        "Delivered to over 20 institutions worldwide"
+      ],
+      "images": [
+        "/images/robots/rainbow-robotics/hubo2-main.png"
+      ],
+      "highResPhotos": [
+        "/images/robots/rainbow-robotics/hubo2-main.png",
+        "/images/robots/rainbow-robotics/hubo2-ieee.jpg"
+      ],
+      "officialUrl": "https://www.rainbow-robotics.com/en_hubo2",
+      "description": "HUBO2 is the world's first commercialized humanoid robot platform, featuring advanced straight-leg walking technology, adaptive five-finger hands, and lightweight construction. Developed by KAIST and manufactured by Rainbow Robotics, it's deployed at leading research institutions worldwide including MIT and Google for advanced robotics research."
+    },
+    {
+      "id": "rainbow-robotics-rbq",
+      "name": "RB-Q",
+      "brand": "Rainbow Robotics",
+      "category": "quadruped",
+      "price": {
+        "starting": "request",
+        "currency": "USD",
+        "models": [
+          {
+            "name": "RB-Q",
+            "price": "request"
+          }
+        ]
+      },
+      "generalInfo": {
+        "manufacturer": "Rainbow Robotics",
+        "modelName": "RB-Q",
+        "dimensions": {
+          "standing": "Contact for specifications",
+          "folded": "Contact for specifications",
+          "weight": "Contact for specifications"
+        }
+      },
+      "keyFeatures": [
+        "AI-enabled quadrupedal robot for complex terrain navigation",
+        "Traverses uneven and challenging environments with ease",
+        "Equipped with cameras, LiDAR, and wireless connectivity",
+        "Autonomous mission capability with remote control options",
+        "Extendable platform supporting custom payloads and sensor integration",
+        "Flexible SDK-based development environment",
+        "Designed for research, patrol, and search & rescue missions",
+        "Next-generation quadrupedal mobility platform"
+      ],
+      "hardwareBuildQuality": {
+        "totalDegreesOfFreedom": "Contact for specifications",
+        "payloadCapacity": "Custom payload support",
+        "batteryCapacityRuntime": "Contact for specifications",
+        "charger": "Contact for specifications",
+        "sensorsIncluded": [
+          "Cameras",
+          "LiDAR",
+          "Wireless connectivity",
+          "Custom sensor integration support"
+        ],
+        "interfaces": [
+          "Wireless connectivity",
+          "Custom payload interfaces",
+          "SDK integration"
+        ]
+      },
+      "softwareEcosystem": {
+        "rosSupport": "ROS support available through Rainbow Robotics SDK",
+        "sdkLanguages": [
+          "Contact for SDK details"
+        ],
+        "openSourceRepos": "https://github.com/RainbowRobotics",
+        "aiFrameworksSupported": [
+          "AI-enabled navigation",
+          "Autonomous mission planning"
+        ],
+        "apiDocumentationQuality": "Comprehensive SDK documentation available"
+      },
+      "supplierReliability": {
+        "warranty": {
+          "duration": "Contact Rainbow Robotics for warranty details",
+          "coverage": "Platform support and maintenance"
+        },
+        "postSalesSupport": "Technical support for development and deployment",
+        "trackRecord": "Built on Rainbow Robotics' expertise in advanced robotics platforms"
+      },
+      "specifications": {
+        "dimensions": "Contact for specifications",
+        "weight": "Contact for specifications",
+        "dof": "Contact for specifications",
+        "maxSpeed": "Contact for specifications",
+        "payload": "Custom payload support",
+        "battery": "Contact for specifications"
+      },
+      "features": [
+        "AI-enabled quadrupedal robot platform",
+        "Complex terrain navigation capabilities",
+        "Equipped with cameras, LiDAR, and wireless connectivity",
+        "Autonomous mission and remote control functionality",
+        "Custom payload and sensor integration support",
+        "Flexible SDK-based development environment",
+        "Applications in research, patrol, and search & rescue",
+        "Professional robotics platform for real-world deployment"
+      ],
+      "images": [
+        "/images/robots/rainbow-robotics/rbq-main.png"
+      ],
+      "highResPhotos": [
+        "/images/robots/rainbow-robotics/rbq-main.png"
+      ],
+      "officialUrl": "https://www.rainbow-robotics.com/en_rbq",
+      "description": "RB-Q is Rainbow Robotics' AI-enabled quadrupedal robot platform designed for traversing uneven and complex terrain. Built for research, patrol, and search & rescue missions, it features cameras, LiDAR, wireless connectivity, and supports custom payloads with flexible SDK-based development."
+    }
+  ],
+  "metadata": {
+    "totalRobots": 2,
+    "categories": [
+      "humanoid",
+      "quadruped"
+    ],
+    "lastUpdated": "2025-09-25T04:47:42.326Z"
+  }
+}

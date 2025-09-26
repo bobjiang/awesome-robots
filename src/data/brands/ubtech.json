@@ -1,0 +1,726 @@
+{
+  "brand": {
+    "id": "ubtech",
+    "name": "UBTech",
+    "description": "Global leader in humanoid robotics and AI education, developing cutting-edge commercial and industrial humanoid robots with advanced AI capabilities.",
+    "website": "https://www.ubtrobot.com/",
+    "logo": "/images/brands/ubtech-logo.svg"
+  },
+  "robots": [
+    {
+      "id": "ubtech-walker-s2",
+      "name": "Walker S2",
+      "brand": "UBTech",
+      "category": "humanoid",
+      "price": {
+        "starting": "request",
+        "currency": "USD",
+        "models": [
+          {
+            "name": "Standard",
+            "price": "request"
+          }
+        ]
+      },
+      "generalInfo": {
+        "manufacturer": "UBTech",
+        "modelName": "Walker S2",
+        "dimensions": {
+          "standing": "Height varies based on configuration",
+          "folded": "Compact industrial form factor",
+          "weight": "Optimized for 15kg payload capacity"
+        }
+      },
+      "keyFeatures": [
+        "World's first humanoid robot capable of autonomous battery swapping",
+        "15kg payload capacity",
+        "Waist rotation: ±162°",
+        "Body pitch angle: 170°",
+        "Workspace: 0-1.8 meters",
+        "Dual-battery dynamic balancing system",
+        "3-minute battery swap time",
+        "Pure RGB binocular stereo vision solution",
+        "Deep learning-based stereo depth estimation",
+        "Production Line Task-Driven Swarm Intelligence"
+      ],
+      "hardwareBuildQuality": {
+        "totalDegreesOfFreedom": "Industrial-grade multi-DOF system",
+        "payloadCapacity": "15kg maximum",
+        "batteryCapacityRuntime": "Dual-battery system with 3-minute autonomous swap",
+        "charger": "Autonomous battery swapping system",
+        "sensorsIncluded": [
+          "RGB binocular stereo vision",
+          "Deep learning vision system",
+          "Real-time depth mapping sensors"
+        ],
+        "interfaces": [
+          "Industrial communication protocols",
+          "Swarm intelligence network"
+        ]
+      },
+      "softwareEcosystem": {
+        "rosSupport": "Industrial robotics framework",
+        "sdkLanguages": [
+          "Industrial automation languages"
+        ],
+        "openSourceRepos": "https://github.com/UBTechRobotics",
+        "aiFrameworksSupported": [
+          "BrainNet 2.0",
+          "Co-Agents AI system",
+          "Deep learning frameworks"
+        ],
+        "apiDocumentationQuality": "Industrial documentation"
+      },
+      "supplierReliability": {
+        "warranty": {
+          "duration": "Industrial warranty terms",
+          "coverage": "Full system and autonomous features"
+        },
+        "postSalesSupport": "Industrial support services",
+        "trackRecord": "Leading humanoid robotics manufacturer"
+      },
+      "specifications": {
+        "dimensions": "Industrial configuration",
+        "weight": "Industrial-grade construction",
+        "payload": "15kg maximum",
+        "waistRotation": "±162°",
+        "bodyPitchAngle": "170°",
+        "workspace": "0-1.8 meters",
+        "batterySystem": "Dual-battery dynamic balancing",
+        "batterySwapTime": "3 minutes autonomous",
+        "visionSystem": "Pure RGB binocular stereo vision"
+      },
+      "features": [
+        "Autonomous battery swapping",
+        "15kg payload capacity",
+        "Extended reach manipulation",
+        "Swarm intelligence capabilities",
+        "Real-time depth mapping"
+      ],
+      "images": [
+        "/images/robots/ubtech/walker-s2-1.jpg"
+      ],
+      "officialUrl": "https://www.ubtrobot.com/en/humanoid/products/WalkerS2",
+      "description": "Industrial humanoid robot featuring autonomous battery swapping technology and advanced AI capabilities for manufacturing and logistics applications."
+    },
+    {
+      "id": "ubtech-walker-s1",
+      "name": "Walker S1",
+      "brand": "UBTech",
+      "category": "humanoid",
+      "price": {
+        "starting": "request",
+        "currency": "USD",
+        "models": [
+          {
+            "name": "Standard",
+            "price": "request"
+          }
+        ]
+      },
+      "generalInfo": {
+        "manufacturer": "UBTech",
+        "modelName": "Walker S1",
+        "dimensions": {
+          "standing": "Industrial humanoid dimensions",
+          "folded": "Compact storage configuration",
+          "weight": "Industrial-grade construction"
+        }
+      },
+      "keyFeatures": [
+        "Advanced large language model for task planning",
+        "Semantic VSLAM navigation system",
+        "Learning-based whole-body motion control",
+        "Collaborative manufacturing capabilities",
+        "Embodied intelligence technologies",
+        "Two-stage semantic navigation",
+        "End-to-end learning framework",
+        "Vehicle assembly line integration",
+        "AMR/AGV collaboration ready"
+      ],
+      "hardwareBuildQuality": {
+        "totalDegreesOfFreedom": "Full-body articulation system",
+        "payloadCapacity": "Industrial payload capacity",
+        "batteryCapacityRuntime": "Extended operational runtime",
+        "charger": "Industrial charging system",
+        "sensorsIncluded": [
+          "Semantic VSLAM sensors",
+          "Vision systems",
+          "Navigation sensors"
+        ],
+        "interfaces": [
+          "Industrial communication",
+          "AMR/AGV integration",
+          "Manufacturing systems"
+        ]
+      },
+      "softwareEcosystem": {
+        "rosSupport": "Industrial robotics framework",
+        "sdkLanguages": [
+          "Industrial programming languages"
+        ],
+        "openSourceRepos": "https://github.com/UBTechRobotics",
+        "aiFrameworksSupported": [
+          "Large Language Models",
+          "Semantic VSLAM",
+          "Learning-based control"
+        ],
+        "apiDocumentationQuality": "Industrial documentation"
+      },
+      "supplierReliability": {
+        "warranty": {
+          "duration": "Industrial warranty coverage",
+          "coverage": "Full system and AI capabilities"
+        },
+        "postSalesSupport": "Manufacturing support services",
+        "trackRecord": "Proven in vehicle manufacturing"
+      },
+      "specifications": {
+        "navigation": "Semantic VSLAM",
+        "motionControl": "Learning-based whole-body control",
+        "taskPlanning": "Large language model integration",
+        "collaboration": "AMR/AGV compatible",
+        "applications": "Vehicle manufacturing assembly"
+      },
+      "features": [
+        "Large language model integration",
+        "Semantic navigation",
+        "Manufacturing collaboration",
+        "Learning-based control"
+      ],
+      "images": [
+        "/images/robots/ubtech/walker-s1-1.jpg"
+      ],
+      "officialUrl": "https://www.ubtrobot.com/en/humanoid/products/WalkerS1/",
+      "description": "Advanced industrial humanoid robot with AI-powered task planning and semantic navigation for collaborative manufacturing environments."
+    },
+    {
+      "id": "ubtech-walker-s",
+      "name": "Walker S",
+      "brand": "UBTech",
+      "category": "humanoid",
+      "price": {
+        "starting": "request",
+        "currency": "USD",
+        "models": [
+          {
+            "name": "Full Version",
+            "price": "request"
+          },
+          {
+            "name": "Lite Version",
+            "price": "request"
+          }
+        ]
+      },
+      "generalInfo": {
+        "manufacturer": "UBTech",
+        "modelName": "Walker S",
+        "dimensions": {
+          "standing": "1.7 meters height",
+          "folded": "Compact configuration",
+          "weight": "Industrial humanoid weight"
+        }
+      },
+      "keyFeatures": [
+        "1.7 meters height industrial humanoid",
+        "41 servo joints with force feedback",
+        "Robust self-balancing system",
+        "Hand-eye coordination capabilities",
+        "Whole body manipulation",
+        "U-SLAM + 3D point cloud semantic navigation",
+        "Multimodal large model decision making",
+        "Advanced object recognition and grasping",
+        "Manufacturing management system integration",
+        "High-resolution RGBD visual sensors"
+      ],
+      "hardwareBuildQuality": {
+        "totalDegreesOfFreedom": "41 servo joints",
+        "payloadCapacity": "Industrial manipulation capacity",
+        "batteryCapacityRuntime": "Extended operational time",
+        "charger": "Industrial charging solution",
+        "sensorsIncluded": [
+          "High-resolution RGBD cameras",
+          "Visual sensors",
+          "Audio sensors",
+          "Distance sensors",
+          "Force feedback sensors"
+        ],
+        "interfaces": [
+          "Manufacturing system integration",
+          "Wireless communication",
+          "Industrial protocols"
+        ]
+      },
+      "softwareEcosystem": {
+        "rosSupport": "Industrial robotics support",
+        "sdkLanguages": [
+          "Industrial programming"
+        ],
+        "openSourceRepos": "https://github.com/UBTechRobotics",
+        "aiFrameworksSupported": [
+          "Large Language Models",
+          "U-SLAM",
+          "3D semantic mapping",
+          "Multimodal AI"
+        ],
+        "apiDocumentationQuality": "Comprehensive industrial docs"
+      },
+      "supplierReliability": {
+        "warranty": {
+          "duration": "Industrial warranty terms",
+          "coverage": "Full system including AI features"
+        },
+        "postSalesSupport": "Industrial support and training",
+        "trackRecord": "Proven industrial deployment"
+      },
+      "specifications": {
+        "height": "1.7 meters",
+        "joints": "41 servo joints with force feedback",
+        "navigation": "U-SLAM + 3D point cloud semantic",
+        "vision": "High-resolution RGBD",
+        "ai": "Multimodal large model",
+        "variants": "Full and Lite versions available"
+      },
+      "features": [
+        "41 servo joints",
+        "Self-balancing",
+        "3D semantic navigation",
+        "Hand-eye coordination",
+        "Object recognition"
+      ],
+      "images": [
+        "/images/robots/ubtech/walker-s-1.jpg"
+      ],
+      "officialUrl": "https://www.ubtrobot.com/en/humanoid/products/WalkerS",
+      "description": "1.7-meter industrial humanoid robot with 41 servo joints, advanced AI navigation, and comprehensive manufacturing integration capabilities."
+    },
+    {
+      "id": "ubtech-walker-c",
+      "name": "Walker C",
+      "brand": "UBTech",
+      "category": "humanoid",
+      "price": {
+        "starting": 25000,
+        "currency": "USD",
+        "models": [
+          {
+            "name": "Standard",
+            "price": "request"
+          }
+        ]
+      },
+      "generalInfo": {
+        "manufacturer": "UBTech",
+        "modelName": "Walker C",
+        "dimensions": {
+          "standing": "163cm height",
+          "folded": "Service configuration",
+          "weight": "43kg total weight"
+        }
+      },
+      "keyFeatures": [
+        "163cm height commercial humanoid",
+        "43kg lightweight construction",
+        "20 degrees of freedom",
+        "500mm arm wingspan",
+        "6 km/h walking speed",
+        "Self-developed embodied interactive large model",
+        "Multilingual interaction support",
+        "Autonomous navigation capabilities",
+        "Proactive greeting and reception services",
+        "All-scenario binocular structured light 3D camera"
+      ],
+      "hardwareBuildQuality": {
+        "totalDegreesOfFreedom": "20 DOF total system",
+        "payloadCapacity": "5kg arm payload",
+        "batteryCapacityRuntime": "48V 15Ah lithium battery, 2h walking / 4h standing",
+        "charger": "1.5 hour fast charging",
+        "sensorsIncluded": [
+          "2x RGBD cameras",
+          "Binocular structured light 3D camera",
+          "High-precision IMU"
+        ],
+        "interfaces": [
+          "WiFi",
+          "Bluetooth",
+          "Service communication protocols"
+        ]
+      },
+      "softwareEcosystem": {
+        "rosSupport": "Service robotics framework",
+        "sdkLanguages": [
+          "Service development languages"
+        ],
+        "openSourceRepos": "https://github.com/UBTechRobotics",
+        "aiFrameworksSupported": [
+          "Embodied Interactive Large Model",
+          "Multilingual AI",
+          "Navigation AI"
+        ],
+        "apiDocumentationQuality": "Service robotics documentation"
+      },
+      "supplierReliability": {
+        "warranty": {
+          "duration": "Commercial service warranty",
+          "coverage": "Full system and AI services"
+        },
+        "postSalesSupport": "Commercial deployment support",
+        "trackRecord": "Established in commercial service applications"
+      },
+      "specifications": {
+        "height": "163cm",
+        "weight": "43kg",
+        "dof": "20 degrees of freedom",
+        "armSpan": "500mm",
+        "armWeight": "5kg",
+        "walkingSpeed": "6 km/h",
+        "battery": "48V 15Ah lithium",
+        "chargingTime": "1.5 hours",
+        "workingTime": "2h walking / 4h standing",
+        "sensors": "2x RGBD + 3D structured light",
+        "connectivity": "WiFi + Bluetooth"
+      },
+      "features": [
+        "Commercial service robot",
+        "Multilingual interaction",
+        "Autonomous navigation",
+        "Reception services",
+        "6 km/h walking speed"
+      ],
+      "images": [
+        "/images/robots/ubtech/walker-c-1.jpg"
+      ],
+      "officialUrl": "https://www.ubtrobot.com/en/humanoid/products/WalkerC/",
+      "description": "163cm commercial service humanoid robot designed for exhibition halls, office buildings, and public service applications with multilingual AI interaction."
+    },
+    {
+      "id": "ubtech-walker-x",
+      "name": "Walker X",
+      "brand": "UBTech",
+      "category": "humanoid",
+      "price": {
+        "starting": 35000,
+        "currency": "USD",
+        "models": [
+          {
+            "name": "Standard",
+            "price": "request"
+          }
+        ]
+      },
+      "generalInfo": {
+        "manufacturer": "UBTech",
+        "modelName": "Walker X",
+        "dimensions": {
+          "standing": "130cm height",
+          "folded": "Compact configuration",
+          "weight": "63kg including battery"
+        }
+      },
+      "keyFeatures": [
+        "130cm advanced humanoid robot",
+        "63kg robust construction",
+        "41 total degrees of freedom",
+        "3 km/h maximum walking speed",
+        "20° slope adaptation",
+        "15cm stair climbing capability",
+        "1.5kg single arm load capacity",
+        "600mm arm span per arm",
+        "160° 4.6K HD dual curved screen face",
+        "4-dimensional light language system"
+      ],
+      "hardwareBuildQuality": {
+        "totalDegreesOfFreedom": "41 DOF (Legs: 6x2, Arms: 7x2, Hands: 6x2, Neck: 3)",
+        "payloadCapacity": "1.5kg per arm (extended state)",
+        "batteryCapacityRuntime": "54.6V 10Ah lithium, 2h usage, 2h charging",
+        "charger": "2 hour fast charging system",
+        "sensorsIncluded": [
+          "Vision navigation sensors",
+          "Hand-eye coordination sensors",
+          "Balance sensors"
+        ],
+        "interfaces": [
+          "Wi-Fi",
+          "Ethernet",
+          "EtherCAT",
+          "USB 3.0"
+        ]
+      },
+      "softwareEcosystem": {
+        "rosSupport": "Advanced robotics framework",
+        "sdkLanguages": [
+          "C++",
+          "Python",
+          "ROS"
+        ],
+        "openSourceRepos": "https://github.com/UBTechRobotics",
+        "aiFrameworksSupported": [
+          "Vision-based navigation",
+          "Hand-eye coordination",
+          "Advanced AI"
+        ],
+        "apiDocumentationQuality": "Comprehensive technical documentation"
+      },
+      "supplierReliability": {
+        "warranty": {
+          "duration": "Standard warranty coverage",
+          "coverage": "Full system and advanced features"
+        },
+        "postSalesSupport": "Technical support and development assistance",
+        "trackRecord": "Advanced humanoid robotics leader"
+      },
+      "specifications": {
+        "height": "130cm",
+        "weight": "63kg",
+        "dof": "41 total (detailed breakdown available)",
+        "maxWalkingSpeed": "3 km/h",
+        "slopeAdaptation": "20° angle",
+        "stairClimbing": "15cm steps",
+        "armLoadCapacity": "1.5kg per arm",
+        "armSpan": "600mm per arm",
+        "processor": "Intel i7 8665U (1.9 GHz x2)",
+        "graphics": "NVIDIA GT1030 (384 cores)",
+        "os": "Ubuntu + Linux RT Preempt + Android",
+        "battery": "54.6V 10Ah (3.6kg weight)",
+        "chargingTime": "2 hours",
+        "usageTime": "2 hours",
+        "display": "160° 4.6K HD dual flexible curved screen",
+        "connectivity": [
+          "Wi-Fi",
+          "Ethernet",
+          "EtherCAT",
+          "USB 3.0"
+        ]
+      },
+      "features": [
+        "41 high-performance servo joints",
+        "Advanced display system",
+        "Modular design",
+        "Vision-based navigation",
+        "Hand-eye coordination"
+      ],
+      "images": [
+        "/images/robots/ubtech/walker-x-1.jpg"
+      ],
+      "officialUrl": "https://www.ubtrobot.com/en/humanoid/products/WalkerX",
+      "description": "Advanced 130cm humanoid robot with 41 DOF, sophisticated display system, and comprehensive AI capabilities for research and development applications."
+    },
+    {
+      "id": "ubtech-cruzr-s2",
+      "name": "Cruzr S2",
+      "brand": "UBTech",
+      "category": "humanoid",
+      "price": {
+        "starting": "request",
+        "currency": "USD",
+        "models": [
+          {
+            "name": "Industrial",
+            "price": "request"
+          }
+        ]
+      },
+      "generalInfo": {
+        "manufacturer": "UBTech",
+        "modelName": "Cruzr S2",
+        "dimensions": {
+          "standing": "Full-sized wheeled humanoid configuration",
+          "folded": "Compact industrial form",
+          "weight": "Industrial-grade construction"
+        }
+      },
+      "keyFeatures": [
+        "Full-sized wheeled humanoid robot",
+        "±170° rotation in 0.8m passages",
+        "0-40cm lifting range",
+        "15kg payload capacity",
+        "2m/s movement speed",
+        "Sim-to-real embodied intelligence",
+        "Gen-4 industrial dexterous hands",
+        "Sub-millimeter manipulation precision",
+        "Binocular stereo vision system",
+        "Pure RGB vision solution with deep learning"
+      ],
+      "hardwareBuildQuality": {
+        "totalDegreesOfFreedom": "Full-body articulation with wheeled base",
+        "payloadCapacity": "15kg maximum payload",
+        "batteryCapacityRuntime": "Extended industrial operation time",
+        "charger": "Industrial charging system",
+        "sensorsIncluded": [
+          "Binocular stereo vision",
+          "RGB vision sensors",
+          "Deep learning vision",
+          "Navigation sensors"
+        ],
+        "interfaces": [
+          "Industrial communication",
+          "Embodied intelligence system",
+          "Real-time control"
+        ]
+      },
+      "softwareEcosystem": {
+        "rosSupport": "Industrial robotics framework",
+        "sdkLanguages": [
+          "Industrial programming languages"
+        ],
+        "openSourceRepos": "https://github.com/UBTechRobotics",
+        "aiFrameworksSupported": [
+          "Sim-to-real AI",
+          "Co-Agent system",
+          "Deep learning vision",
+          "Embodied intelligence"
+        ],
+        "apiDocumentationQuality": "Industrial application documentation"
+      },
+      "supplierReliability": {
+        "warranty": {
+          "duration": "Industrial warranty terms",
+          "coverage": "Full system and AI capabilities"
+        },
+        "postSalesSupport": "Industrial deployment and training",
+        "trackRecord": "Proven in industrial applications"
+      },
+      "specifications": {
+        "rotationRange": "±170° in 0.8m passages",
+        "liftingRange": "0-40cm",
+        "payloadCapacity": "15kg",
+        "movementSpeed": "2m/s",
+        "manipulationPrecision": "Sub-millimeter",
+        "hands": "Gen-4 industrial dexterous hands",
+        "vision": "Binocular stereo + RGB deep learning",
+        "mobility": "Wheeled humanoid design"
+      },
+      "features": [
+        "Wheeled humanoid design",
+        "15kg payload capacity",
+        "Industrial dexterous hands",
+        "Sub-millimeter precision",
+        "Binocular stereo vision"
+      ],
+      "images": [
+        "/images/robots/ubtech/cruzr-s2-1.jpg"
+      ],
+      "officialUrl": "https://www.ubtrobot.com/en/commercial/Products/CruzrS2",
+      "description": "Full-sized wheeled humanoid robot designed for industrial applications with advanced manipulation capabilities and AI-powered embodied intelligence."
+    },
+    {
+      "id": "ubtech-panda-robot",
+      "name": "Panda Robot",
+      "brand": "UBTech",
+      "category": "humanoid",
+      "price": {
+        "starting": 30000,
+        "currency": "USD",
+        "models": [
+          {
+            "name": "Standard",
+            "price": "request"
+          }
+        ]
+      },
+      "generalInfo": {
+        "manufacturer": "UBTech",
+        "modelName": "Panda Robot",
+        "dimensions": {
+          "standing": "130cm height",
+          "folded": "Compact configuration",
+          "weight": "63kg including battery"
+        }
+      },
+      "keyFeatures": [
+        "130cm humanoid robot with bionic design",
+        "63kg robust construction",
+        "41 degrees of freedom total",
+        "3 km/h maximum walking speed",
+        "20° slope angle adaptation",
+        "15cm maximum step height",
+        "1.5kg single arm load capacity",
+        "600mm arm span per arm",
+        "Dual flexible curved screen eyes",
+        "Multi-modal interaction system",
+        "28+ robot emotion displays"
+      ],
+      "hardwareBuildQuality": {
+        "totalDegreesOfFreedom": "41 DOF (Legs: 6x2, Arms: 7x2, Hands: 6x2, Neck: 3)",
+        "payloadCapacity": "1.5kg per arm (extended state)",
+        "batteryCapacityRuntime": "54.6V 10Ah lithium battery, 2h usage time",
+        "charger": "2 hour fast charging system",
+        "sensorsIncluded": [
+          "Vision sensors",
+          "Balance sensors",
+          "Touch sensors",
+          "Audio sensors"
+        ],
+        "interfaces": [
+          "Wi-Fi 802.11 a/b/g/n (5G/2.4 GHz dual-band)",
+          "Gigabit Ethernet RJ45",
+          "EtherCAT",
+          "USB 3.0"
+        ]
+      },
+      "softwareEcosystem": {
+        "rosSupport": "ROSA framework support",
+        "sdkLanguages": [
+          "C++",
+          "Python",
+          "ROS"
+        ],
+        "openSourceRepos": "https://github.com/UBTechRobotics",
+        "aiFrameworksSupported": [
+          "Multi-modal interaction",
+          "Emotion AI",
+          "Advanced robotics AI"
+        ],
+        "apiDocumentationQuality": "Comprehensive development documentation"
+      },
+      "supplierReliability": {
+        "warranty": {
+          "duration": "Standard warranty coverage",
+          "coverage": "Full system including AI and interaction features"
+        },
+        "postSalesSupport": "Development support and training",
+        "trackRecord": "Established humanoid robotics manufacturer"
+      },
+      "specifications": {
+        "height": "130cm",
+        "weight": "63kg",
+        "dof": "41 total degrees of freedom",
+        "maxWalkingSpeed": "3 km/h",
+        "terrainAdaptation": "3cm diverse terrain",
+        "maxStepHeight": "15cm",
+        "maxSlopeAngle": "20°",
+        "armLoadCapacity": "1.5kg per arm",
+        "armSpan": "600mm per arm",
+        "processor": "Intel i7 8665U (1.9Ghz x2)",
+        "graphics": "NVIDIA GT1030 (384 cores)",
+        "os": "Ubuntu + Linux RT Preempt + Android",
+        "wifi": "802.11 a/b/g/n (5G/2.4 GHz dual-band)",
+        "ethernet": "Gigabit RJ45",
+        "battery": "54.6V 10Ah lithium (3.6kg weight)",
+        "chargingTime": "2 hours",
+        "usageTime": "2 hours",
+        "emotionDisplays": "28+ types"
+      },
+      "features": [
+        "Bionic eye design",
+        "Multi-modal interaction",
+        "Modular design",
+        "Removable battery",
+        "28+ emotion displays"
+      ],
+      "images": [
+        "/images/robots/ubtech/panda-robot-1.jpg"
+      ],
+      "officialUrl": "https://www.ubtrobot.com/en/humanoid/products/PandaRobot",
+      "description": "130cm humanoid robot with bionic design featuring dual flexible curved screen eyes, multi-modal interaction, and comprehensive emotion display system."
+    }
+  ],
+  "metadata": {
+    "totalRobots": 7,
+    "categories": [
+      "humanoid"
+    ],
+    "lastUpdated": "2025-09-25T04:47:42.325Z"
+  }
+}

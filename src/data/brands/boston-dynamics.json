@@ -1,0 +1,222 @@
+{
+  "brand": {
+    "id": "boston-dynamics",
+    "name": "Boston Dynamics",
+    "description": "Pioneer in advanced robotics with 30+ years of innovation, creating industry-leading quadruped and humanoid robots for industrial, research, and defense applications.",
+    "website": "https://bostondynamics.com/",
+    "logo": "/images/brands/boston-dynamics-logo.svg",
+    "imagePatterns": [
+      {
+        "hostname": "bostondynamics.com",
+        "pathname": "/**"
+      }
+    ],
+    "imageBasePath": "/images/robots/boston-dynamics/"
+  },
+  "robots": [
+    {
+      "id": "boston-dynamics-spot",
+      "name": "Spot",
+      "brand": "Boston Dynamics",
+      "category": "quadruped",
+      "price": {
+        "starting": "request",
+        "currency": "USD",
+        "models": [
+          {
+            "name": "Spot Base Platform",
+            "price": "request"
+          }
+        ]
+      },
+      "generalInfo": {
+        "manufacturer": "Boston Dynamics",
+        "modelName": "Spot",
+        "dimensions": {
+          "length": "110cm",
+          "width": "50cm",
+          "weight": "32.7kg"
+        }
+      },
+      "keyFeatures": [
+        "360° terrain sensing",
+        "Autonomous navigation",
+        "Collision avoidance",
+        "IP54 protection rating",
+        "WiFi connectivity",
+        "Flexible payload integration",
+        "Industrial-grade reliability",
+        "Remote operation capability"
+      ],
+      "hardwareBuildQuality": {
+        "totalDegreesOfFreedom": "12 (actuated joints)",
+        "payloadCapacity": "14kg (30.9 lbs)",
+        "batteryCapacityRuntime": "564 Wh battery, 90 minutes average runtime",
+        "charger": "60 minutes recharge time",
+        "sensorsIncluded": [
+          "360° cameras",
+          "Depth sensors",
+          "IMU (Inertial Measurement Unit)",
+          "Proprioceptive sensors"
+        ],
+        "interfaces": [
+          "WiFi",
+          "Ethernet",
+          "Payload API"
+        ]
+      },
+      "softwareEcosystem": {
+        "rosSupport": "Yes (ROS integration available)",
+        "sdkLanguages": [
+          "Python",
+          "C++",
+          "REST API"
+        ],
+        "openSourceRepos": "https://github.com/boston-dynamics",
+        "aiFrameworksSupported": [
+          "GraphNav (autonomy)",
+          "Scout platform integration",
+          "Third-party AI systems"
+        ],
+        "apiDocumentationQuality": "Excellent"
+      },
+      "supplierReliability": {
+        "warranty": {
+          "duration": "Standard commercial warranty",
+          "coverage": "Hardware and software platform support"
+        },
+        "postSalesSupport": "Comprehensive training, documentation, support portal",
+        "trackRecord": "30+ years in advanced robotics, industry leader"
+      },
+      "specifications": {
+        "dimensions": "110cm x 50cm",
+        "weight": "32.7kg",
+        "material": "Industrial-grade aluminum and composites",
+        "maxSpeed": "1.6 m/s",
+        "maxSlope": "±30°",
+        "maxStepHeight": "300mm",
+        "operatingTemperature": "-20°C to +55°C",
+        "ingressProtection": "IP54",
+        "battery": "564 Wh lithium-ion",
+        "runtime": "90 minutes average",
+        "standbyTime": "180 minutes",
+        "rechargeTime": "60 minutes"
+      },
+      "features": [
+        "Autonomous navigation",
+        "Dynamic balance",
+        "Terrain adaptation",
+        "Remote teleoperation",
+        "Obstacle avoidance",
+        "Mission planning"
+      ],
+      "images": [
+        "/images/robots/boston-dynamics/spot/spot-1.jpg"
+      ],
+      "officialUrl": "https://bostondynamics.com/products/spot/",
+      "description": "Industry-leading quadruped robot with 360° terrain sensing, autonomous navigation, and robust payload integration for industrial inspection and mobile sensing applications."
+    },
+    {
+      "id": "boston-dynamics-atlas",
+      "name": "Atlas",
+      "brand": "Boston Dynamics",
+      "category": "humanoid",
+      "price": {
+        "starting": "request",
+        "currency": "USD",
+        "models": [
+          {
+            "name": "Atlas Research Platform",
+            "price": "request"
+          }
+        ]
+      },
+      "generalInfo": {
+        "manufacturer": "Boston Dynamics",
+        "modelName": "Atlas",
+        "dimensions": {
+          "height": "~150cm",
+          "weight": "~80kg (estimated)"
+        }
+      },
+      "keyFeatures": [
+        "Fully electric design",
+        "Lightweight titanium and aluminum construction",
+        "3D printed parts",
+        "Advanced control algorithms",
+        "Whole-body movement control",
+        "Dynamic mobility and agility",
+        "Advanced manipulation with hands",
+        "Athletic intelligence"
+      ],
+      "hardwareBuildQuality": {
+        "totalDegreesOfFreedom": "28+ (full body articulation)",
+        "payloadCapacity": "Various manipulation tasks",
+        "batteryCapacityRuntime": "Custom high-power battery system",
+        "charger": "Custom charging system",
+        "sensorsIncluded": [
+          "Advanced perception systems",
+          "Force/torque sensors",
+          "Visual perception",
+          "Inertial measurement units"
+        ],
+        "interfaces": [
+          "Research platform interfaces",
+          "Custom control systems"
+        ]
+      },
+      "softwareEcosystem": {
+        "rosSupport": "Research platform",
+        "sdkLanguages": [
+          "Research APIs",
+          "Custom frameworks"
+        ],
+        "openSourceRepos": "https://github.com/boston-dynamics",
+        "aiFrameworksSupported": [
+          "Embodied AI research",
+          "Advanced motion planning",
+          "Dynamic manipulation AI"
+        ],
+        "apiDocumentationQuality": "Research documentation"
+      },
+      "supplierReliability": {
+        "warranty": {
+          "duration": "Research platform support",
+          "coverage": "Research and development collaboration"
+        },
+        "postSalesSupport": "Research partnership and development support",
+        "trackRecord": "30+ years in advanced robotics research, industry pioneer"
+      },
+      "specifications": {
+        "height": "~150cm",
+        "weight": "~80kg",
+        "material": "Lightweight titanium and aluminum with 3D printed components",
+        "powerSystem": "Fully electric with custom battery",
+        "mobility": "Dynamic humanoid locomotion",
+        "manipulation": "Advanced dexterous hands",
+        "designPhilosophy": "Athletic intelligence and dynamic capability"
+      },
+      "features": [
+        "Whole-body control",
+        "Dynamic manipulation",
+        "Athletic movement",
+        "Advanced perception",
+        "Research platform",
+        "Embodied AI integration"
+      ],
+      "images": [
+        "/images/robots/boston-dynamics/atlas/atlas-1.jpg"
+      ],
+      "officialUrl": "https://bostondynamics.com/atlas/",
+      "description": "World's most advanced humanoid research robot featuring fully electric design, athletic intelligence, and dynamic manipulation capabilities for advancing embodied AI research."
+    }
+  ],
+  "metadata": {
+    "totalRobots": 2,
+    "categories": [
+      "quadruped",
+      "humanoid"
+    ],
+    "lastUpdated": "2025-09-25T04:47:42.325Z"
+  }
+}

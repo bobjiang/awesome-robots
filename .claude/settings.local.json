@@ -63,7 +63,11 @@
       "Bash(npm run generate-digest:*)",
       "Bash(chmod:*)",
       "Bash(crontab:*)",
-      "Bash(./scripts/weekly-digest-cron.sh:*)"
+      "Bash(./scripts/weekly-digest-cron.sh:*)",
+      "Bash(npm run validate-data:*)",
+      "Bash(npm run organize-brands:*)",
+      "Bash(npm run lint)",
+      "Bash(npm run pre-build:*)"
     ],
     "deny": [],
     "defaultMode": "acceptEdits"

@@ -1,0 +1,222 @@
+{
+  "brand": {
+    "id": "engineai",
+    "name": "EngineAI",
+    "description": "Shenzhen-based robotics company founded in 2023, specializing in general intelligent humanoid robots for research, education, industrial manufacturing, commercial services, and home applications. Develops full-stack robotics technology from core components to embodied intelligence.",
+    "website": "https://www.engineai.com.cn/",
+    "logo": "/images/brands/engineai-logo.svg"
+  },
+  "robots": [
+    {
+      "id": "engineai-se01",
+      "name": "SE01",
+      "brand": "EngineAI",
+      "category": "humanoid",
+      "price": {
+        "starting": "request",
+        "currency": "USD",
+        "models": [
+          {
+            "name": "Standard",
+            "price": "request"
+          }
+        ]
+      },
+      "generalInfo": {
+        "manufacturer": "EngineAI",
+        "modelName": "SE01",
+        "dimensions": {
+          "standing": "170cm x 52cm x 27cm",
+          "folded": "Compact storage configuration",
+          "weight": "55kg (with battery)"
+        }
+      },
+      "keyFeatures": [
+        "32 degrees of freedom total",
+        "Natural human-like gait using end-to-end neural networks",
+        "2 m/s walking speed",
+        "Biomimetic dexterous hands (6 DOF each)",
+        "Custom-developed aerospace-grade aluminum joints",
+        "Dual CPU processing (NVIDIA + Intel)",
+        "360° LiDAR and 6 HD cameras",
+        "Intel RealSense D435 depth camera",
+        "10-year expected lifespan",
+        "AI-enhanced motion control"
+      ],
+      "hardwareBuildQuality": {
+        "totalDegreesOfFreedom": "32 (6 per leg, 4 per arm, 6 per hand)",
+        "payloadCapacity": "Adult human-sized payload capacity",
+        "batteryCapacityRuntime": "10,000mAh, 2 hours runtime",
+        "charger": "High-performance charging system",
+        "sensorsIncluded": [
+          "Intel RealSense D435 depth camera",
+          "360° LiDAR",
+          "6 high-definition cameras",
+          "IMU motion control sensors"
+        ],
+        "interfaces": [
+          "NVIDIA Jetson Orin Nano",
+          "Intel CPU",
+          "Multiple sensor interfaces"
+        ]
+      },
+      "softwareEcosystem": {
+        "rosSupport": "AI-enhanced robotics framework",
+        "sdkLanguages": [
+          "Python",
+          "C++"
+        ],
+        "openSourceRepos": "No",
+        "aiFrameworksSupported": [
+          "End-to-end neural networks",
+          "Motion control AI",
+          "Computer vision"
+        ],
+        "apiDocumentationQuality": "Professional documentation"
+      },
+      "supplierReliability": {
+        "warranty": {
+          "duration": "Standard warranty",
+          "coverage": "Full system coverage"
+        },
+        "postSalesSupport": "Professional technical support",
+        "trackRecord": "New company with experienced team from top universities"
+      },
+      "specifications": {
+        "dimensions": "170cm height, adult human-sized",
+        "weight": "55kg with battery",
+        "walkingSpeed": "2 m/s maximum",
+        "kneeJointTorque": "186 N·m maximum",
+        "controlPrecision": "0.2 N·m force control precision",
+        "batteryLife": "2 hours continuous operation",
+        "processors": "Dual CPU (NVIDIA Jetson Orin Nano + Intel)"
+      },
+      "features": [
+        "Full-size humanoid with natural gait",
+        "End-to-end neural network locomotion",
+        "Aerospace-grade aluminum construction",
+        "Advanced sensing suite with LiDAR and cameras",
+        "Biomimetic dexterous hands",
+        "AI-enhanced motion control",
+        "10-year expected operational lifespan"
+      ],
+      "images": [
+        "/images/robots/engineai-se01.jpg"
+      ],
+      "highResPhotos": [
+        "/images/robots/engineai-se01.jpg"
+      ],
+      "officialUrl": "https://www.engineai.com.cn/product_one",
+      "description": "SE01 is EngineAI's first full-size humanoid robot featuring natural gait locomotion powered by end-to-end neural network models. With 32 degrees of freedom and advanced AI capabilities, it represents a breakthrough in humanoid robotics for research and commercial applications."
+    },
+    {
+      "id": "engineai-pm01",
+      "name": "PM01",
+      "brand": "EngineAI",
+      "category": "humanoid",
+      "price": {
+        "starting": "request",
+        "currency": "USD",
+        "models": [
+          {
+            "name": "Standard",
+            "price": "request"
+          }
+        ]
+      },
+      "generalInfo": {
+        "manufacturer": "EngineAI",
+        "modelName": "PM01",
+        "dimensions": {
+          "standing": "138cm x 49cm x 22cm",
+          "folded": "Compact storage configuration",
+          "weight": "40kg (with battery)"
+        }
+      },
+      "keyFeatures": [
+        "≥23 degrees of freedom total",
+        "320° waist rotation capability",
+        "2 m/s walking speed",
+        "Natural human-like gait",
+        "End-to-end neural network locomotion",
+        "Modular joint design",
+        "Interactive core screen",
+        "Ambient lighting with dynamic effects",
+        "Dual-chip architecture (Intel N97 + NVIDIA Jetson Orin)",
+        "High-compatibility open-source platform"
+      ],
+      "hardwareBuildQuality": {
+        "totalDegreesOfFreedom": "≥23 (6 per leg, 5 per arm)",
+        "payloadCapacity": "Moderate humanoid payload capacity",
+        "batteryCapacityRuntime": "10,000mAh, 2 hours runtime",
+        "charger": "54.6V 4.5A, 2 hours charging time",
+        "sensorsIncluded": [
+          "Vision sensors",
+          "Motion sensors",
+          "Environmental sensors"
+        ],
+        "interfaces": [
+          "Intel N97 8-core CPU",
+          "NVIDIA Jetson Orin",
+          "Interactive core screen"
+        ]
+      },
+      "softwareEcosystem": {
+        "rosSupport": "Open-source robotics framework",
+        "sdkLanguages": [
+          "Python",
+          "C++"
+        ],
+        "openSourceRepos": "No",
+        "aiFrameworksSupported": [
+          "End-to-end neural networks",
+          "Motion control AI",
+          "Interactive AI"
+        ],
+        "apiDocumentationQuality": "Open-source documentation"
+      },
+      "supplierReliability": {
+        "warranty": {
+          "duration": "Standard warranty",
+          "coverage": "Full system coverage"
+        },
+        "postSalesSupport": "Community and professional support",
+        "trackRecord": "High-compatibility open-source platform"
+      },
+      "specifications": {
+        "dimensions": "138cm height, compact humanoid",
+        "weight": "40kg with battery",
+        "walkingSpeed": "2 m/s maximum",
+        "waistRotation": "320° rotation range",
+        "maxJointTorque": "145 N·m",
+        "torqueDensity": "130 N·m/kg peak",
+        "controlPrecision": "5% joint control precision",
+        "chargingTime": "2 hours full charge"
+      },
+      "features": [
+        "High-compatibility open-source humanoid",
+        "Natural human-like gait locomotion",
+        "Modular joint design for customization",
+        "Interactive core screen interface",
+        "Dynamic ambient lighting effects",
+        "Dual-chip computational architecture",
+        "End-to-end neural network control"
+      ],
+      "images": [
+        "/images/robots/engineai-pm01.png"
+      ],
+      "highResPhotos": [
+        "/images/robots/engineai-pm01.png"
+      ],
+      "officialUrl": "https://www.engineai.com.cn/product_fore",
+      "description": "PM01 is EngineAI's high-compatibility open-source humanoid robot platform designed for research and development. Featuring modular design, interactive screen, and end-to-end neural network locomotion, it provides an accessible platform for humanoid robotics exploration."
+    }
+  ],
+  "metadata": {
+    "totalRobots": 2,
+    "categories": [
+      "humanoid"
+    ],
+    "lastUpdated": "2025-09-25T04:47:42.326Z"
+  }
+}

@@ -1,0 +1,1475 @@
+{
+  "brand": {
+    "id": "unitree",
+    "name": "Unitree",
+    "description": "Leading manufacturer of quadruped and humanoid robots, pioneering AI-powered robotics for consumer, educational, and industrial applications.",
+    "website": "https://www.unitree.com/",
+    "logo": "/images/brands/unitree-logo.svg",
+    "imagePatterns": [
+      {
+        "hostname": "www.unitree.com",
+        "pathname": "/images/**"
+      },
+      {
+        "hostname": "unitree.com",
+        "pathname": "/images/**"
+      }
+    ],
+    "imageBasePath": "/images/robots/unitree/"
+  },
+  "robots": [
+    {
+      "id": "unitree-go2",
+      "name": "Go2",
+      "brand": "Unitree",
+      "category": "quadruped",
+      "price": {
+        "starting": 1600,
+        "currency": "USD",
+        "models": [
+          {
+            "name": "AIR",
+            "price": 1600
+          },
+          {
+            "name": "PRO",
+            "price": 2800
+          },
+          {
+            "name": "EDU",
+            "price": "request"
+          }
+        ]
+      },
+      "generalInfo": {
+        "manufacturer": "Unitree",
+        "modelName": "Go2",
+        "dimensions": {
+          "standing": "70cm x 31cm x 40cm",
+          "folded": "76cm x 31cm x 20cm (crouching)",
+          "weight": "~15kg (with battery)"
+        }
+      },
+      "keyFeatures": [
+        "4D LiDAR L1 with 360°x90° recognition",
+        "8-core high-performance CPU",
+        "GPT-powered AI integration",
+        "Intelligent Side-follow System (ISS 2.0)",
+        "Advanced AI modes including upside-down walking",
+        "Over-the-Air (OTA) software upgrades",
+        "12 aluminum knee joint motors",
+        "WiFi 6, Bluetooth 5.2, 4G module",
+        "Max climb height: ~15-16 cm, angle: 30-40°"
+      ],
+      "hardwareBuildQuality": {
+        "totalDegreesOfFreedom": "12 (joint motors)",
+        "payloadCapacity": "~7-8kg (max ~10-12kg depending on model)",
+        "batteryCapacityRuntime": "8000mAh (1-2h) / 15000mAh (2-4h)",
+        "charger": "28V-33.6V, ~3000W max power",
+        "sensorsIncluded": [
+          "4D LiDAR L1",
+          "HD wide-angle camera",
+          "Wireless vector positioning",
+          "Foot-end force sensors (EDU)"
+        ],
+        "interfaces": [
+          "WiFi 6",
+          "Bluetooth 5.2",
+          "Optional 4G"
+        ]
+      },
+      "softwareEcosystem": {
+        "rosSupport": "Yes (ROS/ROS2)",
+        "sdkLanguages": [
+          "C++",
+          "Python"
+        ],
+        "openSourceRepos": "https://github.com/unitreerobotics",
+        "aiFrameworksSupported": [
+          "GPT integration",
+          "Embodied AI platform"
+        ],
+        "apiDocumentationQuality": "Good"
+      },
+      "supplierReliability": {
+        "warranty": {
+          "duration": "6-12 months (model dependent)",
+          "coverage": "Hardware components and software support"
+        },
+        "postSalesSupport": "English docs, online support, GitHub community",
+        "trackRecord": "Founded in 2013, 11+ years in robotics"
+      },
+      "specifications": {
+        "dimensions": "70x31x40 cm (standing), 76x31x20 cm (crouching)",
+        "weight": "~15kg (with battery)",
+        "material": "Aluminum alloy + high-strength engineering plastic",
+        "voltage": "28V-33.6V",
+        "workingMaxPower": "~3000W",
+        "jointMotors": "12 aluminum knee joint motors",
+        "maxJointTorque": "~45 N.m",
+        "payload": {
+          "AIR": "~7kg (max ~10kg)",
+          "PRO": "~8kg (max ~10kg)",
+          "EDU": "~8kg (max ~12kg)"
+        },
+        "maxSpeed": {
+          "AIR": "0-2.5 m/s",
+          "PRO": "0-3.5 m/s",
+          "EDU": "0-3.7 m/s (max ~5 m/s)"
+        },
+        "maxClimbHeight": {
+          "AIR": "15cm",
+          "PRO": "16cm",
+          "EDU": "16cm"
+        },
+        "maxClimbAngle": {
+          "AIR": "30°",
+          "PRO": "40°",
+          "EDU": "40°"
+        },
+        "computingPower": {
+          "AIR": "Basic computing",
+          "PRO": "8-core high-performance CPU",
+          "EDU": "8-core high-performance CPU"
+        },
+        "wirelessVectorPositioning": {
+          "AIR": "Not included",
+          "PRO": "Included",
+          "EDU": "Included"
+        },
+        "footEndForceSensor": {
+          "AIR": "Not included",
+          "PRO": "Not included",
+          "EDU": "Included"
+        },
+        "battery": {
+          "AIR": "8000mAh, 1-2 hours endurance",
+          "PRO": "8000mAh, 1-2 hours endurance",
+          "EDU": "15000mAh, 2-4 hours endurance"
+        },
+        "batteryLife": {
+          "AIR": "1-2 hours",
+          "PRO": "1-2 hours",
+          "EDU": "2-4 hours"
+        },
+        "connectivity": [
+          "Wi-Fi 6",
+          "Bluetooth 5.2",
+          "Optional 4G"
+        ],
+        "sensors": [
+          "3D LiDAR",
+          "HD wide-angle camera",
+          "Wireless vector positioning",
+          "Foot-end force sensors (EDU)"
+        ],
+        "aiFeatures": [
+          "GPT-powered AI integration",
+          "Advanced AI modes",
+          "Intelligent Side-follow System (ISS 2.0)"
+        ],
+        "softwareUpdates": "Over-the-Air (OTA) upgrades"
+      },
+      "features": [
+        "GPT-powered AI integration",
+        "Advanced AI modes including upside-down walking",
+        "Intelligent Side-follow System (ISS 2.0)",
+        "Over-the-Air (OTA) software upgrades",
+        "12 aluminum knee joint motors",
+        "8-core high-performance CPU",
+        "Max climb height: ~15-16 cm",
+        "Max climb angle: 30-40°"
+      ],
+      "images": [
+        "/images/robots/go2-1.jpg",
+        "/images/robots/go2-2.jpg",
+        "/images/robots/go2-3.jpg"
+      ],
+      "highResPhotos": [
+        "/images/robots/high-res/unitree-go2/go2-official-1.jpg"
+      ],
+      "videos": [],
+      "documentation": [
+        "User Manual",
+        "SDK Documentation"
+      ],
+      "officialUrl": "https://www.unitree.com/go2",
+      "description": "New Creature of Embodied AI - Consumer/Education quadruped robot with advanced AI capabilities and robust performance for various terrains."
+    },
+    {
+      "id": "unitree-go2-w",
+      "name": "Go2-W",
+      "brand": "Unitree",
+      "category": "quadruped",
+      "price": {
+        "starting": 2000,
+        "currency": "USD",
+        "models": [
+          {
+            "name": "Standard",
+            "price": "request"
+          }
+        ]
+      },
+      "specifications": {
+        "dimensions": "70cm x 43cm x 50cm",
+        "weight": "~18kg (with battery)",
+        "voltage": "33.6V",
+        "payload": "8kg (max up to 12kg)",
+        "maxSpeed": "0-2.5 m/s",
+        "maxClimbHeight": "70cm",
+        "maxClimbAngle": "35°",
+        "computingPower": "8-core high-performance CPU",
+        "jointMotors": "16 aluminum knee joint motors",
+        "maxJointTorque": "~45 N.m",
+        "tires": "7-inch pneumatic tires",
+        "battery": "15000mAh lithium battery",
+        "batteryLife": "1.5-3 hours runtime",
+        "charger": "Fast charge (33.6V 9A)",
+        "warranty": "12 months",
+        "connectivity": [
+          "Wi-Fi 6",
+          "4G",
+          "Bluetooth"
+        ],
+        "sensors": [
+          "Super-wide-angle 3D LiDAR",
+          "HD wide-angle camera"
+        ],
+        "additionalFeatures": [
+          "Continuous OTA software upgrades",
+          "In-wheel motor",
+          "Manual controller included",
+          "Front lighting",
+          "Voice functionality",
+          "Secondary development support"
+        ]
+      },
+      "features": [
+        "Driving All Terrain capability",
+        "Wheeled locomotion",
+        "Enhanced mobility",
+        "AI-powered navigation"
+      ],
+      "images": [
+        "/images/robots/quadruped/go2-w-1.png"
+      ],
+      "officialUrl": "https://www.unitree.com/go2-w",
+      "description": "Driving All Terrain - Enhanced Go2 variant with wheeled capabilities for improved mobility across diverse surfaces."
+    },
+    {
+      "id": "unitree-g1",
+      "name": "G1",
+      "brand": "Unitree",
+      "category": "humanoid",
+      "price": {
+        "starting": 16000,
+        "currency": "USD",
+        "models": [
+          {
+            "name": "G1",
+            "price": 16000
+          },
+          {
+            "name": "G1 EDU",
+            "price": "request"
+          }
+        ]
+      },
+      "generalInfo": {
+        "manufacturer": "Unitree",
+        "modelName": "G1",
+        "dimensions": {
+          "standing": "1320x450x200mm",
+          "folded": "690x450x300mm",
+          "weight": "35kg"
+        }
+      },
+      "keyFeatures": [
+        "23-43 joint motors with large movement angles",
+        "Industrial-grade crossed roller bearings",
+        "Low inertia permanent magnet synchronous motors",
+        "8-core high-performance CPU",
+        "Optional force-controlled three-fingered hand",
+        "NVIDIA Jetson Orin high-computing module (EDU)",
+        "UnifoLM (Unified Robot Large Model) platform",
+        "OTA software upgrades",
+        "18-month warranty (EDU model)"
+      ],
+      "hardwareBuildQuality": {
+        "totalDegreesOfFreedom": "23-43",
+        "payloadCapacity": "2-3kg (arm load)",
+        "batteryCapacityRuntime": "9000mAh, ~2h battery life",
+        "charger": "54V 5A",
+        "sensorsIncluded": [
+          "3D LiDAR",
+          "Depth Camera",
+          "4-microphone array",
+          "5W Speaker"
+        ],
+        "interfaces": [
+          "WiFi 6",
+          "Bluetooth 5.2"
+        ]
+      },
+      "softwareEcosystem": {
+        "rosSupport": "Yes (ROS/ROS2)",
+        "sdkLanguages": [
+          "C++",
+          "Python"
+        ],
+        "openSourceRepos": "https://github.com/unitreerobotics",
+        "aiFrameworksSupported": [
+          "Jetson (EDU model)"
+        ],
+        "apiDocumentationQuality": "Good"
+      },
+      "supplierReliability": {
+        "warranty": {
+          "duration": "8 months (G1), 18 months (EDU)",
+          "coverage": "Hardware components and software support"
+        },
+        "postSalesSupport": "English docs, online support, GitHub community",
+        "trackRecord": "Founded in 2013, 11+ years in robotics"
+      },
+      "specifications": {
+        "dimensions": "1320x450x200mm (standing), 690x450x300mm (folded)",
+        "weight": "About 35kg",
+        "battery": "13-string lithium battery, 9000mAh, ~2 hours runtime",
+        "dof": 43,
+        "totalDegreesOfFreedom": "23-43 (Joint Freedom)",
+        "singleLegDOF": 6,
+        "waistDOF": "1 (G1), 1-3 (G1 EDU)",
+        "singleArmDOF": 5,
+        "singleHandDOF": "0 (G1), 7-9 (G1 EDU)",
+        "jointOutputBearing": "Industrial grade crossed roller bearings (high precision, high load capacity)",
+        "jointMotor": "Low inertia PMSM (permanent magnet synchronous motor)",
+        "maxTorqueKneeJoint": {
+          "G1": "90N.m",
+          "G1_EDU": "120N.m"
+        },
+        "armMaxLoad": {
+          "G1": "About 2Kg",
+          "G1_EDU": "About 3Kg"
+        },
+        "calfThighLength": "0.6M",
+        "armSpan": "About 0.45M",
+        "computing": "8-core CPU",
+        "connectivity": [
+          "Wi-Fi 6",
+          "Bluetooth 5.2"
+        ],
+        "warranty": {
+          "G1": "8 months",
+          "G1_EDU": "18 months"
+        },
+        "sensors": [
+          "Depth Camera",
+          "3D LiDAR"
+        ],
+        "movementCapabilities": {
+          "waistJoint": "Z±155°",
+          "kneeJoint": "0-165°",
+          "hipJoint": "Multiple complex angle ranges"
+        },
+        "batteryLife": "~2 hours",
+        "motorType": "Low inertia high-speed internal rotor PMSM",
+        "optionalFeatures": {
+          "G1_EDU": [
+            "Force-controlled three-fingered hand",
+            "Dexterous manipulation capabilities",
+            "Optional tactile sensor arrays",
+            "NVIDIA Jetson Orin high-computing module"
+          ]
+        }
+      },
+      "features": [
+        "23-43 joint motors with large movement angles",
+        "Industrial-grade crossed roller bearings",
+        "Low inertia permanent magnet synchronous motors",
+        "8-core high-performance CPU",
+        "Optional force-controlled three-fingered hand",
+        "NVIDIA Jetson Orin high-computing module (EDU)",
+        "UnifoLM (Unified Robot Large Model) platform",
+        "OTA software upgrades",
+        "18-month warranty (EDU model)"
+      ],
+      "images": [
+        "/images/robots/g1-1.jpg",
+        "/images/robots/g1-2.jpg",
+        "/images/robots/g1-3.jpg"
+      ],
+      "highResPhotos": [
+        "/images/robots/high-res/unitree-g1/g1-official-1.jpg",
+        "/images/robots/high-res/unitree-g1/g1-official-2.jpg"
+      ],
+      "documentation": [
+        "Secondary development manual",
+        "SDK Documentation"
+      ],
+      "officialUrl": "https://www.unitree.com/g1",
+      "description": "Humanoid agent AI avatar - Advanced humanoid robot with high degrees of freedom and AI capabilities for research and development."
+    },
+    {
+      "id": "unitree-h1",
+      "name": "H1",
+      "brand": "Unitree",
+      "category": "humanoid",
+      "price": {
+        "starting": 150000,
+        "currency": "USD",
+        "models": [
+          {
+            "name": "H1",
+            "price": "request"
+          },
+          {
+            "name": "H1-2",
+            "price": "request"
+          }
+        ]
+      },
+      "generalInfo": {
+        "manufacturer": "Unitree",
+        "modelName": "H1",
+        "dimensions": {
+          "standing": "~180 cm (1520+285mm × 570mm × 220mm)",
+          "folded": "Not specified",
+          "weight": "~47 kg"
+        }
+      },
+      "keyFeatures": [
+        "Full-size universal humanoid with 5 DOF per leg (Hip×3 + Knee×1 + Ankle×1)",
+        "4 DOF per arm (expandable)",
+        "Moving speed of 3.3 m/s with potential >5 m/s",
+        "Peak Torque Density: 189 N.m/Kg",
+        "Maximum Joint Torque: 360 N.m",
+        "864 Wh quickly replaceable battery system",
+        "3D LiDAR + Depth Camera with 360° depth perception",
+        "Optional dexterous hand compatibility",
+        "Continuous Over-The-Air (OTA) software upgrades"
+      ],
+      "hardwareBuildQuality": {
+        "totalDegreesOfFreedom": "5 per leg (Hip×3 + Knee×1 + Ankle×1), 4 per arm (expandable)",
+        "payloadCapacity": "Not specified",
+        "batteryCapacityRuntime": "864 Wh, 15Ah, max 67.2V, quickly replaceable",
+        "charger": "Not specified",
+        "sensorsIncluded": [
+          "3D LiDAR",
+          "Depth Camera",
+          "360° depth perception system"
+        ],
+        "interfaces": [
+          "Not specified"
+        ]
+      },
+      "softwareEcosystem": {
+        "rosSupport": "Not specified",
+        "sdkLanguages": [
+          "Not specified"
+        ],
+        "openSourceRepos": "https://github.com/unitreerobotics",
+        "aiFrameworksSupported": [
+          "Intel Core i5/i7",
+          "Optional Nvidia Jetson Orin NX"
+        ],
+        "apiDocumentationQuality": "Not specified"
+      },
+      "supplierReliability": {
+        "warranty": {
+          "duration": "Not specified",
+          "coverage": "Not specified"
+        },
+        "postSalesSupport": "Unitree official support channels",
+        "trackRecord": "Founded in 2013, 11+ years in robotics"
+      },
+      "specifications": {
+        "keyDimensions": {
+          "H1": "(1520+285)mm × 570mm × 220mm",
+          "H1_2": "(1503+285)mm × 510mm × 287mm"
+        },
+        "thighCalfLength": {
+          "H1": "400mm × 2",
+          "H1_2": "400mm × 2"
+        },
+        "totalArmLength": {
+          "H1": "338mm × 2",
+          "H1_2": "685mm"
+        },
+        "dofEachLeg": {
+          "H1": "5 (Hip × 3 + Knee × 1 + Ankle × 1)",
+          "H1_2": "6 (Hip × 3 + Knee × 1 + Ankle × 2)"
+        },
+        "dofEachArm": {
+          "H1": "4 (Expandable)",
+          "H1_2": "7 (Shoulder × 3 + Elbow × 1 + Wrist × 3)"
+        },
+        "totalWeight": {
+          "H1": "About 47kg",
+          "H1_2": "About 70kg"
+        },
+        "jointOutputBearing": "Industrial grade crossed roller bearings (high precision, high load capacity)",
+        "coreJointMotor": "Low inertia high-speed internal rotor PMSM (permanent magnet synchronous motor;better response speed and heat dissipation)",
+        "ultimateTorqueJointUnit": {
+          "kneeTorque": "About 360N.m",
+          "hipJointTorque": "About 220 N.m",
+          "ankleTorque": {
+            "H1": "About 59N.m",
+            "H1_2": "About 75×2N.m"
+          },
+          "armJointTorque": {
+            "H1": "About 75N.m",
+            "H1_2": "Waist Joint About 220N.m, Ankle Joint About 75×2N.m"
+          }
+        },
+        "mobility": {
+          "H1": "Moving speed of 3.3m/s(world record), Potential mobility > 5m/s",
+          "H1_2": "Moving speed <2m/s"
+        },
+        "battery": "Battery capacity 15Ah(0.864KWh), Max Voltage 67.2V",
+        "controlPerceptionComputingPower": "Standard configuration: Intel Core i5(Platform Function) ,Intel Core i7(User Development) Optional Configuration: Intel Core i7 or Nvidia Jetson Orin NX",
+        "sensorConfiguration": "3D LiDAR + Depth Camera",
+        "dexterousHand": {
+          "H1": "Optional",
+          "H1_2": "Optional Dex5-1 or other ambidextrous hands"
+        },
+        "armJointPerformance": {
+          "H1": "/",
+          "H1_2": "Shoulder: About 120N.m, Elbow: About 120N.m Wrist: About 30N.m"
+        },
+        "armNormalLoad": {
+          "H1": "/",
+          "H1_2": "Peak: About 21Kg; Rated: About 7Kg"
+        }
+      },
+      "features": [
+        "First full-size general-purpose humanoid robot that can run in China",
+        "Peak Torque Density: 189 N.m/Kg",
+        "Maximum Joint Torque: 360 N.m",
+        "Stable gait and flexible movement in complex terrains",
+        "Continuous Over-The-Air (OTA) software upgrades",
+        "Quick-replaceable battery system"
+      ],
+      "images": [
+        "/images/robots/h1-1.jpg",
+        "/images/robots/h1-2.png"
+      ],
+      "highResPhotos": [
+        "/images/robots/high-res/unitree-h1/h1-official-1.jpg"
+      ],
+      "officialUrl": "https://www.unitree.com/h1",
+      "description": "Unitree's First Universal Humanoid Robot - Full-size humanoid robot capable of running and navigating complex terrains with advanced mobility."
+    },
+    {
+      "id": "unitree-b2",
+      "name": "B2",
+      "brand": "Unitree",
+      "category": "quadruped",
+      "price": {
+        "starting": 25000,
+        "currency": "USD",
+        "models": [
+          {
+            "name": "Industrial",
+            "price": "request"
+          }
+        ]
+      },
+      "generalInfo": {
+        "manufacturer": "Unitree",
+        "modelName": "B2",
+        "dimensions": {
+          "standing": "≈ 1098mm × 450mm × 645mm",
+          "folded": "≈ 880mm × 460mm × 330mm",
+          "weight": "≈ 60kg (including battery)"
+        }
+      },
+      "keyFeatures": [
+        "Max Running Speed: > 6 m/s",
+        "Max Joint Torque: ~360 N.m",
+        "Standing Load: Max 120kg",
+        "Walking Load: > 40kg",
+        "Longest Jump Distance: > 1.6m",
+        "45Ah (2250Wh) battery system",
+        "IP67 environmental protection",
+        "Operating Temperature: -20°C to 55°C",
+        "Obstacle Crossing: Max 40cm",
+        "Slope Capability: > 45°"
+      ],
+      "hardwareBuildQuality": {
+        "totalDegreesOfFreedom": "12 (joint motors)",
+        "payloadCapacity": "Standing: 120kg max, Walking: > 40kg",
+        "batteryCapacityRuntime": "45Ah (2250Wh), 4-6 hours runtime",
+        "charger": "58V charging system",
+        "sensorsIncluded": [
+          "3D LiDAR × 1",
+          "Depth camera × 2",
+          "Optical camera × 2"
+        ],
+        "interfaces": [
+          "1000M-Base-Ethernet × 4",
+          "USB3.0 × 4",
+          "Power outputs: 12V × 4, 5V × 1, 24V × 4"
+        ]
+      },
+      "softwareEcosystem": {
+        "rosSupport": "Yes (ROS/ROS2)",
+        "sdkLanguages": [
+          "C++",
+          "Python"
+        ],
+        "openSourceRepos": "https://github.com/unitreerobotics",
+        "aiFrameworksSupported": [
+          "Intel Core i5/i7",
+          "Optional Jetson Orin NX"
+        ],
+        "apiDocumentationQuality": "Good"
+      },
+      "supplierReliability": {
+        "warranty": {
+          "duration": "Industrial warranty coverage",
+          "coverage": "Hardware components and software support"
+        },
+        "postSalesSupport": "English docs, online support, GitHub community",
+        "trackRecord": "Founded in 2013, 11+ years in robotics"
+      },
+      "specifications": {
+        "dimensionsStanding": "≈ 1098mm × 450mm × 645mm",
+        "dimensionsLying": "≈ 880mm × 460mm × 330mm",
+        "weight": "≈ 60kg (including battery)",
+        "maxRunningSpeed": "> 6 m/s",
+        "maxJointTorque": "About 360 N.m",
+        "longestJumpDistance": "> 1.6m",
+        "standingLoad": "120kg max",
+        "continuousWalkingLoad": "> 40kg",
+        "obstacleCrossing": "Max 40cm",
+        "slopeAngle": "> 45°",
+        "batteryCapacity": "45Ah (2250Wh)",
+        "batteryVoltage": "58V",
+        "batteryLife": "4-6 hours",
+        "endurance": {
+          "unloaded": "> 5 hours, > 20km",
+          "loaded": "> 4 hours, > 15km (20kg load)"
+        },
+        "operatingTemperature": "-20℃ ~ 55℃",
+        "ingressProtection": "IP67",
+        "ditchJumping": "0.5~1.2m",
+        "controlPlatform": {
+          "standard": "Intel Core i5",
+          "userDevelopment": "Intel Core i7",
+          "optional": "Intel Core i7 + Jetson Orin NX"
+        },
+        "connectivity": [
+          "1000M-Base-Ethernet × 4",
+          "USB3.0 × 4"
+        ],
+        "powerOutputs": [
+          "12V × 4",
+          "5V × 1",
+          "24V × 4"
+        ],
+        "sensors": [
+          "3D LiDAR × 1",
+          "Depth camera × 2",
+          "Optical camera × 2"
+        ]
+      },
+      "features": [
+        "Go Beyond the Limits",
+        "Industrial-grade construction",
+        "Enhanced durability",
+        "Heavy-duty performance",
+        "Environmental resistance"
+      ],
+      "images": [
+        "/images/robots/unitree-b2.png"
+      ],
+      "highResPhotos": [
+        "/images/robots/high-res/unitree-go1/go1-official-1.jpg",
+        "/images/robots/high-res/unitree-go1/go1-official-2.jpg"
+      ],
+      "officialUrl": "https://www.unitree.com/b2",
+      "description": "Go Beyond the Limits - Industrial quadruped robot designed for demanding environments and heavy-duty applications."
+    },
+    {
+      "id": "unitree-a2",
+      "name": "A2",
+      "brand": "Unitree",
+      "category": "quadruped",
+      "price": {
+        "starting": 30000,
+        "currency": "USD",
+        "models": [
+          {
+            "name": "A2",
+            "price": "request"
+          },
+          {
+            "name": "A2-PRO",
+            "price": "request"
+          }
+        ]
+      },
+      "generalInfo": {
+        "manufacturer": "Unitree",
+        "modelName": "A2",
+        "dimensions": {
+          "standing": "820mm x 440mm x 570mm",
+          "folded": "720mm x 550mm x 220mm",
+          "weight": "~37kg (with battery)"
+        }
+      },
+      "keyFeatures": [
+        "Speed: 0-3.7 m/s (up to ~5 m/s)",
+        "Max Joint Torque: ~180 N.m",
+        "Standing Load: ~100kg",
+        "Continuous Walking Load: ~25kg",
+        "Slope Walking: ~45°",
+        "Stair Climbing: Max 30cm step height",
+        "9000mAh (453.6Wh) battery system",
+        "Operating Temperature: -20°C to 55°C",
+        "IP56 ingress protection",
+        "8-Core CPU + Intel Core i7"
+      ],
+      "hardwareBuildQuality": {
+        "totalDegreesOfFreedom": "12 joint motors",
+        "payloadCapacity": "Standing: ~100kg, Walking: ~25kg",
+        "batteryCapacityRuntime": "9000mAh (453.6Wh), >5 hours no load, >3 hours with 25kg load",
+        "charger": "50.4V charging system",
+        "sensorsIncluded": [
+          "1-2x LiDAR",
+          "1x HD Camera (depending on model)"
+        ],
+        "interfaces": [
+          "Wi-Fi 6",
+          "Bluetooth 5.2"
+        ]
+      },
+      "softwareEcosystem": {
+        "rosSupport": "Yes (ROS/ROS2)",
+        "sdkLanguages": [
+          "C++",
+          "Python"
+        ],
+        "openSourceRepos": "https://github.com/unitreerobotics",
+        "aiFrameworksSupported": [
+          "8-Core CPU",
+          "Intel Core i7"
+        ],
+        "apiDocumentationQuality": "Good"
+      },
+      "supplierReliability": {
+        "warranty": {
+          "duration": "Industrial warranty coverage",
+          "coverage": "Hardware components and software support"
+        },
+        "postSalesSupport": "English docs, online support, GitHub community",
+        "trackRecord": "Founded in 2013, 11+ years in robotics"
+      },
+      "specifications": {
+        "dimensionsStanding": "820mm x 440mm x 570mm",
+        "dimensionsLying": "720mm x 550mm x 220mm",
+        "material": "Aluminum Alloy + High-Strength Engineering Plastic",
+        "weightWithoutBattery": "~31kg",
+        "weight": "~37kg (with battery)",
+        "supplyVoltage": "50.4V",
+        "degreesOfFreedom": "12 joint motors",
+        "jointBearings": "Industrial-grade crossed roller bearings",
+        "maxJointTorque": "~180 N.m",
+        "batteryCapacity": {
+          "single": "9000mAh (453.6Wh)",
+          "dual": "18000mAh (907.2Wh)"
+        },
+        "batteryLife": {
+          "noLoad": ">5 hours, ~20km",
+          "withLoad": ">3 hours, ~12.5km (25kg load)"
+        },
+        "maxStandingLoad": "~100kg",
+        "continuousWalkingLoad": "~25kg",
+        "slopeWalking": "~45°",
+        "maxSpeed": "0-3.7 m/s (up to ~5 m/s)",
+        "stairClimbing": "Max 30cm step height",
+        "operatingTemperature": "-20°C to 55°C",
+        "ingressProtection": {
+          "A2": "IP56",
+          "A2_PRO": "IP56-IP67"
+        },
+        "computing": "8-Core high-performance CPU + Intel Core i7",
+        "connectivity": [
+          "Wi-Fi 6",
+          "Bluetooth 5.2"
+        ],
+        "sensors": {
+          "A2": [
+            "1x LiDAR",
+            "1x HD Camera"
+          ],
+          "A2_PRO": [
+            "2x LiDAR",
+            "1x HD Camera"
+          ]
+        }
+      },
+      "features": [
+        "Stellar Explorer capabilities",
+        "Advanced exploration AI",
+        "Environmental monitoring",
+        "Autonomous navigation",
+        "Research-grade sensors"
+      ],
+      "images": [
+        "/images/robots/a2-1.jpg",
+        "/images/robots/a2-2.jpg",
+        "/images/robots/a2-3.jpg"
+      ],
+      "highResPhotos": [
+        "/images/robots/high-res/unitree-z1/z1-official-1.png",
+        "/images/robots/high-res/unitree-z1/z1-official-2.png"
+      ],
+      "officialUrl": "https://www.unitree.com/A2",
+      "description": "Stellar Explorer - Advanced industrial quadruped robot designed for exploration and research applications."
+    },
+    {
+      "id": "unitree-go1",
+      "name": "Go1",
+      "brand": "Unitree",
+      "category": "quadruped",
+      "price": {
+        "starting": 2700,
+        "currency": "USD",
+        "models": [
+          {
+            "name": "AIR",
+            "price": 2700
+          },
+          {
+            "name": "PRO",
+            "price": 3500
+          },
+          {
+            "name": "EDU",
+            "price": "request"
+          }
+        ]
+      },
+      "generalInfo": {
+        "manufacturer": "Unitree",
+        "modelName": "Go1",
+        "dimensions": {
+          "standing": "0.588 x 0.22 x 0.29 m (folded)",
+          "folded": "0.588 x 0.22 x 0.29 m",
+          "weight": "12 kg"
+        }
+      },
+      "keyFeatures": [
+        "12 silver alloy precision joint motors",
+        "5 sets fisheye binocular depth sensing (PRO/EDU)",
+        "AI human recognition",
+        "Max Speed: 17 km/h (4.7 m/s)",
+        "Payload: 3-5 kg (up to 10 kg limit)",
+        "16-core CPU + GPU (384 Core, 1.5 TFLOPS)",
+        "SSS Super-sensing System",
+        "Intelligent Concomitant System",
+        "Heat pipe-assisted cooling system",
+        "Python programming support (EDU)"
+      ],
+      "hardwareBuildQuality": {
+        "totalDegreesOfFreedom": "12 (joint motors)",
+        "payloadCapacity": "3-5kg adaptive load capacity (up to 10kg limit)",
+        "batteryCapacityRuntime": "Varies by model and usage",
+        "charger": "24V charger (4A-6A depending on model)",
+        "sensorsIncluded": [
+          "5 sets fisheye binocular depth sensors",
+          "AI human recognition",
+          "Foot-end force sensors (EDU)"
+        ],
+        "interfaces": [
+          "WiFi",
+          "Bluetooth",
+          "4G connectivity (EDU)"
+        ]
+      },
+      "softwareEcosystem": {
+        "rosSupport": "Yes (ROS/ROS2)",
+        "sdkLanguages": [
+          "C++",
+          "Python"
+        ],
+        "openSourceRepos": "https://github.com/unitreerobotics",
+        "aiFrameworksSupported": [
+          "Human recognition",
+          "Python programming (EDU)"
+        ],
+        "apiDocumentationQuality": "Good"
+      },
+      "supplierReliability": {
+        "warranty": {
+          "duration": "6-12 months depending on model",
+          "coverage": "AIR: 6 months (core components), PRO: 3 months (non-core), EDU: 12 months full warranty"
+        },
+        "postSalesSupport": "English docs, online support, GitHub community",
+        "trackRecord": "Founded in 2013, 11+ years in robotics"
+      },
+      "specifications": {
+        "dimensions": "58.8cm x 22cm x 29cm (folded)",
+        "weight": "12kg",
+        "material": "Aluminum alloy + high strength engineering plastic",
+        "jointMotors": "12 silver alloy precision joint motors",
+        "maxSpeed": {
+          "AIR": "0-2.5 m/s",
+          "PRO": "0-3.5 m/s",
+          "EDU": "0-3.7 m/s (max 4.7 m/s)"
+        },
+        "maxSpeedRecord": "17 km/h (4.7 m/s)",
+        "payload": "3-5kg adaptive load capacity",
+        "jointMovementSpace": {
+          "body": "-49° to 49°",
+          "thigh": "-39° to 257°",
+          "shank": "-161° to -51°"
+        },
+        "sensingSystem": "SSS Super-sensing System",
+        "sensingAngle": "≈150 x 170°",
+        "sensors": {
+          "AIR": [
+            "1 pair of fisheye binocular depth sensors"
+          ],
+          "PRO": [
+            "5 pairs of fisheye binocular depth sensors"
+          ],
+          "EDU": [
+            "5 pairs of fisheye binocular depth sensors",
+            "4G connectivity",
+            "Human sensing",
+            "Foot-end force sensors"
+          ]
+        },
+        "computing": {
+          "AIR": "1x (4x1.43GHz, 128Core 0.5T)",
+          "PRO": "3x (4x1.43GHz, 128Core 0.5T)",
+          "EDU": "2 Nano+ (1 Nano or 1NX)"
+        },
+        "processingPower": "16-core top CPU + GPU (384 Core, 1.5 TFLOPS)",
+        "batteryCharging": {
+          "AIR": "24V, 4A",
+          "PRO": "24V, 6A",
+          "EDU": "24V, 6A"
+        },
+        "aiCapabilities": [
+          "Human recognition",
+          "Python programming (EDU)"
+        ],
+        "warranty": {
+          "AIR": "6 months (core components)",
+          "PRO": "3 months (non-core components)",
+          "EDU": "12 months full warranty"
+        },
+        "connectivity": [
+          "WiFi",
+          "Bluetooth"
+        ],
+        "additionalFeatures": [
+          "Intelligent Concomitant System",
+          "Flexible adaptive joints",
+          "Heat pipe-assisted cooling system"
+        ]
+      },
+      "features": [
+        "Ultra-fast performance up to 17 km/h",
+        "5 sets of fisheye binocular depth sensors",
+        "Advanced AI processing capabilities",
+        "Python programming support (EDU)",
+        "Lightweight 12kg design",
+        "Adaptive joint flexibility"
+      ],
+      "images": [
+        "/images/robots/go1-1.jpg",
+        "/images/robots/go1-2.jpg",
+        "/images/robots/go1-3.png"
+      ],
+      "highResPhotos": [
+        "https://oss-global-cdn.unitree.com/static/51bf09feba1a40a6a2cffd93e9ab66ea_2956x1622.jpg",
+        "https://oss-global-cdn.unitree.com/static/3f39e17933814577a1a21c84aaa74c6c_3776x2118.jpg"
+      ],
+      "officialUrl": "https://www.unitree.com/go1",
+      "description": "Advanced quadruped robot with high-speed capabilities and intelligent sensing for education and research applications."
+    },
+    {
+      "id": "unitree-b1",
+      "name": "B1",
+      "brand": "Unitree",
+      "category": "quadruped",
+      "price": {
+        "starting": 40000,
+        "currency": "USD",
+        "models": [
+          {
+            "name": "Industrial",
+            "price": "request"
+          }
+        ]
+      },
+      "generalInfo": {
+        "manufacturer": "Unitree",
+        "modelName": "B1",
+        "dimensions": {
+          "standing": "1126 x 467 x 636 mm",
+          "folded": "1202 x 467 x 297 mm",
+          "weight": "~50kg (with battery)"
+        }
+      },
+      "keyFeatures": [
+        "Maximum Standing Load: 80kg",
+        "Continuous Walking Load: 20kg",
+        "18,000 mAh (932.4Wh) battery system",
+        "Intel i5-1135G7 CPU",
+        "3x Jetson XavierNX sensing platform",
+        "5x Intel RealSense D430 sensors",
+        "Max Stair Climbing: 20cm",
+        "Standing Endurance: 5 hours",
+        "Operating Temperature: -5°C to 45°C",
+        "Charging Time: 1-2 hours"
+      ],
+      "hardwareBuildQuality": {
+        "totalDegreesOfFreedom": "12 (joint motors)",
+        "payloadCapacity": "Standing: 80kg max, Walking: 20kg continuous",
+        "batteryCapacityRuntime": "18,000mAh (932.4Wh), 5 hours standing, 2 hours walking",
+        "charger": "51.8V charging system, 1-2 hours charge time",
+        "sensorsIncluded": [
+          "5x Intel RealSense D430"
+        ],
+        "interfaces": [
+          "7x Gigabit Ethernet",
+          "4x RS485",
+          "5x USB",
+          "4x CAN",
+          "12V/24V power outputs"
+        ]
+      },
+      "softwareEcosystem": {
+        "rosSupport": "Yes (ROS/ROS2)",
+        "sdkLanguages": [
+          "C++",
+          "Python"
+        ],
+        "openSourceRepos": "https://github.com/unitreerobotics",
+        "aiFrameworksSupported": [
+          "Intel i5-1135G7",
+          "3x Jetson XavierNX"
+        ],
+        "apiDocumentationQuality": "Good"
+      },
+      "supplierReliability": {
+        "warranty": {
+          "duration": "Industrial warranty coverage",
+          "coverage": "Hardware components and software support"
+        },
+        "postSalesSupport": "English docs, online support, GitHub community",
+        "trackRecord": "Founded in 2013, 11+ years in robotics"
+      },
+      "specifications": {
+        "dimensionsStanding": "1126 x 467 x 636 mm",
+        "dimensionsLying": "1202 x 467 x 297 mm",
+        "weight": "~50kg (with battery)",
+        "batteryWeight": "~5kg",
+        "continuousWalkingLoad": "20kg",
+        "maxStandingLoad": "80kg",
+        "batteryCapacity": "18000mAh (932.4Wh)",
+        "batteryVoltage": "51.8V",
+        "chargingTime": "1-2 hours",
+        "operatingTemperature": "-5°C to 45°C",
+        "computing": "Intel i5-1135G7",
+        "sensingPlatform": "3x Jetson XavierNX",
+        "sensors": [
+          "5x Intel RealSense D430"
+        ],
+        "maxStairClimbHeight": "20cm",
+        "standingEndurance": "5 hours",
+        "continuousWalkingTime": "2 hours (unloaded)"
+      },
+      "features": [
+        "Industrial-grade quadruped design",
+        "Heavy payload capacity up to 80kg",
+        "Advanced sensing with 5 RealSense cameras",
+        "Long endurance operation",
+        "Complex terrain navigation",
+        "Multiple application scenarios"
+      ],
+      "images": [
+        "/images/robots/quadruped/b1-1.png",
+        "/images/robots/quadruped/b1-2.png",
+        "/images/robots/quadruped/b1-3.png"
+      ],
+      "highResPhotos": [],
+      "officialUrl": "https://www.unitree.com/b1",
+      "description": "Industrial quadruped robot designed for agriculture, security patrols, surveys, and public rescue operations."
+    },
+    {
+      "id": "unitree-aliengo",
+      "name": "Aliengo",
+      "brand": "Unitree",
+      "category": "quadruped",
+      "price": {
+        "starting": 35000,
+        "currency": "USD",
+        "models": [
+          {
+            "name": "Standard",
+            "price": "request"
+          }
+        ]
+      },
+      "generalInfo": {
+        "manufacturer": "Unitree",
+        "modelName": "Aliengo",
+        "dimensions": {
+          "standing": "0.65m x 0.31m x 0.6m",
+          "folded": "0.60m x 0.31m x 0.15m",
+          "weight": "21.5kg ±1kg (without battery)"
+        }
+      },
+      "keyFeatures": [
+        "12 high-performance servo motors",
+        "Maximum Walking Speed: >1.5 m/s",
+        "Payload Capacity: 13kg",
+        "Climbing Angle: ≤25°",
+        "Endurance: 2.5-4.6 hours",
+        "12,600mAh battery capacity",
+        "2x Depth Cameras (1280x720 resolution)",
+        "Visual Odometer Camera",
+        "Multiple power outputs: 5V, 12V, 19V, 24V-30V",
+        "Advanced mobility patterns"
+      ],
+      "hardwareBuildQuality": {
+        "totalDegreesOfFreedom": "12 motors",
+        "payloadCapacity": "13kg",
+        "batteryCapacityRuntime": "12,600mAh, 2.5-4.6 hours endurance",
+        "charger": "Standard charging system",
+        "sensorsIncluded": [
+          "2x Depth Cameras (1280x720)",
+          "1x Visual Odometer Camera"
+        ],
+        "interfaces": [
+          "2x Ethernet",
+          "2x USB 3.0",
+          "1x USB 2.0",
+          "1x 485 port",
+          "Multiple power outputs"
+        ]
+      },
+      "softwareEcosystem": {
+        "rosSupport": "Yes (Ubuntu-ROS)",
+        "sdkLanguages": [
+          "C++",
+          "Python"
+        ],
+        "openSourceRepos": "https://github.com/unitreerobotics",
+        "aiFrameworksSupported": [
+          "Ubuntu",
+          "ROS"
+        ],
+        "apiDocumentationQuality": "Good"
+      },
+      "supplierReliability": {
+        "warranty": {
+          "duration": "Standard warranty coverage",
+          "coverage": "Hardware components and software support"
+        },
+        "postSalesSupport": "English docs, online support, GitHub community",
+        "trackRecord": "Founded in 2013, 11+ years in robotics"
+      },
+      "specifications": {
+        "weight": "21.5kg ±1kg (without battery)",
+        "dimensionsStanding": "65cm x 31cm x 60cm",
+        "dimensionsLying": "60cm x 31cm x 15cm",
+        "maxWalkingSpeed": ">1.5m/s",
+        "climbingAngle": "≤25°",
+        "payload": "13kg",
+        "endurance": "2.5-4.6 hours",
+        "degreesOfFreedom": "12 (12 motors)",
+        "batteryCapacity": "12,600mAh",
+        "outputPower": [
+          "5V",
+          "12V",
+          "19V",
+          "24-30V"
+        ],
+        "depthCameras": "2 sets (1280x720 resolution)",
+        "visualOdometer": "1 set",
+        "interfaces": [
+          "2x Ethernet",
+          "2x USB 3.0",
+          "1x USB 2.0",
+          "1x 485 port"
+        ],
+        "sensors": [
+          "Depth Camera",
+          "Visual Odometer",
+          "Optional LiDAR"
+        ],
+        "safetyFeatures": [
+          "Wireless Emergency Stop Protection",
+          "Fall Protection",
+          "Low Voltage Alarm",
+          "Over-temperature Alarm"
+        ],
+        "operatingSystems": {
+          "movementControl": "Ubuntu",
+          "environmentSensing": "Ubuntu-ROS"
+        }
+      },
+      "features": [
+        "12 high-performance servo motors",
+        "Fast running and backward running capabilities",
+        "Side shifting, turning, creeping, rolling, jumping",
+        "Advanced depth sensing system",
+        "Flexible external interfaces",
+        "Optional LiDAR integration"
+      ],
+      "images": [
+        "/images/robots/aliengo-1.jpg",
+        "/images/robots/aliengo-2.jpg",
+        "/images/robots/aliengo-3.png"
+      ],
+      "highResPhotos": [],
+      "officialUrl": "https://www.unitree.com/aliengo",
+      "description": "Versatile quadruped robot with advanced mobility and sensing capabilities for research and industrial applications."
+    },
+    {
+      "id": "unitree-r1",
+      "name": "R1",
+      "brand": "Unitree",
+      "category": "humanoid",
+      "price": {
+        "starting": 5900,
+        "currency": "USD",
+        "models": [
+          {
+            "name": "Base Model",
+            "price": 5900
+          },
+          {
+            "name": "R1 EDU",
+            "price": "request"
+          }
+        ]
+      },
+      "generalInfo": {
+        "manufacturer": "Unitree",
+        "modelName": "R1",
+        "dimensions": {
+          "standing": "1210 × 357 × 190 mm",
+          "folded": "Not specified",
+          "weight": "~25kg"
+        }
+      },
+      "keyFeatures": [
+        "24-40 degrees of freedom with large movement angles",
+        "Ultra-lightweight design at ~25kg",
+        "8-core high-performance CPU",
+        "Optional NVIDIA Jetson Orin (40-100 TOPS) for EDU",
+        "Fully customizable platform with open control interfaces",
+        "Large multimodal model integration for voice and images",
+        "Over-the-air (OTA) software upgrades",
+        "WiFi 6 and Bluetooth 5.2 connectivity",
+        "Mainstream simulation platform support",
+        "Industrial-grade joint motors with precise control",
+        "Compact humanoid form factor for research applications",
+        "Voice and image processing capabilities"
+      ],
+      "hardwareBuildQuality": {
+        "totalDegreesOfFreedom": "24-40 (6 per leg, 5 per arm, 2 waist, optional 2 head)",
+        "payloadCapacity": "2-3kg (estimated for lightweight frame)",
+        "batteryCapacityRuntime": "~1 hour typical usage",
+        "charger": "Standard DC charging system",
+        "sensorsIncluded": [
+          "4-microphone array",
+          "Binocular camera",
+          "IMU sensors",
+          "Joint position encoders"
+        ],
+        "interfaces": [
+          "WiFi 6",
+          "Bluetooth 5.2",
+          "USB interfaces",
+          "Serial communication"
+        ]
+      },
+      "softwareEcosystem": {
+        "rosSupport": "Yes (ROS/ROS2 compatible, mainstream simulation platform support)",
+        "sdkLanguages": [
+          "C++",
+          "Python"
+        ],
+        "openSourceRepos": "https://github.com/unitreerobotics",
+        "aiFrameworksSupported": [
+          "8-core CPU",
+          "Optional NVIDIA Jetson Orin (40-100 TOPS)",
+          "Large multimodal model integration",
+          "Voice processing",
+          "Image recognition"
+        ],
+        "apiDocumentationQuality": "Good with comprehensive development resources"
+      },
+      "supplierReliability": {
+        "warranty": {
+          "duration": "8 months (Base), 12 months (EDU)",
+          "coverage": "Hardware components and software support"
+        },
+        "postSalesSupport": "English docs, online support, GitHub community",
+        "trackRecord": "Founded in 2013, 11+ years in robotics"
+      },
+      "specifications": {
+        "dimensions": "1210 × 357 × 190 mm",
+        "weight": "~25kg",
+        "totalDOF": "24-40",
+        "legDOF": "6 per leg",
+        "armDOF": "5 per arm",
+        "waistDOF": "2",
+        "optionalHeadDOF": "2",
+        "batteryLife": "~1 hour",
+        "computing": "8-core high-performance CPU",
+        "optionalComputing": "NVIDIA Jetson Orin (40-100 TOPS)",
+        "sensors": [
+          "4-microphone array",
+          "Binocular camera"
+        ],
+        "connectivity": [
+          "WiFi 6",
+          "Bluetooth 5.2"
+        ],
+        "warranty": {
+          "Base": "8 months",
+          "EDU": "12 months"
+        }
+      },
+      "features": [
+        "Ultra-lightweight design",
+        "Fully customizable platform",
+        "Open control interfaces",
+        "Mainstream simulation platform support",
+        "Advanced AI processing capabilities",
+        "Compact form factor"
+      ],
+      "images": [
+        "/images/robots/humanoid/r1-1.png",
+        "/images/robots/humanoid/r1-2.png"
+      ],
+      "highResPhotos": [
+        "https://oss-global-cdn.unitree.com/static/R1_profile_high_res.jpg",
+        "https://oss-global-cdn.unitree.com/static/R1_action_demo.jpg",
+        "https://oss-global-cdn.unitree.com/static/R1_development_setup.jpg"
+      ],
+      "officialUrl": "https://www.unitree.com/R1",
+      "description": "Ultra-lightweight, fully customizable humanoid robot platform for research and development applications."
+    },
+    {
+      "id": "unitree-g1-comp",
+      "name": "G1-Comp",
+      "brand": "Unitree",
+      "category": "humanoid",
+      "price": {
+        "starting": 20000,
+        "currency": "USD",
+        "models": [
+          {
+            "name": "Competition",
+            "price": "request"
+          }
+        ]
+      },
+      "specifications": {
+        "dimensions": "1320x450x200mm (standing), 690x450x300mm (folded)",
+        "weight": "About 35kg",
+        "totalDOF": "45",
+        "sprintingSpeed": "3.3m/s",
+        "kneeTorque": "120N.m",
+        "computing": "NVIDIA Jetson Orin NX (157 TOPS AI compute)",
+        "battery": "13-string lithium battery, 9000mAh, ~2 hours runtime",
+        "connectivity": [
+          "WiFi 6",
+          "Bluetooth 5.2"
+        ],
+        "sensors": [
+          "Depth Camera",
+          "3D LiDAR",
+          "4-mic array",
+          "5W speaker"
+        ]
+      },
+      "features": [
+        "Athletic competition specialization",
+        "Enhanced DOF for complex movements",
+        "High-speed sprinting capabilities",
+        "Advanced AI processing for sports",
+        "Motion-capture integration",
+        "Professional athletic performance"
+      ],
+      "images": [
+        "/images/robots/humanoid/g1-comp-1.jpg",
+        "/images/robots/humanoid/g1-comp-2.png"
+      ],
+      "officialUrl": "https://www.unitree.com/g1",
+      "description": "Competition-specialized variant of G1 humanoid robot designed for athletic performance and RoboCup competitions."
+    },
+    {
+      "id": "unitree-g1-boxing",
+      "name": "G1-Boxing",
+      "brand": "Unitree",
+      "category": "humanoid",
+      "price": {
+        "starting": 18000,
+        "currency": "USD",
+        "models": [
+          {
+            "name": "Boxing",
+            "price": "request"
+          }
+        ]
+      },
+      "specifications": {
+        "dimensions": "1320x450x200mm (standing), 690x450x300mm (folded)",
+        "weight": "About 35kg",
+        "totalDOF": "43",
+        "specialization": "Combat sports and martial arts",
+        "computing": "8-core high-performance CPU",
+        "battery": "13-string lithium battery, 9000mAh, ~2 hours runtime",
+        "controlMethods": [
+          "Motion-sensing",
+          "Controller",
+          "Voice commands"
+        ],
+        "connectivity": [
+          "WiFi 6",
+          "Bluetooth 5.2"
+        ],
+        "sensors": [
+          "Depth Camera",
+          "3D LiDAR",
+          "4-mic array",
+          "5W speaker"
+        ]
+      },
+      "features": [
+        "Professional boxing capabilities",
+        "Motion-capture training system integration",
+        "Advanced balance and agility systems",
+        "Combat sports specialization",
+        "Punches, hooks, and kicks execution",
+        "Martial arts movement patterns"
+      ],
+      "images": [
+        "/images/robots/humanoid/g1-boxing-1.png"
+      ],
+      "officialUrl": "https://www.unitree.com/g1",
+      "description": "Boxing-specialized variant of G1 humanoid robot designed for combat sports and martial arts applications."
+    }
+  ],
+  "metadata": {
+    "totalRobots": 12,
+    "categories": [
+      "quadruped",
+      "humanoid"
+    ],
+    "lastUpdated": "2025-09-25T04:47:42.324Z"
+  }
+}

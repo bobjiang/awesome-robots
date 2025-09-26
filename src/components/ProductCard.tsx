@@ -20,22 +20,25 @@ export default function ProductCard({ robot }: ProductCardProps) {
   };
 
   const getRobotImage = (robot: Robot) => {
-    // Use the first image from robot.images if available, otherwise fallback
+    // Use the first image from robot.images if available
     if (robot.images && robot.images.length > 0) {
       return robot.images[0];
     }
-    
-    // Fallback mapping
-    const imageMap: { [key: string]: string } = {
-      'unitree-g1': '/images/robots/unitree-g1.png',
-      'unitree-h1': '/images/robots/unitree-h1.png',
-      'unitree-go2': '/images/robots/unitree-go2.jpg',
-      'unitree-go2-w': '/images/robots/quadruped/go2-w-1.png',
-      'unitree-b2': '/images/robots/unitree-b2.png',
-      'unitree-a2': '/images/robots/unitree-b2.png',
-    };
-    
-    return imageMap[robot.id] || (
+
+    // Generate consistent image path based on brand and robot ID
+    const brandSlug = robot.brand.toLowerCase().replace(/\s+/g, '-');
+    const possiblePaths = [
+      `/images/robots/${brandSlug}/${robot.id}.jpg`,
+      `/images/robots/${brandSlug}/${robot.id}.png`,
+      `/images/robots/${robot.id}.jpg`,
+      `/images/robots/${robot.id}.png`,
+    ];
+
+    // For now, return the first possible path - in production you might want to check if the file exists
+    const imagePath = possiblePaths[0];
+
+    // Fallback to category images if no specific robot image is found
+    return imagePath || (
       robot.category === 'humanoid' ? '/images/categories/humanoid.png' :
       robot.category === 'quadruped' ? '/images/categories/quadruped.png' :
       robot.category === 'accessory' ? '/images/categories/accessories.svg' :

@@ -1,0 +1,325 @@
+{
+  "brand": {
+    "id": "galaxea-ai",
+    "name": "Galaxea AI",
+    "description": "Beijing-based embodied intelligence company founded in 2023, focused on embodied intelligence basic models and embodied intelligent robot research and development. Vision to deploy 10 billion AI robots serving the global population with advanced teleoperation and multi-dimensional perception capabilities.",
+    "website": "https://galaxea-ai.com/",
+    "logo": "/images/brands/galaxea-ai-logo.svg"
+  },
+  "robots": [
+    {
+      "id": "galaxea-r1-pro",
+      "name": "R1 Pro",
+      "brand": "Galaxea AI",
+      "category": "humanoid",
+      "price": {
+        "starting": "request",
+        "currency": "USD",
+        "models": [
+          {
+            "name": "Standard",
+            "price": "request"
+          }
+        ]
+      },
+      "generalInfo": {
+        "manufacturer": "Galaxea AI",
+        "modelName": "R1 Pro",
+        "dimensions": {
+          "standing": "1700mm x 675mm",
+          "folded": "Compact configuration",
+          "weight": "Contact for specifications"
+        }
+      },
+      "keyFeatures": [
+        "26 total degrees of freedom",
+        "Dual 7-axis anthropomorphic arms",
+        "4 DOF torso for lifting/tilting/rotating",
+        "6 DOF vector chassis for 360° movement",
+        "Maximum payload: 10 kg (dual arms)",
+        "62 cm arm length with 0-2m vertical workspace",
+        "VR teleoperation capability",
+        "Voice interaction system",
+        "Multi-dimensional perception",
+        "7 high-definition cameras + 1 laser radar"
+      ],
+      "hardwareBuildQuality": {
+        "totalDegreesOfFreedom": "26 (dual 7-axis arms + 4 torso + 6 chassis)",
+        "payloadCapacity": "10 kg maximum (dual arms)",
+        "batteryCapacityRuntime": "Contact for specifications",
+        "charger": "Standard charging system",
+        "sensorsIncluded": [
+          "7 high-definition cameras",
+          "1 laser radar (LiDAR)",
+          "Optional force sensors",
+          "Optional chest camera"
+        ],
+        "interfaces": [
+          "NVIDIA Jetson AGX Orin 32GB",
+          "8-core CPU @ 2.2 GHz",
+          "VR teleoperation interface"
+        ]
+      },
+      "softwareEcosystem": {
+        "rosSupport": "Embodied intelligence framework",
+        "sdkLanguages": [
+          "Python",
+          "C++"
+        ],
+        "openSourceRepos": "No",
+        "aiFrameworksSupported": [
+          "Embodied intelligence models",
+          "VR teleoperation",
+          "Multi-dimensional perception AI"
+        ],
+        "apiDocumentationQuality": "Professional documentation"
+      },
+      "supplierReliability": {
+        "warranty": {
+          "duration": "Standard warranty",
+          "coverage": "Full system coverage"
+        },
+        "postSalesSupport": "Professional technical support",
+        "trackRecord": "New company founded by world-class embodied intelligence scientists"
+      },
+      "specifications": {
+        "height": "1700mm",
+        "width": "675mm",
+        "armLength": "62 cm",
+        "verticalWorkspace": "0-2m",
+        "computePower": "200 TOPS",
+        "processor": "NVIDIA Jetson AGX Orin 32GB",
+        "cpu": "8-core @ 2.2 GHz"
+      },
+      "features": [
+        "Dual anthropomorphic arms with human-like flexibility",
+        "360° omnidirectional movement capability",
+        "VR-based teleoperation system",
+        "Advanced multi-sensor perception",
+        "Voice interaction capabilities",
+        "Can reach from ground to 2m height",
+        "Professional-grade compute platform"
+      ],
+      "images": [
+        "/images/robots/galaxea-r1-pro.png"
+      ],
+      "highResPhotos": [
+        "/images/robots/galaxea-r1-pro.png"
+      ],
+      "officialUrl": "https://galaxea-ai.com/cn/products/R1-Pro",
+      "description": "R1 Pro is Galaxea AI's advanced embodied intelligence robot featuring dual 7-axis anthropomorphic arms, 360° mobility, and VR teleoperation capabilities. With 26 DOF and advanced perception systems, it represents cutting-edge embodied AI technology for research and commercial applications."
+    },
+    {
+      "id": "galaxea-r1",
+      "name": "R1",
+      "brand": "Galaxea AI",
+      "category": "humanoid",
+      "price": {
+        "starting": "request",
+        "currency": "USD",
+        "models": [
+          {
+            "name": "Standard",
+            "price": "request"
+          }
+        ]
+      },
+      "generalInfo": {
+        "manufacturer": "Galaxea AI",
+        "modelName": "R1",
+        "dimensions": {
+          "standing": "1700mm x 675mm",
+          "folded": "Compact configuration",
+          "weight": "Contact for specifications"
+        }
+      },
+      "keyFeatures": [
+        "24 total degrees of freedom",
+        "6 DOF per arm for precise manipulation",
+        "6 DOF chassis for omnidirectional movement",
+        "4 DOF torso for enhanced flexibility",
+        "Maximum payload: 10 kg (dual arms)",
+        "1.5 m/s chassis movement speed",
+        "200MP stereo cameras + 5x surrounding cameras",
+        "Optional 360° LIDAR",
+        "Remote teleoperation with force mapping",
+        "Extreme aesthetics design philosophy"
+      ],
+      "hardwareBuildQuality": {
+        "totalDegreesOfFreedom": "24 (6 per arm + 6 chassis + 4 torso)",
+        "payloadCapacity": "10 kg maximum (dual arms)",
+        "batteryCapacityRuntime": "Contact for specifications",
+        "charger": "Standard charging system",
+        "sensorsIncluded": [
+          "200MP stereo cameras",
+          "5x 200MP surrounding cameras",
+          "360° LIDAR (optional)",
+          "Integrated force feedback sensors"
+        ],
+        "interfaces": [
+          "NVIDIA Jetson AGX Orin 32GB",
+          "8-core CPU @ 2.2 GHz",
+          "Teleoperation interface"
+        ]
+      },
+      "softwareEcosystem": {
+        "rosSupport": "Embodied intelligence framework",
+        "sdkLanguages": [
+          "Python",
+          "C++"
+        ],
+        "openSourceRepos": "No",
+        "aiFrameworksSupported": [
+          "Embodied intelligence models",
+          "Remote teleoperation AI",
+          "Force mapping algorithms"
+        ],
+        "apiDocumentationQuality": "Professional documentation"
+      },
+      "supplierReliability": {
+        "warranty": {
+          "duration": "Standard warranty",
+          "coverage": "Full system coverage"
+        },
+        "postSalesSupport": "Professional technical support",
+        "trackRecord": "Advanced embodied AI research platform"
+      },
+      "specifications": {
+        "height": "1700mm",
+        "width": "675mm",
+        "verticalWorkspace": "0-2m",
+        "movementSpeed": "1.5 m/s",
+        "computePower": "200 TOPS",
+        "processor": "NVIDIA Jetson AGX Orin 32GB",
+        "cpu": "8-core @ 2.2 GHz"
+      },
+      "features": [
+        "Modular design with multiple configurations",
+        "Extreme aesthetic design philosophy",
+        "Remote teleoperation with full-body force mapping",
+        "High-resolution multi-camera system",
+        "Optional 360° LIDAR integration",
+        "Professional compute platform",
+        "Redefining robot era aesthetics"
+      ],
+      "images": [
+        "/images/robots/galaxea-r1.png"
+      ],
+      "highResPhotos": [
+        "/images/robots/galaxea-r1.png"
+      ],
+      "officialUrl": "https://galaxea-ai.com/cn/products/R1",
+      "description": "R1 is Galaxea AI's flagship embodied intelligence robot combining extreme aesthetics with advanced functionality. Featuring 24 DOF, high-resolution multi-camera systems, and remote teleoperation with force mapping, it redefines the robot era with its sophisticated design and capabilities."
+    },
+    {
+      "id": "galaxea-r1-lite",
+      "name": "R1 Lite",
+      "brand": "Galaxea AI",
+      "category": "humanoid",
+      "price": {
+        "starting": "request",
+        "currency": "USD",
+        "models": [
+          {
+            "name": "Standard",
+            "price": "request"
+          }
+        ]
+      },
+      "generalInfo": {
+        "manufacturer": "Galaxea AI",
+        "modelName": "R1 Lite",
+        "dimensions": {
+          "standing": "1280mm x 670mm platform",
+          "folded": "600mm base width",
+          "weight": "Contact for specifications"
+        }
+      },
+      "keyFeatures": [
+        "23 total degrees of freedom",
+        "6 DOF per arm with 600mm arm length",
+        "3 DOF torso for enhanced flexibility",
+        "6 DOF chassis for omnidirectional movement",
+        "Rated payload: 3 kg @ 600mm, Max: 5 kg",
+        "1.5 m/s chassis movement speed",
+        "0-1.7m vertical work space",
+        "Data collection support",
+        "Generalized task application",
+        "Accelerates model deployment"
+      ],
+      "hardwareBuildQuality": {
+        "totalDegreesOfFreedom": "23 (6 per arm + 3 torso + 6 chassis)",
+        "payloadCapacity": "3 kg rated / 5 kg maximum @ 600mm",
+        "batteryCapacityRuntime": "Contact for specifications",
+        "charger": "Standard charging system",
+        "sensorsIncluded": [
+          "High-resolution platform stereo camera",
+          "2x Wrist-mounted monocular depth cameras (optional)"
+        ],
+        "interfaces": [
+          "Intel Core i9-12900HK",
+          "32GB RAM",
+          "1TB SSD storage"
+        ]
+      },
+      "softwareEcosystem": {
+        "rosSupport": "Research and development framework",
+        "sdkLanguages": [
+          "Python",
+          "C++"
+        ],
+        "openSourceRepos": "No",
+        "aiFrameworksSupported": [
+          "Data collection AI",
+          "Generalized task models",
+          "Deployment acceleration frameworks"
+        ],
+        "apiDocumentationQuality": "Research documentation"
+      },
+      "supplierReliability": {
+        "warranty": {
+          "duration": "Standard warranty",
+          "coverage": "Full system coverage"
+        },
+        "postSalesSupport": "Research and development support",
+        "trackRecord": "Optimized for research and task deployment"
+      },
+      "specifications": {
+        "height": "1280mm",
+        "baseWidth": "600mm",
+        "platformWidth": "670mm",
+        "armLength": "600mm",
+        "verticalWorkspace": "0-1.7m",
+        "movementSpeed": "1.5 m/s",
+        "processor": "Intel Core i9-12900HK",
+        "cpu": "14 cores @ 2.5 GHz max",
+        "ram": "32GB",
+        "storage": "1TB SSD"
+      },
+      "features": [
+        "Stable and efficient top-mounted design",
+        "360° omnidirectional movement",
+        "Strong operational capabilities",
+        "Data collection optimization",
+        "Generalized task deployment",
+        "Research-focused platform",
+        "High-performance compute system"
+      ],
+      "images": [
+        "/images/robots/galaxea-r1-lite.png"
+      ],
+      "highResPhotos": [
+        "/images/robots/galaxea-r1-lite.png"
+      ],
+      "officialUrl": "https://galaxea-ai.com/cn/products/R1-Lite",
+      "description": "R1 Lite is Galaxea AI's research-optimized embodied intelligence robot platform. With 23 DOF, efficient top-mounted design, and strong data collection capabilities, it accelerates model deployment and supports generalized task applications for research institutions."
+    }
+  ],
+  "metadata": {
+    "totalRobots": 3,
+    "categories": [
+      "humanoid"
+    ],
+    "lastUpdated": "2025-09-25T04:47:42.327Z"
+  }
+}

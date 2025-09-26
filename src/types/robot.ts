@@ -1,4 +1,5 @@
-export interface Robot {
+// Base robot interface with common properties
+export interface BaseRobot {
   id: string;
   name: string;
   brand: string;
@@ -11,6 +12,52 @@ export interface Robot {
       price: number | 'request';
     }>;
   };
+  specifications: Record<string, unknown>;
+  features: string[];
+  images: string[];
+  videos?: string[];
+  documentation?: string[];
+  officialUrl: string;
+  description: string;
+  // Extended properties for RobotDetailTemplate
+  generalInfo?: {
+    manufacturer: string;
+    modelName: string;
+    dimensions: {
+      standing: string;
+      folded: string;
+      weight: string;
+    };
+  };
+  keyFeatures?: string[];
+  hardwareBuildQuality?: {
+    totalDegreesOfFreedom: string;
+    payloadCapacity: string;
+    batteryCapacityRuntime: string;
+    charger: string;
+    sensorsIncluded: string[];
+    interfaces: string[];
+  };
+  softwareEcosystem?: {
+    rosSupport: string;
+    sdkLanguages: string[];
+    openSourceRepos: string;
+    aiFrameworksSupported: string[];
+    apiDocumentationQuality: string;
+  };
+  supplierReliability?: {
+    warranty: {
+      duration: string;
+      coverage: string;
+    };
+    postSalesSupport: string;
+    trackRecord: string;
+  };
+  highResPhotos?: string[];
+}
+
+// Legacy Robot interface for backward compatibility
+export interface Robot extends BaseRobot {
   specifications: {
     dimensions?: string;
     weight?: string;
@@ -96,7 +143,7 @@ export interface Robot {
       A2?: string;
       A2_PRO?: string;
     };
-    // B2 specific fields  
+    // B2 specific fields
     maxRunningSpeed?: string;
     longestJumpDistance?: string;
     standingLoad?: string;
@@ -195,47 +242,6 @@ export interface Robot {
       H1_2?: string;
     };
   };
-  features: string[];
-  images: string[];
-  videos?: string[];
-  documentation?: string[];
-  officialUrl: string;
-  description: string;
-  // Extended properties for RobotDetailTemplate
-  generalInfo?: {
-    manufacturer: string;
-    modelName: string;
-    dimensions: {
-      standing: string;
-      folded: string;
-      weight: string;
-    };
-  };
-  keyFeatures?: string[];
-  hardwareBuildQuality?: {
-    totalDegreesOfFreedom: string;
-    payloadCapacity: string;
-    batteryCapacityRuntime: string;
-    charger: string;
-    sensorsIncluded: string[];
-    interfaces: string[];
-  };
-  softwareEcosystem?: {
-    rosSupport: string;
-    sdkLanguages: string[];
-    openSourceRepos: string;
-    aiFrameworksSupported: string[];
-    apiDocumentationQuality: string;
-  };
-  supplierReliability?: {
-    warranty: {
-      duration: string;
-      coverage: string;
-    };
-    postSalesSupport: string;
-    trackRecord: string;
-  };
-  highResPhotos?: string[];
 }
 
 export interface Category {
@@ -251,6 +257,17 @@ export interface Brand {
   description: string;
   website: string;
   logo: string;
+}
+
+export interface BrandConfig extends Brand {
+  imagePatterns: {
+    hostname: string;
+    pathname: string;
+    protocol?: string;
+    port?: string;
+  }[];
+  imageBasePath: string; // Base path for local images
+  specificationSchema?: Record<string, unknown>; // Brand-specific spec validation
 }
 
 export interface FilterOptions {
