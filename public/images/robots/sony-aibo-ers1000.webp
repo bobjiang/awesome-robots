@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html class="ai ai-en" lang="en">
+<head>
+<!-- us.aibo.com OneTrust Cookie -->
+<script type="text/javascript" src="https://cdn.cookielaw.org/consent/d2cfd70d-648b-41f2-b41d-4e223ead9e66/OtAutoBlock.js" ></script>
+<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="d2cfd70d-648b-41f2-b41d-4e223ead9e66" ></script>
+<script type="text/javascript">
+function OptanonWrapper() { }
+</script>
+<!-- /us.aibo.com OneTrust Cookie -->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>aibo - Page not found</title>
+
+<meta name="description" content="aibo official website">
+<meta name="keywords" content="aibo,ROBOT,ENTERTAINMENT,PET,AI,ERS-1000">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:title" content="aibo">
+<meta property="og:type" content="website">  <meta property="og:url" content="https://us.aibo.com/">
+<meta property="og:image" content="https://us.aibo.com/share/images/ogp-1.png">
+<meta property="og:site_name" content="aibo">
+<meta property="og:description" content="aibo official website">
+
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/share/images/favicon.ico">
+<link rel="icon" type="image/vnd.microsoft.icon" href="/share/images/favicon.ico">
+
+<link rel="stylesheet" href="/share/css/index.css">
+<link rel="stylesheet" href="/notfound/css/index.css" />
+
+<script src="/share/js/pollyfill.min.js"></script>
+<script src="/share/js/bundle.js"></script>
+<script src="/share/js/index.js"></script>
+
+<script type='text/javascript'>
+
+var aibo_pagename = document.title;
+var aibo_template = 'usa:' + document.title;
+
+//Data Layer 
+if (typeof window.SonyAnalytics === 'undefined') { 
+window.SonyAnalytics = function() { 
+this.build = function() { 
+var dataLayer = {}; 
+dataLayer.analytics = {};
+dataLayer.analytics.page = {}; 
+dataLayer.analytics.page.brand = 'US'; 
+dataLayer.analytics.page.country = 'US'; 
+dataLayer.analytics.page.language = 'en'; 
+dataLayer.analytics.page.name = aibo_pagename; 
+dataLayer.analytics.page.omniture_rsid = 'sonygwt-us-prod';
+dataLayer.analytics.page.section = 'usa'; 
+dataLayer.analytics.page.template = aibo_template; 
+dataLayer.analytics.page.template_revision = aibo_template;
+
+return dataLayer; 
+}; 
+}; 
+} 
+</script> 
+
+
+
+
+<!--Please do not remove -->
+<!--Socaial-->
+<script>
+!function(f,b,e,v,n,t,s) {if(f.fbq)return;n=f.fbq=function(){n.callMethod? n.callMethod.apply(n,arguments):n.queue.push(arguments)}; if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0'; n.queue=[];t=b.createElement(e);t.async=!0; t.src=v;s=b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s)}(window, document,'script', 'https://connect.facebook.net/en_US/fbevents.js'); fbq('init', '1711958722440749'); fbq('track', 'PageView');
+
+!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments); },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js', a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script'); // Insert Twitter Pixel ID and Standard Event data below
+twq('init','nxvis'); twq('track','PageView');
+
+</script>
+<!--/Socaial-->
+<!--/Please do not remove-->
+
+<script data-ot-ignore src="https://tags.tiqcdn.com/utag/sony-marketing/sna/prod/utag.sync.js"></script>
+<script type="text/javascript"> var utag_data = { website_platform : "regional:marketing" };</script>
+
+</head>
+<body class="ai-Body">
+
+  <script type="text/javascript">(function (a, b, c, d) { a = 'https://tags.tiqcdn.com/utag/sony-marketing/sna/prod/utag.js'; b = document; c = 'script'; d = b.createElement(c); d.src = a; d.type = 'text/java' + c; d.async = true;
+ d.setAttribute('class','optanon-category-C0001');
+ a = b.getElementsByTagName(c)[0]; a.parentNode.insertBefore(d, a); })();</script>
+
+<!-- header -->  <script
+    id="js-sw-Header-include"
+    src="/share/js/header.js"
+    data-lang="en"
+    data-auto-initialize="true"
+  ></script>
+<noscript><h1>aibo official website</h1></noscript> <!-- header end -->
+
+<div class="l-content support">
+  <div class="l-box padding-section">
+    <h2>Page Not Found</h2>
+    <div class="text-center spacing-m"><span class="text-em">Sorry. We can't find the page you were looking for. </span></div>
+    <div class="text-center spacing-m"> <a href="/"  class="button primary">Back to Top</a> </div>
+  </div>
+</div>
+
+<!-- footer --> 
+<script
+      id="js-sw-Footer-include"
+      src="/share/js/footer.js"
+      data-lang="en"
+      data-auto-initialize="true"
+    ></script> 
+<!-- footer end -->
+
+
+<!--Please do not remove-->
+
+<!-- BEGIN Salesforce DMP ControlTag for "Aibo.sony" -->
+<script class="kxct" data-id="s53c0uuy8" data-timing="async" data-version="3.0" type="text/javascript">
+  window.Krux||((Krux=function(){Krux.q.push(arguments)}).q=[]);
+  (function(){
+    var k=document.createElement('script');k.type='text/javascript';k.async=true;
+    k.src=(location.protocol==='https:'?'https:':'http:')+'//cdn.krxd.net/controltag/s53c0uuy8.js';
+    var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(k,s);
+  }());
+</script>
+<!-- END Salesforce DMP ControlTag -->
+
+<!-- BEGIN Salesforce DMP ControlTag for "Aibo.com" -->
+<script class="kxct" data-id="s8ajjuw69" data-timing="async" data-version="3.0" type="text/javascript">
+  window.Krux||((Krux=function(){Krux.q.push(arguments)}).q=[]);
+  (function(){
+    var k=document.createElement('script');k.type='text/javascript';k.async=true;
+    k.src=(location.protocol==='https:'?'https:':'http:')+'//cdn.krxd.net/controltag/s8ajjuw69.js';
+    var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(k,s);
+  }());
+</script>
+<!-- END Salesforce DMP ControlTag -->
+
+<!--Start of Floodlight Tag: Please do not remove
+Activity name of this tag: Aibo - Main Destination Floodlight
+URL of the webpage where the tag is expected to be placed: http://us.aibo.com
+This tag must be placed between the <body> and <img src='https://beacon.krxd.net/event.gif?event_id=ML-M0Xds&event_type=clk' width=0 height=0 />
+
+</body> tags, as close as possible to the opening tag.
+Creation Date: 08/16/2018
+-->
+
+
+<!-- End of Floodlight Tag: Please do not remove -->
+
+
+
+<!--DMP CTA-->
+<img src='https://beacon.krxd.net/event.gif?event_id=ML-M0Xds&event_type=clk' width=0 height=0 style="display:none" />
+<!--/DMP CTA-->
+
+<!--/Please do not remove-->
+
+</body>
+</html>
