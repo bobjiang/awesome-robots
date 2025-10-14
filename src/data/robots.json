@@ -2614,7 +2614,7 @@
       "modelName": "Spot",
       "dimensions": {
         "length": "110cm",
-        "width": "50cm", 
+        "width": "50cm",
         "weight": "32.7kg"
       }
     },
@@ -2635,7 +2635,7 @@
       "charger": "60 minutes recharge time",
       "sensorsIncluded": [
         "360° cameras",
-        "Depth sensors", 
+        "Depth sensors",
         "IMU (Inertial Measurement Unit)",
         "Proprioceptive sensors"
       ],
@@ -2721,7 +2721,7 @@
     },
     "keyFeatures": [
       "Fully electric design",
-      "Lightweight titanium and aluminum construction", 
+      "Lightweight titanium and aluminum construction",
       "3D printed parts",
       "Advanced control algorithms",
       "Whole-body movement control",
@@ -2736,7 +2736,7 @@
       "charger": "Custom charging system",
       "sensorsIncluded": [
         "Advanced perception systems",
-        "Force/torque sensors", 
+        "Force/torque sensors",
         "Visual perception",
         "Inertial measurement units"
       ],
@@ -2778,7 +2778,7 @@
     },
     "features": [
       "Whole-body control",
-      "Dynamic manipulation", 
+      "Dynamic manipulation",
       "Athletic movement",
       "Advanced perception",
       "Research platform",
@@ -2793,7 +2793,7 @@
   {
     "id": "anybotics-anymal",
     "name": "ANYmal",
-    "brand": "ANYbotics", 
+    "brand": "ANYbotics",
     "category": "quadruped",
     "price": {
       "starting": "request",
@@ -2879,7 +2879,7 @@
     },
     "features": [
       "Autonomous inspection",
-      "Environmental durability", 
+      "Environmental durability",
       "Modular design",
       "Multi-sensor platform",
       "Industrial reliability",
@@ -3036,7 +3036,7 @@
       "charger": "Fast charging system with intelligent battery management",
       "sensorsIncluded": [
         "Ultrasonic radar",
-        "Laser radar (LiDAR)", 
+        "Laser radar (LiDAR)",
         "RGBD camera",
         "Visual-tactile sensors",
         "IMU (Inertial Measurement Unit)"
@@ -3051,9 +3051,18 @@
     },
     "softwareEcosystem": {
       "rosSupport": "ROS/ROS2 compatible with full API support",
-      "sdkLanguages": ["Python", "C++", "JavaScript"],
+      "sdkLanguages": [
+        "Python",
+        "C++",
+        "JavaScript"
+      ],
       "openSourceRepos": "https://github.com/unix-group-ai",
-      "aiFrameworksSupported": ["TensorFlow", "PyTorch", "OpenCV", "Unitouch AI Model"],
+      "aiFrameworksSupported": [
+        "TensorFlow",
+        "PyTorch",
+        "OpenCV",
+        "Unitouch AI Model"
+      ],
       "apiDocumentationQuality": "Comprehensive documentation with examples and tutorials"
     },
     "supplierReliability": {
@@ -3144,9 +3153,18 @@
     },
     "softwareEcosystem": {
       "rosSupport": "Full ROS/ROS2 support with comprehensive API",
-      "sdkLanguages": ["Python", "C++", "JavaScript"],
+      "sdkLanguages": [
+        "Python",
+        "C++",
+        "JavaScript"
+      ],
       "openSourceRepos": "https://github.com/unix-group-ai",
-      "aiFrameworksSupported": ["TensorFlow", "PyTorch", "OpenCV", "Embodied AI frameworks"],
+      "aiFrameworksSupported": [
+        "TensorFlow",
+        "PyTorch",
+        "OpenCV",
+        "Embodied AI frameworks"
+      ],
       "apiDocumentationQuality": "High/low layer API interfaces with comprehensive documentation"
     },
     "supplierReliability": {
@@ -3230,14 +3248,30 @@
       "payloadCapacity": "Object manipulation with adaptive five-finger hands",
       "batteryCapacityRuntime": "2 hours continuous operation",
       "charger": "48V power system (multiple motor voltages: 48V, 12V)",
-      "sensorsIncluded": ["Camera", "Three-axis force-torque sensor", "Two-axis inertial sensor", "Two-axis tilt sensor"],
-      "interfaces": ["Ethernet", "USB", "Real-time control interfaces"]
+      "sensorsIncluded": [
+        "Camera",
+        "Three-axis force-torque sensor",
+        "Two-axis inertial sensor",
+        "Two-axis tilt sensor"
+      ],
+      "interfaces": [
+        "Ethernet",
+        "USB",
+        "Real-time control interfaces"
+      ]
     },
     "softwareEcosystem": {
       "rosSupport": "ROS interface development in progress, simple joint control available",
-      "sdkLanguages": ["C++", "Rainbow API", "Linux/Xenomai"],
+      "sdkLanguages": [
+        "C++",
+        "Rainbow API",
+        "Linux/Xenomai"
+      ],
       "openSourceRepos": "https://github.com/RainbowRobotics",
-      "aiFrameworksSupported": ["Custom Rainbow API", "Real-time frameworks"],
+      "aiFrameworksSupported": [
+        "Custom Rainbow API",
+        "Real-time frameworks"
+      ],
       "apiDocumentationQuality": "Rainbow API with Xenomai real-time framework support"
     },
     "supplierReliability": {
@@ -3319,14 +3353,28 @@
       "payloadCapacity": "Custom payload support",
       "batteryCapacityRuntime": "Contact for specifications",
       "charger": "Contact for specifications",
-      "sensorsIncluded": ["Cameras", "LiDAR", "Wireless connectivity", "Custom sensor integration support"],
-      "interfaces": ["Wireless connectivity", "Custom payload interfaces", "SDK integration"]
+      "sensorsIncluded": [
+        "Cameras",
+        "LiDAR",
+        "Wireless connectivity",
+        "Custom sensor integration support"
+      ],
+      "interfaces": [
+        "Wireless connectivity",
+        "Custom payload interfaces",
+        "SDK integration"
+      ]
     },
     "softwareEcosystem": {
       "rosSupport": "ROS support available through Rainbow Robotics SDK",
-      "sdkLanguages": ["Contact for SDK details"],
+      "sdkLanguages": [
+        "Contact for SDK details"
+      ],
       "openSourceRepos": "https://github.com/RainbowRobotics",
-      "aiFrameworksSupported": ["AI-enabled navigation", "Autonomous mission planning"],
+      "aiFrameworksSupported": [
+        "AI-enabled navigation",
+        "Autonomous mission planning"
+      ],
       "apiDocumentationQuality": "Comprehensive SDK documentation available"
     },
     "supplierReliability": {
@@ -3339,7 +3387,7 @@
     },
     "specifications": {
       "dimensions": "Contact for specifications",
-      "weight": "Contact for specifications", 
+      "weight": "Contact for specifications",
       "dof": "Contact for specifications",
       "maxSpeed": "Contact for specifications",
       "payload": "Custom payload support",
@@ -4037,5 +4085,1292 @@
     ],
     "officialUrl": "https://www.boosterobotics.com/booster-k1/",
     "description": "K1 is Booster Robotics' Brazil RoboCup Champion humanoid robot. Designed to be safe, reliable, and education-empowering, it features a compact size with powerful computing capabilities, making it ideal for competitive robotics and educational applications."
+  },
+  {
+    "id": "tesla-optimus-gen3",
+    "name": "Optimus Gen 3",
+    "brand": "Tesla",
+    "category": "humanoid",
+    "price": {
+      "starting": 20000,
+      "currency": "USD",
+      "models": [
+        {
+          "name": "Standard",
+          "price": "request"
+        }
+      ]
+    },
+    "generalInfo": {
+      "manufacturer": "Tesla",
+      "modelName": "Optimus Gen 3",
+      "dimensions": {
+        "standing": "173 cm (5 ft 8 in)",
+        "folded": "N/A",
+        "weight": "57 kg"
+      }
+    },
+    "keyFeatures": [
+      "28 structural actuators granting human-like movement",
+      "22 degrees of freedom per hand with five fingers",
+      "Tesla on-board AI brain based on Autopilot hardware",
+      "Walking gait learned via reinforcement learning",
+      "4680 battery cells from Tesla's energy division",
+      "Designed for factory automation tasks",
+      "Target price of $20,000 per unit",
+      "Planned deployment of 5,000 units in Tesla factories (2025)"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "28 structural actuators + 22 DoF per hand",
+      "payloadCapacity": "Approximately 20 kg",
+      "batteryCapacityRuntime": "2.3 kWh battery, 10-12 hours per charge",
+      "charger": "Standard charging system",
+      "sensorsIncluded": [
+        "Eight autopilot cameras for visual perception",
+        "Tactile sensors on fingertips",
+        "Foot force/torque sensors for balance",
+        "Ultrasonic and proximity sensors"
+      ],
+      "interfaces": [
+        "Tesla Autopilot hardware integration",
+        "AI control system"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Custom Tesla software stack (not ROS-based)",
+      "sdkLanguages": [
+        "Proprietary Tesla development environment"
+      ],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [
+        "Tesla proprietary AI framework",
+        "Reinforcement learning"
+      ],
+      "apiDocumentationQuality": "Not publicly available (internal only)"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "TBD (2026 commercial release)",
+        "coverage": "Standard Tesla warranty terms (to be announced)"
+      },
+      "postSalesSupport": "Tesla service network (expanding for robotics)",
+      "trackRecord": "Tesla's proven track record in automotive AI and manufacturing at scale with deep expertise in battery technology, AI, and mass production."
+    },
+    "specifications": {
+      "height": "173 cm",
+      "weight": "57 kg",
+      "dof": 50,
+      "payload": "20 kg",
+      "walkingSpeed": "10-12 km/h",
+      "battery": "2.3 kWh, 10-12 hours runtime"
+    },
+    "features": [
+      "Human-like movement",
+      "Advanced hand dexterity",
+      "AI-powered navigation",
+      "Factory automation",
+      "Long battery life",
+      "Tesla Autopilot integration"
+    ],
+    "images": [
+      "/images/robots/tesla-optimus-gen3.webp"
+    ],
+    "highResPhotos": [
+      "/images/robots/tesla-optimus-gen3.webp"
+    ],
+    "officialUrl": "https://www.tesla.com/optimus",
+    "description": "Tesla Optimus Gen 3 is a general-purpose humanoid robot designed for factory automation and repetitive tasks. Featuring 28 structural actuators and 22-DoF hands, it uses Tesla's Autopilot AI technology for autonomous navigation and manipulation. With a 2.3 kWh battery providing 10-12 hours of runtime, Optimus is planned for large-scale deployment in Tesla factories starting in 2025, with a target price of $20,000."
+  },
+  {
+    "id": "figure-02",
+    "name": "Figure 02",
+    "brand": "Figure AI",
+    "category": "humanoid",
+    "price": {
+      "starting": 0,
+      "currency": "USD",
+      "models": [
+        {
+          "name": "Commercial",
+          "price": "request"
+        }
+      ]
+    },
+    "generalInfo": {
+      "manufacturer": "Figure AI",
+      "modelName": "Figure 02",
+      "dimensions": {
+        "standing": "168 cm (5 ft 6 in)",
+        "folded": "N/A",
+        "weight": "70 kg"
+      }
+    },
+    "keyFeatures": [
+      "16 degrees of freedom per hand with human-equivalent strength",
+      "400% faster in manufacturing tasks vs Figure 01",
+      "Successfully deployed at BMW Plant Spartanburg",
+      "Multi-modal interaction and 3D vision",
+      "Force-torque sensors for touch feedback",
+      "Works 10 hours/day, 5 days/week in production",
+      "6 cameras for environmental perception",
+      "Designed for industrial manufacturing"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "16 DoF per hand (total body DoF not specified)",
+      "payloadCapacity": "20 kg (hands carry up to 25 kg)",
+      "batteryCapacityRuntime": "5 hours runtime (50% improvement over Figure 01)",
+      "charger": "Standard charging system",
+      "sensorsIncluded": [
+        "6 cameras for environmental perception",
+        "Force-torque sensors in hands",
+        "Built-in speakers and microphones",
+        "3D vision for object recognition"
+      ],
+      "interfaces": [
+        "Ethernet",
+        "Wireless communication",
+        "Industrial control systems"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Custom software with industry-standard interfaces",
+      "sdkLanguages": [
+        "Python",
+        "C++"
+      ],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [
+        "Proprietary Figure AI",
+        "OpenAI integration"
+      ],
+      "apiDocumentationQuality": "Available to commercial partners"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Commercial warranty (1-2 years typical)",
+        "coverage": "Hardware defects, software updates"
+      },
+      "postSalesSupport": "Dedicated support team for BMW and commercial partners",
+      "trackRecord": "Successfully deployed at BMW Spartanburg plant. $2.6B valuation backed by Jeff Bezos, Microsoft, OpenAI, NVIDIA, and Intel."
+    },
+    "specifications": {
+      "height": "168 cm",
+      "weight": "70 kg",
+      "payload": "20-25 kg",
+      "walkingSpeed": "1.2 m/s",
+      "battery": "5 hours runtime"
+    },
+    "features": [
+      "BMW deployment proven",
+      "400% faster performance",
+      "Industrial manufacturing ready",
+      "Advanced hand dexterity",
+      "Multi-modal AI",
+      "Commercial grade"
+    ],
+    "images": [
+      "/images/robots/figure-02.webp"
+    ],
+    "highResPhotos": [
+      "/images/robots/figure-02.webp"
+    ],
+    "officialUrl": "https://www.figure.ai/",
+    "description": "Figure 02 is a commercial-grade humanoid robot deployed in real BMW manufacturing facilities. With 16-DoF hands and human-equivalent strength, it performs sheet metal fitting and other precision manufacturing tasks. The robot achieved 400% performance improvement over Figure 01 and operates 10 hours/day, 5 days/week at BMW's Spartanburg plant. Backed by leading tech companies with $2.6B valuation."
+  },
+  {
+    "id": "figure-03",
+    "name": "Figure 03",
+    "brand": "Figure AI",
+    "category": "humanoid",
+    "price": {
+      "starting": 0,
+      "currency": "USD",
+      "models": [
+        {
+          "name": "Consumer",
+          "price": "request"
+        }
+      ]
+    },
+    "generalInfo": {
+      "manufacturer": "Figure AI",
+      "modelName": "Figure 03",
+      "dimensions": {
+        "standing": "168 cm (5 ft 6 in)",
+        "folded": "N/A",
+        "weight": "63.7 kg (9% lighter than Figure 02)"
+      }
+    },
+    "keyFeatures": [
+      "Wireless inductive charging capability",
+      "Ultra-sensitive tactile sensors (detect 3 grams)",
+      "60% wider field of view per camera",
+      "2x faster camera frame rates",
+      "Palm-mounted cameras in hands",
+      "Components 90% cheaper to manufacture",
+      "Designed for home and everyday environments",
+      "Near-continuous operation capability"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "Enhanced from Figure 02 (specific DoF not disclosed)",
+      "payloadCapacity": "~20-25 kg (estimated similar to Figure 02)",
+      "batteryCapacityRuntime": "2.3 kWh battery, 5 hours at peak performance",
+      "charger": "2 kW wireless inductive charging",
+      "sensorsIncluded": [
+        "Enhanced cameras (60% wider FOV)",
+        "Ultra-sensitive fingertip sensors (3g threshold)",
+        "Palm-mounted cameras",
+        "Higher frame rate cameras (2x faster)",
+        "Force/torque sensors"
+      ],
+      "interfaces": [
+        "Wireless charging interface",
+        "Standard communication protocols"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Custom software with industry compatibility",
+      "sdkLanguages": [
+        "Python",
+        "C++"
+      ],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [
+        "Proprietary Figure AI with Helix",
+        "OpenAI integration"
+      ],
+      "apiDocumentationQuality": "Available to commercial and research partners"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "TBD for consumer release",
+        "coverage": "Hardware and software support"
+      },
+      "postSalesSupport": "Figure AI support network (expanding for home)",
+      "trackRecord": "Built on proven Figure 02 platform. Production-ready design optimized for manufacturing at scale."
+    },
+    "specifications": {
+      "height": "168 cm",
+      "weight": "63.7 kg",
+      "battery": "2.3 kWh, 5 hours runtime",
+      "charging": "2 kW wireless inductive"
+    },
+    "features": [
+      "Wireless charging",
+      "Ultra-sensitive touch",
+      "Home environment ready",
+      "90% cost reduction",
+      "Enhanced vision",
+      "Continuous operation"
+    ],
+    "images": [
+      "/images/robots/figure-03.webp"
+    ],
+    "highResPhotos": [
+      "/images/robots/figure-03.webp"
+    ],
+    "officialUrl": "https://www.figure.ai/",
+    "description": "Figure 03 is the latest generation humanoid robot designed for everyday home environments. Featuring wireless inductive charging, ultra-sensitive tactile sensors that detect forces as small as 3 grams, and cameras with 60% wider field of view, it represents a significant advancement in home robotics. Components are 90% cheaper to manufacture, enabling broader market accessibility while maintaining the performance proven in Figure 02."
+  },
+  {
+    "id": "agility-digit",
+    "name": "Digit",
+    "brand": "Agility Robotics",
+    "category": "humanoid",
+    "price": {
+      "starting": 250000,
+      "currency": "USD",
+      "models": [
+        {
+          "name": "Standard",
+          "price": 250000
+        }
+      ]
+    },
+    "generalInfo": {
+      "manufacturer": "Agility Robotics",
+      "modelName": "Digit",
+      "dimensions": {
+        "standing": "175 cm (5 ft 9 in)",
+        "folded": "N/A",
+        "weight": "37-42 kg"
+      }
+    },
+    "keyFeatures": [
+      "First dedicated humanoid manufacturing facility (RoboFab)",
+      "10,000 units per year production capacity",
+      "Deployed at Amazon fulfillment centers",
+      "Autonomous docking and charging",
+      "Bipedal walking for human-designed spaces",
+      "4-DoF arms for manipulation",
+      "Lidar and depth cameras for navigation",
+      "Designed for warehouse automation"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "16 total (4-DoF arms, 2-DoF feet)",
+      "payloadCapacity": "16 kg (35 lbs)",
+      "batteryCapacityRuntime": "4-5 hours with autonomous recharging",
+      "charger": "Automatic docking and charging station",
+      "sensorsIncluded": [
+        "Lidar for spatial mapping",
+        "4x Intel RealSense depth cameras",
+        "MEMS IMU",
+        "Stereo and RGB cameras",
+        "Proximity and force sensors",
+        "Joint encoders"
+      ],
+      "interfaces": [
+        "Ethernet",
+        "Wi-Fi",
+        "Warehouse management system integration"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "ROS2-compatible",
+      "sdkLanguages": [
+        "Python",
+        "C++",
+        "ROS"
+      ],
+      "openSourceRepos": "https://github.com/agilityrobotics",
+      "aiFrameworksSupported": [
+        "TensorFlow",
+        "PyTorch",
+        "Custom perception algorithms"
+      ],
+      "apiDocumentationQuality": "Available to commercial partners and research institutions"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Commercial warranty (1-2 years)",
+        "coverage": "Hardware, software updates, maintenance"
+      },
+      "postSalesSupport": "Dedicated support team, RoboFab service center",
+      "trackRecord": "Successfully deployed at Amazon fulfillment centers and GXO Logistics. First humanoid with 10,000 unit/year manufacturing facility."
+    },
+    "specifications": {
+      "height": "175 cm",
+      "weight": "37-42 kg",
+      "dof": 16,
+      "payload": "16 kg",
+      "battery": "4-5 hours runtime"
+    },
+    "features": [
+      "Amazon deployment",
+      "Autonomous charging",
+      "RoboFab manufactured",
+      "Warehouse optimized",
+      "Bipedal navigation",
+      "Commercial grade"
+    ],
+    "images": [
+      "/images/robots/agility-digit.webp"
+    ],
+    "highResPhotos": [
+      "/images/robots/agility-digit.webp"
+    ],
+    "officialUrl": "https://agilityrobotics.com/",
+    "description": "Digit by Agility Robotics is the first mass-manufactured humanoid robot with a dedicated 10,000 unit/year production facility (RoboFab). Deployed at Amazon fulfillment centers for tote recycling and warehouse automation, Digit features bipedal walking, autonomous charging, and a 16 kg payload capacity. With lidar, depth cameras, and ROS2 compatibility, it's designed specifically for logistics and warehouse operations."
+  },
+  {
+    "id": "apptronik-apollo",
+    "name": "Apollo",
+    "brand": "Apptronik",
+    "category": "humanoid",
+    "price": {
+      "starting": 0,
+      "currency": "USD",
+      "models": [
+        {
+          "name": "Commercial",
+          "price": "request"
+        }
+      ]
+    },
+    "generalInfo": {
+      "manufacturer": "Apptronik",
+      "modelName": "Apollo",
+      "dimensions": {
+        "standing": "173 cm (5 ft 8 in)",
+        "folded": "N/A",
+        "weight": "72.6 kg (160 lbs)"
+      }
+    },
+    "keyFeatures": [
+      "Developed from NASA Valkyrie robot heritage",
+      "Hot swappable battery packs",
+      "E Ink expressive display face",
+      "OLED chest display for communication",
+      "Force sensing for safe human proximity",
+      "Testing at Mercedes-Benz facility",
+      "Modular design based on NASA research",
+      "Proprietary linear actuators"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "Not disclosed (proprietary linear actuator system)",
+      "payloadCapacity": "25 kg (55 lbs)",
+      "batteryCapacityRuntime": "4 hours per battery, hot swappable",
+      "charger": "Quick-change battery system",
+      "sensorsIncluded": [
+        "Stereoscopic cameras",
+        "Vision perception systems",
+        "Force sensing throughout body",
+        "Proximity sensors",
+        "Torque sensors in joints"
+      ],
+      "interfaces": [
+        "E Ink facial display",
+        "OLED chest display",
+        "Wireless communication",
+        "Industrial protocols"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "ROS2-compatible",
+      "sdkLanguages": [
+        "Python",
+        "C++",
+        "ROS"
+      ],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [
+        "TensorFlow",
+        "PyTorch",
+        "NVIDIA AI frameworks"
+      ],
+      "apiDocumentationQuality": "Available to commercial partners"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Commercial warranty terms",
+        "coverage": "Hardware, software, battery system"
+      },
+      "postSalesSupport": "Apptronik support team, Mercedes-Benz partnership",
+      "trackRecord": "Built on NASA Valkyrie heritage with 10+ robots developed. Testing at Mercedes-Benz Hungary. Raised $522M with Amazon, Mercedes, Walmart, Jabil partnerships."
+    },
+    "specifications": {
+      "height": "173 cm",
+      "weight": "72.6 kg",
+      "payload": "25 kg",
+      "battery": "4 hours, hot swappable"
+    },
+    "features": [
+      "NASA heritage",
+      "Mercedes-Benz testing",
+      "Hot swap batteries",
+      "E Ink display",
+      "Human safety features",
+      "Modular design"
+    ],
+    "images": [
+      "/images/robots/apptronik-apollo.webp"
+    ],
+    "highResPhotos": [
+      "/images/robots/apptronik-apollo.webp"
+    ],
+    "officialUrl": "https://apptronik.com/",
+    "description": "Apollo by Apptronik is a modular humanoid robot built on NASA Valkyrie heritage, designed for automotive manufacturing and logistics. Featuring hot swappable 4-hour battery packs, E Ink expressive display, and advanced force sensing for safe human collaboration, Apollo is currently being tested at Mercedes-Benz facilities in Hungary. With $522M in funding and partnerships with Amazon, Mercedes-Benz, Walmart, and Jabil, Apollo represents the next generation of industrial humanoids."
+  },
+  {
+    "id": "sanctuary-phoenix",
+    "name": "Phoenix",
+    "brand": "Sanctuary AI",
+    "category": "humanoid",
+    "price": {
+      "starting": 0,
+      "currency": "USD",
+      "models": [
+        {
+          "name": "6th Generation",
+          "price": "request"
+        }
+      ]
+    },
+    "generalInfo": {
+      "manufacturer": "Sanctuary AI",
+      "modelName": "Phoenix (6th Generation)",
+      "dimensions": {
+        "standing": "170 cm (5 ft 7 in)",
+        "folded": "N/A",
+        "weight": "70 kg (155 lbs)"
+      }
+    },
+    "keyFeatures": [
+      "Powered by Carbon™ AI cognitive architecture",
+      "Most sensor-rich humanoid when released",
+      "20 DoF hands rivaling human dexterity",
+      "Proprietary haptic technology",
+      "Can be teleoperated by humans",
+      "Combines symbolic reasoning with LLMs",
+      "Simulates human brain subsystems",
+      "Designed for general-purpose work"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "20 DoF in hands (total body DoF not fully disclosed)",
+      "payloadCapacity": "25 kg (55 lbs)",
+      "batteryCapacityRuntime": "Not publicly disclosed",
+      "charger": "Standard charging system",
+      "sensorsIncluded": [
+        "Proprietary haptic sensors in hands",
+        "Vision systems for perception",
+        "Force/torque sensors",
+        "Tactile feedback sensors",
+        "Multi-modal sensor arrays"
+      ],
+      "interfaces": [
+        "Teleoperation interface",
+        "Wireless communication",
+        "Industrial protocols"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Custom Carbon™ AI platform with standard interfaces",
+      "sdkLanguages": [
+        "Python",
+        "C++"
+      ],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [
+        "Carbon™ AI (proprietary)",
+        "Large Language Models",
+        "Deep learning",
+        "Reinforcement learning"
+      ],
+      "apiDocumentationQuality": "Available to commercial and research partners"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Commercial warranty terms",
+        "coverage": "Hardware, software, AI platform updates"
+      },
+      "postSalesSupport": "Sanctuary AI support team",
+      "trackRecord": "Leading Canadian robotics company. 6th generation humanoid. Mission to deploy millions of industrial-grade robots with advanced AI cognition."
+    },
+    "specifications": {
+      "height": "170 cm",
+      "weight": "70 kg",
+      "payload": "25 kg",
+      "maxSpeed": "3 mph"
+    },
+    "features": [
+      "Carbon™ AI brain",
+      "Human-like dexterity",
+      "Haptic feedback",
+      "Teleoperation capable",
+      "General-purpose design",
+      "Canadian innovation"
+    ],
+    "images": [
+      "/images/robots/sanctuary-phoenix.webp"
+    ],
+    "highResPhotos": [
+      "/images/robots/sanctuary-phoenix.webp"
+    ],
+    "officialUrl": "https://www.sanctuary.ai/",
+    "description": "Phoenix by Sanctuary AI is a 6th generation general-purpose humanoid robot powered by Carbon™, an AI cognitive architecture that simulates human brain subsystems. With 20-DoF hands featuring proprietary haptic technology and the ability to be teleoperated, Phoenix is designed for various industrial work environments. As Canada's leading humanoid robotics platform, Phoenix combines advanced AI with human-like dexterity for complex task execution."
+  },
+  {
+    "id": "1x-neo-gamma",
+    "name": "NEO Gamma",
+    "brand": "1X Technologies",
+    "category": "humanoid",
+    "price": {
+      "starting": 20000,
+      "currency": "USD",
+      "models": [
+        {
+          "name": "Home Assistant",
+          "price": 20000
+        }
+      ]
+    },
+    "generalInfo": {
+      "manufacturer": "1X Technologies",
+      "modelName": "NEO Gamma",
+      "dimensions": {
+        "standing": "165 cm (5 ft 5 in)",
+        "folded": "N/A",
+        "weight": "30 kg (66 lbs)"
+      }
+    },
+    "keyFeatures": [
+      "Biologically-inspired design for homes",
+      "Backed by OpenAI",
+      "Can lift 75 kg in deadlift/squat",
+      "Four microphones with beamforming",
+      "Designed for home assistant tasks",
+      "Target price $20,000 (car-comparable)",
+      "Sophisticated home navigation",
+      "Lightweight at only 30 kg"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "Not specifically disclosed",
+      "payloadCapacity": "20 kg carrying, 75 kg lift capacity",
+      "batteryCapacityRuntime": "2-4 hours per charge",
+      "charger": "Standard charging system",
+      "sensorsIncluded": [
+        "Sophisticated cameras for navigation",
+        "4 microphones (front, back, left, right)",
+        "Beamforming and echo cancellation",
+        "Obstacle avoidance sensors",
+        "Vision systems for object recognition"
+      ],
+      "interfaces": [
+        "Wi-Fi",
+        "Voice control",
+        "App integration",
+        "Smart home compatibility"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Custom software stack",
+      "sdkLanguages": [
+        "Python",
+        "Proprietary 1X SDK"
+      ],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [
+        "OpenAI integration",
+        "Proprietary 1X AI"
+      ],
+      "apiDocumentationQuality": "Limited public documentation, partner access"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "TBD for consumer release",
+        "coverage": "Hardware and software support"
+      },
+      "postSalesSupport": "1X Technologies support network (expanding for home)",
+      "trackRecord": "Norwegian-American startup backed by OpenAI. NEO Beta in home trials. Raised $100M Series B funding."
+    },
+    "specifications": {
+      "height": "165 cm",
+      "weight": "30 kg",
+      "payload": "20 kg carry, 75 kg lift",
+      "walkingSpeed": "4 km/h (2.5 mph)",
+      "maxSpeed": "12 km/h (7.5 mph)",
+      "battery": "2-4 hours runtime"
+    },
+    "features": [
+      "OpenAI backed",
+      "Home optimized",
+      "Lightweight design",
+      "Voice interaction",
+      "Smart home integration",
+      "Affordable pricing"
+    ],
+    "images": [
+      "/images/robots/1x-neo-gamma.webp"
+    ],
+    "highResPhotos": [
+      "/images/robots/1x-neo-gamma.webp"
+    ],
+    "officialUrl": "https://www.1x.tech/",
+    "description": "NEO Gamma by 1X Technologies is an OpenAI-backed humanoid robot designed specifically for home environments. At just 30 kg, it's one of the lightest humanoids while capable of lifting 75 kg. With biologically-inspired design, four-microphone array with beamforming, and sophisticated home navigation, NEO Gamma aims to be an affordable ($20,000) home assistant robot. Currently in beta home trials with consumer release planned."
+  },
+  {
+    "id": "fourier-gr1",
+    "name": "GR-1",
+    "brand": "Fourier Intelligence",
+    "category": "humanoid",
+    "price": {
+      "starting": 0,
+      "currency": "USD",
+      "models": [
+        {
+          "name": "Commercial",
+          "price": "request"
+        }
+      ]
+    },
+    "generalInfo": {
+      "manufacturer": "Fourier Intelligence",
+      "modelName": "GR-1",
+      "dimensions": {
+        "standing": "165 cm (5 ft 5 in)",
+        "folded": "N/A",
+        "weight": "55 kg (121 lbs)"
+      }
+    },
+    "keyFeatures": [
+      "40 degrees of freedom throughout body",
+      "11 DoF robotic hands",
+      "Peak torque of 300 Nm at hip",
+      "360-degree view with 6 RGB cameras",
+      "5,000 units/year production capacity",
+      "Deployed in Chinese Tier-1 hospitals",
+      "Deployed in European automotive factories",
+      "Rehabilitation robotics heritage"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "51 total (40 body + 11 hands)",
+      "payloadCapacity": "50 kg (110 lbs)",
+      "batteryCapacityRuntime": "Not specifically disclosed",
+      "charger": "Standard charging system",
+      "sensorsIncluded": [
+        "6 RGB cameras (360° view)",
+        "Depth cameras in head and torso",
+        "Force/torque sensors",
+        "Joint position sensors"
+      ],
+      "interfaces": [
+        "Ethernet",
+        "Wireless communication",
+        "Industrial control systems"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "ROS2-compatible",
+      "sdkLanguages": [
+        "Python",
+        "C++",
+        "ROS"
+      ],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [
+        "TensorFlow",
+        "PyTorch",
+        "Custom perception algorithms"
+      ],
+      "apiDocumentationQuality": "Available to commercial and research partners"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Commercial warranty (1-2 years)",
+        "coverage": "Hardware components, software updates"
+      },
+      "postSalesSupport": "Fourier Intelligence support in Asia and Europe",
+      "trackRecord": "Rehabilitation robotics leader dominating Asian market. 5,000 units/year capacity. Deployed in Chinese hospitals and European automotive factories."
+    },
+    "specifications": {
+      "height": "165 cm",
+      "weight": "55 kg",
+      "dof": 51,
+      "payload": "50 kg",
+      "walkingSpeed": "5 km/h",
+      "hipTorque": "300 Nm"
+    },
+    "features": [
+      "Hospital deployment",
+      "Automotive factory ready",
+      "360° vision",
+      "High payload capacity",
+      "Mass production ready",
+      "Rehab heritage"
+    ],
+    "images": [
+      "/images/robots/fourier-gr1.webp"
+    ],
+    "highResPhotos": [
+      "/images/robots/fourier-gr1.webp"
+    ],
+    "officialUrl": "https://www.fourierintelligence.com/",
+    "description": "GR-1 by Fourier Intelligence is a humanoid robot with rehabilitation robotics heritage, featuring 51 total degrees of freedom and 50 kg payload capacity. With 360-degree vision from 6 RGB cameras and peak hip torque of 300 Nm, GR-1 is deployed in Chinese Tier-1 hospitals and European automotive factories. Fourier Intelligence produces 5,000 units annually, dominating the Asian rehabilitation and industrial robotics market."
+  },
+  {
+    "id": "fourier-gr2",
+    "name": "GR-2",
+    "brand": "Fourier Intelligence",
+    "category": "humanoid",
+    "price": {
+      "starting": 0,
+      "currency": "USD",
+      "models": [
+        {
+          "name": "Next Generation",
+          "price": "request"
+        }
+      ]
+    },
+    "generalInfo": {
+      "manufacturer": "Fourier Intelligence",
+      "modelName": "GR-2",
+      "dimensions": {
+        "standing": "175 cm (5 ft 9 in)",
+        "folded": "N/A",
+        "weight": "63 kg"
+      }
+    },
+    "keyFeatures": [
+      "53 degrees of freedom",
+      "12-DoF hands with 6 tactile sensors",
+      "Peak torque exceeding 380 Nm",
+      "2x battery capacity vs GR-1",
+      "Real-time grasp modification",
+      "Material and shape identification",
+      "Deployed at SAIC-GM automotive facility",
+      "Can lift patients and operate tools"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "53 total (including 12-DoF hands)",
+      "payloadCapacity": "3 kg single-arm (precision focus)",
+      "batteryCapacityRuntime": "2 hours (double GR-1 capacity)",
+      "charger": "Detachable battery system",
+      "sensorsIncluded": [
+        "6 array-type tactile sensors in hands",
+        "Force sensors for material ID",
+        "Shape detection sensors",
+        "Cameras and depth sensors",
+        "Real-time tactile feedback"
+      ],
+      "interfaces": [
+        "Ethernet",
+        "Wireless communication",
+        "Automotive manufacturing protocols"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "ROS2-compatible",
+      "sdkLanguages": [
+        "Python",
+        "C++",
+        "ROS"
+      ],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [
+        "TensorFlow",
+        "PyTorch",
+        "Proprietary tactile AI"
+      ],
+      "apiDocumentationQuality": "Available to commercial partners"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Commercial warranty terms",
+        "coverage": "Hardware, software, battery system"
+      },
+      "postSalesSupport": "Fourier Intelligence support, automotive partnerships",
+      "trackRecord": "Built on proven GR-1 platform. Deployed at SAIC-GM automotive facility. Enhanced for industrial and healthcare applications."
+    },
+    "specifications": {
+      "height": "175 cm",
+      "weight": "63 kg",
+      "dof": 53,
+      "payload": "3 kg precision",
+      "peakTorque": "380 Nm",
+      "battery": "2 hours runtime"
+    },
+    "features": [
+      "Advanced tactile sensing",
+      "Material identification",
+      "SAIC-GM deployment",
+      "Patient lifting capable",
+      "Enhanced dexterity",
+      "Industrial tools operation"
+    ],
+    "images": [
+      "/images/robots/fourier-gr2.webp"
+    ],
+    "highResPhotos": [
+      "/images/robots/fourier-gr2.webp"
+    ],
+    "officialUrl": "https://www.fourierintelligence.com/",
+    "description": "GR-2 is Fourier Intelligence's next-generation humanoid robot with 53 degrees of freedom and advanced 12-DoF hands featuring 6 array-type tactile sensors. With peak torque exceeding 380 Nm and the ability to identify materials and shapes in real-time, GR-2 is deployed at SAIC-GM automotive facilities for precision manufacturing. The detachable battery provides double the capacity of GR-1, enabling extended operation for industrial and healthcare applications."
+  },
+  {
+    "id": "pal-talos",
+    "name": "TALOS",
+    "brand": "PAL Robotics",
+    "category": "humanoid",
+    "price": {
+      "starting": 0,
+      "currency": "EUR",
+      "models": [
+        {
+          "name": "Research Platform",
+          "price": "request"
+        }
+      ]
+    },
+    "generalInfo": {
+      "manufacturer": "PAL Robotics",
+      "modelName": "TALOS",
+      "dimensions": {
+        "standing": "175 cm (5 ft 9 in)",
+        "folded": "N/A",
+        "weight": "95 kg"
+      }
+    },
+    "keyFeatures": [
+      "32 degrees of freedom",
+      "6 kg payload per arm at full extension",
+      "Can handle drilling and riveting tools",
+      "Full torque feedback in all joints",
+      "Advanced Orientus IMU (1 KHz)",
+      "Designed for Industry 4.0",
+      "Walks at 3 km/h",
+      "2 kHz torque control latency"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "32 (6-DoF legs, 7-DoF arms, 1-DoF hands, 2-DoF neck, 2-DoF waist)",
+      "payloadCapacity": "6 kg per arm at full extension",
+      "batteryCapacityRuntime": "1080 Wh Li-Ion, 1.5h walking / 3h standby",
+      "charger": "Li-Ion charging, max discharge +100A",
+      "sensorsIncluded": [
+        "4x 6-axis Force/Torque sensors",
+        "Full torque feedback all joints",
+        "Encoders in all joints",
+        "IMU",
+        "Temperature sensors",
+        "Orientus IMU/AHRS (1 KHz)"
+      ],
+      "interfaces": [
+        "ROS Control",
+        "Ethernet",
+        "Research-grade interfaces"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Full ROS/ROS2 support via ros_control",
+      "sdkLanguages": [
+        "Python",
+        "C++",
+        "ROS"
+      ],
+      "openSourceRepos": "https://github.com/pal-robotics",
+      "aiFrameworksSupported": [
+        "TensorFlow",
+        "PyTorch",
+        "All major AI frameworks"
+      ],
+      "apiDocumentationQuality": "Extensive research community documentation"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Research/commercial warranty (customizable)",
+        "coverage": "Hardware components, software support"
+      },
+      "postSalesSupport": "PAL Robotics technical team, research community",
+      "trackRecord": "Barcelona specialist in research and industrial humanoids. Used by Inria and prestigious research institutions. 32-DOF design for complex manipulation research."
+    },
+    "specifications": {
+      "height": "175 cm",
+      "weight": "95 kg",
+      "dof": 32,
+      "payload": "6 kg per arm",
+      "walkingSpeed": "3 km/h",
+      "battery": "1080 Wh, 1.5h walking"
+    },
+    "features": [
+      "Research platform",
+      "Full ROS support",
+      "Industry 4.0 ready",
+      "Heavy tool operation",
+      "Inria deployed",
+      "Torque control"
+    ],
+    "images": [
+      "/images/robots/pal-talos.webp"
+    ],
+    "highResPhotos": [
+      "/images/robots/pal-talos.webp"
+    ],
+    "officialUrl": "https://pal-robotics.com/robot/talos/",
+    "description": "TALOS by PAL Robotics is an advanced 32-DoF humanoid research platform designed for Industry 4.0 applications. With 6 kg payload capacity per arm at full extension and the ability to handle heavy tools for drilling and riveting, TALOS is used by leading research institutions including Inria. Featuring full torque sensor feedback in all joints, 2 kHz control latency, and comprehensive ROS/ROS2 support, TALOS is ideal for AI, machine learning, and locomotion research."
+  },
+  {
+    "id": "engineered-arts-ameca",
+    "name": "Ameca",
+    "brand": "Engineered Arts",
+    "category": "humanoid",
+    "price": {
+      "starting": 0,
+      "currency": "GBP",
+      "models": [
+        {
+          "name": "Standard",
+          "price": "request"
+        }
+      ]
+    },
+    "generalInfo": {
+      "manufacturer": "Engineered Arts",
+      "modelName": "Ameca",
+      "dimensions": {
+        "standing": "187 cm (6 ft 2 in)",
+        "folded": "N/A",
+        "weight": "49 kg"
+      }
+    },
+    "keyFeatures": [
+      "61 degrees of freedom",
+      "27 DoF for facial expressions alone",
+      "Can emulate 60+ facial expressions",
+      "Stunningly lifelike expressions",
+      "Binocular eye-mounted cameras",
+      "Facial recognition software",
+      "Can blink, yawn, scratch nose naturally",
+      "Designed for entertainment and education"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "61 total (27 for facial expressions)",
+      "payloadCapacity": "N/A (designed for expression, not manipulation)",
+      "batteryCapacityRuntime": "Not publicly disclosed",
+      "charger": "Standard charging system",
+      "sensorsIncluded": [
+        "Binocular eye-mounted cameras",
+        "Chest camera",
+        "Embedded microphones",
+        "Facial recognition software",
+        "Touch sensors"
+      ],
+      "interfaces": [
+        "Audio input/output",
+        "Video feeds",
+        "Facial recognition API",
+        "Network connectivity"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Custom Engineered Arts platform",
+      "sdkLanguages": [
+        "Proprietary Engineered Arts SDK"
+      ],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [
+        "Facial recognition AI",
+        "Natural language processing",
+        "Emotion detection"
+      ],
+      "apiDocumentationQuality": "Available to customers and research partners"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Commercial warranty terms",
+        "coverage": "Hardware components, facial actuator system"
+      },
+      "postSalesSupport": "Engineered Arts UK support team",
+      "trackRecord": "UK studio renowned for world's most expressive humanoid robots. Featured globally in exhibitions, research labs, and media. Proven human-robot interaction platform."
+    },
+    "specifications": {
+      "height": "187 cm",
+      "weight": "49 kg",
+      "dof": 61,
+      "facialDof": 27,
+      "expressions": "60+"
+    },
+    "features": [
+      "Lifelike expressions",
+      "Entertainment optimized",
+      "Facial recognition",
+      "Media production ready",
+      "Exhibition proven",
+      "Research platform"
+    ],
+    "images": [
+      "/images/robots/engineered-arts-ameca.webp"
+    ],
+    "highResPhotos": [
+      "/images/robots/engineered-arts-ameca.webp"
+    ],
+    "officialUrl": "https://www.engineeredarts.co.uk/",
+    "description": "Ameca by Engineered Arts is the world's most advanced humanoid robot for human-robot interaction, featuring 61 degrees of freedom with 27 dedicated to facial expressions. Capable of emulating over 60 facial expressions with stunning realism, Ameca can blink, yawn, smile, and react naturally to personal space. With binocular cameras, facial recognition, and lifelike movements, Ameca is popular in exhibitions, research labs, and media productions globally for entertainment, education, and customer engagement."
+  },
+  {
+    "id": "hanson-sophia",
+    "name": "Sophia",
+    "brand": "Hanson Robotics",
+    "category": "humanoid",
+    "price": {
+      "starting": 0,
+      "currency": "USD",
+      "models": [
+        {
+          "name": "R&D Version 2020",
+          "price": "request"
+        }
+      ]
+    },
+    "generalInfo": {
+      "manufacturer": "Hanson Robotics",
+      "modelName": "Sophia",
+      "dimensions": {
+        "standing": "167 cm (5 ft 6 in)",
+        "folded": "N/A",
+        "weight": "20 kg"
+      }
+    },
+    "keyFeatures": [
+      "83 degrees of freedom",
+      "Can emulate 60+ facial expressions",
+      "Patented Frubber skin (flesh rubber)",
+      "First robot granted citizenship (Saudi Arabia)",
+      "UN Innovation Champion",
+      "30+ motors in head for expressions",
+      "Intel RealSense cameras in eyes",
+      "Powered by Hanson AI SDK"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "83 (36 head/neck, 15 per arm, 3 torso, 14 mobile base)",
+      "payloadCapacity": "N/A (designed for social interaction)",
+      "batteryCapacityRuntime": "Not publicly disclosed",
+      "charger": "Standard charging system",
+      "sensorsIncluded": [
+        "Intel RealSense cameras in eyes",
+        "1080p wide-angle chest camera",
+        "Microphones with audio localization",
+        "Inertial measurement units",
+        "Joint angle sensors in arms",
+        "Force sensors in arm joints",
+        "Touch sensors in fingers"
+      ],
+      "interfaces": [
+        "USB",
+        "Ethernet",
+        "Wi-Fi",
+        "Facial recognition",
+        "Speech recognition"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Custom Hanson AI SDK with ROS compatibility",
+      "sdkLanguages": [
+        "Python",
+        "C++",
+        "Hanson AI SDK"
+      ],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [
+        "Hanson AI SDK",
+        "Natural language processing",
+        "Facial recognition",
+        "Visual tracking"
+      ],
+      "apiDocumentationQuality": "Available through Hanson AI SDK to partners"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "R&D version warranty terms",
+        "coverage": "Hardware, Frubber skin, AI software"
+      },
+      "postSalesSupport": "Hanson Robotics Hong Kong support",
+      "trackRecord": "World's most famous humanoid robot. First robot with citizenship. UN Development Programme Innovation Champion. Global media presence and social robotics research platform."
+    },
+    "specifications": {
+      "height": "167 cm",
+      "weight": "20 kg",
+      "dof": 83,
+      "expressions": "60+",
+      "processor": "3 GHz Intel i7, 32 GB RAM"
+    },
+    "features": [
+      "Robot citizen",
+      "UN Innovation Champion",
+      "Frubber skin",
+      "60+ expressions",
+      "Global media star",
+      "Social robotics"
+    ],
+    "images": [
+      "/images/robots/hanson-sophia.webp"
+    ],
+    "highResPhotos": [
+      "/images/robots/hanson-sophia.webp"
+    ],
+    "officialUrl": "https://www.hansonrobotics.com/sophia/",
+    "description": "Sophia by Hanson Robotics is the world's most famous humanoid robot, featuring 83 degrees of freedom and patented Frubber skin that mimics human flesh. With 60+ facial expressions powered by 30 motors in the head, Sophia made history as the first robot granted citizenship (Saudi Arabia, 2017) and serves as the UN Development Programme's first Innovation Champion. Powered by Hanson AI SDK with Intel RealSense cameras, Sophia represents the cutting edge of social robotics and human-robot interaction."
+  },
+  {
+    "id": "sony-aibo-ers1000",
+    "name": "Aibo ERS-1000",
+    "brand": "Sony",
+    "category": "quadruped",
+    "price": {
+      "starting": 2899,
+      "currency": "USD",
+      "models": [
+        {
+          "name": "Standard",
+          "price": 2899
+        }
+      ]
+    },
+    "generalInfo": {
+      "manufacturer": "Sony",
+      "modelName": "Aibo ERS-1000",
+      "dimensions": {
+        "standing": "180 × 293 × 305 mm (7.1 × 11.5 × 12 in)",
+        "folded": "N/A (quadruped)",
+        "weight": "2.2 kg (4.9 lbs)"
+      }
+    },
+    "keyFeatures": [
+      "22 degrees of freedom for natural movement",
+      "Cloud-based AI with LTE SIM card",
+      "Recognizes up to 100 faces",
+      "Responds to 50+ voice commands",
+      "Learns customizable tricks",
+      "Adaptive personality development",
+      "Two cameras (recognition + SLAM)",
+      "Most sophisticated autonomous companion"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "22 (3 head, 1 mouth, 1 neck, 1 waist, 3×4 legs, 1×2 ears, 2 tail)",
+      "payloadCapacity": "N/A (companion robot)",
+      "batteryCapacityRuntime": "~2 hours per charge, 3h charging, 2-5yr lifespan",
+      "charger": "Charging station, ~14W power",
+      "sensorsIncluded": [
+        "Time-of-flight sensor",
+        "2 IR range sensors",
+        "4 microphones with beamforming",
+        "Capacitive touch sensors",
+        "2x 6-axis motion sensors",
+        "Motion sensor",
+        "Light sensor",
+        "4 paw pad contact sensors",
+        "2 cameras (front + SLAM)"
+      ],
+      "interfaces": [
+        "LTE SIM card",
+        "Wi-Fi",
+        "Cloud services",
+        "Smartphone app"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Proprietary Sony software (not ROS-based)",
+      "sdkLanguages": [
+        "Limited SDK (cloud-based AI)"
+      ],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [
+        "Sony proprietary AI",
+        "Cloud-based machine learning"
+      ],
+      "apiDocumentationQuality": "Limited public API, cloud service docs"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Standard Sony warranty (1 year)",
+        "coverage": "Hardware defects, battery replacement"
+      },
+      "postSalesSupport": "Sony customer support, cloud subscription",
+      "trackRecord": "Pioneer consumer robot dog since 1999. Multiple generations demonstrating long-term commitment. Most sophisticated autonomous companion with AI personality development."
+    },
+    "specifications": {
+      "dimensions": "180×293×305 mm",
+      "weight": "2.2 kg",
+      "dof": 22,
+      "battery": "2 hours runtime",
+      "faceRecognition": "100 faces",
+      "voiceCommands": "50+",
+      "processor": "64-bit quad-core CPU"
+    },
+    "features": [
+      "Cloud AI",
+      "Face recognition",
+      "Voice commands",
+      "Personality development",
+      "Autonomous companion",
+      "Since 1999"
+    ],
+    "images": [
+      "/images/robots/sony-aibo-ers1000.webp"
+    ],
+    "highResPhotos": [
+      "/images/robots/sony-aibo-ers1000.webp"
+    ],
+    "officialUrl": "https://us.aibo.com/",
+    "description": "Sony Aibo ERS-1000 is the most sophisticated autonomous companion robot dog, featuring 22 degrees of freedom and cloud-based AI with personality development. With LTE connectivity, Aibo can recognize up to 100 faces, respond to over 50 voice commands, and learn customizable tricks. Equipped with dual cameras, four microphones with beamforming, and comprehensive sensor suite, Aibo has been a pioneer in consumer robotics since 1999, offering adaptive personality that evolves through interaction."
   }
 ]
