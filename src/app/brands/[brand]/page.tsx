@@ -89,14 +89,16 @@ export default function BrandPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Brand Header */}
         <div className="text-center mb-12">
-          <div className="w-48 h-24 mx-auto mb-6 relative">
-            <Image
-              src={brand.logo}
-              alt={`${brand.name} logo`}
-              fill
-              className="object-contain"
-            />
-          </div>
+          {brand.logo && (
+            <div className="w-48 h-24 mx-auto mb-6 relative">
+              <Image
+                src={brand.logo}
+                alt={`${brand.name} logo`}
+                fill
+                className="object-contain"
+              />
+            </div>
+          )}
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             {brand.name}
           </h1>

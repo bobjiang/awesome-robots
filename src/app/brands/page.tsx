@@ -27,15 +27,17 @@ export default function BrandsPage() {
             >
               <Link href={`/browse?brand=${brand.name}`}>
                 <div className="h-48 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center group-hover:from-blue-50 group-hover:to-blue-100 transition-colors p-8">
-                  <div className="text-center w-full h-full">
-                    <div className="relative w-32 h-16 mx-auto mb-4">
-                      <Image
-                        src={brand.logo}
-                        alt={`${brand.name} logo`}
-                        fill
-                        className="object-contain"
-                      />
-                    </div>
+                  <div className="text-center w-full h-full flex flex-col justify-center">
+                    {brand.logo && (
+                      <div className="relative w-32 h-16 mx-auto mb-4">
+                        <Image
+                          src={brand.logo}
+                          alt={`${brand.name} logo`}
+                          fill
+                          className="object-contain"
+                        />
+                      </div>
+                    )}
                     <h2 className="text-2xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
                       {brand.name}
                     </h2>
