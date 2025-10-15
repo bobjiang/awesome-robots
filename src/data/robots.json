@@ -5372,5 +5372,1100 @@
     ],
     "officialUrl": "https://us.aibo.com/",
     "description": "Sony Aibo ERS-1000 is the most sophisticated autonomous companion robot dog, featuring 22 degrees of freedom and cloud-based AI with personality development. With LTE connectivity, Aibo can recognize up to 100 faces, respond to over 50 voice commands, and learn customizable tricks. Equipped with dual cameras, four microphones with beamforming, and comprehensive sensor suite, Aibo has been a pioneer in consumer robotics since 1999, offering adaptive personality that evolves through interaction."
+  },
+  {
+    "id": "xiaomi-cyberdog-2",
+    "name": "CyberDog 2",
+    "brand": "Xiaomi",
+    "category": "quadruped",
+    "price": {
+      "starting": 3000,
+      "currency": "USD",
+      "models": [
+        {
+          "name": "Standard",
+          "price": 3000
+        }
+      ]
+    },
+    "generalInfo": {
+      "manufacturer": "Xiaomi",
+      "modelName": "CyberDog 2",
+      "dimensions": {
+        "standing": "36.7 cm height (Doberman-sized)",
+        "folded": "N/A (quadruped)",
+        "weight": "8.9 kg"
+      }
+    },
+    "keyFeatures": [
+      "Redesigned to resemble a Doberman with biomimetic design",
+      "19 sensors including RGB camera, AI camera, 4 ToF sensors",
+      "LiDAR sensor and depth camera for navigation",
+      "CyberGear micro-actuators for enhanced mobility",
+      "Continuous backflips and fall recovery capabilities",
+      "Maximum walking speed of 1.6 m/s",
+      "4500mAh battery with 90 minutes runtime",
+      "Voice control and XiaoAI smart home integration",
+      "NVIDIA Jetson Xavier NX AI Supercomputer"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "12 (proprietary CyberGear micro-actuators)",
+      "payloadCapacity": "1 kg",
+      "batteryCapacityRuntime": "4500mAh (97.2 Wh) Li-ion Polymer, 90 minutes",
+      "charger": "90 minutes charging time",
+      "sensorsIncluded": [
+        "RGB camera",
+        "AI-powered interactive camera",
+        "4 ToF (Time-of-Flight) sensors",
+        "LiDAR sensor",
+        "Depth camera",
+        "Ultrasonic sensor",
+        "Fisheye lens sensor",
+        "Force sensor",
+        "2 Ultra Wideband (UWB) sensors"
+      ],
+      "interfaces": [
+        "Mobile phone app control",
+        "Voice control",
+        "Remote control",
+        "XiaoAI system for smart home"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Limited (custom Xiaomi platform)",
+      "sdkLanguages": [
+        "Python",
+        "Proprietary Xiaomi SDK"
+      ],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [
+        "NVIDIA Jetson Xavier NX (384 CUDA, 48 Tensor Cores)",
+        "Custom AI algorithms"
+      ],
+      "apiDocumentationQuality": "Limited public documentation"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "1 year standard warranty",
+        "coverage": "Hardware defects and manufacturing issues"
+      },
+      "postSalesSupport": "Xiaomi customer support, primarily China-focused",
+      "trackRecord": "Xiaomi is a major consumer electronics company with global presence. CyberDog 2 is second generation robot dog launched in 2023, demonstrating ongoing commitment to consumer robotics."
+    },
+    "specifications": {
+      "dimensions": "36.7 cm height (Doberman-sized)",
+      "weight": "8.9 kg",
+      "processor": "NVIDIA Jetson Xavier NX (384 CUDA, 48 Tensor Cores, 6-core ARM CPU)",
+      "memory": "8GB LPDDR4x RAM, 16GB eMMC 5.1, 32GB SSD",
+      "maxSpeed": "1.6 m/s",
+      "payload": "1 kg",
+      "battery": "4500mAh (97.2 Wh), 90 min runtime"
+    },
+    "features": [
+      "Biomimetic Doberman design",
+      "19 sensors",
+      "Backflip capable",
+      "Voice control",
+      "Smart home integration",
+      "NVIDIA AI"
+    ],
+    "images": [
+      "/images/robots/xiaomi-cyberdog-2.webp"
+    ],
+    "highResPhotos": [
+      "/images/robots/xiaomi-cyberdog-2.webp"
+    ],
+    "officialUrl": "https://www.mi.com/global/",
+    "description": "Xiaomi CyberDog 2 is a consumer-grade biomimetic quadruped robot redesigned to resemble a Doberman, weighing only 8.9 kg. Powered by NVIDIA Jetson Xavier NX AI supercomputer with 19 advanced sensors including LiDAR, depth camera, and ToF sensors, CyberDog 2 achieves sophisticated environmental perception. With proprietary CyberGear micro-actuators, it performs complex maneuvers like continuous backflips and fall recovery. Features mobile app, voice control, and XiaoAI smart home integration. Originally priced at CNY 12,999 (~$1,789), available for $3,000 internationally."
+  },
+  {
+    "id": "xiaomi-cyberone",
+    "name": "CyberOne",
+    "brand": "Xiaomi",
+    "category": "humanoid",
+    "price": {
+      "starting": 0,
+      "currency": "USD",
+      "models": [
+        {
+          "name": "Prototype",
+          "price": "not for sale"
+        }
+      ]
+    },
+    "generalInfo": {
+      "manufacturer": "Xiaomi",
+      "modelName": "CyberOne",
+      "dimensions": {
+        "standing": "177 cm (5 ft 10 in)",
+        "folded": "N/A",
+        "weight": "52 kg"
+      }
+    },
+    "keyFeatures": [
+      "21 degrees of freedom for natural movement",
+      "Mi-Sense AI system for emotion recognition",
+      "Recognizes 85 types of environmental sounds",
+      "Detects 45 types of human emotions",
+      "3D space perception and gesture recognition",
+      "Upper limb actuator: 500g weight, 30 Nm torque",
+      "0.5 millisecond response time",
+      "Curved OLED display for interactive information",
+      "MiAI environment semantics recognition engine",
+      "MiAI vocal emotion identification engine"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "21 (full body articulation)",
+      "payloadCapacity": "1.5 kg per hand",
+      "batteryCapacityRuntime": "Not publicly disclosed",
+      "charger": "Standard charging system",
+      "sensorsIncluded": [
+        "Curved OLED display module",
+        "3D vision sensors",
+        "Environmental sound sensors (85 types)",
+        "Emotion recognition sensors (45 types)",
+        "Gesture recognition cameras",
+        "Facial recognition system"
+      ],
+      "interfaces": [
+        "Curved OLED interactive display",
+        "Voice interaction",
+        "Wireless communication"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Custom Xiaomi platform (not ROS-based)",
+      "sdkLanguages": [
+        "Proprietary Xiaomi SDK"
+      ],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [
+        "Mi-Sense AI system",
+        "MiAI environment semantics engine",
+        "MiAI vocal emotion identification"
+      ],
+      "apiDocumentationQuality": "Not publicly available (research prototype)"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "N/A (research prototype, not for sale)",
+        "coverage": "N/A"
+      },
+      "postSalesSupport": "N/A (research prototype)",
+      "trackRecord": "Xiaomi unveiled CyberOne in August 2022 as technology demonstration. Major consumer electronics company with extensive AI and IoT expertise, showcasing humanoid robotics capabilities."
+    },
+    "specifications": {
+      "height": "177 cm",
+      "weight": "52 kg",
+      "dof": 21,
+      "armSpan": "168 cm",
+      "response": "0.5 ms",
+      "actuatorTorque": "30 Nm",
+      "gripStrength": "1.5 kg per hand"
+    },
+    "features": [
+      "Emotion recognition",
+      "85 sound types",
+      "45 emotions",
+      "3D perception",
+      "OLED display",
+      "Research prototype"
+    ],
+    "images": [
+      "/images/robots/xiaomi-cyberone.webp"
+    ],
+    "highResPhotos": [
+      "/images/robots/xiaomi-cyberone.webp"
+    ],
+    "officialUrl": "https://www.mi.com/global/discover/article?id=2754",
+    "description": "Xiaomi CyberOne is a full-size humanoid robot unveiled in August 2022, standing 177 cm tall and weighing 52 kg. Featuring 21 degrees of freedom with 0.5ms response time, CyberOne showcases advanced AI capabilities through Mi-Sense system, recognizing 85 environmental sounds and 45 human emotions. Each upper limb actuator weighs only 500g while delivering 30 Nm torque, enabling 1.5 kg grip strength per hand. Equipped with curved OLED display, 3D space perception, and sophisticated bipedal control algorithm. Currently a research prototype demonstrating Xiaomi's humanoid robotics capabilities, not available for commercial purchase."
+  },
+  {
+    "id": "softbank-pepper",
+    "name": "Pepper",
+    "brand": "SoftBank Robotics",
+    "category": "humanoid",
+    "price": {
+      "starting": 32000,
+      "currency": "USD",
+      "models": [
+        {
+          "name": "Standard",
+          "price": 32000
+        },
+        {
+          "name": "Academic Edition",
+          "price": "1047/month"
+        }
+      ]
+    },
+    "generalInfo": {
+      "manufacturer": "SoftBank Robotics",
+      "modelName": "Pepper",
+      "dimensions": {
+        "standing": "121 cm (4 ft) tall",
+        "folded": "N/A",
+        "weight": "28 kg"
+      }
+    },
+    "keyFeatures": [
+      "Emotion recognition through facial expressions and voice tones",
+      "19 degrees of freedom for natural movement",
+      "Recognizes 15 languages including English, French, Spanish, German",
+      "10.1-inch tablet on chest for information display",
+      "Two HD cameras and 3-D depth sensor for perception",
+      "4 microphones for audio detection",
+      "20 DC motors for movement",
+      "12 hours battery life on 30Ah Li-ion battery",
+      "Supports Python, C++, Java, JavaScript, and ROS"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "19 (head, arms, hands, mobile base)",
+      "payloadCapacity": "N/A (social robot)",
+      "batteryCapacityRuntime": "30Ah Li-ion, approximately 12 hours",
+      "charger": "Standard charging station",
+      "sensorsIncluded": [
+        "2 HD cameras (mouth and forehead)",
+        "3-D depth sensor (behind eyes)",
+        "4 microphones",
+        "Touch sensors (head and hands)",
+        "Gyroscope (torso)",
+        "2 sonars",
+        "6 lasers",
+        "3 bumper sensors"
+      ],
+      "interfaces": [
+        "10.1-inch touchscreen tablet",
+        "Bluetooth",
+        "Ethernet",
+        "Wi-Fi",
+        "2 speakers"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Yes (ROS interface available)",
+      "sdkLanguages": [
+        "Python",
+        "C++",
+        "Java",
+        "JavaScript"
+      ],
+      "openSourceRepos": "Limited SDK and documentation",
+      "aiFrameworksSupported": [
+        "Emotion engine",
+        "20+ software engines for awareness, motion, dialogue",
+        "Speech recognition",
+        "Face recognition"
+      ],
+      "apiDocumentationQuality": "Good - comprehensive SDK documentation"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Standard warranty included",
+        "coverage": "Hardware and software support"
+      },
+      "postSalesSupport": "SoftBank Robotics support, online resources",
+      "trackRecord": "Introduced in Japan in June 2014, manufactured until 2020. Production paused June 2021 due to weak demand. Aldebaran Robotics (manufacturer) entered receivership in June 2025. Despite discontinuation, Pepper was pioneering social robot deployed globally in retail, banking, and education."
+    },
+    "specifications": {
+      "height": "121 cm",
+      "weight": "28 kg",
+      "dof": 19,
+      "battery": "30Ah Li-ion, 12h runtime",
+      "processor": "Intel Atom E3845",
+      "motors": "20 DC motors",
+      "languages": 15
+    },
+    "features": [
+      "Emotion recognition",
+      "15 languages",
+      "Social interaction",
+      "Retail/education",
+      "Discontinued 2021",
+      "Pioneer social robot"
+    ],
+    "images": [
+      "/images/robots/softbank-pepper.webp"
+    ],
+    "highResPhotos": [
+      "/images/robots/softbank-pepper.webp"
+    ],
+    "officialUrl": "https://us.softbankrobotics.com/pepper",
+    "description": "SoftBank Pepper is a pioneering social humanoid robot designed for human interaction in retail, banking, and education sectors. Standing 121 cm tall with 19 degrees of freedom, Pepper reads emotions through facial expressions and voice tones using advanced AI. Equipped with dual HD cameras, 3-D depth sensor, 4 microphones, and comprehensive sensor suite. Features 10.1-inch chest tablet, recognizes 15 languages, and supports Python, C++, Java, JavaScript, and ROS. Introduced in 2014 with production until 2020, Pepper pioneered commercial service robots at scale despite discontinuation in 2021."
+  },
+  {
+    "id": "softbank-nao",
+    "name": "NAO",
+    "brand": "SoftBank Robotics",
+    "category": "humanoid",
+    "price": {
+      "starting": 7500,
+      "currency": "USD",
+      "models": [
+        {
+          "name": "Standard Edition",
+          "price": 7500
+        },
+        {
+          "name": "Power V6 Educator Pack",
+          "price": 12990
+        }
+      ]
+    },
+    "generalInfo": {
+      "manufacturer": "SoftBank Robotics",
+      "modelName": "NAO V6",
+      "dimensions": {
+        "standing": "58 cm (23 inches) tall",
+        "folded": "N/A",
+        "weight": "5.4 kg"
+      }
+    },
+    "keyFeatures": [
+      "25 degrees of freedom for natural movement",
+      "Intel ATOM 1.9GHz quad-core processor with 4GB RAM",
+      "30 different sensors across the body",
+      "4 omnidirectional microphones and 2 loudspeakers",
+      "2 high-resolution cameras for face and object recognition",
+      "2 prehensile hands with capacitive touch sensors",
+      "Fluent in more than 20 languages",
+      "Fully open and programmable with NAOqi OS",
+      "Supports Python, C++, JavaScript, and visual tools like Choregraphe",
+      "Over 13,000 units deployed in 70+ countries"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "25 (head, arms, legs, hands)",
+      "payloadCapacity": "N/A (educational/research robot)",
+      "batteryCapacityRuntime": "Li-ion battery, 90 minutes active use",
+      "charger": "Standard charging station",
+      "sensorsIncluded": [
+        "2 high-resolution cameras",
+        "4 omnidirectional microphones",
+        "Inertial measurement unit",
+        "Ultrasonic sensors",
+        "Force-sensitive resistors",
+        "Tactile sensors",
+        "Infrared sensors",
+        "2 sonar sensors"
+      ],
+      "interfaces": [
+        "Bluetooth",
+        "Wi-Fi",
+        "Ethernet",
+        "2 loudspeakers"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Yes (ROS integration available)",
+      "sdkLanguages": [
+        "Python",
+        "C++",
+        "JavaScript",
+        "Choregraphe (visual programming)"
+      ],
+      "openSourceRepos": "NAO SDK and extensive documentation available",
+      "aiFrameworksSupported": [
+        "NAOqi OS framework",
+        "Face recognition",
+        "Voice recognition",
+        "Emotion detection"
+      ],
+      "apiDocumentationQuality": "Excellent - comprehensive SDK with tutorials and community support"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Standard warranty included",
+        "coverage": "Hardware and software support"
+      },
+      "postSalesSupport": "SoftBank Robotics support, extensive online resources and community",
+      "trackRecord": "NAO launched in 2006, V6 introduced June 2018. As of 2024, over 13,000 units deployed in 70+ countries in education, research, healthcare, and therapy. Aldebaran (manufacturer) entered receivership June 2025, raising uncertainty over future support despite NAO's established presence."
+    },
+    "specifications": {
+      "height": "58 cm",
+      "weight": "5.4 kg",
+      "dof": 25,
+      "processor": "Intel ATOM 1.9GHz quad-core",
+      "memory": "4GB DDR3 RAM, 32GB eMMC",
+      "battery": "90 minutes active use",
+      "languages": "20+"
+    },
+    "features": [
+      "Educational robot",
+      "25 DOF",
+      "Face recognition",
+      "20+ languages",
+      "13,000+ units deployed",
+      "Research platform"
+    ],
+    "images": [
+      "/images/robots/softbank-nao.webp"
+    ],
+    "highResPhotos": [
+      "/images/robots/softbank-nao.webp"
+    ],
+    "officialUrl": "https://us.softbankrobotics.com/nao",
+    "description": "SoftBank NAO is a 58cm humanoid robot designed for education, research, healthcare, and therapy applications. With 25 degrees of freedom powered by Intel ATOM 1.9GHz quad-core processor, NAO performs natural movements and interactions. Features 30 sensors including dual HD cameras for face recognition, 4 omnidirectional microphones, and prehensile hands with touch sensors. Fully programmable through NAOqi OS with Python, C++, JavaScript, and visual Choregraphe tool. Fluent in 20+ languages with over 13,000 units deployed in 70+ countries since 2006. V6 model introduced 2018, remains leading educational robotics platform despite manufacturer's 2025 receivership."
+  },
+  {
+    "id": "petoi-bittle",
+    "name": "Bittle",
+    "brand": "Petoi",
+    "category": "quadruped",
+    "price": {
+      "starting": 339,
+      "currency": "USD",
+      "models": [
+        {
+          "name": "Assembled",
+          "price": 339
+        },
+        {
+          "name": "STEM Kit",
+          "price": 299
+        }
+      ]
+    },
+    "generalInfo": {
+      "manufacturer": "Petoi",
+      "modelName": "Bittle",
+      "dimensions": {
+        "standing": "200 x 110 x 110mm (7.9 x 4.3 x 4.3 inch)",
+        "folded": "N/A",
+        "weight": "290g (10.22oz)"
+      }
+    },
+    "keyFeatures": [
+      "Palm-sized 9-DOF quadruped robot dog",
+      "35+ lifelike movements via mobile app or voice control",
+      "Built on NyBoard (Arduino Uno compatible)",
+      "Raspberry Pi 3A+/Zero support for AI capabilities",
+      "Voice control with 35+ commands, 10 custom commands",
+      "Block coding to Arduino C++ and Python programming",
+      "Open-source OpenCat framework",
+      "1-hour playtime with Li-ion battery",
+      "60-minute DIY assembly time"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "9 (2 joints per leg + 1 neck joint)",
+      "payloadCapacity": "Light objects only (educational robot)",
+      "batteryCapacityRuntime": "Li-ion battery, approximately 1 hour",
+      "charger": "Micro-USB charging cable (included)",
+      "sensorsIncluded": [
+        "Gyroscope",
+        "Accelerometer",
+        "Optional camera module",
+        "Optional IoT sensors"
+      ],
+      "interfaces": [
+        "Bluetooth",
+        "Wi-Fi (with Raspberry Pi)",
+        "Infrared receiver",
+        "Grove expansion ports"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Limited (Arduino-based, not native ROS)",
+      "sdkLanguages": [
+        "Arduino C++",
+        "Python",
+        "Block-based coding (Scratch-like)"
+      ],
+      "openSourceRepos": "https://github.com/PetoiCamp/OpenCat",
+      "aiFrameworksSupported": [
+        "Custom AI with Raspberry Pi",
+        "Voice recognition",
+        "Computer vision (with camera)"
+      ],
+      "apiDocumentationQuality": "Excellent - comprehensive tutorials, curriculum, community support"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Standard warranty included",
+        "coverage": "Hardware defects and component replacement"
+      },
+      "postSalesSupport": "Active community support, extensive documentation, video tutorials",
+      "trackRecord": "Petoi successfully raised $567K on Kickstarter. World's first affordable programmable robot dog starting at $225. Strong maker community and educational focus with proven track record in STEM education."
+    },
+    "specifications": {
+      "dimensions": "200x110x110mm",
+      "weight": "290g",
+      "dof": 9,
+      "speed": "2 body lengths/second (40mm/s)",
+      "battery": "1 hour runtime",
+      "assembly": "60 minutes"
+    },
+    "features": [
+      "Palm-sized robot dog",
+      "9 DOF",
+      "Voice control",
+      "Open-source",
+      "Educational STEM",
+      "$339 assembled"
+    ],
+    "images": [
+      "/images/robots/petoi-bittle.webp"
+    ],
+    "highResPhotos": [
+      "/images/robots/petoi-bittle.webp"
+    ],
+    "officialUrl": "https://www.petoi.com/products/petoi-robot-dog-bittle",
+    "description": "Petoi Bittle is a palm-sized open-source quadruped robot dog designed for STEM education and maker enthusiasts. Measuring just 200x110x110mm and weighing 290g, Bittle features 9 degrees of freedom with 35+ lifelike movements. Built on Arduino-compatible NyBoard with Raspberry Pi support for AI capabilities. Offers voice control with 35+ commands, block-based coding advancing to C++ and Python. Powered by open-source OpenCat framework with active GitHub community. Features 1-hour battery life, 60-minute assembly time. Starting at $339 assembled or $299 DIY kit, Bittle represents world's most affordable programmable robot dog with comprehensive educational resources."
+  },
+  {
+    "id": "petoi-nybble",
+    "name": "Nybble",
+    "brand": "Petoi",
+    "category": "quadruped",
+    "price": {
+      "starting": 299,
+      "currency": "USD",
+      "models": [
+        {
+          "name": "Standard V2",
+          "price": 299
+        }
+      ]
+    },
+    "generalInfo": {
+      "manufacturer": "Petoi",
+      "modelName": "Nybble V2",
+      "dimensions": {
+        "standing": "Approximately 180mm length (cat-sized)",
+        "folded": "N/A",
+        "weight": "Approximately 250g"
+      }
+    },
+    "keyFeatures": [
+      "World's cutest open-source bionic robot cat",
+      "11 degrees of freedom (2 per leg, 2 head, 1 tail)",
+      "Built on NyBoard V1 customized Arduino Uno chip",
+      "Balancing and body status detection (orientation, acceleration)",
+      "Infrared, serial communication, Raspberry Pi support",
+      "70 minutes playing time with rechargeable Li-Ion battery",
+      "Cat-like movements: sit, stretch, sleep, balance, greet, pushups",
+      "Programmable with Petoi Coding Blocks (Scratch-like)",
+      "Open-source platform with endless trick possibilities",
+      "4-hour assembly time, no soldering required"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "11 (2 joints per leg + 2 head + 1 tail)",
+      "payloadCapacity": "N/A (companion/educational robot)",
+      "batteryCapacityRuntime": "Rechargeable Li-Ion, 70 minutes",
+      "charger": "Standard USB charging",
+      "sensorsIncluded": [
+        "IMU (orientation and acceleration)",
+        "Infrared receiver",
+        "Optional camera",
+        "Touch sensors (via expansion)"
+      ],
+      "interfaces": [
+        "Infrared remote control",
+        "Bluetooth (mobile/desktop apps)",
+        "Raspberry Pi mounting support",
+        "Serial communication"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Limited (Arduino-based)",
+      "sdkLanguages": [
+        "Arduino C++",
+        "Python (with Raspberry Pi)",
+        "Petoi Coding Blocks (visual)"
+      ],
+      "openSourceRepos": "https://github.com/PetoiCamp/OpenCat",
+      "aiFrameworksSupported": [
+        "Raspberry Pi AI integration",
+        "Computer vision (with camera)",
+        "Custom AI behaviors"
+      ],
+      "apiDocumentationQuality": "Excellent - curriculum, video tutorials, active community"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Standard warranty",
+        "coverage": "Hardware components"
+      },
+      "postSalesSupport": "Petoi community support, comprehensive documentation and tutorials",
+      "trackRecord": "Lightest and fastest robotic cat that really walks. Pioneer in affordable open-source quadruped robots for education. Strong maker community with extensive curriculum resources."
+    },
+    "specifications": {
+      "dimensions": "~180mm length (cat-sized)",
+      "weight": "~250g",
+      "dof": 11,
+      "battery": "70 minutes runtime",
+      "assembly": "4 hours (no soldering)",
+      "platform": "NyBoard V1 (Arduino Uno)"
+    },
+    "features": [
+      "Robot cat",
+      "11 DOF",
+      "Open-source",
+      "Cat behaviors",
+      "Educational",
+      "$299"
+    ],
+    "images": [
+      "/images/robots/petoi-nybble.webp"
+    ],
+    "highResPhotos": [
+      "/images/robots/petoi-nybble.webp"
+    ],
+    "officialUrl": "https://www.petoi.com/products/petoi-nybble-robot-cat",
+    "description": "Petoi Nybble is an open-source bionic robot cat designed for STEM education and creative play. With 11 degrees of freedom including articulated legs, head, and tail, Nybble performs realistic cat-like movements including sitting, stretching, sleeping, balancing, and greeting. Built on customized NyBoard V1 Arduino platform with Raspberry Pi support for advanced AI capabilities. Features 70-minute battery life, infrared and Bluetooth control via mobile apps. Programmable through visual Petoi Coding Blocks or Arduino C++/Python. Requires 4-hour assembly with no soldering. Priced at $299, Nybble represents the lightest, fastest walking robot cat for makers and educators."
+  },
+  {
+    "id": "honda-asimo",
+    "name": "ASIMO",
+    "brand": "Honda",
+    "category": "humanoid",
+    "price": {
+      "starting": 0,
+      "currency": "USD",
+      "models": [
+        {
+          "name": "Final Version (2011)",
+          "price": "discontinued"
+        }
+      ]
+    },
+    "generalInfo": {
+      "manufacturer": "Honda",
+      "modelName": "ASIMO (Advanced Step in Innovative Mobility)",
+      "dimensions": {
+        "standing": "130 cm (4 ft 3 in)",
+        "folded": "N/A",
+        "weight": "48 kg (106 lbs)"
+      }
+    },
+    "keyFeatures": [
+      "Pioneer humanoid robot - ushered in modern humanoid era",
+      "57 degrees of freedom (23 DOF increase from previous model)",
+      "13 DOF in each hand for complex manipulation",
+      "Running speed of 9 km/h (5.6 mph)",
+      "Can run backwards, jump continuously, hop on one foot",
+      "Dual cameras for visual obstacle detection",
+      "Six-axis force sensors on all fingertips",
+      "Tactile sensors under palm skin",
+      "Face recognition and gesture detection",
+      "1-hour battery life on 51.8V lithium-ion"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "57 (full body, 13 per hand)",
+      "payloadCapacity": "Light objects with dexterous hands",
+      "batteryCapacityRuntime": "51.8V lithium-ion, 1 hour",
+      "charger": "Standard charging station",
+      "sensorsIncluded": [
+        "2 cameras in head (visual sensors)",
+        "Tactile sensors in palms",
+        "Six-axis force sensors on all 10 fingertips",
+        "Laser ground sensors",
+        "Infrared ground sensors",
+        "Ultrasonic sensors"
+      ],
+      "interfaces": [
+        "Proprietary Honda control system",
+        "Wireless communication",
+        "Visual and audio interfaces"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Proprietary Honda software (not ROS-based)",
+      "sdkLanguages": [
+        "Proprietary Honda system"
+      ],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [
+        "Face recognition",
+        "Gesture detection",
+        "Object recognition",
+        "Navigation AI"
+      ],
+      "apiDocumentationQuality": "Limited (research platform, not commercial SDK)"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "N/A (discontinued, never sold commercially)",
+        "coverage": "N/A"
+      },
+      "postSalesSupport": "Discontinued - development ceased July 2018",
+      "trackRecord": "Created foundational ASIMO which ushered in the modern humanoid robotics era before discontinuation in 2022. Last appearance March 2022. Despite being discontinued, ASIMO demonstrated Honda's long-term commitment to humanoid research and became iconic symbol of advanced robotics."
+    },
+    "specifications": {
+      "height": "130 cm",
+      "weight": "48 kg",
+      "dof": 57,
+      "runningSpeed": "9 km/h",
+      "battery": "51.8V Li-ion, 1h",
+      "unveiled": "November 2011 (final version)",
+      "discontinued": "July 2018"
+    },
+    "features": [
+      "Pioneer humanoid",
+      "57 DOF",
+      "9 km/h running",
+      "Face recognition",
+      "Discontinued 2018",
+      "Iconic robot"
+    ],
+    "images": [
+      "/images/robots/honda-asimo.webp"
+    ],
+    "highResPhotos": [
+      "/images/robots/honda-asimo.webp"
+    ],
+    "officialUrl": "https://global.honda/robotics/asimo/",
+    "description": "Honda ASIMO (Advanced Step in Innovative Mobility) is the pioneering humanoid robot that ushered in the modern era of bipedal robotics. Final version unveiled November 2011 stands 130cm tall, weighs 48kg, featuring 57 degrees of freedom including 13 DOF hands with tactile and force sensors. Capable of running 9 km/h, backwards locomotion, continuous jumping, and one-foot hopping. Equipped with dual cameras for face/gesture recognition, ultrasonic and infrared sensors. Powered by 51.8V lithium-ion battery with 1-hour runtime. Despite discontinuation in July 2018 and final appearance March 2022, ASIMO remains iconic symbol of advanced humanoid robotics research."
+  },
+  {
+    "id": "hyundai-dal-e",
+    "name": "DAL-e",
+    "brand": "Hyundai Motor Group",
+    "category": "humanoid",
+    "price": {
+      "starting": 0,
+      "currency": "USD",
+      "models": [
+        {
+          "name": "Service Robot",
+          "price": "commercial deployment"
+        }
+      ]
+    },
+    "generalInfo": {
+      "manufacturer": "Hyundai Motor Group",
+      "modelName": "DAL-e",
+      "dimensions": {
+        "standing": "Approximately 120 cm tall",
+        "folded": "N/A",
+        "weight": "Not publicly disclosed"
+      }
+    },
+    "keyFeatures": [
+      "Service robot operational in Hyundai showrooms",
+      "Customer service and information assistance",
+      "Face recognition for personalized interaction",
+      "Natural language processing for conversation",
+      "Autonomous navigation in showroom environments",
+      "Touch screen display for information presentation",
+      "Integration with Hyundai customer database",
+      "Multi-language support",
+      "Product information and FAQ responses"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "Limited mobility (service robot, not fully bipedal)",
+      "payloadCapacity": "Light items only",
+      "batteryCapacityRuntime": "Full day operation in showroom",
+      "charger": "Autonomous charging station",
+      "sensorsIncluded": [
+        "Cameras for face recognition",
+        "LiDAR for navigation",
+        "Ultrasonic sensors",
+        "Touch sensors",
+        "Microphone array"
+      ],
+      "interfaces": [
+        "Touch screen display",
+        "Voice interaction",
+        "Wi-Fi connectivity",
+        "Cloud integration"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Proprietary Hyundai platform",
+      "sdkLanguages": [
+        "Proprietary system"
+      ],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [
+        "Natural language processing",
+        "Face recognition",
+        "Customer database integration",
+        "Autonomous navigation AI"
+      ],
+      "apiDocumentationQuality": "Not publicly available (commercial deployment)"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "N/A (B2B deployment)",
+        "coverage": "Enterprise support"
+      },
+      "postSalesSupport": "Hyundai internal support and maintenance",
+      "trackRecord": "DAL-e service robot operational in Hyundai showrooms for customer service. Part of Hyundai Motor Group's robotics strategy including 80% ownership of Boston Dynamics and internal development. Demonstrated commitment to service robotics for automotive retail applications."
+    },
+    "specifications": {
+      "height": "~120 cm",
+      "type": "Service robot",
+      "deployment": "Hyundai showrooms",
+      "capabilities": "Customer service, information, face recognition"
+    },
+    "features": [
+      "Showroom service robot",
+      "Face recognition",
+      "Multi-language",
+      "Customer service",
+      "Hyundai showrooms",
+      "Commercial deployment"
+    ],
+    "images": [
+      "/images/robots/hyundai-dal-e.webp"
+    ],
+    "highResPhotos": [
+      "/images/robots/hyundai-dal-e.webp"
+    ],
+    "officialUrl": "https://www.hyundai.com/",
+    "description": "Hyundai DAL-e is a service robot deployed in Hyundai Motor Group showrooms for customer service and information assistance. Standing approximately 120cm tall, DAL-e features face recognition for personalized interaction, natural language processing for multi-language conversation, and autonomous navigation. Equipped with touch screen display, integrated with Hyundai customer database for product information and FAQ responses. Part of Hyundai's broader robotics strategy including 80% ownership of Boston Dynamics. Operational in showrooms demonstrating automotive industry's application of service robotics for enhanced customer experience."
+  },
+  {
+    "id": "limx-w1",
+    "name": "W1",
+    "brand": "LimX Dynamics",
+    "category": "quadruped",
+    "price": "Contact for pricing",
+    "description": "LimX W1 is an innovative wheeled quadruped robot combining the advantages of wheeled and legged locomotion for versatile terrain navigation and research applications.",
+    "images": [
+      "/images/robots/limx-w1.webp"
+    ],
+    "officialUrl": "https://www.limxdynamics.com",
+    "generalInfo": {
+      "manufacturer": "LimX Dynamics (China)",
+      "modelName": "W1",
+      "releaseDate": "2023",
+      "dimensions": {
+        "length": "~800mm",
+        "width": "~500mm",
+        "height": "~600mm",
+        "weight": "~50kg"
+      }
+    },
+    "keyFeatures": [
+      "Wheeled quadruped design combining wheels and legs",
+      "High-speed wheeled locomotion on flat terrain",
+      "Legged mobility for complex terrain",
+      "Advanced dynamic balance control",
+      "Hybrid locomotion system",
+      "Research and development platform"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "12+ (legs) + 4 wheels",
+      "payloadCapacity": "20-30kg",
+      "batteryCapacityRuntime": "~2 hours operation",
+      "charger": "Smart charging system",
+      "sensorsIncluded": [
+        "Depth cameras",
+        "IMU sensors",
+        "Joint encoders",
+        "Wheel encoders",
+        "LiDAR (optional)"
+      ],
+      "interfaces": [
+        "Ethernet",
+        "USB",
+        "CAN bus",
+        "Wi-Fi"
+      ]
+    },
+    "softwareEcosystem": {
+      "operatingSystem": "ROS 2",
+      "programmingLanguages": [
+        "C++",
+        "Python"
+      ],
+      "sdkAvailability": "Yes - ROS SDK",
+      "communitySupport": "Growing research community",
+      "documentation": "Technical documentation available"
+    },
+    "supplierReliability": {
+      "companyReputation": "Emerging Chinese robotics company specializing in legged robots",
+      "warrantySupport": "Available for research customers",
+      "updateFrequency": "Regular firmware and software updates",
+      "sparePartsAvailability": "Contact manufacturer"
+    },
+    "specifications": {
+      "Speed": "Up to 5 m/s (wheeled mode)",
+      "Range": "2+ hours battery life",
+      "Obstacle Height": "Variable terrain capability",
+      "Operating Temperature": "-10°C to 45°C",
+      "IP Rating": "IP54"
+    },
+    "features": [
+      "Hybrid wheel-leg locomotion",
+      "Dynamic balance control",
+      "High-speed wheeled mode",
+      "Complex terrain navigation",
+      "ROS 2 integration",
+      "Research platform"
+    ],
+    "highResPhotos": [
+      "/images/robots/limx-w1.webp"
+    ]
+  },
+  {
+    "id": "weilan-alphadog",
+    "name": "AlphaDog",
+    "brand": "Weilan",
+    "category": "quadruped",
+    "price": "Contact for pricing",
+    "description": "Weilan AlphaDog is one of the world's fastest quadruped robots, capable of reaching speeds up to 15 km/h with advanced dynamic locomotion and industrial-grade durability.",
+    "images": [
+      "/images/robots/weilan-alphadog.webp"
+    ],
+    "officialUrl": "https://www.weilan.com",
+    "generalInfo": {
+      "manufacturer": "Weilan (China)",
+      "modelName": "AlphaDog",
+      "releaseDate": "2023",
+      "dimensions": {
+        "length": "1000mm",
+        "width": "500mm",
+        "height": "700mm",
+        "weight": "50kg"
+      }
+    },
+    "keyFeatures": [
+      "Top speed of 15 km/h - one of the fastest quadruped robots",
+      "Industrial-grade construction",
+      "Advanced dynamic locomotion algorithms",
+      "Heavy payload capacity",
+      "All-terrain capability",
+      "High-performance actuators"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "12 (3 per leg)",
+      "payloadCapacity": "50kg",
+      "batteryCapacityRuntime": "2-4 hours depending on usage",
+      "charger": "Fast charging system",
+      "sensorsIncluded": [
+        "Depth cameras",
+        "IMU",
+        "Joint encoders",
+        "Force sensors",
+        "LiDAR (optional)"
+      ],
+      "interfaces": [
+        "Ethernet",
+        "USB 3.0",
+        "CAN bus",
+        "Wi-Fi 6"
+      ]
+    },
+    "softwareEcosystem": {
+      "operatingSystem": "ROS / Custom Linux",
+      "programmingLanguages": [
+        "C++",
+        "Python"
+      ],
+      "sdkAvailability": "Yes - SDK for developers",
+      "communitySupport": "Growing industrial robotics community",
+      "documentation": "Comprehensive technical documentation"
+    },
+    "supplierReliability": {
+      "companyReputation": "Leading Chinese quadruped robotics manufacturer",
+      "warrantySupport": "Industrial warranty and support",
+      "updateFrequency": "Regular software and firmware updates",
+      "sparePartsAvailability": "Available through manufacturer"
+    },
+    "specifications": {
+      "Top Speed": "15 km/h",
+      "Range": "2-4 hours",
+      "Step Height": "300mm",
+      "Operating Temperature": "-20°C to 55°C",
+      "IP Rating": "IP65"
+    },
+    "features": [
+      "Ultra-high speed locomotion",
+      "Industrial durability",
+      "Heavy payload capacity",
+      "All-terrain navigation",
+      "Advanced control algorithms",
+      "Modular design"
+    ],
+    "highResPhotos": [
+      "/images/robots/weilan-alphadog.webp"
+    ]
+  },
+  {
+    "id": "swiss-mile-rivr",
+    "name": "RIVR",
+    "brand": "Swiss-Mile",
+    "category": "quadruped",
+    "price": "Contact for pricing",
+    "description": "Swiss-Mile RIVR is a revolutionary wheel-legged robot combining the efficiency of wheels with the versatility of legs for last-mile delivery and urban logistics applications.",
+    "images": [
+      "/images/robots/swiss-mile-rivr.webp"
+    ],
+    "officialUrl": "https://www.rivr.ai",
+    "generalInfo": {
+      "manufacturer": "Swiss-Mile (Switzerland)",
+      "modelName": "RIVR",
+      "releaseDate": "2023",
+      "dimensions": {
+        "length": "~900mm",
+        "width": "~600mm",
+        "height": "~700mm",
+        "weight": "~60kg"
+      }
+    },
+    "keyFeatures": [
+      "Hybrid wheel-leg design for maximum versatility",
+      "Efficient wheeled mode for flat surfaces",
+      "Legged mode for stairs and obstacles",
+      "Last-mile delivery optimization",
+      "Energy-efficient locomotion",
+      "Autonomous navigation"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "12 (legs) + 4 wheels",
+      "payloadCapacity": "30-50kg",
+      "batteryCapacityRuntime": "4+ hours in wheeled mode",
+      "charger": "Fast charging system",
+      "sensorsIncluded": [
+        "360° LiDAR",
+        "RGB-D cameras",
+        "IMU",
+        "Joint encoders",
+        "Wheel encoders",
+        "GPS"
+      ],
+      "interfaces": [
+        "Ethernet",
+        "USB",
+        "4G/5G connectivity",
+        "Wi-Fi 6"
+      ]
+    },
+    "softwareEcosystem": {
+      "operatingSystem": "ROS 2",
+      "programmingLanguages": [
+        "C++",
+        "Python"
+      ],
+      "sdkAvailability": "Yes - Developer SDK",
+      "communitySupport": "Research and commercial community",
+      "documentation": "Comprehensive documentation and API"
+    },
+    "supplierReliability": {
+      "companyReputation": "Swiss robotics startup spun out from ETH Zurich research",
+      "warrantySupport": "Commercial warranty and support packages",
+      "updateFrequency": "Regular OTA updates",
+      "sparePartsAvailability": "Available for commercial customers"
+    },
+    "specifications": {
+      "Speed": "Up to 22 km/h (wheeled mode)",
+      "Range": "4+ hours battery life",
+      "Climbing Capability": "Stairs and urban obstacles",
+      "Operating Temperature": "-10°C to 40°C",
+      "IP Rating": "IP54"
+    },
+    "features": [
+      "Wheel-leg hybrid locomotion",
+      "Last-mile delivery optimization",
+      "Stair climbing capability",
+      "High-speed wheeled mode",
+      "Autonomous navigation",
+      "Energy-efficient design"
+    ],
+    "highResPhotos": [
+      "/images/robots/swiss-mile-rivr.webp"
+    ]
   }
 ]
