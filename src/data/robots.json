@@ -6220,7 +6220,16 @@
     "name": "W1",
     "brand": "LimX Dynamics",
     "category": "quadruped",
-    "price": "Contact for pricing",
+    "price": {
+      "starting": "request",
+      "currency": "USD",
+      "models": [
+        {
+          "name": "Standard",
+          "price": "request"
+        }
+      ]
+    },
     "description": "LimX W1 is an innovative wheeled quadruped robot combining the advantages of wheeled and legged locomotion for versatile terrain navigation and research applications.",
     "images": [
       "/images/robots/limx-w1.webp"
@@ -6304,7 +6313,16 @@
     "name": "AlphaDog",
     "brand": "Weilan",
     "category": "quadruped",
-    "price": "Contact for pricing",
+    "price": {
+      "starting": "request",
+      "currency": "USD",
+      "models": [
+        {
+          "name": "Standard",
+          "price": "request"
+        }
+      ]
+    },
     "description": "Weilan AlphaDog is one of the world's fastest quadruped robots, capable of reaching speeds up to 15 km/h with advanced dynamic locomotion and industrial-grade durability.",
     "images": [
       "/images/robots/weilan-alphadog.webp"
@@ -6388,7 +6406,16 @@
     "name": "RIVR",
     "brand": "Swiss-Mile",
     "category": "quadruped",
-    "price": "Contact for pricing",
+    "price": {
+      "starting": "request",
+      "currency": "USD",
+      "models": [
+        {
+          "name": "Standard",
+          "price": "request"
+        }
+      ]
+    },
     "description": "Swiss-Mile RIVR is a revolutionary wheel-legged robot combining the efficiency of wheels with the versatility of legs for last-mile delivery and urban logistics applications.",
     "images": [
       "/images/robots/swiss-mile-rivr.webp"
