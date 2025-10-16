@@ -32,7 +32,7 @@
       }
     },
     "keyFeatures": [
-      "4D LiDAR L1 with 360°x90° recognition",
+      "4D LiDAR L1 with 360\u00b0x90\u00b0 recognition",
       "8-core high-performance CPU",
       "GPT-powered AI integration",
       "Intelligent Side-follow System (ISS 2.0)",
@@ -40,7 +40,7 @@
       "Over-the-Air (OTA) software upgrades",
       "12 aluminum knee joint motors",
       "WiFi 6, Bluetooth 5.2, 4G module",
-      "Max climb height: ~15-16 cm, angle: 30-40°"
+      "Max climb height: ~15-16 cm, angle: 30-40\u00b0"
     ],
     "hardwareBuildQuality": {
       "totalDegreesOfFreedom": "12 (joint motors)",
@@ -104,9 +104,9 @@
         "EDU": "16cm"
       },
       "maxClimbAngle": {
-        "AIR": "30°",
-        "PRO": "40°",
-        "EDU": "40°"
+        "AIR": "30\u00b0",
+        "PRO": "40\u00b0",
+        "EDU": "40\u00b0"
       },
       "computingPower": {
         "AIR": "Basic computing",
@@ -159,7 +159,7 @@
       "12 aluminum knee joint motors",
       "8-core high-performance CPU",
       "Max climb height: ~15-16 cm",
-      "Max climb angle: 30-40°"
+      "Max climb angle: 30-40\u00b0"
     ],
     "images": [
       "/images/robots/go2-1.jpg",
@@ -199,7 +199,7 @@
       "payload": "8kg (max up to 12kg)",
       "maxSpeed": "0-2.5 m/s",
       "maxClimbHeight": "70cm",
-      "maxClimbAngle": "35°",
+      "maxClimbAngle": "35\u00b0",
       "computingPower": "8-core high-performance CPU",
       "jointMotors": "16 aluminum knee joint motors",
       "maxJointTorque": "~45 N.m",
@@ -349,8 +349,8 @@
         "3D LiDAR"
       ],
       "movementCapabilities": {
-        "waistJoint": "Z±155°",
-        "kneeJoint": "0-165°",
+        "waistJoint": "Z\u00b1155\u00b0",
+        "kneeJoint": "0-165\u00b0",
         "hipJoint": "Multiple complex angle ranges"
       },
       "batteryLife": "~2 hours",
@@ -414,31 +414,31 @@
       "manufacturer": "Unitree",
       "modelName": "H1",
       "dimensions": {
-        "standing": "~180 cm (1520+285mm × 570mm × 220mm)",
+        "standing": "~180 cm (1520+285mm \u00d7 570mm \u00d7 220mm)",
         "folded": "Not specified",
         "weight": "~47 kg"
       }
     },
     "keyFeatures": [
-      "Full-size universal humanoid with 5 DOF per leg (Hip×3 + Knee×1 + Ankle×1)",
+      "Full-size universal humanoid with 5 DOF per leg (Hip\u00d73 + Knee\u00d71 + Ankle\u00d71)",
       "4 DOF per arm (expandable)",
       "Moving speed of 3.3 m/s with potential >5 m/s",
       "Peak Torque Density: 189 N.m/Kg",
       "Maximum Joint Torque: 360 N.m",
       "864 Wh quickly replaceable battery system",
-      "3D LiDAR + Depth Camera with 360° depth perception",
+      "3D LiDAR + Depth Camera with 360\u00b0 depth perception",
       "Optional dexterous hand compatibility",
       "Continuous Over-The-Air (OTA) software upgrades"
     ],
     "hardwareBuildQuality": {
-      "totalDegreesOfFreedom": "5 per leg (Hip×3 + Knee×1 + Ankle×1), 4 per arm (expandable)",
+      "totalDegreesOfFreedom": "5 per leg (Hip\u00d73 + Knee\u00d71 + Ankle\u00d71), 4 per arm (expandable)",
       "payloadCapacity": "Not specified",
       "batteryCapacityRuntime": "864 Wh, 15Ah, max 67.2V, quickly replaceable",
       "charger": "Not specified",
       "sensorsIncluded": [
         "3D LiDAR",
         "Depth Camera",
-        "360° depth perception system"
+        "360\u00b0 depth perception system"
       ],
       "interfaces": [
         "Not specified"
@@ -466,24 +466,24 @@
     },
     "specifications": {
       "keyDimensions": {
-        "H1": "(1520+285)mm × 570mm × 220mm",
-        "H1_2": "(1503+285)mm × 510mm × 287mm"
+        "H1": "(1520+285)mm \u00d7 570mm \u00d7 220mm",
+        "H1_2": "(1503+285)mm \u00d7 510mm \u00d7 287mm"
       },
       "thighCalfLength": {
-        "H1": "400mm × 2",
-        "H1_2": "400mm × 2"
+        "H1": "400mm \u00d7 2",
+        "H1_2": "400mm \u00d7 2"
       },
       "totalArmLength": {
-        "H1": "338mm × 2",
+        "H1": "338mm \u00d7 2",
         "H1_2": "685mm"
       },
       "dofEachLeg": {
-        "H1": "5 (Hip × 3 + Knee × 1 + Ankle × 1)",
-        "H1_2": "6 (Hip × 3 + Knee × 1 + Ankle × 2)"
+        "H1": "5 (Hip \u00d7 3 + Knee \u00d7 1 + Ankle \u00d7 1)",
+        "H1_2": "6 (Hip \u00d7 3 + Knee \u00d7 1 + Ankle \u00d7 2)"
       },
       "dofEachArm": {
         "H1": "4 (Expandable)",
-        "H1_2": "7 (Shoulder × 3 + Elbow × 1 + Wrist × 3)"
+        "H1_2": "7 (Shoulder \u00d7 3 + Elbow \u00d7 1 + Wrist \u00d7 3)"
       },
       "totalWeight": {
         "H1": "About 47kg",
@@ -496,11 +496,11 @@
         "hipJointTorque": "About 220 N.m",
         "ankleTorque": {
           "H1": "About 59N.m",
-          "H1_2": "About 75×2N.m"
+          "H1_2": "About 75\u00d72N.m"
         },
         "armJointTorque": {
           "H1": "About 75N.m",
-          "H1_2": "Waist Joint About 220N.m, Ankle Joint About 75×2N.m"
+          "H1_2": "Waist Joint About 220N.m, Ankle Joint About 75\u00d72N.m"
         }
       },
       "mobility": {
@@ -560,9 +560,9 @@
       "manufacturer": "Unitree",
       "modelName": "B2",
       "dimensions": {
-        "standing": "≈ 1098mm × 450mm × 645mm",
-        "folded": "≈ 880mm × 460mm × 330mm",
-        "weight": "≈ 60kg (including battery)"
+        "standing": "\u2248 1098mm \u00d7 450mm \u00d7 645mm",
+        "folded": "\u2248 880mm \u00d7 460mm \u00d7 330mm",
+        "weight": "\u2248 60kg (including battery)"
       }
     },
     "keyFeatures": [
@@ -573,9 +573,9 @@
       "Longest Jump Distance: > 1.6m",
       "45Ah (2250Wh) battery system",
       "IP67 environmental protection",
-      "Operating Temperature: -20°C to 55°C",
+      "Operating Temperature: -20\u00b0C to 55\u00b0C",
       "Obstacle Crossing: Max 40cm",
-      "Slope Capability: > 45°"
+      "Slope Capability: > 45\u00b0"
     ],
     "hardwareBuildQuality": {
       "totalDegreesOfFreedom": "12 (joint motors)",
@@ -583,14 +583,14 @@
       "batteryCapacityRuntime": "45Ah (2250Wh), 4-6 hours runtime",
       "charger": "58V charging system",
       "sensorsIncluded": [
-        "3D LiDAR × 1",
-        "Depth camera × 2",
-        "Optical camera × 2"
+        "3D LiDAR \u00d7 1",
+        "Depth camera \u00d7 2",
+        "Optical camera \u00d7 2"
       ],
       "interfaces": [
-        "1000M-Base-Ethernet × 4",
-        "USB3.0 × 4",
-        "Power outputs: 12V × 4, 5V × 1, 24V × 4"
+        "1000M-Base-Ethernet \u00d7 4",
+        "USB3.0 \u00d7 4",
+        "Power outputs: 12V \u00d7 4, 5V \u00d7 1, 24V \u00d7 4"
       ]
     },
     "softwareEcosystem": {
@@ -615,16 +615,16 @@
       "trackRecord": "Founded in 2013, 11+ years in robotics"
     },
     "specifications": {
-      "dimensionsStanding": "≈ 1098mm × 450mm × 645mm",
-      "dimensionsLying": "≈ 880mm × 460mm × 330mm",
-      "weight": "≈ 60kg (including battery)",
+      "dimensionsStanding": "\u2248 1098mm \u00d7 450mm \u00d7 645mm",
+      "dimensionsLying": "\u2248 880mm \u00d7 460mm \u00d7 330mm",
+      "weight": "\u2248 60kg (including battery)",
       "maxRunningSpeed": "> 6 m/s",
       "maxJointTorque": "About 360 N.m",
       "longestJumpDistance": "> 1.6m",
       "standingLoad": "120kg max",
       "continuousWalkingLoad": "> 40kg",
       "obstacleCrossing": "Max 40cm",
-      "slopeAngle": "> 45°",
+      "slopeAngle": "> 45\u00b0",
       "batteryCapacity": "45Ah (2250Wh)",
       "batteryVoltage": "58V",
       "batteryLife": "4-6 hours",
@@ -632,7 +632,7 @@
         "unloaded": "> 5 hours, > 20km",
         "loaded": "> 4 hours, > 15km (20kg load)"
       },
-      "operatingTemperature": "-20℃ ~ 55℃",
+      "operatingTemperature": "-20\u2103 ~ 55\u2103",
       "ingressProtection": "IP67",
       "ditchJumping": "0.5~1.2m",
       "controlPlatform": {
@@ -641,18 +641,18 @@
         "optional": "Intel Core i7 + Jetson Orin NX"
       },
       "connectivity": [
-        "1000M-Base-Ethernet × 4",
-        "USB3.0 × 4"
+        "1000M-Base-Ethernet \u00d7 4",
+        "USB3.0 \u00d7 4"
       ],
       "powerOutputs": [
-        "12V × 4",
-        "5V × 1",
-        "24V × 4"
+        "12V \u00d7 4",
+        "5V \u00d7 1",
+        "24V \u00d7 4"
       ],
       "sensors": [
-        "3D LiDAR × 1",
-        "Depth camera × 2",
-        "Optical camera × 2"
+        "3D LiDAR \u00d7 1",
+        "Depth camera \u00d7 2",
+        "Optical camera \u00d7 2"
       ]
     },
     "features": [
@@ -705,10 +705,10 @@
       "Max Joint Torque: ~180 N.m",
       "Standing Load: ~100kg",
       "Continuous Walking Load: ~25kg",
-      "Slope Walking: ~45°",
+      "Slope Walking: ~45\u00b0",
       "Stair Climbing: Max 30cm step height",
       "9000mAh (453.6Wh) battery system",
-      "Operating Temperature: -20°C to 55°C",
+      "Operating Temperature: -20\u00b0C to 55\u00b0C",
       "IP56 ingress protection",
       "8-Core CPU + Intel Core i7"
     ],
@@ -767,10 +767,10 @@
       },
       "maxStandingLoad": "~100kg",
       "continuousWalkingLoad": "~25kg",
-      "slopeWalking": "~45°",
+      "slopeWalking": "~45\u00b0",
       "maxSpeed": "0-3.7 m/s (up to ~5 m/s)",
       "stairClimbing": "Max 30cm step height",
-      "operatingTemperature": "-20°C to 55°C",
+      "operatingTemperature": "-20\u00b0C to 55\u00b0C",
       "ingressProtection": {
         "A2": "IP56",
         "A2_PRO": "IP56-IP67"
@@ -904,12 +904,12 @@
       "maxSpeedRecord": "17 km/h (4.7 m/s)",
       "payload": "3-5kg adaptive load capacity",
       "jointMovementSpace": {
-        "body": "-49° to 49°",
-        "thigh": "-39° to 257°",
-        "shank": "-161° to -51°"
+        "body": "-49\u00b0 to 49\u00b0",
+        "thigh": "-39\u00b0 to 257\u00b0",
+        "shank": "-161\u00b0 to -51\u00b0"
       },
       "sensingSystem": "SSS Super-sensing System",
-      "sensingAngle": "≈150 x 170°",
+      "sensingAngle": "\u2248150 x 170\u00b0",
       "sensors": {
         "AIR": [
           "1 pair of fisheye binocular depth sensors"
@@ -1007,7 +1007,7 @@
       "5x Intel RealSense D430 sensors",
       "Max Stair Climbing: 20cm",
       "Standing Endurance: 5 hours",
-      "Operating Temperature: -5°C to 45°C",
+      "Operating Temperature: -5\u00b0C to 45\u00b0C",
       "Charging Time: 1-2 hours"
     ],
     "hardwareBuildQuality": {
@@ -1057,7 +1057,7 @@
       "batteryCapacity": "18000mAh (932.4Wh)",
       "batteryVoltage": "51.8V",
       "chargingTime": "1-2 hours",
-      "operatingTemperature": "-5°C to 45°C",
+      "operatingTemperature": "-5\u00b0C to 45\u00b0C",
       "computing": "Intel i5-1135G7",
       "sensingPlatform": "3x Jetson XavierNX",
       "sensors": [
@@ -1105,14 +1105,14 @@
       "dimensions": {
         "standing": "0.65m x 0.31m x 0.6m",
         "folded": "0.60m x 0.31m x 0.15m",
-        "weight": "21.5kg ±1kg (without battery)"
+        "weight": "21.5kg \u00b11kg (without battery)"
       }
     },
     "keyFeatures": [
       "12 high-performance servo motors",
       "Maximum Walking Speed: >1.5 m/s",
       "Payload Capacity: 13kg",
-      "Climbing Angle: ≤25°",
+      "Climbing Angle: \u226425\u00b0",
       "Endurance: 2.5-4.6 hours",
       "12,600mAh battery capacity",
       "2x Depth Cameras (1280x720 resolution)",
@@ -1159,11 +1159,11 @@
       "trackRecord": "Founded in 2013, 11+ years in robotics"
     },
     "specifications": {
-      "weight": "21.5kg ±1kg (without battery)",
+      "weight": "21.5kg \u00b11kg (without battery)",
       "dimensionsStanding": "65cm x 31cm x 60cm",
       "dimensionsLying": "60cm x 31cm x 15cm",
       "maxWalkingSpeed": ">1.5m/s",
-      "climbingAngle": "≤25°",
+      "climbingAngle": "\u226425\u00b0",
       "payload": "13kg",
       "endurance": "2.5-4.6 hours",
       "degreesOfFreedom": "12 (12 motors)",
@@ -1238,7 +1238,7 @@
       "manufacturer": "Unitree",
       "modelName": "R1",
       "dimensions": {
-        "standing": "1210 × 357 × 190 mm",
+        "standing": "1210 \u00d7 357 \u00d7 190 mm",
         "folded": "Not specified",
         "weight": "~25kg"
       }
@@ -1300,7 +1300,7 @@
       "trackRecord": "Founded in 2013, 11+ years in robotics"
     },
     "specifications": {
-      "dimensions": "1210 × 357 × 190 mm",
+      "dimensions": "1210 \u00d7 357 \u00d7 190 mm",
       "weight": "~25kg",
       "totalDOF": "24-40",
       "legDOF": "6 per leg",
@@ -1462,9 +1462,9 @@
     "specifications": {
       "dimensions": "950mm x 470mm x 700mm (standing)",
       "weight": "53kg",
-      "maxSpeed": "≥4 m/s",
-      "slopeCapability": "≥30°",
-      "stepHeight": "≥20 cm",
+      "maxSpeed": "\u22654 m/s",
+      "slopeCapability": "\u226530\u00b0",
+      "stepHeight": "\u226520 cm",
       "payload": "20 kg",
       "batteryLife": "2-4 hours",
       "maxMileage": "15 km",
@@ -1532,9 +1532,9 @@
     "keyFeatures": [
       "Industrial-grade IP67 protection rating",
       "Maximum speed of 4+ m/s with advanced mobility",
-      "45° slope climbing and 20cm+ obstacle navigation",
+      "45\u00b0 slope climbing and 20cm+ obstacle navigation",
       "Extended battery life: 2.5-4 hours runtime",
-      "Extreme temperature operation: -20°C to 55°C",
+      "Extreme temperature operation: -20\u00b0C to 55\u00b0C",
       "Advanced SLAM and autonomous navigation",
       "Quick battery swap functionality",
       "Professional inspection and security applications",
@@ -1543,10 +1543,10 @@
     "hardwareBuildQuality": {
       "totalDegreesOfFreedom": "12 (quadruped locomotion)",
       "payloadCapacity": "20kg maximum",
-      "batteryCapacityRuntime": "22.4Ah, 2.5-4h runtime, ≥10km mileage",
+      "batteryCapacityRuntime": "22.4Ah, 2.5-4h runtime, \u226510km mileage",
       "charger": "Fast charging system with quick swap capability",
       "sensorsIncluded": [
-        "360° LiDAR sensors (front & rear)",
+        "360\u00b0 LiDAR sensors (front & rear)",
         "Wide-view camera system",
         "IMU and orientation sensors",
         "Environmental monitoring sensors"
@@ -1636,7 +1636,7 @@
       "50% increased joint torque over previous generation",
       "Advanced locomotion: front flips, jumps, dancing",
       "Maximum speed of 4 m/s with agile maneuverability",
-      "18cm step climbing and 40° slope navigation",
+      "18cm step climbing and 40\u00b0 slope navigation",
       "Modular expansion with open interfaces",
       "Up to 90 minutes battery life (2 hours max)",
       "Multiple variants: Basic, Venture, Pro, LIDAR",
@@ -1713,7 +1713,7 @@
       ]
     },
     "specifications": {
-      "dimensions": "0.8m × 0.5m × 0.6m (standing)",
+      "dimensions": "0.8m \u00d7 0.5m \u00d7 0.6m (standing)",
       "weight": "30kg",
       "payload": "12kg",
       "maxSpeed": "5 m/s",
@@ -1722,7 +1722,7 @@
       "stepHeight": "22 cm",
       "camera": "1080P wide-angle lens",
       "ingressProtection": "IP54",
-      "operatingTemperature": "0-40°C",
+      "operatingTemperature": "0-40\u00b0C",
       "connectivity": [
         "Wi-Fi",
         "GPS"
@@ -1763,24 +1763,24 @@
       ]
     },
     "specifications": {
-      "dimensions": "820mm × 430mm × 570mm",
+      "dimensions": "820mm \u00d7 430mm \u00d7 570mm",
       "weight": "33kg (including battery)",
       "payload": "15kg standard, 50kg max",
       "maxSpeed": "5 m/s (lab), 3 m/s (safety-limited)",
       "operatingSpeed": "2 m/s",
       "maxStairHeight": "25cm continuous",
       "maxSingleStep": "80cm",
-      "maxSlope": "45°",
+      "maxSlope": "45\u00b0",
       "batteryLife": {
         "unloaded": "3h/15km",
         "loaded": "2.5h/12km (15kg)"
       },
       "chargingTime": "1.5h (single battery)",
       "ingressProtection": "IP66",
-      "operatingTemperature": "-20°C to 55°C",
+      "operatingTemperature": "-20\u00b0C to 55\u00b0C",
       "processors": "Dual octa-core 64-bit",
       "sensors": [
-        "2x 96-line LiDAR (360°×90°)",
+        "2x 96-line LiDAR (360\u00b0\u00d790\u00b0)",
         "2x Wide-angle cameras"
       ]
     },
@@ -1827,7 +1827,7 @@
     "keyFeatures": [
       "Embodied intelligence explorer with advanced AI",
       "Walking speed over 1.6 m/s with stable locomotion",
-      "18cm step climbing and 25° slope navigation",
+      "18cm step climbing and 25\u00b0 slope navigation",
       "Proprietary J60 lightweight and J100 high-torque joints",
       "Balance recovery under unknown disturbances",
       "Fusion perception: robot + environmental awareness",
@@ -1913,8 +1913,8 @@
     "keyFeatures": [
       "World's first humanoid robot capable of autonomous battery swapping",
       "15kg payload capacity",
-      "Waist rotation: ±162°",
-      "Body pitch angle: 170°",
+      "Waist rotation: \u00b1162\u00b0",
+      "Body pitch angle: 170\u00b0",
       "Workspace: 0-1.8 meters",
       "Dual-battery dynamic balancing system",
       "3-minute battery swap time",
@@ -1962,8 +1962,8 @@
       "dimensions": "Industrial configuration",
       "weight": "Industrial-grade construction",
       "payload": "15kg maximum",
-      "waistRotation": "±162°",
-      "bodyPitchAngle": "170°",
+      "waistRotation": "\u00b1162\u00b0",
+      "bodyPitchAngle": "170\u00b0",
       "workspace": "0-1.8 meters",
       "batterySystem": "Dual-battery dynamic balancing",
       "batterySwapTime": "3 minutes autonomous",
@@ -2302,11 +2302,11 @@
       "63kg robust construction",
       "41 total degrees of freedom",
       "3 km/h maximum walking speed",
-      "20° slope adaptation",
+      "20\u00b0 slope adaptation",
       "15cm stair climbing capability",
       "1.5kg single arm load capacity",
       "600mm arm span per arm",
-      "160° 4.6K HD dual curved screen face",
+      "160\u00b0 4.6K HD dual curved screen face",
       "4-dimensional light language system"
     ],
     "hardwareBuildQuality": {
@@ -2354,7 +2354,7 @@
       "weight": "63kg",
       "dof": "41 total (detailed breakdown available)",
       "maxWalkingSpeed": "3 km/h",
-      "slopeAdaptation": "20° angle",
+      "slopeAdaptation": "20\u00b0 angle",
       "stairClimbing": "15cm steps",
       "armLoadCapacity": "1.5kg per arm",
       "armSpan": "600mm per arm",
@@ -2364,7 +2364,7 @@
       "battery": "54.6V 10Ah (3.6kg weight)",
       "chargingTime": "2 hours",
       "usageTime": "2 hours",
-      "display": "160° 4.6K HD dual flexible curved screen",
+      "display": "160\u00b0 4.6K HD dual flexible curved screen",
       "connectivity": [
         "Wi-Fi",
         "Ethernet",
@@ -2411,7 +2411,7 @@
     },
     "keyFeatures": [
       "Full-sized wheeled humanoid robot",
-      "±170° rotation in 0.8m passages",
+      "\u00b1170\u00b0 rotation in 0.8m passages",
       "0-40cm lifting range",
       "15kg payload capacity",
       "2m/s movement speed",
@@ -2461,7 +2461,7 @@
       "trackRecord": "Proven in industrial applications"
     },
     "specifications": {
-      "rotationRange": "±170° in 0.8m passages",
+      "rotationRange": "\u00b1170\u00b0 in 0.8m passages",
       "liftingRange": "0-40cm",
       "payloadCapacity": "15kg",
       "movementSpeed": "2m/s",
@@ -2512,7 +2512,7 @@
       "63kg robust construction",
       "41 degrees of freedom total",
       "3 km/h maximum walking speed",
-      "20° slope angle adaptation",
+      "20\u00b0 slope angle adaptation",
       "15cm maximum step height",
       "1.5kg single arm load capacity",
       "600mm arm span per arm",
@@ -2568,7 +2568,7 @@
       "maxWalkingSpeed": "3 km/h",
       "terrainAdaptation": "3cm diverse terrain",
       "maxStepHeight": "15cm",
-      "maxSlopeAngle": "20°",
+      "maxSlopeAngle": "20\u00b0",
       "armLoadCapacity": "1.5kg per arm",
       "armSpan": "600mm per arm",
       "processor": "Intel i7 8665U (1.9Ghz x2)",
@@ -2619,7 +2619,7 @@
       }
     },
     "keyFeatures": [
-      "360° terrain sensing",
+      "360\u00b0 terrain sensing",
       "Autonomous navigation",
       "Collision avoidance",
       "IP54 protection rating",
@@ -2634,7 +2634,7 @@
       "batteryCapacityRuntime": "564 Wh battery, 90 minutes average runtime",
       "charger": "60 minutes recharge time",
       "sensorsIncluded": [
-        "360° cameras",
+        "360\u00b0 cameras",
         "Depth sensors",
         "IMU (Inertial Measurement Unit)",
         "Proprioceptive sensors"
@@ -2673,9 +2673,9 @@
       "weight": "32.7kg",
       "material": "Industrial-grade aluminum and composites",
       "maxSpeed": "1.6 m/s",
-      "maxSlope": "±30°",
+      "maxSlope": "\u00b130\u00b0",
       "maxStepHeight": "300mm",
-      "operatingTemperature": "-20°C to +55°C",
+      "operatingTemperature": "-20\u00b0C to +55\u00b0C",
       "ingressProtection": "IP54",
       "battery": "564 Wh lithium-ion",
       "runtime": "90 minutes average",
@@ -2694,7 +2694,7 @@
       "/images/robots/boston-dynamics/spot/spot-1.jpg"
     ],
     "officialUrl": "https://bostondynamics.com/products/spot/",
-    "description": "Industry-leading quadruped robot with 360° terrain sensing, autonomous navigation, and robust payload integration for industrial inspection and mobile sensing applications."
+    "description": "Industry-leading quadruped robot with 360\u00b0 terrain sensing, autonomous navigation, and robust payload integration for industrial inspection and mobile sensing applications."
   },
   {
     "id": "boston-dynamics-atlas",
@@ -2919,9 +2919,9 @@
     "keyFeatures": [
       "IP67 environmental protection",
       "Modular design with field-replaceable legs",
-      "Vibram® all-terrain foot treads",
+      "Vibram\u00ae all-terrain foot treads",
       "Autonomous navigation capabilities",
-      "All-weather operation (-40°C to +55°C)",
+      "All-weather operation (-40\u00b0C to +55\u00b0C)",
       "Advanced sensor integration",
       "Multi-terrain adaptability",
       "Defense-grade durability"
@@ -2974,7 +2974,7 @@
       "material": "Military-grade construction",
       "maxSpeed": "2.4 m/s (sprint), 1.2 m/s (fast walk)",
       "standardSpeed": "0.9 m/s",
-      "operatingTemperature": "-40°C to +55°C",
+      "operatingTemperature": "-40\u00b0C to +55\u00b0C",
       "ingressProtection": "IP67",
       "processor": "NVIDIA Xavier",
       "memory": "32GB RAM",
@@ -3020,7 +3020,7 @@
       }
     },
     "keyFeatures": [
-      "8 DoF Biomimetic Arms with end-point positioning accuracy ≤0.5mm",
+      "8 DoF Biomimetic Arms with end-point positioning accuracy \u22640.5mm",
       "Zero Noise Chassis for quiet operation",
       "Adaptive Smart Gripper for versatile manipulation",
       "Dual-Axis Flexible Head with comprehensive sensors",
@@ -3080,7 +3080,7 @@
       "armLoadCapacity": "6 kg per arm",
       "armSpan": "982 mm",
       "computingPower": "275 TOPs",
-      "positioningAccuracy": "≤0.5mm"
+      "positioningAccuracy": "\u22640.5mm"
     },
     "features": [
       "Wheeled dual-arm humanoid design",
@@ -3443,7 +3443,7 @@
       "Biomimetic dexterous hands (6 DOF each)",
       "Custom-developed aerospace-grade aluminum joints",
       "Dual CPU processing (NVIDIA + Intel)",
-      "360° LiDAR and 6 HD cameras",
+      "360\u00b0 LiDAR and 6 HD cameras",
       "Intel RealSense D435 depth camera",
       "10-year expected lifespan",
       "AI-enhanced motion control"
@@ -3455,7 +3455,7 @@
       "charger": "High-performance charging system",
       "sensorsIncluded": [
         "Intel RealSense D435 depth camera",
-        "360° LiDAR",
+        "360\u00b0 LiDAR",
         "6 high-definition cameras",
         "IMU motion control sensors"
       ],
@@ -3491,8 +3491,8 @@
       "dimensions": "170cm height, adult human-sized",
       "weight": "55kg with battery",
       "walkingSpeed": "2 m/s maximum",
-      "kneeJointTorque": "186 N·m maximum",
-      "controlPrecision": "0.2 N·m force control precision",
+      "kneeJointTorque": "186 N\u00b7m maximum",
+      "controlPrecision": "0.2 N\u00b7m force control precision",
       "batteryLife": "2 hours continuous operation",
       "processors": "Dual CPU (NVIDIA Jetson Orin Nano + Intel)"
     },
@@ -3539,8 +3539,8 @@
       }
     },
     "keyFeatures": [
-      "≥23 degrees of freedom total",
-      "320° waist rotation capability",
+      "\u226523 degrees of freedom total",
+      "320\u00b0 waist rotation capability",
       "2 m/s walking speed",
       "Natural human-like gait",
       "End-to-end neural network locomotion",
@@ -3551,7 +3551,7 @@
       "High-compatibility open-source platform"
     ],
     "hardwareBuildQuality": {
-      "totalDegreesOfFreedom": "≥23 (6 per leg, 5 per arm)",
+      "totalDegreesOfFreedom": "\u226523 (6 per leg, 5 per arm)",
       "payloadCapacity": "Moderate humanoid payload capacity",
       "batteryCapacityRuntime": "10,000mAh, 2 hours runtime",
       "charger": "54.6V 4.5A, 2 hours charging time",
@@ -3592,9 +3592,9 @@
       "dimensions": "138cm height, compact humanoid",
       "weight": "40kg with battery",
       "walkingSpeed": "2 m/s maximum",
-      "waistRotation": "320° rotation range",
-      "maxJointTorque": "145 N·m",
-      "torqueDensity": "130 N·m/kg peak",
+      "waistRotation": "320\u00b0 rotation range",
+      "maxJointTorque": "145 N\u00b7m",
+      "torqueDensity": "130 N\u00b7m/kg peak",
       "controlPrecision": "5% joint control precision",
       "chargingTime": "2 hours full charge"
     },
@@ -3644,7 +3644,7 @@
       "26 total degrees of freedom",
       "Dual 7-axis anthropomorphic arms",
       "4 DOF torso for lifting/tilting/rotating",
-      "6 DOF vector chassis for 360° movement",
+      "6 DOF vector chassis for 360\u00b0 movement",
       "Maximum payload: 10 kg (dual arms)",
       "62 cm arm length with 0-2m vertical workspace",
       "VR teleoperation capability",
@@ -3702,7 +3702,7 @@
     },
     "features": [
       "Dual anthropomorphic arms with human-like flexibility",
-      "360° omnidirectional movement capability",
+      "360\u00b0 omnidirectional movement capability",
       "VR-based teleoperation system",
       "Advanced multi-sensor perception",
       "Voice interaction capabilities",
@@ -3716,7 +3716,7 @@
       "/images/robots/galaxea-r1-pro.png"
     ],
     "officialUrl": "https://galaxea-ai.com/cn/products/R1-Pro",
-    "description": "R1 Pro is Galaxea AI's advanced embodied intelligence robot featuring dual 7-axis anthropomorphic arms, 360° mobility, and VR teleoperation capabilities. With 26 DOF and advanced perception systems, it represents cutting-edge embodied AI technology for research and commercial applications."
+    "description": "R1 Pro is Galaxea AI's advanced embodied intelligence robot featuring dual 7-axis anthropomorphic arms, 360\u00b0 mobility, and VR teleoperation capabilities. With 26 DOF and advanced perception systems, it represents cutting-edge embodied AI technology for research and commercial applications."
   },
   {
     "id": "galaxea-r1",
@@ -3750,7 +3750,7 @@
       "Maximum payload: 10 kg (dual arms)",
       "1.5 m/s chassis movement speed",
       "200MP stereo cameras + 5x surrounding cameras",
-      "Optional 360° LIDAR",
+      "Optional 360\u00b0 LIDAR",
       "Remote teleoperation with force mapping",
       "Extreme aesthetics design philosophy"
     ],
@@ -3762,7 +3762,7 @@
       "sensorsIncluded": [
         "200MP stereo cameras",
         "5x 200MP surrounding cameras",
-        "360° LIDAR (optional)",
+        "360\u00b0 LIDAR (optional)",
         "Integrated force feedback sensors"
       ],
       "interfaces": [
@@ -3807,7 +3807,7 @@
       "Extreme aesthetic design philosophy",
       "Remote teleoperation with full-body force mapping",
       "High-resolution multi-camera system",
-      "Optional 360° LIDAR integration",
+      "Optional 360\u00b0 LIDAR integration",
       "Professional compute platform",
       "Redefining robot era aesthetics"
     ],
@@ -3907,7 +3907,7 @@
     },
     "features": [
       "Stable and efficient top-mounted design",
-      "360° omnidirectional movement",
+      "360\u00b0 omnidirectional movement",
       "Strong operational capabilities",
       "Data collection optimization",
       "Generalized task deployment",
@@ -4596,7 +4596,7 @@
       }
     },
     "keyFeatures": [
-      "Powered by Carbon™ AI cognitive architecture",
+      "Powered by Carbon\u2122 AI cognitive architecture",
       "Most sensor-rich humanoid when released",
       "20 DoF hands rivaling human dexterity",
       "Proprietary haptic technology",
@@ -4624,14 +4624,14 @@
       ]
     },
     "softwareEcosystem": {
-      "rosSupport": "Custom Carbon™ AI platform with standard interfaces",
+      "rosSupport": "Custom Carbon\u2122 AI platform with standard interfaces",
       "sdkLanguages": [
         "Python",
         "C++"
       ],
       "openSourceRepos": "No",
       "aiFrameworksSupported": [
-        "Carbon™ AI (proprietary)",
+        "Carbon\u2122 AI (proprietary)",
         "Large Language Models",
         "Deep learning",
         "Reinforcement learning"
@@ -4653,7 +4653,7 @@
       "maxSpeed": "3 mph"
     },
     "features": [
-      "Carbon™ AI brain",
+      "Carbon\u2122 AI brain",
       "Human-like dexterity",
       "Haptic feedback",
       "Teleoperation capable",
@@ -4667,7 +4667,7 @@
       "/images/robots/sanctuary-phoenix.webp"
     ],
     "officialUrl": "https://www.sanctuary.ai/",
-    "description": "Phoenix by Sanctuary AI is a 6th generation general-purpose humanoid robot powered by Carbon™, an AI cognitive architecture that simulates human brain subsystems. With 20-DoF hands featuring proprietary haptic technology and the ability to be teleoperated, Phoenix is designed for various industrial work environments. As Canada's leading humanoid robotics platform, Phoenix combines advanced AI with human-like dexterity for complex task execution."
+    "description": "Phoenix by Sanctuary AI is a 6th generation general-purpose humanoid robot powered by Carbon\u2122, an AI cognitive architecture that simulates human brain subsystems. With 20-DoF hands featuring proprietary haptic technology and the ability to be teleoperated, Phoenix is designed for various industrial work environments. As Canada's leading humanoid robotics platform, Phoenix combines advanced AI with human-like dexterity for complex task execution."
   },
   {
     "id": "1x-neo-gamma",
@@ -4808,7 +4808,7 @@
       "batteryCapacityRuntime": "Not specifically disclosed",
       "charger": "Standard charging system",
       "sensorsIncluded": [
-        "6 RGB cameras (360° view)",
+        "6 RGB cameras (360\u00b0 view)",
         "Depth cameras in head and torso",
         "Force/torque sensors",
         "Joint position sensors"
@@ -4853,7 +4853,7 @@
     "features": [
       "Hospital deployment",
       "Automotive factory ready",
-      "360° vision",
+      "360\u00b0 vision",
       "High payload capacity",
       "Mass production ready",
       "Rehab heritage"
@@ -5289,7 +5289,7 @@
       "manufacturer": "Sony",
       "modelName": "Aibo ERS-1000",
       "dimensions": {
-        "standing": "180 × 293 × 305 mm (7.1 × 11.5 × 12 in)",
+        "standing": "180 \u00d7 293 \u00d7 305 mm (7.1 \u00d7 11.5 \u00d7 12 in)",
         "folded": "N/A (quadruped)",
         "weight": "2.2 kg (4.9 lbs)"
       }
@@ -5305,7 +5305,7 @@
       "Most sophisticated autonomous companion"
     ],
     "hardwareBuildQuality": {
-      "totalDegreesOfFreedom": "22 (3 head, 1 mouth, 1 neck, 1 waist, 3×4 legs, 1×2 ears, 2 tail)",
+      "totalDegreesOfFreedom": "22 (3 head, 1 mouth, 1 neck, 1 waist, 3\u00d74 legs, 1\u00d72 ears, 2 tail)",
       "payloadCapacity": "N/A (companion robot)",
       "batteryCapacityRuntime": "~2 hours per charge, 3h charging, 2-5yr lifespan",
       "charger": "Charging station, ~14W power",
@@ -5348,7 +5348,7 @@
       "trackRecord": "Pioneer consumer robot dog since 1999. Multiple generations demonstrating long-term commitment. Most sophisticated autonomous companion with AI personality development."
     },
     "specifications": {
-      "dimensions": "180×293×305 mm",
+      "dimensions": "180\u00d7293\u00d7305 mm",
       "weight": "2.2 kg",
       "dof": 22,
       "battery": "2 hours runtime",
@@ -5805,5 +5805,1202 @@
     ],
     "officialUrl": "https://us.softbankrobotics.com/nao",
     "description": "SoftBank NAO is a 58cm humanoid robot designed for education, research, healthcare, and therapy applications. With 25 degrees of freedom powered by Intel ATOM 1.9GHz quad-core processor, NAO performs natural movements and interactions. Features 30 sensors including dual HD cameras for face recognition, 4 omnidirectional microphones, and prehensile hands with touch sensors. Fully programmable through NAOqi OS with Python, C++, JavaScript, and visual Choregraphe tool. Fluent in 20+ languages with over 13,000 units deployed in 70+ countries since 2006. V6 model introduced 2018, remains leading educational robotics platform despite manufacturer's 2025 receivership."
+  },
+  {
+    "id": "petoi-bittle",
+    "name": "Bittle",
+    "brand": "Petoi",
+    "category": "quadruped",
+    "price": {
+      "starting": 339,
+      "currency": "USD",
+      "models": [
+        {
+          "name": "Assembled",
+          "price": 339
+        },
+        {
+          "name": "STEM Kit",
+          "price": 299
+        }
+      ]
+    },
+    "generalInfo": {
+      "manufacturer": "Petoi",
+      "modelName": "Bittle",
+      "dimensions": {
+        "standing": "200 x 110 x 110mm (7.9 x 4.3 x 4.3 inch)",
+        "folded": "N/A",
+        "weight": "290g (10.22oz)"
+      }
+    },
+    "keyFeatures": [
+      "Palm-sized 9-DOF quadruped robot dog",
+      "35+ lifelike movements via mobile app or voice control",
+      "Built on NyBoard (Arduino Uno compatible)",
+      "Raspberry Pi 3A+/Zero support for AI capabilities",
+      "Voice control with 35+ commands, 10 custom commands",
+      "Block coding to Arduino C++ and Python programming",
+      "Open-source OpenCat framework",
+      "1-hour playtime with Li-ion battery",
+      "60-minute DIY assembly time"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "9 (2 joints per leg + 1 neck joint)",
+      "payloadCapacity": "Light objects only (educational robot)",
+      "batteryCapacityRuntime": "Li-ion battery, approximately 1 hour",
+      "charger": "Micro-USB charging cable (included)",
+      "sensorsIncluded": [
+        "Gyroscope",
+        "Accelerometer",
+        "Optional camera module",
+        "Optional IoT sensors"
+      ],
+      "interfaces": [
+        "Bluetooth",
+        "Wi-Fi (with Raspberry Pi)",
+        "Infrared receiver",
+        "Grove expansion ports"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Limited (Arduino-based, not native ROS)",
+      "sdkLanguages": [
+        "Arduino C++",
+        "Python",
+        "Block-based coding (Scratch-like)"
+      ],
+      "openSourceRepos": "https://github.com/PetoiCamp/OpenCat",
+      "aiFrameworksSupported": [
+        "Custom AI with Raspberry Pi",
+        "Voice recognition",
+        "Computer vision (with camera)"
+      ],
+      "apiDocumentationQuality": "Excellent - comprehensive tutorials, curriculum, community support"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Standard warranty included",
+        "coverage": "Hardware defects and component replacement"
+      },
+      "postSalesSupport": "Active community support, extensive documentation, video tutorials",
+      "trackRecord": "Petoi successfully raised $567K on Kickstarter. World's first affordable programmable robot dog starting at $225. Strong maker community and educational focus with proven track record in STEM education."
+    },
+    "specifications": {
+      "dimensions": "200x110x110mm",
+      "weight": "290g",
+      "dof": 9,
+      "speed": "2 body lengths/second (40mm/s)",
+      "battery": "1 hour runtime",
+      "assembly": "60 minutes"
+    },
+    "features": [
+      "Palm-sized robot dog",
+      "9 DOF",
+      "Voice control",
+      "Open-source",
+      "Educational STEM",
+      "$339 assembled"
+    ],
+    "images": [
+      "/images/robots/petoi-bittle.webp"
+    ],
+    "highResPhotos": [
+      "/images/robots/petoi-bittle.webp"
+    ],
+    "officialUrl": "https://www.petoi.com/products/petoi-robot-dog-bittle",
+    "description": "Petoi Bittle is a palm-sized open-source quadruped robot dog designed for STEM education and maker enthusiasts. Measuring just 200x110x110mm and weighing 290g, Bittle features 9 degrees of freedom with 35+ lifelike movements. Built on Arduino-compatible NyBoard with Raspberry Pi support for AI capabilities. Offers voice control with 35+ commands, block-based coding advancing to C++ and Python. Powered by open-source OpenCat framework with active GitHub community. Features 1-hour battery life, 60-minute assembly time. Starting at $339 assembled or $299 DIY kit, Bittle represents world's most affordable programmable robot dog with comprehensive educational resources.",
+    "image": "/images/robots/petoi-bittle.webp"
+  },
+  {
+    "id": "honda-asimo",
+    "name": "ASIMO",
+    "brand": "Honda",
+    "category": "humanoid",
+    "price": {
+      "starting": 0,
+      "currency": "USD",
+      "models": [
+        {
+          "name": "Final Version (2011)",
+          "price": "discontinued"
+        }
+      ]
+    },
+    "generalInfo": {
+      "manufacturer": "Honda",
+      "modelName": "ASIMO (Advanced Step in Innovative Mobility)",
+      "dimensions": {
+        "standing": "130 cm (4 ft 3 in)",
+        "folded": "N/A",
+        "weight": "48 kg (106 lbs)"
+      }
+    },
+    "keyFeatures": [
+      "Pioneer humanoid robot - ushered in modern humanoid era",
+      "57 degrees of freedom (23 DOF increase from previous model)",
+      "13 DOF in each hand for complex manipulation",
+      "Running speed of 9 km/h (5.6 mph)",
+      "Can run backwards, jump continuously, hop on one foot",
+      "Dual cameras for visual obstacle detection",
+      "Six-axis force sensors on all fingertips",
+      "Tactile sensors under palm skin",
+      "Face recognition and gesture detection",
+      "1-hour battery life on 51.8V lithium-ion"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "57 (full body, 13 per hand)",
+      "payloadCapacity": "Light objects with dexterous hands",
+      "batteryCapacityRuntime": "51.8V lithium-ion, 1 hour",
+      "charger": "Standard charging station",
+      "sensorsIncluded": [
+        "2 cameras in head (visual sensors)",
+        "Tactile sensors in palms",
+        "Six-axis force sensors on all 10 fingertips",
+        "Laser ground sensors",
+        "Infrared ground sensors",
+        "Ultrasonic sensors"
+      ],
+      "interfaces": [
+        "Proprietary Honda control system",
+        "Wireless communication",
+        "Visual and audio interfaces"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Proprietary Honda software (not ROS-based)",
+      "sdkLanguages": [
+        "Proprietary Honda system"
+      ],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [
+        "Face recognition",
+        "Gesture detection",
+        "Object recognition",
+        "Navigation AI"
+      ],
+      "apiDocumentationQuality": "Limited (research platform, not commercial SDK)"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "N/A (discontinued, never sold commercially)",
+        "coverage": "N/A"
+      },
+      "postSalesSupport": "Discontinued - development ceased July 2018",
+      "trackRecord": "Created foundational ASIMO which ushered in the modern humanoid robotics era before discontinuation in 2022. Last appearance March 2022. Despite being discontinued, ASIMO demonstrated Honda's long-term commitment to humanoid research and became iconic symbol of advanced robotics."
+    },
+    "specifications": {
+      "height": "130 cm",
+      "weight": "48 kg",
+      "dof": 57,
+      "runningSpeed": "9 km/h",
+      "battery": "51.8V Li-ion, 1h",
+      "unveiled": "November 2011 (final version)",
+      "discontinued": "July 2018"
+    },
+    "features": [
+      "Pioneer humanoid",
+      "57 DOF",
+      "9 km/h running",
+      "Face recognition",
+      "Discontinued 2018",
+      "Iconic robot"
+    ],
+    "images": [
+      "/images/robots/honda-asimo.webp"
+    ],
+    "highResPhotos": [
+      "/images/robots/honda-asimo.webp"
+    ],
+    "officialUrl": "https://global.honda/robotics/asimo/",
+    "description": "Honda ASIMO (Advanced Step in Innovative Mobility) is the pioneering humanoid robot that ushered in the modern era of bipedal robotics. Final version unveiled November 2011 stands 130cm tall, weighs 48kg, featuring 57 degrees of freedom including 13 DOF hands with tactile and force sensors. Capable of running 9 km/h, backwards locomotion, continuous jumping, and one-foot hopping. Equipped with dual cameras for face/gesture recognition, ultrasonic and infrared sensors. Powered by 51.8V lithium-ion battery with 1-hour runtime. Despite discontinuation in July 2018 and final appearance March 2022, ASIMO remains iconic symbol of advanced humanoid robotics research.",
+    "image": "/images/robots/honda-asimo.webp"
+  },
+  {
+    "id": "limx-w1",
+    "name": "W1",
+    "brand": "LimX Dynamics",
+    "category": "quadruped",
+    "price": {
+      "starting": "request",
+      "currency": "USD",
+      "models": [
+        {
+          "name": "Standard",
+          "price": "request"
+        }
+      ]
+    },
+    "description": "LimX W1 is an innovative wheeled quadruped robot combining the advantages of wheeled and legged locomotion for versatile terrain navigation and research applications.",
+    "images": [
+      "/images/robots/limx-w1.webp"
+    ],
+    "officialUrl": "https://www.limxdynamics.com",
+    "generalInfo": {
+      "manufacturer": "LimX Dynamics (China)",
+      "modelName": "W1",
+      "releaseDate": "2023",
+      "dimensions": {
+        "length": "~800mm",
+        "width": "~500mm",
+        "height": "~600mm",
+        "weight": "~50kg"
+      }
+    },
+    "keyFeatures": [
+      "Wheeled quadruped design combining wheels and legs",
+      "High-speed wheeled locomotion on flat terrain",
+      "Legged mobility for complex terrain",
+      "Advanced dynamic balance control",
+      "Hybrid locomotion system",
+      "Research and development platform"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "12+ (legs) + 4 wheels",
+      "payloadCapacity": "20-30kg",
+      "batteryCapacityRuntime": "~2 hours operation",
+      "charger": "Smart charging system",
+      "sensorsIncluded": [
+        "Depth cameras",
+        "IMU sensors",
+        "Joint encoders",
+        "Wheel encoders",
+        "LiDAR (optional)"
+      ],
+      "interfaces": [
+        "Ethernet",
+        "USB",
+        "CAN bus",
+        "Wi-Fi"
+      ]
+    },
+    "softwareEcosystem": {
+      "operatingSystem": "ROS 2",
+      "programmingLanguages": [
+        "C++",
+        "Python"
+      ],
+      "sdkAvailability": "Yes - ROS SDK",
+      "communitySupport": "Growing research community",
+      "documentation": "Technical documentation available"
+    },
+    "supplierReliability": {
+      "companyReputation": "Emerging Chinese robotics company specializing in legged robots",
+      "warrantySupport": "Available for research customers",
+      "updateFrequency": "Regular firmware and software updates",
+      "sparePartsAvailability": "Contact manufacturer"
+    },
+    "specifications": {
+      "Speed": "Up to 5 m/s (wheeled mode)",
+      "Range": "2+ hours battery life",
+      "Obstacle Height": "Variable terrain capability",
+      "Operating Temperature": "-10\u00b0C to 45\u00b0C",
+      "IP Rating": "IP54"
+    },
+    "features": [
+      "Hybrid wheel-leg locomotion",
+      "Dynamic balance control",
+      "High-speed wheeled mode",
+      "Complex terrain navigation",
+      "ROS 2 integration",
+      "Research platform"
+    ],
+    "highResPhotos": [
+      "/images/robots/limx-w1.webp"
+    ],
+    "image": "/images/robots/limx-w1.webp"
+  },
+  {
+    "id": "weilan-alphadog",
+    "name": "AlphaDog",
+    "brand": "Weilan",
+    "category": "quadruped",
+    "price": {
+      "starting": "request",
+      "currency": "USD",
+      "models": [
+        {
+          "name": "Standard",
+          "price": "request"
+        }
+      ]
+    },
+    "description": "Weilan AlphaDog is one of the world's fastest quadruped robots, capable of reaching speeds up to 15 km/h with advanced dynamic locomotion and industrial-grade durability.",
+    "images": [
+      "/images/robots/weilan-alphadog.webp"
+    ],
+    "officialUrl": "https://www.weilan.com",
+    "generalInfo": {
+      "manufacturer": "Weilan (China)",
+      "modelName": "AlphaDog",
+      "releaseDate": "2023",
+      "dimensions": {
+        "length": "1000mm",
+        "width": "500mm",
+        "height": "700mm",
+        "weight": "50kg"
+      }
+    },
+    "keyFeatures": [
+      "Top speed of 15 km/h - one of the fastest quadruped robots",
+      "Industrial-grade construction",
+      "Advanced dynamic locomotion algorithms",
+      "Heavy payload capacity",
+      "All-terrain capability",
+      "High-performance actuators"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "12 (3 per leg)",
+      "payloadCapacity": "50kg",
+      "batteryCapacityRuntime": "2-4 hours depending on usage",
+      "charger": "Fast charging system",
+      "sensorsIncluded": [
+        "Depth cameras",
+        "IMU",
+        "Joint encoders",
+        "Force sensors",
+        "LiDAR (optional)"
+      ],
+      "interfaces": [
+        "Ethernet",
+        "USB 3.0",
+        "CAN bus",
+        "Wi-Fi 6"
+      ]
+    },
+    "softwareEcosystem": {
+      "operatingSystem": "ROS / Custom Linux",
+      "programmingLanguages": [
+        "C++",
+        "Python"
+      ],
+      "sdkAvailability": "Yes - SDK for developers",
+      "communitySupport": "Growing industrial robotics community",
+      "documentation": "Comprehensive technical documentation"
+    },
+    "supplierReliability": {
+      "companyReputation": "Leading Chinese quadruped robotics manufacturer",
+      "warrantySupport": "Industrial warranty and support",
+      "updateFrequency": "Regular software and firmware updates",
+      "sparePartsAvailability": "Available through manufacturer"
+    },
+    "specifications": {
+      "Top Speed": "15 km/h",
+      "Range": "2-4 hours",
+      "Step Height": "300mm",
+      "Operating Temperature": "-20\u00b0C to 55\u00b0C",
+      "IP Rating": "IP65"
+    },
+    "features": [
+      "Ultra-high speed locomotion",
+      "Industrial durability",
+      "Heavy payload capacity",
+      "All-terrain navigation",
+      "Advanced control algorithms",
+      "Modular design"
+    ],
+    "highResPhotos": [
+      "/images/robots/weilan-alphadog.webp"
+    ],
+    "image": "/images/robots/weilan-alphadog.webp"
+  },
+  {
+    "id": "swiss-mile-rivr",
+    "name": "RIVR",
+    "brand": "Swiss-Mile",
+    "category": "quadruped",
+    "price": {
+      "starting": "request",
+      "currency": "USD",
+      "models": [
+        {
+          "name": "Standard",
+          "price": "request"
+        }
+      ]
+    },
+    "description": "Swiss-Mile RIVR is a revolutionary wheel-legged robot combining the efficiency of wheels with the versatility of legs for last-mile delivery and urban logistics applications.",
+    "images": [
+      "/images/robots/swiss-mile-rivr.webp"
+    ],
+    "officialUrl": "https://www.rivr.ai",
+    "generalInfo": {
+      "manufacturer": "Swiss-Mile (Switzerland)",
+      "modelName": "RIVR",
+      "releaseDate": "2023",
+      "dimensions": {
+        "length": "~900mm",
+        "width": "~600mm",
+        "height": "~700mm",
+        "weight": "~60kg"
+      }
+    },
+    "keyFeatures": [
+      "Hybrid wheel-leg design for maximum versatility",
+      "Efficient wheeled mode for flat surfaces",
+      "Legged mode for stairs and obstacles",
+      "Last-mile delivery optimization",
+      "Energy-efficient locomotion",
+      "Autonomous navigation"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "12 (legs) + 4 wheels",
+      "payloadCapacity": "30-50kg",
+      "batteryCapacityRuntime": "4+ hours in wheeled mode",
+      "charger": "Fast charging system",
+      "sensorsIncluded": [
+        "360\u00b0 LiDAR",
+        "RGB-D cameras",
+        "IMU",
+        "Joint encoders",
+        "Wheel encoders",
+        "GPS"
+      ],
+      "interfaces": [
+        "Ethernet",
+        "USB",
+        "4G/5G connectivity",
+        "Wi-Fi 6"
+      ]
+    },
+    "softwareEcosystem": {
+      "operatingSystem": "ROS 2",
+      "programmingLanguages": [
+        "C++",
+        "Python"
+      ],
+      "sdkAvailability": "Yes - Developer SDK",
+      "communitySupport": "Research and commercial community",
+      "documentation": "Comprehensive documentation and API"
+    },
+    "supplierReliability": {
+      "companyReputation": "Swiss robotics startup spun out from ETH Zurich research",
+      "warrantySupport": "Commercial warranty and support packages",
+      "updateFrequency": "Regular OTA updates",
+      "sparePartsAvailability": "Available for commercial customers"
+    },
+    "specifications": {
+      "Speed": "Up to 22 km/h (wheeled mode)",
+      "Range": "4+ hours battery life",
+      "Climbing Capability": "Stairs and urban obstacles",
+      "Operating Temperature": "-10\u00b0C to 40\u00b0C",
+      "IP Rating": "IP54"
+    },
+    "features": [
+      "Wheel-leg hybrid locomotion",
+      "Last-mile delivery optimization",
+      "Stair climbing capability",
+      "High-speed wheeled mode",
+      "Autonomous navigation",
+      "Energy-efficient design"
+    ],
+    "highResPhotos": [
+      "/images/robots/swiss-mile-rivr.webp"
+    ],
+    "image": "/images/robots/swiss-mile-rivr.webp"
+  },
+  {
+    "id": "xpeng-iron",
+    "name": "Iron",
+    "brand": "XPeng Robotics",
+    "category": "humanoid",
+    "price": {
+      "starting": 150000,
+      "currency": "USD",
+      "models": [
+        {
+          "name": "Iron Standard",
+          "price": "request"
+        }
+      ]
+    },
+    "description": "XPeng Iron is an advanced humanoid robot with 60 joints and 200 degrees of freedom, powered by the Turing AI chip with 3,000 TOPS. Already operational on XPeng's automotive production lines, Iron represents the future of smart manufacturing.",
+    "images": [
+      "/images/robots/xpeng-iron.webp"
+    ],
+    "officialUrl": "https://www.xpeng.com/",
+    "generalInfo": {
+      "manufacturer": "XPeng Robotics (China)",
+      "modelName": "Iron",
+      "releaseDate": "November 2024",
+      "dimensions": {
+        "standing": "1.73m tall",
+        "folded": "N/A",
+        "weight": "70kg"
+      }
+    },
+    "keyFeatures": [
+      "60 joints with 200 degrees of freedom",
+      "Turing AI chip with 3,000 TOPS processing power",
+      "720\u00b0 Eagle Eye AI vision system",
+      "Human-scale hands with 22 DOF (1:1 scale)",
+      "Active voice interaction system",
+      "Already deployed in XPeng EV factories",
+      "Mass production planned for 2026"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "200 DOF with 60 joints",
+      "payloadCapacity": "Precise object manipulation capable",
+      "batteryCapacityRuntime": "Industrial-grade battery system",
+      "charger": "Fast charging system",
+      "sensorsIncluded": [
+        "720\u00b0 Eagle Eye vision cameras",
+        "Advanced environmental sensors",
+        "IMU sensors",
+        "Joint encoders",
+        "Force/torque sensors"
+      ],
+      "interfaces": [
+        "Ethernet",
+        "USB",
+        "Wi-Fi",
+        "Voice interaction system"
+      ]
+    },
+    "softwareEcosystem": {
+      "operatingSystem": "Tianji AIOS (XPeng proprietary)",
+      "programmingLanguages": [
+        "C++",
+        "Python"
+      ],
+      "sdkAvailability": "Enterprise SDK planned",
+      "communitySupport": "Enterprise and research community",
+      "documentation": "Technical documentation for enterprise customers",
+      "rosSupport": "Custom OS with AI integration",
+      "sdkLanguages": [
+        "C++",
+        "Python"
+      ],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [
+        "XPeng AI Platform",
+        "Custom AI frameworks"
+      ],
+      "apiDocumentationQuality": "Enterprise-grade documentation"
+    },
+    "supplierReliability": {
+      "companyReputation": "Major Chinese EV manufacturer expanding into robotics with 5-year development",
+      "warrantySupport": "Enterprise warranty and support",
+      "updateFrequency": "Regular OTA software updates",
+      "warranty": {
+        "duration": "Enterprise warranty available",
+        "coverage": "Full hardware and software support"
+      },
+      "postSalesSupport": "Comprehensive enterprise support",
+      "trackRecord": "Deployed in XPeng production facilities"
+    },
+    "specifications": {
+      "Height": "1.73m (5'8\")",
+      "Weight": "70kg (154 lbs)",
+      "Joints": "60 joints",
+      "DOF": "200 degrees of freedom",
+      "Hand DOF": "22 DOF per hand",
+      "Processing Power": "3,000 TOPS (Turing AI chip)",
+      "Vision System": "720\u00b0 Eagle Eye AI vision",
+      "Operating Environment": "Indoor/outdoor industrial settings"
+    },
+    "features": [
+      "Turing AI chip with 40 cores",
+      "30 billion AI parameters",
+      "Human-like motion and balance",
+      "Precise object manipulation",
+      "Natural voice conversation",
+      "Technology shared with XPeng EVs",
+      "Factory automation ready"
+    ],
+    "highResPhotos": [
+      "/images/robots/xpeng-iron.webp"
+    ],
+    "image": "/images/robots/xpeng-iron.webp"
+  },
+  {
+    "id": "neura-4ne1",
+    "name": "4NE-1",
+    "brand": "NEURA Robotics",
+    "category": "humanoid",
+    "price": {
+      "starting": "request",
+      "currency": "EUR",
+      "models": [
+        {
+          "name": "4NE-1 Gen3",
+          "price": "request"
+        },
+        {
+          "name": "4NE-1 Industrial",
+          "price": "request"
+        },
+        {
+          "name": "4NE-1 Service",
+          "price": "request"
+        }
+      ]
+    },
+    "description": "NEURA Robotics 4NE-1 is Europe's first humanoid robot designed for series production, featuring cognitive AI capabilities, patented Omnisensor technology, and innovative touchless human detection. Capable of 24/7 operation with dual-battery system.",
+    "images": [
+      "/images/robots/neura-4ne1.webp"
+    ],
+    "officialUrl": "https://neura-robotics.com/products/4ne1/",
+    "generalInfo": {
+      "manufacturer": "NEURA Robotics (Germany)",
+      "modelName": "4NE-1 (Third Generation)",
+      "releaseDate": "June 2025 (Gen3)",
+      "dimensions": {
+        "standing": "180cm (1.8m / 5.9 feet) tall",
+        "folded": "N/A",
+        "weight": "80kg (176 lbs)"
+      }
+    },
+    "keyFeatures": [
+      "First humanoid designed for series production",
+      "Patented Omnisensor with 7 cameras",
+      "Touchless human detection sensor ('artificial skin')",
+      "Dual-battery system for 24/7 uninterrupted operation",
+      "15kg payload capacity (Gen3)",
+      "Joint technology lifting up to 100kg",
+      "Interchangeable forearms for task customization",
+      "Multi-modal AI with voice and emotion recognition",
+      "NVIDIA partnership for AI acceleration",
+      "Goal: 5 million robots by 2030"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "High DOF with advanced joint technology",
+      "payloadCapacity": "15kg carrying capacity, joints lift up to 100kg",
+      "batteryCapacityRuntime": "Dual-battery system for 24/7 operation",
+      "charger": "Hot-swappable dual battery system",
+      "sensorsIncluded": [
+        "Patented Omnisensor",
+        "7 cameras (3D vision)",
+        "Force-torque sensors",
+        "Touchless detection sensors (artificial skin)",
+        "Environmental perception sensors",
+        "Voice recognition sensors"
+      ],
+      "interfaces": [
+        "Multi-modal API",
+        "Ethernet",
+        "Wi-Fi",
+        "USB",
+        "Voice interface",
+        "Gesture control"
+      ]
+    },
+    "softwareEcosystem": {
+      "operatingSystem": "NEURA Cognitive OS (Neuraverse ecosystem)",
+      "programmingLanguages": [
+        "C++",
+        "Python",
+        "Multi-language API"
+      ],
+      "sdkAvailability": "Yes - Neuraverse SDK and API",
+      "communitySupport": "Growing European robotics community with NVIDIA partnership",
+      "documentation": "Comprehensive API documentation for multi-modal interaction",
+      "rosSupport": "Neuraverse ecosystem integration",
+      "sdkLanguages": [
+        "C++",
+        "Python",
+        "Multi-language support"
+      ],
+      "openSourceRepos": "Proprietary with API access",
+      "aiFrameworksSupported": [
+        "NVIDIA AI Platform",
+        "Custom cognitive AI"
+      ],
+      "apiDocumentationQuality": "Excellent - multi-modal interaction support"
+    },
+    "supplierReliability": {
+      "companyReputation": "German robotics leader backed by NVIDIA, first humanoid for series production in Europe",
+      "warrantySupport": "Enterprise warranty with comprehensive support",
+      "updateFrequency": "Regular software updates via Neuraverse ecosystem",
+      "warranty": {
+        "duration": "Enterprise warranty coverage",
+        "coverage": "Full hardware and software support with European standards"
+      },
+      "postSalesSupport": "Comprehensive enterprise support with NVIDIA backing",
+      "trackRecord": "Established in cognitive cobots, expanding to humanoids with strong European presence"
+    },
+    "specifications": {
+      "Height": "180cm (Gen3)",
+      "Weight": "80kg (Gen3)",
+      "Speed": "Up to 3 km/h",
+      "Payload": "15kg carrying, 100kg joint lifting",
+      "Cameras": "7 cameras with 3D vision",
+      "Battery": "Dual-battery for 24/7 operation",
+      "Safety": "Touchless detection (artificial skin)",
+      "Customization": "Interchangeable forearms",
+      "Mobility Options": "Wheels or 7th axis versions available",
+      "AI": "Voice and emotion recognition, multi-language"
+    },
+    "features": [
+      "Autonomous learning capability",
+      "Human detection and recognition",
+      "Adaptive behavior based on environment",
+      "Multi-language command support",
+      "Gesture control",
+      "Fine motor control hands",
+      "Industrial and service sector ready",
+      "Household task capable",
+      "Safe human-robot collaboration",
+      "European engineering standards"
+    ],
+    "highResPhotos": [
+      "/images/robots/neura-4ne1.webp"
+    ],
+    "image": "/images/robots/neura-4ne1.webp"
+  },
+  {
+    "id": "elephant-marscat",
+    "name": "MarsCat",
+    "brand": "Elephant Robotics",
+    "category": "quadruped",
+    "price": {
+      "starting": 1199,
+      "currency": "USD",
+      "models": [
+        {
+          "name": "MarsCat Standard",
+          "price": 1199
+        }
+      ]
+    },
+    "description": "MarsCat is the world's first fully autonomous bionic pet cat with 16 servo motors and 16-DOF. Features AI-powered personality development, voice recognition, and open-source Raspberry Pi platform for educational and entertainment purposes.",
+    "images": [
+      "/images/robots/elephant-marscat.webp"
+    ],
+    "officialUrl": "https://www.elephantrobotics.com/en/mars-en/",
+    "generalInfo": {
+      "manufacturer": "Elephant Robotics (China)",
+      "modelName": "MarsCat",
+      "releaseDate": "2022 (Mass production)",
+      "dimensions": {
+        "standing": "210mm x 110mm x 165mm",
+        "folded": "Compact storage",
+        "weight": "~1kg (estimated with battery)"
+      }
+    },
+    "keyFeatures": [
+      "World's first fully autonomous robot cat",
+      "16 servo motors with 16-DOF",
+      "Raspberry Pi 3 powered",
+      "Open-source platform",
+      "AI personality development",
+      "Voice recognition (~20 keywords)",
+      "5MP camera with 72\u00b0 FOV",
+      "Two OLED eyes for lifelike expressions",
+      "Capacitive touch sensors (6x)",
+      "2-5 hours runtime per charge",
+      "Successful Kickstarter campaign"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "16-DOF with 16 servo motors",
+      "payloadCapacity": "N/A (companion robot)",
+      "batteryCapacityRuntime": "INR18650MJ battery, 2-5 hours runtime, 3-hour charge",
+      "charger": "USB charging (3 hours full charge)",
+      "sensorsIncluded": [
+        "5MP camera (72\u00b0 FOV)",
+        "TOF laser distance sensor",
+        "Gyro sensor",
+        "6x capacitive touch sensors",
+        "Microphone for voice recognition",
+        "Environmental sensors"
+      ],
+      "interfaces": [
+        "Wi-Fi",
+        "USB charging",
+        "Open-source API",
+        "Raspberry Pi GPIO"
+      ]
+    },
+    "softwareEcosystem": {
+      "operatingSystem": "Raspberry Pi OS (Linux-based)",
+      "programmingLanguages": [
+        "Python",
+        "C++"
+      ],
+      "sdkAvailability": "Yes - Open-source SDK",
+      "communitySupport": "Active maker and education community",
+      "documentation": "Comprehensive open-source documentation",
+      "rosSupport": "Compatible with ROS development",
+      "sdkLanguages": [
+        "Python",
+        "C++"
+      ],
+      "openSourceRepos": "Yes - Open-source platform",
+      "aiFrameworksSupported": [
+        "Custom AI personality engine",
+        "Computer vision"
+      ],
+      "apiDocumentationQuality": "Excellent for education and makers"
+    },
+    "supplierReliability": {
+      "companyReputation": "Established educational robotics company with successful crowdfunding",
+      "warrantySupport": "Standard consumer warranty",
+      "updateFrequency": "Regular firmware and software updates",
+      "warranty": {
+        "duration": "1-year standard warranty",
+        "coverage": "Hardware defects and support"
+      },
+      "postSalesSupport": "Community and manufacturer support",
+      "trackRecord": "Successful mass production and delivery"
+    },
+    "specifications": {
+      "Dimensions": "210x110x165mm",
+      "DOF": "16-DOF",
+      "Motors": "16 servo motors (12-bit magnetic encoder)",
+      "Processor": "Raspberry Pi 3 (quad-core)",
+      "Camera": "5MP, 72\u00b0 FOV",
+      "Eyes": "2x OLED displays",
+      "Battery": "INR18650MJ, 2-5hr runtime",
+      "Charging": "3 hours USB",
+      "Voice": "~20 keyword recognition",
+      "Price": "$1,199"
+    },
+    "features": [
+      "Autonomous behavior",
+      "AI personality growth",
+      "Touch response",
+      "Voice command recognition",
+      "Lifelike OLED eyes",
+      "Cat-like movements",
+      "Educational platform",
+      "Open-source hackable",
+      "Companion robot",
+      "Maker-friendly"
+    ],
+    "highResPhotos": [
+      "/images/robots/marscat.webp"
+    ],
+    "image": "/images/robots/marscat.webp"
+  },
+  {
+    "id": "stanford-doggo",
+    "name": "Stanford Doggo",
+    "brand": "Stanford Student Robotics",
+    "category": "quadruped",
+    "price": {
+      "starting": 3000,
+      "currency": "USD",
+      "models": [
+        {
+          "name": "DIY Open-Source Kit",
+          "price": "~$3,000"
+        }
+      ]
+    },
+    "description": "Stanford Doggo holds the world record for highest vertical jumping agility among robots. This shoebox-sized, open-source quadruped can walk, trot, pronk, and jump. Costs <$3k, requires only hand tools, fully open-source with CAD, code, and firmware on GitHub.",
+    "images": [
+      "/images/robots/stanford-doggo.webp"
+    ],
+    "officialUrl": "https://stanfordstudentrobotics.org/pupper",
+    "generalInfo": {
+      "manufacturer": "Stanford Student Robotics (USA)",
+      "modelName": "Stanford Doggo",
+      "releaseDate": "2019 (ICRA publication)",
+      "dimensions": {
+        "standing": "Shoebox-sized",
+        "folded": "Compact",
+        "weight": "<5kg"
+      }
+    },
+    "keyFeatures": [
+      "World record: highest vertical jumping agility",
+      "Surpasses previous best robot by 22%",
+      "Matches best performing animals",
+      "Open-source (GitHub)",
+      "Costs <$3,000",
+      "Hand tools only for assembly",
+      "Quasi-direct-drive actuation",
+      "Walk, trot, pronk, jump",
+      "Easy and safe to develop on"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "12-DOF quadruped",
+      "payloadCapacity": "Optimized for agility over payload",
+      "batteryCapacityRuntime": "Research platform runtime",
+      "charger": "Standard battery charging",
+      "sensorsIncluded": [
+        "IMU",
+        "Joint encoders",
+        "Motor controllers"
+      ],
+      "interfaces": [
+        "Teensy 3.5 microcontroller",
+        "ODrive motor control"
+      ]
+    },
+    "softwareEcosystem": {
+      "operatingSystem": "Teensy firmware",
+      "programmingLanguages": [
+        "C++"
+      ],
+      "sdkAvailability": "Yes - Full open-source",
+      "communitySupport": "Active maker and research community",
+      "documentation": "GitHub repo + research paper",
+      "rosSupport": "Custom control stack",
+      "sdkLanguages": [
+        "C++"
+      ],
+      "openSourceRepos": "Yes - github.com/Nate711/StanfordDoggoProject",
+      "aiFrameworksSupported": [
+        "Custom locomotion control"
+      ],
+      "apiDocumentationQuality": "Excellent - Open-source + ICRA paper"
+    },
+    "supplierReliability": {
+      "companyReputation": "Stanford University robotics research, published at ICRA 2019",
+      "warrantySupport": "DIY open-source (community support)",
+      "updateFrequency": "Open-source development",
+      "warranty": {
+        "duration": "DIY kit (no warranty)",
+        "coverage": "Community support"
+      },
+      "postSalesSupport": "GitHub issues and community",
+      "trackRecord": "World record holder, academic publication"
+    },
+    "specifications": {
+      "Weight": "<5kg",
+      "Size": "Shoebox-sized",
+      "Jumping": "World record vertical agility",
+      "Control": "Teensy 3.5 + ODrives",
+      "Cost": "<$3,000",
+      "Assembly": "Hand tools only",
+      "Source": "Fully open-source"
+    },
+    "features": [
+      "Record-breaking jumps",
+      "Open-source design",
+      "Affordable DIY",
+      "Academic quality",
+      "Active community",
+      "Published research"
+    ],
+    "highResPhotos": [
+      "/images/robots/stanford-doggo.webp"
+    ],
+    "image": "/images/robots/stanford-doggo.webp"
+  },
+  {
+    "id": "mit-mini-cheetah",
+    "name": "Mini Cheetah",
+    "brand": "MIT Biomimetic Robotics Lab",
+    "category": "quadruped",
+    "price": {
+      "starting": "request",
+      "currency": "USD",
+      "models": [
+        {
+          "name": "Research Platform",
+          "price": "not for sale"
+        }
+      ]
+    },
+    "description": "MIT Mini Cheetah is the first four-legged robot to do a backflip. Features 12 modular backdriveable actuators, speeds up to 2.45 m/s, and mechanically robust design. Can operate forwards, backwards, or upside-down.",
+    "images": [
+      "/images/robots/mit-mini-cheetah.webp"
+    ],
+    "officialUrl": "https://biomimetics.mit.edu/",
+    "generalInfo": {
+      "manufacturer": "MIT Biomimetic Robotics Lab (USA)",
+      "modelName": "Mini Cheetah",
+      "releaseDate": "2019",
+      "dimensions": {
+        "standing": "0.3m tall",
+        "folded": "N/A",
+        "weight": "9kg (20 lbs)"
+      }
+    },
+    "keyFeatures": [
+      "First four-legged robot to backflip",
+      "360-degree backflip from standing",
+      "12 modular backdriveable actuators",
+      "High-bandwidth force control",
+      "2.45 m/s top speed",
+      "Omnidirectional movement",
+      "5 rad/s in-place turning",
+      "Survives high-impact falls",
+      "Can operate upside-down",
+      "Convex Model-Predictive Control"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "12-DOF (hip: 2-DOF, knee: 1-DOF per leg)",
+      "payloadCapacity": "Research platform",
+      "batteryCapacityRuntime": "Extended research sessions",
+      "charger": "Standard",
+      "sensorsIncluded": [
+        "IMU",
+        "Joint encoders",
+        "Force sensors"
+      ],
+      "interfaces": [
+        "UP Board quad-core Intel Atom",
+        "Ethernet"
+      ]
+    },
+    "softwareEcosystem": {
+      "operatingSystem": "Linux with custom control",
+      "programmingLanguages": [
+        "C++",
+        "Python"
+      ],
+      "sdkAvailability": "Research platform",
+      "communitySupport": "MIT and research community",
+      "documentation": "Research papers and MIT resources",
+      "rosSupport": "Custom control stack with cMPC",
+      "sdkLanguages": [
+        "C++",
+        "Python"
+      ],
+      "openSourceRepos": "Research platform (MIT)",
+      "aiFrameworksSupported": [
+        "Convex MPC",
+        "Dynamic locomotion"
+      ],
+      "apiDocumentationQuality": "Research-grade"
+    },
+    "supplierReliability": {
+      "companyReputation": "MIT's premier biomimetic robotics research lab",
+      "warrantySupport": "Research platform (not for sale)",
+      "updateFrequency": "Ongoing research",
+      "warranty": {
+        "duration": "N/A - Research only",
+        "coverage": "N/A"
+      },
+      "postSalesSupport": "N/A",
+      "trackRecord": "World-first backflipping quadruped, highly cited research"
+    },
+    "specifications": {
+      "Height": "0.3m",
+      "Weight": "9kg",
+      "Speed": "2.45 m/s",
+      "Motors": "12 modular (6:1 gearbox, 40 rad/s)",
+      "Control": "cMPC on UP Board",
+      "Gaits": "Trot, bound, pronk, pace",
+      "Special": "Backflip capability"
+    },
+    "features": [
+      "Backflip pioneer",
+      "Robust impacts",
+      "Omnidirectional",
+      "MIT research",
+      "Modular design",
+      "High force control"
+    ],
+    "highResPhotos": [
+      "/images/robots/mit-mini-cheetah.webp"
+    ],
+    "image": "/images/robots/mit-mini-cheetah.webp"
+  },
+  {
+    "id": "toyota-punyo",
+    "name": "Punyo",
+    "brand": "Toyota Research Institute",
+    "category": "humanoid",
+    "price": {
+      "starting": "request",
+      "currency": "USD",
+      "models": [
+        {
+          "name": "Research Platform",
+          "price": "not for sale"
+        }
+      ]
+    },
+    "description": "Toyota Research Institute's Punyo is a soft humanoid robot for assistive applications. Features soft body covered with compliant materials and tactile sensors for whole-body manipulation. Designed to help people 'age in place' with safe human interaction.",
+    "images": [
+      "/images/robots/toyota-punyo.webp"
+    ],
+    "officialUrl": "https://www.tri.global/our-work/robotics",
+    "generalInfo": {
+      "manufacturer": "Toyota Research Institute (USA/Japan)",
+      "modelName": "Punyo",
+      "releaseDate": "2023",
+      "dimensions": {
+        "standing": "Humanoid form with wheeled base",
+        "folded": "N/A",
+        "weight": "Research platform"
+      }
+    },
+    "keyFeatures": [
+      "Soft compliant body for safety",
+      "Tactile sensors on hands, arms, chest",
+      "Whole-body manipulation",
+      "Bulky object handling",
+      "Safe human interaction",
+      "Designed for 'aging in place'",
+      "Multiple DOF arms",
+      "Wheeled base for mobility",
+      "Can wipe surfaces, load dishwasher",
+      "Partnership with Boston Dynamics (LBM research)"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "Multiple DOF in two arms",
+      "payloadCapacity": "Bulky object manipulation",
+      "batteryCapacityRuntime": "Extended assistive tasks",
+      "charger": "Standard",
+      "sensorsIncluded": [
+        "Tactile sensors (hands, arms, chest)",
+        "Vision cameras",
+        "Force sensors",
+        "Environmental sensors"
+      ],
+      "interfaces": [
+        "Research interfaces",
+        "Wi-Fi",
+        "Ethernet"
+      ]
+    },
+    "softwareEcosystem": {
+      "operatingSystem": "TRI custom OS",
+      "programmingLanguages": [
+        "C++",
+        "Python"
+      ],
+      "sdkAvailability": "Research platform",
+      "communitySupport": "TRI and research partners",
+      "documentation": "Research publications",
+      "rosSupport": "Custom manipulation stack",
+      "sdkLanguages": [
+        "C++",
+        "Python"
+      ],
+      "openSourceRepos": "Research publications",
+      "aiFrameworksSupported": [
+        "Large Behavior Models (LBM)",
+        "Manipulation AI",
+        "Computer vision"
+      ],
+      "apiDocumentationQuality": "Research-grade"
+    },
+    "supplierReliability": {
+      "companyReputation": "Toyota's advanced robotics research institute with Boston Dynamics partnership",
+      "warrantySupport": "Research platform",
+      "updateFrequency": "Ongoing research",
+      "warranty": {
+        "duration": "N/A - Research",
+        "coverage": "N/A"
+      },
+      "postSalesSupport": "N/A",
+      "trackRecord": "Leading assistive robotics research"
+    },
+    "specifications": {
+      "Form": "Humanoid with wheeled base",
+      "Body": "Soft compliant materials",
+      "Sensors": "Tactile across body",
+      "Purpose": "Assistive tasks, aging in place",
+      "Partners": "Boston Dynamics (LBM research)",
+      "Tasks": "Wiping, picking, dishwasher loading"
+    },
+    "features": [
+      "Soft-body safety",
+      "Whole-body manipulation",
+      "Assistive focus",
+      "Tactile sensing",
+      "TRI research",
+      "Boston Dynamics partnership"
+    ],
+    "highResPhotos": [
+      "/images/robots/toyota-punyo.webp"
+    ],
+    "image": "/images/robots/toyota-punyo.webp"
   }
 ]

@@ -194,5 +194,58 @@
     "description": "Global service robotics firm deploying humanoids across retail, banking, and education sectors. Part of SoftBank Group with 20% Boston Dynamics stake, pioneered commercial service robots at scale with Pepper.",
     "website": "https://www.softbankrobotics.com/",
     "logo": "/images/brands/softbank-robotics-logo.svg"
+  },
+  {
+    "id": "honda",
+    "name": "Honda",
+    "description": "Japanese pioneer of bipedal robotics investing in next-generation disaster-response avatars. Created foundational ASIMO which ushered in the modern humanoid robotics era before discontinuation in 2022.",
+    "website": "https://global.honda/",
+    "logo": "/images/brands/honda-logo.svg"
+  },
+  {
+    "id": "petoi",
+    "name": "Petoi",
+    "description": "Maker community-focused company producing open-source palm-sized quadruped kits for education. Successfully raised $567K on Kickstarter, offering world's first affordable programmable robot dog starting at $225.",
+    "website": "https://www.petoi.com/",
+    "logo": "/images/brands/petoi-logo.png"
+  },
+  {
+    "id": "swiss-mile",
+    "name": "Swiss-Mile (RIVR)",
+    "description": "ETH Zurich spin-off building wheel-legged robots that switch between driving and walking for delivery. Raised $22M from Jeff Bezos, achieving 22 kph speed with 83% efficiency and 50kg payload.",
+    "website": "https://www.rivr.ai/"
+  },
+  {
+    "id": "limx-dynamics",
+    "name": "LimX Dynamics",
+    "description": "Guangzhou firm developing high-agility quadrupeds with force-controlled joints and transformation capabilities. W1 transforms from quadruped to biped in <1 second, reaching 36 km/h speed.",
+    "website": "https://www.limxdynamics.com/",
+    "logo": "/images/brands/limx-dynamics-logo.png"
+  },
+  {
+    "id": "weilan",
+    "name": "Weilan Technology",
+    "description": "Shenzhen startup scaling AlphaDog quadrupeds for smart city and enterprise deployments. Claimed fastest robot dog at 15 km/h with advanced LIDAR/3D cameras, available from $2,400.",
+    "website": "https://www.weilan.com/"
+  },
+  {
+    "id": "xpeng-robotics",
+    "name": "XPeng Robotics",
+    "description": "XPeng-backed enterprise merging autonomous driving tech with advanced humanoid robots. Iron humanoid features 60+ joints, 200 DOF, Turing AI chip with 3,000 TOPS, deployed in XPeng factories and stores.",
+    "website": "https://www.xpengrobotics.com/"
+  },
+  {
+    "id": "neura-robotics",
+    "name": "NEURA Robotics",
+    "description": "German company developing cognitive robotics including collaborative robots and humanoid platforms. 4NE-1 is first humanoid designed for series production, aiming to deliver 5M robots by 2030 with NVIDIA partnership.",
+    "website": "https://neura-robotics.com/",
+    "logo": "/images/brands/neura-robotics-logo.svg"
+  },
+  {
+    "id": "elephant-robotics",
+    "name": "Elephant Robotics",
+    "description": "Service robotics company offering biomimetic pet-style quadrupeds for consumers and education. Accessible biomimetic quadrupeds available for consumer purchase.",
+    "website": "https://www.elephantrobotics.com/",
+    "logo": "/images/brands/elephant-robotics-logo.png"
   }
 ]
