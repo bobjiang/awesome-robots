@@ -1,0 +1,199 @@
+{
+  "extractionDate": "2025-10-19T23:55:32.021Z",
+  "source": "OpenLoong RoboHub",
+  "statistics": {
+    "totalRobots": 20,
+    "totalBrands": 16,
+    "duplicatesSkipped": 4,
+    "totalImagesCollected": 94
+  },
+  "dataQuality": {
+    "hasImages": 20,
+    "hasDetailedSpecs": 0,
+    "dataCompleteness": "basic"
+  },
+  "notes": [
+    "OpenLoong RoboHub provides primarily visual/marketing content",
+    "Detailed technical specifications are not available on the platform",
+    "Robot names and brands are accurate",
+    "High-resolution images collected for all robots",
+    "Further enrichment needed from manufacturer websites",
+    "All Chinese manufacturer names retained in original form"
+  ],
+  "nextSteps": [
+    "Research manufacturer websites for each brand",
+    "Download/create brand logos",
+    "Extract detailed specifications from manufacturer sites",
+    "Verify robot categories",
+    "Add pricing information where available",
+    "Translate Chinese names to English where appropriate"
+  ],
+  "robots": [
+    {
+      "name": "GALAXEA R1Pro",
+      "brand": "星海图（GALAXEA AI）",
+      "imageCount": 1
+    },
+    {
+      "name": "GALAXEA R1",
+      "brand": "星海图（GALAXEA AI）",
+      "imageCount": 5
+    },
+    {
+      "name": "先行者K2",
+      "brand": "上海开普勒探索机器人有限公司",
+      "imageCount": 5
+    },
+    {
+      "name": "星尘智能 S1",
+      "brand": "星尘智能",
+      "imageCount": 5
+    },
+    {
+      "name": "TORA-ONE",
+      "brand": "帕西尼感知科技",
+      "imageCount": 5
+    },
+    {
+      "name": "领航者2号NAVIAI",
+      "brand": "浙江人形机器人创新中心",
+      "imageCount": 5
+    },
+    {
+      "name": "天工1.2 MAX",
+      "brand": "国地共建具身智能机器人创新中心",
+      "imageCount": 5
+    },
+    {
+      "name": "Wanda",
+      "brand": "优理奇智能",
+      "imageCount": 5
+    },
+    {
+      "name": "夏澜",
+      "brand": "数字华夏",
+      "imageCount": 5
+    },
+    {
+      "name": "mini人形机器人Hi",
+      "brand": "高擎机电",
+      "imageCount": 4
+    },
+    {
+      "name": "SA01",
+      "brand": "众擎机器人",
+      "imageCount": 5
+    },
+    {
+      "name": "KUAVO-MY",
+      "brand": "乐聚机器人",
+      "imageCount": 5
+    },
+    {
+      "name": "Galbot",
+      "brand": "银河通用",
+      "imageCount": 5
+    },
+    {
+      "name": "行者二号（X02）机器人",
+      "brand": "上海卓益得机器人有限公司",
+      "imageCount": 5
+    },
+    {
+      "name": "天工1.1PRO",
+      "brand": "国地共建具身智能机器人创新中心",
+      "imageCount": 5
+    },
+    {
+      "name": "DORA",
+      "brand": "松延动力",
+      "imageCount": 5
+    },
+    {
+      "name": "行者泰山",
+      "brand": "优宝特智能机器人",
+      "imageCount": 5
+    },
+    {
+      "name": "小柒",
+      "brand": "EX机器人",
+      "imageCount": 4
+    },
+    {
+      "name": "KUAVO-4.0",
+      "brand": "乐聚机器人",
+      "imageCount": 5
+    },
+    {
+      "name": "天工1.1LITE",
+      "brand": "国地共建具身智能机器人创新中心",
+      "imageCount": 5
+    }
+  ],
+  "brands": [
+    {
+      "name": "星海图（GALAXEA AI）",
+      "id": "openloong-星海图-galaxea-ai"
+    },
+    {
+      "name": "上海开普勒探索机器人有限公司",
+      "id": "openloong-上海开普勒探索机器人有限公司"
+    },
+    {
+      "name": "星尘智能",
+      "id": "openloong-星尘智能"
+    },
+    {
+      "name": "帕西尼感知科技",
+      "id": "openloong-帕西尼感知科技"
+    },
+    {
+      "name": "浙江人形机器人创新中心",
+      "id": "openloong-浙江人形机器人创新中心"
+    },
+    {
+      "name": "国地共建具身智能机器人创新中心",
+      "id": "openloong-国地共建具身智能机器人创新中心"
+    },
+    {
+      "name": "优理奇智能",
+      "id": "openloong-优理奇智能"
+    },
+    {
+      "name": "数字华夏",
+      "id": "openloong-数字华夏"
+    },
+    {
+      "name": "高擎机电",
+      "id": "openloong-高擎机电"
+    },
+    {
+      "name": "众擎机器人",
+      "id": "openloong-众擎机器人"
+    },
+    {
+      "name": "乐聚机器人",
+      "id": "openloong-乐聚机器人"
+    },
+    {
+      "name": "银河通用",
+      "id": "openloong-银河通用"
+    },
+    {
+      "name": "上海卓益得机器人有限公司",
+      "id": "openloong-上海卓益得机器人有限公司"
+    },
+    {
+      "name": "松延动力",
+      "id": "openloong-松延动力"
+    },
+    {
+      "name": "优宝特智能机器人",
+      "id": "openloong-优宝特智能机器人"
+    },
+    {
+      "name": "EX机器人",
+      "id": "openloong-ex机器人"
+    }
+  ]
+}

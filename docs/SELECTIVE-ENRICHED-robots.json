@@ -1,0 +1,813 @@
+[
+  {
+    "id": "openloong-galaxea-r1pro",
+    "name": "GALAXEA R1Pro",
+    "chineseName": null,
+    "brand": "GALAXEA AI",
+    "chineseBrand": "星海图（GALAXEA AI）",
+    "category": "humanoid",
+    "price": {
+      "starting": null,
+      "currency": "USD",
+      "note": "Contact manufacturer - Estimated $10,000-$20,000 range based on market positioning"
+    },
+    "images": [
+      "https://galaxea-dynamics.com/cdn/shop/files/R1Pro_gripper_6b4d6369-26ca-4047-94af-481eeb55b837.png?v=1760586490&width=1946",
+      "https://galaxea-dynamics.com/cdn/shop/files/Lite_0bb6493d-5661-4d33-8093-109aa58aa423.png?v=1760586490&width=1946",
+      "https://galaxea-dynamics.com/cdn/shop/files/1_c3ba6a01-cadb-4829-80f1-48303f44bba1.png?v=1760586490&width=1946",
+      "https://galaxea-dynamics.com/cdn/shop/files/R1_Pro_cf56ea4b-1089-4864-86bc-df48d948e852.png?v=1760586490&width=1946",
+      "https://galaxea-dynamics.com/cdn/shop/files/R1Pro_silver_8c560e50-ffbc-4163-8ae8-2977c9f33976.png?v=1760586490&width=1946"
+    ],
+    "description": "Arm Reach: 64cm (without the end-effector) Standard Sensors: 1 head cameras + 5 chassis cameras + 1 LiDAR Computing: Jetson AGX Orin 32GB",
+    "generalInfo": {
+      "manufacturer": "GALAXEA AI",
+      "modelName": "GALAXEA R1Pro",
+      "releaseDate": "2025",
+      "dimensions": {
+        "standing": "1700mm (H) x 675mm (W)",
+        "weight": "Not publicly specified"
+      }
+    },
+    "keyFeatures": [
+      "26 degrees of freedom with dual 7-axis arms",
+      "NVIDIA Jetson AGX Orin 32GB with 200 TOPS computing power",
+      "Force-controlled parallel gripper for delicate manipulation",
+      "360° LiDAR and multiple camera system for comprehensive perception",
+      "Vertical operating range from ground level to 2 meters",
+      "1.5 m/s chassis movement speed",
+      "ROS 2 Humble support with open-source SDK",
+      "Supports isomorphic and VR teleoperation",
+      "Suitable for research, development, and light industrial tasks"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "26",
+      "payloadCapacity": "Rated: 3.5 kg @ 500mm, Maximum: 5 kg per arm",
+      "batteryCapacityRuntime": "Not publicly specified",
+      "charger": "Standard charger included",
+      "sensorsIncluded": [
+        "1x pure binocular RGB camera (head)",
+        "2x monocular depth cameras (wrist, optional)",
+        "5x monocular cameras (chassis)",
+        "1x 360° LiDAR (chassis)",
+        "Force sensors in gripper"
+      ],
+      "interfaces": [
+        "HDMI",
+        "USB",
+        "Ethernet"
+      ],
+      "armDOF": "7 per arm (14 total)",
+      "torsoDOF": "4",
+      "chassisDOF": "6",
+      "armLength": "680mm",
+      "verticalReach": "0 - 2 meters",
+      "endEffector": "Force-controlled parallel gripper",
+      "chassisSpeed": "1.5 m/s maximum"
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Yes - ROS 2 Humble",
+      "sdkLanguages": [
+        "Python",
+        "C++"
+      ],
+      "openSourceRepos": "Yes - SDK available on GitHub",
+      "aiFrameworksSupported": [
+        "PyTorch",
+        "TensorFlow"
+      ],
+      "apiDocumentationQuality": "Good - Official documentation available",
+      "computingPlatform": "NVIDIA Jetson AGX Orin 32GB",
+      "computingPower": "200 TOPS",
+      "cpu": "8 Cores @ 2.2 GHz",
+      "gpu": "930 MHz"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Contact manufacturer",
+        "coverage": "Contact manufacturer for warranty details"
+      },
+      "postSalesSupport": "Contact manufacturer",
+      "trackRecord": "See manufacturer website for details"
+    },
+    "highResPhotos": [
+      "https://galaxea-dynamics.com/cdn/shop/files/R1Pro_gripper_6b4d6369-26ca-4047-94af-481eeb55b837.png?v=1760586490&width=1946",
+      "https://galaxea-dynamics.com/cdn/shop/files/Lite_0bb6493d-5661-4d33-8093-109aa58aa423.png?v=1760586490&width=1946",
+      "https://galaxea-dynamics.com/cdn/shop/files/1_c3ba6a01-cadb-4829-80f1-48303f44bba1.png?v=1760586490&width=1946",
+      "https://galaxea-dynamics.com/cdn/shop/files/R1_Pro_cf56ea4b-1089-4864-86bc-df48d948e852.png?v=1760586490&width=1946",
+      "https://galaxea-dynamics.com/cdn/shop/files/R1Pro_silver_8c560e50-ffbc-4163-8ae8-2977c9f33976.png?v=1760586490&width=1946"
+    ],
+    "websiteUrl": "https://galaxea-dynamics.com",
+    "sourceUrl": "https://galaxea-dynamics.com/products/galaxea-r1-pro",
+    "extractedAt": "2025-10-20T00:11:36.397Z",
+    "dataSource": "official_manufacturer_website",
+    "dataCompleteness": "high",
+    "allSpecifications": {
+      "Parameter": "Value",
+      "Key Dimensions(H x W mm)": "1700 x 675",
+      "Total Degree of Freedom(DOF)": "26",
+      "Single-Arm Degree of Freedom(DOF)": "7",
+      "Arm Length(mm)": "680",
+      "Single-Arm Payload(kg@500 mm)": "Rated: 3.5 \nMaximum: 5",
+      "End-Effector": "Force-controlled parallel gripper",
+      "Torso Degree of Freedom(DOF)": "4",
+      "Vertical Operating Range(m)": "0 - 2",
+      "Chassis Degree of Freedom(DOF)": "6",
+      "Chassis Movement Speed(m/s)": "1.5",
+      "Configuration": "NVIDIA Jetson AGX Orin 32GB",
+      "Computing Power(TOPS)": "200",
+      "CPU": "8 Cores",
+      "Max. CPU Frequency(GHz)": "2.2",
+      "Max. GPU Frequency(MHz)": "930",
+      "Overall Sensor Configuration": "Head: 1x pure binocular RGB camera \nWrist: 2x monocular depth cameras (optional)\nChassis: 5 x monocular cameras + 1 x 360° LiDAR"
+    },
+    "technicalDetails": {
+      "dof": "7",
+      "payload": "7 kg"
+    },
+    "pricingInfo": {},
+    "manuallyEnriched": true,
+    "enrichedAt": "2025-10-20T04:33:32.369Z"
+  },
+  {
+    "id": "openloong-kuavo-my",
+    "name": "KUAVO-MY",
+    "chineseName": null,
+    "brand": "Leju Robotics",
+    "chineseBrand": "乐聚机器人",
+    "category": "humanoid",
+    "price": {
+      "starting": null,
+      "currency": "CNY",
+      "note": "Contact Leju Robotics for commercial pricing"
+    },
+    "images": [
+      "https://kuavo.lejurobot.com/leju_website/en/images/banner/banner1.png?v=0.0.1-66-gb7e9e90",
+      "https://kuavo.lejurobot.com/leju_website/en/images/KUAVO3.0.png?v=0.0.1-66-gb7e9e90",
+      "https://kuavo.lejurobot.com/leju_website/en/images/KUAVO-MY.png?v=0.0.1-66-gb7e9e90",
+      "https://kuavo.lejurobot.com/leju_website/en/images/series/education_poster.png?v=0.0.1-66-gb7e9e90",
+      "https://kuavo.lejurobot.com/leju_website/en/images/series/commercial_poster.png?v=0.0.1-66-gb7e9e90"
+    ],
+    "description": "Share company updates and industry news Emboided intelligence innovation center kicks off, speeding up humanoid robot industrial evolution Participate in MBBF2024 forum, explore humanoid robot global market strategy",
+    "generalInfo": {
+      "manufacturer": "Leju Robotics",
+      "modelName": "KUAVO-MY",
+      "releaseDate": "2024",
+      "dimensions": {
+        "standing": "Approximately 175cm",
+        "weight": "45 kg"
+      }
+    },
+    "keyFeatures": [
+      "26 degrees of freedom optimized for service tasks",
+      "Self-developed high-torque joints (360 Nm peak)",
+      "4.6 km/h omnidirectional walking speed",
+      "Terrain adaptation: sand, grass, uneven surfaces",
+      "KaihongOS operating system based on OpenHarmony",
+      "Open-source motion controller for trajectory planning",
+      "Passed general humanoid robot evaluation by CTTL",
+      "Designed for commercial service applications",
+      "Customer guidance and intelligent interaction",
+      "Used in shopping centers and exhibition halls"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "26 (14 arms + 12 legs)",
+      "payloadCapacity": "Not specified",
+      "batteryCapacityRuntime": "Not publicly specified",
+      "charger": "Contact manufacturer",
+      "sensorsIncluded": [
+        "Depth cameras for environment perception",
+        "Multi-sensor fusion system"
+      ],
+      "interfaces": [
+        "HDMI",
+        "USB 3.0"
+      ],
+      "armDOF": "14 total",
+      "legDOF": "12 total",
+      "jointTorque": "Peak 360 Nm",
+      "jointSpeed": "Rated 150 rpm",
+      "walkingSpeed": "Up to 4.6 km/h omnidirectional",
+      "terrainAdaptation": "Sand, grass, various surfaces"
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Contact manufacturer",
+      "sdkLanguages": [
+        "Contact manufacturer"
+      ],
+      "openSourceRepos": "Yes - Open-source motion controller",
+      "aiFrameworksSupported": [
+        "Integrated with KaihongOS"
+      ],
+      "apiDocumentationQuality": "Contact manufacturer",
+      "operatingSystem": "KaihongOS (based on OpenHarmony)"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Contact manufacturer",
+        "coverage": "Contact manufacturer for warranty details"
+      },
+      "postSalesSupport": "Contact manufacturer",
+      "trackRecord": "See manufacturer website for details"
+    },
+    "highResPhotos": [
+      "https://kuavo.lejurobot.com/leju_website/en/images/banner/banner1.png?v=0.0.1-66-gb7e9e90",
+      "https://kuavo.lejurobot.com/leju_website/en/images/KUAVO3.0.png?v=0.0.1-66-gb7e9e90",
+      "https://kuavo.lejurobot.com/leju_website/en/images/KUAVO-MY.png?v=0.0.1-66-gb7e9e90",
+      "https://kuavo.lejurobot.com/leju_website/en/images/series/education_poster.png?v=0.0.1-66-gb7e9e90",
+      "https://kuavo.lejurobot.com/leju_website/en/images/series/commercial_poster.png?v=0.0.1-66-gb7e9e90"
+    ],
+    "websiteUrl": "https://www.lejurobot.com",
+    "sourceUrl": "https://www.lejurobot.com",
+    "extractedAt": "2025-10-20T00:12:14.456Z",
+    "dataSource": "official_manufacturer_website",
+    "dataCompleteness": "high",
+    "allSpecifications": {},
+    "technicalDetails": {
+      "speed": "ing up humanoid robot industrial evolution"
+    },
+    "pricingInfo": {},
+    "manuallyEnriched": true,
+    "enrichedAt": "2025-10-20T04:33:32.369Z"
+  },
+  {
+    "id": "openloong-sa01",
+    "name": "SA01",
+    "chineseName": null,
+    "brand": "EngineAI",
+    "chineseBrand": "众擎机器人",
+    "category": "humanoid",
+    "price": {
+      "starting": 5400,
+      "currency": "USD",
+      "note": "$5,400 USD - Professional-grade open-source platform for education/research"
+    },
+    "images": [
+      "https://file.engineai.com.cn:2390/files/images/menu_1.png",
+      "https://file.engineai.com.cn:2390/files/images/menu_2.png",
+      "https://file.engineai.com.cn:2390/files/images/menu_3.png",
+      "https://file.engineai.com.cn:2390/files/images/menu_4.png",
+      "https://file.engineai.com.cn:2390/files/images/engineai_start_bg.png"
+    ],
+    "description": "众擎机器人",
+    "generalInfo": {
+      "manufacturer": "EngineAI",
+      "modelName": "SA01",
+      "releaseDate": "2023",
+      "dimensions": {
+        "standing": "170cm",
+        "weight": "40 kg"
+      }
+    },
+    "keyFeatures": [
+      "Open-source humanoid robot platform",
+      "High-strength aluminum alloy construction",
+      "Multi-sensor fusion: RealSense + LiDAR + HD cameras",
+      "Dual NVIDIA and Intel processors for AI control",
+      "Reinforcement learning algorithm architecture",
+      "Capable of running and jumping",
+      "Efficient: <200W power consumption when walking",
+      "2 hour battery life",
+      "Highly customizable for research",
+      "Affordable at $5,400 USD",
+      "Founded October 2023 in Shenzhen"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "Not specified",
+      "payloadCapacity": "Not specified",
+      "batteryCapacityRuntime": "Approximately 2 hours",
+      "charger": "Standard charging",
+      "sensorsIncluded": [
+        "Intel RealSense depth cameras",
+        "360-degree LiDAR",
+        "Multiple HD cameras"
+      ],
+      "interfaces": [
+        "USB",
+        "Ethernet"
+      ],
+      "walkingPowerConsumption": "Less than 200W",
+      "construction": "High-strength aluminum alloy frame"
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Yes - Open-source platform",
+      "sdkLanguages": [
+        "Python",
+        "C++"
+      ],
+      "openSourceRepos": "Yes - Open-source platform",
+      "aiFrameworksSupported": [
+        "Reinforcement learning architecture"
+      ],
+      "apiDocumentationQuality": "Good - Research/education focused",
+      "processingPlatform": "Dual NVIDIA and Intel processors"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Contact manufacturer",
+        "coverage": "Contact manufacturer for warranty details"
+      },
+      "postSalesSupport": "Contact manufacturer",
+      "trackRecord": "See manufacturer website for details"
+    },
+    "highResPhotos": [
+      "https://file.engineai.com.cn:2390/files/images/menu_1.png",
+      "https://file.engineai.com.cn:2390/files/images/menu_2.png",
+      "https://file.engineai.com.cn:2390/files/images/menu_3.png",
+      "https://file.engineai.com.cn:2390/files/images/menu_4.png",
+      "https://file.engineai.com.cn:2390/files/images/engineai_start_bg.png"
+    ],
+    "websiteUrl": "http://www.engineai.com.cn",
+    "sourceUrl": "http://www.engineai.com.cn",
+    "extractedAt": "2025-10-20T00:13:43.310Z",
+    "dataSource": "official_manufacturer_website",
+    "dataCompleteness": "high",
+    "allSpecifications": {},
+    "technicalDetails": {
+      "height": "170CM",
+      "dof": "32",
+      "speed": "2M/s"
+    },
+    "pricingInfo": {},
+    "manuallyEnriched": true,
+    "enrichedAt": "2025-10-20T04:33:32.369Z"
+  },
+  {
+    "id": "openloong-先行者k2",
+    "name": "Pioneer K2 / Forerunner K2",
+    "chineseName": "先行者K2",
+    "brand": "Shanghai Kepler Exploration Robotics",
+    "chineseBrand": "上海开普勒探索机器人有限公司",
+    "category": "humanoid",
+    "price": {
+      "starting": null,
+      "currency": "CNY",
+      "note": "Contact Kepler for enterprise pricing - Industrial-grade pricing expected"
+    },
+    "images": [
+      "https://img.gotokepler.com/video/Robot-en.mp4?vframe/jpg/offset/0",
+      "https://img.gotokepler.com/video/Robot-en.mp4?vframe/jpg/offset/0",
+      "https://img.gotokepler.com/image/gotokepler/mobile/product/3.png",
+      "https://img.gotokepler.com/image/gotokepler/product/3-1.png",
+      "https://img.gotokepler.com/image/gotokepler/product/3-2.png"
+    ],
+    "description": "上海开普勒探索机器人有限公司",
+    "generalInfo": {
+      "manufacturer": "Shanghai Kepler Exploration Robotics",
+      "modelName": "Pioneer K2 / Forerunner K2",
+      "releaseDate": "2024",
+      "dimensions": {
+        "standing": "178cm",
+        "weight": "85 kg"
+      }
+    },
+    "keyFeatures": [
+      "52 degrees of freedom - Gen 5.0 design",
+      "178cm tall, 85 kg - human-like proportions",
+      "80+ integrated sensors for environment perception",
+      "100 TOPS onboard computing power",
+      "2.33 kWh battery for full 8-hour industrial shift",
+      "25 kg total payload capacity",
+      "15 kg per arm lifting capacity",
+      "Dexterous hands for industrial manipulation",
+      "Designed for manufacturing, logistics, warehousing",
+      "Commercial deployment ready",
+      "High-risk operation capable"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "52",
+      "payloadCapacity": "Total: 25 kg (55 lb) | 15 kg per arm",
+      "batteryCapacityRuntime": "2.33 kWh battery - 8 hour shift",
+      "charger": "Industrial charging system",
+      "sensorsIncluded": [
+        "80+ integrated sensors",
+        "Multiple cameras and depth sensors",
+        "Force/torque sensors"
+      ],
+      "interfaces": [
+        "Industrial standard interfaces"
+      ],
+      "computingPower": "100 TOPS onboard"
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Yes - Industrial ROS",
+      "sdkLanguages": [
+        "Python",
+        "C++"
+      ],
+      "openSourceRepos": "Contact manufacturer",
+      "aiFrameworksSupported": [
+        "Multiple frameworks supported"
+      ],
+      "apiDocumentationQuality": "Industrial-grade documentation"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Contact manufacturer",
+        "coverage": "Contact manufacturer for warranty details"
+      },
+      "postSalesSupport": "Contact manufacturer",
+      "trackRecord": "See manufacturer website for details"
+    },
+    "highResPhotos": [
+      "https://img.gotokepler.com/video/Robot-en.mp4?vframe/jpg/offset/0",
+      "https://img.gotokepler.com/video/Robot-en.mp4?vframe/jpg/offset/0",
+      "https://img.gotokepler.com/image/gotokepler/mobile/product/3.png",
+      "https://img.gotokepler.com/image/gotokepler/product/3-1.png",
+      "https://img.gotokepler.com/image/gotokepler/product/3-2.png"
+    ],
+    "websiteUrl": "https://www.gotokepler.com",
+    "sourceUrl": "https://www.gotokepler.com/apps/mobile/pages/product/index?id=2",
+    "extractedAt": "2025-10-20T00:14:03.943Z",
+    "dataSource": "official_manufacturer_website",
+    "dataCompleteness": "high",
+    "allSpecifications": {},
+    "technicalDetails": {},
+    "pricingInfo": {},
+    "manuallyEnriched": true,
+    "enrichedAt": "2025-10-20T04:33:32.369Z"
+  },
+  {
+    "id": "openloong-星尘智能-s1",
+    "name": "Astribot S1",
+    "chineseName": "星尘智能 S1",
+    "brand": "Astribot (Stardust Intelligence)",
+    "chineseBrand": "星尘智能",
+    "category": "humanoid",
+    "price": {
+      "starting": null,
+      "currency": "CNY",
+      "note": "Contact manufacturer - Expected to be competitively priced for consumer market"
+    },
+    "images": [
+      "https://www.astribot.com/_nuxt/describe-s2-bg.uI62FkDw.png",
+      "https://www.astribot.com/_nuxt/describe-s3-img1.BhWEfWFv.jpg",
+      "https://www.astribot.com/_nuxt/describe-s3-img2.DaG__Qo6.jpg",
+      "https://www.astribot.com/_nuxt/describe-s3-img3.DK5reSax.jpg",
+      "https://www.astribot.com/_nuxt/describe-s3-img4.CW3NSDSu.jpg"
+    ],
+    "description": "Your AI Robotic Partner, Together Forward Our company has pioneered a software-hardware integrated system architecture for AI (Design for AI, DFAI), deeply coupling 'AI capabilities' with 'optimal operation', This innovation enables S1 to learn, think, and work more like humans",
+    "generalInfo": {
+      "manufacturer": "Astribot (Stardust Intelligence)",
+      "modelName": "Astribot S1",
+      "releaseDate": "2024",
+      "dimensions": {
+        "standing": "Torso-only design with arms (full height not specified)",
+        "weight": "Not publicly specified"
+      }
+    },
+    "keyFeatures": [
+      "7 degrees of freedom per arm - human-like range of motion",
+      "10 kg payload capacity per arm",
+      "Extreme precision: 0.03mm repeatability",
+      "Top arm speed of 10 meters per second",
+      "Advanced AI with imitation learning capabilities",
+      "Touch sensors in dual-digit grippers",
+      "Demonstrated household tasks: cleaning, cooking, folding",
+      "Commercially available as of 2024",
+      "Viral demonstration video showing impressive dexterity"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "14 (7 per arm)",
+      "payloadCapacity": "10 kg per arm",
+      "batteryCapacityRuntime": "Not publicly specified",
+      "charger": "Contact manufacturer",
+      "sensorsIncluded": [
+        "Dual-digit gripper with touch sensors",
+        "Multiple cameras for vision",
+        "Force/torque sensors in arms"
+      ],
+      "interfaces": [
+        "Contact manufacturer for details"
+      ],
+      "precision": "0.03mm repeatability",
+      "topSpeed": "10 meters per second arm movement"
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Contact manufacturer",
+      "sdkLanguages": [
+        "Python"
+      ],
+      "openSourceRepos": "Limited",
+      "aiFrameworksSupported": [
+        "Proprietary AI for imitation learning"
+      ],
+      "apiDocumentationQuality": "Contact manufacturer"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Contact manufacturer",
+        "coverage": "Contact manufacturer for warranty details"
+      },
+      "postSalesSupport": "Contact manufacturer",
+      "trackRecord": "See manufacturer website for details"
+    },
+    "highResPhotos": [
+      "https://www.astribot.com/_nuxt/describe-s2-bg.uI62FkDw.png",
+      "https://www.astribot.com/_nuxt/describe-s3-img1.BhWEfWFv.jpg",
+      "https://www.astribot.com/_nuxt/describe-s3-img2.DaG__Qo6.jpg",
+      "https://www.astribot.com/_nuxt/describe-s3-img3.DK5reSax.jpg",
+      "https://www.astribot.com/_nuxt/describe-s3-img4.CW3NSDSu.jpg"
+    ],
+    "websiteUrl": "https://www.astribot.com",
+    "sourceUrl": "https://www.astribot.com/en/product/",
+    "extractedAt": "2025-10-20T00:14:46.778Z",
+    "dataSource": "official_manufacturer_website",
+    "dataCompleteness": "high",
+    "allSpecifications": {},
+    "technicalDetails": {
+      "height": "170cm",
+      "weight": "80kg",
+      "dof": "7",
+      "payload": "per arm (horizontal reach)"
+    },
+    "pricingInfo": {},
+    "manuallyEnriched": true,
+    "enrichedAt": "2025-10-20T04:33:32.369Z"
+  },
+  {
+    "id": "openloong-tora-one",
+    "name": "TORA-ONE",
+    "chineseName": null,
+    "brand": "PaXini",
+    "chineseBrand": "帕西尼感知科技",
+    "category": "humanoid",
+    "price": {
+      "starting": null,
+      "currency": "CNY",
+      "note": "Available for purchase on PaXini online store - Contact for pricing"
+    },
+    "images": [
+      "https://cdn-cn.paxini.com//store/pro/67e1047e9c11239e850bcc5d/976e83d3-cafc-4ec2-988d-e30833c72e0e.png",
+      "https://cdn-cn.paxini.com//store/pro/67e1047e9c11239e850bcc5d/8c4cb973-fc7c-43d4-ab08-82d0c260fc51.png",
+      "https://cdn-cn.paxini.com//store/pro/67e1047e9c11239e850bcc5d/f57dae3e-2e13-4baa-aa6e-59d74203bd0b.png",
+      "https://cdn-cn.paxini.com//store/pro/67e1047e9c11239e850bcc5d/423b9444-4964-4c27-9bf1-e9316cb26264.png",
+      "https://cdn-cn.paxini.com//store/pro/67e1047e9c11239e850bcc5d/976e83d3-cafc-4ec2-988d-e30833c72e0e.png"
+    ],
+    "description": "Copyright © 2024 PaXini Tech. All rights reserved Copyright © 2024 PaXini Tech. All rights reserved 粤ICP备2022109610号",
+    "generalInfo": {
+      "manufacturer": "PaXini",
+      "modelName": "TORA-ONE",
+      "releaseDate": "2024",
+      "dimensions": {
+        "standing": "1.46-1.86 meters (adjustable height)",
+        "weight": "Not publicly specified"
+      }
+    },
+    "keyFeatures": [
+      "47 degrees of freedom including 26 in dexterous hands",
+      "1,956 multi-dimensional tactile sensors with 7,824 channels",
+      "0.01N tactile precision for delicate object handling",
+      "Perceives pressure, friction, softness, and temperature",
+      "Adjustable height: 1.46m to 1.86m",
+      "0.05mm positioning accuracy",
+      "Four-fingered bionic dexterous hands",
+      "Up to 8 hours battery life",
+      "Designed for medical, industrial, and service applications",
+      "World-leading tactile sensing technology"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "47 (21 body + 26 in hands)",
+      "payloadCapacity": "5-6 kg per arm",
+      "batteryCapacityRuntime": "Up to 8 hours",
+      "charger": "Standard charging system",
+      "sensorsIncluded": [
+        "1,956 tactile sensors (ITPU multi-dimensional)",
+        "7,824 tactile signal channels",
+        "5 monocular cameras",
+        "2 depth cameras for 3D vision"
+      ],
+      "interfaces": [
+        "Contact manufacturer for details"
+      ],
+      "handDOF": "13 active DOF per hand",
+      "positioningAccuracy": "0.05mm",
+      "tactilePrecision": "0.01N pressure sensing",
+      "maxSpeed": "1 m/s"
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Contact manufacturer",
+      "sdkLanguages": [
+        "Contact manufacturer"
+      ],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [
+        "Proprietary tactile AI"
+      ],
+      "apiDocumentationQuality": "Contact manufacturer"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Contact manufacturer",
+        "coverage": "Contact manufacturer for warranty details"
+      },
+      "postSalesSupport": "Contact manufacturer",
+      "trackRecord": "See manufacturer website for details"
+    },
+    "highResPhotos": [
+      "https://cdn-cn.paxini.com//store/pro/67e1047e9c11239e850bcc5d/976e83d3-cafc-4ec2-988d-e30833c72e0e.png",
+      "https://cdn-cn.paxini.com//store/pro/67e1047e9c11239e850bcc5d/8c4cb973-fc7c-43d4-ab08-82d0c260fc51.png",
+      "https://cdn-cn.paxini.com//store/pro/67e1047e9c11239e850bcc5d/f57dae3e-2e13-4baa-aa6e-59d74203bd0b.png",
+      "https://cdn-cn.paxini.com//store/pro/67e1047e9c11239e850bcc5d/423b9444-4964-4c27-9bf1-e9316cb26264.png",
+      "https://cdn-cn.paxini.com//store/pro/67e1047e9c11239e850bcc5d/976e83d3-cafc-4ec2-988d-e30833c72e0e.png"
+    ],
+    "websiteUrl": "https://paxini.com",
+    "sourceUrl": "https://mall.paxini.com/product/robot/66f27ad030cd11a8e9d1d567",
+    "extractedAt": "2025-10-20T00:15:09.441Z",
+    "dataSource": "official_manufacturer_website",
+    "dataCompleteness": "high",
+    "allSpecifications": {},
+    "technicalDetails": {},
+    "pricingInfo": {
+      "found": "¥0"
+    },
+    "manuallyEnriched": true,
+    "enrichedAt": "2025-10-20T04:33:32.370Z"
+  },
+  {
+    "id": "openloong-行者二号-x02-",
+    "name": "Walker X02 (Xingzhe No. 2)",
+    "chineseName": "行者二号（X02）",
+    "brand": "Shanghai Zhuoyide Robot (DroidUp)",
+    "chineseBrand": "上海卓益得机器人有限公司",
+    "category": "humanoid",
+    "price": {
+      "starting": null,
+      "currency": "CNY",
+      "note": "Contact manufacturer - Research/commercial pricing TBD"
+    },
+    "images": [
+      "https://www.droidup.com/uploads/upload/images/20250903/255466b20fee570766a55a1455f67f45.png",
+      "https://www.droidup.com/uploads/upload/images/20250903/255466b20fee570766a55a1455f67f45.png",
+      "https://www.droidup.com/static/home/images/x-l1.jpg",
+      "https://www.droidup.com/static/home/images/x-l2.jpg",
+      "https://www.droidup.com/static/home/images/x-l3.jpg"
+    ],
+    "description": "睿娜是一款领先的人形机器人，采用先进的表情模拟和生成技术，具有类人情感，“她”是最接近真实生命体的人工智能载体。睿娜是一款以1:1比例真实还原人脸的尖端表情机器人，其皮肤和面部细节达到了高度写实的水平，具有高度写实的皮肤和丰富的表情模拟能力。同时她配备了先进的多模态感知系统和持续学习的算法，具备智能语音和眼神追踪交互功能，能够精准捕捉并再现人类情感的微妙变化。此外，配合灵活的双臂及自主移动导航底盘，可以实现更有亲和力的沟通交流，实现自主行走，提供更加自然和个性化的交流体验。 全球首款基于仿生肌腱驱动技术的模块化人形机器人，采用肌腱与分布式电机协同驱动，关节刚度动态可调，实现类人步态(步速3m/s、越障15cm)与多地形自适应能力(碎石/坡地/楼梯)能耗较竞品降低25%，动态续航达6小时。 睿娜是一款领先的人形机器人，采用先进的表情模拟和生成技术，具有类人情感，“她”是最接近真实生命体的人工智能载体。睿娜是一款以1:1比例真实还原人脸的尖端表情机器人，其皮肤和面部细节达到了高度写实的水平，具有高度写实的皮肤和丰富的表情模拟能力。同时她配备了先进的多模态感知系统和持续学习的算法，具备智能语音和眼神追踪交互功能，能够精准捕捉并再现人类情感的微妙变化。此外，配合灵活的双臂及自主移动导航底盘，可以实现更有亲和力的沟通交流，实现自主行走，提供更加自然和个性化的交流体验。",
+    "generalInfo": {
+      "manufacturer": "Shanghai Zhuoyide Robot (DroidUp)",
+      "modelName": "Walker X02 (Xingzhe No. 2)",
+      "releaseDate": "2025",
+      "dimensions": {
+        "standing": "170cm",
+        "weight": "30 kg"
+      }
+    },
+    "keyFeatures": [
+      "Lightweight design: 170cm tall, only 30 kg",
+      "Developed by Shanghai University of Technology team",
+      "Third place in worlds first humanoid robot half-marathon",
+      "Optimized version serves as base for Xueba 01 PhD robot",
+      "Tested for public security patrols",
+      "Tested for factory worker training applications",
+      "Demonstrated at 2025 WAIC Shanghai",
+      "Athletic performance capabilities",
+      "Represents Chinese innovation in lightweight humanoids"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "Not publicly specified",
+      "payloadCapacity": "Not publicly specified",
+      "batteryCapacityRuntime": "Not publicly specified",
+      "charger": "Contact manufacturer",
+      "sensorsIncluded": [
+        "Contact manufacturer for details"
+      ],
+      "interfaces": [
+        "Contact manufacturer for details"
+      ],
+      "designFeature": "Lightweight bipedal design"
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Contact manufacturer",
+      "sdkLanguages": [
+        "Contact manufacturer"
+      ],
+      "openSourceRepos": "Contact manufacturer",
+      "aiFrameworksSupported": [
+        "Contact manufacturer"
+      ],
+      "apiDocumentationQuality": "Contact manufacturer"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Contact manufacturer",
+        "coverage": "Contact manufacturer for warranty details"
+      },
+      "postSalesSupport": "Contact manufacturer",
+      "trackRecord": "See manufacturer website for details"
+    },
+    "highResPhotos": [
+      "https://www.droidup.com/uploads/upload/images/20250903/255466b20fee570766a55a1455f67f45.png",
+      "https://www.droidup.com/uploads/upload/images/20250903/255466b20fee570766a55a1455f67f45.png",
+      "https://www.droidup.com/static/home/images/x-l1.jpg",
+      "https://www.droidup.com/static/home/images/x-l2.jpg",
+      "https://www.droidup.com/static/home/images/x-l3.jpg"
+    ],
+    "websiteUrl": "https://www.droidup.com",
+    "sourceUrl": "https://www.droidup.com",
+    "extractedAt": "2025-10-20T00:16:14.696Z",
+    "dataSource": "official_manufacturer_website",
+    "dataCompleteness": "high",
+    "allSpecifications": {},
+    "technicalDetails": {},
+    "pricingInfo": {},
+    "manuallyEnriched": true,
+    "enrichedAt": "2025-10-20T04:33:32.370Z"
+  },
+  {
+    "id": "openloong-dora",
+    "name": "DORA",
+    "chineseName": null,
+    "brand": "Noetix Robotics",
+    "chineseBrand": "松延动力",
+    "category": "humanoid",
+    "price": {
+      "starting": 5500,
+      "currency": "USD",
+      "note": "$5,500 USD - Positioned as affordable humanoid platform"
+    },
+    "images": [
+      "https://qiniu.mfdemo.cn/songyandongli/2024/09/03/66d6bbff8bf26.png",
+      "https://qiniu.mfdemo.cn/songyandongli/2024/09/03/66d6bc09eacc4.png",
+      "https://qiniu.mfdemo.cn/songyandongli/2024/09/03/66d6bbff8bf26.png",
+      "https://qiniu.mfdemo.cn/songyandongli/2025/02/17/67b2ac313fef4.png",
+      "https://qiniu.mfdemo.cn/songyandongli/2024/09/11/66e150bab3f42.png"
+    ],
+    "description": "全尺寸高性能机器人，适用于工业协作等场景，最大关节输出扭矩达到200N*m。 产品级人形机器人Dora，具备敏捷的移动能力、强大的感知交互性能。 首款专为人形机器人运动控制研发的遥控手柄，通讯距离长、信号稳定。",
+    "generalInfo": {
+      "manufacturer": "Noetix Robotics",
+      "modelName": "DORA",
+      "releaseDate": "2023",
+      "dimensions": {
+        "standing": "100cm (1 meter)",
+        "weight": "20 kg"
+      }
+    },
+    "keyFeatures": [
+      "Compact 1-meter tall design (20 kg)",
+      "20-26 degrees of freedom (expandable with grippers)",
+      "NVIDIA Jetson Orin 8GB with 40 TOPS computing",
+      "3x structured-light depth cameras for precision",
+      "Capable of continuous backflips",
+      "Swappable hands: ball-hand or 11-DOF dexterous grippers",
+      "5 kg pick-and-place capability",
+      "Top speed: 3.6 km/h",
+      "Designed for family chores and STEM education",
+      "Affordable platform from Tsinghua/CAS team"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "20-26 (20 base + optional 11 DOF grippers)",
+      "payloadCapacity": "5 kg with dexterous grippers",
+      "batteryCapacityRuntime": "Not publicly specified",
+      "charger": "Contact manufacturer",
+      "sensorsIncluded": [
+        "3x structured-light depth cameras",
+        "Millimetre-grade 3D perception"
+      ],
+      "interfaces": [
+        "Contact manufacturer for details"
+      ],
+      "armDOF": "4 per arm (8 total)",
+      "legDOF": "6 per leg (12 total)",
+      "gripperDOF": "11 DOF per dexterous gripper (optional)",
+      "topSpeed": "3.6 km/h (1 m/s)",
+      "defaultEndEffector": "Ball-hand (swappable)"
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Contact manufacturer",
+      "sdkLanguages": [
+        "Python"
+      ],
+      "openSourceRepos": "Contact manufacturer",
+      "aiFrameworksSupported": [
+        "NVIDIA Jetson AI"
+      ],
+      "apiDocumentationQuality": "Contact manufacturer",
+      "computingPlatform": "NVIDIA Jetson Orin (8GB, 40 TOPS)"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Contact manufacturer",
+        "coverage": "Contact manufacturer for warranty details"
+      },
+      "postSalesSupport": "Contact manufacturer",
+      "trackRecord": "See manufacturer website for details"
+    },
+    "highResPhotos": [
+      "https://qiniu.mfdemo.cn/songyandongli/2024/09/03/66d6bbff8bf26.png",
+      "https://qiniu.mfdemo.cn/songyandongli/2024/09/03/66d6bc09eacc4.png",
+      "https://qiniu.mfdemo.cn/songyandongli/2024/09/03/66d6bbff8bf26.png",
+      "https://qiniu.mfdemo.cn/songyandongli/2025/02/17/67b2ac313fef4.png",
+      "https://qiniu.mfdemo.cn/songyandongli/2024/09/11/66e150bab3f42.png"
+    ],
+    "websiteUrl": "https://noetixrobotics.com",
+    "sourceUrl": "https://noetixrobotics.com",
+    "extractedAt": "2025-10-20T00:17:01.934Z",
+    "dataSource": "official_manufacturer_website",
+    "dataCompleteness": "high",
+    "allSpecifications": {},
+    "technicalDetails": {},
+    "pricingInfo": {},
+    "manuallyEnriched": true,
+    "enrichedAt": "2025-10-20T04:33:32.370Z"
+  }
+]

@@ -1,0 +1,111 @@
+{
+  "extractionDate": "2025-10-19T23:38:22.397Z",
+  "source": "OpenLoong RoboHub (https://www.openloong.org.cn/en/robohub)",
+  "statistics": {
+    "totalProducts": 24,
+    "totalManufacturers": 18,
+    "duplicatesRemoved": 24
+  },
+  "topManufacturers": [
+    {
+      "name": "众擎机器人",
+      "productCount": 3
+    },
+    {
+      "name": "国地共建具身智能机器人创新中心",
+      "productCount": 3
+    },
+    {
+      "name": "星海图（GALAXEA AI）",
+      "productCount": 2
+    },
+    {
+      "name": "乐聚机器人",
+      "productCount": 2
+    },
+    {
+      "name": "优必选",
+      "productCount": 1
+    },
+    {
+      "name": "上海开普勒探索机器人有限公司",
+      "productCount": 1
+    },
+    {
+      "name": "星尘智能",
+      "productCount": 1
+    },
+    {
+      "name": "帕西尼感知科技",
+      "productCount": 1
+    },
+    {
+      "name": "浙江人形机器人创新中心",
+      "productCount": 1
+    },
+    {
+      "name": "优理奇智能",
+      "productCount": 1
+    }
+  ],
+  "sampleProducts": [
+    {
+      "name": "GALAXEA R1Pro",
+      "brand": "星海图（GALAXEA AI）",
+      "image": "https://openloong.obs.cn-east-3.myhuaweicloud.com/yellow-pages%2Fpublic%2Fimg%2F4b030616-1e98-4948-8b1a-fd474c5f46c0.png"
+    },
+    {
+      "name": "GALAXEA R1",
+      "brand": "星海图（GALAXEA AI）",
+      "image": "https://openloong.obs.cn-east-3.myhuaweicloud.com/yellow-pages%2Fpublic%2Fimg%2Fa980e6c2-877d-4211-96da-99cb3d9e2c6b.png"
+    },
+    {
+      "name": "PM01",
+      "brand": "众擎机器人",
+      "image": "https://openloong.obs.cn-east-3.myhuaweicloud.com/yellow-pages%2Fpublic%2Fimg%2Fe480391b-39d2-4abb-b6d0-bc22adcf171e.webp"
+    },
+    {
+      "name": "SE01",
+      "brand": "众擎机器人",
+      "image": "https://openloong.obs.cn-east-3.myhuaweicloud.com/yellow-pages%2Fpublic%2Fimg%2Fd2235b35-7f84-4300-b4c5-a1ae569d2718.png"
+    },
+    {
+      "name": "Walker S1",
+      "brand": "优必选",
+      "image": "https://openloong.obs.cn-east-3.myhuaweicloud.com/yellow-pages%2Fpublic%2Fimg%2F54c12d56-251f-48d1-8378-307e6f974969.png"
+    },
+    {
+      "name": "先行者K2",
+      "brand": "上海开普勒探索机器人有限公司",
+      "image": "https://openloong.obs.cn-east-3.myhuaweicloud.com/yellow-pages%2Fpublic%2Fimg%2Fec87b123-0c8c-4af1-8651-9477de3d61ea.jpg"
+    },
+    {
+      "name": "星尘智能 S1",
+      "brand": "星尘智能",
+      "image": "https://openloong.obs.cn-east-3.myhuaweicloud.com/yellow-pages%2Fpublic%2Fimg%2F6f3de20d-01d9-4b4f-89cd-be0653469ed4.png"
+    },
+    {
+      "name": "TORA-ONE",
+      "brand": "帕西尼感知科技",
+      "image": "https://openloong.obs.cn-east-3.myhuaweicloud.com/yellow-pages%2Fpublic%2Fimg%2F777ddaab-4b9c-459c-9ed1-b0e75480ee43.jpg"
+    },
+    {
+      "name": "领航者2号NAVIAI",
+      "brand": "浙江人形机器人创新中心",
+      "image": "https://openloong.obs.cn-east-3.myhuaweicloud.com/yellow-pages%2Fpublic%2Fimg%2F432bad7d-3c47-4be3-b6cd-2ff7172e4a81.png"
+    },
+    {
+      "name": "天工1.2 MAX",
+      "brand": "国地共建具身智能机器人创新中心",
+      "image": "https://openloong.obs.cn-east-3.myhuaweicloud.com/yellow-pages%2Fpublic%2Fimg%2F4d02d107-d7a8-4587-9d32-ee8e854d11ca.png"
+    }
+  ],
+  "nextSteps": [
+    "Extract detailed specifications from each product detail page",
+    "Obtain manufacturer websites and logos",
+    "Verify product categories (humanoid/quadruped/etc)",
+    "Extract pricing information if available",
+    "Get high-resolution product images",
+    "Extract technical specifications matching RobotDetailTemplate"
+  ]
+}

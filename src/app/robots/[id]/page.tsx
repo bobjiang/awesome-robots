@@ -61,8 +61,8 @@ export default function RobotDetailPage() {
     .filter((r: Robot) => r.id !== robot.id && (r.category === robot.category || r.brand === robot.brand))
     .slice(0, 3);
 
-  const formatPrice = (price: number | 'request') => {
-    if (price === 'request') return 'Request Quote';
+  const formatPrice = (price: number | 'request' | null | undefined) => {
+    if (price === 'request' || price === null || price === undefined) return 'Request Quote';
     return `$${price.toLocaleString()}`;
   };
 

@@ -1,0 +1,1805 @@
+[
+  {
+    "id": "openloong-galaxea-r1pro",
+    "name": "GALAXEA R1Pro",
+    "chineseName": null,
+    "brand": "GALAXEA AI",
+    "chineseBrand": "星海图（GALAXEA AI）",
+    "category": "humanoid",
+    "price": {
+      "starting": null,
+      "currency": "CNY",
+      "note": "Contact manufacturer for pricing"
+    },
+    "images": [
+      "https://galaxea-dynamics.com/cdn/shop/files/R1Pro_gripper_6b4d6369-26ca-4047-94af-481eeb55b837.png?v=1760586490&width=1946",
+      "https://galaxea-dynamics.com/cdn/shop/files/Lite_0bb6493d-5661-4d33-8093-109aa58aa423.png?v=1760586490&width=1946",
+      "https://galaxea-dynamics.com/cdn/shop/files/1_c3ba6a01-cadb-4829-80f1-48303f44bba1.png?v=1760586490&width=1946",
+      "https://galaxea-dynamics.com/cdn/shop/files/R1_Pro_cf56ea4b-1089-4864-86bc-df48d948e852.png?v=1760586490&width=1946",
+      "https://galaxea-dynamics.com/cdn/shop/files/R1Pro_silver_8c560e50-ffbc-4163-8ae8-2977c9f33976.png?v=1760586490&width=1946"
+    ],
+    "description": "Arm Reach: 64cm (without the end-effector) Standard Sensors: 1 head cameras + 5 chassis cameras + 1 LiDAR Computing: Jetson AGX Orin 32GB",
+    "generalInfo": {
+      "manufacturer": "GALAXEA AI",
+      "modelName": "GALAXEA R1Pro",
+      "releaseDate": "Contact manufacturer",
+      "dimensions": {
+        "standing": "1700 x 675",
+        "weight": "Not specified"
+      }
+    },
+    "keyFeatures": [
+      "Documentation",
+      "Anguilla\n              \n                USD\n                $",
+      "Antigua & Barbuda\n              \n                USD\n                $",
+      "Aruba\n              \n                USD\n                $",
+      "Bahamas\n              \n                USD\n                $",
+      "Barbados\n              \n                USD\n                $",
+      "Belize\n              \n                USD\n                $",
+      "Bermuda\n              \n                USD\n                $",
+      "British Virgin Islands\n              \n                USD\n                $",
+      "Canada\n              \n                USD\n                $"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "6",
+      "payloadCapacity": "Not specified",
+      "batteryCapacityRuntime": "Not specified",
+      "charger": "Contact manufacturer",
+      "sensorsIncluded": [
+        "Contact manufacturer for details"
+      ],
+      "interfaces": [
+        "Contact manufacturer for details"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Contact manufacturer",
+      "sdkLanguages": [],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [],
+      "apiDocumentationQuality": "Contact manufacturer"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Contact manufacturer",
+        "coverage": "Contact manufacturer for warranty details"
+      },
+      "postSalesSupport": "Contact manufacturer",
+      "trackRecord": "See manufacturer website for details"
+    },
+    "highResPhotos": [
+      "https://galaxea-dynamics.com/cdn/shop/files/R1Pro_gripper_6b4d6369-26ca-4047-94af-481eeb55b837.png?v=1760586490&width=1946",
+      "https://galaxea-dynamics.com/cdn/shop/files/Lite_0bb6493d-5661-4d33-8093-109aa58aa423.png?v=1760586490&width=1946",
+      "https://galaxea-dynamics.com/cdn/shop/files/1_c3ba6a01-cadb-4829-80f1-48303f44bba1.png?v=1760586490&width=1946",
+      "https://galaxea-dynamics.com/cdn/shop/files/R1_Pro_cf56ea4b-1089-4864-86bc-df48d948e852.png?v=1760586490&width=1946",
+      "https://galaxea-dynamics.com/cdn/shop/files/R1Pro_silver_8c560e50-ffbc-4163-8ae8-2977c9f33976.png?v=1760586490&width=1946"
+    ],
+    "websiteUrl": "https://galaxea-dynamics.com",
+    "sourceUrl": "https://galaxea-dynamics.com/products/galaxea-r1-pro",
+    "extractedAt": "2025-10-20T00:11:36.397Z",
+    "dataSource": "official_manufacturer_website",
+    "dataCompleteness": "medium",
+    "allSpecifications": {
+      "Parameter": "Value",
+      "Key Dimensions(H x W mm)": "1700 x 675",
+      "Total Degree of Freedom(DOF)": "26",
+      "Single-Arm Degree of Freedom(DOF)": "7",
+      "Arm Length(mm)": "680",
+      "Single-Arm Payload(kg@500 mm)": "Rated: 3.5 \nMaximum: 5",
+      "End-Effector": "Force-controlled parallel gripper",
+      "Torso Degree of Freedom(DOF)": "4",
+      "Vertical Operating Range(m)": "0 - 2",
+      "Chassis Degree of Freedom(DOF)": "6",
+      "Chassis Movement Speed(m/s)": "1.5",
+      "Configuration": "NVIDIA Jetson AGX Orin 32GB",
+      "Computing Power(TOPS)": "200",
+      "CPU": "8 Cores",
+      "Max. CPU Frequency(GHz)": "2.2",
+      "Max. GPU Frequency(MHz)": "930",
+      "Overall Sensor Configuration": "Head: 1x pure binocular RGB camera \nWrist: 2x monocular depth cameras (optional)\nChassis: 5 x monocular cameras + 1 x 360° LiDAR"
+    },
+    "technicalDetails": {
+      "dof": "7",
+      "payload": "7 kg"
+    },
+    "pricingInfo": {}
+  },
+  {
+    "id": "openloong-galaxea-r1",
+    "name": "GALAXEA R1",
+    "chineseName": null,
+    "brand": "GALAXEA AI",
+    "chineseBrand": "星海图（GALAXEA AI）",
+    "category": "humanoid",
+    "price": {
+      "starting": null,
+      "currency": "CNY",
+      "note": "Contact manufacturer for pricing"
+    },
+    "images": [],
+    "description": "星海图（GALAXEA AI）",
+    "generalInfo": {
+      "manufacturer": "GALAXEA AI",
+      "modelName": "GALAXEA R1",
+      "releaseDate": "Contact manufacturer",
+      "dimensions": {
+        "standing": "Not specified",
+        "weight": "Not specified"
+      }
+    },
+    "keyFeatures": [
+      "Documentation",
+      "Activities & News",
+      "Projects",
+      "Dataset",
+      "Robot Hub",
+      "About Community"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "Not specified",
+      "payloadCapacity": "Not specified",
+      "batteryCapacityRuntime": "Not specified",
+      "charger": "Contact manufacturer",
+      "sensorsIncluded": [
+        "Contact manufacturer for details"
+      ],
+      "interfaces": [
+        "Contact manufacturer for details"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Contact manufacturer",
+      "sdkLanguages": [],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [],
+      "apiDocumentationQuality": "Contact manufacturer"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Contact manufacturer",
+        "coverage": "Contact manufacturer for warranty details"
+      },
+      "postSalesSupport": "Contact manufacturer",
+      "trackRecord": "See manufacturer website for details"
+    },
+    "highResPhotos": [],
+    "websiteUrl": "https://galaxea-dynamics.com",
+    "sourceUrl": "https://galaxea.ai/R1",
+    "extractedAt": "2025-10-20T00:11:51.742Z",
+    "dataSource": "official_manufacturer_website",
+    "dataCompleteness": "basic",
+    "allSpecifications": {},
+    "technicalDetails": {},
+    "pricingInfo": {}
+  },
+  {
+    "id": "openloong-kuavo-my",
+    "name": "KUAVO-MY",
+    "chineseName": null,
+    "brand": "Leju Robotics",
+    "chineseBrand": "乐聚机器人",
+    "category": "humanoid",
+    "price": {
+      "starting": null,
+      "currency": "CNY",
+      "note": "Contact manufacturer for pricing"
+    },
+    "images": [
+      "https://kuavo.lejurobot.com/leju_website/en/images/banner/banner1.png?v=0.0.1-66-gb7e9e90",
+      "https://kuavo.lejurobot.com/leju_website/en/images/KUAVO3.0.png?v=0.0.1-66-gb7e9e90",
+      "https://kuavo.lejurobot.com/leju_website/en/images/KUAVO-MY.png?v=0.0.1-66-gb7e9e90",
+      "https://kuavo.lejurobot.com/leju_website/en/images/series/education_poster.png?v=0.0.1-66-gb7e9e90",
+      "https://kuavo.lejurobot.com/leju_website/en/images/series/commercial_poster.png?v=0.0.1-66-gb7e9e90"
+    ],
+    "description": "Share company updates and industry news Emboided intelligence innovation center kicks off, speeding up humanoid robot industrial evolution Participate in MBBF2024 forum, explore humanoid robot global market strategy",
+    "generalInfo": {
+      "manufacturer": "Leju Robotics",
+      "modelName": "KUAVO-MY",
+      "releaseDate": "Contact manufacturer",
+      "dimensions": {
+        "standing": "Not specified",
+        "weight": "Not specified"
+      }
+    },
+    "keyFeatures": [
+      "GENERAL HUMANOID ROBOT SERIES",
+      "OPEN-SCALE HUMANOID ROBOT OPEN PLATFORM",
+      "GENERAL HUMANOID ROBOT SERIES",
+      "OPEN-SCALE HUMANOID ROBOT OPEN PLATFORM",
+      "Embodied Intelligence",
+      "Exploring \"Pangu Embodied Intelligence Large Model + Kuafu Humanoid Robot\" application scenarios in collaboration with Huawei Cloud",
+      "Research & Education",
+      "Establishing joint laboratories with Soochow University, Shandong University, and Beijing General Artificial Intelligence Research Institute",
+      "Public/Commercial",
+      "Serving as a tour guide at China Mobile's Smart Home Operations Center."
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "Not specified",
+      "payloadCapacity": "Not specified",
+      "batteryCapacityRuntime": "Not specified",
+      "charger": "Contact manufacturer",
+      "sensorsIncluded": [
+        "Contact manufacturer for details"
+      ],
+      "interfaces": [
+        "Contact manufacturer for details"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Contact manufacturer",
+      "sdkLanguages": [],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [],
+      "apiDocumentationQuality": "Contact manufacturer"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Contact manufacturer",
+        "coverage": "Contact manufacturer for warranty details"
+      },
+      "postSalesSupport": "Contact manufacturer",
+      "trackRecord": "See manufacturer website for details"
+    },
+    "highResPhotos": [
+      "https://kuavo.lejurobot.com/leju_website/en/images/banner/banner1.png?v=0.0.1-66-gb7e9e90",
+      "https://kuavo.lejurobot.com/leju_website/en/images/KUAVO3.0.png?v=0.0.1-66-gb7e9e90",
+      "https://kuavo.lejurobot.com/leju_website/en/images/KUAVO-MY.png?v=0.0.1-66-gb7e9e90",
+      "https://kuavo.lejurobot.com/leju_website/en/images/series/education_poster.png?v=0.0.1-66-gb7e9e90",
+      "https://kuavo.lejurobot.com/leju_website/en/images/series/commercial_poster.png?v=0.0.1-66-gb7e9e90"
+    ],
+    "websiteUrl": "https://www.lejurobot.com",
+    "sourceUrl": "https://www.lejurobot.com",
+    "extractedAt": "2025-10-20T00:12:14.456Z",
+    "dataSource": "official_manufacturer_website",
+    "dataCompleteness": "basic",
+    "allSpecifications": {},
+    "technicalDetails": {
+      "speed": "ing up humanoid robot industrial evolution"
+    },
+    "pricingInfo": {}
+  },
+  {
+    "id": "openloong-kuavo-4-0",
+    "name": "KUAVO-4.0",
+    "chineseName": null,
+    "brand": "Leju Robotics",
+    "chineseBrand": "乐聚机器人",
+    "category": "humanoid",
+    "price": {
+      "starting": null,
+      "currency": "CNY",
+      "note": "Contact manufacturer for pricing"
+    },
+    "images": [
+      "https://kuavo.lejurobot.com/leju_website/en/images/banner/banner1.png?v=0.0.1-66-gb7e9e90",
+      "https://kuavo.lejurobot.com/leju_website/en/images/KUAVO3.0.png?v=0.0.1-66-gb7e9e90",
+      "https://kuavo.lejurobot.com/leju_website/en/images/KUAVO-MY.png?v=0.0.1-66-gb7e9e90",
+      "https://kuavo.lejurobot.com/leju_website/en/images/series/education_poster.png?v=0.0.1-66-gb7e9e90",
+      "https://kuavo.lejurobot.com/leju_website/en/images/series/commercial_poster.png?v=0.0.1-66-gb7e9e90"
+    ],
+    "description": "Share company updates and industry news Emboided intelligence innovation center kicks off, speeding up humanoid robot industrial evolution Participate in MBBF2024 forum, explore humanoid robot global market strategy",
+    "generalInfo": {
+      "manufacturer": "Leju Robotics",
+      "modelName": "KUAVO-4.0",
+      "releaseDate": "Contact manufacturer",
+      "dimensions": {
+        "standing": "Not specified",
+        "weight": "Not specified"
+      }
+    },
+    "keyFeatures": [
+      "GENERAL HUMANOID ROBOT SERIES",
+      "OPEN-SCALE HUMANOID ROBOT OPEN PLATFORM",
+      "GENERAL HUMANOID ROBOT SERIES",
+      "OPEN-SCALE HUMANOID ROBOT OPEN PLATFORM",
+      "Embodied Intelligence",
+      "Exploring \"Pangu Embodied Intelligence Large Model + Kuafu Humanoid Robot\" application scenarios in collaboration with Huawei Cloud",
+      "Research & Education",
+      "Establishing joint laboratories with Soochow University, Shandong University, and Beijing General Artificial Intelligence Research Institute",
+      "Public/Commercial",
+      "Serving as a tour guide at China Mobile's Smart Home Operations Center."
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "Not specified",
+      "payloadCapacity": "Not specified",
+      "batteryCapacityRuntime": "Not specified",
+      "charger": "Contact manufacturer",
+      "sensorsIncluded": [
+        "Contact manufacturer for details"
+      ],
+      "interfaces": [
+        "Contact manufacturer for details"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Contact manufacturer",
+      "sdkLanguages": [],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [],
+      "apiDocumentationQuality": "Contact manufacturer"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Contact manufacturer",
+        "coverage": "Contact manufacturer for warranty details"
+      },
+      "postSalesSupport": "Contact manufacturer",
+      "trackRecord": "See manufacturer website for details"
+    },
+    "highResPhotos": [
+      "https://kuavo.lejurobot.com/leju_website/en/images/banner/banner1.png?v=0.0.1-66-gb7e9e90",
+      "https://kuavo.lejurobot.com/leju_website/en/images/KUAVO3.0.png?v=0.0.1-66-gb7e9e90",
+      "https://kuavo.lejurobot.com/leju_website/en/images/KUAVO-MY.png?v=0.0.1-66-gb7e9e90",
+      "https://kuavo.lejurobot.com/leju_website/en/images/series/education_poster.png?v=0.0.1-66-gb7e9e90",
+      "https://kuavo.lejurobot.com/leju_website/en/images/series/commercial_poster.png?v=0.0.1-66-gb7e9e90"
+    ],
+    "websiteUrl": "https://www.lejurobot.com",
+    "sourceUrl": "https://www.lejurobot.com",
+    "extractedAt": "2025-10-20T00:12:25.305Z",
+    "dataSource": "official_manufacturer_website",
+    "dataCompleteness": "basic",
+    "allSpecifications": {},
+    "technicalDetails": {
+      "speed": "ing up humanoid robot industrial evolution"
+    },
+    "pricingInfo": {}
+  },
+  {
+    "id": "openloong-天工1-2-max",
+    "name": "Tiangong 1.2 MAX",
+    "chineseName": "天工1.2 MAX",
+    "brand": "National-Local Embodied AI Robot Innovation Center",
+    "chineseBrand": "国地共建具身智能机器人创新中心",
+    "category": "humanoid",
+    "price": {
+      "starting": null,
+      "currency": "CNY",
+      "note": "Contact manufacturer for pricing"
+    },
+    "images": [
+      "https://www.x-humanoid.com/oss/static/img/nav_pic1.png",
+      "https://www.x-humanoid.com/oss/static/img/nav_pic2.png",
+      "https://www.x-humanoid.com/oss/static/img/project/hskw.png",
+      "https://www.x-humanoid.com/oss/static/img/project/jssj.png",
+      "https://www.x-humanoid.com/oss/static/img/ind1_tu1.png"
+    ],
+    "description": "©️2024 北京人形机器人创新中心有限公司版权所有｜京ICP备2024078606号｜京公网安备11011202100775号",
+    "generalInfo": {
+      "manufacturer": "National-Local Embodied AI Robot Innovation Center",
+      "modelName": "Tiangong 1.2 MAX",
+      "releaseDate": "Contact manufacturer",
+      "dimensions": {
+        "standing": "Not specified",
+        "weight": "Not specified"
+      }
+    },
+    "keyFeatures": [
+      "具身\n                    \n                      具身天工2.0\n                      天轶2.0",
+      "智能\n                    \n                      慧思开物\n                      Wu1.0（天悟）\n                      PelicanVLM",
+      "具身\n                    \n                      具身天工2.0\n                      天轶2.0",
+      "智能\n                    \n                      慧思开物\n                      Wu1.0（天悟）\n                      PelicanVLM",
+      "通用具身智能平台\n                  \n                    “一脑多能”、“一脑多机”的通用具身智能平台，具备处理多场景复杂任务的泛化能力，首次实现了单个软件系统在机械臂、轮式机器人、人形机器人等多构型本体上的兼容，能够适应多样化的应用场景和任务，为具身智能机器人提供强大的感知、决策与执行能力。\n                  \n                \n              \n              \n                \n                  \n                    了解更多",
+      "通用数据服务平台\n                  \n                    构建形成“场景采集-模型迭代-场景验证”的数据飞轮，包括我国首个通用具身智能数据集和Benchmark-Robomind，高保真铰接物品数字资产数据集ArtVIP，提供多场景数据采集服务，为具身智能快速落地提供支撑。\n                  \n                \n              \n              \n                \n                  \n                    了解更多",
+      "百米“飞人大战”夺冠，北京人形2金6银2铜收官！\n                          \n                          \n                            北京人形机器人创新中心\n                            2025-08-17",
+      "北京人形亮相WAIC：全国首个工业多本体多场景多任务自主协同作业\n                          \n                          \n                            北京人形机器人创新中心\n                            2025-07-26",
+      "北京人形携手中国电科院人工智能所共建“电力具身智能机器人联合实验室”\n                          \n                          \n                            北京人形机器人创新中心\n                            2025-07-21",
+      "业务合作：business@x-humanoid.com"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "Not specified",
+      "payloadCapacity": "Not specified",
+      "batteryCapacityRuntime": "Not specified",
+      "charger": "Contact manufacturer",
+      "sensorsIncluded": [
+        "Contact manufacturer for details"
+      ],
+      "interfaces": [
+        "Contact manufacturer for details"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Contact manufacturer",
+      "sdkLanguages": [],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [],
+      "apiDocumentationQuality": "Contact manufacturer"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Contact manufacturer",
+        "coverage": "Contact manufacturer for warranty details"
+      },
+      "postSalesSupport": "Contact manufacturer",
+      "trackRecord": "See manufacturer website for details"
+    },
+    "highResPhotos": [
+      "https://www.x-humanoid.com/oss/static/img/nav_pic1.png",
+      "https://www.x-humanoid.com/oss/static/img/nav_pic2.png",
+      "https://www.x-humanoid.com/oss/static/img/project/hskw.png",
+      "https://www.x-humanoid.com/oss/static/img/project/jssj.png",
+      "https://www.x-humanoid.com/oss/static/img/ind1_tu1.png"
+    ],
+    "websiteUrl": "https://x-humanoid.com",
+    "sourceUrl": "https://x-humanoid.com",
+    "extractedAt": "2025-10-20T00:12:48.369Z",
+    "dataSource": "official_manufacturer_website",
+    "dataCompleteness": "basic",
+    "allSpecifications": {},
+    "technicalDetails": {
+      "battery": "快换电系统，具备工业级上肢负载能；具备全自由度灵活下肢系统，为工业、物流等一系列场景作业奠定技术基础；通用轮臂式机器人“天轶”具备双臂协作和强大的人机交互能力，能够实现智能感知导览、巡检和作业，可在接待、导览、咨询问答、巡检等多场景应用。",
+      "payload": "能；具备全自由度灵活下肢系统，为工业、物流等一系列场景作业奠定技术基础；通用轮臂式机器人“天轶”具备双臂协作和强大的人机交互能力，能够实现智能感知导览、巡检和作业，可在接待、导览、咨询问答、巡检等多场景应用。"
+    },
+    "pricingInfo": {}
+  },
+  {
+    "id": "openloong-天工1-1pro",
+    "name": "Tiangong 1.1 PRO",
+    "chineseName": "天工1.1PRO",
+    "brand": "National-Local Embodied AI Robot Innovation Center",
+    "chineseBrand": "国地共建具身智能机器人创新中心",
+    "category": "humanoid",
+    "price": {
+      "starting": null,
+      "currency": "CNY",
+      "note": "Contact manufacturer for pricing"
+    },
+    "images": [
+      "https://www.x-humanoid.com/oss/static/img/nav_pic1.png",
+      "https://www.x-humanoid.com/oss/static/img/nav_pic2.png",
+      "https://www.x-humanoid.com/oss/static/img/project/hskw.png",
+      "https://www.x-humanoid.com/oss/static/img/project/jssj.png",
+      "https://www.x-humanoid.com/oss/static/img/ind1_tu1.png"
+    ],
+    "description": "©️2024 北京人形机器人创新中心有限公司版权所有｜京ICP备2024078606号｜京公网安备11011202100775号",
+    "generalInfo": {
+      "manufacturer": "National-Local Embodied AI Robot Innovation Center",
+      "modelName": "Tiangong 1.1 PRO",
+      "releaseDate": "Contact manufacturer",
+      "dimensions": {
+        "standing": "Not specified",
+        "weight": "Not specified"
+      }
+    },
+    "keyFeatures": [
+      "具身\n                    \n                      具身天工2.0\n                      天轶2.0",
+      "智能\n                    \n                      慧思开物\n                      Wu1.0（天悟）\n                      PelicanVLM",
+      "具身\n                    \n                      具身天工2.0\n                      天轶2.0",
+      "智能\n                    \n                      慧思开物\n                      Wu1.0（天悟）\n                      PelicanVLM",
+      "通用具身智能平台\n                  \n                    “一脑多能”、“一脑多机”的通用具身智能平台，具备处理多场景复杂任务的泛化能力，首次实现了单个软件系统在机械臂、轮式机器人、人形机器人等多构型本体上的兼容，能够适应多样化的应用场景和任务，为具身智能机器人提供强大的感知、决策与执行能力。\n                  \n                \n              \n              \n                \n                  \n                    了解更多",
+      "通用数据服务平台\n                  \n                    构建形成“场景采集-模型迭代-场景验证”的数据飞轮，包括我国首个通用具身智能数据集和Benchmark-Robomind，高保真铰接物品数字资产数据集ArtVIP，提供多场景数据采集服务，为具身智能快速落地提供支撑。\n                  \n                \n              \n              \n                \n                  \n                    了解更多",
+      "百米“飞人大战”夺冠，北京人形2金6银2铜收官！\n                          \n                          \n                            北京人形机器人创新中心\n                            2025-08-17",
+      "北京人形亮相WAIC：全国首个工业多本体多场景多任务自主协同作业\n                          \n                          \n                            北京人形机器人创新中心\n                            2025-07-26",
+      "北京人形携手中国电科院人工智能所共建“电力具身智能机器人联合实验室”\n                          \n                          \n                            北京人形机器人创新中心\n                            2025-07-21",
+      "业务合作：business@x-humanoid.com"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "Not specified",
+      "payloadCapacity": "Not specified",
+      "batteryCapacityRuntime": "Not specified",
+      "charger": "Contact manufacturer",
+      "sensorsIncluded": [
+        "Contact manufacturer for details"
+      ],
+      "interfaces": [
+        "Contact manufacturer for details"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Contact manufacturer",
+      "sdkLanguages": [],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [],
+      "apiDocumentationQuality": "Contact manufacturer"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Contact manufacturer",
+        "coverage": "Contact manufacturer for warranty details"
+      },
+      "postSalesSupport": "Contact manufacturer",
+      "trackRecord": "See manufacturer website for details"
+    },
+    "highResPhotos": [
+      "https://www.x-humanoid.com/oss/static/img/nav_pic1.png",
+      "https://www.x-humanoid.com/oss/static/img/nav_pic2.png",
+      "https://www.x-humanoid.com/oss/static/img/project/hskw.png",
+      "https://www.x-humanoid.com/oss/static/img/project/jssj.png",
+      "https://www.x-humanoid.com/oss/static/img/ind1_tu1.png"
+    ],
+    "websiteUrl": "https://x-humanoid.com",
+    "sourceUrl": "https://x-humanoid.com",
+    "extractedAt": "2025-10-20T00:13:01.994Z",
+    "dataSource": "official_manufacturer_website",
+    "dataCompleteness": "basic",
+    "allSpecifications": {},
+    "technicalDetails": {
+      "battery": "快换电系统，具备工业级上肢负载能；具备全自由度灵活下肢系统，为工业、物流等一系列场景作业奠定技术基础；通用轮臂式机器人“天轶”具备双臂协作和强大的人机交互能力，能够实现智能感知导览、巡检和作业，可在接待、导览、咨询问答、巡检等多场景应用。",
+      "payload": "能；具备全自由度灵活下肢系统，为工业、物流等一系列场景作业奠定技术基础；通用轮臂式机器人“天轶”具备双臂协作和强大的人机交互能力，能够实现智能感知导览、巡检和作业，可在接待、导览、咨询问答、巡检等多场景应用。"
+    },
+    "pricingInfo": {}
+  },
+  {
+    "id": "openloong-天工1-1lite",
+    "name": "Tiangong 1.1 LITE",
+    "chineseName": "天工1.1LITE",
+    "brand": "National-Local Embodied AI Robot Innovation Center",
+    "chineseBrand": "国地共建具身智能机器人创新中心",
+    "category": "humanoid",
+    "price": {
+      "starting": null,
+      "currency": "CNY",
+      "note": "Contact manufacturer for pricing"
+    },
+    "images": [
+      "https://www.x-humanoid.com/oss/static/img/nav_pic1.png",
+      "https://www.x-humanoid.com/oss/static/img/nav_pic2.png",
+      "https://www.x-humanoid.com/oss/static/img/project/hskw.png",
+      "https://www.x-humanoid.com/oss/static/img/project/jssj.png",
+      "https://www.x-humanoid.com/oss/static/img/ind1_tu1.png"
+    ],
+    "description": "©️2024 北京人形机器人创新中心有限公司版权所有｜京ICP备2024078606号｜京公网安备11011202100775号",
+    "generalInfo": {
+      "manufacturer": "National-Local Embodied AI Robot Innovation Center",
+      "modelName": "Tiangong 1.1 LITE",
+      "releaseDate": "Contact manufacturer",
+      "dimensions": {
+        "standing": "Not specified",
+        "weight": "Not specified"
+      }
+    },
+    "keyFeatures": [
+      "具身\n                    \n                      具身天工2.0\n                      天轶2.0",
+      "智能\n                    \n                      慧思开物\n                      Wu1.0（天悟）\n                      PelicanVLM",
+      "具身\n                    \n                      具身天工2.0\n                      天轶2.0",
+      "智能\n                    \n                      慧思开物\n                      Wu1.0（天悟）\n                      PelicanVLM",
+      "通用具身智能平台\n                  \n                    “一脑多能”、“一脑多机”的通用具身智能平台，具备处理多场景复杂任务的泛化能力，首次实现了单个软件系统在机械臂、轮式机器人、人形机器人等多构型本体上的兼容，能够适应多样化的应用场景和任务，为具身智能机器人提供强大的感知、决策与执行能力。\n                  \n                \n              \n              \n                \n                  \n                    了解更多",
+      "通用数据服务平台\n                  \n                    构建形成“场景采集-模型迭代-场景验证”的数据飞轮，包括我国首个通用具身智能数据集和Benchmark-Robomind，高保真铰接物品数字资产数据集ArtVIP，提供多场景数据采集服务，为具身智能快速落地提供支撑。\n                  \n                \n              \n              \n                \n                  \n                    了解更多",
+      "百米“飞人大战”夺冠，北京人形2金6银2铜收官！\n                          \n                          \n                            北京人形机器人创新中心\n                            2025-08-17",
+      "北京人形亮相WAIC：全国首个工业多本体多场景多任务自主协同作业\n                          \n                          \n                            北京人形机器人创新中心\n                            2025-07-26",
+      "北京人形携手中国电科院人工智能所共建“电力具身智能机器人联合实验室”\n                          \n                          \n                            北京人形机器人创新中心\n                            2025-07-21",
+      "业务合作：business@x-humanoid.com"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "Not specified",
+      "payloadCapacity": "Not specified",
+      "batteryCapacityRuntime": "Not specified",
+      "charger": "Contact manufacturer",
+      "sensorsIncluded": [
+        "Contact manufacturer for details"
+      ],
+      "interfaces": [
+        "Contact manufacturer for details"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Contact manufacturer",
+      "sdkLanguages": [],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [],
+      "apiDocumentationQuality": "Contact manufacturer"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Contact manufacturer",
+        "coverage": "Contact manufacturer for warranty details"
+      },
+      "postSalesSupport": "Contact manufacturer",
+      "trackRecord": "See manufacturer website for details"
+    },
+    "highResPhotos": [
+      "https://www.x-humanoid.com/oss/static/img/nav_pic1.png",
+      "https://www.x-humanoid.com/oss/static/img/nav_pic2.png",
+      "https://www.x-humanoid.com/oss/static/img/project/hskw.png",
+      "https://www.x-humanoid.com/oss/static/img/project/jssj.png",
+      "https://www.x-humanoid.com/oss/static/img/ind1_tu1.png"
+    ],
+    "websiteUrl": "https://x-humanoid.com",
+    "sourceUrl": "https://x-humanoid.com",
+    "extractedAt": "2025-10-20T00:13:16.243Z",
+    "dataSource": "official_manufacturer_website",
+    "dataCompleteness": "basic",
+    "allSpecifications": {},
+    "technicalDetails": {
+      "battery": "快换电系统，具备工业级上肢负载能；具备全自由度灵活下肢系统，为工业、物流等一系列场景作业奠定技术基础；通用轮臂式机器人“天轶”具备双臂协作和强大的人机交互能力，能够实现智能感知导览、巡检和作业，可在接待、导览、咨询问答、巡检等多场景应用。",
+      "payload": "能；具备全自由度灵活下肢系统，为工业、物流等一系列场景作业奠定技术基础；通用轮臂式机器人“天轶”具备双臂协作和强大的人机交互能力，能够实现智能感知导览、巡检和作业，可在接待、导览、咨询问答、巡检等多场景应用。"
+    },
+    "pricingInfo": {}
+  },
+  {
+    "id": "openloong-sa01",
+    "name": "SA01",
+    "chineseName": null,
+    "brand": "EngineAI",
+    "chineseBrand": "众擎机器人",
+    "category": "humanoid",
+    "price": {
+      "starting": null,
+      "currency": "CNY",
+      "note": "Contact manufacturer for pricing"
+    },
+    "images": [
+      "https://file.engineai.com.cn:2390/files/images/menu_1.png",
+      "https://file.engineai.com.cn:2390/files/images/menu_2.png",
+      "https://file.engineai.com.cn:2390/files/images/menu_3.png",
+      "https://file.engineai.com.cn:2390/files/images/menu_4.png",
+      "https://file.engineai.com.cn:2390/files/images/engineai_start_bg.png"
+    ],
+    "description": "众擎机器人",
+    "generalInfo": {
+      "manufacturer": "EngineAI",
+      "modelName": "SA01",
+      "releaseDate": "Contact manufacturer",
+      "dimensions": {
+        "standing": "Not specified",
+        "weight": "Not specified"
+      }
+    },
+    "keyFeatures": [
+      "ProductEngineAIse01EngineAIPM01EngineAIsa01EngineAIs2"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "Not specified",
+      "payloadCapacity": "Not specified",
+      "batteryCapacityRuntime": "Not specified",
+      "charger": "Contact manufacturer",
+      "sensorsIncluded": [
+        "Contact manufacturer for details"
+      ],
+      "interfaces": [
+        "Contact manufacturer for details"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Contact manufacturer",
+      "sdkLanguages": [],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [],
+      "apiDocumentationQuality": "Contact manufacturer"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Contact manufacturer",
+        "coverage": "Contact manufacturer for warranty details"
+      },
+      "postSalesSupport": "Contact manufacturer",
+      "trackRecord": "See manufacturer website for details"
+    },
+    "highResPhotos": [
+      "https://file.engineai.com.cn:2390/files/images/menu_1.png",
+      "https://file.engineai.com.cn:2390/files/images/menu_2.png",
+      "https://file.engineai.com.cn:2390/files/images/menu_3.png",
+      "https://file.engineai.com.cn:2390/files/images/menu_4.png",
+      "https://file.engineai.com.cn:2390/files/images/engineai_start_bg.png"
+    ],
+    "websiteUrl": "http://www.engineai.com.cn",
+    "sourceUrl": "http://www.engineai.com.cn",
+    "extractedAt": "2025-10-20T00:13:43.310Z",
+    "dataSource": "official_manufacturer_website",
+    "dataCompleteness": "basic",
+    "allSpecifications": {},
+    "technicalDetails": {
+      "height": "170CM",
+      "dof": "32",
+      "speed": "2M/s"
+    },
+    "pricingInfo": {}
+  },
+  {
+    "id": "openloong-先行者k2",
+    "name": "Pioneer K2 / Forerunner K2",
+    "chineseName": "先行者K2",
+    "brand": "Shanghai Kepler Exploration Robotics",
+    "chineseBrand": "上海开普勒探索机器人有限公司",
+    "category": "humanoid",
+    "price": {
+      "starting": null,
+      "currency": "CNY",
+      "note": "Contact manufacturer for pricing"
+    },
+    "images": [
+      "https://img.gotokepler.com/video/Robot-en.mp4?vframe/jpg/offset/0",
+      "https://img.gotokepler.com/video/Robot-en.mp4?vframe/jpg/offset/0",
+      "https://img.gotokepler.com/image/gotokepler/mobile/product/3.png",
+      "https://img.gotokepler.com/image/gotokepler/product/3-1.png",
+      "https://img.gotokepler.com/image/gotokepler/product/3-2.png"
+    ],
+    "description": "上海开普勒探索机器人有限公司",
+    "generalInfo": {
+      "manufacturer": "Shanghai Kepler Exploration Robotics",
+      "modelName": "Pioneer K2 / Forerunner K2",
+      "releaseDate": "Contact manufacturer",
+      "dimensions": {
+        "standing": "Not specified",
+        "weight": "Not specified"
+      }
+    },
+    "keyFeatures": [
+      "Documentation",
+      "Activities & News",
+      "Projects",
+      "Dataset",
+      "Robot Hub",
+      "About Community",
+      "RobotHub",
+      "Product"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "Not specified",
+      "payloadCapacity": "Not specified",
+      "batteryCapacityRuntime": "Not specified",
+      "charger": "Contact manufacturer",
+      "sensorsIncluded": [
+        "Contact manufacturer for details"
+      ],
+      "interfaces": [
+        "Contact manufacturer for details"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Contact manufacturer",
+      "sdkLanguages": [],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [],
+      "apiDocumentationQuality": "Contact manufacturer"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Contact manufacturer",
+        "coverage": "Contact manufacturer for warranty details"
+      },
+      "postSalesSupport": "Contact manufacturer",
+      "trackRecord": "See manufacturer website for details"
+    },
+    "highResPhotos": [
+      "https://img.gotokepler.com/video/Robot-en.mp4?vframe/jpg/offset/0",
+      "https://img.gotokepler.com/video/Robot-en.mp4?vframe/jpg/offset/0",
+      "https://img.gotokepler.com/image/gotokepler/mobile/product/3.png",
+      "https://img.gotokepler.com/image/gotokepler/product/3-1.png",
+      "https://img.gotokepler.com/image/gotokepler/product/3-2.png"
+    ],
+    "websiteUrl": "https://www.gotokepler.com",
+    "sourceUrl": "https://www.gotokepler.com/apps/mobile/pages/product/index?id=2",
+    "extractedAt": "2025-10-20T00:14:03.943Z",
+    "dataSource": "official_manufacturer_website",
+    "dataCompleteness": "basic",
+    "allSpecifications": {},
+    "technicalDetails": {},
+    "pricingInfo": {}
+  },
+  {
+    "id": "openloong-galbot",
+    "name": "Galbot",
+    "chineseName": null,
+    "brand": "Galbot",
+    "chineseBrand": "银河通用",
+    "category": "humanoid",
+    "price": {
+      "starting": null,
+      "currency": "CNY",
+      "note": "Contact manufacturer for pricing"
+    },
+    "images": [
+      "https://oss-cn-beijing.galbot.com/online/portal/img/pic_jiating1.png",
+      "https://oss-cn-beijing.galbot.com/online/portal/img/pic_chaoshi1.png",
+      "https://oss-cn-beijing.galbot.com/online/portal/img/pic_gongchang1.png",
+      "https://oss-cn-beijing.galbot.com/online/portal/img/pic_yaodian1.png",
+      "https://oss-cn-beijing.galbot.com/online/portal/img/home-galbot5.png"
+    ],
+    "description": "银河通用",
+    "generalInfo": {
+      "manufacturer": "Galbot",
+      "modelName": "Galbot",
+      "releaseDate": "Contact manufacturer",
+      "dimensions": {
+        "standing": "Not specified",
+        "weight": "Not specified"
+      }
+    },
+    "keyFeatures": [
+      "Documentation",
+      "Activities & News",
+      "Projects",
+      "Dataset",
+      "Robot Hub",
+      "About Community",
+      "RobotHub",
+      "Product",
+      "Galbot"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "Not specified",
+      "payloadCapacity": "Not specified",
+      "batteryCapacityRuntime": "Not specified",
+      "charger": "Contact manufacturer",
+      "sensorsIncluded": [
+        "Contact manufacturer for details"
+      ],
+      "interfaces": [
+        "Contact manufacturer for details"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Contact manufacturer",
+      "sdkLanguages": [],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [],
+      "apiDocumentationQuality": "Contact manufacturer"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Contact manufacturer",
+        "coverage": "Contact manufacturer for warranty details"
+      },
+      "postSalesSupport": "Contact manufacturer",
+      "trackRecord": "See manufacturer website for details"
+    },
+    "highResPhotos": [
+      "https://oss-cn-beijing.galbot.com/online/portal/img/pic_jiating1.png",
+      "https://oss-cn-beijing.galbot.com/online/portal/img/pic_chaoshi1.png",
+      "https://oss-cn-beijing.galbot.com/online/portal/img/pic_gongchang1.png",
+      "https://oss-cn-beijing.galbot.com/online/portal/img/pic_yaodian1.png",
+      "https://oss-cn-beijing.galbot.com/online/portal/img/home-galbot5.png"
+    ],
+    "websiteUrl": "https://www.galbot.com",
+    "sourceUrl": "https://www.galbot.com",
+    "extractedAt": "2025-10-20T00:14:22.240Z",
+    "dataSource": "official_manufacturer_website",
+    "dataCompleteness": "basic",
+    "allSpecifications": {},
+    "technicalDetails": {},
+    "pricingInfo": {}
+  },
+  {
+    "id": "openloong-星尘智能-s1",
+    "name": "Astribot S1",
+    "chineseName": "星尘智能 S1",
+    "brand": "Astribot (Stardust Intelligence)",
+    "chineseBrand": "星尘智能",
+    "category": "humanoid",
+    "price": {
+      "starting": null,
+      "currency": "CNY",
+      "note": "Contact manufacturer for pricing"
+    },
+    "images": [
+      "https://www.astribot.com/_nuxt/describe-s2-bg.uI62FkDw.png",
+      "https://www.astribot.com/_nuxt/describe-s3-img1.BhWEfWFv.jpg",
+      "https://www.astribot.com/_nuxt/describe-s3-img2.DaG__Qo6.jpg",
+      "https://www.astribot.com/_nuxt/describe-s3-img3.DK5reSax.jpg",
+      "https://www.astribot.com/_nuxt/describe-s3-img4.CW3NSDSu.jpg"
+    ],
+    "description": "Your AI Robotic Partner, Together Forward Our company has pioneered a software-hardware integrated system architecture for AI (Design for AI, DFAI), deeply coupling 'AI capabilities' with 'optimal operation', This innovation enables S1 to learn, think, and work more like humans",
+    "generalInfo": {
+      "manufacturer": "Astribot (Stardust Intelligence)",
+      "modelName": "Astribot S1",
+      "releaseDate": "Contact manufacturer",
+      "dimensions": {
+        "standing": "Not specified",
+        "weight": "Not specified"
+      }
+    },
+    "keyFeatures": [
+      "Astribot S1",
+      "Astribot S1",
+      "Astribot S1"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "Not specified",
+      "payloadCapacity": "Not specified",
+      "batteryCapacityRuntime": "Not specified",
+      "charger": "Contact manufacturer",
+      "sensorsIncluded": [
+        "Contact manufacturer for details"
+      ],
+      "interfaces": [
+        "Contact manufacturer for details"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Contact manufacturer",
+      "sdkLanguages": [],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [],
+      "apiDocumentationQuality": "Contact manufacturer"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Contact manufacturer",
+        "coverage": "Contact manufacturer for warranty details"
+      },
+      "postSalesSupport": "Contact manufacturer",
+      "trackRecord": "See manufacturer website for details"
+    },
+    "highResPhotos": [
+      "https://www.astribot.com/_nuxt/describe-s2-bg.uI62FkDw.png",
+      "https://www.astribot.com/_nuxt/describe-s3-img1.BhWEfWFv.jpg",
+      "https://www.astribot.com/_nuxt/describe-s3-img2.DaG__Qo6.jpg",
+      "https://www.astribot.com/_nuxt/describe-s3-img3.DK5reSax.jpg",
+      "https://www.astribot.com/_nuxt/describe-s3-img4.CW3NSDSu.jpg"
+    ],
+    "websiteUrl": "https://www.astribot.com",
+    "sourceUrl": "https://www.astribot.com/en/product/",
+    "extractedAt": "2025-10-20T00:14:46.778Z",
+    "dataSource": "official_manufacturer_website",
+    "dataCompleteness": "basic",
+    "allSpecifications": {},
+    "technicalDetails": {
+      "height": "170cm",
+      "weight": "80kg",
+      "dof": "7",
+      "payload": "per arm (horizontal reach)"
+    },
+    "pricingInfo": {}
+  },
+  {
+    "id": "openloong-tora-one",
+    "name": "TORA-ONE",
+    "chineseName": null,
+    "brand": "PaXini",
+    "chineseBrand": "帕西尼感知科技",
+    "category": "humanoid",
+    "price": {
+      "starting": null,
+      "currency": "CNY",
+      "note": "Contact manufacturer for pricing"
+    },
+    "images": [
+      "https://cdn-cn.paxini.com//store/pro/67e1047e9c11239e850bcc5d/976e83d3-cafc-4ec2-988d-e30833c72e0e.png",
+      "https://cdn-cn.paxini.com//store/pro/67e1047e9c11239e850bcc5d/8c4cb973-fc7c-43d4-ab08-82d0c260fc51.png",
+      "https://cdn-cn.paxini.com//store/pro/67e1047e9c11239e850bcc5d/f57dae3e-2e13-4baa-aa6e-59d74203bd0b.png",
+      "https://cdn-cn.paxini.com//store/pro/67e1047e9c11239e850bcc5d/423b9444-4964-4c27-9bf1-e9316cb26264.png",
+      "https://cdn-cn.paxini.com//store/pro/67e1047e9c11239e850bcc5d/976e83d3-cafc-4ec2-988d-e30833c72e0e.png"
+    ],
+    "description": "Copyright © 2024 PaXini Tech. All rights reserved Copyright © 2024 PaXini Tech. All rights reserved 粤ICP备2022109610号",
+    "generalInfo": {
+      "manufacturer": "PaXini",
+      "modelName": "TORA-ONE",
+      "releaseDate": "Contact manufacturer",
+      "dimensions": {
+        "standing": "Not specified",
+        "weight": "Not specified"
+      }
+    },
+    "keyFeatures": [
+      "ITPU多维触觉传感器",
+      "ITPU多维触觉传感器",
+      "帕西尼 · 深圳：0755-23574593",
+      "帕西尼 · 上海：021-54561536",
+      "帕西尼 · 天津：022-82411882",
+      "mkt@paxini.com",
+      "hr@paxini.com"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "Not specified",
+      "payloadCapacity": "Not specified",
+      "batteryCapacityRuntime": "Not specified",
+      "charger": "Contact manufacturer",
+      "sensorsIncluded": [
+        "Contact manufacturer for details"
+      ],
+      "interfaces": [
+        "Contact manufacturer for details"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Contact manufacturer",
+      "sdkLanguages": [],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [],
+      "apiDocumentationQuality": "Contact manufacturer"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Contact manufacturer",
+        "coverage": "Contact manufacturer for warranty details"
+      },
+      "postSalesSupport": "Contact manufacturer",
+      "trackRecord": "See manufacturer website for details"
+    },
+    "highResPhotos": [
+      "https://cdn-cn.paxini.com//store/pro/67e1047e9c11239e850bcc5d/976e83d3-cafc-4ec2-988d-e30833c72e0e.png",
+      "https://cdn-cn.paxini.com//store/pro/67e1047e9c11239e850bcc5d/8c4cb973-fc7c-43d4-ab08-82d0c260fc51.png",
+      "https://cdn-cn.paxini.com//store/pro/67e1047e9c11239e850bcc5d/f57dae3e-2e13-4baa-aa6e-59d74203bd0b.png",
+      "https://cdn-cn.paxini.com//store/pro/67e1047e9c11239e850bcc5d/423b9444-4964-4c27-9bf1-e9316cb26264.png",
+      "https://cdn-cn.paxini.com//store/pro/67e1047e9c11239e850bcc5d/976e83d3-cafc-4ec2-988d-e30833c72e0e.png"
+    ],
+    "websiteUrl": "https://paxini.com",
+    "sourceUrl": "https://mall.paxini.com/product/robot/66f27ad030cd11a8e9d1d567",
+    "extractedAt": "2025-10-20T00:15:09.441Z",
+    "dataSource": "official_manufacturer_website",
+    "dataCompleteness": "basic",
+    "allSpecifications": {},
+    "technicalDetails": {},
+    "pricingInfo": {
+      "found": "¥0"
+    }
+  },
+  {
+    "id": "openloong-领航者2号naviai",
+    "name": "Navigator 2 NAVIAI",
+    "chineseName": "领航者2号NAVIAI",
+    "brand": "Zhejiang Humanoid Robot Innovation Center",
+    "chineseBrand": "浙江人形机器人创新中心",
+    "category": "humanoid",
+    "price": {
+      "starting": null,
+      "currency": "CNY",
+      "note": "Contact manufacturer for pricing"
+    },
+    "images": [
+      "https://www.zj-humanoid.com/uploads/upload/images/20250630/a79291dad3b0e77ee3407258eda09f51.png",
+      "https://www.zj-humanoid.com/uploads/upload/images/20250630/a79291dad3b0e77ee3407258eda09f51.png",
+      "https://www.zj-humanoid.com/uploads/upload/images/20250630/fd45c3f98296f76d1d94a348dfba982a.png",
+      "https://www.zj-humanoid.com/uploads/upload/images/20250630/a79291dad3b0e77ee3407258eda09f51.png",
+      "https://www.zj-humanoid.com/uploads/upload/images/20250401/c1c997d59546c81fcc54c96b9ed0cf62.jpg"
+    ],
+    "description": "7自由度精淮作业臂下的全身人机映射拟人行走，大步直膝行走，手臂自然摆动，行走速度可切换，最快 1.5m/s 我们秉持“坚持热爱，追求卓越”的价值观，致力于实现“解放人类生产力，革新生产与生活方式”的使命。我们坚定不移地追求愿景，力争“成为类人机器人行业的领导者”。 Copyright ◎ 2025 浙江人形机器人创新中心 All Rights Reserved.",
+    "generalInfo": {
+      "manufacturer": "Zhejiang Humanoid Robot Innovation Center",
+      "modelName": "Navigator 2 NAVIAI",
+      "releaseDate": "Contact manufacturer",
+      "dimensions": {
+        "standing": "Not specified",
+        "weight": "Not specified"
+      }
+    },
+    "keyFeatures": [
+      "NAVIAI - i2",
+      "NAVIAI - i2"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "Not specified",
+      "payloadCapacity": "Not specified",
+      "batteryCapacityRuntime": "Not specified",
+      "charger": "Contact manufacturer",
+      "sensorsIncluded": [
+        "Contact manufacturer for details"
+      ],
+      "interfaces": [
+        "Contact manufacturer for details"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Contact manufacturer",
+      "sdkLanguages": [],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [],
+      "apiDocumentationQuality": "Contact manufacturer"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Contact manufacturer",
+        "coverage": "Contact manufacturer for warranty details"
+      },
+      "postSalesSupport": "Contact manufacturer",
+      "trackRecord": "See manufacturer website for details"
+    },
+    "highResPhotos": [
+      "https://www.zj-humanoid.com/uploads/upload/images/20250630/a79291dad3b0e77ee3407258eda09f51.png",
+      "https://www.zj-humanoid.com/uploads/upload/images/20250630/a79291dad3b0e77ee3407258eda09f51.png",
+      "https://www.zj-humanoid.com/uploads/upload/images/20250630/fd45c3f98296f76d1d94a348dfba982a.png",
+      "https://www.zj-humanoid.com/uploads/upload/images/20250630/a79291dad3b0e77ee3407258eda09f51.png",
+      "https://www.zj-humanoid.com/uploads/upload/images/20250401/c1c997d59546c81fcc54c96b9ed0cf62.jpg"
+    ],
+    "websiteUrl": "https://www.zj-humanoid.com",
+    "sourceUrl": "https://www.zj-humanoid.com",
+    "extractedAt": "2025-10-20T00:15:37.771Z",
+    "dataSource": "official_manufacturer_website",
+    "dataCompleteness": "basic",
+    "allSpecifications": {},
+    "technicalDetails": {},
+    "pricingInfo": {}
+  },
+  {
+    "id": "openloong-mini人形机器人hi",
+    "name": "Mini Hi",
+    "chineseName": "mini人形机器人Hi",
+    "brand": "High Torque Robotics",
+    "chineseBrand": "高擎机电",
+    "category": "humanoid",
+    "price": {
+      "starting": null,
+      "currency": "CNY",
+      "note": "Contact manufacturer for pricing"
+    },
+    "images": [
+      "https://cdn2.hightorque.cn/wp-content/uploads/2024/10/WechatIMG26.png?orientation=landscape&width=43261&height=2264",
+      "https://cdn2.hightorque.cn/wp-content/uploads/2025/07/HI%E6%9C%BA%E5%99%A8%E4%BA%BA.png?orientation=landscape&width=2297&height=1760",
+      "https://cdn2.hightorque.cn/wp-content/uploads/2025/07/20250715%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%85%B3%E8%8A%82%E8%AF%B4%E6%98%8Epng-1.png?orientation=landscape&width=680&height=440",
+      "https://cdn2.hightorque.cn/wp-content/themes/hightorque/assets/images/form/code-3.jpg",
+      "https://cdn2.hightorque.cn/wp-content/uploads/2024/07/%E9%AB%98%E6%93%8E%E6%9C%BA%E7%94%B5%E5%85%AC%E4%BC%97%E5%8F%B7%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg?orientation=landscape&width=430&height=430"
+    ],
+    "description": "高擎机电",
+    "generalInfo": {
+      "manufacturer": "High Torque Robotics",
+      "modelName": "Mini Hi",
+      "releaseDate": "Contact manufacturer",
+      "dimensions": {
+        "standing": "Not specified",
+        "weight": "Not specified"
+      }
+    },
+    "keyFeatures": [
+      "机器人\n\n\t双足机器人Pi\n\t模块化开源Pi+\n\t人形机器人Hi",
+      "核心零部件\n\n\t伺服关节模组\n\t– 行星系列关节模组\n\t– 超薄系列关节模组\n\t控制器\n\t电池",
+      "服务与支持\n\n\t文档中心\n\t下载中心\n\t条款与政策\n\t售后处理",
+      "关于高擎\n\n\t关于我们\n\t招贤纳士",
+      "手机：400-6080-891",
+      "邮箱：service@hightorque.cn",
+      "微信：GQJD2022",
+      "人形机器人 Mini Hi",
+      "人形机器人 Mini Pi+",
+      "双足机器人 Mini Pi"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "Not specified",
+      "payloadCapacity": "Not specified",
+      "batteryCapacityRuntime": "Not specified",
+      "charger": "Contact manufacturer",
+      "sensorsIncluded": [
+        "Contact manufacturer for details"
+      ],
+      "interfaces": [
+        "Contact manufacturer for details"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Contact manufacturer",
+      "sdkLanguages": [],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [],
+      "apiDocumentationQuality": "Contact manufacturer"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Contact manufacturer",
+        "coverage": "Contact manufacturer for warranty details"
+      },
+      "postSalesSupport": "Contact manufacturer",
+      "trackRecord": "See manufacturer website for details"
+    },
+    "highResPhotos": [
+      "https://cdn2.hightorque.cn/wp-content/uploads/2024/10/WechatIMG26.png?orientation=landscape&width=43261&height=2264",
+      "https://cdn2.hightorque.cn/wp-content/uploads/2025/07/HI%E6%9C%BA%E5%99%A8%E4%BA%BA.png?orientation=landscape&width=2297&height=1760",
+      "https://cdn2.hightorque.cn/wp-content/uploads/2025/07/20250715%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%85%B3%E8%8A%82%E8%AF%B4%E6%98%8Epng-1.png?orientation=landscape&width=680&height=440",
+      "https://cdn2.hightorque.cn/wp-content/themes/hightorque/assets/images/form/code-3.jpg",
+      "https://cdn2.hightorque.cn/wp-content/uploads/2024/07/%E9%AB%98%E6%93%8E%E6%9C%BA%E7%94%B5%E5%85%AC%E4%BC%97%E5%8F%B7%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg?orientation=landscape&width=430&height=430"
+    ],
+    "websiteUrl": "https://www.hightorque.cn",
+    "sourceUrl": "https://www.hightorque.cn/hi/",
+    "extractedAt": "2025-10-20T00:15:59.704Z",
+    "dataSource": "official_manufacturer_website",
+    "dataCompleteness": "basic",
+    "allSpecifications": {},
+    "technicalDetails": {
+      "height": "890m",
+      "weight": "20KG",
+      "dof": "29",
+      "battery": "） 20KG",
+      "payload": "20KG",
+      "speed": "0.5m/s"
+    },
+    "pricingInfo": {}
+  },
+  {
+    "id": "openloong-行者二号-x02-",
+    "name": "Walker X02 (Xingzhe No. 2)",
+    "chineseName": "行者二号（X02）",
+    "brand": "Shanghai Zhuoyide Robot (DroidUp)",
+    "chineseBrand": "上海卓益得机器人有限公司",
+    "category": "humanoid",
+    "price": {
+      "starting": null,
+      "currency": "CNY",
+      "note": "Contact manufacturer for pricing"
+    },
+    "images": [
+      "https://www.droidup.com/uploads/upload/images/20250903/255466b20fee570766a55a1455f67f45.png",
+      "https://www.droidup.com/uploads/upload/images/20250903/255466b20fee570766a55a1455f67f45.png",
+      "https://www.droidup.com/static/home/images/x-l1.jpg",
+      "https://www.droidup.com/static/home/images/x-l2.jpg",
+      "https://www.droidup.com/static/home/images/x-l3.jpg"
+    ],
+    "description": "睿娜是一款领先的人形机器人，采用先进的表情模拟和生成技术，具有类人情感，“她”是最接近真实生命体的人工智能载体。睿娜是一款以1:1比例真实还原人脸的尖端表情机器人，其皮肤和面部细节达到了高度写实的水平，具有高度写实的皮肤和丰富的表情模拟能力。同时她配备了先进的多模态感知系统和持续学习的算法，具备智能语音和眼神追踪交互功能，能够精准捕捉并再现人类情感的微妙变化。此外，配合灵活的双臂及自主移动导航底盘，可以实现更有亲和力的沟通交流，实现自主行走，提供更加自然和个性化的交流体验。 全球首款基于仿生肌腱驱动技术的模块化人形机器人，采用肌腱与分布式电机协同驱动，关节刚度动态可调，实现类人步态(步速3m/s、越障15cm)与多地形自适应能力(碎石/坡地/楼梯)能耗较竞品降低25%，动态续航达6小时。 睿娜是一款领先的人形机器人，采用先进的表情模拟和生成技术，具有类人情感，“她”是最接近真实生命体的人工智能载体。睿娜是一款以1:1比例真实还原人脸的尖端表情机器人，其皮肤和面部细节达到了高度写实的水平，具有高度写实的皮肤和丰富的表情模拟能力。同时她配备了先进的多模态感知系统和持续学习的算法，具备智能语音和眼神追踪交互功能，能够精准捕捉并再现人类情感的微妙变化。此外，配合灵活的双臂及自主移动导航底盘，可以实现更有亲和力的沟通交流，实现自主行走，提供更加自然和个性化的交流体验。",
+    "generalInfo": {
+      "manufacturer": "Shanghai Zhuoyide Robot (DroidUp)",
+      "modelName": "Walker X02 (Xingzhe No. 2)",
+      "releaseDate": "Contact manufacturer",
+      "dimensions": {
+        "standing": "Not specified",
+        "weight": "Not specified"
+      }
+    },
+    "keyFeatures": [
+      "产品系列\n                                                        \n                                                    \n                                                \n                                                        双足人形机器人\n                                                        仿真表情机器人",
+      "产品系列\n                                                        \n                                                    \n                                                \n                                                        双足人形机器人\n                                                        仿真表情机器人"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "Not specified",
+      "payloadCapacity": "Not specified",
+      "batteryCapacityRuntime": "Not specified",
+      "charger": "Contact manufacturer",
+      "sensorsIncluded": [
+        "Contact manufacturer for details"
+      ],
+      "interfaces": [
+        "Contact manufacturer for details"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Contact manufacturer",
+      "sdkLanguages": [],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [],
+      "apiDocumentationQuality": "Contact manufacturer"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Contact manufacturer",
+        "coverage": "Contact manufacturer for warranty details"
+      },
+      "postSalesSupport": "Contact manufacturer",
+      "trackRecord": "See manufacturer website for details"
+    },
+    "highResPhotos": [
+      "https://www.droidup.com/uploads/upload/images/20250903/255466b20fee570766a55a1455f67f45.png",
+      "https://www.droidup.com/uploads/upload/images/20250903/255466b20fee570766a55a1455f67f45.png",
+      "https://www.droidup.com/static/home/images/x-l1.jpg",
+      "https://www.droidup.com/static/home/images/x-l2.jpg",
+      "https://www.droidup.com/static/home/images/x-l3.jpg"
+    ],
+    "websiteUrl": "https://www.droidup.com",
+    "sourceUrl": "https://www.droidup.com",
+    "extractedAt": "2025-10-20T00:16:14.696Z",
+    "dataSource": "official_manufacturer_website",
+    "dataCompleteness": "basic",
+    "allSpecifications": {},
+    "technicalDetails": {},
+    "pricingInfo": {}
+  },
+  {
+    "id": "openloong-dora",
+    "name": "DORA",
+    "chineseName": null,
+    "brand": "Noetix Robotics",
+    "chineseBrand": "松延动力",
+    "category": "humanoid",
+    "price": {
+      "starting": null,
+      "currency": "CNY",
+      "note": "Contact manufacturer for pricing"
+    },
+    "images": [
+      "https://qiniu.mfdemo.cn/songyandongli/2024/09/03/66d6bbff8bf26.png",
+      "https://qiniu.mfdemo.cn/songyandongli/2024/09/03/66d6bc09eacc4.png",
+      "https://qiniu.mfdemo.cn/songyandongli/2024/09/03/66d6bbff8bf26.png",
+      "https://qiniu.mfdemo.cn/songyandongli/2025/02/17/67b2ac313fef4.png",
+      "https://qiniu.mfdemo.cn/songyandongli/2024/09/11/66e150bab3f42.png"
+    ],
+    "description": "全尺寸高性能机器人，适用于工业协作等场景，最大关节输出扭矩达到200N*m。 产品级人形机器人Dora，具备敏捷的移动能力、强大的感知交互性能。 首款专为人形机器人运动控制研发的遥控手柄，通讯距离长、信号稳定。",
+    "generalInfo": {
+      "manufacturer": "Noetix Robotics",
+      "modelName": "DORA",
+      "releaseDate": "Contact manufacturer",
+      "dimensions": {
+        "standing": "Not specified",
+        "weight": "Not specified"
+      }
+    },
+    "keyFeatures": [
+      "Documentation",
+      "Activities & News",
+      "Projects",
+      "Dataset",
+      "Robot Hub",
+      "About Community",
+      "RobotHub",
+      "Product"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "Not specified",
+      "payloadCapacity": "Not specified",
+      "batteryCapacityRuntime": "Not specified",
+      "charger": "Contact manufacturer",
+      "sensorsIncluded": [
+        "Contact manufacturer for details"
+      ],
+      "interfaces": [
+        "Contact manufacturer for details"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Contact manufacturer",
+      "sdkLanguages": [],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [],
+      "apiDocumentationQuality": "Contact manufacturer"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Contact manufacturer",
+        "coverage": "Contact manufacturer for warranty details"
+      },
+      "postSalesSupport": "Contact manufacturer",
+      "trackRecord": "See manufacturer website for details"
+    },
+    "highResPhotos": [
+      "https://qiniu.mfdemo.cn/songyandongli/2024/09/03/66d6bbff8bf26.png",
+      "https://qiniu.mfdemo.cn/songyandongli/2024/09/03/66d6bc09eacc4.png",
+      "https://qiniu.mfdemo.cn/songyandongli/2024/09/03/66d6bbff8bf26.png",
+      "https://qiniu.mfdemo.cn/songyandongli/2025/02/17/67b2ac313fef4.png",
+      "https://qiniu.mfdemo.cn/songyandongli/2024/09/11/66e150bab3f42.png"
+    ],
+    "websiteUrl": "https://noetixrobotics.com",
+    "sourceUrl": "https://noetixrobotics.com",
+    "extractedAt": "2025-10-20T00:17:01.934Z",
+    "dataSource": "official_manufacturer_website",
+    "dataCompleteness": "basic",
+    "allSpecifications": {},
+    "technicalDetails": {},
+    "pricingInfo": {}
+  },
+  {
+    "id": "openloong-小柒",
+    "name": "小柒",
+    "chineseName": null,
+    "brand": "EX Robots",
+    "chineseBrand": "EX机器人",
+    "category": "humanoid",
+    "price": {
+      "starting": null,
+      "currency": "CNY",
+      "note": "Contact manufacturer for pricing"
+    },
+    "images": [
+      "https://openloong.obs.cn-east-3.myhuaweicloud.com/yellow-pages%2Fpublic%2Fimg%2F1dc6ffa9-3b52-43cc-932b-5a51c9ed1660.jpeg",
+      "https://openloong.obs.cn-east-3.myhuaweicloud.com/yellow-pages%2Fpublic%2Fimg%2Fd6aaab35-12f7-42fe-99bf-fb7cb027d914.jpeg",
+      "https://www.openloong.org.cn/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FaiRobot.2540c6ed.png&w=128&q=75",
+      "https://www.openloong.org.cn/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FrobotBack.eeeb1697.png&w=256&q=75"
+    ],
+    "description": "EX机器人",
+    "generalInfo": {
+      "manufacturer": "EX Robots",
+      "modelName": "小柒",
+      "releaseDate": "Contact manufacturer",
+      "dimensions": {
+        "standing": "Not specified",
+        "weight": "Not specified"
+      }
+    },
+    "keyFeatures": [
+      "Documentation",
+      "Activities & News",
+      "Projects",
+      "Dataset",
+      "Robot Hub",
+      "About Community",
+      "RobotHub",
+      "Product"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "Not specified",
+      "payloadCapacity": "Not specified",
+      "batteryCapacityRuntime": "Not specified",
+      "charger": "Contact manufacturer",
+      "sensorsIncluded": [
+        "Contact manufacturer for details"
+      ],
+      "interfaces": [
+        "Contact manufacturer for details"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Contact manufacturer",
+      "sdkLanguages": [],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [],
+      "apiDocumentationQuality": "Contact manufacturer"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Contact manufacturer",
+        "coverage": "Contact manufacturer for warranty details"
+      },
+      "postSalesSupport": "Contact manufacturer",
+      "trackRecord": "See manufacturer website for details"
+    },
+    "highResPhotos": [
+      "https://openloong.obs.cn-east-3.myhuaweicloud.com/yellow-pages%2Fpublic%2Fimg%2F1dc6ffa9-3b52-43cc-932b-5a51c9ed1660.jpeg",
+      "https://openloong.obs.cn-east-3.myhuaweicloud.com/yellow-pages%2Fpublic%2Fimg%2Fd6aaab35-12f7-42fe-99bf-fb7cb027d914.jpeg",
+      "https://www.openloong.org.cn/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FaiRobot.2540c6ed.png&w=128&q=75",
+      "https://www.openloong.org.cn/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FrobotBack.eeeb1697.png&w=256&q=75"
+    ],
+    "extractedAt": "2025-10-20T00:17:06.329Z",
+    "dataSource": "official_manufacturer_website",
+    "dataCompleteness": "basic",
+    "allSpecifications": {},
+    "technicalDetails": {},
+    "pricingInfo": {}
+  },
+  {
+    "id": "openloong-小柒",
+    "name": "Little Seven",
+    "chineseName": "小柒",
+    "brand": "EX Robots",
+    "chineseBrand": "EX机器人",
+    "category": "humanoid",
+    "price": {
+      "starting": null,
+      "currency": "CNY",
+      "note": "Contact manufacturer for pricing"
+    },
+    "images": [
+      "https://www.exrobots.net/wp-content/uploads/2019/08/200.png",
+      "https://www.exrobots.net/wp-content/uploads/2019/08/WechatIMG116.png",
+      "https://www.exrobots.net/wp-content/uploads/2021/06/EXROBOTS01.jpg",
+      "https://www.exrobots.net/wp-content/uploads/2021/06/EXROBOTS02-1.jpg",
+      "https://www.exrobots.net/wp-content/uploads/2021/06/EXROBOTS03-2.jpg"
+    ],
+    "description": "EX机器人",
+    "generalInfo": {
+      "manufacturer": "EX Robots",
+      "modelName": "Little Seven",
+      "releaseDate": "Contact manufacturer",
+      "dimensions": {
+        "standing": "Not specified",
+        "weight": "Not specified"
+      }
+    },
+    "keyFeatures": [
+      "Application Scenarios",
+      "Application Scenarios"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "Not specified",
+      "payloadCapacity": "Not specified",
+      "batteryCapacityRuntime": "Not specified",
+      "charger": "Contact manufacturer",
+      "sensorsIncluded": [
+        "Contact manufacturer for details"
+      ],
+      "interfaces": [
+        "Contact manufacturer for details"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Contact manufacturer",
+      "sdkLanguages": [],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [],
+      "apiDocumentationQuality": "Contact manufacturer"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Contact manufacturer",
+        "coverage": "Contact manufacturer for warranty details"
+      },
+      "postSalesSupport": "Contact manufacturer",
+      "trackRecord": "See manufacturer website for details"
+    },
+    "highResPhotos": [
+      "https://www.exrobots.net/wp-content/uploads/2019/08/200.png",
+      "https://www.exrobots.net/wp-content/uploads/2019/08/WechatIMG116.png",
+      "https://www.exrobots.net/wp-content/uploads/2021/06/EXROBOTS01.jpg",
+      "https://www.exrobots.net/wp-content/uploads/2021/06/EXROBOTS02-1.jpg",
+      "https://www.exrobots.net/wp-content/uploads/2021/06/EXROBOTS03-2.jpg"
+    ],
+    "websiteUrl": "https://www.exrobots.net",
+    "sourceUrl": "https://www.exrobots.net",
+    "extractedAt": "2025-10-20T00:25:57.023Z",
+    "dataSource": "official_manufacturer_website",
+    "dataCompleteness": "basic",
+    "allSpecifications": {},
+    "technicalDetails": {},
+    "pricingInfo": {}
+  },
+  {
+    "id": "openloong-wanda",
+    "name": "Wanda",
+    "brand": "优理奇智能",
+    "category": "humanoid",
+    "price": {
+      "starting": null,
+      "currency": "CNY",
+      "note": "Contact manufacturer for pricing"
+    },
+    "images": [
+      "https://openloong.obs.cn-east-3.myhuaweicloud.com/yellow-pages%2Fpublic%2Fimg%2F8982b361-1759-4352-8088-df601487c45b.png",
+      "https://openloong.obs.cn-east-3.myhuaweicloud.com/yellow-pages%2Fpublic%2Fimg%2F6d60b838-cc35-4877-b015-7e488dc2247b.webp",
+      "https://openloong.obs.cn-east-3.myhuaweicloud.com/yellow-pages%2Fpublic%2Fimg%2F7d1d6945-f5d6-4cb3-9592-8aaef578bc68.jpg",
+      "https://openloong.obs.cn-east-3.myhuaweicloud.com/yellow-pages%2Fpublic%2Fimg%2F7516cd7a-b438-4316-870e-a850da73d443.png",
+      "https://www.openloong.org.cn/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FaiRobot.2540c6ed.png&w=128&q=75"
+    ],
+    "description": "优理奇智能",
+    "generalInfo": {
+      "manufacturer": "优理奇智能",
+      "modelName": "Wanda",
+      "releaseDate": "Contact manufacturer",
+      "dimensions": {
+        "standing": "Not specified",
+        "weight": "Not specified"
+      }
+    },
+    "keyFeatures": [
+      "Documentation",
+      "Activities & News",
+      "Projects",
+      "Dataset",
+      "Robot Hub",
+      "About Community",
+      "RobotHub",
+      "Product"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "Not specified",
+      "payloadCapacity": "Not specified",
+      "batteryCapacityRuntime": "Not specified",
+      "charger": "Contact manufacturer",
+      "sensorsIncluded": [
+        "Contact manufacturer for details"
+      ],
+      "interfaces": [
+        "Contact manufacturer for details"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Contact manufacturer",
+      "sdkLanguages": [],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [],
+      "apiDocumentationQuality": "Contact manufacturer"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Contact manufacturer",
+        "coverage": "Contact manufacturer for warranty details"
+      },
+      "postSalesSupport": "Contact manufacturer",
+      "trackRecord": "See OpenLoong RoboHub for information"
+    },
+    "highResPhotos": [
+      "https://openloong.obs.cn-east-3.myhuaweicloud.com/yellow-pages%2Fpublic%2Fimg%2F8982b361-1759-4352-8088-df601487c45b.png",
+      "https://openloong.obs.cn-east-3.myhuaweicloud.com/yellow-pages%2Fpublic%2Fimg%2F6d60b838-cc35-4877-b015-7e488dc2247b.webp",
+      "https://openloong.obs.cn-east-3.myhuaweicloud.com/yellow-pages%2Fpublic%2Fimg%2F7d1d6945-f5d6-4cb3-9592-8aaef578bc68.jpg",
+      "https://openloong.obs.cn-east-3.myhuaweicloud.com/yellow-pages%2Fpublic%2Fimg%2F7516cd7a-b438-4316-870e-a850da73d443.png",
+      "https://www.openloong.org.cn/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FaiRobot.2540c6ed.png&w=128&q=75"
+    ],
+    "sourceUrl": "https://www.openloong.org.cn/en/robohub/detail/149",
+    "extractedAt": "2025-10-19T23:51:20.658Z",
+    "dataSource": "openloong_robohub_only",
+    "dataCompleteness": "basic",
+    "noOfficialWebsite": true
+  },
+  {
+    "id": "openloong-夏澜",
+    "name": "夏澜",
+    "brand": "数字华夏",
+    "category": "humanoid",
+    "price": {
+      "starting": null,
+      "currency": "CNY",
+      "note": "Contact manufacturer for pricing"
+    },
+    "images": [
+      "https://openloong.obs.cn-east-3.myhuaweicloud.com/yellow-pages%2Fpublic%2Fimg%2F6826f52c-93ed-43cd-ab6d-5e0ae4c1c349.png",
+      "https://openloong.obs.cn-east-3.myhuaweicloud.com/yellow-pages%2Fpublic%2Fimg%2F23f74862-aa36-4135-b868-b3b2a926b8d7.png",
+      "https://openloong.obs.cn-east-3.myhuaweicloud.com/yellow-pages%2Fpublic%2Fimg%2F4e25d304-a876-4ea0-b5e4-855c477f1b1f.png",
+      "https://www.openloong.org.cn/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FaiRobot.2540c6ed.png&w=128&q=75",
+      "https://www.openloong.org.cn/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FrobotBack.eeeb1697.png&w=256&q=75"
+    ],
+    "description": "数字华夏",
+    "generalInfo": {
+      "manufacturer": "数字华夏",
+      "modelName": "夏澜",
+      "releaseDate": "Contact manufacturer",
+      "dimensions": {
+        "standing": "Not specified",
+        "weight": "Not specified"
+      }
+    },
+    "keyFeatures": [
+      "Documentation",
+      "Activities & News",
+      "Projects",
+      "Dataset",
+      "Robot Hub",
+      "About Community",
+      "RobotHub",
+      "Product"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "Not specified",
+      "payloadCapacity": "Not specified",
+      "batteryCapacityRuntime": "Not specified",
+      "charger": "Contact manufacturer",
+      "sensorsIncluded": [
+        "Contact manufacturer for details"
+      ],
+      "interfaces": [
+        "Contact manufacturer for details"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Contact manufacturer",
+      "sdkLanguages": [],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [],
+      "apiDocumentationQuality": "Contact manufacturer"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Contact manufacturer",
+        "coverage": "Contact manufacturer for warranty details"
+      },
+      "postSalesSupport": "Contact manufacturer",
+      "trackRecord": "See OpenLoong RoboHub for information"
+    },
+    "highResPhotos": [
+      "https://openloong.obs.cn-east-3.myhuaweicloud.com/yellow-pages%2Fpublic%2Fimg%2F6826f52c-93ed-43cd-ab6d-5e0ae4c1c349.png",
+      "https://openloong.obs.cn-east-3.myhuaweicloud.com/yellow-pages%2Fpublic%2Fimg%2F23f74862-aa36-4135-b868-b3b2a926b8d7.png",
+      "https://openloong.obs.cn-east-3.myhuaweicloud.com/yellow-pages%2Fpublic%2Fimg%2F4e25d304-a876-4ea0-b5e4-855c477f1b1f.png",
+      "https://www.openloong.org.cn/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FaiRobot.2540c6ed.png&w=128&q=75",
+      "https://www.openloong.org.cn/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FrobotBack.eeeb1697.png&w=256&q=75"
+    ],
+    "sourceUrl": "https://www.openloong.org.cn/en/robohub/detail/159",
+    "extractedAt": "2025-10-19T23:51:31.563Z",
+    "dataSource": "openloong_robohub_only",
+    "dataCompleteness": "basic",
+    "noOfficialWebsite": true
+  },
+  {
+    "id": "openloong-行者二号-x02-机器人",
+    "name": "行者二号（X02）机器人",
+    "brand": "上海卓益得机器人有限公司",
+    "category": "humanoid",
+    "price": {
+      "starting": null,
+      "currency": "CNY",
+      "note": "Contact manufacturer for pricing"
+    },
+    "images": [
+      "https://openloong.obs.cn-east-3.myhuaweicloud.com/yellow-pages%2Fpublic%2Fimg%2F07921ade-ff3c-4a87-aa87-8dfd5bc47f5c.jpg",
+      "https://openloong.obs.cn-east-3.myhuaweicloud.com/yellow-pages%2Fpublic%2Fimg%2F4fdaf697-3450-48b7-935e-05e7bb0d9f18.png",
+      "https://openloong.obs.cn-east-3.myhuaweicloud.com/yellow-pages%2Fpublic%2Fimg%2F7214cb7b-0538-481b-9908-28d7f4d90cd3.png",
+      "https://openloong.obs.cn-east-3.myhuaweicloud.com/yellow-pages%2Fpublic%2Fimg%2F2cdd9282-9941-4a02-82bd-88aa419c69c2.png",
+      "https://openloong.obs.cn-east-3.myhuaweicloud.com/yellow-pages%2Fpublic%2Fimg%2Ff449604f-5d3a-47c3-ae38-e675a3047d38.png"
+    ],
+    "description": "上海卓益得机器人有限公司",
+    "generalInfo": {
+      "manufacturer": "上海卓益得机器人有限公司",
+      "modelName": "行者二号（X02）机器人",
+      "releaseDate": "Contact manufacturer",
+      "dimensions": {
+        "standing": "Not specified",
+        "weight": "Not specified"
+      }
+    },
+    "keyFeatures": [
+      "Documentation",
+      "Activities & News",
+      "Projects",
+      "Dataset",
+      "Robot Hub",
+      "About Community",
+      "RobotHub",
+      "Product",
+      "行者二号（X02）机器人"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "Not specified",
+      "payloadCapacity": "Not specified",
+      "batteryCapacityRuntime": "Not specified",
+      "charger": "Contact manufacturer",
+      "sensorsIncluded": [
+        "Contact manufacturer for details"
+      ],
+      "interfaces": [
+        "Contact manufacturer for details"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Contact manufacturer",
+      "sdkLanguages": [],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [],
+      "apiDocumentationQuality": "Contact manufacturer"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Contact manufacturer",
+        "coverage": "Contact manufacturer for warranty details"
+      },
+      "postSalesSupport": "Contact manufacturer",
+      "trackRecord": "See OpenLoong RoboHub for information"
+    },
+    "highResPhotos": [
+      "https://openloong.obs.cn-east-3.myhuaweicloud.com/yellow-pages%2Fpublic%2Fimg%2F07921ade-ff3c-4a87-aa87-8dfd5bc47f5c.jpg",
+      "https://openloong.obs.cn-east-3.myhuaweicloud.com/yellow-pages%2Fpublic%2Fimg%2F4fdaf697-3450-48b7-935e-05e7bb0d9f18.png",
+      "https://openloong.obs.cn-east-3.myhuaweicloud.com/yellow-pages%2Fpublic%2Fimg%2F7214cb7b-0538-481b-9908-28d7f4d90cd3.png",
+      "https://openloong.obs.cn-east-3.myhuaweicloud.com/yellow-pages%2Fpublic%2Fimg%2F2cdd9282-9941-4a02-82bd-88aa419c69c2.png",
+      "https://openloong.obs.cn-east-3.myhuaweicloud.com/yellow-pages%2Fpublic%2Fimg%2Ff449604f-5d3a-47c3-ae38-e675a3047d38.png"
+    ],
+    "sourceUrl": "https://www.openloong.org.cn/en/robohub/detail/151",
+    "extractedAt": "2025-10-19T23:52:25.674Z",
+    "dataSource": "openloong_robohub_only",
+    "dataCompleteness": "basic",
+    "noOfficialWebsite": true
+  },
+  {
+    "id": "openloong-行者泰山",
+    "name": "行者泰山",
+    "brand": "优宝特智能机器人",
+    "category": "humanoid",
+    "price": {
+      "starting": null,
+      "currency": "CNY",
+      "note": "Contact manufacturer for pricing"
+    },
+    "images": [
+      "https://openloong.obs.cn-east-3.myhuaweicloud.com/yellow-pages%2Fpublic%2Fimg%2Fe7cc7e01-f62f-4d3a-8a37-09b4c8e9aa17.jpg",
+      "https://openloong.obs.cn-east-3.myhuaweicloud.com/yellow-pages%2Fpublic%2Fimg%2F19c4b7f9-8ae6-4fa6-a28a-1e82dbe83e4f.jpg",
+      "https://www.openloong.org.cn/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FaiRobot.2540c6ed.png&w=128&q=75",
+      "https://www.openloong.org.cn/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FrobotBack.eeeb1697.png&w=256&q=75",
+      "https://www.openloong.org.cn/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fempty.874ae600.png&w=640&q=75"
+    ],
+    "description": "优宝特智能机器人",
+    "generalInfo": {
+      "manufacturer": "优宝特智能机器人",
+      "modelName": "行者泰山",
+      "releaseDate": "Contact manufacturer",
+      "dimensions": {
+        "standing": "Not specified",
+        "weight": "Not specified"
+      }
+    },
+    "keyFeatures": [
+      "Documentation",
+      "Activities & News",
+      "Projects",
+      "Dataset",
+      "Robot Hub",
+      "About Community",
+      "RobotHub",
+      "Product"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "Not specified",
+      "payloadCapacity": "Not specified",
+      "batteryCapacityRuntime": "Not specified",
+      "charger": "Contact manufacturer",
+      "sensorsIncluded": [
+        "Contact manufacturer for details"
+      ],
+      "interfaces": [
+        "Contact manufacturer for details"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Contact manufacturer",
+      "sdkLanguages": [],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [],
+      "apiDocumentationQuality": "Contact manufacturer"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Contact manufacturer",
+        "coverage": "Contact manufacturer for warranty details"
+      },
+      "postSalesSupport": "Contact manufacturer",
+      "trackRecord": "See OpenLoong RoboHub for information"
+    },
+    "highResPhotos": [
+      "https://openloong.obs.cn-east-3.myhuaweicloud.com/yellow-pages%2Fpublic%2Fimg%2Fe7cc7e01-f62f-4d3a-8a37-09b4c8e9aa17.jpg",
+      "https://openloong.obs.cn-east-3.myhuaweicloud.com/yellow-pages%2Fpublic%2Fimg%2F19c4b7f9-8ae6-4fa6-a28a-1e82dbe83e4f.jpg",
+      "https://www.openloong.org.cn/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FaiRobot.2540c6ed.png&w=128&q=75",
+      "https://www.openloong.org.cn/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FrobotBack.eeeb1697.png&w=256&q=75",
+      "https://www.openloong.org.cn/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fempty.874ae600.png&w=640&q=75"
+    ],
+    "sourceUrl": "https://www.openloong.org.cn/en/robohub/detail/56",
+    "extractedAt": "2025-10-19T23:52:58.119Z",
+    "dataSource": "openloong_robohub_only",
+    "dataCompleteness": "basic",
+    "noOfficialWebsite": true
+  }
+]

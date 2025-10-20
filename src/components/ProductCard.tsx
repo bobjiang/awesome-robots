@@ -10,8 +10,8 @@ interface ProductCardProps {
 }
 
 export default function ProductCard({ robot }: ProductCardProps) {
-  const formatPrice = (price: number | 'request') => {
-    if (price === 'request') return 'Request Quote';
+  const formatPrice = (price: number | 'request' | null | undefined) => {
+    if (price === 'request' || price === null || price === undefined) return 'Request Quote';
     return `$${price.toLocaleString()}`;
   };
 

@@ -103,6 +103,105 @@ const nextConfig = {
         port: '',
         pathname: '/**',
       },
+      // OpenLoong CDN for Chinese robots
+      {
+        protocol: 'https',
+        hostname: 'openloong.obs.cn-east-3.myhuaweicloud.com',
+        port: '',
+        pathname: '/**',
+      },
+      // New Chinese manufacturers - Option C Integration
+      {
+        protocol: 'https',
+        hostname: 'galaxea-dynamics.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.lejurobot.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.astribot.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'paxini.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'mall.paxini.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.gotokepler.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.droidup.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'noetixrobotics.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'en.noetixrobotics.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'http',
+        hostname: 'www.engineai.com.cn',
+        port: '',
+        pathname: '/**',
+      },
+      // Actual CDN/subdomain hostnames used by new robots
+      {
+        protocol: 'https',
+        hostname: 'qiniu.mfdemo.cn',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'cdn-cn.paxini.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'file.engineai.com.cn',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'img.gotokepler.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'kuavo.lejurobot.com',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
   experimental: {
