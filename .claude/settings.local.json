@@ -67,7 +67,12 @@
       "Bash(npm run validate-data:*)",
       "Bash(npm run organize-brands:*)",
       "Bash(npm run lint)",
-      "Bash(npm run pre-build:*)"
+      "Bash(npm run pre-build:*)",
+      "Bash(cat .velite/posts.json)",
+      "Bash(cat package.json)",
+      "Bash(cat .devto/china-humanoid-robots-revolution-2025.json)",
+      "Bash(tree -L 3 -I 'node_modules|.next|.git|.velite' -a --dirsfirst)",
+      "Bash(cat tsconfig.json)"
     ],
     "deny": [],
     "defaultMode": "acceptEdits"
