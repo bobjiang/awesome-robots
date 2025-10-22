@@ -286,7 +286,7 @@ export function generatePersonSchema(authorData: {
     twitter?: string;
     github?: string;
   };
-}, _baseUrl: string): PersonSchema {
+}): PersonSchema {
   return {
     "@context": "https://schema.org",
     "@type": "Person",

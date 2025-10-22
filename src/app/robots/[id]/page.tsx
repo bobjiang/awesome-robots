@@ -15,6 +15,8 @@ import ContentRelationships from '@/components/ContentRelationships';
 import { Robot } from '@/types/robot';
 import { trackRobotQuote } from '@/lib/gtag';
 import { generateProductSchema, generateBreadcrumbSchema } from '@/lib/structured-data';
+import { formatPrice } from '@/utils/price-utils';
+import { getFirstImage } from '@/utils/image-utils';
 import robots from '@/data/robots.json';
 
 export default function RobotDetailPage() {
@@ -61,34 +63,6 @@ export default function RobotDetailPage() {
     .filter((r: Robot) => r.id !== robot.id && (r.category === robot.category || r.brand === robot.brand))
     .slice(0, 3);
 
-  const formatPrice = (price: number | 'request' | null | undefined) => {
-    if (price === 'request' || price === null || price === undefined) return 'Request Quote';
-    return `$${price.toLocaleString()}`;
-  };
-
-  const getRobotImage = (robotId: string, category: string) => {
-    // Use robot.images if available, otherwise fallback to mapping
-    if (robot.images && robot.images.length > 0) {
-      return robot.images[0];
-    }
-    
-    const imageMap: { [key: string]: string } = {
-      'unitree-g1': '/images/robots/unitree-g1.png',
-      'unitree-h1': '/images/robots/h1-1.jpg',
-      'unitree-go2': '/images/robots/go2-1.jpg',
-      'unitree-go2-w': '/images/robots/quadruped/go2-w-1.png',
-      'unitree-b2': '/images/robots/unitree-b2.png',
-      'unitree-a2': '/images/robots/unitree-b2.png',
-    };
-    
-    return imageMap[robotId] || (
-      category === 'humanoid' ? '/images/categories/humanoid.png' :
-      category === 'quadruped' ? '/images/categories/quadruped.png' :
-      category === 'accessory' ? '/images/categories/accessories.png' :
-      '/images/categories/other.svg'
-    );
-  };
-
 
   return (
     <Layout>
@@ -133,7 +107,7 @@ export default function RobotDetailPage() {
           <div className="aspect-square bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl flex items-center justify-center p-8">
             <div className="relative w-full h-full">
               <Image
-                src={getRobotImage(robot.id, robot.category)}
+                src={getFirstImage(robot.images, robot.category)}
                 alt={robot.name}
                 fill
                 className="object-contain"
