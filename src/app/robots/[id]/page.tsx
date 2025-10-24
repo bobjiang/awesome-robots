@@ -1,9 +1,9 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import Link from 'next/link';
 import Image from 'next/image';
 import Script from 'next/script';
 import Layout from '@/components/Layout';
+import Breadcrumb from '@/components/Breadcrumb';
 import ProductCard from '@/components/ProductCard';
 import SpecificationTable from '@/components/SpecificationTable';
 import RobotDetailTemplate from '@/components/RobotDetailTemplate';
@@ -11,10 +11,11 @@ import RobotQuoteButton from '@/components/RobotQuoteButton';
 import AISpecificationSummary from '@/components/AISpecificationSummary';
 import ContentRelationships from '@/components/ContentRelationships';
 import { Robot } from '@/types/robot';
-import { generateProductSchema, generateBreadcrumbSchema } from '@/lib/structured-data';
+import { generateProductSchema, generateBreadcrumbSchema, generateRobotFAQSchema } from '@/lib/structured-data';
 import { formatPrice } from '@/utils/price-utils';
 import { getFirstImage } from '@/utils/image-utils';
 import robots from '@/data/robots.json';
+import Link from 'next/link';
 
 interface RobotDetailPageProps {
   params: Promise<{ id: string }>;
@@ -122,12 +123,14 @@ export default async function RobotDetailPage({ params }: RobotDetailPageProps) 
   // Generate structured data for SEO
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.awesomerobots.xyz';
   const productSchema = generateProductSchema(robot, baseUrl);
-  const breadcrumbSchema = generateBreadcrumbSchema([
+  const breadcrumbItems = [
     { name: 'Home', url: '/' },
     { name: 'Browse All', url: '/browse' },
     { name: robot.category.charAt(0).toUpperCase() + robot.category.slice(1), url: `/categories/${robot.category}` },
     { name: `${robot.brand} ${robot.name}`, url: `/robots/${robot.id}` }
-  ], baseUrl);
+  ];
+  const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbItems, baseUrl);
+  const faqSchema = generateRobotFAQSchema();
 
   // Get related robots
   const relatedRobots = (robots as Robot[])
@@ -143,30 +146,13 @@ export default async function RobotDetailPage({ params }: RobotDetailPageProps) 
       <Script id="breadcrumb-schema" type="application/ld+json">
         {JSON.stringify(breadcrumbSchema)}
       </Script>
+      <Script id="faq-schema" type="application/ld+json">
+        {JSON.stringify(faqSchema)}
+      </Script>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        {/* Breadcrumb Navigation with semantic markup */}
-        <nav className="mb-8 text-sm text-gray-500" aria-label="Breadcrumb">
-          <ol className="inline-flex items-center space-x-1">
-            <li className="inline-flex items-center">
-              <Link href="/" className="hover:text-blue-600">Home</Link>
-            </li>
-            <li aria-hidden="true">{' > '}</li>
-            <li className="inline-flex items-center">
-              <Link href="/browse" className="hover:text-blue-600">Browse All</Link>
-            </li>
-            <li aria-hidden="true">{' > '}</li>
-            <li className="inline-flex items-center">
-              <Link href={`/categories/${robot.category}`} className="hover:text-blue-600 capitalize">
-                {robot.category}
-              </Link>
-            </li>
-            <li aria-hidden="true">{' > '}</li>
-            <li>
-              <span className="text-gray-900" aria-current="page">{robot.name}</span>
-            </li>
-          </ol>
-        </nav>
+        {/* Breadcrumb Navigation with HTML microdata */}
+        <Breadcrumb items={breadcrumbItems} />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
           {/* Product Image/Visual */}

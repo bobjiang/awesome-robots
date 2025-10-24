@@ -2,9 +2,12 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
+import Script from 'next/script';
 import Layout from '@/components/Layout';
+import Breadcrumb from '@/components/Breadcrumb';
 import BrandBrowser from '@/components/BrandBrowser';
 import { Robot } from '@/types/robot';
+import { generateBreadcrumbSchema } from '@/lib/structured-data';
 import robots from '@/data/robots.json';
 import brands from '@/data/brands.json';
 
@@ -107,9 +110,26 @@ export default async function BrandPage({ params }: BrandPageProps) {
     return acc;
   }, {} as Record<string, Robot[]>);
 
+  // Generate structured data
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.awesomerobots.xyz';
+  const breadcrumbItems = [
+    { name: 'Home', url: '/' },
+    { name: 'Brands', url: '/brands' },
+    { name: brand.name, url: `/brands/${brandId}` }
+  ];
+  const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbItems, baseUrl);
+
   return (
     <Layout>
+      {/* Structured Data for SEO */}
+      <Script id="breadcrumb-schema" type="application/ld+json">
+        {JSON.stringify(breadcrumbSchema)}
+      </Script>
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        {/* Breadcrumb Navigation with HTML microdata */}
+        <Breadcrumb items={breadcrumbItems} />
+
         {/* Brand Header */}
         <div className="text-center mb-12">
           {brand.logo && (

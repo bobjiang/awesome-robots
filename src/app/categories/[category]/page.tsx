@@ -1,9 +1,12 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
+import Script from 'next/script';
 import Layout from '@/components/Layout';
+import Breadcrumb from '@/components/Breadcrumb';
 import CategoryBrowser from '@/components/CategoryBrowser';
 import { Robot } from '@/types/robot';
+import { generateBreadcrumbSchema, generateCategoryFAQSchema } from '@/lib/structured-data';
 import robots from '@/data/robots.json';
 import categories from '@/data/categories.json';
 
@@ -90,9 +93,30 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   const categoryRobots = (robots as Robot[]).filter((r: Robot) => r.category === categoryId);
   const availableBrands = Array.from(new Set(categoryRobots.map((r: Robot) => r.brand)));
 
+  // Generate structured data
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.awesomerobots.xyz';
+  const breadcrumbItems = [
+    { name: 'Home', url: '/' },
+    { name: 'Categories', url: '/categories' },
+    { name: category.name, url: `/categories/${categoryId}` }
+  ];
+  const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbItems, baseUrl);
+  const faqSchema = generateCategoryFAQSchema(categoryId);
+
   return (
     <Layout>
+      {/* Structured Data for SEO */}
+      <Script id="breadcrumb-schema" type="application/ld+json">
+        {JSON.stringify(breadcrumbSchema)}
+      </Script>
+      <Script id="faq-schema" type="application/ld+json">
+        {JSON.stringify(faqSchema)}
+      </Script>
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        {/* Breadcrumb Navigation with HTML microdata */}
+        <Breadcrumb items={breadcrumbItems} />
+
         {/* Category Header */}
         <div className="text-center mb-12">
           <div className="w-32 h-32 mx-auto mb-6 relative">

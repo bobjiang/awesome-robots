@@ -1,11 +1,20 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import Script from 'next/script';
 import Layout from '@/components/Layout';
+import { generateRobotFAQSchema } from '@/lib/structured-data';
 import categories from '@/data/categories.json';
 
 export default function Home() {
+  // Generate FAQ structured data for homepage
+  const faqSchema = generateRobotFAQSchema();
+
   return (
     <Layout>
+      {/* Structured Data for SEO */}
+      <Script id="faq-schema" type="application/ld+json">
+        {JSON.stringify(faqSchema)}
+      </Script>
       {/* Featured Robots Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

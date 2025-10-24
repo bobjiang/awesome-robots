@@ -72,7 +72,10 @@
       "Bash(cat package.json)",
       "Bash(cat .devto/china-humanoid-robots-revolution-2025.json)",
       "Bash(tree -L 3 -I 'node_modules|.next|.git|.velite' -a --dirsfirst)",
-      "Bash(cat tsconfig.json)"
+      "Bash(cat tsconfig.json)",
+      "Bash(tee:*)",
+      "Bash(cat:*)",
+      "Bash(git restore:*)"
     ],
     "deny": [],
     "defaultMode": "acceptEdits"
