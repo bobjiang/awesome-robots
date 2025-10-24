@@ -176,11 +176,11 @@ export default function RobotDetailTemplate({ robot }: RobotDetailTemplateProps)
               </div>
               <div>
                 <span className="text-sm font-medium text-gray-600 block mb-1">Sensors Included</span>
-                <span className="text-gray-900">{robot.hardwareBuildQuality.sensorsIncluded.join(', ')}</span>
+                <span className="text-gray-900">{robot.hardwareBuildQuality.sensorsIncluded?.join(', ') || 'N/A'}</span>
               </div>
               <div>
                 <span className="text-sm font-medium text-gray-600 block mb-1">Interfaces</span>
-                <span className="text-gray-900">{robot.hardwareBuildQuality.interfaces.join(', ')}</span>
+                <span className="text-gray-900">{robot.hardwareBuildQuality.interfaces?.join(', ') || 'N/A'}</span>
               </div>
             </div>
           </div>
@@ -198,7 +198,7 @@ export default function RobotDetailTemplate({ robot }: RobotDetailTemplateProps)
               </div>
               <div>
                 <span className="text-sm font-medium text-gray-600 block mb-1">SDK Languages</span>
-                <span className="text-gray-900">{robot.softwareEcosystem.sdkLanguages.join(', ')}</span>
+                <span className="text-gray-900">{robot.softwareEcosystem.sdkLanguages?.join(', ') || 'N/A'}</span>
               </div>
               <div>
                 <span className="text-sm font-medium text-gray-600 block mb-1">API Documentation Quality</span>
@@ -222,7 +222,7 @@ export default function RobotDetailTemplate({ robot }: RobotDetailTemplateProps)
               </div>
               <div>
                 <span className="text-sm font-medium text-gray-600 block mb-1">AI Frameworks Supported</span>
-                <span className="text-gray-900">{robot.softwareEcosystem.aiFrameworksSupported.join(', ')}</span>
+                <span className="text-gray-900">{robot.softwareEcosystem.aiFrameworksSupported?.join(', ') || 'N/A'}</span>
               </div>
             </div>
           </div>
@@ -237,8 +237,8 @@ export default function RobotDetailTemplate({ robot }: RobotDetailTemplateProps)
               <div>
                 <span className="text-sm font-medium text-gray-600 block mb-1">Warranty</span>
                 <div className="text-gray-900">
-                  <div>Duration: {robot.supplierReliability.warranty.duration}</div>
-                  <div className="text-sm text-gray-600 mt-1">Coverage: {robot.supplierReliability.warranty.coverage}</div>
+                  <div>Duration: {robot.supplierReliability.warranty?.duration || 'N/A'}</div>
+                  <div className="text-sm text-gray-600 mt-1">Coverage: {robot.supplierReliability.warranty?.coverage || 'N/A'}</div>
                 </div>
               </div>
               <div>

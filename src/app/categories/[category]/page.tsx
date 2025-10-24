@@ -1,102 +1,94 @@
-'use client';
-
-import { useState, useMemo, useEffect } from 'react';
-import { useParams } from 'next/navigation';
+import { Metadata } from 'next';
+import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Layout from '@/components/Layout';
-import ProductCard from '@/components/ProductCard';
-import SearchBar from '@/components/SearchBar';
-import FilterSidebar from '@/components/FilterSidebar';
-import { Robot, FilterOptions } from '@/types/robot';
-import { trackCategoryView } from '@/lib/gtag';
+import CategoryBrowser from '@/components/CategoryBrowser';
+import { Robot } from '@/types/robot';
 import robots from '@/data/robots.json';
 import categories from '@/data/categories.json';
 
-export default function CategoryPage() {
-  const params = useParams();
-  const categoryId = params.category as string;
-  
-  const [searchQuery, setSearchQuery] = useState('');
-  const [sortBy, setSortBy] = useState('name');
-  const [filters, setFilters] = useState<FilterOptions>({
-    categories: [categoryId],
-    brands: [],
-    priceRange: { min: 0, max: 200000 }
-  });
+interface CategoryPageProps {
+  params: Promise<{ category: string }>;
+}
 
+export async function generateStaticParams() {
+  return categories.map((category) => ({
+    category: category.id,
+  }));
+}
+
+export async function generateMetadata({ params }: CategoryPageProps): Promise<Metadata> {
+  const { category: categoryId } = await params;
   const category = categories.find(c => c.id === categoryId);
-  
-  const filteredRobots = useMemo(() => {
-    const filtered = (robots as Robot[]).filter((robot: Robot) => {
-      // Category filter
-      if (!filters.categories.includes(robot.category)) return false;
-      
-      // Brand filter
-      if (filters.brands.length > 0 && !filters.brands.includes(robot.brand)) return false;
-      
-      // Price filter
-      const robotPrice = typeof robot.price.starting === 'number' ? robot.price.starting : 999999;
-      if (robotPrice < filters.priceRange.min || robotPrice > filters.priceRange.max) return false;
-      
-      // Search query
-      if (searchQuery) {
-        const query = searchQuery.toLowerCase();
-        return (
-          robot.name.toLowerCase().includes(query) ||
-          robot.brand.toLowerCase().includes(query) ||
-          robot.description.toLowerCase().includes(query) ||
-          robot.features.some(feature => feature.toLowerCase().includes(query))
-        );
-      }
-      
-      return true;
-    });
-
-    // Sorting
-    filtered.sort((a, b) => {
-      switch (sortBy) {
-        case 'name':
-          return a.name.localeCompare(b.name);
-        case 'price-low':
-          const priceA = typeof a.price.starting === 'number' ? a.price.starting : 999999;
-          const priceB = typeof b.price.starting === 'number' ? b.price.starting : 999999;
-          return priceA - priceB;
-        case 'price-high':
-          const priceA2 = typeof a.price.starting === 'number' ? a.price.starting : 0;
-          const priceB2 = typeof b.price.starting === 'number' ? b.price.starting : 0;
-          return priceB2 - priceA2;
-        case 'brand':
-          return a.brand.localeCompare(b.brand);
-        default:
-          return 0;
-      }
-    });
-
-    return filtered;
-  }, [filters, searchQuery, sortBy]);
-
-  const availableBrands = Array.from(new Set((robots as Robot[])
-    .filter((robot: Robot) => robot.category === categoryId)
-    .map((robot: Robot) => robot.brand)
-  ));
-
-  // Track category view
-  useEffect(() => {
-    if (category) {
-      trackCategoryView(category.name, filteredRobots.length);
-    }
-  }, [category, filteredRobots.length]);
 
   if (!category) {
-    return (
-      <Layout>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Category Not Found</h1>
-          <p className="text-lg text-gray-600">The category you&apos;re looking for doesn&apos;t exist.</p>
-        </div>
-      </Layout>
-    );
+    return { title: 'Category Not Found | Awesome Robots' };
   }
+
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.awesomerobots.xyz';
+  const categoryUrl = `${baseUrl}/categories/${categoryId}`;
+  const categoryRobots = (robots as Robot[]).filter(r => r.category === categoryId);
+  const robotCount = categoryRobots.length;
+  const minPrice = categoryRobots.length > 0
+    ? Math.min(...categoryRobots.map(r => typeof r.price.starting === 'number' ? r.price.starting : 999999))
+    : 0;
+  const priceRange = minPrice < 999999 ? `from $${minPrice.toLocaleString()}` : '';
+
+  return {
+    title: `${category.name} Robots - ${robotCount} Models ${priceRange} | Compare & Buy`,
+    description: `${category.description} Browse ${robotCount} ${category.name.toLowerCase()} robots. Compare specifications, features, and pricing. Find the perfect ${category.name.toLowerCase()} robot for research, education, or industry.`,
+    keywords: [
+      `${category.name} robots`,
+      `buy ${category.name} robot`,
+      `${category.name} robot comparison`,
+      `best ${category.name} robots`,
+      `${category.name} robot price`,
+      `${category.name} robot specifications`,
+      'AI robots',
+      'robot catalog',
+      `${category.name} robot for sale`,
+      `${category.name} robot reviews`,
+    ].join(', '),
+    authors: [{ name: 'Awesome Robots Team' }],
+    alternates: {
+      canonical: categoryUrl,
+    },
+    openGraph: {
+      type: 'website',
+      url: categoryUrl,
+      title: `${category.name} Robots - Browse ${robotCount} Models`,
+      description: category.description,
+      siteName: 'Awesome Robots',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${category.name} Robots`,
+      description: category.description,
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
+    },
+  };
+}
+
+export default async function CategoryPage({ params }: CategoryPageProps) {
+  const { category: categoryId } = await params;
+  const category = categories.find(c => c.id === categoryId);
+
+  if (!category) {
+    notFound();
+  }
+
+  const categoryRobots = (robots as Robot[]).filter((r: Robot) => r.category === categoryId);
+  const availableBrands = Array.from(new Set(categoryRobots.map((r: Robot) => r.brand)));
 
   return (
     <Layout>
@@ -111,9 +103,10 @@ export default function CategoryPage() {
                 categoryId === 'accessory' ? '/images/categories/accessories.png' :
                 '/images/categories/other.svg'
               }
-              alt={category.name}
+              alt={`${category.name} robots category - browse and compare ${categoryRobots.length} models`}
               fill
               className="object-contain"
+              priority
             />
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -124,80 +117,12 @@ export default function CategoryPage() {
           </p>
         </div>
 
-        {/* Search and Sort Controls */}
-        <div className="mb-8 flex flex-col lg:flex-row gap-4 items-center justify-between">
-          <div className="w-full lg:w-96">
-            <SearchBar 
-              onSearch={setSearchQuery}
-              placeholder={`Search ${category.name.toLowerCase()}...`}
-            />
-          </div>
-          
-          <div className="flex items-center gap-4">
-            <label className="text-sm font-medium text-gray-700">Sort by:</label>
-            <select
-              value={sortBy}
-              onChange={(e) => setSortBy(e.target.value)}
-              className="border border-gray-300 rounded-lg px-3 py-2 focus:ring-blue-500 focus:border-blue-500"
-            >
-              <option value="name">Name (A-Z)</option>
-              <option value="price-low">Price (Low to High)</option>
-              <option value="price-high">Price (High to Low)</option>
-              <option value="brand">Brand</option>
-            </select>
-          </div>
-        </div>
-
-        <div className="flex flex-col lg:flex-row gap-8">
-          {/* Filter Sidebar */}
-          <div className="lg:w-72 flex-shrink-0">
-            <FilterSidebar
-              filters={filters}
-              onFiltersChange={setFilters}
-              availableBrands={availableBrands}
-              availableCategories={[category]}
-            />
-          </div>
-
-          {/* Product Grid */}
-          <div className="flex-1">
-            {filteredRobots.length > 0 ? (
-              <>
-                <div className="mb-6 text-sm text-gray-600">
-                  Showing {filteredRobots.length} robot{filteredRobots.length !== 1 ? 's' : ''}
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-                  {filteredRobots.map((robot) => (
-                    <ProductCard key={robot.id} robot={robot} />
-                  ))}
-                </div>
-              </>
-            ) : (
-              <div className="text-center py-12">
-                <div className="text-6xl mb-4">🔍</div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  No robots found
-                </h3>
-                <p className="text-gray-600 mb-6">
-                  Try adjusting your search terms or filters to find what you&apos;re looking for.
-                </p>
-                <button
-                  onClick={() => {
-                    setSearchQuery('');
-                    setFilters({
-                      categories: [categoryId],
-                      brands: [],
-                      priceRange: { min: 0, max: 200000 }
-                    });
-                  }}
-                  className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors"
-                >
-                  Clear Filters
-                </button>
-              </div>
-            )}
-          </div>
-        </div>
+        <CategoryBrowser
+          robots={categoryRobots}
+          categoryId={categoryId}
+          categoryName={category.name}
+          availableBrands={availableBrands}
+        />
       </div>
     </Layout>
   );
