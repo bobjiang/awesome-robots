@@ -75,7 +75,8 @@
       "Bash(cat tsconfig.json)",
       "Bash(tee:*)",
       "Bash(cat:*)",
-      "Bash(git restore:*)"
+      "Bash(git restore:*)",
+      "WebFetch(domain:standardbots.com)"
     ],
     "deny": [],
     "defaultMode": "acceptEdits"
