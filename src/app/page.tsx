@@ -1,9 +1,16 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import Script from 'next/script';
+import { Metadata } from 'next';
 import Layout from '@/components/Layout';
 import { generateRobotFAQSchema } from '@/lib/structured-data';
 import categories from '@/data/categories.json';
+
+export const metadata: Metadata = {
+  title: 'Buy Humanoid & Quadruped Robots 2025 - 115+ Models, Prices & Specs',
+  description: 'Discover 115+ AI-powered humanoid and quadruped robots from $1,600 to $200,000+. Compare specifications, read reviews, request quotes. Expert buying guides for research, education, and industrial automation.',
+  keywords: 'buy humanoid robot, buy quadruped robot, humanoid robot price, robot dog for sale, unitree robots, boston dynamics spot, robot comparison, AI robots 2025',
+};
 
 export default function Home() {
   // Generate FAQ structured data for homepage

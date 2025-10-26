@@ -25,6 +25,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <Link href="/brands" className="text-gray-700 hover:text-blue-600 transition-colors">
                 Brands
               </Link>
+              <Link href="/compare" className="text-gray-700 hover:text-blue-600 transition-colors">
+                Comparisons
+              </Link>
               <Link href="/blog" className="text-gray-700 hover:text-blue-600 transition-colors">
                 Blog
               </Link>
@@ -50,29 +53,36 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           {isMenuOpen && (
             <div className="md:hidden">
               <div className="px-2 pt-2 pb-3 space-y-1">
-                <Link 
-                  href="/browse" 
+                <Link
+                  href="/browse"
                   className="block px-3 py-2 text-gray-700 hover:text-blue-600 transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Browse All
                 </Link>
-                <Link 
-                  href="/brands" 
+                <Link
+                  href="/brands"
                   className="block px-3 py-2 text-gray-700 hover:text-blue-600 transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Brands
                 </Link>
-                <Link 
-                  href="/blog" 
+                <Link
+                  href="/compare"
+                  className="block px-3 py-2 text-gray-700 hover:text-blue-600 transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Comparisons
+                </Link>
+                <Link
+                  href="/blog"
                   className="block px-3 py-2 text-gray-700 hover:text-blue-600 transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Blog
                 </Link>
-                <Link 
-                  href="/faq" 
+                <Link
+                  href="/faq"
                   className="block px-3 py-2 text-gray-700 hover:text-blue-600 transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
