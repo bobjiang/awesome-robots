@@ -1,0 +1,35 @@
+Date,Link Type,Target Name,Target URL,DA Score,Contact Method,Status,Date Contacted,Date Followed Up,Date Secured,Backlink URL,Notes
+2025-01-XX,Directory,Product Hunt,https://www.producthunt.com,91,Submission Form,Not Started,,,,,
+2025-01-XX,Directory,IEEE Spectrum,https://spectrum.ieee.org,85,Contact Form,Not Started,,,,,
+2025-01-XX,Directory,Robotics Business Review,https://www.roboticsbusinessreview.com,62,Submission Form,Not Started,,,,,
+2025-01-XX,Directory,The Robot Report,https://www.therobotreport.com,58,Submission Form,Not Started,,,,,
+2025-01-XX,Directory,G2,https://www.g2.com,94,Submission Form,Not Started,,,,,
+2025-01-XX,Directory,Capterra,https://www.capterra.com,92,Submission Form,Not Started,,,,,
+2025-01-XX,Directory,AlternativeTo,https://alternativeto.net,78,Submission Form,Not Started,,,,,
+2025-01-XX,Directory,Slashdot,https://slashdot.org,89,Submission Form,Not Started,,,,,
+2025-01-XX,Directory,Hacker News,https://news.ycombinator.com,93,Submission Form,Not Started,,,,,
+2025-01-XX,Directory,Reddit r/robotics,https://www.reddit.com/r/robotics,91,Post,Not Started,,,,,
+2025-01-XX,Directory,Crunchbase,https://www.crunchbase.com,92,Account Creation,Not Started,,,,,
+2025-01-XX,Directory,AngelList,https://angel.co,90,Account Creation,Not Started,,,,,
+2025-01-XX,Directory,Betapage,https://betapage.co,54,Submission Form,Not Started,,,,,
+2025-01-XX,Directory,Startup Buffer,https://startupbuffer.com,42,Submission Form,Not Started,,,,,
+2025-01-XX,Directory,StartupRanking,https://www.startupranking.com,68,Submission Form,Not Started,,,,,
+2025-01-XX,Manufacturer,Unitree Robotics,https://www.unitree.com,65,Email,Not Started,,,,,Find partnerships@ email
+2025-01-XX,Manufacturer,Deep Robotics,https://www.deeprobotics.cn,55,Contact Form,Not Started,,,,,
+2025-01-XX,Manufacturer,UBTech,https://www.ubtrobot.com,58,Contact Form,Not Started,,,,,
+2025-01-XX,Manufacturer,Boston Dynamics,https://www.bostondynamics.com,78,Email,Not Started,,,,,High authority target
+2025-01-XX,Manufacturer,ANYbotics,https://www.anybotics.com,62,Email,Not Started,,,,,
+2025-01-XX,Manufacturer,Ghost Robotics,https://www.ghostrobotics.io,54,Contact Form,Not Started,,,,,
+2025-01-XX,Manufacturer,UniX AI,https://www.unix-group.ai,45,Contact Form,Not Started,,,,,
+2025-01-XX,Manufacturer,Rainbow Robotics,https://www.rainbow-robotics.com,52,Contact Form,Not Started,,,,,
+2025-01-XX,Resource Page,MIT CSAIL Robotics,https://www.csail.mit.edu,95,Email Webmaster,Not Started,,,,,Top priority - high DA
+2025-01-XX,Resource Page,CMU Robotics Institute,https://www.ri.cmu.edu,94,Contact Form,Not Started,,,,,Top priority
+2025-01-XX,Resource Page,Stanford AI Lab,https://ai.stanford.edu,96,Email,Not Started,,,,,Top priority
+2025-01-XX,Resource Page,UC Berkeley BAIR,https://bair.berkeley.edu,95,Contact Form,Not Started,,,,,
+2025-01-XX,Resource Page,Georgia Tech Robotics,https://robotics.gatech.edu,92,Email,Not Started,,,,,
+2025-01-XX,Resource Page,ROS.org Resources,https://www.ros.org,88,Forum Post,Not Started,,,,,Active community
+2025-01-XX,Resource Page,Robotics Stack Exchange,https://robotics.stackexchange.com,85,Profile Link,Not Started,,,,,Answer questions first
+2025-01-XX,Resource Page,r/robotics Wiki,https://www.reddit.com/r/robotics,91,Mod Message,Not Started,,,,,Need karma first
+2025-01-XX,Resource Page,Awesome Robotics GitHub,https://github.com/topics/awesome-robotics,100,Pull Request,Not Started,,,,,Easy win
+
+Status Options: Not Started | Contacted | Followed Up | Secured | Rejected
