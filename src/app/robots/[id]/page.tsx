@@ -175,7 +175,9 @@ export default async function RobotDetailPage({ params }: RobotDetailPageProps) 
               <span className="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium mb-2">
                 {robot.brand}
               </span>
-              <h1 className="text-4xl font-bold text-gray-900">{robot.name}</h1>
+              <h1 className="text-4xl font-bold text-gray-900">
+                {robot.brand} {robot.name} {robot.category.charAt(0).toUpperCase() + robot.category.slice(1)} Robot
+              </h1>
             </div>
 
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">

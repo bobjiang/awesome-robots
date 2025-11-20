@@ -1,7 +1,6 @@
 import Layout from '@/components/Layout';
 import Link from 'next/link';
 import Script from 'next/script';
-import { generateRobotFAQSchema } from '@/lib/structured-data';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -46,7 +45,19 @@ const faqData = [
 ];
 
 export default function FAQPage() {
-  const faqSchema = generateRobotFAQSchema();
+  // Generate FAQ schema from actual page content
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqData.map(faq => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer
+      }
+    }))
+  };
 
   return (
     <Layout>
