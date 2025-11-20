@@ -45,44 +45,50 @@ export default function ComparePage() {
             </div>
           </Link>
 
-          {/* Humanoid vs Quadruped (Coming Soon placeholder) */}
-          <div className="bg-gray-50 p-8 rounded-xl border-2 border-gray-200">
+          {/* Humanoid vs Quadruped */}
+          <Link
+            href="/compare/humanoid-vs-quadruped"
+            className="group bg-white p-8 rounded-xl border-2 border-gray-200 hover:border-blue-500 hover:shadow-xl transition-all"
+          >
             <div className="flex items-start justify-between mb-4">
-              <h2 className="text-2xl font-bold text-gray-400">
+              <h2 className="text-2xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
                 Humanoid vs Quadruped
               </h2>
-              <span className="px-3 py-1 bg-yellow-100 text-yellow-800 text-xs font-semibold rounded-full">
-                Coming Soon
-              </span>
+              <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
             </div>
-            <p className="text-gray-500 mb-4">
+            <p className="text-gray-600 mb-4">
               Which robot type is better for your application? Compare bipedal vs four-legged robots.
             </p>
             <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1 bg-gray-200 text-gray-600 text-sm rounded-full">Use Cases</span>
-              <span className="px-3 py-1 bg-gray-200 text-gray-600 text-sm rounded-full">Capabilities</span>
-              <span className="px-3 py-1 bg-gray-200 text-gray-600 text-sm rounded-full">Applications</span>
+              <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">Use Cases</span>
+              <span className="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">Capabilities</span>
+              <span className="px-3 py-1 bg-purple-100 text-purple-800 text-sm rounded-full">Applications</span>
             </div>
-          </div>
+          </Link>
 
-          {/* Best Humanoid Robots Under $50K (Coming Soon) */}
-          <div className="bg-gray-50 p-8 rounded-xl border-2 border-gray-200">
+          {/* Best Humanoid Robots Under $50K */}
+          <Link
+            href="/compare/best-humanoid-robots-under-50000"
+            className="group bg-white p-8 rounded-xl border-2 border-gray-200 hover:border-blue-500 hover:shadow-xl transition-all"
+          >
             <div className="flex items-start justify-between mb-4">
-              <h2 className="text-2xl font-bold text-gray-400">
+              <h2 className="text-2xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
                 Best Humanoid Robots Under $50,000
               </h2>
-              <span className="px-3 py-1 bg-yellow-100 text-yellow-800 text-xs font-semibold rounded-full">
-                Coming Soon
-              </span>
+              <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
             </div>
-            <p className="text-gray-500 mb-4">
+            <p className="text-gray-600 mb-4">
               7 best affordable humanoid robots compared. Value & performance analysis for budget-conscious buyers.
             </p>
             <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1 bg-gray-200 text-gray-600 text-sm rounded-full">Budget Guide</span>
-              <span className="px-3 py-1 bg-gray-200 text-gray-600 text-sm rounded-full">Value Analysis</span>
+              <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">Budget Guide</span>
+              <span className="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">Value Analysis</span>
             </div>
-          </div>
+          </Link>
 
           {/* Industrial Humanoid Robots (Coming Soon) */}
           <div className="bg-gray-50 p-8 rounded-xl border-2 border-gray-200">
@@ -101,6 +107,81 @@ export default function ComparePage() {
               <span className="px-3 py-1 bg-gray-200 text-gray-600 text-sm rounded-full">Industrial</span>
               <span className="px-3 py-1 bg-gray-200 text-gray-600 text-sm rounded-full">Payload</span>
             </div>
+          </div>
+        </div>
+
+        {/* Blog Comparison Articles */}
+        <div className="mt-16">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+            In-Depth Comparison Articles
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <Link
+              href="/blog/deep-robotics-vs-unitree-comparison"
+              className="group bg-white p-6 rounded-lg border border-gray-200 hover:border-blue-500 hover:shadow-lg transition-all"
+            >
+              <h3 className="font-semibold text-gray-900 group-hover:text-blue-600 mb-2">
+                Deep Robotics vs Unitree
+              </h3>
+              <p className="text-sm text-gray-600">
+                Head-to-head comparison of two leading quadruped manufacturers
+              </p>
+            </Link>
+            <Link
+              href="/blog/unitree-go2-vs-deep-robotics-lite3-comparison"
+              className="group bg-white p-6 rounded-lg border border-gray-200 hover:border-blue-500 hover:shadow-lg transition-all"
+            >
+              <h3 className="font-semibold text-gray-900 group-hover:text-blue-600 mb-2">
+                Unitree Go2 vs Deep Robotics Lite3
+              </h3>
+              <p className="text-sm text-gray-600">
+                Entry-level quadruped comparison for education and research
+              </p>
+            </Link>
+            <Link
+              href="/blog/best-humanoid-robots-research-labs-2025"
+              className="group bg-white p-6 rounded-lg border border-gray-200 hover:border-blue-500 hover:shadow-lg transition-all"
+            >
+              <h3 className="font-semibold text-gray-900 group-hover:text-blue-600 mb-2">
+                Best Humanoids for Research Labs
+              </h3>
+              <p className="text-sm text-gray-600">
+                Complete buying guide for academic research applications
+              </p>
+            </Link>
+            <Link
+              href="/blog/best-quadruped-robots-industrial-inspection-2025"
+              className="group bg-white p-6 rounded-lg border border-gray-200 hover:border-blue-500 hover:shadow-lg transition-all"
+            >
+              <h3 className="font-semibold text-gray-900 group-hover:text-blue-600 mb-2">
+                Best Quadrupeds for Industrial Inspection
+              </h3>
+              <p className="text-sm text-gray-600">
+                Enterprise guide for inspection and monitoring applications
+              </p>
+            </Link>
+            <Link
+              href="/blog/quadruped-robot-buying-guide-2024"
+              className="group bg-white p-6 rounded-lg border border-gray-200 hover:border-blue-500 hover:shadow-lg transition-all"
+            >
+              <h3 className="font-semibold text-gray-900 group-hover:text-blue-600 mb-2">
+                Quadruped Robot Buying Guide
+              </h3>
+              <p className="text-sm text-gray-600">
+                Comprehensive guide to choosing a robot dog
+              </p>
+            </Link>
+            <Link
+              href="/blog/top-10-global-ai-robotics-companies"
+              className="group bg-white p-6 rounded-lg border border-gray-200 hover:border-blue-500 hover:shadow-lg transition-all"
+            >
+              <h3 className="font-semibold text-gray-900 group-hover:text-blue-600 mb-2">
+                Top 10 AI Robotics Companies
+              </h3>
+              <p className="text-sm text-gray-600">
+                Leading manufacturers and their flagship products
+              </p>
+            </Link>
           </div>
         </div>
 
