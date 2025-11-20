@@ -2,7 +2,7 @@
 title: "Best Quadruped Robots for Industrial Inspection in 2025: Enterprise Buyer's Guide"
 slug: "best-quadruped-robots-industrial-inspection-2025"
 author: "bob-jiang"
-date: "2025-01-25"
+date: "2025-11-20"
 category: "buying-guides"
 tags: ["quadruped", "industrial", "inspection", "enterprise", "buying-guide", "comparison"]
 excerpt: "A comprehensive guide to selecting quadruped robots for industrial inspection applications. Compare Boston Dynamics Spot, Deep Robotics X30, Unitree B2, and other enterprise-grade platforms."

@@ -2,7 +2,7 @@
 title: "Best Humanoid Robots for Research Labs in 2025: Complete Buying Guide"
 slug: "best-humanoid-robots-research-labs-2025"
 author: "bob-jiang"
-date: "2025-01-15"
+date: "2025-11-18"
 category: "buying-guides"
 tags: ["humanoid", "research", "buying-guide", "comparison", "university", "laboratory"]
 excerpt: "A comprehensive guide to choosing humanoid robots for academic research and laboratory applications. Compare top models by price, ROS support, SDK quality, and research suitability."

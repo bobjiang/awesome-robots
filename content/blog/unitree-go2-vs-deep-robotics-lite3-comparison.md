@@ -2,7 +2,7 @@
 title: "Unitree Go2 vs Deep Robotics Lite3: Which Entry-Level Quadruped Is Right for You?"
 slug: "unitree-go2-vs-deep-robotics-lite3-comparison"
 author: "bob-jiang"
-date: "2025-01-20"
+date: "2025-11-19"
 category: "reviews"
 tags: ["unitree", "deep-robotics", "go2", "lite3", "comparison", "quadruped", "robot-dog"]
 excerpt: "A detailed head-to-head comparison of the Unitree Go2 and Deep Robotics Lite3, the two most popular entry-level quadruped robots for education, research, and hobbyists."
