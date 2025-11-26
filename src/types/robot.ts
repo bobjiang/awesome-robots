@@ -25,7 +25,7 @@ export interface BaseRobot {
     modelName: string;
     dimensions: {
       standing: string;
-      folded: string;
+      folded?: string;
       weight: string;
     };
   };

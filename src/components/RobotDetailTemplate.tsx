@@ -11,7 +11,7 @@ interface ExtendedRobot extends Robot {
     modelName: string;
     dimensions: {
       standing: string;
-      folded: string;
+      folded?: string;
       weight: string;
     };
   };
@@ -129,7 +129,9 @@ export default function RobotDetailTemplate({ robot }: RobotDetailTemplateProps)
               <span className="text-sm font-medium text-gray-600 block mb-1">Dimensions</span>
               <div className="text-gray-900">
                 <div>Standing: {robot.generalInfo.dimensions.standing}</div>
-                <div>Folded: {robot.generalInfo.dimensions.folded}</div>
+                {robot.generalInfo.dimensions.folded && (
+                  <div>Folded: {robot.generalInfo.dimensions.folded}</div>
+                )}
               </div>
             </div>
           </div>
