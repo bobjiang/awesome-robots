@@ -217,14 +217,16 @@ export default async function RobotDetailPage({ params }: RobotDetailPageProps) 
               robotBrand={robot.brand}
             />
 
-            <Link
-              href={robot.officialUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block text-center border-2 border-gray-300 text-gray-700 py-3 rounded-lg hover:border-gray-400 hover:text-gray-900 transition-colors"
-            >
-              View Official Page →
-            </Link>
+            {robot.officialUrl && (
+              <Link
+                href={robot.officialUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-center border-2 border-gray-300 text-gray-700 py-3 rounded-lg hover:border-gray-400 hover:text-gray-900 transition-colors"
+              >
+                View Official Page →
+              </Link>
+            )}
           </div>
         </div>
 

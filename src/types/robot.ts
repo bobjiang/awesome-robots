@@ -17,7 +17,7 @@ export interface BaseRobot {
   images: string[];
   videos?: string[];
   documentation?: string[];
-  officialUrl: string;
+  officialUrl: string | null;
   description: string;
   // Extended properties for RobotDetailTemplate
   generalInfo?: {
