@@ -335,5 +335,23 @@
     "source": "official_website",
     "country": "China",
     "needsManualEnrichment": false
+  },
+  {
+    "id": "agibot",
+    "name": "AgiBot",
+    "description": "Shanghai-based robotics company developing advanced commercial humanoid robots. AgiBot A2 holds the Guinness World Record for longest humanoid robot walk (106.286 km), featuring 28 motors, hot-swappable batteries, and AI-powered multilingual capabilities for customer service applications.",
+    "website": "https://www.agibot.com/",
+    "logo": "/images/brands/agibot-logo.svg",
+    "country": "China",
+    "founded": "2023"
+  },
+  {
+    "id": "k-scale-labs",
+    "name": "K-Scale Labs",
+    "description": "Y Combinator-backed robotics company building open-source humanoid robots to democratize robotics. Offers K-Bot ($9,000) and Z-Bot ($1,000) with Python SDK, Raspberry Pi-based computing, and comprehensive GitHub support for developers, researchers, and education.",
+    "website": "https://www.kscale.dev/",
+    "logo": "/images/brands/kscale-labs-logo.svg",
+    "country": "USA",
+    "founded": "2024"
   }
 ]

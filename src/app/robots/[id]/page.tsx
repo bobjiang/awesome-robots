@@ -49,11 +49,12 @@ export async function generateMetadata({ params }: RobotDetailPageProps): Promis
     : 'Request Quote';
 
   // Extract key feature for description
-  const keyFeature = robot.keyFeatures?.[0] || robot.features?.[0] || '';
+  const features = robot.features || robot.keyFeatures || [];
+  const keyFeature = features[0] || '';
   const featureText = keyFeature ? ` Features: ${keyFeature}.` : '';
 
   // Generate comprehensive keywords
-  const additionalKeywords = robot.features?.slice(0, 5).map(f => f.toLowerCase()) || [];
+  const additionalKeywords = features.slice(0, 5).map(f => f.toLowerCase());
   const keywordsArray = [
     `${robot.brand} ${robot.name}`,
     `${robot.name} robot`,

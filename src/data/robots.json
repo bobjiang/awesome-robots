@@ -7813,5 +7813,599 @@
     "pricingInfo": {},
     "manuallyEnriched": true,
     "enrichedAt": "2025-10-20T04:33:32.370Z"
+  },
+  {
+    "id": "unitree-h2",
+    "name": "H2",
+    "brand": "Unitree",
+    "category": "humanoid",
+    "price": {
+      "starting": 29900,
+      "currency": "USD",
+      "models": [
+        {
+          "name": "H2 Standard",
+          "price": 29900
+        },
+        {
+          "name": "H2 EDU",
+          "price": "request"
+        }
+      ]
+    },
+    "description": "Latest full-sized humanoid robot from Unitree with 31-DOF architecture, advanced dexterous hands, and up to 2,070 TOPS computing power. Features fluid human-like movements including dance and kung-fu demonstrations.",
+    "officialUrl": "https://www.unitree.com/mobile/H2/",
+    "releaseDate": "2025-10-20",
+    "generalInfo": {
+      "manufacturer": "Unitree Robotics",
+      "modelName": "H2",
+      "releaseDate": "October 2025",
+      "dimensions": {
+        "standing": "180 cm (height)",
+        "folded": "N/A",
+        "weight": "70 kg"
+      }
+    },
+    "keyFeatures": [
+      "31-DOF architecture including 3-DOF waist and 2-DOF neck",
+      "Advanced robotic hands for precise object manipulation",
+      "Humanoid binocular camera for wide field of view perception",
+      "Array microphone and high-power speaker for voice interaction",
+      "Fluid movements including dance and kung-fu demonstrations",
+      "Streamlined elegance design aesthetic",
+      "Up to 2,070 TOPS onboard compute (with optional NVIDIA Jetson AGX Thor)",
+      "Two models: H2 Standard and H2 EDU for research/education",
+      "ROS/ROS2 compatible with comprehensive SDK",
+      "Pre-order available for Q1-Q2 2026 delivery"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "31 (including 3-DOF waist, 2-DOF neck)",
+      "payloadCapacity": "7 kg normally, up to 21 kg briefly",
+      "batteryCapacityRuntime": "Up to 3 hours runtime",
+      "charger": "Standard charging system",
+      "sensorsIncluded": [
+        "Humanoid binocular camera",
+        "Array microphone",
+        "Force sensors",
+        "Position encoders",
+        "IMU sensors"
+      ],
+      "interfaces": [
+        "Ethernet",
+        "USB-C",
+        "Developer API",
+        "ROS/ROS2"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Yes - ROS/ROS2 compatible",
+      "sdkLanguages": [
+        "Python",
+        "C++"
+      ],
+      "openSourceRepos": "Available through Unitree SDK",
+      "aiFrameworksSupported": [
+        "TensorFlow",
+        "PyTorch",
+        "NVIDIA AI frameworks"
+      ],
+      "apiDocumentationQuality": "Comprehensive documentation available",
+      "computingPlatform": "Intel Core i5 (standard) / i7 (custom), optional NVIDIA Jetson AGX Thor (2,070 TOPS)"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "1 year",
+        "coverage": "Parts and service"
+      },
+      "postSalesSupport": "Technical support through authorized distributors",
+      "trackRecord": "Unitree profitable since 2020, established leader in quadruped robots, expanding into humanoids with strong engineering background"
+    },
+    "targetAudience": "Research institutions, educational facilities, industrial automation, AI/ML developers, advanced robotics enthusiasts",
+    "useCases": [
+      "Research and development",
+      "Educational demonstrations",
+      "Industrial automation testing",
+      "AI/ML algorithm development",
+      "Human-robot interaction research"
+    ],
+    "highResPhotos": [
+      "/images/robots/unitree-h2/h2-1.jpg",
+      "/images/robots/unitree-h2/h2-2.jpg"
+    ],
+    "image": "/images/robots/unitree-h2/h2-1.jpg",
+    "tags": [
+      "humanoid",
+      "31-DOF",
+      "research",
+      "education",
+      "AI-powered",
+      "dexterous-hands",
+      "2025-release"
+    ],
+    "seo": {
+      "title": "Unitree H2 Humanoid Robot - $29,900 | 31-DOF Full-Size Robot",
+      "description": "Unitree H2 humanoid robot with 31-DOF architecture, advanced dexterous hands, and 2,070 TOPS computing. Pre-order now for Q1-Q2 2026 delivery at $29,900.",
+      "keywords": [
+        "Unitree H2",
+        "humanoid robot 2025",
+        "31 DOF humanoid",
+        "Unitree humanoid",
+        "full-size humanoid robot",
+        "research humanoid robot",
+        "dexterous robot hands"
+      ]
+    }
+  },
+  {
+    "id": "agibot-a2",
+    "name": "A2",
+    "brand": "AgiBot",
+    "category": "humanoid",
+    "price": {
+      "starting": "request",
+      "currency": "USD",
+      "models": [
+        {
+          "name": "A2 Commercial",
+          "price": "request"
+        }
+      ]
+    },
+    "description": "Guinness World Record holder for longest humanoid robot walk (106.286 km). Advanced humanoid with 28 motors, hot-swappable batteries for continuous operation, and AI-powered multilingual communication capabilities.",
+    "officialUrl": "https://www.agibot.com/",
+    "releaseDate": "2025-08-01",
+    "generalInfo": {
+      "manufacturer": "AgiBot",
+      "modelName": "A2",
+      "releaseDate": "August 2025",
+      "dimensions": {
+        "standing": "175 cm (5.74 feet)",
+        "folded": "N/A",
+        "weight": "55 kg (121 lbs)"
+      }
+    },
+    "keyFeatures": [
+      "Guinness World Record: 106.286 km walk (November 10-13, 2025)",
+      "28 motors for smooth human-like movement",
+      "Hot-swappable battery system for continuous operation",
+      "AI-powered sensing (text, audio, visual processing)",
+      "Fine-motor task capability (can thread a needle)",
+      "Multilingual communication capabilities",
+      "Face recognition technology",
+      "Lip-reading capabilities",
+      "Traffic light recognition and traffic rule compliance",
+      "Autonomous navigation with crowd avoidance",
+      "2 GPS devices and laser scanners for mapping",
+      "Infrared cameras for night vision"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "28 motors powering joints",
+      "payloadCapacity": "N/A - designed for service tasks",
+      "batteryCapacityRuntime": "Hot-swappable battery packs - infinite runtime with battery swapping",
+      "charger": "Quick-swap battery system",
+      "sensorsIncluded": [
+        "2 GPS devices",
+        "Laser scanners",
+        "Infrared cameras",
+        "Visual processing cameras",
+        "Audio sensors for multilingual communication",
+        "Touch sensors for fine-motor tasks"
+      ],
+      "interfaces": [
+        "Wi-Fi",
+        "4G/LTE connectivity",
+        "API for custom development"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Yes",
+      "sdkLanguages": [
+        "Python",
+        "C++"
+      ],
+      "openSourceRepos": "Limited - primarily commercial platform",
+      "aiFrameworksSupported": [
+        "Custom AI models",
+        "Computer Vision",
+        "NLP for multilingual communication"
+      ],
+      "apiDocumentationQuality": "Available for commercial partners"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Contact for details",
+        "coverage": "Commercial warranty available"
+      },
+      "postSalesSupport": "Technical support for commercial deployments",
+      "trackRecord": "Guinness World Record holder, proven durability with 106km autonomous walk, established Chinese robotics company"
+    },
+    "targetAudience": "Commercial service businesses, tourist attractions, corporate offices, retail environments, research institutions",
+    "useCases": [
+      "Customer service (tour guides, sales assistants)",
+      "Office building navigation and assistance",
+      "Task guidance and autonomous delivery",
+      "Commercial service environments",
+      "Long-duration autonomy research"
+    ],
+    "highResPhotos": [
+      "/images/robots/agibot-a2/a2-1.webp",
+      "/images/robots/agibot-a2/a2-2.webp"
+    ],
+    "image": "/images/robots/agibot-a2/a2-1.webp",
+    "tags": [
+      "humanoid",
+      "guinness-record",
+      "commercial",
+      "AI-powered",
+      "multilingual",
+      "service-robot",
+      "2025-release"
+    ],
+    "seo": {
+      "title": "AgiBot A2 - Guinness World Record Humanoid Robot | 106km Walk",
+      "description": "AgiBot A2 Guinness World Record humanoid robot with 28 motors, hot-swappable batteries, and AI multilingual communication. Perfect for commercial service applications.",
+      "keywords": [
+        "AgiBot A2",
+        "Guinness world record robot",
+        "longest walking robot",
+        "commercial humanoid robot",
+        "service robot",
+        "AI humanoid 2025"
+      ]
+    }
+  },
+  {
+    "id": "kscale-kbot",
+    "name": "K-Bot",
+    "brand": "K-Scale Labs",
+    "category": "humanoid",
+    "price": {
+      "starting": 9000,
+      "currency": "USD",
+      "models": [
+        {
+          "name": "K-Bot Founder's Edition",
+          "price": 9000
+        }
+      ]
+    },
+    "description": "Open-source full-size humanoid robot with Python SDK. Built on low-cost components (Raspberry Pi, CAN bus) for accessible robotics research and ML development. Developer-friendly platform with active GitHub community.",
+    "officialUrl": "https://www.kscale.dev/kbot",
+    "releaseDate": "2025-01-01",
+    "generalInfo": {
+      "manufacturer": "K-Scale Labs",
+      "modelName": "K-Bot",
+      "releaseDate": "2025",
+      "dimensions": {
+        "standing": "140 cm (4'7\")",
+        "folded": "N/A",
+        "weight": "35 kg (77 lbs)"
+      }
+    },
+    "keyFeatures": [
+      "Fully open-source design (hardware + software)",
+      "Python SDK for easy development",
+      "Human-like locomotion and manipulation capabilities",
+      "Developer-friendly platform for ML applications",
+      "Modular design with budget-friendly components",
+      "Tele-operation capabilities included",
+      "RL training library built on MuJoCo and JAX",
+      "Active GitHub repositories and community",
+      "Seamless software stack for ML deployment",
+      "Raspberry Pi-based computing platform",
+      "CAN bus motor controllers",
+      "Comprehensive documentation at docs.kscale.dev"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "Full humanoid articulation",
+      "payloadCapacity": "Research platform",
+      "batteryCapacityRuntime": "Raspberry Pi-based power system, extended runtime",
+      "charger": "Standard battery charging",
+      "sensorsIncluded": [
+        "Multiple camera sensors",
+        "IMU sensors",
+        "Position encoders",
+        "Force sensors"
+      ],
+      "interfaces": [
+        "CAN bus motor controllers",
+        "Raspberry Pi connectivity",
+        "USB interfaces",
+        "Ethernet",
+        "GPIO expansion"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Yes - ROS/ROS2 compatible",
+      "sdkLanguages": [
+        "Python (primary)",
+        "C++"
+      ],
+      "openSourceRepos": "https://github.com/kscalelabs/kbot",
+      "aiFrameworksSupported": [
+        "PyTorch",
+        "TensorFlow",
+        "JAX",
+        "MuJoCo"
+      ],
+      "apiDocumentationQuality": "Excellent - comprehensive docs at https://docs.kscale.dev/"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Standard warranty with Founder's Edition",
+        "coverage": "Hardware defects"
+      },
+      "postSalesSupport": "Community-driven support + GitHub issues + comprehensive documentation",
+      "trackRecord": "New company (2024) with strong open-source commitment, active development, Y Combinator backed"
+    },
+    "targetAudience": "University research labs, advanced robotics developers, ML/AI researchers, robotics education, hackathons",
+    "useCases": [
+      "Robotics research and development",
+      "Machine learning experimentation",
+      "Locomotion research",
+      "Manipulation research",
+      "Educational demonstrations",
+      "Community-driven innovation"
+    ],
+    "highResPhotos": [
+      "/images/robots/kscale-kbot/kbot-1.webp"
+    ],
+    "image": "/images/robots/kscale-kbot/kbot-1.webp",
+    "tags": [
+      "humanoid",
+      "open-source",
+      "research",
+      "developer-friendly",
+      "Python-SDK",
+      "affordable",
+      "education"
+    ],
+    "seo": {
+      "title": "K-Scale K-Bot - $9,000 Open-Source Humanoid Robot | Python SDK",
+      "description": "K-Bot open-source humanoid robot for $9,000. Full-size platform with Python SDK, GitHub community, and ML development tools. Perfect for university research labs.",
+      "keywords": [
+        "K-Scale K-Bot",
+        "open source humanoid robot",
+        "affordable humanoid robot",
+        "Python robot SDK",
+        "research humanoid",
+        "university robot platform"
+      ]
+    }
+  },
+  {
+    "id": "kscale-zbot",
+    "name": "Z-Bot",
+    "brand": "K-Scale Labs",
+    "category": "humanoid",
+    "price": {
+      "starting": 1000,
+      "currency": "USD",
+      "models": [
+        {
+          "name": "Z-Bot",
+          "price": 1000
+        }
+      ]
+    },
+    "description": "Most affordable humanoid robot at $1,000. Compact 1.5-foot open-source platform with Python SDK, perfect for students, hobbyists, and entry-level developers learning robotics.",
+    "officialUrl": "https://www.kscale.dev/",
+    "releaseDate": "2025-01-01",
+    "generalInfo": {
+      "manufacturer": "K-Scale Labs",
+      "modelName": "Z-Bot",
+      "releaseDate": "2025",
+      "dimensions": {
+        "standing": "46 cm (1.5 feet)",
+        "folded": "N/A",
+        "weight": "~2.3 kg (~5 lbs)"
+      }
+    },
+    "keyFeatures": [
+      "Revolutionary $1,000 price point - most affordable humanoid available",
+      "Compact 1.5-foot frame ideal for desktop development",
+      "Fully open-source design",
+      "Python SDK for easy programming",
+      "Raspberry Pi-based computing",
+      "Multiple sensors for environmental awareness",
+      "Customizable and hackable platform",
+      "Perfect for learning and experimentation",
+      "Active community support",
+      "Beginner-friendly documentation"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "Multiple servos for basic humanoid movement",
+      "payloadCapacity": "N/A - educational/hobby platform",
+      "batteryCapacityRuntime": "Raspberry Pi-compatible battery system",
+      "charger": "Standard USB-C/battery charging",
+      "sensorsIncluded": [
+        "Camera sensors",
+        "IMU/gyroscope",
+        "Distance sensors",
+        "Environmental sensors"
+      ],
+      "interfaces": [
+        "Raspberry Pi GPIO",
+        "USB connectivity",
+        "WiFi/Bluetooth"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Yes - ROS compatible",
+      "sdkLanguages": [
+        "Python (primary)",
+        "C++"
+      ],
+      "openSourceRepos": "https://github.com/kscalelabs",
+      "aiFrameworksSupported": [
+        "PyTorch",
+        "TensorFlow",
+        "OpenCV"
+      ],
+      "apiDocumentationQuality": "Excellent - comprehensive docs at https://docs.kscale.dev/"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Standard warranty",
+        "coverage": "Hardware defects"
+      },
+      "postSalesSupport": "Community-driven support + GitHub + documentation",
+      "trackRecord": "New company (2024) with strong open-source ethos, Y Combinator backed, active development"
+    },
+    "targetAudience": "Students learning robotics, hobbyists and makers, STEM education programs, high school robotics clubs, budget-conscious developers",
+    "useCases": [
+      "Robotics education",
+      "AI/ML learning projects",
+      "Sensor integration practice",
+      "Basic locomotion research",
+      "Programming skill development",
+      "STEM demonstrations",
+      "Hackathon projects",
+      "Personal hobby projects"
+    ],
+    "highResPhotos": [
+      "/images/robots/kscale-zbot/zbot-1.webp"
+    ],
+    "image": "/images/robots/kscale-zbot/zbot-1.webp",
+    "tags": [
+      "humanoid",
+      "open-source",
+      "affordable",
+      "education",
+      "student-friendly",
+      "hobbyist",
+      "Python-SDK"
+    ],
+    "seo": {
+      "title": "K-Scale Z-Bot - $1,000 Most Affordable Humanoid Robot | Student Platform",
+      "description": "Z-Bot: World's most affordable humanoid robot at $1,000. Open-source platform with Python SDK, perfect for students, makers, and robotics education.",
+      "keywords": [
+        "K-Scale Z-Bot",
+        "cheapest humanoid robot",
+        "robot under $1000",
+        "student robot",
+        "affordable humanoid",
+        "STEM robotics education"
+      ]
+    }
+  },
+  {
+    "id": "noetix-bumi",
+    "name": "Bumi",
+    "brand": "Noetix Robotics",
+    "category": "humanoid",
+    "price": {
+      "starting": 1370,
+      "currency": "USD",
+      "models": [
+        {
+          "name": "Bumi",
+          "price": 1370
+        }
+      ]
+    },
+    "description": "World's cheapest high-performance humanoid at $1,370. Compact 94cm family-friendly robot with drag-and-drop programming, voice interaction, and JD.com ecosystem integration. Sold 500 units in 2 days.",
+    "officialUrl": "https://noetixrobotics.com",
+    "releaseDate": "2025-10-22",
+    "generalInfo": {
+      "manufacturer": "Noetix Robotics",
+      "modelName": "Bumi",
+      "releaseDate": "October 2025",
+      "dimensions": {
+        "standing": "94 cm",
+        "folded": "N/A",
+        "weight": "12 kg"
+      }
+    },
+    "keyFeatures": [
+      "World's cheapest high-performance humanoid at $1,370",
+      "Sold 100+ units in first hour, 500 in 2 days",
+      "$41 million Series B funding (November 2025)",
+      "Compact 94cm desktop-friendly size",
+      "Walking, running, and dancing capabilities",
+      "Drag-and-drop graphical programming (kid-friendly)",
+      "Voice interaction for companion scenarios",
+      "Educational focus with simple programming",
+      "Integration with JD.com Joy Inside 2.0 ecosystem",
+      "Open programming interfaces for developers",
+      "100% domestically sourced components (China)",
+      "1-2 hours runtime with 48V 3.5Ah battery"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "21 joints - knee/elbow flexion, torso twist, hip coordination",
+      "payloadCapacity": "N/A - designed for interaction, not payload",
+      "batteryCapacityRuntime": "48V battery, 3.5+ Ah capacity, 1-2 hours runtime",
+      "charger": "Standard 48V charging system",
+      "sensorsIncluded": [
+        "Voice interaction microphones",
+        "Visual sensors",
+        "Position encoders",
+        "Environmental sensors"
+      ],
+      "interfaces": [
+        "JD.com Joy Inside 2.0 integration",
+        "Open programming APIs",
+        "WiFi connectivity",
+        "Voice command interface"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Limited - proprietary educational platform",
+      "sdkLanguages": [
+        "Graphical drag-and-drop",
+        "Python (advanced)"
+      ],
+      "openSourceRepos": "Open programming interfaces available",
+      "aiFrameworksSupported": [
+        "JD.com AI ecosystem",
+        "Voice AI"
+      ],
+      "apiDocumentationQuality": "Educational documentation, Chinese-language primary",
+      "computingPlatform": "Rockchip processors for affordable computing"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Standard consumer warranty",
+        "coverage": "Manufacturing defects"
+      },
+      "postSalesSupport": "JD.com platform support, Noetix direct support",
+      "trackRecord": "Founded September 2023, $41M Series B funding from Vertex Ventures, 500 units sold in 2 days, Tsinghua/Zhejiang University team"
+    },
+    "targetAudience": "Families with children interested in STEM, K-12 educational institutions, hobbyists and makers, entry-level robotics enthusiasts",
+    "useCases": [
+      "STEM education and learning",
+      "Companion robot for families",
+      "Programming education for children",
+      "Interactive demonstrations",
+      "Hobby robotics projects",
+      "Educational institution labs"
+    ],
+    "highResPhotos": [
+      "/images/robots/noetix-bumi/bumi-1.webp",
+      "/images/robots/noetix-bumi/bumi-2.webp"
+    ],
+    "image": "/images/robots/noetix-bumi/bumi-1.webp",
+    "tags": [
+      "humanoid",
+      "affordable",
+      "family-friendly",
+      "education",
+      "STEM",
+      "kid-friendly",
+      "China",
+      "2025-release"
+    ],
+    "seo": {
+      "title": "Noetix Bumi - $1,370 World's Cheapest Humanoid Robot | Family STEM",
+      "description": "Noetix Bumi: World's cheapest high-performance humanoid at $1,370. Family-friendly with drag-and-drop programming, sold 500 units in 2 days. Perfect for STEM education.",
+      "keywords": [
+        "Noetix Bumi",
+        "world's cheapest humanoid robot",
+        "humanoid robot under $2000",
+        "family robot",
+        "STEM education robot",
+        "JD.com humanoid"
+      ]
+    }
   }
 ]

@@ -43,11 +43,12 @@ export default function CategoryBrowser({
       // Search query
       if (searchQuery) {
         const query = searchQuery.toLowerCase();
+        const features = robot.features || robot.keyFeatures || [];
         return (
           robot.name.toLowerCase().includes(query) ||
           robot.brand.toLowerCase().includes(query) ||
           robot.description.toLowerCase().includes(query) ||
-          robot.features?.some(feature => feature.toLowerCase().includes(query))
+          features.some(feature => feature.toLowerCase().includes(query))
         );
       }
 

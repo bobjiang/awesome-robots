@@ -34,13 +34,9 @@ export default function AISpecificationSummary({ robot }: AISpecificationSummary
     }
     
     // Use cases from features if available
-    if (robot.features && robot.features.length > 0) {
-      parts.push(`Key applications: ${robot.features.slice(0, 2).join(', ')}.`);
-    }
-    
-    // Key features
-    if (robot.keyFeatures && robot.keyFeatures.length > 0) {
-      parts.push(`Key features: ${robot.keyFeatures.slice(0, 3).join(', ')}.`);
+    const features = robot.features || robot.keyFeatures || [];
+    if (features.length > 0) {
+      parts.push(`Key features: ${features.slice(0, 3).join(', ')}.`);
     }
     
     // Price information
@@ -89,7 +85,8 @@ export default function AISpecificationSummary({ robot }: AISpecificationSummary
 
   const aiSummary = generateAISummary(robot);
   const keySpecs = generateKeySpecs(robot);
-  const useCase = robot.features?.[0] || robot.category;
+  const features = robot.features || robot.keyFeatures || [];
+  const useCase = features[0] || robot.category;
 
   return (
     <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-8">
