@@ -19,6 +19,8 @@ class VeliteWebpackPlugin {
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Support for both Turbopack (Next.js 16+) and webpack
+  turbopack: {},
   webpack: (config) => {
     config.plugins.push(new VeliteWebpackPlugin())
     return config
