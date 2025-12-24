@@ -76,7 +76,8 @@
       "Bash(tee:*)",
       "Bash(cat:*)",
       "Bash(git restore:*)",
-      "WebFetch(domain:standardbots.com)"
+      "WebFetch(domain:standardbots.com)",
+      "Bash(git checkout:*)"
     ],
     "deny": [],
     "defaultMode": "acceptEdits"
