@@ -77,7 +77,13 @@
       "Bash(cat:*)",
       "Bash(git restore:*)",
       "WebFetch(domain:standardbots.com)",
-      "Bash(git checkout:*)"
+      "Bash(git checkout:*)",
+      "Bash(wc:*)",
+      "Bash(ls:*)",
+      "Bash(xargs:*)",
+      "Bash(npm uninstall:*)",
+      "Bash(npx sharp-cli:*)",
+      "Bash(NODE_OPTIONS=\"--trace-warnings\" npm run build:*)"
     ],
     "deny": [],
     "defaultMode": "acceptEdits"

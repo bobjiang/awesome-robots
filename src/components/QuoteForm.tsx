@@ -1,12 +1,17 @@
 'use client';
 
 import { useState } from 'react';
-import { useForm } from 'formbold-react';
 
 interface QuoteFormProps {
   robotName: string;
   robotBrand: string;
   onClose: () => void;
+}
+
+interface FormState {
+  submitting: boolean;
+  succeeded: boolean;
+  error: { status?: number; message?: string } | null;
 }
 
 export default function QuoteForm({ robotName, robotBrand, onClose }: QuoteFormProps) {
@@ -19,7 +24,11 @@ export default function QuoteForm({ robotName, robotBrand, onClose }: QuoteFormP
     message: ''
   });
 
-  const [state, handleSubmit] = useForm('3jKgm');
+  const [state, setState] = useState<FormState>({
+    submitting: false,
+    succeeded: false,
+    error: null
+  });
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -31,9 +40,32 @@ export default function QuoteForm({ robotName, robotBrand, onClose }: QuoteFormP
 
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    await handleSubmit(e);
-    if (state.succeeded) {
-      onClose();
+    setState({ submitting: true, succeeded: false, error: null });
+
+    try {
+      const response = await fetch('https://formbold.com/s/3jKgm', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setState({ submitting: false, succeeded: true, error: null });
+      } else {
+        setState({
+          submitting: false,
+          succeeded: false,
+          error: { status: response.status, message: 'Failed to send request. Please try again.' }
+        });
+      }
+    } catch (error) {
+      setState({
+        submitting: false,
+        succeeded: false,
+        error: { message: 'Network error. Please check your connection and try again.' }
+      });
     }
   };
 

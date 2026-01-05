@@ -22,6 +22,24 @@ export interface ProductSchema {
       "@type": "Organization";
       name: string;
     };
+  } | {
+    "@type": "AggregateOffer";
+    lowPrice: string;
+    highPrice: string;
+    priceCurrency: "USD";
+    offerCount: string;
+    offers: Array<{
+      "@type": "Offer";
+      name: string;
+      price: string;
+      priceCurrency: "USD";
+      availability: "https://schema.org/InStock" | "https://schema.org/OutOfStock";
+      url: string;
+      seller: {
+        "@type": "Organization";
+        name: string;
+      };
+    }>;
   };
   aggregateRating?: {
     "@type": "AggregateRating";
@@ -459,5 +477,71 @@ export function generateCategoryFAQSchema(category: string): FAQSchema {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     mainEntity: categoryQuestions[category] || categoryQuestions.humanoid
+  };
+}
+
+// ItemList Schema for category and brand pages
+export interface ItemListSchema {
+  "@context": "https://schema.org";
+  "@type": "ItemList";
+  name: string;
+  description: string;
+  numberOfItems: number;
+  itemListElement: Array<{
+    "@type": "ListItem";
+    position: number;
+    url: string;
+    name: string;
+    image?: string;
+  }>;
+}
+
+export function generateItemListSchema(
+  items: Array<{id: string, name: string, brand: string, images?: string[]}>,
+  listName: string,
+  listDescription: string,
+  baseUrl: string
+): ItemListSchema {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: listName,
+    description: listDescription,
+    numberOfItems: items.length,
+    itemListElement: items.slice(0, 20).map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      url: `${baseUrl}/robots/${item.id}`,
+      name: `${item.brand} ${item.name}`,
+      image: item.images && item.images.length > 0 ? item.images[0] : undefined
+    }))
+  };
+}
+
+// ImageObject Schema for better image SEO
+export interface ImageObjectSchema {
+  "@context": "https://schema.org";
+  "@type": "ImageObject";
+  url: string;
+  width?: string;
+  height?: string;
+  caption?: string;
+  description?: string;
+}
+
+export function generateImageObjectSchema(
+  imageUrl: string,
+  caption?: string,
+  width?: string,
+  height?: string
+): ImageObjectSchema {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ImageObject",
+    url: imageUrl,
+    caption: caption,
+    description: caption,
+    ...(width && { width }),
+    ...(height && { height })
   };
 }

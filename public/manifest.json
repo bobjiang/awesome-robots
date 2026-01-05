@@ -1,17 +1,30 @@
 {
   "name": "Awesome Robots",
   "short_name": "AwesomeRobots",
-  "description": "AI-Powered Robot Catalog",
+  "description": "AI-Powered Robot Catalog - Browse and compare humanoid, quadruped robots, and accessories",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#2563eb",
   "orientation": "portrait-primary",
+  "categories": ["technology", "robotics", "ai"],
   "icons": [
     {
       "src": "/favicon.ico",
       "sizes": "32x32",
-      "type": "image/x-icon"
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
 }

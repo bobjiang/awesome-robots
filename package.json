@@ -8,6 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "analyze": "ANALYZE=true next build",
     "validate-data": "node scripts/validate-robot-data.cjs",
     "update-configs": "node scripts/update-image-patterns.cjs",
     "organize-brands": "node scripts/organize-by-brands.cjs",
@@ -19,7 +20,6 @@
   "dependencies": {
     "@tailwindcss/typography": "^0.5.16",
     "dotenv": "^17.2.2",
-    "formbold-react": "^1.1.1",
     "gray-matter": "^4.0.3",
     "next": "^16.0.10",
     "react": "^19.2.3",
@@ -30,6 +30,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@next/bundle-analyzer": "^16.1.1",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",

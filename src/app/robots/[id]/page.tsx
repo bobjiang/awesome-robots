@@ -21,9 +21,15 @@ interface RobotDetailPageProps {
   params: Promise<{ id: string }>;
 }
 
-// Temporarily disable static generation due to formbold-react SSR incompatibility
-// Pages will be server-rendered on-demand instead
-// TODO: Replace formbold-react with SSR-compatible form solution
+// Keep dynamic rendering due to Next.js 16 static generation bug
+// Investigation findings:
+// - Error: "Cannot destructure property 'auth' of 'a' as it is undefined"
+// - Happens during prerendering of specific robots (limx-w1, swiss-mile-rivr, weilan-alphadog, etc.)
+// - First 58 robots build successfully
+// - Error occurs in minified server chunks - difficult to debug
+// - Not related to: formbold-react, QuoteForm, RobotQuoteButton, or our code
+// - Likely a Next.js 16.0.10 bug or dependency conflict
+// TODO: Retry after Next.js updates or migrate to Next.js 15
 export const dynamic = 'force-dynamic';
 
 // Generate metadata for SEO optimization
