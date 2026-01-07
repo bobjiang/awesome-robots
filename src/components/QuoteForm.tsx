@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { validateQuoteForm } from '@/lib/validations/quote';
 
 interface QuoteFormProps {
   robotName: string;
@@ -12,6 +13,7 @@ interface FormState {
   submitting: boolean;
   succeeded: boolean;
   error: { status?: number; message?: string } | null;
+  fieldErrors: Record<string, string>;
 }
 
 export default function QuoteForm({ robotName, robotBrand, onClose }: QuoteFormProps) {
@@ -27,7 +29,8 @@ export default function QuoteForm({ robotName, robotBrand, onClose }: QuoteFormP
   const [state, setState] = useState<FormState>({
     submitting: false,
     succeeded: false,
-    error: null
+    error: null,
+    fieldErrors: {}
   });
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -40,7 +43,21 @@ export default function QuoteForm({ robotName, robotBrand, onClose }: QuoteFormP
 
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setState({ submitting: true, succeeded: false, error: null });
+    setState({ submitting: false, succeeded: false, error: null, fieldErrors: {} });
+
+    // Validate form data with Zod schema (T3 pattern)
+    const validation = validateQuoteForm(formData);
+    if (!validation.success) {
+      setState({
+        submitting: false,
+        succeeded: false,
+        error: { message: 'Please fix the errors below' },
+        fieldErrors: validation.errors || {}
+      });
+      return;
+    }
+
+    setState({ submitting: true, succeeded: false, error: null, fieldErrors: {} });
 
     try {
       const response = await fetch('https://formbold.com/s/3jKgm', {
@@ -48,23 +65,25 @@ export default function QuoteForm({ robotName, robotBrand, onClose }: QuoteFormP
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(validation.data),
       });
 
       if (response.ok) {
-        setState({ submitting: false, succeeded: true, error: null });
+        setState({ submitting: false, succeeded: true, error: null, fieldErrors: {} });
       } else {
         setState({
           submitting: false,
           succeeded: false,
-          error: { status: response.status, message: 'Failed to send request. Please try again.' }
+          error: { status: response.status, message: 'Failed to send request. Please try again.' },
+          fieldErrors: {}
         });
       }
     } catch (error) {
       setState({
         submitting: false,
         succeeded: false,
-        error: { message: 'Network error. Please check your connection and try again.' }
+        error: { message: 'Network error. Please check your connection and try again.' },
+        fieldErrors: {}
       });
     }
   };
@@ -158,9 +177,16 @@ export default function QuoteForm({ robotName, robotBrand, onClose }: QuoteFormP
                   value={formData.name}
                   onChange={handleInputChange}
                   required
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                  className={`w-full px-3 py-2 border rounded-md focus:ring-2 ${
+                    state.fieldErrors.name
+                      ? 'border-red-300 focus:ring-red-500 focus:border-red-500'
+                      : 'border-gray-300 focus:ring-blue-500 focus:border-blue-500'
+                  }`}
                   placeholder="Your full name"
                 />
+                {state.fieldErrors.name && (
+                  <p className="mt-1 text-sm text-red-600">{state.fieldErrors.name}</p>
+                )}
               </div>
               
               <div>
@@ -174,9 +200,16 @@ export default function QuoteForm({ robotName, robotBrand, onClose }: QuoteFormP
                   value={formData.email}
                   onChange={handleInputChange}
                   required
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                  className={`w-full px-3 py-2 border rounded-md focus:ring-2 ${
+                    state.fieldErrors.email
+                      ? 'border-red-300 focus:ring-red-500 focus:border-red-500'
+                      : 'border-gray-300 focus:ring-blue-500 focus:border-blue-500'
+                  }`}
                   placeholder="your.email@example.com"
                 />
+                {state.fieldErrors.email && (
+                  <p className="mt-1 text-sm text-red-600">{state.fieldErrors.email}</p>
+                )}
               </div>
             </div>
 
@@ -205,9 +238,16 @@ export default function QuoteForm({ robotName, robotBrand, onClose }: QuoteFormP
                 value={formData.message}
                 onChange={handleInputChange}
                 rows={4}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                className={`w-full px-3 py-2 border rounded-md focus:ring-2 ${
+                  state.fieldErrors.message
+                    ? 'border-red-300 focus:ring-red-500 focus:border-red-500'
+                    : 'border-gray-300 focus:ring-blue-500 focus:border-blue-500'
+                }`}
                 placeholder="Tell us about your project, requirements, or any specific questions..."
               />
+              {state.fieldErrors.message && (
+                <p className="mt-1 text-sm text-red-600">{state.fieldErrors.message}</p>
+              )}
             </div>
 
             <div className="pt-4">

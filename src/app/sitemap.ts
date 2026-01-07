@@ -3,9 +3,10 @@ import robotsData from '@/data/robots.json'
 import brandsData from '@/data/brands.json'
 import categoriesData from '@/data/categories.json'
 import { posts } from '../../.velite'
+import { env } from '@/env.mjs'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.awesomerobots.xyz'
+  const baseUrl = env.NEXT_PUBLIC_BASE_URL
   
   // Static pages
   const staticPages: MetadataRoute.Sitemap = [

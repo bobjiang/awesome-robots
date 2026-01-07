@@ -2,6 +2,7 @@ import Layout from '@/components/Layout';
 import Link from 'next/link';
 import Script from 'next/script';
 import { Metadata } from 'next';
+import { generateFAQPageSchema } from '@/lib/structured-data';
 
 export const metadata: Metadata = {
   title: 'Frequently Asked Questions | Awesome Robots',
@@ -45,19 +46,8 @@ const faqData = [
 ];
 
 export default function FAQPage() {
-  // Generate FAQ schema from actual page content
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqData.map(faq => ({
-      "@type": "Question",
-      name: faq.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: faq.answer
-      }
-    }))
-  };
+  // Generate FAQ schema from centralized structured-data library (T3 pattern)
+  const faqSchema = generateFAQPageSchema(faqData);
 
   return (
     <Layout>

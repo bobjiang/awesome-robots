@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { env } from "@/env.mjs";
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -29,7 +30,7 @@ export async function generateMetadata({ params }: BrandPageProps): Promise<Meta
     return { title: 'Brand Not Found | Awesome Robots' };
   }
 
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.awesomerobots.xyz';
+  const baseUrl = env.NEXT_PUBLIC_BASE_URL;
   const brandUrl = `${baseUrl}/brands/${brandId}`;
   const brandRobots = (robots as Robot[]).filter(r => r.brand.toLowerCase().replace(/\s+/g, '-') === brandId);
   const robotCount = brandRobots.length;
@@ -111,7 +112,7 @@ export default async function BrandPage({ params }: BrandPageProps) {
   }, {} as Record<string, Robot[]>);
 
   // Generate structured data
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.awesomerobots.xyz';
+  const baseUrl = env.NEXT_PUBLIC_BASE_URL;
   const breadcrumbItems = [
     { name: 'Home', url: '/' },
     { name: 'Brands', url: '/brands' },

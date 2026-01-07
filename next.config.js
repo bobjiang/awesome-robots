@@ -1,5 +1,7 @@
 import { build } from 'velite'
 import bundleAnalyzer from '@next/bundle-analyzer'
+// Validate environment variables at build time (T3 pattern)
+import './src/env.mjs'
 
 const withBundleAnalyzer = bundleAnalyzer({
   enabled: process.env.ANALYZE === 'true',

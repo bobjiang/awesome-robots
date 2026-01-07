@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation'
+import { env } from "@/env.mjs";
 import { posts, authors } from '#site/content'
 import Layout from '@/components/Layout'
 import BlogPost from '@/components/blog/BlogPost'
@@ -68,7 +69,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     .slice(0, 3)
 
   // Generate structured data
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.awesomerobots.xyz';
+  const baseUrl = env.NEXT_PUBLIC_BASE_URL;
   const postUrl = `${baseUrl}/blog/${post.slug}`;
   const wordCount = post.content ? post.content.split(/\s+/).length : 1000;
   

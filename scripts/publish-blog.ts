@@ -24,7 +24,9 @@ class BlogPublisher {
 
   constructor() {
     this.devtoClient = new DevToClient();
-    this.converter = new BlogConverter(process.env.NEXT_PUBLIC_BASE_URL);
+    this.converter = new BlogConverter(
+      process.env.NEXT_PUBLIC_BASE_URL || 'https://www.awesomerobots.xyz'
+    );
     this.contentDir = path.join(process.cwd(), 'content', 'blog');
   }
 

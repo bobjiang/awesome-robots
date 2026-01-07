@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { env } from "@/env.mjs";
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Script from 'next/script';
@@ -25,7 +26,7 @@ export async function generateMetadata({ params }: ComparisonPageProps): Promise
     return { title: 'Comparison Not Found | Awesome Robots' };
   }
 
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.awesomerobots.xyz';
+  const baseUrl = env.NEXT_PUBLIC_BASE_URL;
   const comparisonUrl = `${baseUrl}/compare/${comparison}`;
 
   return {
@@ -70,7 +71,7 @@ export default async function ComparisonPage({ params }: ComparisonPageProps) {
     notFound();
   }
 
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.awesomerobots.xyz';
+  const baseUrl = env.NEXT_PUBLIC_BASE_URL;
   const breadcrumbItems = [
     { name: 'Home', url: '/' },
     { name: 'Comparisons', url: '/compare' },

@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { env } from "@/env.mjs";
 import Link from 'next/link';
 import Script from 'next/script';
 import Layout from '@/components/Layout';
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
 };
 
 export default function QuadrupedRobotsPage() {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.awesomerobots.xyz';
+  const baseUrl = env.NEXT_PUBLIC_BASE_URL;
 
   // Filter quadruped robots and sort by price
   const quadrupedRobots = (robots as Robot[])

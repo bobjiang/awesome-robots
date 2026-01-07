@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
+import { env } from "@/env.mjs";
+import { ErrorBoundary } from "@/components/ErrorBoundary";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -24,7 +26,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Awesome Robots Team" }],
   creator: "Awesome Robots",
   publisher: "Awesome Robots",
-  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://www.awesomerobots.xyz'),
+  metadataBase: new URL(env.NEXT_PUBLIC_BASE_URL),
   alternates: {
     canonical: '/',
   },
@@ -96,8 +98,11 @@ export default function RootLayout({
             gtag('config', 'G-88F0E7K5RF');
           `}
         </Script>
-        
-        {children}
+
+        {/* Error Boundary for graceful error handling (T3 pattern) */}
+        <ErrorBoundary>
+          {children}
+        </ErrorBoundary>
       </body>
     </html>
   );

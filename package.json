@@ -18,10 +18,11 @@
     "digest-and-publish": "tsx scripts/generate-digest.ts --publish-draft"
   },
   "dependencies": {
+    "@t3-oss/env-nextjs": "^0.13.10",
     "@tailwindcss/typography": "^0.5.16",
     "dotenv": "^17.2.2",
     "gray-matter": "^4.0.3",
-    "next": "^16.0.10",
+    "next": "^16.1.1",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
     "tsx": "^4.20.5",
@@ -36,7 +37,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "^16.0.10",
+    "eslint-config-next": "^16.1.1",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

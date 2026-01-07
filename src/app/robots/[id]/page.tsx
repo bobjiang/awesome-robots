@@ -14,6 +14,7 @@ import { Robot } from '@/types/robot';
 import { generateProductSchema, generateBreadcrumbSchema, generateRobotFAQSchema } from '@/lib/structured-data';
 import { formatPrice } from '@/utils/price-utils';
 import { getFirstImage } from '@/utils/image-utils';
+import { env } from '@/env.mjs';
 import robots from '@/data/robots.json';
 import Link from 'next/link';
 
@@ -21,15 +22,13 @@ interface RobotDetailPageProps {
   params: Promise<{ id: string }>;
 }
 
-// Keep dynamic rendering due to Next.js 16 static generation bug
-// Investigation findings:
-// - Error: "Cannot destructure property 'auth' of 'a' as it is undefined"
-// - Happens during prerendering of specific robots (limx-w1, swiss-mile-rivr, weilan-alphadog, etc.)
-// - First 58 robots build successfully
-// - Error occurs in minified server chunks - difficult to debug
-// - Not related to: formbold-react, QuoteForm, RobotQuoteButton, or our code
-// - Likely a Next.js 16.0.10 bug or dependency conflict
-// TODO: Retry after Next.js updates or migrate to Next.js 15
+// KNOWN ISSUE: Next.js 16 Static Generation Bug
+// Error: "Cannot destructure property 'auth' of 'a' as it is undefined"
+// Occurs during prerendering of specific robots (limx-w1, swiss-mile-rivr, etc.)
+// Tested with Next.js 16.0.10 and 16.1.1 - bug persists in both versions
+// Error happens in minified server chunks - not related to our code
+// Workaround: Use dynamic rendering until Next.js 17 or bug is fixed upstream
+// TODO: Retry with Next.js 17 when released
 export const dynamic = 'force-dynamic';
 
 // Generate metadata for SEO optimization
@@ -44,7 +43,7 @@ export async function generateMetadata({ params }: RobotDetailPageProps): Promis
     };
   }
 
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.awesomerobots.xyz';
+  const baseUrl = env.NEXT_PUBLIC_BASE_URL;
   const robotUrl = `${baseUrl}/robots/${robot.id}`;
   const imageUrl = getFirstImage(robot.images, robot.category);
   const absoluteImageUrl = imageUrl.startsWith('http') ? imageUrl : `${baseUrl}${imageUrl}`;
@@ -128,7 +127,7 @@ export default async function RobotDetailPage({ params }: RobotDetailPageProps) 
   }
 
   // Generate structured data for SEO
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.awesomerobots.xyz';
+  const baseUrl = env.NEXT_PUBLIC_BASE_URL;
   const productSchema = generateProductSchema(robot, baseUrl);
   const breadcrumbItems = [
     { name: 'Home', url: '/' },

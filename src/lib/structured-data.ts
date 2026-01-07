@@ -545,3 +545,24 @@ export function generateImageObjectSchema(
     ...(height && { height })
   };
 }
+
+/**
+ * Generate FAQ Page schema from custom FAQ data
+ * Use this for any page with frequently asked questions
+ */
+export function generateFAQPageSchema(
+  faqData: Array<{ question: string; answer: string }>
+): FAQSchema {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqData.map(faq => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer
+      }
+    }))
+  };
+}

@@ -2,7 +2,33 @@
  * Price Utility Functions
  *
  * Centralized utilities for formatting and handling robot prices
+ * Enhanced with Zod runtime validation (T3 pattern)
  */
+
+import { z } from 'zod';
+
+/**
+ * Zod schema for price values
+ * Accepts number, 'request', null, or undefined
+ */
+export const PriceSchema = z.union([
+  z.number().positive(),
+  z.literal('request'),
+  z.null(),
+  z.undefined()
+]);
+
+export type Price = z.infer<typeof PriceSchema>;
+
+/**
+ * Zod schema for price models
+ */
+export const PriceModelSchema = z.object({
+  name: z.string(),
+  price: z.union([z.number().positive(), z.literal('request')])
+});
+
+export type PriceModel = z.infer<typeof PriceModelSchema>;
 
 /**
  * Formats a price for display, handling multiple value types
@@ -15,11 +41,15 @@
  * formatPrice('request') // "Request Quote"
  * formatPrice(null) // "Request Quote"
  */
-export function formatPrice(price: number | 'request' | null | undefined): string {
-  if (price === 'request' || price === null || price === undefined) {
+export function formatPrice(price: unknown): string {
+  // Validate with Zod schema (runtime type checking)
+  const result = PriceSchema.safeParse(price);
+
+  if (!result.success || result.data === 'request' || result.data === null || result.data === undefined) {
     return 'Request Quote';
   }
-  return `$${price.toLocaleString()}`;
+
+  return `$${result.data.toLocaleString()}`;
 }
 
 /**
@@ -61,9 +91,18 @@ export function isPriceAvailable(price: unknown): price is number {
  * getLowestPrice([{name: 'Basic', price: 1600}, {name: 'Pro', price: 2800}]) // 1600
  */
 export function getLowestPrice(
-  models: Array<{ name: string; price: number | 'request' }>
+  models: unknown
 ): number | 'request' {
-  const numericPrices = models
+  // Validate with Zod schema (runtime type checking)
+  const ModelsArraySchema = z.array(PriceModelSchema);
+  const result = ModelsArraySchema.safeParse(models);
+
+  if (!result.success) {
+    console.warn('Invalid price models data:', result.error);
+    return 'request';
+  }
+
+  const numericPrices = result.data
     .map(m => m.price)
     .filter((price): price is number => typeof price === 'number');
 
@@ -85,12 +124,16 @@ export function getLowestPrice(
  * robots.sort((a, b) => comparePrice(a.price.starting, b.price.starting))
  */
 export function comparePrice(
-  a: number | 'request' | null | undefined,
-  b: number | 'request' | null | undefined
+  a: unknown,
+  b: unknown
 ): number {
-  // Convert to numbers for comparison, treating non-numbers as Infinity
-  const aNum = isPriceAvailable(a) ? a : Infinity;
-  const bNum = isPriceAvailable(b) ? b : Infinity;
+  // Validate with Zod schema (runtime type checking)
+  const aResult = PriceSchema.safeParse(a);
+  const bResult = PriceSchema.safeParse(b);
+
+  // Convert to numbers for comparison, treating invalid/non-numbers as Infinity
+  const aNum = (aResult.success && isPriceAvailable(aResult.data)) ? aResult.data : Infinity;
+  const bNum = (bResult.success && isPriceAvailable(bResult.data)) ? bResult.data : Infinity;
 
   return aNum - bNum;
 }

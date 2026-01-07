@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { env } from "@/env.mjs";
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Script from 'next/script';
@@ -28,7 +29,7 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
     return { title: 'Category Not Found | Awesome Robots' };
   }
 
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.awesomerobots.xyz';
+  const baseUrl = env.NEXT_PUBLIC_BASE_URL;
   const categoryUrl = `${baseUrl}/categories/${categoryId}`;
   const categoryRobots = (robots as Robot[]).filter(r => r.category === categoryId);
   const robotCount = categoryRobots.length;
@@ -94,7 +95,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   const availableBrands = Array.from(new Set(categoryRobots.map((r: Robot) => r.brand)));
 
   // Generate structured data
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.awesomerobots.xyz';
+  const baseUrl = env.NEXT_PUBLIC_BASE_URL;
   const breadcrumbItems = [
     { name: 'Home', url: '/' },
     { name: 'Categories', url: '/categories' },
