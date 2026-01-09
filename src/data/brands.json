@@ -353,5 +353,32 @@
     "logo": "/images/brands/kscale-labs-logo.svg",
     "country": "USA",
     "founded": "2024"
+  },
+  {
+    "id": "mentee-robotics",
+    "name": "Mentee Robotics",
+    "description": "Israeli robotics company developing AI-first vertically integrated humanoid robots with Real2Sim2Real technology. Being acquired by Mobileye for $900M, MenteeBot features advanced scene understanding, autonomous task execution, and proprietary actuators for real-world usefulness and adaptability.",
+    "website": "https://www.menteebot.com/",
+    "logo": "/images/brands/mentee-robotics-logo.svg",
+    "country": "Israel",
+    "founded": "2020"
+  },
+  {
+    "id": "vinmotion",
+    "name": "VinMotion",
+    "description": "Vietnamese robotics company and Vingroup subsidiary developing humanoid robots for service applications. Motion 2 features 24/7 autonomous operation with self-charging, 40kg payload capacity, and multilingual AI communication powered by Qualcomm processors.",
+    "website": "https://vinmotion.net/",
+    "logo": "/images/brands/vinmotion-logo.svg",
+    "country": "Vietnam",
+    "founded": "2022"
+  },
+  {
+    "id": "pollen-robotics",
+    "name": "Pollen Robotics",
+    "description": "French robotics company acquired by Hugging Face, specializing in open-source humanoid robots for research and education. Reachy 2 features modular design, VR teleoperation, ROS2 integration, and serves as a platform for embodied AI experiments at top universities.",
+    "website": "https://www.pollen-robotics.com/",
+    "logo": "/images/brands/pollen-robotics-logo.svg",
+    "country": "France",
+    "founded": "2016"
   }
 ]

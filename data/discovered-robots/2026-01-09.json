@@ -1,0 +1,117 @@
+{
+  "fetch_date": "2026-01-09T00:30:00.000Z",
+  "week_range": "Jan 2–8",
+  "summary": {
+    "total_discovered": 6,
+    "duplicates_filtered": 1,
+    "new_robots": 5,
+    "quality_breakdown": {
+      "high": 3,
+      "medium": 2,
+      "low": 0
+    },
+    "source_breakdown": {
+      "ieee": 0,
+      "robotreport": 5,
+      "arxiv": 0
+    }
+  },
+  "robots": [
+    {
+      "company": "Mentee Robotics",
+      "robot_name": "MenteeBot",
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": "https://www.therobotreport.com/wp-content/uploads/2026/01/mentee-featured.jpg",
+      "specs_link": "https://www.menteebot.com/",
+      "source_link": "https://www.therobotreport.com/mobileye-to-acquire-mentee-robotics-for-900m-bid-dominate-physical-ai/",
+      "discovered_at": "2026-01-09T00:30:00.000Z",
+      "source_type": "robotreport",
+      "confidence_score": 95,
+      "quality_score": {
+        "overall": 92,
+        "completeness": 100,
+        "reliability": 80,
+        "flags": []
+      },
+      "description": "AI-first vertically integrated humanoid with Real2Sim2Real technology, scene understanding, autonomous task execution, and proprietary actuators. Being acquired by Mobileye for $900M."
+    },
+    {
+      "company": "AGIBOT",
+      "robot_name": "A2",
+      "type": "humanoid",
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": "https://www.agibot.com/",
+      "source_link": "https://www.therobotreport.com/agibot-launches-genie-sim-3-0-robot-simulation-platform/",
+      "discovered_at": "2026-01-09T00:30:00.000Z",
+      "source_type": "robotreport",
+      "confidence_score": 85,
+      "quality_score": {
+        "overall": 70,
+        "completeness": 60,
+        "reliability": 80,
+        "flags": ["missing_image"]
+      },
+      "description": "Full-size humanoid robot from AGIBOT with 5,000 units mass-produced. Updated version released in December 2025."
+    },
+    {
+      "company": "VinMotion",
+      "robot_name": "Motion 2",
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": "https://vinmotion.net/product/motion-2",
+      "source_link": "https://www.therobotreport.com/qualcomm-introduces-general-purpose-architecture-for-robotics/",
+      "discovered_at": "2026-01-09T00:30:00.000Z",
+      "source_type": "robotreport",
+      "confidence_score": 90,
+      "quality_score": {
+        "overall": 75,
+        "completeness": 60,
+        "reliability": 90,
+        "flags": ["missing_image"]
+      },
+      "description": "Humanoid robot powered by Qualcomm Dragonwing IQ9 Series processor, displayed at CES 2026."
+    },
+    {
+      "company": "Booster",
+      "robot_name": "K1 Geek",
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": "https://www.booster.tech/booster-k1/",
+      "source_link": "https://www.therobotreport.com/qualcomm-introduces-general-purpose-architecture-for-robotics/",
+      "discovered_at": "2026-01-09T00:30:00.000Z",
+      "source_type": "robotreport",
+      "confidence_score": 85,
+      "quality_score": {
+        "overall": 70,
+        "completeness": 60,
+        "reliability": 80,
+        "flags": ["missing_image"]
+      },
+      "description": "Humanoid robot powered by Qualcomm Dragonwing IQ9 Series, demonstrating edge AI capabilities at CES 2026."
+    },
+    {
+      "company": "Pollen Robotics",
+      "robot_name": "Reachy 2",
+      "type": "humanoid",
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": "https://www.therobotreport.com/hugging-face-bridges-gap-between-ai-physical-world-pollen-robotics-acquisition/",
+      "source_link": "https://www.therobotreport.com/nvidia-releases-new-physical-ai-models-plus-autonomous-vehicle-tools/",
+      "discovered_at": "2026-01-09T00:30:00.000Z",
+      "source_type": "robotreport",
+      "confidence_score": 90,
+      "quality_score": {
+        "overall": 75,
+        "completeness": 60,
+        "reliability": 90,
+        "flags": ["missing_image"]
+      },
+      "description": "Open-source humanoid robot that runs on NVIDIA Jetson Thor, integrated with Hugging Face LeRobot library for AI deployment."
+    }
+  ],
+  "errors": []
+}

@@ -83,7 +83,21 @@
       "Bash(xargs:*)",
       "Bash(npm uninstall:*)",
       "Bash(npx sharp-cli:*)",
-      "Bash(NODE_OPTIONS=\"--trace-warnings\" npm run build:*)"
+      "Bash(NODE_OPTIONS=\"--trace-warnings\" npm run build:*)",
+      "WebFetch(domain:create.t3.gg)",
+      "Bash(npm outdated:*)",
+      "Bash(npm run fetch-articles:*)",
+      "WebFetch(domain:www.menteebot.com)",
+      "WebFetch(domain:www.therobotreport.com)",
+      "WebFetch(domain:www.agibot.com)",
+      "WebFetch(domain:vinmotion.net)",
+      "WebFetch(domain:www.booster.tech)",
+      "WebFetch(domain:www.pollen-robotics.com)",
+      "WebFetch(domain:docs.pollen-robotics.com)",
+      "WebFetch(domain:humanoid.guide)",
+      "Bash(git pull:*)",
+      "Bash(git stash:*)",
+      "Bash(gh pr create:*)"
     ],
     "deny": [],
     "defaultMode": "acceptEdits"

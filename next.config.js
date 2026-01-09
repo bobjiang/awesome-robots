@@ -248,6 +248,13 @@ const nextConfig = {
         port: '',
         pathname: '/**',
       },
+      // Robot news sources
+      {
+        protocol: 'https',
+        hostname: 'www.therobotreport.com',
+        port: '',
+        pathname: '/wp-content/uploads/**',
+      },
     ],
   },
   experimental: {
