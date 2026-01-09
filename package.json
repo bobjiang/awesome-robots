@@ -15,16 +15,24 @@
     "pre-build": "npm run validate-data && npm run update-configs",
     "publish-blog": "tsx scripts/publish-blog.ts",
     "generate-digest": "tsx scripts/generate-digest.ts",
-    "digest-and-publish": "tsx scripts/generate-digest.ts --publish-draft"
+    "digest-and-publish": "tsx scripts/generate-digest.ts --publish-draft",
+    "fetch-articles": "tsx scripts/fetch-articles.ts",
+    "fetch-robots": "tsx scripts/fetch-robots.ts",
+    "fetch-robots:dry-run": "tsx scripts/fetch-robots.ts --dry-run",
+    "fetch-robots:single": "tsx scripts/fetch-robots.ts --source"
   },
   "dependencies": {
     "@t3-oss/env-nextjs": "^0.13.10",
     "@tailwindcss/typography": "^0.5.16",
+    "cheerio": "^1.1.2",
     "dotenv": "^17.2.2",
+    "fastest-levenshtein": "^1.0.16",
     "gray-matter": "^4.0.3",
+    "html-to-text": "^9.0.5",
     "next": "^16.1.1",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
+    "rss-parser": "^3.13.0",
     "tsx": "^4.20.5",
     "velite": "^0.2.4",
     "zod": "^4.0.17"
@@ -33,6 +41,7 @@
     "@eslint/eslintrc": "^3",
     "@next/bundle-analyzer": "^16.1.1",
     "@tailwindcss/postcss": "^4",
+    "@types/html-to-text": "^9.0.4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
