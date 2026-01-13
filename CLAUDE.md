@@ -19,9 +19,15 @@ Key characteristics:
 ### Core Development
 ```bash
 npm run dev        # Start development server (uses --turbopack)
-npm run build      # Build production application  
+npm run build      # Build production application
 npm run start      # Start production server
 npm run lint       # Run ESLint for code quality
+```
+
+### Robot Discovery
+```bash
+npm run fetch-articles              # Collect articles from RSS/arXiv (runs weekly via GitHub Actions)
+npm run fetch-articles -- --dry-run # Preview without saving
 ```
 
 ### Content Management
@@ -50,9 +56,14 @@ The project uses **Velite** for markdown-based content:
 #### Core Data Sources
 Robot data is centralized in JSON files with TypeScript interfaces:
 - `src/data/robots.json` - Complete robot specifications and metadata
-- `src/data/brands.json` - Brand information and official websites  
+- `src/data/brands.json` - Brand information and official websites
 - `src/data/categories.json` - Product categories with descriptions
 - `src/types/robot.ts` - Comprehensive TypeScript interfaces
+
+#### Discovery Data (Weekly Automation)
+- `data/collected-articles/YYYY-MM-DD.json` - Weekly collected articles from RSS/arXiv
+- `data/discovered-robots/YYYY-MM-DD.json` - Extracted robot data awaiting review
+- `src/types/discovered-robot.ts` - TypeScript interfaces for discoveries
 
 #### Content Management
 ```
@@ -142,10 +153,28 @@ remotePatterns: [
 ## Data Management Patterns
 
 ### Adding New Robots
-1. Add robot data to `src/data/robots.json` following the `Robot` interface
-2. Download and add high-resolution images to `public/images/robots/`
-3. Update `src/data/brands.json` if introducing a new brand
-4. Robot automatically appears in sitemap and relevant category pages
+
+**Automated Discovery (Preferred)**
+New robots are discovered weekly through the automated system (see "Weekly Robot Discovery System" section). When processing discoveries:
+
+1. **Research specifications** from official websites using Task tool
+2. **Download ALL images locally** to `public/images/robots/[brand]-[model]/`
+   - Never use remote URLs in `robots.json`
+   - Use curl or browser to download high-res images
+   - Name files sequentially: `robot-1.jpg`, `robot-2.jpg`, etc.
+3. **Add complete specifications** following `RobotDetailTemplate.tsx` schema
+   - All fields required: generalInfo, keyFeatures, hardwareBuildQuality, softwareEcosystem, supplierReliability
+   - Minimum 12 keyFeatures bullet points
+   - Include dimensions with standing height and weight
+4. **Update `src/data/brands.json`** if introducing a new brand
+5. **Add to `src/data/robots.json`** with complete data
+6. Robot automatically appears in sitemap and relevant category pages
+
+**Manual Addition**
+For robots not from automated discovery:
+1. Research official website for complete specifications
+2. Follow same process as automated discovery above
+3. Ensure all required fields from `Robot` interface are complete
 
 ### Adding New Brands
 1. Add brand to `src/data/brands.json` with logo and description
@@ -159,6 +188,222 @@ remotePatterns: [
 2. Follow the schema defined in `velite.config.ts`
 3. Required fields: `title`, `date`, `author`, `category`, `tags`, `excerpt`
 4. Content is automatically processed and type-checked during build
+
+## Weekly Robot Discovery System
+
+This project includes an automated weekly system to discover new robots from industry sources.
+
+### Architecture Overview
+
+```
+Weekly GitHub Actions (Friday 10 AM UTC)
+    ↓
+Collect articles from RSS/arXiv
+    ↓
+Save to data/collected-articles/YYYY-MM-DD.json
+    ↓
+Create GitHub Issue reminder
+    ↓
+Manual processing with Claude Code Pro
+    ↓
+Extract robot data → data/discovered-robots/YYYY-MM-DD.json
+    ↓
+Manual review and enrichment
+    ↓
+Add approved robots to src/data/robots.json
+```
+
+### Data Sources
+- **IEEE TV RSS**: https://ieeetv.ieee.org/channel_rss/channel_77/rss
+- **The Robot Report RSS**: https://www.therobotreport.com/feed/
+- **arXiv cs.RO**: https://arxiv.org/list/cs.RO/new
+
+### Automation Scripts
+
+#### `npm run fetch-articles`
+Automated article collection script that runs weekly:
+- Fetches articles from last 7 days from all sources
+- Saves to `data/collected-articles/YYYY-MM-DD.json`
+- No API costs, no LLM calls
+- Runs automatically via GitHub Actions
+
+**Manual usage:**
+```bash
+npm run fetch-articles              # Collect from all sources
+npm run fetch-articles -- --dry-run # Preview without saving
+```
+
+### Processing Workflow with Claude Code Pro
+
+**Step 1: Wait for GitHub Issue**
+- Every Friday at 10 AM UTC, GitHub Actions collects articles
+- A GitHub Issue is created with a reminder to process discoveries
+- Review the collected articles in `data/collected-articles/YYYY-MM-DD.json`
+
+**Step 2: Extract Robot Data**
+Use Claude Code Pro to process the collected articles:
+```
+Ask Claude Code: "Please extract robot information from
+@data/collected-articles/YYYY-MM-DD.json and save structured
+data to data/discovered-robots/YYYY-MM-DD.json"
+```
+
+Claude will extract:
+- `company`: Manufacturer name
+- `robot_name`: Official product/prototype name
+- `type`: "humanoid" | "quadruped" | null
+- `status`: "research" | "prototype" | "commercial"
+- `image_link`: Image URL if found
+- `specs_link`: Official specifications page
+- `source_link`: Original article URL
+- `description`: Brief 1-sentence summary
+- `confidence_score`: 0-100 confidence rating
+- `quality_score`: Completeness and reliability metrics
+
+**Step 3: Add to Website**
+Ask Claude Code to add discovered robots:
+```
+Ask Claude Code: "Add the new robots from
+@data/discovered-robots/YYYY-MM-DD.json to our website.
+Get full specs from official websites and download all images locally."
+```
+
+### Critical Best Practices
+
+#### 1. Always Download Images Locally
+**DO NOT** use remote image URLs in `robots.json`. Always:
+```bash
+# Create directory
+mkdir -p public/images/robots/[brand]-[model]
+
+# Download image
+curl -L "https://example.com/robot.jpg" -o public/images/robots/[brand]-[model]/robot-1.jpg
+
+# Use local path in robots.json
+"images": ["/images/robots/[brand]-[model]/robot-1.jpg"]
+```
+
+**Why?** Local images ensure:
+- Faster load times with Next.js optimization
+- No broken images if external sites change
+- Full control over image quality and format
+- Better SEO with local assets
+
+#### 2. Complete Specifications Required
+Every robot entry MUST include all fields from `RobotDetailTemplate.tsx`:
+- `generalInfo`: manufacturer, modelName, dimensions (standing height, weight)
+- `keyFeatures`: Array of 12+ bullet points
+- `hardwareBuildQuality`: DOF, payload, battery, sensors, interfaces
+- `softwareEcosystem`: ROS support, SDK languages, AI frameworks, documentation quality
+- `supplierReliability`: warranty, post-sales support, track record
+- `specifications`: Detailed technical specs (processors, speed, etc.)
+- `features`: Short feature list for cards
+- `images`: Array of local image paths
+- `officialUrl`: Official product/company website
+- `description`: 2-3 sentence summary
+
+#### 3. Research Official Sources
+Before adding a robot, visit the official website to gather:
+- High-resolution product images
+- Complete technical specifications
+- Pricing information
+- Company background and founding year
+- Warranty and support details
+
+Use the Task tool with Explore subagent to research specifications:
+```
+Use Task tool: "Research complete specifications for [Robot Name]
+from [official-website.com]"
+```
+
+### Data File Structure
+
+#### Collected Articles (`data/collected-articles/YYYY-MM-DD.json`)
+```json
+{
+  "fetch_date": "2026-01-09T10:00:00.000Z",
+  "week_range": "Jan 2–8",
+  "sources": {
+    "ieee": [...articles],
+    "robotreport": [...articles],
+    "arxiv": [...papers]
+  },
+  "summary": {
+    "total_articles": 24,
+    "ieee_count": 0,
+    "robotreport_count": 15,
+    "arxiv_count": 9
+  }
+}
+```
+
+#### Discovered Robots (`data/discovered-robots/YYYY-MM-DD.json`)
+```json
+{
+  "fetch_date": "2026-01-09T00:30:00.000Z",
+  "week_range": "Jan 2–8",
+  "summary": {
+    "total_discovered": 6,
+    "duplicates_filtered": 1,
+    "new_robots": 5,
+    "quality_breakdown": {"high": 3, "medium": 2, "low": 0}
+  },
+  "robots": [
+    {
+      "company": "Company Name",
+      "robot_name": "Robot Model",
+      "type": "humanoid",
+      "status": "commercial",
+      "confidence_score": 95,
+      "quality_score": {
+        "overall": 92,
+        "completeness": 100,
+        "reliability": 80,
+        "flags": []
+      }
+    }
+  ]
+}
+```
+
+### GitHub Actions Workflow
+
+**File**: `.github/workflows/weekly-robot-fetch.yml`
+
+**Trigger**:
+- Scheduled: Every Friday at 10:00 AM UTC (`cron: '0 10 * * 5'`)
+- Manual: Via `workflow_dispatch` in GitHub Actions UI
+
+**What it does:**
+1. Checks out repository
+2. Installs dependencies
+3. Runs `npm run fetch-articles`
+4. Commits collected articles to `data/collected-articles/`
+5. Creates GitHub Issue with reminder to process with Claude Code Pro
+
+**No API costs**: Uses only RSS/HTML parsing, no LLM API calls
+
+### Type Definitions
+
+See `src/types/discovered-robot.ts` for complete TypeScript interfaces:
+- `DiscoveredRobot`: Individual robot discovery data
+- `QualityScore`: Quality assessment metrics
+- `QualityFlag`: Data completeness flags
+- `FetchResult`: Complete fetch operation result
+- `FetchError`: Error tracking structure
+
+### Cost Efficiency
+
+This system is designed for **zero ongoing costs**:
+- ✅ Article collection: Free (RSS/HTML parsing only)
+- ✅ Data extraction: Free (uses Claude Code Pro subscription)
+- ✅ GitHub Actions: Free tier sufficient (< 5 min/week)
+- ❌ No Anthropic API usage
+- ❌ No external API dependencies
+
+**Comparison to API approach:**
+- API-based: ~$0.10-0.50/week (20 articles × LLM calls)
+- Current approach: $0/week (included in Claude Code Pro)
 
 ## Environment and Configuration
 
