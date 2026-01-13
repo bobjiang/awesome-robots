@@ -8463,7 +8463,10 @@
     },
     "softwareEcosystem": {
       "rosSupport": "Custom AI framework (VLA models)",
-      "sdkLanguages": ["Python", "Custom VLA interface"],
+      "sdkLanguages": [
+        "Python",
+        "Custom VLA interface"
+      ],
       "openSourceRepos": "No",
       "aiFrameworksSupported": [
         "Vision-Language-Action (VLA) models",
@@ -8569,7 +8572,10 @@
     },
     "softwareEcosystem": {
       "rosSupport": "Custom AI framework",
-      "sdkLanguages": ["Python", "Custom development tools"],
+      "sdkLanguages": [
+        "Python",
+        "Custom development tools"
+      ],
       "openSourceRepos": "No",
       "aiFrameworksSupported": [
         "NVIDIA Jetson Orin AI stack",
@@ -8666,7 +8672,9 @@
     },
     "softwareEcosystem": {
       "rosSupport": "Proprietary software",
-      "sdkLanguages": ["Custom in-house development"],
+      "sdkLanguages": [
+        "Custom in-house development"
+      ],
       "openSourceRepos": "No",
       "aiFrameworksSupported": [
         "Large Language Models (LLM)",
@@ -8770,7 +8778,11 @@
     },
     "softwareEcosystem": {
       "rosSupport": "Yes (ROS2 compatible)",
-      "sdkLanguages": ["Python", "C++", "ROS"],
+      "sdkLanguages": [
+        "Python",
+        "C++",
+        "ROS"
+      ],
       "openSourceRepos": "Yes (GitHub: RoboCup framework, open API/SDK)",
       "aiFrameworksSupported": [
         "Booster Agents platform",
@@ -8889,7 +8901,9 @@
     },
     "softwareEcosystem": {
       "rosSupport": "Yes (ROS2 Humble fully integrated)",
-      "sdkLanguages": ["Python"],
+      "sdkLanguages": [
+        "Python"
+      ],
       "openSourceRepos": "Yes (fully open-source, docs.pollen-robotics.com)",
       "aiFrameworksSupported": [
         "Hugging Face LeRobot library",
@@ -8931,5 +8945,819 @@
     ],
     "officialUrl": "https://www.pollen-robotics.com/reachy/",
     "description": "Reachy 2 is a fully open-source humanoid research platform by Pollen Robotics (Hugging Face). Features 14-21 DOF modular design, VR teleoperation (125ms latency), ROS2 Humble integration, and Hugging Face LeRobot library. With patented Orbita actuators, stereo vision, and Python SDK, it's deployed at Cornell and Carnegie Mellon for embodied AI research. Starting at $70,000."
+  },
+  {
+    "id": "agibot-a2-lite",
+    "name": "A2 Lite",
+    "brand": "AgiBot",
+    "category": "humanoid",
+    "price": {
+      "starting": "request",
+      "currency": "USD"
+    },
+    "generalInfo": {
+      "manufacturer": "AgiBot",
+      "modelName": "A2 Lite",
+      "dimensions": {
+        "standing": "169cm (H) × 75cm (W) × 30cm (L)",
+        "weight": "≈63kg"
+      }
+    },
+    "keyFeatures": [
+      "23 total degrees of freedom",
+      "Maximum knee joint torque: 270N·m",
+      "14-core high-performance CPU",
+      "14.4AH battery with 2 hours runtime",
+      "Dual encoders per joint",
+      "Self-balancing with anti-collision",
+      "5W speaker equipped",
+      "Smart OTA upgrade equipped",
+      "Handheld wireless controller",
+      "Local fan cooling system",
+      "Low-battery warning",
+      "12 months warranty"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "23 DOF (6 per leg + 5 per arm)",
+      "payloadCapacity": "Standard arm load",
+      "batteryCapacityRuntime": "14.4AH, ~2 hours",
+      "charger": "54V 10A",
+      "sensorsIncluded": [
+        "Dual encoders per joint",
+        "Balance sensors",
+        "Collision detection"
+      ],
+      "interfaces": [
+        "WiFi",
+        "Wireless controller"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Yes",
+      "sdkLanguages": [
+        "Python",
+        "C++"
+      ],
+      "openSourceRepos": "Contact manufacturer",
+      "aiFrameworksSupported": [
+        "Embodied AI"
+      ],
+      "apiDocumentationQuality": "Contact manufacturer"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "12 months",
+        "coverage": "Standard hardware"
+      },
+      "postSalesSupport": "Email: business@zhiyuan-robot.com",
+      "trackRecord": "Founded 2023, Shanghai-based"
+    },
+    "specifications": {
+      "height": "169cm",
+      "weight": "≈63kg",
+      "degreesOfFreedom": "23 DOF",
+      "maxKneeTorque": "270N·m",
+      "batteryCapacity": "14.4AH",
+      "runtime": "~2 hours",
+      "computingPower": "14-core CPU"
+    },
+    "features": [
+      "23 DOF",
+      "270N·m torque",
+      "14-core CPU",
+      "2-hour battery",
+      "Self-balancing",
+      "OTA upgrades"
+    ],
+    "images": [
+      "/images/robots/agibot-a2-lite/robot-1.jpg"
+    ],
+    "officialUrl": "https://www.agibot.com/products/A2_Pro",
+    "description": "AgiBot A2 Lite is a lightweight 23-DOF humanoid robot with 270N·m knee torque and 14-core CPU. Features self-balancing, wireless control, and 2-hour battery runtime for research and education."
+  },
+  {
+    "id": "agibot-a2-w",
+    "name": "A2-W",
+    "brand": "AgiBot",
+    "category": "humanoid",
+    "price": {
+      "starting": "request",
+      "currency": "USD"
+    },
+    "generalInfo": {
+      "manufacturer": "AgiBot",
+      "modelName": "A2-W",
+      "dimensions": {
+        "standing": "770(L) × 620(W) × 1630(H) mm, operating height 0-2m",
+        "weight": "230kg"
+      }
+    },
+    "keyFeatures": [
+      "22 total degrees of freedom including waist elevation/tilt",
+      "7 DOF bionic design arms",
+      "Four-wheel drive with zero turning radius",
+      "Crab-walking capability for tight spaces",
+      "5kg single arm load capacity",
+      "2kWh battery with 5 hours runtime",
+      "Hot-swappable battery replacement",
+      "360° LiDAR for full environment sensing",
+      "4 AI vision sensors for perception",
+      "2 six-dimensional force sensors",
+      "275T computing capacity",
+      "Millisecond-level object detection"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "22 DOF (including waist elevation/tilt)",
+      "payloadCapacity": "5kg per arm",
+      "batteryCapacityRuntime": "2kWh, 5 hours, hot-swappable",
+      "charger": "2 hours charging time",
+      "sensorsIncluded": [
+        "360° LiDAR",
+        "4x AI vision sensors",
+        "2x six-dimensional force sensors",
+        "Multi-sensor fusion"
+      ],
+      "interfaces": [
+        "275T computing platform",
+        "WiFi",
+        "Ethernet"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Yes (embodied atomic capabilities)",
+      "sdkLanguages": [
+        "Python",
+        "C++"
+      ],
+      "openSourceRepos": "Contact manufacturer",
+      "aiFrameworksSupported": [
+        "UniGrasp",
+        "Uni6DPose",
+        "UniPlug",
+        "Reinforcement learning"
+      ],
+      "apiDocumentationQuality": "Contact manufacturer"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "12 months",
+        "coverage": "Standard hardware"
+      },
+      "postSalesSupport": "Email: business@zhiyuan-robot.com",
+      "trackRecord": "Founded 2023, flexible manufacturing specialist"
+    },
+    "specifications": {
+      "dimensions": "770x620x1630mm",
+      "weight": "230kg",
+      "degreesOfFreedom": "22 DOF",
+      "armDOF": "7 per arm",
+      "armPayload": "5kg per arm",
+      "batteryCapacity": "2kWh",
+      "runtime": "5 hours",
+      "operatingTemp": "0-45°C",
+      "computingPower": "275T",
+      "driveSystem": "Four-wheel, zero turning radius"
+    },
+    "features": [
+      "22 DOF wheeled",
+      "5kg arm payload",
+      "360° LiDAR",
+      "5-hour battery",
+      "Hot-swappable",
+      "275T computing"
+    ],
+    "images": [
+      "/images/robots/agibot-a2-w/robot-1.png",
+      "/images/robots/agibot-a2-w/robot-2.png"
+    ],
+    "officialUrl": "https://www.agibot.com/products/A2_W",
+    "description": "AgiBot A2-W is a wheeled flexible manufacturing robot with 22 DOF and 7-DOF bionic arms. Features 360° LiDAR, 275T computing, 5kg payload per arm, and 5-hour hot-swappable battery for industrial automation."
+  },
+  {
+    "id": "agibot-x2",
+    "name": "X2",
+    "brand": "AgiBot",
+    "category": "humanoid",
+    "price": {
+      "starting": "request",
+      "currency": "USD"
+    },
+    "generalInfo": {
+      "manufacturer": "AgiBot",
+      "modelName": "X2",
+      "dimensions": {
+        "standing": "1310mm (H) × 460mm (W) × 210mm (L)",
+        "weight": "~35kg"
+      }
+    },
+    "keyFeatures": [
+      "25 total degrees of freedom",
+      "5 DOF per arm with 558mm reach",
+      "3 DOF waist for flexibility",
+      "6 DOF per leg for stable walking",
+      "Up to 1.8 m/s walking speed",
+      "3kg max payload (specific postures)",
+      "Interactive RGB camera with facial recognition",
+      "Head touch sensor for interaction",
+      "Microphone array and speaker",
+      "~500Wh battery with 2 hours runtime",
+      "Swappable battery supported",
+      "120N·m peak joint torque"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "25 DOF (5 per arm + 3 waist + 6 per leg)",
+      "payloadCapacity": "Max 3kg (specific postures), ≤1kg full range",
+      "batteryCapacityRuntime": "~500Wh, ~2 hours at 0.5m/s walking",
+      "charger": "≤1.5 hours, 100-220V input",
+      "sensorsIncluded": [
+        "Interactive RGB camera",
+        "Head touch sensor",
+        "Microphone array",
+        "Speaker"
+      ],
+      "interfaces": [
+        "RK3588 ×2",
+        "WiFi",
+        "Bluetooth",
+        "USB Type-A ×1, Type-C ×1"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Yes",
+      "sdkLanguages": [
+        "Python",
+        "C++"
+      ],
+      "openSourceRepos": "Contact manufacturer",
+      "aiFrameworksSupported": [
+        "Facial recognition",
+        "Object detection",
+        "Gesture recognition",
+        "Voice interaction"
+      ],
+      "apiDocumentationQuality": "Mobile app support, OTA updates"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "12 months",
+        "coverage": "Standard hardware"
+      },
+      "postSalesSupport": "Mobile app, email: business@zhiyuan-robot.com",
+      "trackRecord": "Founded 2023, consumer robotics focus"
+    },
+    "specifications": {
+      "height": "1310mm",
+      "weight": "~35kg",
+      "degreesOfFreedom": "25 DOF",
+      "armDOF": "5 per arm",
+      "waistDOF": "3",
+      "legDOF": "6 per leg",
+      "armReach": "558mm",
+      "maxSpeed": "1.8 m/s",
+      "payloadMax": "3kg",
+      "batteryCapacity": "~500Wh",
+      "runtime": "~2 hours",
+      "operatingTemp": "-10°C to 40°C"
+    },
+    "features": [
+      "25 DOF",
+      "1.8 m/s speed",
+      "Facial recognition",
+      "Voice interaction",
+      "2-hour battery",
+      "Swappable battery"
+    ],
+    "images": [
+      "/images/robots/agibot-x2/robot-1.jpg",
+      "/images/robots/agibot-x2/robot-2.jpg"
+    ],
+    "officialUrl": "https://www.agibot.com/products/X2",
+    "description": "AgiBot X2 is an intelligent agile humanoid with 25 DOF, 1.8 m/s walking speed, and multimodal interaction including facial recognition, voice, and gestures. Perfect for education, entertainment, and research."
+  },
+  {
+    "id": "agibot-x2-ultra",
+    "name": "X2 Ultra",
+    "brand": "AgiBot",
+    "category": "humanoid",
+    "price": {
+      "starting": "request",
+      "currency": "USD"
+    },
+    "generalInfo": {
+      "manufacturer": "AgiBot",
+      "modelName": "X2 Ultra",
+      "dimensions": {
+        "standing": "1310mm (H) × 460mm (W) × 210mm (L)",
+        "weight": "~39kg"
+      }
+    },
+    "keyFeatures": [
+      "30 total degrees of freedom (enhanced)",
+      "7 DOF per arm with 558mm reach",
+      "1 DOF neck for head movement",
+      "3D LiDAR for 3D SLAM",
+      "RGB-D camera for 3D spatial perception",
+      "Orin NX high-performance board (157 TOPS)",
+      "Front dual RGB + rear RGB cameras",
+      "Autonomous navigation capabilities",
+      "Automatic charging dock compatible",
+      "Secondary development supported",
+      "2x RJ45 LAN ports, Mini DP output",
+      "Up to 1.8 m/s walking speed"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "30 DOF (1 neck + 7 per arm + 3 waist + 6 per leg)",
+      "payloadCapacity": "Max 3kg (specific postures), ≤1kg full range",
+      "batteryCapacityRuntime": "~500Wh, ~2 hours at 0.5m/s",
+      "charger": "≤1.5 hours, optional auto-charging dock",
+      "sensorsIncluded": [
+        "3D LiDAR",
+        "RGB-D camera",
+        "Front dual RGB cameras",
+        "Rear RGB camera",
+        "Interactive camera",
+        "Head touch sensor",
+        "Microphone array"
+      ],
+      "interfaces": [
+        "RK3588 ×2",
+        "Orin NX (157 TOPS)",
+        "WiFi",
+        "Bluetooth",
+        "USB Type-A ×2, Type-C ×2",
+        "RJ45 ×2",
+        "Mini DP ×1"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Yes (ROS/ROS2)",
+      "sdkLanguages": [
+        "Python",
+        "C++"
+      ],
+      "openSourceRepos": "Contact manufacturer",
+      "aiFrameworksSupported": [
+        "3D SLAM",
+        "Autonomous navigation",
+        "Object detection",
+        "Facial recognition",
+        "Voice AI"
+      ],
+      "apiDocumentationQuality": "Full SDK for secondary development"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "12 months",
+        "coverage": "Standard hardware with developer support"
+      },
+      "postSalesSupport": "Developer support, email: business@zhiyuan-robot.com",
+      "trackRecord": "Founded 2023, advanced developer platform"
+    },
+    "specifications": {
+      "height": "1310mm",
+      "weight": "~39kg",
+      "degreesOfFreedom": "30 DOF",
+      "neckDOF": "1",
+      "armDOF": "7 per arm",
+      "waistDOF": "3",
+      "legDOF": "6 per leg",
+      "computingPower": "RK3588 ×2 + Orin NX (157 TOPS)",
+      "maxSpeed": "1.8 m/s",
+      "batteryCapacity": "~500Wh",
+      "runtime": "~2 hours",
+      "operatingTemp": "-10°C to 40°C"
+    },
+    "features": [
+      "30 DOF",
+      "3D LiDAR",
+      "Orin NX 157 TOPS",
+      "Autonomous navigation",
+      "Auto-charging dock",
+      "Developer SDK"
+    ],
+    "images": [
+      "/images/robots/agibot-x2/robot-1.jpg",
+      "/images/robots/agibot-x2/robot-2.jpg"
+    ],
+    "officialUrl": "https://www.agibot.com/products/X2",
+    "description": "AgiBot X2 Ultra is the developer edition with 30 DOF, 3D LiDAR, Orin NX computing (157 TOPS), and autonomous navigation. Features auto-charging dock, enhanced sensors, and full SDK for advanced robotics development."
+  },
+  {
+    "id": "agibot-d1-ultra",
+    "name": "D1 Ultra",
+    "brand": "AgiBot",
+    "category": "quadruped",
+    "price": {
+      "starting": "request",
+      "currency": "USD"
+    },
+    "generalInfo": {
+      "manufacturer": "AgiBot",
+      "modelName": "D1 Ultra",
+      "dimensions": {
+        "standing": "63x36x42cm",
+        "folded": "67x43x15cm",
+        "weight": "Contact for specifications"
+      }
+    },
+    "keyFeatures": [
+      "≈8kg static load capacity (limit ~10kg)",
+      "0-3.7m/s speed range (limit ~5m/s)",
+      "6km unloaded range at 1.8m/s",
+      "4km loaded range with 5kg payload",
+      "~3,500W peak output power",
+      "~48N·m joint motor peak torque",
+      "2kW/kg power density",
+      "≥30° maximum climbing angle",
+      "Up to 35cm jumping height",
+      "Continuous 16cm stair climbing",
+      "200h extreme environment operation",
+      "IP54 protection rating"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "12 DOF (3 per leg)",
+      "payloadCapacity": "≈8kg static, 5kg mobile",
+      "batteryCapacityRuntime": "6km unloaded / 4km with 5kg load",
+      "charger": "Standard charging",
+      "sensorsIncluded": [
+        "Supported: 3D radar",
+        "Depth camera",
+        "RTK",
+        "4G module",
+        "Image transmission",
+        "Follow-up modules"
+      ],
+      "interfaces": [
+        "Ethernet",
+        "USB",
+        "Power (12V/24V)",
+        "SBUS",
+        "UART"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Yes (URDF modeling)",
+      "sdkLanguages": [
+        "Open SDK"
+      ],
+      "openSourceRepos": "Open SDK for secondary development",
+      "aiFrameworksSupported": [
+        "Isaac Sim compatible",
+        "Mujoco simulation compatible"
+      ],
+      "apiDocumentationQuality": "Open SDK documentation"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "12 months",
+        "coverage": "Standard hardware"
+      },
+      "postSalesSupport": "Email: business@zhiyuan-robot.com",
+      "trackRecord": "Founded 2023, quadruped specialist"
+    },
+    "specifications": {
+      "standingDimensions": "63x36x42cm",
+      "foldedDimensions": "67x43x15cm",
+      "degreesOfFreedom": "12 DOF",
+      "staticLoad": "≈8kg (limit ~10kg)",
+      "mobileLoad": "5kg",
+      "speedRange": "0-3.7m/s (limit ~5m/s)",
+      "unloadedRange": "6km at 1.8m/s",
+      "loadedRange": "4km with 5kg",
+      "peakPower": "~3,500W",
+      "jointTorque": "~48N·m",
+      "powerDensity": "2kW/kg",
+      "maxClimbAngle": "≥30°",
+      "jumpHeight": "Up to 35cm",
+      "stairClimb": "Continuous 16cm",
+      "extremeEnvTime": "200h",
+      "protectionRating": "IP54",
+      "controlMode": "Dual encoding (calibration-free)"
+    },
+    "features": [
+      "12 DOF quadruped",
+      "3.7 m/s speed",
+      "35cm jump",
+      "IP54 protection",
+      "200h extreme ops",
+      "Open SDK"
+    ],
+    "images": [
+      "/images/robots/agibot-d1-ultra/robot-1.jpg",
+      "/images/robots/agibot-d1-ultra/robot-2.jpg"
+    ],
+    "officialUrl": "https://www.agibot.com/products/D1Ultra",
+    "description": "AgiBot D1 Ultra is a high-performance quadruped with 12 DOF, 3.7 m/s speed, 35cm jumping capability, and IP54 protection. Features 8kg payload, 6km range, Isaac Sim/Mujoco compatibility, and open SDK for all-terrain applications."
+  },
+  {
+    "id": "agibot-g1",
+    "name": "G1",
+    "brand": "AgiBot",
+    "category": "humanoid",
+    "price": {
+      "starting": "request",
+      "currency": "USD"
+    },
+    "generalInfo": {
+      "manufacturer": "AgiBot",
+      "modelName": "G1",
+      "dimensions": {
+        "standing": "130–180cm height × 70cm span",
+        "weight": "150kg"
+      }
+    },
+    "keyFeatures": [
+      "26 total degrees of freedom (excluding end-effector)",
+      "6 DOF per arm with precision control",
+      "6 DOF articulated hands or replaceable two-finger gripper",
+      "3kg continuous holding capacity per arm",
+      "Variable height from 130cm to 180cm",
+      "Can mount obstacles up to 20mm",
+      "8 high-resolution cameras (3× RGBD + 5× Fisheye)",
+      "Dual six-axis force sensors (one per arm)",
+      "Chassis with front/rear RGBD cameras + LiDAR",
+      "4+ hours runtime",
+      "Jetson AGX Orin 64GB processor",
+      "Millisecond-latency VR/motion capture control"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "26 DOF (excluding end-effector)",
+      "payloadCapacity": "3kg continuous holding per arm",
+      "batteryCapacityRuntime": "4+ hours",
+      "charger": "Standard charging system",
+      "sensorsIncluded": [
+        "3× RGBD cameras",
+        "5× Fisheye cameras",
+        "Dual six-axis force sensors",
+        "Chassis RGBD cameras",
+        "LiDAR",
+        "GPS"
+      ],
+      "interfaces": [
+        "Jetson AGX Orin 64GB",
+        "WiFi",
+        "Wired connection",
+        "VR interface"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Yes (ROS/ROS2)",
+      "sdkLanguages": [
+        "Python",
+        "C++"
+      ],
+      "openSourceRepos": "Contact manufacturer",
+      "aiFrameworksSupported": [
+        "NVIDIA Jetson AI",
+        "VR teleoperation",
+        "Motion capture"
+      ],
+      "apiDocumentationQuality": "Contact manufacturer"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "12 months",
+        "coverage": "Standard hardware"
+      },
+      "postSalesSupport": "Email: business@zhiyuan-robot.com",
+      "trackRecord": "Founded 2023, multi-scenario deployment specialist"
+    },
+    "specifications": {
+      "heightRange": "130–180cm",
+      "span": "70cm",
+      "weight": "150kg",
+      "degreesOfFreedom": "26 DOF",
+      "armDOF": "6 per arm",
+      "endEffectorDOF": "6 DOF articulated hands",
+      "armPayload": "3kg continuous",
+      "obstacleMount": "Up to 20mm",
+      "cameras": "3× RGBD + 5× Fisheye",
+      "forceSensors": "Dual six-axis (per arm)",
+      "runtime": "4+ hours",
+      "processor": "Jetson AGX Orin 64GB",
+      "controlLatency": "Millisecond-latency VR/motion capture",
+      "chassisType": "In-place rotation, 95% factory pathway compatibility",
+      "waist": "Bending, stretching, vertical adjustment",
+      "dataTransmission": "Wired, local asynchronous cloud backlog under 2 hours"
+    },
+    "features": [
+      "26 DOF",
+      "130-180cm height",
+      "6 DOF arms",
+      "3kg payload",
+      "Jetson Orin 64GB",
+      "4+ hour battery"
+    ],
+    "images": [
+      "/images/robots/agibot-g1/robot-1.png"
+    ],
+    "officialUrl": "https://www.agibot.com/products/G1",
+    "description": "AgiBot G1 is a versatile humanoid with 26 DOF and adjustable height (130-180cm). Features Jetson AGX Orin 64GB, 8 cameras, dual force sensors, 3kg per arm payload, and VR teleoperation for industrial, commercial, and domestic applications."
+  },
+  {
+    "id": "agibot-g2",
+    "name": "G2",
+    "brand": "AgiBot",
+    "category": "humanoid",
+    "price": {
+      "starting": "request",
+      "currency": "USD"
+    },
+    "generalInfo": {
+      "manufacturer": "AgiBot",
+      "modelName": "G2",
+      "dimensions": {
+        "standing": "Industrial-grade humanoid",
+        "weight": "Contact for specifications"
+      }
+    },
+    "keyFeatures": [
+      "Industrial-grade interactive embodied operation robot",
+      "100% automotive-grade components",
+      "Full machine protection: IP42 rating",
+      "Sub-millimeter precision assembly operations",
+      "Rapid deployment with Genie RL",
+      "Expressive facial animations",
+      "Human-like movements",
+      "Multi-user conversation capability",
+      "Eye-gaze tracking technology",
+      "Advanced AI integration",
+      "Industrial communication protocols",
+      "Certified for factory deployment"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "Contact for specifications",
+      "payloadCapacity": "Industrial-grade manipulation",
+      "batteryCapacityRuntime": "Contact for specifications",
+      "charger": "Industrial charging system",
+      "sensorsIncluded": [
+        "Eye-gaze tracking",
+        "Multi-camera system",
+        "Force sensors",
+        "Industrial sensors"
+      ],
+      "interfaces": [
+        "Industrial protocols",
+        "WiFi",
+        "Ethernet"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Yes (Industrial ROS)",
+      "sdkLanguages": [
+        "Python",
+        "C++"
+      ],
+      "openSourceRepos": "Contact manufacturer",
+      "aiFrameworksSupported": [
+        "Genie RL",
+        "Facial animation AI",
+        "Multi-user conversation AI"
+      ],
+      "apiDocumentationQuality": "Industrial documentation available"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "12 months industrial",
+        "coverage": "Automotive-grade coverage"
+      },
+      "postSalesSupport": "Email: business@zhiyuan-robot.com, on-site industrial support",
+      "trackRecord": "Founded 2023, industrial automation specialist"
+    },
+    "specifications": {
+      "buildQuality": "100% automotive-grade components",
+      "protectionRating": "IP42",
+      "precisionLevel": "Sub-millimeter assembly",
+      "deploymentSpeed": "Rapid with Genie RL",
+      "interactionFeatures": [
+        "Expressive facial animations",
+        "Human-like movements",
+        "Multi-user conversation",
+        "Eye-gaze tracking"
+      ],
+      "applications": [
+        "Industrial assembly",
+        "Manufacturing",
+        "Quality control",
+        "Human-robot collaboration"
+      ]
+    },
+    "features": [
+      "Automotive-grade",
+      "IP42 protected",
+      "Sub-mm precision",
+      "Genie RL",
+      "Facial animation",
+      "Multi-user AI"
+    ],
+    "images": [
+      "/images/robots/agibot-g2/robot-1.jpg",
+      "/images/robots/agibot-g2/robot-2.jpg"
+    ],
+    "officialUrl": "https://www.agibot.com/products/G2",
+    "description": "AgiBot G2 is an industrial-grade embodied operation robot with 100% automotive components and IP42 protection. Features sub-millimeter precision, Genie RL rapid deployment, expressive facial animations, and eye-gaze tracking for advanced manufacturing."
+  },
+  {
+    "id": "agibot-x1",
+    "name": "X1",
+    "brand": "AgiBot",
+    "category": "humanoid",
+    "price": {
+      "starting": "request",
+      "currency": "USD"
+    },
+    "generalInfo": {
+      "manufacturer": "AgiBot",
+      "modelName": "X1",
+      "dimensions": {
+        "standing": "130cm height",
+        "weight": "33kg"
+      }
+    },
+    "keyFeatures": [
+      "Full-stack open-source robot platform",
+      "34 active degrees of freedom",
+      "0.5kg single arm load capacity",
+      "2 hours runtime",
+      "1 m/s maximum walking speed",
+      "Modular design for easy customization",
+      "High integrated FOC drive",
+      "Multi-turn absolute value encoding",
+      "Hollow wiring for clean cable management",
+      "OmniPicker gripper with 30N clamping force",
+      "Domain Controller DCU with 1kHz real-time communication",
+      "EtherCAT to 3-way FDCAN communication"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "34 active DOF",
+      "payloadCapacity": "0.5kg per arm",
+      "batteryCapacityRuntime": "2 hours",
+      "charger": "48V DC charging system",
+      "sensorsIncluded": [
+        "Multi-turn absolute encoders",
+        "Force sensors",
+        "Vision sensors"
+      ],
+      "interfaces": [
+        "EtherCAT",
+        "FDCAN (5Mbps)",
+        "48V DC",
+        "24V DC",
+        "12-30V DC"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Yes (Open-source)",
+      "sdkLanguages": [
+        "Python",
+        "C++"
+      ],
+      "openSourceRepos": "Yes (Full open-source platform)",
+      "aiFrameworksSupported": [
+        "Open-source AI frameworks",
+        "Custom development supported"
+      ],
+      "apiDocumentationQuality": "Comprehensive open-source documentation"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "12 months",
+        "coverage": "Standard hardware"
+      },
+      "postSalesSupport": "Email: business@zhiyuan-robot.com, community forums",
+      "trackRecord": "Founded 2023, open-source robotics advocate"
+    },
+    "specifications": {
+      "height": "130cm",
+      "weight": "33kg",
+      "degreesOfFreedom": "34 active DOF",
+      "armLoad": "0.5kg per arm",
+      "runtime": "2 hours",
+      "maxWalkingSpeed": "1 m/s",
+      "motorTypes": {
+        "R86-3": "Φ86×80.7mm, 200N·m peak, 60N·m rated, 85rpm peak",
+        "R86-2": "Φ86×58.1mm, 80N·m peak, 20N·m rated, 260rpm max",
+        "R52": "Φ52×71.6mm, 19N·m peak, 6N·m rated, 130rpm max",
+        "L28": "Linear actuator, 110N max thrust, 50mm/s speed"
+      },
+      "controller": "DCU with 1kHz real-time communication, 100Mbps rate",
+      "gripper": "OmniPicker, 30N clamping, 120mm stroke, 0.7s open/close",
+      "communication": "EtherCAT to 3-way FDCAN (5Mbps), supports up to 16 DCUs cascade",
+      "designPhilosophy": "Modular, High DOF, Safe, Lightweight, Highly Scalable"
+    },
+    "features": [
+      "34 DOF",
+      "Open-source",
+      "1 m/s speed",
+      "Modular design",
+      "EtherCAT",
+      "OmniPicker gripper"
+    ],
+    "images": [
+      "/images/robots/agibot-x1/robot-1.png",
+      "/images/robots/agibot-x1/robot-2.png"
+    ],
+    "officialUrl": "https://www.agibot.com/products/X1",
+    "description": "AgiBot X1 is a full-stack open-source humanoid with 34 DOF and modular design. Features PowerFlow actuators, OmniPicker gripper, EtherCAT communication, and comprehensive open-source platform for research and education at 130cm height and 33kg weight."
   }
 ]
