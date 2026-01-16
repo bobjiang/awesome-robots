@@ -9759,5 +9759,783 @@
     ],
     "officialUrl": "https://www.agibot.com/products/X1",
     "description": "AgiBot X1 is a full-stack open-source humanoid with 34 DOF and modular design. Features PowerFlow actuators, OmniPicker gripper, EtherCAT communication, and comprehensive open-source platform for research and education at 130cm height and 33kg weight."
+  },
+  {
+    "id": "engineai-t800",
+    "name": "T800",
+    "brand": "EngineAI",
+    "category": "humanoid",
+    "price": {
+      "starting": 25000,
+      "currency": "USD",
+      "models": [
+        {
+          "name": "Basic T800",
+          "price": 25000
+        },
+        {
+          "name": "Max Edition",
+          "price": 50000
+        }
+      ]
+    },
+    "generalInfo": {
+      "manufacturer": "EngineAI",
+      "modelName": "T800",
+      "releaseDate": "January 2026",
+      "dimensions": {
+        "standing": "173 cm (height)",
+        "weight": "75 kg (with battery)"
+      }
+    },
+    "keyFeatures": [
+      "29 full-body degrees of freedom (excluding hands) for advanced mobility",
+      "Peak torque of 450 N·m with instantaneous joint peak power of 14,000W",
+      "Maximum movement speed of 3 m/s (approximately 6.7 mph)",
+      "NVIDIA Jetson Thor with 2000 TOPS FP4 compute power (Pro/Max versions)",
+      "Solid-state battery providing 4-5 hours of endurance",
+      "Intel RealSense D415 and D435i depth cameras for advanced perception",
+      "360-degree LiDAR perception system for comprehensive environmental awareness",
+      "High-torque joint module architecture for industrial-grade performance",
+      "Magnesium-aluminum alloy frame construction for durability",
+      "End-to-end neural network models for autonomous operation",
+      "Dynamic movement capabilities demonstrated through martial arts and running",
+      "Full-body coordination and fine motor control for complex tasks"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "29 DoF (6 per leg, 7 per arm, plus neck and waist)",
+      "payloadCapacity": "Not publicly disclosed",
+      "batteryCapacityRuntime": "Solid-state battery, 4-5 hours runtime",
+      "charger": "Not publicly disclosed",
+      "sensorsIncluded": [
+        "Intel RealSense D415 depth camera",
+        "Intel RealSense D435i depth camera",
+        "AC1 sensor suite",
+        "360-degree LiDAR"
+      ],
+      "interfaces": [
+        "Not publicly disclosed"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Not publicly disclosed",
+      "sdkLanguages": ["Not publicly disclosed"],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [
+        "NVIDIA Isaac platform",
+        "End-to-end neural networks"
+      ],
+      "apiDocumentationQuality": "Contact manufacturer for details"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Not publicly disclosed",
+        "coverage": "Contact manufacturer"
+      },
+      "postSalesSupport": "EngineAI Robotics Technology support channels",
+      "trackRecord": "Founded 2023, previous models: SE01, PM01, SA01. First shipments scheduled mid-2026."
+    },
+    "specifications": {
+      "height": "173cm",
+      "weight": "75kg",
+      "degreesOfFreedom": "29 (excluding hands)",
+      "peakTorque": "450 N·m",
+      "peakPower": "14,000W",
+      "maxSpeed": "3 m/s"
+    },
+    "features": [
+      "29 DoF full-body movement",
+      "450 N·m peak torque",
+      "3 m/s max speed",
+      "NVIDIA Jetson Thor AI",
+      "Solid-state battery 4-5h",
+      "360° LiDAR perception",
+      "$25k-$50k pricing"
+    ],
+    "images": [
+      "/images/robots/engineai-t800/robot-1.jpg",
+      "/images/robots/engineai-t800/robot-2.jpg"
+    ],
+    "officialUrl": "https://www.engineai.com.cn/",
+    "description": "EngineAI T800 is a high-performance humanoid robot with 29 DoF, 450 N·m peak torque, and 3 m/s speed. Features NVIDIA Jetson Thor AI, solid-state battery, 360° LiDAR, and magnesium-aluminum frame for industrial deployment at $25k-$50k."
+  },
+  {
+    "id": "lg-cloid",
+    "name": "CLOiD",
+    "brand": "LG Electronics",
+    "category": "humanoid",
+    "price": {
+      "starting": "request",
+      "currency": "USD",
+      "models": [
+        {
+          "name": "CLOiD Standard",
+          "price": "request"
+        }
+      ]
+    },
+    "generalInfo": {
+      "manufacturer": "LG Electronics",
+      "modelName": "CLOiD",
+      "releaseDate": "CES 2026",
+      "dimensions": {
+        "standing": "Adjustable height via tilting torso",
+        "weight": "Not publicly disclosed"
+      }
+    },
+    "keyFeatures": [
+      "Wheeled base with autonomous navigation for stable home mobility",
+      "14 degrees of freedom across dual articulated arms (7 DoF per arm)",
+      "5 independent fingers per hand with precision manipulation",
+      "Tiltable torso for height adjustment during object manipulation",
+      "Vision-Language-Model (VLM) converting images/video to structured understanding",
+      "Vision Language Action (VLA) model translating inputs to physical actions",
+      "Trained on tens of thousands of hours of household task data",
+      "Seamless ThinQ ecosystem integration across all LG appliances",
+      "ThinQ ON Hub compatibility for centralized smart home control",
+      "Household chore automation: cooking, laundry folding, appliance operation",
+      "Built-in display and speaker in head unit for communication",
+      "Zero Labor Home vision - full home automation assistant"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "14 (7 per arm, dual articulated arms)",
+      "payloadCapacity": "Not publicly disclosed",
+      "batteryCapacityRuntime": "Not publicly disclosed",
+      "charger": "Not publicly disclosed",
+      "sensorsIncluded": [
+        "Multiple cameras (head-mounted)",
+        "Environmental sensors",
+        "Vision sensors for object recognition"
+      ],
+      "interfaces": [
+        "ThinQ ecosystem",
+        "ThinQ ON Hub",
+        "WiFi connectivity"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Not publicly disclosed",
+      "sdkLanguages": ["Not publicly disclosed"],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [
+        "Vision-Language-Model (VLM)",
+        "Vision Language Action (VLA)",
+        "ThinQ AI platform"
+      ],
+      "apiDocumentationQuality": "Contact LG Electronics"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Standard LG warranty",
+        "coverage": "Contact manufacturer"
+      },
+      "postSalesSupport": "LG Electronics global support network",
+      "trackRecord": "LG Electronics - established 1958, global electronics leader"
+    },
+    "specifications": {
+      "mobilityType": "Wheeled base",
+      "arms": "Dual articulated (7 DoF each)",
+      "hands": "5 independent fingers per hand",
+      "aiTraining": "Tens of thousands of hours"
+    },
+    "features": [
+      "Wheeled humanoid",
+      "14 DoF dual arms",
+      "5-finger hands",
+      "VLM + VLA AI",
+      "ThinQ integration",
+      "Household automation",
+      "Zero Labor Home"
+    ],
+    "images": [
+      "/images/robots/lg-cloid/robot-1.jpg",
+      "/images/robots/lg-cloid/robot-2.jpg",
+      "/images/robots/lg-cloid/robot-3.jpg"
+    ],
+    "officialUrl": "https://www.lg.com/",
+    "description": "LG CLOiD is a wheeled home humanoid robot with 14 DoF dual arms, VLM+VLA AI, and deep ThinQ smart home integration. Designed for household chore automation including cooking, laundry, and appliance control."
+  },
+  {
+    "id": "neura-4ne1-mini",
+    "name": "4NE1 Mini",
+    "brand": "NEURA Robotics",
+    "category": "humanoid",
+    "price": {
+      "starting": 19999,
+      "currency": "EUR",
+      "models": [
+        {
+          "name": "4NE1 Mini",
+          "price": 19999
+        }
+      ]
+    },
+    "generalInfo": {
+      "manufacturer": "NEURA Robotics",
+      "modelName": "4NE1 Mini",
+      "releaseDate": "April 2026",
+      "dimensions": {
+        "standing": "132 cm (52 inches)",
+        "weight": "36 kg (79 lbs)"
+      }
+    },
+    "keyFeatures": [
+      "Child-sized 132cm humanoid optimized for science and education",
+      "25 degrees of freedom for natural human-like movement",
+      "3kg payload capacity for educational demonstrations",
+      "Approximately 2.5 hours active battery life",
+      "Natural language interaction with multi-language voice recognition",
+      "Neuraverse OS enabling shared learning across robot network",
+      "Same cognitive AI capabilities as larger 4NE1 model",
+      "Studio F.A. Porsche design for aesthetic appeal",
+      "Skills marketplace integration for downloading/publishing capabilities",
+      "Developer monetization opportunities via Neuraverse platform",
+      "First Western supplier for humanoid series production",
+      "€100 refundable deposit for pre-order"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "25 DoF",
+      "payloadCapacity": "3 kg",
+      "batteryCapacityRuntime": "~2.5 hours",
+      "charger": "Not publicly disclosed",
+      "sensorsIncluded": [
+        "Computer vision cameras",
+        "Human detection safety sensors",
+        "Multi-sensor fusion suite"
+      ],
+      "interfaces": [
+        "Neuraverse platform",
+        "WiFi",
+        "Multi-language voice"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Not publicly disclosed",
+      "sdkLanguages": ["Neuraverse platform"],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [
+        "Natural language processing",
+        "Reinforcement learning",
+        "Machine vision",
+        "Neuraverse shared learning"
+      ],
+      "apiDocumentationQuality": "Neuraverse developer program"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Contact manufacturer",
+        "coverage": "Standard warranty"
+      },
+      "postSalesSupport": "NEURA Robotics support, Neuraverse community",
+      "trackRecord": "NEURA Robotics - first Western cognitive robotics, Studio F.A. Porsche partnership"
+    },
+    "specifications": {
+      "height": "132cm",
+      "weight": "36kg",
+      "degreesOfFreedom": "25",
+      "payload": "3kg",
+      "battery": "~2.5 hours",
+      "design": "Studio F.A. Porsche"
+    },
+    "features": [
+      "132cm child-sized",
+      "25 DoF",
+      "Neuraverse OS",
+      "Multi-language AI",
+      "Shared learning",
+      "Porsche design",
+      "€19,999"
+    ],
+    "images": [
+      "/images/robots/neura-4ne1-mini/robot-1.webp",
+      "/images/robots/neura-4ne1-mini/robot-2.webp"
+    ],
+    "officialUrl": "https://neura-robotics.com/",
+    "description": "NEURA 4NE1 Mini is a 132cm child-sized humanoid with 25 DoF, Neuraverse OS shared learning, and Studio F.A. Porsche design. Optimized for education and research with multi-language AI at €19,999."
+  },
+  {
+    "id": "neura-quadruped",
+    "name": "Quadruped Explorer",
+    "brand": "NEURA Robotics",
+    "category": "quadruped",
+    "price": {
+      "starting": "request",
+      "currency": "USD",
+      "models": [
+        {
+          "name": "Quadruped Standard",
+          "price": "request"
+        }
+      ]
+    },
+    "generalInfo": {
+      "manufacturer": "NEURA Robotics",
+      "modelName": "Quadruped Explorer",
+      "releaseDate": "Late Summer 2026",
+      "dimensions": {
+        "standing": "Less than 1 meter (<100cm)",
+        "weight": "Not publicly disclosed"
+      }
+    },
+    "keyFeatures": [
+      "Four-legged design optimized for challenging terrain navigation",
+      "48.5 lbs (22kg) payload capacity for industrial applications",
+      "Multi-sensor fusion technology for comprehensive environmental awareness",
+      "360° environmental vision for complete situational awareness",
+      "Intelligent mapping systems for autonomous navigation",
+      "Stable movement across uneven, slippery, and rough surfaces",
+      "Multimodal cognitive interaction capabilities",
+      "Fully autonomous operation support",
+      "Neuraverse OS connectivity for shared learning",
+      "Skills marketplace integration for capability expansion",
+      "Designed for mining, scrap metal handling, and search & rescue",
+      "First Western cognitive robotics ecosystem integration"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "Not publicly disclosed",
+      "payloadCapacity": "22 kg (48.5 lbs)",
+      "batteryCapacityRuntime": "Not publicly disclosed",
+      "charger": "Not publicly disclosed",
+      "sensorsIncluded": [
+        "Multi-sensor fusion suite",
+        "360° vision cameras",
+        "Intelligent mapping sensors",
+        "Environmental perception sensors"
+      ],
+      "interfaces": [
+        "Neuraverse platform",
+        "WiFi",
+        "Cloud integration"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Not publicly disclosed",
+      "sdkLanguages": ["Neuraverse platform"],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [
+        "Multimodal cognitive interaction",
+        "Autonomous navigation AI",
+        "Intelligent mapping",
+        "Neuraverse shared learning"
+      ],
+      "apiDocumentationQuality": "Neuraverse developer program"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Contact manufacturer",
+        "coverage": "Industrial warranty"
+      },
+      "postSalesSupport": "NEURA Robotics industrial support",
+      "trackRecord": "NEURA Robotics - first Western cognitive robotics provider"
+    },
+    "specifications": {
+      "height": "<100cm",
+      "payload": "22kg",
+      "vision": "360° environmental",
+      "autonomy": "Fully autonomous",
+      "terrain": "Uneven, slippery, rough",
+      "applications": "Mining, rescue, industrial"
+    },
+    "features": [
+      "Four-legged explorer",
+      "22kg payload",
+      "360° vision",
+      "Multi-sensor fusion",
+      "Rough terrain",
+      "Neuraverse ecosystem",
+      "Autonomous operation"
+    ],
+    "images": [
+      "/images/robots/neura-quadruped/robot-1.webp",
+      "/images/robots/neura-quadruped/robot-2.webp"
+    ],
+    "officialUrl": "https://neura-robotics.com/",
+    "description": "NEURA Quadruped Explorer is a four-legged robot with 22kg payload, 360° vision, and Neuraverse OS. Designed for challenging terrain, mining, and search & rescue with autonomous navigation."
+  },
+  {
+    "id": "switchbot-onero-h1",
+    "name": "Onero H1",
+    "brand": "SwitchBot",
+    "category": "humanoid",
+    "price": {
+      "starting": "request",
+      "currency": "USD",
+      "models": [
+        {
+          "name": "Onero H1",
+          "price": "request"
+        }
+      ]
+    },
+    "generalInfo": {
+      "manufacturer": "SwitchBot",
+      "modelName": "Onero H1",
+      "releaseDate": "Late 2026",
+      "dimensions": {
+        "standing": "1.3 meters (4.3 feet)",
+        "weight": "Not publicly disclosed"
+      }
+    },
+    "keyFeatures": [
+      "22 degrees of freedom for complex household manipulation",
+      "Wheeled base for stable mobility",
+      "On-device OmniSense VLA model - no cloud dependency",
+      "Multiple Intel RealSense cameras on head, arms, hands, midsection",
+      "Depth perception and 3D environmental mapping",
+      "Household chore automation: coffee, breakfast, window washing, laundry",
+      "Natural language command processing",
+      "SwitchBot smart home ecosystem integration",
+      "Approximately 4 hours runtime per charge",
+      "No pre-programming required for household tasks",
+      "On-device AI ensuring privacy and fast response",
+      "Modular A1 robotic arms available"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "22 DoF",
+      "payloadCapacity": "Not publicly disclosed",
+      "batteryCapacityRuntime": "~4 hours",
+      "charger": "Not publicly disclosed",
+      "sensorsIncluded": [
+        "Multiple Intel RealSense cameras",
+        "Depth perception sensors",
+        "Tactile feedback sensors",
+        "3D mapping cameras"
+      ],
+      "interfaces": [
+        "SwitchBot ecosystem",
+        "WiFi",
+        "Natural language"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Not publicly disclosed",
+      "sdkLanguages": ["SwitchBot platform (TBA)"],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [
+        "OmniSense VLA model",
+        "On-device AI",
+        "Computer vision",
+        "NLP"
+      ],
+      "apiDocumentationQuality": "Contact manufacturer"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Standard warranty",
+        "coverage": "Contact SwitchBot"
+      },
+      "postSalesSupport": "SwitchBot customer support",
+      "trackRecord": "SwitchBot - established 2016, first humanoid entry"
+    },
+    "specifications": {
+      "height": "1.3m",
+      "degreesOfFreedom": "22",
+      "mobilityType": "Wheeled",
+      "runtime": "~4 hours",
+      "aiModel": "OmniSense VLA"
+    },
+    "features": [
+      "22 DoF wheeled",
+      "On-device VLA AI",
+      "Intel RealSense",
+      "Household automation",
+      "Natural language",
+      "4-hour runtime",
+      "SwitchBot ecosystem"
+    ],
+    "images": [
+      "/images/robots/switchbot-onero-h1/placeholder.jpg"
+    ],
+    "officialUrl": "https://www.switch-bot.com/",
+    "description": "SwitchBot Onero H1 is a 1.3m wheeled humanoid with 22 DoF and on-device VLA AI. Designed for household automation with Intel RealSense cameras and SwitchBot ecosystem integration. (Images to be added)"
+  },
+  {
+    "id": "lem-dynamis",
+    "name": "Dynamis",
+    "brand": "LEM Surgical",
+    "category": "humanoid",
+    "price": {
+      "starting": "request",
+      "currency": "USD",
+      "models": [
+        {
+          "name": "Dynamis Surgical System",
+          "price": "request"
+        }
+      ]
+    },
+    "generalInfo": {
+      "manufacturer": "LEM Surgical",
+      "modelName": "Dynamis",
+      "releaseDate": "Currently Deployed",
+      "dimensions": {
+        "standing": "Not publicly disclosed",
+        "weight": "Not publicly disclosed"
+      }
+    },
+    "keyFeatures": [
+      "World's first 'surgical humanoid' robot system",
+      "FDA 510(k) cleared for clinical use",
+      "Multi-arm architecture with coordinated dual-arm operation",
+      "Sub-millimeter positioning accuracy",
+      "3D vision system synchronized with arm movements",
+      "DICOM image data support for navigation",
+      "Currently deployed at Southern Hills Hospital, Las Vegas",
+      "Routinely used for spine and orthopedic procedures",
+      "Future NVIDIA Jetson Thor integration",
+      "Motion control, navigation, case management software",
+      "Real-time intraoperative imaging integration"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "Multi-arm system (specific count not disclosed)",
+      "payloadCapacity": "N/A (surgical instruments)",
+      "batteryCapacityRuntime": "AC-powered",
+      "charger": "AC power",
+      "sensorsIncluded": [
+        "3D vision system",
+        "Intraoperative imaging",
+        "Sub-millimeter positioning sensors"
+      ],
+      "interfaces": [
+        "DICOM platforms",
+        "Surgical navigation",
+        "Hospital systems"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Not publicly disclosed",
+      "sdkLanguages": ["Proprietary surgical software"],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [
+        "Future: NVIDIA Isaac Healthcare",
+        "Current: Motion control AI"
+      ],
+      "apiDocumentationQuality": "Medical professional only"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Medical device warranty",
+        "coverage": "Contact manufacturer"
+      },
+      "postSalesSupport": "Medical device support, clinical training",
+      "trackRecord": "LEM Surgical - FDA 510(k) cleared, active deployment, NVIDIA partnership"
+    },
+    "specifications": {
+      "regulatoryStatus": "FDA 510(k) cleared",
+      "positioningAccuracy": "Sub-millimeter",
+      "visionSystem": "3D synchronized",
+      "deploymentStatus": "Active clinical use"
+    },
+    "features": [
+      "First surgical humanoid",
+      "FDA 510(k) cleared",
+      "Sub-mm accuracy",
+      "Dual-arm coordination",
+      "3D vision",
+      "Clinical deployment",
+      "Spine & orthopedic"
+    ],
+    "images": [
+      "/images/robots/lem-dynamis/robot-1.png"
+    ],
+    "officialUrl": "https://www.lemsurgical.com/",
+    "description": "LEM Dynamis is the world's first FDA-cleared surgical humanoid with dual-arm coordination and sub-millimeter accuracy. Currently deployed for spine and orthopedic procedures."
+  },
+  {
+    "id": "dobot-rover-x1",
+    "name": "Rover X1",
+    "brand": "Dobot",
+    "category": "quadruped",
+    "price": {
+      "starting": 1030,
+      "currency": "USD",
+      "models": [
+        {
+          "name": "Rover X1",
+          "price": 1030
+        }
+      ]
+    },
+    "generalInfo": {
+      "manufacturer": "Dobot",
+      "modelName": "Rover X1",
+      "releaseDate": "November 2025",
+      "dimensions": {
+        "standing": "Not publicly disclosed",
+        "weight": "Not publicly disclosed"
+      }
+    },
+    "keyFeatures": [
+      "Most affordable quadruped at $1,030 USD",
+      "Hybrid wheel-leg design for varied terrain",
+      "Dual-vision tracking system",
+      "Omnidirectional perception for 360° awareness",
+      "Smart load-bearing for household items",
+      "Auto-follow mode with subject recognition",
+      "Remote control and leash-assist modes",
+      "Voice command support",
+      "Open programming platform for developers",
+      "Auto-follow filming for content creators",
+      "Home security patrol functionality",
+      "Modular design accepts cameras and tablets"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "Not publicly disclosed",
+      "payloadCapacity": "Household items",
+      "batteryCapacityRuntime": "Not publicly disclosed",
+      "charger": "Not publicly disclosed",
+      "sensorsIncluded": [
+        "Dual-vision tracking",
+        "Omnidirectional perception",
+        "Environmental sensors"
+      ],
+      "interfaces": [
+        "Voice commands",
+        "Remote controller",
+        "WiFi",
+        "Developer API"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Not publicly disclosed",
+      "sdkLanguages": ["Open platform (TBA)"],
+      "openSourceRepos": "Developer platform",
+      "aiFrameworksSupported": [
+        "Real-time data capture",
+        "Autonomous decision-making",
+        "Subject recognition"
+      ],
+      "apiDocumentationQuality": "Developer platform (contact for details)"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Contact manufacturer",
+        "coverage": "Standard warranty"
+      },
+      "postSalesSupport": "Dobot Robotics support",
+      "trackRecord": "Dobot - established robotics manufacturer, launched November 2025"
+    },
+    "specifications": {
+      "price": "$1,030 USD",
+      "design": "Hybrid wheel-leg",
+      "controlModes": "Auto-follow, remote, voice",
+      "terrain": "Floors, grass, inclines",
+      "applications": "Home, filming, security, education"
+    },
+    "features": [
+      "Most affordable $1,030",
+      "Hybrid wheel-leg",
+      "Dual-vision tracking",
+      "Auto-follow mode",
+      "Voice commands",
+      "Security patrol",
+      "Developer platform"
+    ],
+    "images": [
+      "/images/robots/dobot-rover-x1/placeholder.jpg"
+    ],
+    "officialUrl": "https://www.dobot.cc/",
+    "description": "Dobot Rover X1 is the most affordable quadruped at $1,030 with hybrid wheel-leg design and dual-vision tracking. Features auto-follow, voice commands, and developer platform. (Images to be added)"
+  },
+  {
+    "id": "fourier-gr3",
+    "name": "GR-3",
+    "brand": "Fourier Intelligence",
+    "category": "humanoid",
+    "price": {
+      "starting": "request",
+      "currency": "USD",
+      "models": [
+        {
+          "name": "GR-3 Care-Bot",
+          "price": "request"
+        }
+      ]
+    },
+    "generalInfo": {
+      "manufacturer": "Fourier Intelligence",
+      "modelName": "GR-3",
+      "releaseDate": "August 2025",
+      "dimensions": {
+        "standing": "165 cm (5'5\")",
+        "weight": "71 kg (156 lbs)"
+      }
+    },
+    "keyFeatures": [
+      "First 'Care-bot' humanoid for emotional interaction",
+      "55 degrees of freedom for natural balanced motion",
+      "31 distributed pressure sensors for empathetic touch response",
+      "Soft-shell design with automotive-grade upholstery",
+      "RGB and structured-light camera for facial recognition",
+      "4-microphone array with omnidirectional voice activation",
+      "Multimodal interaction: vision, audio, tactile feedback",
+      "Real-time emotional processing engine",
+      "Large language model for contextual understanding",
+      "Animated micro-expressions synchronized with touch",
+      "Chess playing and dance performance capabilities",
+      "Healthcare, rehabilitation, and elderly care applications"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "55 DoF",
+      "payloadCapacity": "Not publicly disclosed",
+      "batteryCapacityRuntime": "Not publicly disclosed",
+      "charger": "Not publicly disclosed",
+      "sensorsIncluded": [
+        "31 distributed pressure sensors",
+        "RGB camera",
+        "Structured-light camera",
+        "4-microphone array"
+      ],
+      "interfaces": [
+        "Voice interaction",
+        "Touch-based interaction",
+        "WiFi",
+        "Cloud integration"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Not publicly disclosed",
+      "sdkLanguages": ["Contact manufacturer"],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [
+        "Large Language Model",
+        "Multimodal emotional processing",
+        "Facial recognition",
+        "Social companionship AI"
+      ],
+      "apiDocumentationQuality": "Contact manufacturer"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Not publicly disclosed",
+        "coverage": "Contact manufacturer"
+      },
+      "postSalesSupport": "Contact: generalrobot@fftai.com",
+      "trackRecord": "Fourier Intelligence - first introduced August 2025, CES 2026 debut"
+    },
+    "specifications": {
+      "height": "165cm",
+      "weight": "71kg",
+      "degreesOfFreedom": "55",
+      "touchSensors": "31 distributed",
+      "design": "Soft-shell automotive upholstery",
+      "targetMarkets": "Homes, healthcare, education"
+    },
+    "features": [
+      "First Care-bot",
+      "55 DoF natural motion",
+      "31 touch sensors",
+      "Emotional AI",
+      "Facial recognition",
+      "Natural conversation",
+      "Healthcare focus"
+    ],
+    "images": [
+      "/images/robots/fourier-gr3/robot-1.jpg",
+      "/images/robots/fourier-gr3/robot-2.jpg",
+      "/images/robots/fourier-gr3/robot-3.jpg"
+    ],
+    "officialUrl": "https://www.fftai.com/",
+    "description": "Fourier GR-3 is the first Care-bot humanoid with 55 DoF, 31 touch sensors, and multimodal emotional AI. Designed for companionship, healthcare, and rehabilitation with natural conversation."
   }
 ]
