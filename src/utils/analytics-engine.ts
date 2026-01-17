@@ -125,14 +125,21 @@ export class AnalyticsEngine {
 
   /**
    * Load discovery stats from a specific date
+   * @param date - Date string in YYYY-MM-DD format
+   * @returns Discovery stats object or null if file doesn't exist or is corrupted
    */
   loadDiscoveryStats(date: string): DiscoveryStats | null {
     const filePath = path.join(this.analyticsDir, `stats-${date}.json`);
     if (!fs.existsSync(filePath)) {
       return null;
     }
-    const content = fs.readFileSync(filePath, 'utf-8');
-    return JSON.parse(content) as DiscoveryStats;
+    try {
+      const content = fs.readFileSync(filePath, 'utf-8');
+      return JSON.parse(content) as DiscoveryStats;
+    } catch (error) {
+      console.error(`Error loading analytics file ${filePath}: ${error}`);
+      return null;
+    }
   }
 
   /**
@@ -145,14 +152,20 @@ export class AnalyticsEngine {
 
   /**
    * Load trend analysis
+   * @returns Trend analysis object or null if file doesn't exist or is corrupted
    */
   loadTrendAnalysis(): TrendAnalysis | null {
     const filePath = path.join(this.analyticsDir, 'trends.json');
     if (!fs.existsSync(filePath)) {
       return null;
     }
-    const content = fs.readFileSync(filePath, 'utf-8');
-    return JSON.parse(content) as TrendAnalysis;
+    try {
+      const content = fs.readFileSync(filePath, 'utf-8');
+      return JSON.parse(content) as TrendAnalysis;
+    } catch (error) {
+      console.error(`Error loading analytics file ${filePath}: ${error}`);
+      return null;
+    }
   }
 
   /**
@@ -165,14 +178,21 @@ export class AnalyticsEngine {
 
   /**
    * Save weekly snapshot to historical data
+   * @param snapshot - Weekly snapshot to save
    */
   saveWeeklySnapshot(snapshot: WeeklySnapshot): void {
     const filePath = path.join(this.analyticsDir, 'weekly-snapshots.json');
     let snapshots: WeeklySnapshot[] = [];
 
     if (fs.existsSync(filePath)) {
-      const content = fs.readFileSync(filePath, 'utf-8');
-      snapshots = JSON.parse(content);
+      try {
+        const content = fs.readFileSync(filePath, 'utf-8');
+        snapshots = JSON.parse(content);
+      } catch (error) {
+        console.error(`Error loading existing snapshots from ${filePath}: ${error}`);
+        console.error('Starting with empty snapshots array');
+        snapshots = [];
+      }
     }
 
     // Add new snapshot and sort by date
@@ -184,13 +204,19 @@ export class AnalyticsEngine {
 
   /**
    * Get all weekly snapshots
+   * @returns Array of weekly snapshots or empty array if file doesn't exist or is corrupted
    */
   getAllWeeklySnapshots(): WeeklySnapshot[] {
     const filePath = path.join(this.analyticsDir, 'weekly-snapshots.json');
     if (!fs.existsSync(filePath)) {
       return [];
     }
-    const content = fs.readFileSync(filePath, 'utf-8');
-    return JSON.parse(content) as WeeklySnapshot[];
+    try {
+      const content = fs.readFileSync(filePath, 'utf-8');
+      return JSON.parse(content) as WeeklySnapshot[];
+    } catch (error) {
+      console.error(`Error loading analytics file ${filePath}: ${error}`);
+      return [];
+    }
   }
 }
