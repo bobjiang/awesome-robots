@@ -2,333 +2,244 @@
 
 import fs from 'fs';
 import path from 'path';
+import { AnthropicClient } from '../src/utils/anthropic-client';
+import { AnalyticsEngine } from '../src/utils/analytics-engine';
+import {
+  buildDigestSystemPrompt,
+  buildDigestUserPrompt,
+  extractMarkdownFromResponse,
+  DigestPromptData,
+} from '../src/utils/digest-templates';
+import { FetchResult } from '../src/types/discovered-robot';
 import { BlogPublisher } from './publish-blog';
 
-interface DigestContent {
-  issueNumber: number;
-  date: string;
-  introduction: string;
-  topNews: string[];
-  research: string[];
-  events: string[];
-  toolOfWeek: string;
-  communityCorner: string[];
-  trends: string[];
-  conclusion: string;
-}
+// ============================================================================
+// AI Digest Generator Class
+// ============================================================================
 
-class DigestGenerator {
+/**
+ * AI-powered digest generator using Claude
+ * Transforms weekly discovery data into engaging blog posts
+ */
+class AIDigestGenerator {
   private contentDir: string;
-  private templatePath: string;
+  private dataDir: string;
+  private engine: AnalyticsEngine;
   private publisher: BlogPublisher;
+  private aiClient: AnthropicClient;
 
   constructor() {
     this.contentDir = path.join(process.cwd(), 'content', 'blog');
-    this.templatePath = path.join(process.cwd(), 'content', 'templates', 'awesome-robots-digest-template.md');
+    this.dataDir = path.join(process.cwd(), 'data');
+    this.engine = new AnalyticsEngine(this.dataDir);
     this.publisher = new BlogPublisher();
+    this.aiClient = new AnthropicClient();
   }
 
+  /**
+   * Get next issue number
+   */
   private getNextIssueNumber(): number {
-    const files = fs.readdirSync(this.contentDir)
-      .filter(file => file.startsWith('awesome-robots-digest-issue-') && file.endsWith('.md'))
-      .map(file => {
+    const files = fs
+      .readdirSync(this.contentDir)
+      .filter(
+        (file) =>
+          file.startsWith('awesome-robots-digest-issue-') && file.endsWith('.md')
+      )
+      .map((file) => {
         const match = file.match(/issue-(\d+)/);
         return match ? parseInt(match[1]) : 0;
       })
-      .filter(num => num > 0);
+      .filter((num) => num > 0);
 
     return files.length > 0 ? Math.max(...files) + 1 : 1;
   }
 
-  private formatDate(date: Date): string {
-    return date.toISOString().split('T')[0];
-  }
+  /**
+   * Generate digest from weekly data using AI
+   */
+  async generateDigest(
+    dateStr: string,
+    options: { publish?: boolean; draft?: boolean } = {}
+  ): Promise<{ filePath: string; issueNumber: number }> {
+    console.log(`\n🤖 Generating AI-powered digest for ${dateStr}...`);
 
-  private formatDisplayDate(date: Date): string {
-    return date.toLocaleDateString('en-US', { 
-      year: 'numeric', 
-      month: 'long', 
-      day: 'numeric' 
-    });
-  }
+    // Load discovery data
+    const discoveredPath = path.join(
+      this.dataDir,
+      'discovered-robots',
+      `${dateStr}.json`
+    );
 
-  private generateWeekDateRange(date: Date): string {
-    const startDate = new Date(date);
-    startDate.setDate(date.getDate() - 7);
-    const endDate = new Date(date);
-    endDate.setDate(date.getDate() - 1);
-    
-    const startMonth = startDate.toLocaleDateString('en-US', { month: 'short' });
-    const endMonth = endDate.toLocaleDateString('en-US', { month: 'short' });
-    
-    if (startMonth === endMonth) {
-      return `${startMonth} ${startDate.getDate()}–${endDate.getDate()}`;
-    } else {
-      return `${startMonth} ${startDate.getDate()}–${endMonth} ${endDate.getDate()}`;
+    if (!fs.existsSync(discoveredPath)) {
+      throw new Error(`Discovered robots file not found: ${discoveredPath}`);
     }
-  }
 
-  private createDigestTemplate(issueNumber: number, date: Date): string {
-    const dateStr = this.formatDate(date);
-    const displayDate = this.formatDisplayDate(date);
-    const weekRange = this.generateWeekDateRange(date);
+    const discoveredRobots: FetchResult = JSON.parse(
+      fs.readFileSync(discoveredPath, 'utf-8')
+    );
 
-    return `---
-title: "Awesome Robots Digest - Issue #${issueNumber} - ${displayDate}"
-slug: "awesome-robots-digest-issue-${issueNumber}"
-date: "${dateStr}"
-author: "bob-jiang"
-category: "digest"
-tags: ["digest", "newsletter", "robotics", "AI", "weekly", "industry-news", "research"]
-excerpt: "Weekly digest of the latest developments in AI robotics, featuring industry news, research breakthroughs, upcoming events, and community highlights from the robotics world."
-featured: false
-published: false
-seo:
-  title: "Awesome Robots Digest - Issue #${issueNumber} - Latest AI Robotics News & Updates"
-  description: "Stay updated with the latest AI robotics developments, research breakthroughs, industry news, and community highlights in our weekly digest."
-  keywords: ["robotics news", "AI robotics", "robotics digest", "weekly robotics", "robotics industry", "robotics research"]
----
+    // Load discovery stats
+    const discoveryStats = this.engine.loadDiscoveryStats(dateStr);
+    if (!discoveryStats) {
+      throw new Error(
+        `Discovery stats not found. Run: npm run update-analytics ${dateStr}`
+      );
+    }
 
-## TL;DR; 📋
+    // Load trend analysis (optional)
+    const trendAnalysis = this.engine.loadTrendAnalysis();
 
-**[This week (${weekRange}) highlights - to be filled with key developments]**
+    // Load collected articles (optional)
+    const collectedPath = path.join(
+      this.dataDir,
+      'collected-articles',
+      `${dateStr}.json`
+    );
+    let collectedArticles;
+    if (fs.existsSync(collectedPath)) {
+      try {
+        const data = JSON.parse(fs.readFileSync(collectedPath, 'utf-8'));
+        collectedArticles = data.sources;
+      } catch (error) {
+        console.warn('Could not load collected articles, continuing without them');
+      }
+    }
 
-- **[Key Development 1]** - [Brief description]
-- **[Key Development 2]** - [Brief description]
-- **[Key Development 3]** - [Brief description]
-- **[Research Focus]** - [Research highlights]
-- **[Upcoming Events]** - [Conference/event highlights]
-
----
-
-## Introduction 🚀
-
-This week's developments (${weekRange}) brought [description of key themes]. [Brief overview of major trends, announcements, or shifts in the AI robotics space]. This issue explores [what topics will be covered].
-
----
-
-## Top News & Breakthroughs 📰
-
-### 🏢 Company News
-- **[Company Name]** announced [specific news] - [brief explanation of significance]
-- **[Company Name]** [development/milestone] - [impact on industry]
-
-### 🚀 Product Launches
-- **[Product Name]** by **[Company]** - [key features and market impact]
-- **[New Technology]** breakthrough in [specific area] - [technical significance]
-
-### 💰 Funding & Investments
-- **[Startup]** raised $[X]M Series [X] led by **[Investor]** - [use case and market potential]
-- **[Corporate]** invested in **[Robotics Company]** - [strategic implications]
-
-### 🌐 Industry Developments
-- **[Industry]** adoption of **[Technology]** accelerates - [market trends and implications]
-- **[Regulation/Standard]** announced for **[Robotics Application]** - [compliance and market impact]
-
----
-
-## Research Spotlight 🔬
-
-### 📄 Research Papers
-- **[Paper Title]** by **[Authors]** - [key findings and practical applications]
-  - *Published in: [Journal/Conference]*
-  - *Key Innovation: [specific technical advancement]*
-
-### 🔧 Open Source Projects
-- **[Project Name]** - [description of functionality and community impact]
-  - *GitHub: [link]*
-  - *Use Cases: [specific applications]*
-
-### 🎓 Academic Breakthroughs
-- **[University]** researchers develop **[Technology]** - [scientific significance and potential applications]
-
-**Why it matters:** [Explanation of significance for the field]
-
----
-
-## Event Horizon 📅
-
-### 🗓️ This Week
-- **[Event Name]** - [Date] at [Location/Platform]
-  - *Focus: [main topics or themes]*
-  - *Registration: [link if available]*
-
-### 📅 Next Week
-- **[Conference Name]** - [Date Range] in [City/Online]
-  - *Keynote Speakers: [notable presenters]*
-  - *Topics: [main areas of focus]*
-
-### 🎯 Upcoming Deadlines
-- **[Call for Papers/Submissions]** - Deadline: [Date]
-  - *Requirements: [brief description]*
-  - *Submission Link: [URL]*
-
-### 🌍 Major Conferences (Next 3 Months)
-- **[Conference]** - [Date] in [Location]
-- **[Workshop]** - [Date] at [Venue]
-- **[Exhibition]** - [Date] in [City]
-
----
-
-## Tool/Resource of the Week 🛠️
-
-### 🎯 Featured Resource: **[Resource Name]**
-
-**[Brief description of what this tool/resource is and its primary purpose]**
-
-**Key Features:**
-- **[Feature 1]** - [benefit]
-- **[Feature 2]** - [benefit]
-- **[Feature 3]** - [benefit]
-
-**Why It's Useful:**
-[Explanation of why this resource is valuable for robotics practitioners]
-
-**Getting Started:**
-- **Website:** [URL]
-- **Documentation:** [link]
-- **Community:** [forum/discord/slack link if applicable]
-
-**Use Cases:**
-- [Specific application 1]
-- [Specific application 2]
-- [Specific application 3]
-
----
-
-## Community Corner 👥
-
-### 💬 Trending Discussions
-- **[Forum/Platform]** - "[Discussion Topic]" - [summary of key points and community engagement]
-- **[Social Media]** - "[Hashtag/Trend]" - [community response and significance]
-
-### 🛠️ Cool Projects
-- **[Project Name]** by **[Creator]** - [description of the project and its innovation]
-  - *Demo: [video/link]*
-  - *Innovation: [what makes it special]*
-
-### 🎉 Community Highlights
-- **[Person/Group]** released **[Project]** - [impact on community]
-- **[Event]** organized by **[Community]** - [participation and outcomes]
-
-### 🌟 Spotlight: **[Community Member/Project]**
-[Detailed feature of an outstanding community contribution, project, or individual]
-
----
-
-## Trends to Watch (from this week's signals)
-
-1. **[Trend 1]**: [Description of emerging trend and its implications]
-
-2. **[Trend 2]**: [Description of market/technical development to monitor]
-
-3. **[Trend 3]**: [Description of research direction or industry shift]
-
----
-
-## Conclusion 🎯
-
-Week in summary: [Brief recap of the week's developments]. [Forward-looking statement about expected developments]. [Engagement prompt for readers].
-
-[Closing thought about the state of AI robotics and what to expect next week/month].
-
----
-
-## 📧 Stay Connected
-
-- **Subscribe:** [Newsletter signup link](https://awesomerobotsxyz.substack.com/)
-- **Follow us:** [Twitter (X) links](https://x.com/awesome__robots)
-- **Website:** [Official Website](https://www.awesomerobots.xyz/)
-
----
-
-*This digest is curated by the Awesome Robots team. Have a story to share? [Contact information]*
-
-**Archive, resources, and partner robots:** [awesomerobots.xyz](https://www.awesomerobots.xyz/)
-
-**Ping us with papers/demos to feature next week.**
-
-**Want a printable version of the digest? Say the word and I'll export a PDF in your template.**
-
-*Curated for the Awesome Robots community. If you want this tailored to specific robot types or focus areas next issue, just let us know!*`;
-  }
-
-  async generateWeeklyDigest(publishImmediately = false): Promise<{ filePath: string; issueNumber: number }> {
-    const now = new Date();
+    // Prepare prompt data
     const issueNumber = this.getNextIssueNumber();
-    
-    console.log(`🤖 Generating Awesome Robots Digest Issue #${issueNumber}...`);
-    
-    const digestContent = this.createDigestTemplate(issueNumber, now);
+    const promptData: DigestPromptData = {
+      weekRange: discoveredRobots.week_range,
+      issueNumber,
+      discoveryStats,
+      discoveredRobots,
+      trendAnalysis,
+      collectedArticles,
+    };
+
+    // Generate digest using AI
+    console.log(`📝 Generating digest with Claude...`);
+    const systemPrompt = buildDigestSystemPrompt();
+    const userPrompt = buildDigestUserPrompt(promptData);
+
+    const response = await this.aiClient.generateText(userPrompt, systemPrompt, {
+      model: 'claude-3-5-sonnet-20241022',
+      maxTokens: 8192,
+      temperature: 0.7,
+    });
+
+    // Extract markdown from response
+    const digestContent = extractMarkdownFromResponse(response);
+
+    // Save to file
     const fileName = `awesome-robots-digest-issue-${issueNumber}.md`;
     const filePath = path.join(this.contentDir, fileName);
-    
-    // Write the template file
     fs.writeFileSync(filePath, digestContent);
-    console.log(`📝 Created digest template: ${fileName}`);
+
+    console.log(`✅ Generated digest: ${fileName}`);
     console.log(`📁 Location: ${filePath}`);
-    
-    if (publishImmediately) {
-      console.log(`🚀 Publishing digest immediately...`);
+
+    // Optionally publish
+    if (options.publish) {
+      console.log(`🚀 Publishing digest...`);
       try {
-        await this.publisher.publishFromFile(filePath, { draft: true });
-        console.log(`✅ Published as draft to dev.to`);
+        await this.publisher.publishFromFile(filePath, {
+          draft: options.draft ?? true,
+        });
+        console.log(`✅ Published to dev.to`);
       } catch (error) {
         console.error(`❌ Failed to publish: ${error}`);
         throw error;
       }
-    } else {
-      console.log(`📋 Template created. Edit the content and run:`);
-      console.log(`   npm run publish-blog file ${filePath}`);
     }
-    
+
     return { filePath, issueNumber };
   }
 
-  async generateAndPublish(): Promise<void> {
-    const { filePath, issueNumber } = await this.generateWeeklyDigest(false);
-    
-    console.log(`\n🎯 Next steps:`);
-    console.log(`1. Edit the content in: ${path.basename(filePath)}`);
-    console.log(`2. Fill in the TL;DR, news, research, and other sections`);
-    console.log(`3. Run: npm run publish-blog file ${filePath}`);
-    console.log(`\n💡 Or to publish as draft immediately:`);
-    console.log(`   npm run digest-and-publish`);
+  /**
+   * Generate digest from latest weekly data
+   */
+  async generateLatest(
+    options: { publish?: boolean; draft?: boolean } = {}
+  ): Promise<void> {
+    // Find latest discovered robots file
+    const discoveredDir = path.join(this.dataDir, 'discovered-robots');
+    const files = fs
+      .readdirSync(discoveredDir)
+      .filter((f) => f.endsWith('.json') && f !== '.gitkeep')
+      .sort()
+      .reverse();
+
+    if (files.length === 0) {
+      throw new Error('No discovered robots files found');
+    }
+
+    const latestDate = files[0].replace('.json', '');
+    console.log(`📅 Using latest discovery data: ${latestDate}`);
+
+    await this.generateDigest(latestDate, options);
+
+    if (!options.publish) {
+      console.log(`\n💡 To publish the digest, run:`);
+      console.log(`   npm run generate-digest --publish`);
+    }
   }
 }
 
+// ============================================================================
 // CLI Interface
+// ============================================================================
+
 async function main() {
   const args = process.argv.slice(2);
-  const generator = new DigestGenerator();
 
   if (args.includes('--help') || args.includes('-h')) {
     console.log(`
-🤖 Awesome Robots Digest Generator
+🤖 AI-Powered Awesome Robots Digest Generator
+
+Generates weekly digest blog posts using Claude AI.
 
 Usage:
-  npm run generate-digest [options]
+  npm run generate-digest [options] [date]
 
 Options:
-  --publish-draft    Generate template and publish as draft to dev.to
-  --template-only    Generate template only (default)
+  --publish          Publish to dev.to after generation
+  --draft            Publish as draft (default: true)
   --help, -h         Show this help message
 
+Arguments:
+  date               Date in YYYY-MM-DD format (optional, uses latest if not specified)
+
 Examples:
-  npm run generate-digest                    # Generate template only
-  npm run generate-digest --publish-draft    # Generate and publish as draft
+  npm run generate-digest                    # Generate from latest data
+  npm run generate-digest 2026-01-09         # Generate from specific date
+  npm run generate-digest --publish          # Generate and publish as draft
+  npm run generate-digest --publish --no-draft # Generate and publish publicly
+
+Note: Requires discovery stats. Run 'npm run update-analytics' first if needed.
 `);
     return;
   }
 
+  const generator = new AIDigestGenerator();
+
+  const publish = args.includes('--publish');
+  const draft = !args.includes('--no-draft');
+  const dateArg = args.find((arg) => !arg.startsWith('--'));
+
   try {
-    if (args.includes('--publish-draft')) {
-      await generator.generateWeeklyDigest(true);
+    if (dateArg) {
+      await generator.generateDigest(dateArg, { publish, draft });
     } else {
-      await generator.generateAndPublish();
+      await generator.generateLatest({ publish, draft });
     }
+
+    console.log(`\n🎉 Digest generation complete!`);
   } catch (error) {
-    console.error('❌ Error:', error instanceof Error ? error.message : error);
+    console.error(
+      '❌ Error:',
+      error instanceof Error ? error.message : error
+    );
     process.exit(1);
   }
 }
@@ -338,4 +249,4 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   main();
 }
 
-export { DigestGenerator };
+export { AIDigestGenerator };
