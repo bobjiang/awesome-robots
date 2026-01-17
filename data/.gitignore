@@ -1,0 +1,7 @@
+# Keep structure but ignore some generated files
+analytics/discovery-stats.json
+analytics/trend-analysis.json
+digest-drafts/*.md
+
+# But keep weekly snapshots
+!analytics/weekly/
