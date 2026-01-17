@@ -17,7 +17,8 @@
     "generate-digest": "tsx scripts/generate-digest.ts",
     "digest-and-publish": "tsx scripts/generate-digest.ts --publish-draft",
     "fetch-articles": "tsx scripts/fetch-articles.ts",
-    "extract-robots": "tsx scripts/extract-robots.ts"
+    "extract-robots": "tsx scripts/extract-robots.ts",
+    "update-analytics": "tsx scripts/update-analytics.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.71.2",
