@@ -20,6 +20,36 @@ export class AnthropicClient {
     this.maxRetries = config.maxRetries || 3;
   }
 
+  private isRetryableError(error: unknown): boolean {
+    // Check if error has status property (API errors)
+    if (error && typeof error === 'object' && 'status' in error) {
+      const status = (error as { status: number }).status;
+
+      // Retry rate limit errors (429) and server errors (500+)
+      if (status === 429 || status >= 500) {
+        return true;
+      }
+
+      // Don't retry client errors (400, 401, 403, 404, etc.)
+      if (status >= 400 && status < 500) {
+        return false;
+      }
+    }
+
+    // Retry network/connection errors (no status code)
+    // These typically have error codes like ECONNREFUSED, ETIMEDOUT, etc.
+    if (error && typeof error === 'object' && 'code' in error) {
+      const code = (error as { code: string }).code;
+      const networkErrors = ['ECONNREFUSED', 'ETIMEDOUT', 'ENOTFOUND', 'ENETUNREACH'];
+      if (networkErrors.includes(code)) {
+        return true;
+      }
+    }
+
+    // Default to retrying unknown errors
+    return true;
+  }
+
   async generateText(
     prompt: string,
     systemPrompt?: string,
@@ -57,11 +87,17 @@ export class AnthropicClient {
         lastError = error as Error;
         console.error(`Attempt ${attempt}/${maxRetries} failed:`, error);
 
-        if (attempt < maxRetries) {
-          // Exponential backoff: 2^attempt seconds
-          const delayMs = Math.pow(2, attempt) * 1000;
+        // Check if error is retryable
+        const isRetryable = this.isRetryableError(error);
+
+        if (attempt < maxRetries && isRetryable) {
+          // Exponential backoff: 2^(attempt-1) seconds (2s, 4s, 8s)
+          const delayMs = Math.pow(2, attempt - 1) * 1000;
           console.log(`Retrying in ${delayMs / 1000}s...`);
           await new Promise((resolve) => setTimeout(resolve, delayMs));
+        } else if (!isRetryable) {
+          // Don't retry non-retryable errors
+          break;
         }
       }
     }
