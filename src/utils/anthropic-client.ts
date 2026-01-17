@@ -91,8 +91,8 @@ export class AnthropicClient {
         const isRetryable = this.isRetryableError(error);
 
         if (attempt < maxRetries && isRetryable) {
-          // Exponential backoff: 2^(attempt-1) seconds (2s, 4s, 8s)
-          const delayMs = Math.pow(2, attempt - 1) * 1000;
+          // Exponential backoff: 2s, 4s, 8s
+          const delayMs = Math.pow(2, attempt) * 1000;
           console.log(`Retrying in ${delayMs / 1000}s...`);
           await new Promise((resolve) => setTimeout(resolve, delayMs));
         } else if (!isRetryable) {
