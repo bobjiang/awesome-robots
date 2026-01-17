@@ -1,4 +1,4 @@
-name: Weekly Article Collection
+name: Weekly Robot Discovery & Digest Automation
 
 on:
   schedule:
@@ -6,11 +6,12 @@ on:
   workflow_dispatch:  # Allow manual trigger
 
 jobs:
-  collect-articles:
+  weekly-automation:
     runs-on: ubuntu-latest
     permissions:
       contents: write
       issues: write
+      pull-requests: write
 
     steps:
       - name: Checkout repository
@@ -27,73 +28,152 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Collect articles (no API calls)
+      # Step 1: Collect articles (no API calls)
+      - name: Collect articles from RSS/arXiv
         run: npm run fetch-articles
 
-      - name: Commit collected articles
+      # Step 2: Extract robots using Anthropic API
+      - name: Extract robot data from articles
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: npm run extract-robots
+
+      # Step 3: Generate weekly digest
+      - name: Generate Awesome Robots Digest
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: npm run generate-digest
+
+      # Step 4: Update analytics dashboard
+      - name: Update analytics dashboard
+        run: npm run update-analytics
+
+      # Step 5: Create feature branch for automation
+      - name: Create automation branch
+        id: create_branch
         run: |
+          BRANCH_NAME="automation/weekly-digest-$(date +%Y-%m-%d)"
+          echo "branch_name=$BRANCH_NAME" >> $GITHUB_OUTPUT
+
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH_NAME"
+
+      # Step 6: Commit all automation outputs
+      - name: Commit automation results
+        run: |
           git add data/collected-articles/
+          git add data/discovered-robots/
+          git add content/blog/
+          git add src/data/analytics-*.json
+
           if git diff --staged --quiet; then
-            echo "No new articles to commit"
+            echo "No changes to commit"
+            echo "has_changes=false" >> $GITHUB_ENV
           else
-            ARTICLE_FILE="data/collected-articles/$(date +%Y-%m-%d).json"
-            ARTICLE_COUNT=$(jq '.total_count' "$ARTICLE_FILE")
+            DATE=$(date +%Y-%m-%d)
+            ARTICLE_FILE="data/collected-articles/$DATE.json"
+            DIGEST_FILE=$(find content/blog -name "*digest-issue-*.md" -type f -printf '%T@ %p\n' | sort -rn | head -1 | cut -d' ' -f2)
 
-            git commit -m "chore: Collect weekly robotics articles - $ARTICLE_COUNT items
+            ARTICLE_COUNT=$(jq -r '.summary.total_articles // 0' "$ARTICLE_FILE")
+            DISCOVERED_COUNT=$(jq -r '.summary.total_discovered // 0' "data/discovered-robots/$DATE.json" 2>/dev/null || echo "0")
 
-            Run 'npm run fetch-articles' locally and ask Claude Code to process them.
+            git commit -m "feat: Weekly automation results for $(date +%b' '%d', '%Y)
+
+            - Collected $ARTICLE_COUNT articles from robotics sources
+            - Discovered $DISCOVERED_COUNT new robots
+            - Generated Awesome Robots Digest
+            - Updated analytics dashboard
 
             Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>"
-            git push
+            git push -u origin "${{ steps.create_branch.outputs.branch_name }}"
+            echo "has_changes=true" >> $GITHUB_ENV
           fi
 
-      - name: Create processing reminder issue
+      # Step 7: Create Pull Request for review
+      - name: Create Pull Request
+        if: env.has_changes == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          ARTICLE_FILE="data/collected-articles/$(date +%Y-%m-%d).json"
-          if [ -f "$ARTICLE_FILE" ]; then
-            ARTICLE_COUNT=$(jq '.total_count' "$ARTICLE_FILE")
-            IEEE_COUNT=$(jq '.articles.ieee | length' "$ARTICLE_FILE")
-            ROBOT_REPORT_COUNT=$(jq '.articles.robotreport | length' "$ARTICLE_FILE")
-            ARXIV_COUNT=$(jq '.articles.arxiv | length' "$ARTICLE_FILE")
-            WEEK_RANGE=$(jq -r '.week_range' "$ARTICLE_FILE")
+          DATE=$(date +%Y-%m-%d)
+          WEEK_RANGE=$(jq -r '.week_range // "this week"' "data/collected-articles/$DATE.json")
+          ARTICLE_COUNT=$(jq -r '.summary.total_articles // 0' "data/collected-articles/$DATE.json")
+          DISCOVERED_COUNT=$(jq -r '.summary.total_discovered // 0' "data/discovered-robots/$DATE.json" 2>/dev/null || echo "0")
+          DIGEST_FILE=$(find content/blog -name "*digest-issue-*.md" -type f -printf '%T@ %p\n' | sort -rn | head -1 | cut -d' ' -f2)
+          DIGEST_TITLE=$(grep -m1 '^title:' "$DIGEST_FILE" | sed 's/title: "\(.*\)"/\1/')
 
-            gh issue create \
-              --title "📰 Process Weekly Articles - $WEEK_RANGE" \
-              --label "robot-data,claude-code,review-needed" \
-              --body "## 📰 Weekly Article Collection Ready
+          gh pr create \
+            --title "🤖 Weekly Digest & Discoveries - $WEEK_RANGE" \
+            --label "automation,digest,review-needed" \
+            --body "## 📊 Weekly Automation Results
 
 **Week**: $WEEK_RANGE
-**Total Articles**: $ARTICLE_COUNT
+**Generated**: $(date +'%B %d, %Y at %H:%M UTC')
 
-### Source Breakdown
-- **IEEE TV**: $IEEE_COUNT articles
-- **Robot Report**: $ROBOT_REPORT_COUNT articles
-- **arXiv**: $ARXIV_COUNT papers
+### 📰 Article Collection
+- **Total Articles**: $ARTICLE_COUNT from IEEE TV, Robot Report, arXiv
 
-### 🤖 Processing with Claude Code
+### 🔍 Robot Discovery
+- **New Robots Discovered**: $DISCOVERED_COUNT
+- **Quality Breakdown**: See \`data/discovered-robots/$DATE.json\`
 
-Use Claude Code Pro to extract robot data from these articles:
+### 📝 Content Generated
+- **Digest**: $DIGEST_TITLE
+- **File**: \`$DIGEST_FILE\`
 
-\`\`\`bash
-# Open the collected articles file
-cat $ARTICLE_FILE | jq .
-
-# Ask Claude Code to process them:
-# \"Please analyze the articles in $ARTICLE_FILE and extract any humanoid or quadruped robot information.
-#  Create discovered robots entries following the DiscoveredRobot schema,
-#  deduplicate against src/data/robots.json, and save to data/discovered-robots/$(date +%Y-%m-%d).json\"
-\`\`\`
-
-### Next Steps
-1. Run the Claude Code command above
-2. Review the extracted robot data
-3. Manually merge high-quality discoveries to \`src/data/robots.json\`
-4. Close this issue when complete
+### 📈 Analytics
+- Dashboard updated with latest metrics
+- Performance tracking data refreshed
 
 ---
-*Generated by Weekly Article Collection automation*"
-          else
-            echo "No article file found, skipping issue creation"
-          fi
+
+### ✅ Review Checklist
+- [ ] Review discovered robots for accuracy
+- [ ] Verify digest content quality
+- [ ] Check analytics data integrity
+- [ ] Approve for publication
+
+### 🚀 Next Steps
+1. Review the digest blog post for editorial quality
+2. Verify discovered robots against official sources
+3. Merge this PR to publish the digest
+4. Consider adding high-quality discoveries to main catalog
+
+---
+*Generated by Weekly Robot Discovery & Digest Automation*"
+
+      # Step 8: Handle workflow failures
+      - name: Report automation failure
+        if: failure()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue create \
+            --title "⚠️ Weekly Automation Failed - $(date +%Y-%m-%d)" \
+            --label "automation,bug,urgent" \
+            --body "## ⚠️ Automation Workflow Failed
+
+**Date**: $(date +'%B %d, %Y at %H:%M UTC')
+**Workflow Run**: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+### Failed Steps
+Check the workflow logs above to identify which step failed.
+
+### Common Issues
+1. **API Key**: Verify \`ANTHROPIC_API_KEY\` secret is set correctly
+2. **Rate Limits**: Check if API rate limits were exceeded
+3. **Data Format**: Verify input data files are valid JSON
+4. **Network**: Check if external sources (RSS/arXiv) are accessible
+
+### Manual Recovery
+If automation fails, you can run scripts manually:
+\`\`\`bash
+npm run fetch-articles
+ANTHROPIC_API_KEY=your_key npm run extract-robots
+ANTHROPIC_API_KEY=your_key npm run generate-digest
+npm run update-analytics
+\`\`\`
+
+---
+*Generated by Weekly Robot Discovery & Digest Automation*"
