@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <defs>
+    <style>
+      .dobot-text { font-family: Arial, Helvetica, sans-serif; font-weight: 700; font-size: 36px; fill: #2D3748; }
+    </style>
+  </defs>
+  <text x="10" y="42" class="dobot-text">DOBOT</text>
+</svg>

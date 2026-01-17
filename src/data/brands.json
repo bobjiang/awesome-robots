@@ -380,5 +380,41 @@
     "logo": "/images/brands/pollen-robotics-logo.svg",
     "country": "France",
     "founded": "2016"
+  },
+  {
+    "id": "lg-electronics",
+    "name": "LG Electronics",
+    "description": "Global electronics and appliance leader expanding into home robotics with AI-powered humanoid assistants. CLOiD humanoid integrates with LG ThinQ smart home ecosystem for Zero Labor Home vision, featuring dual articulated arms and vision-language AI for household chores.",
+    "website": "https://www.lg.com/",
+    "logo": "/images/brands/lg-electronics-logo.svg",
+    "country": "South Korea",
+    "founded": "1958"
+  },
+  {
+    "id": "switchbot",
+    "name": "SwitchBot",
+    "description": "Smart home automation company pioneering home-service humanoid robots with vision-language-action AI. Onero H1 is designed for real-world household manipulation tasks like laundry folding and table clearing, featuring on-device AI processing and 22 degrees of freedom.",
+    "website": "https://www.switch-bot.com/",
+    "logo": "/images/brands/switchbot-logo.svg",
+    "country": "China",
+    "founded": "2016"
+  },
+  {
+    "id": "lem-surgical",
+    "name": "LEM Surgical",
+    "description": "Swiss medical robotics company developing humanoid-style dual-arm surgical robot systems. Dynamis is FDA-cleared for spine and orthopedic procedures with bimanual manipulation, sub-millimeter accuracy, and 3D vision synchronized with surgical arm movements.",
+    "website": "https://www.lemsurgical.com/",
+    "logo": "/images/brands/lem-surgical-logo.svg",
+    "country": "Switzerland",
+    "founded": "2015"
+  },
+  {
+    "id": "dobot",
+    "name": "Dobot",
+    "description": "Industrial and educational robotics manufacturer expanding into consumer quadruped robots. Rover X1 is a voice-controlled robot dog designed for home assistance and companionship, featuring hybrid wheel-leg design, auto-follow mode, and one of the most affordable price points in the category.",
+    "website": "https://www.dobot.cc/",
+    "logo": "/images/brands/dobot-logo.svg",
+    "country": "China",
+    "founded": "2015"
   }
 ]
