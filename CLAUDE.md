@@ -405,6 +405,115 @@ This system is designed for **zero ongoing costs**:
 - API-based: ~$0.10-0.50/week (20 articles × LLM calls)
 - Current approach: $0/week (included in Claude Code Pro)
 
+## Automated Digest & Analytics System
+
+This project includes a fully automated system to generate weekly content digests and analytics updates.
+
+### System Overview
+
+The automation runs every Friday at 10 AM UTC and performs:
+1. **Article Collection**: Fetch from RSS/arXiv (no API costs)
+2. **Robot Extraction**: Use Claude API to extract robot data
+3. **Digest Generation**: Create weekly blog post with insights
+4. **Analytics Update**: Refresh dashboard metrics
+5. **Pull Request**: Create PR with all changes for review
+
+### Automation Scripts
+
+#### `npm run extract-robots`
+Extracts robot data from collected articles using Claude API:
+- Input: `data/collected-articles/YYYY-MM-DD.json`
+- Output: `data/discovered-robots/YYYY-MM-DD.json`
+- Uses Claude Sonnet 4.5 for structured data extraction
+- Deduplicates against existing robots in catalog
+- Assigns quality scores and confidence ratings
+
+**Manual usage:**
+```bash
+export ANTHROPIC_API_KEY="your-key"
+npm run extract-robots              # Process latest articles
+npm run extract-robots -- --dry-run # Preview without saving
+```
+
+#### `npm run generate-digest`
+Generates weekly Awesome Robots Digest blog post:
+- Input: Latest collected articles and discovered robots
+- Output: `content/blog/YYYY-MM-DD-digest-issue-N.md`
+- Creates engaging summaries with key insights
+- Includes robot highlights and industry trends
+- Automatically published when PR is merged
+
+**Manual usage:**
+```bash
+export ANTHROPIC_API_KEY="your-key"
+npm run generate-digest              # Generate digest
+npm run generate-digest -- --dry-run # Preview without saving
+```
+
+#### `npm run update-analytics`
+Updates analytics dashboard with latest metrics:
+- Aggregates robot catalog statistics
+- Tracks discovery trends over time
+- Updates brand and category distributions
+- No API calls required
+
+**Manual usage:**
+```bash
+npm run update-analytics  # Update analytics files
+```
+
+### GitHub Actions Workflow
+
+**File**: `.github/workflows/weekly-robot-fetch.yml`
+
+The workflow automatically:
+1. Collects articles from all sources
+2. Extracts robot data using Claude API
+3. Generates weekly digest blog post
+4. Updates analytics dashboard
+5. Creates feature branch with all changes
+6. Opens pull request for editorial review
+7. Reports failures as GitHub issues if errors occur
+
+**Environment requirements:**
+- `ANTHROPIC_API_KEY` secret must be configured in GitHub Settings
+- See `docs/SETUP.md` for configuration instructions
+
+**Cost estimation:**
+- Article collection: Free (RSS/HTML parsing)
+- Robot extraction: ~$0.06/week
+- Digest generation: ~$0.015/week
+- Total: **~$0.08/week** or **$4/year**
+
+### Editorial Review Workflow
+
+When automation runs successfully:
+1. **PR Created**: Review at `automation/weekly-digest-YYYY-MM-DD` branch
+2. **Review Checklist**:
+   - Verify digest content quality and accuracy
+   - Check discovered robots against official sources
+   - Validate analytics data integrity
+3. **Merge**: Approve and merge to publish digest to blog
+4. **Post-Merge**: Consider adding high-quality discoveries to main catalog
+
+### Manual Override
+
+If you need to run automation manually:
+```bash
+# Full automation pipeline
+npm run fetch-articles
+export ANTHROPIC_API_KEY="your-key"
+npm run extract-robots
+npm run generate-digest
+npm run update-analytics
+
+# Create PR manually
+git checkout -b automation/manual-$(date +%Y-%m-%d)
+git add data/ content/blog/ src/data/analytics-*.json
+git commit -m "feat: Manual automation run"
+git push -u origin automation/manual-$(date +%Y-%m-%d)
+```
+
 ## Environment and Configuration
 
 ### Required Environment Variables

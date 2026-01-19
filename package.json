@@ -16,9 +16,12 @@
     "publish-blog": "tsx scripts/publish-blog.ts",
     "generate-digest": "tsx scripts/generate-digest.ts",
     "digest-and-publish": "tsx scripts/generate-digest.ts --publish-draft",
-    "fetch-articles": "tsx scripts/fetch-articles.ts"
+    "fetch-articles": "tsx scripts/fetch-articles.ts",
+    "extract-robots": "tsx scripts/extract-robots.ts",
+    "update-analytics": "tsx scripts/update-analytics.ts"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.71.2",
     "@t3-oss/env-nextjs": "^0.13.10",
     "@tailwindcss/typography": "^0.5.16",
     "cheerio": "^1.1.2",
@@ -39,7 +42,7 @@
     "@next/bundle-analyzer": "^16.1.1",
     "@tailwindcss/postcss": "^4",
     "@types/html-to-text": "^9.0.4",
-    "@types/node": "^20",
+    "@types/node": "^20.19.30",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
