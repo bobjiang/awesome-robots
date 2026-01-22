@@ -4,6 +4,21 @@ on:
   schedule:
     - cron: '0 10 * * 5'  # Friday 10 AM UTC
   workflow_dispatch:  # Allow manual trigger
+    inputs:
+      logLevel:
+        description: 'Log level'
+        required: true
+        default: 'warning'
+        type: choice
+        options:
+        - info
+        - warning
+        - debug
+      environment:
+        description: 'Environment to deploy to'
+        required: true
+        default: 'development'
+        type: string  
 
 jobs:
   weekly-automation:
