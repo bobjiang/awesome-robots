@@ -123,7 +123,7 @@ class AIDigestGenerator {
     const userPrompt = buildDigestUserPrompt(promptData);
 
     const response = await this.aiClient.generateText(userPrompt, systemPrompt, {
-      model: 'claude-3-5-sonnet-20241022',
+      model: 'claude-sonnet-4-5-20250929',
       maxTokens: 8192,
       temperature: 0.7,
     });

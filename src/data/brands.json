@@ -416,5 +416,32 @@
     "logo": "/images/brands/dobot-logo.svg",
     "country": "China",
     "founded": "2015"
+  },
+  {
+    "id": "diligent-robotics",
+    "name": "Diligent Robotics",
+    "description": "Healthcare robotics company deploying autonomous mobile manipulator robots in hospitals. Founded by MIT and Georgia Tech social robotics experts, Moxi robots handle logistics tasks, completing over 1.25 million deliveries across 25+ U.S. hospitals. Acquired by Serve Robotics in January 2026.",
+    "website": "https://www.diligentrobots.com/",
+    "logo": "/images/brands/diligent-robotics-logo.svg",
+    "country": "USA",
+    "founded": "2017"
+  },
+  {
+    "id": "serve-robotics",
+    "name": "Serve Robotics",
+    "description": "Publicly traded sidewalk delivery robotics company with the largest autonomous delivery fleet in the U.S. Spun off from Postmates in 2021, deploys 2,000+ Level 4 autonomous robots for last-mile delivery with Uber Eats, DoorDash, and major retail partners. Targeting $1 per delivery cost at scale.",
+    "website": "https://www.serverobotics.com/",
+    "logo": "/images/brands/serve-robotics-logo.svg",
+    "country": "USA",
+    "founded": "2017"
+  },
+  {
+    "id": "andromeda-robotics",
+    "name": "Andromeda Robotics",
+    "description": "Australian robotics company building emotionally intelligent humanoid companions for aged care. Abi robot leverages ChatGPT-4, speaks 90+ languages, and combats loneliness in healthcare settings. Valued at $100M with $19.2M funding, deployed in Australian aged care facilities with U.S. expansion underway.",
+    "website": "https://andromedarobotics.ai/",
+    "logo": "/images/brands/andromeda-robotics-logo.svg",
+    "country": "Australia",
+    "founded": "2022"
   }
 ]

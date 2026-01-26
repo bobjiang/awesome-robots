@@ -65,7 +65,7 @@ export class AnthropicClient {
     for (let attempt = 1; attempt <= maxRetries; attempt++) {
       try {
         const response = await this.client.messages.create({
-          model: options.model || 'claude-3-5-sonnet-20241022',
+          model: options.model || 'claude-sonnet-4-5-20250929',
           max_tokens: options.maxTokens || 8192,
           temperature: options.temperature || 1.0,
           system: systemPrompt,

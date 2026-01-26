@@ -1,0 +1,79 @@
+{
+  "fetch_date": "2026-01-26T11:10:38.776Z",
+  "week_range": "Jan 19–25",
+  "summary": {
+    "total_discovered": 3,
+    "duplicates_filtered": 0,
+    "new_robots": 3,
+    "quality_breakdown": {
+      "high": 0,
+      "medium": 3,
+      "low": 0
+    },
+    "source_breakdown": {
+      "ieee": 0,
+      "robotreport": 3,
+      "arxiv": 0
+    }
+  },
+  "robots": [
+    {
+      "company": "Diligent Robotics",
+      "robot_name": "Moxi",
+      "type": null,
+      "status": "commercial",
+      "image_link": "https://www.therobotreport.com/wp-content/uploads/2026/01/diligent-serve-featured.jpg",
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/serve-robotics-acquires-diligent-robotics/",
+      "discovered_at": "2026-01-26T11:10:38.776Z",
+      "source_type": "robotreport",
+      "confidence_score": 85,
+      "quality_score": {
+        "overall": 50,
+        "completeness": 50,
+        "reliability": 50,
+        "flags": []
+      },
+      "description": "Hospital logistics robot being acquired by Serve Robotics for healthcare delivery applications."
+    },
+    {
+      "company": "Serve Robotics",
+      "robot_name": "Serve Robot",
+      "type": "quadruped",
+      "status": "commercial",
+      "image_link": "https://www.therobotreport.com/wp-content/uploads/2026/01/diligent-serve-featured.jpg",
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/serve-robotics-acquires-diligent-robotics/",
+      "discovered_at": "2026-01-26T11:10:38.776Z",
+      "source_type": "robotreport",
+      "confidence_score": 80,
+      "quality_score": {
+        "overall": 50,
+        "completeness": 50,
+        "reliability": 50,
+        "flags": []
+      },
+      "description": "Sidewalk delivery robot for autonomous last-mile delivery services."
+    },
+    {
+      "company": "Andromeda (MassRobotics cohort)",
+      "robot_name": "Andromeda",
+      "type": null,
+      "status": "prototype",
+      "image_link": "https://www.therobotreport.com/wp-content/uploads/2026/01/enchantedmachinesatroboticssummit-featured.jpg",
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/meet-massrobotics-5th-healthcare-robotics-startup-catalyst-cohort/",
+      "discovered_at": "2026-01-26T11:10:38.776Z",
+      "source_type": "robotreport",
+      "confidence_score": 75,
+      "quality_score": {
+        "overall": 50,
+        "completeness": 50,
+        "reliability": 50,
+        "flags": []
+      },
+      "description": "Robot companion designed for aged care and assisted living environments."
+    }
+  ],
+  "errors": []
+}

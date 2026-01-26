@@ -10537,5 +10537,324 @@
     ],
     "officialUrl": "https://www.fftai.com/",
     "description": "Fourier GR-3 is the first Care-bot humanoid with 55 DoF, 31 touch sensors, and multimodal emotional AI. Designed for companionship, healthcare, and rehabilitation with natural conversation."
+  },
+  {
+    "id": "diligent-robotics-moxi",
+    "name": "Moxi",
+    "brand": "Diligent Robotics",
+    "category": "other",
+    "price": {
+      "starting": "request",
+      "currency": "USD",
+      "models": [
+        {
+          "name": "Moxi (RaaS)",
+          "price": "request"
+        }
+      ]
+    },
+    "generalInfo": {
+      "manufacturer": "Diligent Robotics",
+      "modelName": "Moxi",
+      "dimensions": {
+        "standing": "152-214cm (telescopic height) x 61cm x 61cm",
+        "weight": "136 kg"
+      }
+    },
+    "keyFeatures": [
+      "23 degrees of freedom mobile manipulator",
+      "Automatic 24/7 operation with self-docking charging",
+      "15kg payload capacity for medical supplies",
+      "Kinova Jaco2 manipulator arm with Robotiq gripper",
+      "Intel RealSense depth sensors and Hokuyo obstacle detection",
+      "LiDAR and RGB-D cameras for navigation",
+      "Social intelligence with facial expressions and voice notifications",
+      "Autonomous elevator and door navigation",
+      "1.1 to 5.4 km/h operational speed",
+      "Over 1.25 million deliveries completed across 25+ hospitals",
+      "Point-to-point delivery execution with human-guided learning",
+      "SOC Type II, TX-RAMP Level 2, HIPAA compliant"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "23 DOF",
+      "payloadCapacity": "15 kg (medical supplies)",
+      "batteryCapacityRuntime": "24/7 operation with automatic docking",
+      "charger": "Automatic docking station (no manual charging required)",
+      "sensorsIncluded": [
+        "Intel RealSense depth sensor",
+        "Hokuyo obstacle detection sensor",
+        "LiDAR",
+        "RGB-D cameras",
+        "Machine vision system"
+      ],
+      "interfaces": [
+        "Wi-Fi infrastructure",
+        "Hospital workflow integration"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Yes (ROS)",
+      "sdkLanguages": [
+        "Not publicly disclosed"
+      ],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [
+        "Custom AI foundation model",
+        "Intel GPU-powered processing"
+      ],
+      "apiDocumentationQuality": "Limited (Robot-as-a-Service model)"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Included in RaaS subscription",
+        "coverage": "Full service, maintenance, and 24/7 support"
+      },
+      "postSalesSupport": "12-week implementation with customized workflows, ongoing 24/7 monitoring",
+      "trackRecord": "Founded 2017, deployed in 25+ U.S. hospitals, acquired by Serve Robotics Jan 2026"
+    },
+    "specifications": {
+      "dimensions": "152-214cm height (telescopic), 61cm width, 61cm length",
+      "weight": "136 kg",
+      "material": "Aluminum construction with 3D-printed components",
+      "dof": "23 degrees of freedom",
+      "payload": "15 kg",
+      "speed": "1.1 to 5.4 km/h",
+      "battery": "24/7 operation with automatic docking",
+      "manipulator": "Kinova Jaco2 arm",
+      "gripper": "Robotiq two-finger gripper",
+      "mobileBase": "Freight mobile base (from Fetch Robotics)",
+      "computing": "Intel embedded computer with GPU",
+      "motors": "Maxon brushed DC motors, Dynamixel motors",
+      "os": "Ubuntu",
+      "targetMarkets": "Hospitals, healthcare facilities"
+    },
+    "features": [
+      "Mobile manipulation",
+      "Social intelligence",
+      "Autonomous navigation",
+      "24/7 operation",
+      "Hospital logistics automation",
+      "Human-guided learning",
+      "HIPAA compliant"
+    ],
+    "images": [
+      "/images/robots/diligent-robotics-moxi/robot-1.jpg"
+    ],
+    "officialUrl": "https://www.diligentrobots.com/moxi",
+    "description": "Moxi is an autonomous mobile manipulator robot for hospital logistics, operating 24/7 to deliver medical supplies. With 23 DOF and social intelligence, it has completed over 1.25 million deliveries across 25+ U.S. hospitals."
+  },
+  {
+    "id": "serve-robotics-serve",
+    "name": "Serve Robot",
+    "brand": "Serve Robotics",
+    "category": "other",
+    "price": {
+      "starting": "request",
+      "currency": "USD",
+      "models": [
+        {
+          "name": "Gen3 (RaaS)",
+          "price": "request"
+        }
+      ]
+    },
+    "generalInfo": {
+      "manufacturer": "Serve Robotics",
+      "modelName": "Serve Robot (Gen3)",
+      "dimensions": {
+        "standing": "105cm (H) x 64cm (W) x 79cm (L)",
+        "weight": "73 kg (161 lb)"
+      }
+    },
+    "keyFeatures": [
+      "Level 4 autonomous sidewalk delivery robot",
+      "50 pounds (23 kg) payload capacity for 6 extra-large pizzas",
+      "12+ hour battery life (Gen3: 14 hours or 48 miles)",
+      "99.8% delivery completion rate",
+      "360-degree Ouster REV7 digital LiDAR (Gen3)",
+      "NVIDIA Jetson Orin processor (5x compute boost over Gen2)",
+      "Multiple RGB cameras and time-of-flight sensors",
+      "Continuous 24/7 remote operator monitoring",
+      "Fleet logs 1 million miles monthly with 170 billion image-LIDAR samples",
+      "Zero emissions autonomous navigation",
+      "Locked cargo container with app-based unlock",
+      "Deployed fleet of 2,000+ robots across major U.S. cities"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "Wheeled mobile platform",
+      "payloadCapacity": "50 pounds (23 kg) / ~13 gallons cargo",
+      "batteryCapacityRuntime": "Gen3: 14 hours or 48 miles (67% improvement over Gen2)",
+      "charger": "Custom lithium-ion battery charging",
+      "sensorsIncluded": [
+        "Ouster REV7 digital LiDAR (360°)",
+        "Multiple RGB cameras",
+        "Time-of-Flight cameras",
+        "Ultrasonics for obstacle detection",
+        "GPS positioning"
+      ],
+      "interfaces": [
+        "Locked cargo container",
+        "App-based unlock system",
+        "Remote supervision interface"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Not disclosed",
+      "sdkLanguages": [
+        "No public SDK"
+      ],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [
+        "NVIDIA Isaac Sim",
+        "NVIDIA Jetson platform",
+        "Custom autonomous navigation AI"
+      ],
+      "apiDocumentationQuality": "Enterprise B2B integration only"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Included in RaaS subscription",
+        "coverage": "24/7 remote supervision, maintenance, and software updates"
+      },
+      "postSalesSupport": "Continuous OTA updates, 24/7 fleet monitoring, enterprise support",
+      "trackRecord": "Founded 2017 (Postmates X), spun off 2021, public 2023 (NASDAQ: SERV), 100K+ deliveries"
+    },
+    "specifications": {
+      "dimensions": "105cm H x 64cm W x 79cm L",
+      "weight": "73 kg (161 lb)",
+      "robotType": "Wheeled autonomous sidewalk delivery robot",
+      "topSpeed": "6 mph (10 km/h)",
+      "payload": "50 pounds (23 kg)",
+      "cargoCapacity": "~13 gallons",
+      "battery": "Gen3: 14 hours or 48 miles",
+      "processor": "NVIDIA Jetson Orin (Gen3)",
+      "lidar": "Ouster REV7 digital lidar",
+      "avgDeliveryTime": "18 minutes",
+      "completionRate": "99.8%",
+      "emissions": "Zero (0 G/KM CO₂)",
+      "autonomyLevel": "Level 4 in urban environments",
+      "fleetSize": "2,000+ robots",
+      "targetMarkets": "Last-mile delivery, restaurants, retail"
+    },
+    "features": [
+      "Level 4 autonomy",
+      "Sidewalk navigation",
+      "Zero emissions",
+      "24/7 monitoring",
+      "App-based unlock",
+      "Enterprise integration",
+      "99.8% completion rate"
+    ],
+    "images": [
+      "/images/robots/serve-robotics-serve/robot-1.jpg"
+    ],
+    "officialUrl": "https://www.serverobotics.com/",
+    "description": "Serve Robot is a Level 4 autonomous sidewalk delivery robot with 2,000+ units deployed across the U.S. Achieving 99.8% completion rate, it provides zero-emission last-mile delivery for Uber Eats, DoorDash, and major retailers."
+  },
+  {
+    "id": "andromeda-robotics-abi",
+    "name": "Abi",
+    "brand": "Andromeda Robotics",
+    "category": "humanoid",
+    "price": {
+      "starting": "request",
+      "currency": "USD",
+      "models": [
+        {
+          "name": "Abi",
+          "price": "request"
+        }
+      ]
+    },
+    "generalInfo": {
+      "manufacturer": "Andromeda Robotics",
+      "modelName": "Abi",
+      "dimensions": {
+        "standing": "120 cm (~4 feet tall)",
+        "weight": "Not publicly disclosed"
+      }
+    },
+    "keyFeatures": [
+      "Emotionally intelligent humanoid companion robot",
+      "ChatGPT-4 powered conversational AI",
+      "Supports 90+ languages for multilingual communication",
+      "Facial recognition with individual memory retention",
+      "Remembers conversations from days or months prior",
+      "Adapts personality based on individual cues and preferences",
+      "Singing, dancing, games, storytelling, and prayers",
+      "Wheeled base for autonomous navigation",
+      "Cartoon-like appearance inspired by Disney's Baymax",
+      "Screen-based face for emotional expression",
+      "Deployed in Australian aged care facilities",
+      "Valued at $100M with $19.2M funding raised"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "Screen-based face with wheeled mobility platform",
+      "payloadCapacity": "Not applicable (companion robot)",
+      "batteryCapacityRuntime": "Not publicly disclosed",
+      "charger": "Not publicly disclosed",
+      "sensorsIncluded": [
+        "Facial recognition sensors",
+        "Voice interaction capabilities",
+        "Autonomous navigation sensors",
+        "Vision system (chest-mounted)"
+      ],
+      "interfaces": [
+        "Screen-based emotional display",
+        "Voice interface",
+        "Care team scheduling interface"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Not disclosed",
+      "sdkLanguages": [
+        "No public SDK"
+      ],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [
+        "ChatGPT-4",
+        "Custom emotional intelligence AI",
+        "Multimodal perception"
+      ],
+      "apiDocumentationQuality": "Not publicly available"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Included in service contract",
+        "coverage": "12-week onboarding program, ongoing technical support"
+      },
+      "postSalesSupport": "Phone and in-person support from Australian-based team",
+      "trackRecord": "Founded 2022, $19.2M funding, $100M valuation, deployed in aged care facilities"
+    },
+    "specifications": {
+      "dimensions": "120 cm height (~4 feet)",
+      "weight": "Lightweight design (exact weight not disclosed)",
+      "material": "3D-printed components",
+      "construction": "Colorful humanoid design (pink, orange, green, purple)",
+      "assemblyTime": "~1 day per unit",
+      "manufacturingCost": "~$10,000 per unit (hardware and consumables)",
+      "languages": "90+ languages",
+      "aiModel": "ChatGPT-4",
+      "facialRecognition": "Yes",
+      "memory": "Conversation retention across days/months",
+      "personality": "Adaptive based on individual preferences",
+      "mobility": "Wheeled base with autonomous navigation",
+      "productionCapacity": "Current: 8 units/month, Target: 100 units/month",
+      "targetMarkets": "Aged care, assisted living, children's hospitals"
+    },
+    "features": [
+      "Emotional intelligence",
+      "ChatGPT-4 powered",
+      "90+ languages",
+      "Facial recognition",
+      "Personalized interaction",
+      "Healthcare deployment",
+      "Companionship focus"
+    ],
+    "images": [
+      "/images/robots/andromeda-robotics-abi/robot-1.jpg"
+    ],
+    "officialUrl": "https://andromedarobotics.ai/",
+    "description": "Abi is an emotionally intelligent humanoid companion robot for aged care, powered by ChatGPT-4 and supporting 90+ languages. With facial recognition and adaptive personality, Abi combats loneliness and provides companionship in healthcare settings."
   }
 ]
