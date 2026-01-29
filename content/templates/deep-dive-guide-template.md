@@ -1,6 +1,6 @@
 ---
 title: "[Topic]: Complete Guide to [Aspect]"
-date: YYYY-MM-DD # ISO 8601 format, e.g., 2026-01-29
+date: YYYY-MM-DD
 author: "awesome-robots-team"
 category: "Technical Guides"
 tags: ["[topic]", "[technology]", "deep dive", "tutorial"]
@@ -23,7 +23,6 @@ seo:
 - Prerequisites (if technical)
 - Why this topic matters]
 
-<!-- Components like GuideTableOfContents are auto-imported from src/components/ -->
 <GuideTableOfContents />
 
 ---
@@ -181,8 +180,6 @@ seo:
 ### Related Robots
 
 [List 5-8 robots that implement this technology]
-
-<QuoteRequestCTA variant="inline" />
 
 <RelatedGuidesWidget
   guides={[

@@ -1,6 +1,6 @@
 ---
 title: "[Topic] Buying Guide 2026 - Compare [X] Models & Prices"
-date: YYYY-MM-DD # ISO 8601 format, e.g., 2026-01-29
+date: YYYY-MM-DD
 author: "awesome-robots-team"
 category: "Buying Guides"
 tags: ["buying guide", "[topic]", "[category]", "comparison", "prices"]
@@ -95,7 +95,6 @@ seo:
 
 ## 3. Budget Tiers & Recommendations (500-600 words)
 
-<!-- Components like BudgetTierRecommendations are auto-imported from src/components/ -->
 <BudgetTierRecommendations
   category="[category]"
   entryMax={5000}

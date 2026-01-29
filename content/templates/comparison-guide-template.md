@@ -1,6 +1,6 @@
 ---
 title: "[Robot A] vs [Robot B]: Which [Category] Robot is Better? (2026)"
-date: YYYY-MM-DD # ISO 8601 format, e.g., 2026-01-29
+date: YYYY-MM-DD
 author: "awesome-robots-team"
 category: "Comparisons"
 tags: ["[robot-a]", "[robot-b]", "comparison", "[category]"]
@@ -27,7 +27,7 @@ seo:
 
 | Feature | [Robot A] | [Robot B] |
 |---------|-----------|-----------|
-| **Price** | $[price] | $[price] |
+| **Price** | $[price] | $price] |
 | **Best For** | [Use case] | [Use case] |
 | **DOF** | [number] | [number] |
 | **Payload** | [kg] | [kg] |
@@ -56,7 +56,6 @@ seo:
 
 ## 2. Detailed Specifications Comparison (500-600 words)
 
-<!-- Components like RobotComparisonTable are auto-imported from src/components/ -->
 <RobotComparisonTable
   robots={[
     { id: "[robot-a-id]", name: "[Robot A]", brand: "[Brand]", price: [X], ... },
