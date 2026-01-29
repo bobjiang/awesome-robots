@@ -1,5 +1,8 @@
+'use client';
+
 import React from 'react';
 import Link from 'next/link';
+import { trackEvent } from '@/lib/gtag';
 
 export interface QuoteRequestCTAProps {
   variant?: 'inline' | 'banner' | 'sidebar';
@@ -26,25 +29,22 @@ export default function QuoteRequestCTA({
       utm_campaign: utmCampaign,
     });
 
-    if (robotId) {
-      params.append('robot', robotId);
-    }
-
-    return `/quote?${params.toString()}`;
+    // If robotId is provided, link to robot detail page
+    // Otherwise, link to browse page
+    const baseUrl = robotId ? `/robots/${robotId}` : '/browse';
+    return `${baseUrl}?${params.toString()}`;
   };
 
   const quoteUrl = buildQuoteUrl();
 
   // Track CTA clicks with Google Analytics
   const handleClick = () => {
-    if (typeof window !== 'undefined' && (window as any).gtag) {
-      (window as any).gtag('event', 'cta_click', {
-        event_category: 'engagement',
-        event_label: variant,
-        robot_id: robotId || 'general',
-        robot_name: robotName || 'not_specified',
-      });
-    }
+    trackEvent('cta_click', {
+      event_category: 'engagement',
+      event_label: variant,
+      robot_id: robotId || 'general',
+      robot_name: robotName || 'not_specified',
+    });
   };
 
   // Inline variant - compact CTA within content
