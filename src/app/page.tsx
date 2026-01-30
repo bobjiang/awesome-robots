@@ -153,7 +153,7 @@ export default function Home() {
                     src={
                       category.id === 'humanoid' ? '/images/categories/humanoid.png' :
                       category.id === 'quadruped' ? '/images/categories/quadruped.png' :
-                      category.id === 'accessory' ? '/images/categories/accessories.svg' :
+                      category.id === 'accessory' ? '/images/categories/accessories.png' :
                       '/images/categories/other.svg'
                     }
                     alt={category.name}
