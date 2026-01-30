@@ -6565,7 +6565,7 @@
     },
     "description": "MarsCat is the world's first fully autonomous bionic pet cat with 16 servo motors and 16-DOF. Features AI-powered personality development, voice recognition, and open-source Raspberry Pi platform for educational and entertainment purposes.",
     "images": [
-      "/images/robots/elephant-marscat.webp"
+      "/images/robots/marscat.webp"
     ],
     "officialUrl": "https://www.elephantrobotics.com/en/mars-en/",
     "generalInfo": {
@@ -8595,7 +8595,7 @@
       "Cloud integration"
     ],
     "images": [
-      "/images/robots/agibot-a2-ultra/a2-ultra-1.jpg"
+      "/images/robots/agibot-a2-ultra/robot-1.jpg"
     ],
     "officialUrl": "https://www.agibot.com/products/A2_Ultra",
     "description": "AgiBot A2 Ultra is a mass-production humanoid robot with 200 TOPS AI performance and Guinness World Record for continuous walking (106km). Features 40+ DOF, hot-swappable batteries, 3D LiDAR, and precision manipulation capable of threading needles. Over 5,000 units produced for customer service, logistics, and warehouse automation."
@@ -8690,7 +8690,7 @@
       "Multi-robot sync"
     ],
     "images": [
-      "/images/robots/vinmotion-motion-2/motion-2-1.jpg"
+      "/images/robots/vinmotion-motion-2/motion-2-1.webp"
     ],
     "officialUrl": "https://vinmotion.net/product/motion-2",
     "description": "VinMotion Motion 2 is a Vietnamese humanoid robot featuring 24/7 autonomous operation with self-charging and 40kg back lifting capacity. Powered by Qualcomm Dragonwing IQ9, it features 31 proprietary smart motors, multilingual AI, and multi-robot synchronization for service applications in the VinFast ecosystem."
@@ -8806,7 +8806,7 @@
       "Three tiers"
     ],
     "images": [
-      "/images/robots/booster-k1-geek/k1-geek-1.jpg"
+      "/images/robots/booster-k1-geek/k1-geek-1.webp"
     ],
     "officialUrl": "https://www.booster.tech/booster-k1/",
     "description": "Booster K1 Geek is a compact humanoid robot (95cm, 19.5kg) designed for education and research. RoboCup 2025 KidSize champion platform with 22 DOF, ROS2 support, and open-source development. Features stereo vision, Python/C++ SDK, no-code AI platform, and three computational tiers (48-200 TOPS) starting at $5,999."
@@ -8924,7 +8924,7 @@
       "Hugging Face AI"
     ],
     "images": [
-      "/images/robots/pollen-robotics-reachy-2/reachy-2-1.jpg"
+      "/images/robots/pollen-robotics-reachy-2/reachy-2-1.webp"
     ],
     "officialUrl": "https://www.pollen-robotics.com/reachy/",
     "description": "Reachy 2 is a fully open-source humanoid research platform by Pollen Robotics (Hugging Face). Features 14-21 DOF modular design, VR teleoperation (125ms latency), ROS2 Humble integration, and Hugging Face LeRobot library. With patented Orbita actuators, stereo vision, and Python SDK, it's deployed at Cornell and Carnegie Mellon for embodied AI research. Starting at $70,000."
@@ -10227,7 +10227,7 @@
       "SwitchBot ecosystem"
     ],
     "images": [
-      "/images/robots/switchbot-onero-h1/placeholder.jpg"
+      "/images/robots/switchbot-onero-h1/robot-1.jpg"
     ],
     "officialUrl": "https://www.switch-bot.com/",
     "description": "SwitchBot Onero H1 is a 1.3m wheeled humanoid with 22 DoF and on-device VLA AI. Designed for household automation with Intel RealSense cameras and SwitchBot ecosystem integration. (Images to be added)"
@@ -10415,7 +10415,7 @@
       "Developer platform"
     ],
     "images": [
-      "/images/robots/dobot-rover-x1/placeholder.jpg"
+      "/images/robots/dobot-rover-x1/rover-x1-1.webp"
     ],
     "officialUrl": "https://www.dobot.cc/",
     "description": "Dobot Rover X1 is the most affordable quadruped at $1,030 with hybrid wheel-leg design and dual-vision tracking. Features auto-follow, voice commands, and developer platform. (Images to be added)"
