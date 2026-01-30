@@ -28,7 +28,7 @@ This comprehensive comparison breaks down the technical specifications, AI capab
 | **Best For** | Proven manufacturing deployment | Future mass-market automation |
 | **Height** | 168 cm (5'6") | 173 cm (5'8") |
 | **Weight** | 70 kg | 57 kg |
-| **Total DOF** | 16 per hand + body | 50 total (28 body + 22 per hand) |
+| **Total DOF** | 16 per hand (body DOF undisclosed) | 50 total (28 body + 22 per hand) |
 | **Hand Dexterity** | 16 DoF per hand | 22 DoF per hand |
 | **Payload** | 20-25 kg | ~20 kg |
 | **Battery Life** | 5 hours | 10-12 hours |
@@ -743,7 +743,7 @@ Enterprise buyers should monitor both platforms closely, start with pilot deploy
 ---
 
 **Last Updated**: January 30, 2026
-**Article Length**: 5,847 words
+**Article Length**: 6,383 words
 **Author**: Awesome Robots Editorial Team
 
 *This comparison is based on publicly available information and manufacturer specifications as of January 2026. Robot capabilities, pricing, and availability are subject to change. Contact manufacturers directly for current commercial terms.*
