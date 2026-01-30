@@ -6565,7 +6565,7 @@
     },
     "description": "MarsCat is the world's first fully autonomous bionic pet cat with 16 servo motors and 16-DOF. Features AI-powered personality development, voice recognition, and open-source Raspberry Pi platform for educational and entertainment purposes.",
     "images": [
-      "/images/robots/elephant-marscat.webp"
+      "/images/robots/marscat.webp"
     ],
     "officialUrl": "https://www.elephantrobotics.com/en/mars-en/",
     "generalInfo": {
@@ -7016,11 +7016,7 @@
       "note": "Contact manufacturer - Estimated $10,000-$20,000 range based on market positioning"
     },
     "images": [
-      "https://galaxea-dynamics.com/cdn/shop/files/R1Pro_gripper_6b4d6369-26ca-4047-94af-481eeb55b837.png?v=1760586490&width=1946",
-      "https://galaxea-dynamics.com/cdn/shop/files/Lite_0bb6493d-5661-4d33-8093-109aa58aa423.png?v=1760586490&width=1946",
-      "https://galaxea-dynamics.com/cdn/shop/files/1_c3ba6a01-cadb-4829-80f1-48303f44bba1.png?v=1760586490&width=1946",
-      "https://galaxea-dynamics.com/cdn/shop/files/R1_Pro_cf56ea4b-1089-4864-86bc-df48d948e852.png?v=1760586490&width=1946",
-      "https://galaxea-dynamics.com/cdn/shop/files/R1Pro_silver_8c560e50-ffbc-4163-8ae8-2977c9f33976.png?v=1760586490&width=1946"
+      "/images/robots/galaxea-r1pro/robot-1.png"
     ],
     "description": "Arm Reach: 64cm (without the end-effector) Standard Sensors: 1 head cameras + 5 chassis cameras + 1 LiDAR Computing: Jetson AGX Orin 32GB",
     "generalInfo": {
@@ -7145,11 +7141,7 @@
       "note": "Contact Leju Robotics for commercial pricing"
     },
     "images": [
-      "https://kuavo.lejurobot.com/leju_website/en/images/banner/banner1.png?v=0.0.1-66-gb7e9e90",
-      "https://kuavo.lejurobot.com/leju_website/en/images/KUAVO3.0.png?v=0.0.1-66-gb7e9e90",
-      "https://kuavo.lejurobot.com/leju_website/en/images/KUAVO-MY.png?v=0.0.1-66-gb7e9e90",
-      "https://kuavo.lejurobot.com/leju_website/en/images/series/education_poster.png?v=0.0.1-66-gb7e9e90",
-      "https://kuavo.lejurobot.com/leju_website/en/images/series/commercial_poster.png?v=0.0.1-66-gb7e9e90"
+      "/images/robots/leju-kuavo-my/robot-1.png"
     ],
     "description": "Share company updates and industry news Emboided intelligence innovation center kicks off, speeding up humanoid robot industrial evolution Participate in MBBF2024 forum, explore humanoid robot global market strategy",
     "generalInfo": {
@@ -7246,11 +7238,7 @@
       "note": "$5,400 USD - Professional-grade open-source platform for education/research"
     },
     "images": [
-      "https://file.engineai.com.cn:2390/files/images/menu_1.png",
-      "https://file.engineai.com.cn:2390/files/images/menu_2.png",
-      "https://file.engineai.com.cn:2390/files/images/menu_3.png",
-      "https://file.engineai.com.cn:2390/files/images/menu_4.png",
-      "https://file.engineai.com.cn:2390/files/images/engineai_start_bg.png"
+      "/images/robots/engineai-sa01/robot-1.png"
     ],
     "description": "众擎机器人",
     "generalInfo": {
@@ -7348,11 +7336,7 @@
       "note": "Contact Kepler for enterprise pricing - Industrial-grade pricing expected"
     },
     "images": [
-      "https://img.gotokepler.com/video/Robot-en.mp4?vframe/jpg/offset/0",
-      "https://img.gotokepler.com/video/Robot-en.mp4?vframe/jpg/offset/0",
-      "https://img.gotokepler.com/image/gotokepler/mobile/product/3.png",
-      "https://img.gotokepler.com/image/gotokepler/product/3-1.png",
-      "https://img.gotokepler.com/image/gotokepler/product/3-2.png"
+      "/images/robots/kepler-k2/robot-1.jpg"
     ],
     "description": "上海开普勒探索机器人有限公司",
     "generalInfo": {
@@ -7443,11 +7427,7 @@
       "note": "Contact manufacturer - Expected to be competitively priced for consumer market"
     },
     "images": [
-      "https://www.astribot.com/_nuxt/describe-s2-bg.uI62FkDw.png",
-      "https://www.astribot.com/_nuxt/describe-s3-img1.BhWEfWFv.jpg",
-      "https://www.astribot.com/_nuxt/describe-s3-img2.DaG__Qo6.jpg",
-      "https://www.astribot.com/_nuxt/describe-s3-img3.DK5reSax.jpg",
-      "https://www.astribot.com/_nuxt/describe-s3-img4.CW3NSDSu.jpg"
+      "/images/robots/astribot-s1/robot-1.png"
     ],
     "description": "Your AI Robotic Partner, Together Forward Our company has pioneered a software-hardware integrated system architecture for AI (Design for AI, DFAI), deeply coupling 'AI capabilities' with 'optimal operation', This innovation enables S1 to learn, think, and work more like humans",
     "generalInfo": {
@@ -7541,11 +7521,7 @@
       "note": "Available for purchase on PaXini online store - Contact for pricing"
     },
     "images": [
-      "https://cdn-cn.paxini.com//store/pro/67e1047e9c11239e850bcc5d/976e83d3-cafc-4ec2-988d-e30833c72e0e.png",
-      "https://cdn-cn.paxini.com//store/pro/67e1047e9c11239e850bcc5d/8c4cb973-fc7c-43d4-ab08-82d0c260fc51.png",
-      "https://cdn-cn.paxini.com//store/pro/67e1047e9c11239e850bcc5d/f57dae3e-2e13-4baa-aa6e-59d74203bd0b.png",
-      "https://cdn-cn.paxini.com//store/pro/67e1047e9c11239e850bcc5d/423b9444-4964-4c27-9bf1-e9316cb26264.png",
-      "https://cdn-cn.paxini.com//store/pro/67e1047e9c11239e850bcc5d/976e83d3-cafc-4ec2-988d-e30833c72e0e.png"
+      "/images/robots/paxini-tora-one/robot-1.png"
     ],
     "description": "Copyright © 2024 PaXini Tech. All rights reserved Copyright © 2024 PaXini Tech. All rights reserved 粤ICP备2022109610号",
     "generalInfo": {
@@ -7640,11 +7616,7 @@
       "note": "Contact manufacturer - Research/commercial pricing TBD"
     },
     "images": [
-      "https://www.droidup.com/uploads/upload/images/20250903/255466b20fee570766a55a1455f67f45.png",
-      "https://www.droidup.com/uploads/upload/images/20250903/255466b20fee570766a55a1455f67f45.png",
-      "https://www.droidup.com/static/home/images/x-l1.jpg",
-      "https://www.droidup.com/static/home/images/x-l2.jpg",
-      "https://www.droidup.com/static/home/images/x-l3.jpg"
+      "/images/robots/droidup-x02/robot-1.png"
     ],
     "description": "睿娜是一款领先的人形机器人，采用先进的表情模拟和生成技术，具有类人情感，“她”是最接近真实生命体的人工智能载体。睿娜是一款以1:1比例真实还原人脸的尖端表情机器人，其皮肤和面部细节达到了高度写实的水平，具有高度写实的皮肤和丰富的表情模拟能力。同时她配备了先进的多模态感知系统和持续学习的算法，具备智能语音和眼神追踪交互功能，能够精准捕捉并再现人类情感的微妙变化。此外，配合灵活的双臂及自主移动导航底盘，可以实现更有亲和力的沟通交流，实现自主行走，提供更加自然和个性化的交流体验。 全球首款基于仿生肌腱驱动技术的模块化人形机器人，采用肌腱与分布式电机协同驱动，关节刚度动态可调，实现类人步态(步速3m/s、越障15cm)与多地形自适应能力(碎石/坡地/楼梯)能耗较竞品降低25%，动态续航达6小时。 睿娜是一款领先的人形机器人，采用先进的表情模拟和生成技术，具有类人情感，“她”是最接近真实生命体的人工智能载体。睿娜是一款以1:1比例真实还原人脸的尖端表情机器人，其皮肤和面部细节达到了高度写实的水平，具有高度写实的皮肤和丰富的表情模拟能力。同时她配备了先进的多模态感知系统和持续学习的算法，具备智能语音和眼神追踪交互功能，能够精准捕捉并再现人类情感的微妙变化。此外，配合灵活的双臂及自主移动导航底盘，可以实现更有亲和力的沟通交流，实现自主行走，提供更加自然和个性化的交流体验。",
     "generalInfo": {
@@ -7730,11 +7702,7 @@
       "note": "$5,500 USD - Positioned as affordable humanoid platform"
     },
     "images": [
-      "https://qiniu.mfdemo.cn/songyandongli/2024/09/03/66d6bbff8bf26.png",
-      "https://qiniu.mfdemo.cn/songyandongli/2024/09/03/66d6bc09eacc4.png",
-      "https://qiniu.mfdemo.cn/songyandongli/2024/09/03/66d6bbff8bf26.png",
-      "https://qiniu.mfdemo.cn/songyandongli/2025/02/17/67b2ac313fef4.png",
-      "https://qiniu.mfdemo.cn/songyandongli/2024/09/11/66e150bab3f42.png"
+      "/images/robots/noetix-dora/robot-1.png"
     ],
     "description": "全尺寸高性能机器人，适用于工业协作等场景，最大关节输出扭矩达到200N*m。 产品级人形机器人Dora，具备敏捷的移动能力、强大的感知交互性能。 首款专为人形机器人运动控制研发的遥控手柄，通讯距离长、信号稳定。",
     "generalInfo": {
@@ -7858,6 +7826,9 @@
       "ROS/ROS2 compatible with comprehensive SDK",
       "Pre-order available for Q1-Q2 2026 delivery"
     ],
+    "images": [
+      "/images/robots/unitree-h2/robot-1.jpg"
+    ],
     "hardwareBuildQuality": {
       "totalDegreesOfFreedom": "31 (including 3-DOF waist, 2-DOF neck)",
       "payloadCapacity": "7 kg normally, up to 21 kg briefly",
@@ -7978,6 +7949,9 @@
       "2 GPS devices and laser scanners for mapping",
       "Infrared cameras for night vision"
     ],
+    "images": [
+      "/images/robots/agibot-a2/robot-1.jpg"
+    ],
     "hardwareBuildQuality": {
       "totalDegreesOfFreedom": "28 motors powering joints",
       "payloadCapacity": "N/A - designed for service tasks",
@@ -8096,6 +8070,9 @@
       "CAN bus motor controllers",
       "Comprehensive documentation at docs.kscale.dev"
     ],
+    "images": [
+      "/images/robots/k-scale-k-bot/robot-1.webp"
+    ],
     "hardwareBuildQuality": {
       "totalDegreesOfFreedom": "Full humanoid articulation",
       "payloadCapacity": "Research platform",
@@ -8212,6 +8189,9 @@
       "Perfect for learning and experimentation",
       "Active community support",
       "Beginner-friendly documentation"
+    ],
+    "images": [
+      "/images/robots/k-scale-z-bot/robot-1.webp"
     ],
     "hardwareBuildQuality": {
       "totalDegreesOfFreedom": "Multiple servos for basic humanoid movement",
@@ -8330,6 +8310,9 @@
       "Open programming interfaces for developers",
       "100% domestically sourced components (China)",
       "1-2 hours runtime with 48V 3.5Ah battery"
+    ],
+    "images": [
+      "/images/robots/noetix-bumi/robot-1.jpg"
     ],
     "hardwareBuildQuality": {
       "totalDegreesOfFreedom": "21 joints - knee/elbow flexion, torso twist, hip coordination",
@@ -8612,7 +8595,7 @@
       "Cloud integration"
     ],
     "images": [
-      "/images/robots/agibot-a2-ultra/a2-ultra-1.jpg"
+      "/images/robots/agibot-a2-ultra/robot-1.jpg"
     ],
     "officialUrl": "https://www.agibot.com/products/A2_Ultra",
     "description": "AgiBot A2 Ultra is a mass-production humanoid robot with 200 TOPS AI performance and Guinness World Record for continuous walking (106km). Features 40+ DOF, hot-swappable batteries, 3D LiDAR, and precision manipulation capable of threading needles. Over 5,000 units produced for customer service, logistics, and warehouse automation."
@@ -8707,7 +8690,7 @@
       "Multi-robot sync"
     ],
     "images": [
-      "/images/robots/vinmotion-motion-2/motion-2-1.jpg"
+      "/images/robots/vinmotion-motion-2/motion-2-1.webp"
     ],
     "officialUrl": "https://vinmotion.net/product/motion-2",
     "description": "VinMotion Motion 2 is a Vietnamese humanoid robot featuring 24/7 autonomous operation with self-charging and 40kg back lifting capacity. Powered by Qualcomm Dragonwing IQ9, it features 31 proprietary smart motors, multilingual AI, and multi-robot synchronization for service applications in the VinFast ecosystem."
@@ -8823,7 +8806,7 @@
       "Three tiers"
     ],
     "images": [
-      "/images/robots/booster-k1-geek/k1-geek-1.jpg"
+      "/images/robots/booster-k1-geek/k1-geek-1.webp"
     ],
     "officialUrl": "https://www.booster.tech/booster-k1/",
     "description": "Booster K1 Geek is a compact humanoid robot (95cm, 19.5kg) designed for education and research. RoboCup 2025 KidSize champion platform with 22 DOF, ROS2 support, and open-source development. Features stereo vision, Python/C++ SDK, no-code AI platform, and three computational tiers (48-200 TOPS) starting at $5,999."
@@ -8941,7 +8924,7 @@
       "Hugging Face AI"
     ],
     "images": [
-      "/images/robots/pollen-robotics-reachy-2/reachy-2-1.jpg"
+      "/images/robots/pollen-robotics-reachy-2/reachy-2-1.webp"
     ],
     "officialUrl": "https://www.pollen-robotics.com/reachy/",
     "description": "Reachy 2 is a fully open-source humanoid research platform by Pollen Robotics (Hugging Face). Features 14-21 DOF modular design, VR teleoperation (125ms latency), ROS2 Humble integration, and Hugging Face LeRobot library. With patented Orbita actuators, stereo vision, and Python SDK, it's deployed at Cornell and Carnegie Mellon for embodied AI research. Starting at $70,000."
@@ -10244,7 +10227,7 @@
       "SwitchBot ecosystem"
     ],
     "images": [
-      "/images/robots/switchbot-onero-h1/placeholder.jpg"
+      "/images/robots/switchbot-onero-h1/robot-1.jpg"
     ],
     "officialUrl": "https://www.switch-bot.com/",
     "description": "SwitchBot Onero H1 is a 1.3m wheeled humanoid with 22 DoF and on-device VLA AI. Designed for household automation with Intel RealSense cameras and SwitchBot ecosystem integration. (Images to be added)"
@@ -10432,7 +10415,7 @@
       "Developer platform"
     ],
     "images": [
-      "/images/robots/dobot-rover-x1/placeholder.jpg"
+      "/images/robots/dobot-rover-x1/rover-x1-1.webp"
     ],
     "officialUrl": "https://www.dobot.cc/",
     "description": "Dobot Rover X1 is the most affordable quadruped at $1,030 with hybrid wheel-leg design and dual-vision tracking. Features auto-follow, voice commands, and developer platform. (Images to be added)"
@@ -10856,5 +10839,240 @@
     ],
     "officialUrl": "https://andromedarobotics.ai/",
     "description": "Abi is an emotionally intelligent humanoid companion robot for aged care, powered by ChatGPT-4 and supporting 90+ languages. With facial recognition and adaptive personality, Abi combats loneliness and provides companionship in healthcare settings."
+  },
+  {
+    "id": "fauna-robotics-sprout",
+    "name": "Sprout",
+    "brand": "Fauna Robotics",
+    "category": "humanoid",
+    "price": {
+      "starting": "request",
+      "currency": "USD",
+      "models": [
+        {
+          "name": "Creator Edition",
+          "price": "request"
+        }
+      ]
+    },
+    "generalInfo": {
+      "manufacturer": "Fauna Robotics",
+      "modelName": "Sprout Creator Edition",
+      "dimensions": {
+        "standing": "107 cm (42 in) tall",
+        "weight": "22.7 kg (50 lbs)"
+      }
+    },
+    "keyFeatures": [
+      "29 total degrees of freedom for full-body articulation",
+      "6 DoF arms with floor-to-countertop reach capability",
+      "5 DoF legs with compliant low-impact locomotion",
+      "2 DoF articulated neck for directional gaze and expression",
+      "NVIDIA Jetson AGX Orin with 64GB memory for onboard AI",
+      "1 TB SSD storage for large model inference",
+      "ZED 2i stereoscopic vision system for depth perception",
+      "Four time-of-flight sensors for obstacle detection",
+      "Directional four-microphone array for speech recognition and sound localization",
+      "Full-color 360-degree facial LED array for visual communication",
+      "Motorized eyebrows for non-verbal emotional expression",
+      "Soft deformable exterior panels for safe human contact",
+      "Back-drivable motors to minimize impact forces during interactions",
+      "LEGO-compatible grid on head for customization with standard bricks",
+      "Swappable battery system with 3–3.5 hour runtime",
+      "Dedicated real-time safety subsystem across all mechanical and software levels",
+      "Resilient design with fall recovery capability",
+      "Mapping, navigation, and voice interaction out of the box"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "29 (Arms: 6 each, Legs: 5 each, Neck: 2, Grippers: 1 each)",
+      "payloadCapacity": "Not specified (1 DoF rubberized grippers per arm)",
+      "batteryCapacityRuntime": "Swappable battery, 3–3.5 hours runtime",
+      "charger": "Swappable battery system",
+      "sensorsIncluded": [
+        "ZED 2i stereoscopic vision",
+        "Four time-of-flight sensors",
+        "Torso IMU (Inertial Measurement Unit)",
+        "Directional four-microphone array",
+        "Dual high-fidelity speakers"
+      ],
+      "interfaces": [
+        "Ethernet",
+        "Emergency stop (E-Stop)",
+        "Ergonomic carry handle"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Not specified",
+      "sdkLanguages": [
+        "Python",
+        "Containerized services"
+      ],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [
+        "NVIDIA Jetson AGX Orin platform",
+        "Embodied AI",
+        "Slot-based behavior hierarchy"
+      ],
+      "apiDocumentationQuality": "Stable APIs with motor control through high-level autonomy"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Not specified",
+        "coverage": "Not specified"
+      },
+      "postSalesSupport": "Technical report available via arXiv, full specifications PDF",
+      "trackRecord": "NYC-based startup, assembled in America, founders from embodied AI background"
+    },
+    "specifications": {
+      "dimensions": "107 cm tall",
+      "weight": "22.7 kg (50 lbs)",
+      "degreesOfFreedom": "29 total",
+      "armDOF": "6 per arm",
+      "legDOF": "5 per leg",
+      "neckDOF": "2",
+      "gripperDOF": "1 per hand",
+      "computing": "NVIDIA Jetson AGX Orin, 64GB memory, 1TB SSD",
+      "vision": "ZED 2i stereoscopic vision system",
+      "sensors": [
+        "ZED 2i stereoscopic vision",
+        "Four time-of-flight sensors",
+        "Torso IMU",
+        "Four-microphone directional array"
+      ],
+      "battery": "Swappable, 3–3.5 hours runtime",
+      "connectivity": [
+        "Ethernet"
+      ],
+      "safetyFeatures": [
+        "Dedicated real-time safety subsystem",
+        "Back-drivable motors",
+        "Soft deformable exterior panels",
+        "Emergency stop (E-Stop)"
+      ],
+      "audio": "Dual high-fidelity speakers, four-microphone array",
+      "display": "Full-color 360-degree facial LED array",
+      "locomotion": "Compliant bipedal with low-impact feet",
+      "manipulation": "1 DoF rubberized grippers, floor-to-countertop reach"
+    },
+    "features": [
+      "29 DoF full-body articulation",
+      "NVIDIA Jetson AGX Orin compute",
+      "ZED 2i stereoscopic vision",
+      "Soft safe exterior for human interaction",
+      "3.5-hour swappable battery",
+      "LED facial expression array",
+      "LEGO-compatible head customization",
+      "Speech recognition and localization"
+    ],
+    "images": [
+      "/images/robots/fauna-robotics-sprout/robot-1.jpg",
+      "/images/robots/fauna-robotics-sprout/robot-2.jpg",
+      "/images/robots/fauna-robotics-sprout/robot-3.jpg",
+      "/images/robots/fauna-robotics-sprout/robot-4.jpg",
+      "/images/robots/fauna-robotics-sprout/robot-5.jpg"
+    ],
+    "officialUrl": "https://faunarobotics.com/product",
+    "description": "Sprout is a lightweight humanoid development platform by Fauna Robotics designed for safe operation in unstructured environments. With 29 degrees of freedom, NVIDIA Jetson AGX Orin compute, ZED 2i stereoscopic vision, and soft deformable exterior panels, it targets developers, researchers, and enterprises building embodied AI applications."
+  },
+  {
+    "id": "august-robotics-dewalt-drilling",
+    "name": "DEWALT Robotic Drilling System",
+    "brand": "August Robotics",
+    "category": "other",
+    "price": {
+      "starting": "request",
+      "currency": "USD",
+      "models": [
+        {
+          "name": "DEWALT Robotic Drilling System",
+          "price": "request"
+        }
+      ]
+    },
+    "generalInfo": {
+      "manufacturer": "August Robotics (in partnership with DEWALT / Stanley Black & Decker)",
+      "modelName": "DEWALT Robotic Drilling System (Lionel platform)",
+      "dimensions": {
+        "standing": "Not specified (autonomous mobile robot with mounted DEWALT drilling rig)",
+        "weight": "Not specified"
+      }
+    },
+    "keyFeatures": [
+      "Autonomous mobile robot with industrial DEWALT concrete drilling rig",
+      "±1/8 inch (3.175 mm) drilling placement accuracy",
+      "99.97% placement accuracy across 108,000+ holes drilled in early access",
+      "Fleet-capable with multi-robot coordination for large-scale projects",
+      "CAD file-driven autonomous hole placement — no manual layout needed",
+      "Autonomous indoor positioning system for precise navigation",
+      "Obstacle avoidance with multi-angle approach for blocked positions",
+      "Compresses 8–9 weeks of manual layout + drilling to 7–9 days with four robots",
+      "Reduces cost per hole from $60 to approximately $20",
+      "Generated 21,000 labor hours savings in first six months of early access",
+      "Built on proven Lionel AMR platform with 1 million+ marks recorded",
+      "Day-and-night autonomous operation capability",
+      "Designed for data center construction floor preparation"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "N/A (autonomous mobile platform with drilling rig)",
+      "payloadCapacity": "Industrial DEWALT concrete drilling rig",
+      "batteryCapacityRuntime": "Not specified (designed for extended autonomous operation)",
+      "charger": "Not specified",
+      "sensorsIncluded": [
+        "Autonomous indoor positioning system",
+        "Obstacle detection and avoidance sensors",
+        "CAD-based navigation system"
+      ],
+      "interfaces": [
+        "CAD file import",
+        "Fleet management system"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Not specified (proprietary platform)",
+      "sdkLanguages": [],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [
+        "Autonomous navigation",
+        "Fleet coordination",
+        "CAD-based path planning"
+      ],
+      "apiDocumentationQuality": "Commercial product — enterprise integration"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Not specified",
+        "coverage": "Not specified"
+      },
+      "postSalesSupport": "Enterprise support via August Robotics and DEWALT/Stanley Black & Decker",
+      "trackRecord": "August Robotics launched Lionel in 2019; 1M+ marks recorded; 2024 ESCA Innovation Award; DEWALT backed by Stanley Black & Decker"
+    },
+    "specifications": {
+      "accuracy": "±1/8 inch (3.175 mm) placement tolerance",
+      "placementAccuracy": "99.97% across 108,000+ holes",
+      "fleetCapability": "Multi-robot fleet coordination",
+      "navigation": "Autonomous indoor positioning, CAD-driven",
+      "obstacleAvoidance": "Multi-angle approach for blocked positions",
+      "timeReduction": "8–9 weeks to 7–9 days (with four robots)",
+      "costReduction": "$60 per hole to ~$20 per hole",
+      "laborSavings": "21,000 hours in first six months",
+      "platform": "Lionel autonomous mobile robot",
+      "drillingType": "Downward concrete drilling",
+      "targetApplication": "Data center construction floor preparation",
+      "availability": "Expected commercial release mid-2026"
+    },
+    "features": [
+      "Autonomous concrete drilling",
+      "99.97% placement accuracy",
+      "Fleet-capable multi-robot operation",
+      "CAD file-driven navigation",
+      "70% cost reduction per hole",
+      "8x faster than manual workflow",
+      "DEWALT industrial drilling rig"
+    ],
+    "images": [
+      "/images/robots/august-robotics-dewalt-drilling/robot-1.jpg"
+    ],
+    "officialUrl": "https://augustrobotics.com/",
+    "description": "The DEWALT Robotic Drilling System combines August Robotics' Lionel autonomous mobile robot with DEWALT's industrial drilling rig for data center construction. With 99.97% accuracy across 108,000+ holes, fleet-capable coordination, and CAD-driven navigation, it reduces floor preparation time from 8–9 weeks to 7–9 days."
   }
 ]

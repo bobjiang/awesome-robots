@@ -443,5 +443,21 @@
     "logo": "/images/brands/andromeda-robotics-logo.svg",
     "country": "Australia",
     "founded": "2022"
+  },
+  {
+    "id": "fauna-robotics",
+    "name": "Fauna Robotics",
+    "description": "NYC-based robotics company building humanoid robots that operate everywhere people do. Sprout is a safe, lightweight humanoid development platform with 29 DoF, NVIDIA Jetson AGX Orin compute, and soft exterior panels designed for unstructured environments.",
+    "website": "https://faunarobotics.com/",
+    "logo": "",
+    "country": "USA"
+  },
+  {
+    "id": "august-robotics",
+    "name": "August Robotics",
+    "description": "Autonomous mobile robot company specializing in industrial floor operations. Creator of the Lionel robot platform for exhibition floor marking and construction drilling, with over 1 million marks recorded globally and deployed across exhibitions, construction sites, and industrial projects.",
+    "website": "https://augustrobotics.com/",
+    "logo": "",
+    "country": "USA"
   }
 ]

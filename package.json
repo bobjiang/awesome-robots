@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build",
+    "build": "velite build && next build",
     "start": "next start",
     "lint": "next lint",
     "analyze": "ANALYZE=true next build",
@@ -18,7 +18,14 @@
     "digest-and-publish": "tsx scripts/generate-digest.ts --publish-draft",
     "fetch-articles": "tsx scripts/fetch-articles.ts",
     "extract-robots": "tsx scripts/extract-robots.ts",
-    "update-analytics": "tsx scripts/update-analytics.ts"
+    "update-analytics": "tsx scripts/update-analytics.ts",
+    "seo-audit": "tsx scripts/seo-audit.ts",
+    "test": "vitest run",
+    "test:ui": "vitest --ui",
+    "test:watch": "vitest watch",
+    "test:coverage": "vitest run --coverage",
+    "test:e2e": "vitest run tests/e2e",
+    "test:critical": "vitest run tests/e2e/critical-paths"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.71.2",
@@ -45,9 +52,11 @@
     "@types/node": "^20.19.30",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@vitest/ui": "^4.0.18",
     "eslint": "^9",
     "eslint-config-next": "^16.1.1",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "vitest": "^4.0.18"
   }
 }
