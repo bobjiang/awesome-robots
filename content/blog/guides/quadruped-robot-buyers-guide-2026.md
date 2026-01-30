@@ -3,7 +3,7 @@ title: "Complete Quadruped Robot Buyer's Guide 2026"
 slug: "quadruped-robot-buyers-guide-2026"
 author: "bob-jiang"
 date: "2026-01-30"
-category: "guides"
+category: "buying-guides"
 tags: ["quadruped", "buying-guide", "2026", "comprehensive", "robot-dog"]
 excerpt: "Ultimate guide to buying quadruped robots in 2026. Compare 28+ robot dogs from Unitree, Boston Dynamics, Deep Robotics, and more. Expert recommendations for industrial, research, and outdoor applications."
 featured: true

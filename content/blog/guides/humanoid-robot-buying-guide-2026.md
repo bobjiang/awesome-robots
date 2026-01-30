@@ -3,7 +3,7 @@ title: "Complete Humanoid Robot Buying Guide 2026"
 slug: "humanoid-robot-buying-guide-2026"
 author: "bob-jiang"
 date: "2026-01-30"
-category: "guides"
+category: "buying-guides"
 tags: ["humanoid", "buying-guide", "2026", "comprehensive"]
 excerpt: "Ultimate guide to buying humanoid robots in 2026. Compare 75+ models from Unitree, Boston Dynamics, Figure AI, and more. Expert recommendations for every budget and use case."
 featured: true

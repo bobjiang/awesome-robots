@@ -3,7 +3,7 @@ title: "How to Choose Your First Robot: Beginner's Guide 2026"
 slug: "how-to-choose-your-first-robot"
 author: "bob-jiang"
 date: "2026-01-30"
-category: "guides"
+category: "buying-guides"
 tags: ["beginner", "buying-guide", "first-robot", "education", "hobby"]
 excerpt: "Complete beginner's guide to choosing your first robot in 2026. Start your robotics journey right with expert advice on budget-friendly platforms, learning curves, and realistic expectations. From $339 hobby robots to $16K research platforms."
 featured: true
