@@ -39,13 +39,13 @@ When Unitree launched the Go2-W in 2024, they introduced a fundamental question 
 
 ### Unitree Go2: The Legged Locomotion Specialist
 
-The standard Go2 represents Unitree's consumer-focused embodied AI platform, available in three variants optimized for different user segments. The **AIR ($1,600)** targets hobbyists and light research with basic computing, 8000mAh battery, and 2.5 m/s top speed. The **PRO ($2,800)** upgrades to an 8-core CPU, wireless vector positioning, and 3.5 m/s speed for serious educational institutions. The **EDU (request pricing)** adds foot-end force sensors, 15000mAh battery extending runtime to 2-4 hours, and enhanced AI capabilities reaching 3.7 m/s (max 5 m/s).
+The standard [Unitree Go2](/robots/unitree-go2) represents Unitree's consumer-focused embodied AI platform, available in three variants optimized for different user segments. The **AIR ($1,600)** targets hobbyists and light research with basic computing, 8000mAh battery, and 2.5 m/s top speed. The **PRO ($2,800)** upgrades to an 8-core CPU, wireless vector positioning, and 3.5 m/s speed for serious educational institutions. The **EDU (request pricing)** adds foot-end force sensors, 15000mAh battery extending runtime to 2-4 hours, and enhanced AI capabilities reaching 3.7 m/s (max 5 m/s).
 
 All Go2 variants excel at **dynamic legged locomotion**—walking, trotting, stair climbing (15-16cm steps), and navigating uneven terrain where wheels fail. The 12-degree-of-freedom design with 45 N.m joint torque enables sophisticated gaits, upside-down walking demonstrations, and GPT-powered autonomous navigation. Researchers value the Go2's pure legged platform for studying quadrupedal biomechanics, testing reinforcement learning algorithms, and developing advanced locomotion controllers without the complexity of wheeled systems.
 
 ### Unitree Go2-W: The Hybrid Mobility Solution
 
-The Go2-W ("Driving All Terrain") fundamentally reimagines the Go2 architecture by adding **in-wheel motors and 7-inch pneumatic tires** to all four legs. This isn't merely an accessory upgrade—the platform features 16 joint motors (versus 12 on standard Go2) and redesigned kinematics to coordinate wheeled rolling, leg-based obstacle climbing, and hybrid locomotion modes. The result is a robot that **rolls efficiently on smooth surfaces** while retaining the ability to deploy legs for climbing obstacles up to 70cm—nearly 5× the Go2's 15cm capability.
+The [Unitree Go2-W](/robots/unitree-go2-w) ("Driving All Terrain") fundamentally reimagines the Go2 architecture by adding **in-wheel motors and 7-inch pneumatic tires** to all four legs. This isn't merely an accessory upgrade—the platform features 16 joint motors (versus 12 on standard Go2) and redesigned kinematics to coordinate wheeled rolling, leg-based obstacle climbing, and hybrid locomotion modes. The result is a robot that **rolls efficiently on smooth surfaces** while retaining the ability to deploy legs for climbing obstacles up to 70cm—nearly 5× the Go2's 15cm capability.
 
 The Go2-W targets **industrial inspection, security patrol, and warehouse automation** scenarios where covering long distances on pavement matters as much as navigating loading docks, curbs, and construction debris. With the larger 15000mAh battery (matching Go2 EDU), the Go2-W delivers 1.5-3 hour runtime while wheeled rolling extends effective range compared to energy-intensive legged walking. The trade-off? Maximum speed caps at 2.5 m/s across all modes, and the wheeled system adds 3kg weight and complexity to maintenance schedules.
 
@@ -217,6 +217,8 @@ Standard Go2 models waste energy on legged walking across vast concrete expanses
 
 **Go2-W addresses industrial gap at competitive pricing**: If Go2-W prices at $2,800-$3,500 as expected, it becomes the **only consumer-grade wheeled-legged hybrid** under $5,000. Industrial users gain 70cm obstacle climbing, extended wheeled range, and ruggedized 7-inch pneumatic tires—capabilities worth the premium over Go2 PRO for patrol, inspection, and warehouse applications. However, research teams purely focused on legged locomotion will find better value in Go2 EDU's force sensors and speed capabilities at similar pricing.
 
+<QuoteRequestCTA variant="inline" />
+
 ## Pros and Cons Summary
 
 ### Unitree Go2 (Standard)
@@ -337,7 +339,7 @@ Many industrial deployments use **semi-autonomous mode**: robot patrols predefin
 
 The Unitree Go2 vs Go2-W decision fundamentally depends on **where your robot will spend most of its time**:
 
-**Choose standard Unitree Go2 if:**
+**Choose standard [Unitree Go2](/robots/unitree-go2) if:**
 - **Research focus**: You're studying quadrupedal biomechanics, legged locomotion control, or reinforcement learning where pure legged platforms provide cleaner experimental conditions
 - **Budget constraints**: The AIR ($1,600) or PRO ($2,800) variants deliver exceptional value for educational institutions needing multiple robots
 - **Indoor/short-range work**: Your applications cover <500m routes in structured environments where 15cm obstacle capability suffices
@@ -347,7 +349,7 @@ The Unitree Go2 vs Go2-W decision fundamentally depends on **where your robot wi
 
 The Go2 PRO ($2,800) represents the **sweet spot for most university and commercial users**—8-core CPU, 3.5 m/s speed, wireless positioning, and 1-2 hour runtime cover 80% of research and development needs at accessible pricing.
 
-**Choose Unitree Go2-W if:**
+**Choose [Unitree Go2-W](/robots/unitree-go2-w) if:**
 - **Range requirements**: You need to cover >1km distances on paved surfaces where wheeled efficiency extends effective range 2-3× over legged walking
 - **Obstacle access**: Your environment includes loading docks (48-60cm), high curbs, construction debris, or pallets requiring 70cm climb capability
 - **Industrial deployment**: Security patrol, warehouse inspection, or facility monitoring prioritizes reliability and extended runtime (2-4h standard)
