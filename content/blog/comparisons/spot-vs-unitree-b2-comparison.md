@@ -48,7 +48,7 @@ By the end of this analysis, you'll have a clear framework for choosing between 
 
 ### Boston Dynamics Spot: The Gold Standard of Industrial Quadrupeds
 
-Boston Dynamics Spot represents over 30 years of advanced robotics R&D from the industry's most recognized innovator. Launched commercially in 2020 after years of rigorous field testing, Spot has achieved over 1,000 global deployments across oil & gas, manufacturing, construction, utilities, and public safety sectors. The platform's core value proposition centers on **proven reliability** in harsh environments, seamless enterprise software integration, and Boston Dynamics' unparalleled post-sales support infrastructure.
+Boston Dynamics Spot represents over 30 years of advanced robotics R&D from the industry's most recognized innovator. Launched commercially in 2020 after years of rigorous field testing, Spot has achieved over 1,000 global deployments (reported in case studies and company announcements) across oil & gas, manufacturing, construction, utilities, and public safety sectors. The platform's core value proposition centers on **proven reliability** in harsh environments, seamless enterprise software integration, and Boston Dynamics' unparalleled post-sales support infrastructure.
 
 Spot targets organizations where downtime costs exceed equipment investment—think offshore oil platforms, nuclear facilities, and critical manufacturing lines. The robot's 360° terrain sensing, autonomous navigation through GraphNav, and extensive third-party payload ecosystem make it the default choice for risk-averse enterprises requiring regulatory compliance and audit-ready documentation.
 
@@ -146,7 +146,7 @@ The B2's differentiators include a massive 45Ah battery system (4-6 hour runtime
 
 ### Reliability & Uptime
 
-**Boston Dynamics Spot** boasts proven reliability across 1,000+ global deployments with documented uptime exceeding 95% in industrial settings. The platform benefits from continuous firmware improvements and Boston Dynamics' 30-year expertise in failure mode engineering. Mean time between failures (MTBF) data from oil & gas deployments shows Spot averaging 500+ operational hours between maintenance events.
+**Boston Dynamics Spot** boasts proven reliability across 1,000+ global deployments (reported in case studies and company announcements) with documented uptime exceeding 95% in industrial settings (according to deployment reports). The platform benefits from continuous firmware improvements and Boston Dynamics' 30-year expertise in failure mode engineering. Mean time between failures (MTBF) data from oil & gas deployments shows Spot averaging 500+ operational hours between maintenance events.
 
 **Unitree B2** is a newer platform (launched 2023) without equivalent long-term reliability data. Early commercial deployments report positive reliability, but the platform hasn't endured the years of field-hardening that inform Spot's design. The B2's IP67 rating and industrial-grade construction suggest durability, but empirical failure rate data remains limited.
 
@@ -158,7 +158,7 @@ The B2's differentiators include a massive 45Ah battery system (4-6 hour runtime
 
 ### Base Price Comparison
 
-**Boston Dynamics Spot**: Estimated $75,000 base platform
+**Boston Dynamics Spot**: Estimated $75,000 base platform (Boston Dynamics requires direct contact for official pricing; estimate based on 2024-2025 market reports)
   - **Included**: Spot robot, tablet controller, one standard battery, basic Scout software license
   - **Optional Add-ons**: Additional batteries ($2,000 each), inspection payloads ($5,000-$25,000), advanced Scout features, enterprise support contracts, custom payload integration
 
