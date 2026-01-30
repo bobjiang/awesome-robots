@@ -968,8 +968,8 @@
       "/images/robots/go1-3.png"
     ],
     "highResPhotos": [
-      "https://oss-global-cdn.unitree.com/static/51bf09feba1a40a6a2cffd93e9ab66ea_2956x1622.jpg",
-      "https://oss-global-cdn.unitree.com/static/3f39e17933814577a1a21c84aaa74c6c_3776x2118.jpg"
+      "/images/robots/unitree-go1/high-res/photo-1.jpg",
+      "/images/robots/unitree-go1/high-res/photo-2.jpg"
     ],
     "officialUrl": "https://www.unitree.com/go1",
     "description": "Advanced quadruped robot with high-speed capabilities and intelligent sensing for education and research applications."
@@ -1335,11 +1335,7 @@
       "/images/robots/humanoid/r1-1.png",
       "/images/robots/humanoid/r1-2.png"
     ],
-    "highResPhotos": [
-      "https://oss-global-cdn.unitree.com/static/R1_profile_high_res.jpg",
-      "https://oss-global-cdn.unitree.com/static/R1_action_demo.jpg",
-      "https://oss-global-cdn.unitree.com/static/R1_development_setup.jpg"
-    ],
+    "highResPhotos": [],
     "officialUrl": "https://www.unitree.com/R1",
     "description": "Ultra-lightweight, fully customizable humanoid robot platform for research and development applications."
   },
@@ -7090,11 +7086,11 @@
       "trackRecord": "See manufacturer website for details"
     },
     "highResPhotos": [
-      "https://galaxea-dynamics.com/cdn/shop/files/R1Pro_gripper_6b4d6369-26ca-4047-94af-481eeb55b837.png?v=1760586490&width=1946",
-      "https://galaxea-dynamics.com/cdn/shop/files/Lite_0bb6493d-5661-4d33-8093-109aa58aa423.png?v=1760586490&width=1946",
-      "https://galaxea-dynamics.com/cdn/shop/files/1_c3ba6a01-cadb-4829-80f1-48303f44bba1.png?v=1760586490&width=1946",
-      "https://galaxea-dynamics.com/cdn/shop/files/R1_Pro_cf56ea4b-1089-4864-86bc-df48d948e852.png?v=1760586490&width=1946",
-      "https://galaxea-dynamics.com/cdn/shop/files/R1Pro_silver_8c560e50-ffbc-4163-8ae8-2977c9f33976.png?v=1760586490&width=1946"
+      "/images/robots/galaxea-r1pro/high-res/photo-1.png",
+      "/images/robots/galaxea-r1pro/high-res/photo-2.png",
+      "/images/robots/galaxea-r1pro/high-res/photo-3.png",
+      "/images/robots/galaxea-r1pro/high-res/photo-4.png",
+      "/images/robots/galaxea-r1pro/high-res/photo-5.png"
     ],
     "websiteUrl": "https://galaxea-dynamics.com",
     "sourceUrl": "https://galaxea-dynamics.com/products/galaxea-r1-pro",
@@ -7206,11 +7202,11 @@
       "trackRecord": "See manufacturer website for details"
     },
     "highResPhotos": [
-      "https://kuavo.lejurobot.com/leju_website/en/images/banner/banner1.png?v=0.0.1-66-gb7e9e90",
-      "https://kuavo.lejurobot.com/leju_website/en/images/KUAVO3.0.png?v=0.0.1-66-gb7e9e90",
-      "https://kuavo.lejurobot.com/leju_website/en/images/KUAVO-MY.png?v=0.0.1-66-gb7e9e90",
-      "https://kuavo.lejurobot.com/leju_website/en/images/series/education_poster.png?v=0.0.1-66-gb7e9e90",
-      "https://kuavo.lejurobot.com/leju_website/en/images/series/commercial_poster.png?v=0.0.1-66-gb7e9e90"
+      "/images/robots/leju-kuavo-my/high-res/photo-1.png",
+      "/images/robots/leju-kuavo-my/high-res/photo-2.png",
+      "/images/robots/leju-kuavo-my/high-res/photo-3.png",
+      "/images/robots/leju-kuavo-my/high-res/photo-4.png",
+      "/images/robots/leju-kuavo-my/high-res/photo-5.png"
     ],
     "websiteUrl": "https://www.lejurobot.com",
     "sourceUrl": "https://www.lejurobot.com",
@@ -7301,13 +7297,7 @@
       "postSalesSupport": "Contact manufacturer",
       "trackRecord": "See manufacturer website for details"
     },
-    "highResPhotos": [
-      "https://file.engineai.com.cn:2390/files/images/menu_1.png",
-      "https://file.engineai.com.cn:2390/files/images/menu_2.png",
-      "https://file.engineai.com.cn:2390/files/images/menu_3.png",
-      "https://file.engineai.com.cn:2390/files/images/menu_4.png",
-      "https://file.engineai.com.cn:2390/files/images/engineai_start_bg.png"
-    ],
+    "highResPhotos": [],
     "websiteUrl": "http://www.engineai.com.cn",
     "sourceUrl": "http://www.engineai.com.cn",
     "extractedAt": "2025-10-20T00:13:43.310Z",
@@ -7397,11 +7387,10 @@
       "trackRecord": "See manufacturer website for details"
     },
     "highResPhotos": [
-      "https://img.gotokepler.com/video/Robot-en.mp4?vframe/jpg/offset/0",
-      "https://img.gotokepler.com/video/Robot-en.mp4?vframe/jpg/offset/0",
-      "https://img.gotokepler.com/image/gotokepler/mobile/product/3.png",
-      "https://img.gotokepler.com/image/gotokepler/product/3-1.png",
-      "https://img.gotokepler.com/image/gotokepler/product/3-2.png"
+      "/images/robots/kepler-k2/high-res/photo-1.jpg",
+      "/images/robots/kepler-k2/high-res/photo-2.png",
+      "/images/robots/kepler-k2/high-res/photo-3.png",
+      "/images/robots/kepler-k2/high-res/photo-4.png"
     ],
     "websiteUrl": "https://www.gotokepler.com",
     "sourceUrl": "https://www.gotokepler.com/apps/mobile/pages/product/index?id=2",
@@ -7486,11 +7475,11 @@
       "trackRecord": "See manufacturer website for details"
     },
     "highResPhotos": [
-      "https://www.astribot.com/_nuxt/describe-s2-bg.uI62FkDw.png",
-      "https://www.astribot.com/_nuxt/describe-s3-img1.BhWEfWFv.jpg",
-      "https://www.astribot.com/_nuxt/describe-s3-img2.DaG__Qo6.jpg",
-      "https://www.astribot.com/_nuxt/describe-s3-img3.DK5reSax.jpg",
-      "https://www.astribot.com/_nuxt/describe-s3-img4.CW3NSDSu.jpg"
+      "/images/robots/astribot-s1/high-res/photo-1.png",
+      "/images/robots/astribot-s1/high-res/photo-2.jpg",
+      "/images/robots/astribot-s1/high-res/photo-3.jpg",
+      "/images/robots/astribot-s1/high-res/photo-4.jpg",
+      "/images/robots/astribot-s1/high-res/photo-5.jpg"
     ],
     "websiteUrl": "https://www.astribot.com",
     "sourceUrl": "https://www.astribot.com/en/product/",
@@ -7584,11 +7573,10 @@
       "trackRecord": "See manufacturer website for details"
     },
     "highResPhotos": [
-      "https://cdn-cn.paxini.com//store/pro/67e1047e9c11239e850bcc5d/976e83d3-cafc-4ec2-988d-e30833c72e0e.png",
-      "https://cdn-cn.paxini.com//store/pro/67e1047e9c11239e850bcc5d/8c4cb973-fc7c-43d4-ab08-82d0c260fc51.png",
-      "https://cdn-cn.paxini.com//store/pro/67e1047e9c11239e850bcc5d/f57dae3e-2e13-4baa-aa6e-59d74203bd0b.png",
-      "https://cdn-cn.paxini.com//store/pro/67e1047e9c11239e850bcc5d/423b9444-4964-4c27-9bf1-e9316cb26264.png",
-      "https://cdn-cn.paxini.com//store/pro/67e1047e9c11239e850bcc5d/976e83d3-cafc-4ec2-988d-e30833c72e0e.png"
+      "/images/robots/paxini-tora-one/high-res/photo-1.png",
+      "/images/robots/paxini-tora-one/high-res/photo-2.png",
+      "/images/robots/paxini-tora-one/high-res/photo-3.png",
+      "/images/robots/paxini-tora-one/high-res/photo-4.png"
     ],
     "websiteUrl": "https://paxini.com",
     "sourceUrl": "https://mall.paxini.com/product/robot/66f27ad030cd11a8e9d1d567",
@@ -7672,11 +7660,10 @@
       "trackRecord": "See manufacturer website for details"
     },
     "highResPhotos": [
-      "https://www.droidup.com/uploads/upload/images/20250903/255466b20fee570766a55a1455f67f45.png",
-      "https://www.droidup.com/uploads/upload/images/20250903/255466b20fee570766a55a1455f67f45.png",
-      "https://www.droidup.com/static/home/images/x-l1.jpg",
-      "https://www.droidup.com/static/home/images/x-l2.jpg",
-      "https://www.droidup.com/static/home/images/x-l3.jpg"
+      "/images/robots/droidup-x02/high-res/photo-1.png",
+      "/images/robots/droidup-x02/high-res/photo-2.jpg",
+      "/images/robots/droidup-x02/high-res/photo-3.jpg",
+      "/images/robots/droidup-x02/high-res/photo-4.jpg"
     ],
     "websiteUrl": "https://www.droidup.com",
     "sourceUrl": "https://www.droidup.com",
@@ -7765,11 +7752,8 @@
       "trackRecord": "See manufacturer website for details"
     },
     "highResPhotos": [
-      "https://qiniu.mfdemo.cn/songyandongli/2024/09/03/66d6bbff8bf26.png",
-      "https://qiniu.mfdemo.cn/songyandongli/2024/09/03/66d6bc09eacc4.png",
-      "https://qiniu.mfdemo.cn/songyandongli/2024/09/03/66d6bbff8bf26.png",
-      "https://qiniu.mfdemo.cn/songyandongli/2025/02/17/67b2ac313fef4.png",
-      "https://qiniu.mfdemo.cn/songyandongli/2024/09/11/66e150bab3f42.png"
+      "/images/robots/noetix-dora/high-res/photo-3.png",
+      "/images/robots/noetix-dora/high-res/photo-4.png"
     ],
     "websiteUrl": "https://noetixrobotics.com",
     "sourceUrl": "https://noetixrobotics.com",
