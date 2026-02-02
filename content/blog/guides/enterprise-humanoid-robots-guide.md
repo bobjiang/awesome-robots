@@ -8,9 +8,6 @@ tags: ["enterprise", "humanoid", "business", "ROI", "warehouse", "manufacturing"
 excerpt: "Executive guide to enterprise humanoid robots. Analyze TCO, ROI, deployment timelines, and vendor reliability for Figure 02, Agility Digit, Tesla Optimus, and 10+ commercial platforms. Make defensible capital allocation decisions with data-driven analysis."
 featured: true
 published: true
-contentType: "guide"
-wordCount: 4500
-readingTime: 18
 seo:
   title: "Enterprise Humanoid Robots Guide 2026 | ROI, TCO & Deployment Analysis"
   description: "Executive guide to buying enterprise humanoid robots. Comprehensive TCO analysis, ROI frameworks, deployment timelines, and vendor evaluation for Figure 02, Agility Digit, Tesla Optimus. Make data-driven capital allocation decisions."

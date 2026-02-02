@@ -8,9 +8,6 @@ tags: ["humanoid", "artificial-intelligence", "embodied-ai", "vla-models", "foun
 excerpt: "Comprehensive analysis of AI integration in humanoid robots. From teleoperation to embodied AI, explore the spectrum of intelligence in 75+ humanoid platforms. Learn about VLA models, foundation models, and the future of autonomous humanoids."
 featured: true
 published: true
-contentType: "guide"
-wordCount: 4500
-readingTime: 18
 seo:
   title: "AI Humanoid Robots 2026 | VLA Models & Embodied AI Analysis"
   description: "Deep dive into AI-powered humanoid robots in 2026. Analyze 75+ platforms from teleoperation to full autonomy. Covers OpenAI integration, Tesla FSD AI, VLA models, and foundation models. Expert analysis for researchers and tech enthusiasts."

@@ -8,9 +8,6 @@ tags: ["humanoid", "buying-guide", "2026", "comprehensive"]
 excerpt: "Ultimate guide to buying humanoid robots in 2026. Compare 75+ models from Unitree, Boston Dynamics, Figure AI, and more. Expert recommendations for every budget and use case."
 featured: true
 published: true
-contentType: "guide"
-wordCount: 4800
-readingTime: 19
 seo:
   title: "Humanoid Robot Buying Guide 2026 | Compare 75+ Models"
   description: "Comprehensive guide to buying humanoid robots. Compare 75+ models, prices from $16K to $250K. Expert advice for research, enterprise, and hobbyists. Get quotes instantly."

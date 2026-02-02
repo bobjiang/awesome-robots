@@ -8,9 +8,6 @@ tags: ["quadruped", "buying-guide", "2026", "comprehensive", "robot-dog"]
 excerpt: "Ultimate guide to buying quadruped robots in 2026. Compare 28+ robot dogs from Unitree, Boston Dynamics, Deep Robotics, and more. Expert recommendations for industrial, research, and outdoor applications."
 featured: true
 published: true
-contentType: "guide"
-wordCount: 3850
-readingTime: 15
 seo:
   title: "Quadruped Robot Buying Guide 2026 | Compare 28+ Robot Dogs"
   description: "Comprehensive guide to buying quadruped robots. Compare 28+ models, prices from $339 to $100K+. Expert advice for industrial inspection, security, research, and rugged terrain. Get quotes instantly."

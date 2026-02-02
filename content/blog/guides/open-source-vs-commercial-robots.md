@@ -8,9 +8,6 @@ tags: ["open-source", "commercial", "comparison", "buying-guide", "ros", "licens
 excerpt: "Comprehensive comparison of open source and commercial robotics platforms. Analyze total cost of ownership, customization flexibility, community support, IP considerations, and long-term viability to make informed decisions."
 featured: true
 published: true
-contentType: "guide"
-wordCount: 3850
-readingTime: 15
 seo:
   title: "Open Source vs Commercial Robots 2026 | TCO Analysis & Decision Framework"
   description: "Compare open source and commercial robots across TCO, customization, support, licensing, and vendor lock-in. Decision framework for research, enterprise, and development. Expert analysis of 15+ platforms."
