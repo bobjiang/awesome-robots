@@ -8,9 +8,6 @@ tags: ["humanoid", "robotics", "technology", "education", "encyclopedia", "compl
 excerpt: "Definitive encyclopedia of humanoid robotics in 2026. Covers 30+ years of evolution from WABIAN to modern AI-powered platforms, deep-dive into bipedal locomotion and manipulation technology, comprehensive analysis of all 75 commercial humanoids, applications across industries, and future outlook through 2030."
 featured: true
 published: true
-contentType: "guide"
-wordCount: 8500
-readingTime: 34
 seo:
   title: "Complete Humanoid Robots Guide 2026 | History, Technology & Applications"
   description: "Definitive encyclopedia of humanoid robotics: 30-year evolution, bipedal locomotion technology, manipulation systems, AI integration, all 75 platforms analyzed by capability tier, applications, buying considerations, and 2026-2030 predictions. Essential reference for students, researchers, journalists, and enthusiasts."

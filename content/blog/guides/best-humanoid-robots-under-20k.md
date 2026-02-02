@@ -8,9 +8,6 @@ tags: ["humanoid robots", "budget robots", "affordable humanoids", "robot buying
 excerpt: "Discover the best humanoid robots under $20,000 in 2026. Compare 14 affordable options with detailed specs, use case recommendations, and expert buying advice for researchers and hobbyists."
 featured: true
 published: true
-contentType: "guide"
-wordCount: 3500
-readingTime: 14
 seo:
   title: "Best Humanoid Robots Under $20K (2026 Buying Guide)"
   description: "Top budget humanoid robots under $20,000: Unitree G1 ($16K), Unitree R1 ($5.9K), Booster K1 Geek ($6K), and more. Compare specs, features, and find the perfect affordable humanoid for your needs."

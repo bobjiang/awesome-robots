@@ -8,9 +8,6 @@ tags: ["quadruped", "robot-dog", "technology", "education", "encyclopedia", "com
 excerpt: "Definitive encyclopedia of quadruped robotics in 2026. Covers evolution from BigDog to modern AI-powered platforms, deep-dive into locomotion and terrain adaptation, comprehensive analysis of all 28 commercial quadrupeds, proven applications across industries, and deployment best practices. Essential reference for industrial buyers, researchers, and technology enthusiasts."
 featured: true
 published: true
-contentType: "guide"
-wordCount: 4500
-readingTime: 18
 seo:
   title: "Complete Quadruped Robots Guide 2026 | Technology, Applications & Deployment"
   description: "Definitive encyclopedia of quadruped robotics: 20-year evolution, gait patterns and terrain science, balance systems, autonomy levels, all 28 platforms analyzed by capability tier, industrial applications with proven ROI, deployment best practices, and market predictions through 2030."

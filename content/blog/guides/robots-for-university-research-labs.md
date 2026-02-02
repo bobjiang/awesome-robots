@@ -8,9 +8,6 @@ tags: ["research", "university", "academic", "education", "grants", "ROS", "huma
 excerpt: "Comprehensive guide to selecting robots for university research. Navigate grant budgets ($5K-$50K), evaluate ROS/ROS2 support, analyze publication track records, and maximize educational value. Expert recommendations for 12+ platforms across all research areas."
 featured: true
 published: true
-contentType: "guide"
-wordCount: 3800
-readingTime: 15
 seo:
   title: "Best Robots for University Research Labs 2026 | Grant Budget Guide"
   description: "Expert guide to research robots for universities. Navigate NSF/NIH grant budgets, evaluate ROS2 support, publication citations, and educational value. Compare 12+ platforms from $339 to $50K. Includes grant writing templates."
