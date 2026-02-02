@@ -8,7 +8,7 @@ import Layout from '@/components/Layout';
 import Breadcrumb from '@/components/Breadcrumb';
 import BrandBrowser from '@/components/BrandBrowser';
 import { Robot } from '@/types/robot';
-import { generateBreadcrumbSchema } from '@/lib/structured-data';
+import { generateBreadcrumbSchema, generateCollectionPageSchema } from '@/lib/structured-data';
 import robots from '@/data/robots.json';
 import brands from '@/data/brands.json';
 
@@ -119,12 +119,30 @@ export default async function BrandPage({ params }: BrandPageProps) {
     { name: brand.name, url: `/brands/${brandId}` }
   ];
   const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbItems, baseUrl);
+  const collectionSchema = generateCollectionPageSchema(
+    `${brand.name} Robots`,
+    brand.description,
+    `${baseUrl}/brands/${brandId}`,
+    brandRobots as Array<{
+      id: string;
+      name: string;
+      brand: string;
+      description?: string;
+      images?: string[];
+      price?: { starting: number | 'Request Quote' };
+    }>,
+    baseUrl,
+    breadcrumbItems
+  );
 
   return (
     <Layout>
       {/* Structured Data for SEO */}
       <Script id="breadcrumb-schema" type="application/ld+json">
         {JSON.stringify(breadcrumbSchema)}
+      </Script>
+      <Script id="collection-schema" type="application/ld+json">
+        {JSON.stringify(collectionSchema)}
       </Script>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
