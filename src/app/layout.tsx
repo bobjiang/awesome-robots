@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
 import { env } from "@/env.mjs";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
+import { generateWebSiteSchema } from "@/lib/structured-data";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -70,6 +71,15 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Generate WebSite schema for the entire site
+  const websiteSchema = generateWebSiteSchema(
+    "Awesome Robots",
+    env.NEXT_PUBLIC_BASE_URL,
+    "Discover the latest AI-powered robots including humanoids, quadrupeds, and accessories. Browse comprehensive robot specifications, compare models, and find the perfect robot for research, education, or industry.",
+    `${env.NEXT_PUBLIC_BASE_URL}/browse`,
+    `${env.NEXT_PUBLIC_BASE_URL}/logo.png`
+  );
+
   return (
     <html lang="en">
       <head>
@@ -84,6 +94,15 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        {/* WebSite Schema for Google SiteLinks Search Box */}
+        <Script
+          id="website-schema"
+          type="application/ld+json"
+          strategy="beforeInteractive"
+        >
+          {JSON.stringify(websiteSchema)}
+        </Script>
+
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-88F0E7K5RF"

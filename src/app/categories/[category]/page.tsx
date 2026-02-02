@@ -7,7 +7,7 @@ import Layout from '@/components/Layout';
 import Breadcrumb from '@/components/Breadcrumb';
 import CategoryBrowser from '@/components/CategoryBrowser';
 import { Robot } from '@/types/robot';
-import { generateBreadcrumbSchema, generateCategoryFAQSchema } from '@/lib/structured-data';
+import { generateBreadcrumbSchema, generateCategoryFAQSchema, generateCollectionPageSchema } from '@/lib/structured-data';
 import robots from '@/data/robots.json';
 import categories from '@/data/categories.json';
 
@@ -103,6 +103,21 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   ];
   const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbItems, baseUrl);
   const faqSchema = generateCategoryFAQSchema(categoryId);
+  const collectionSchema = generateCollectionPageSchema(
+    `${category.name} Robots`,
+    category.description,
+    `${baseUrl}/categories/${categoryId}`,
+    categoryRobots as Array<{
+      id: string;
+      name: string;
+      brand: string;
+      description?: string;
+      images?: string[];
+      price?: { starting: number | 'Request Quote' };
+    }>,
+    baseUrl,
+    breadcrumbItems
+  );
 
   return (
     <Layout>
@@ -112,6 +127,9 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
       </Script>
       <Script id="faq-schema" type="application/ld+json">
         {JSON.stringify(faqSchema)}
+      </Script>
+      <Script id="collection-schema" type="application/ld+json">
+        {JSON.stringify(collectionSchema)}
       </Script>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

@@ -6,6 +6,7 @@ import Layout from '@/components/Layout';
 import Breadcrumb from '@/components/Breadcrumb';
 import ProductCard from '@/components/ProductCard';
 import SpecificationTable from '@/components/SpecificationTable';
+import InternalLinkingRecommendations from '@/components/InternalLinkingRecommendations';
 import RobotDetailTemplate from '@/components/RobotDetailTemplate';
 import RobotQuoteButton from '@/components/RobotQuoteButton';
 import AISpecificationSummary from '@/components/AISpecificationSummary';
@@ -138,11 +139,6 @@ export default async function RobotDetailPage({ params }: RobotDetailPageProps) 
   const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbItems, baseUrl);
   const faqSchema = generateRobotFAQSchema();
 
-  // Get related robots
-  const relatedRobots = (robots as Robot[])
-    .filter((r: Robot) => r.id !== robot.id && (r.category === robot.category || r.brand === robot.brand))
-    .slice(0, 3);
-
   return (
     <Layout>
       {/* Structured Data for SEO */}
@@ -254,17 +250,12 @@ export default async function RobotDetailPage({ params }: RobotDetailPageProps) 
           </div>
         )}
 
-        {/* Related Robots */}
-        {relatedRobots.length > 0 && (
-          <div className="mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">Related Robots</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {relatedRobots.map((relatedRobot: Robot) => (
-                <ProductCard key={relatedRobot.id} robot={relatedRobot} />
-              ))}
-            </div>
-          </div>
-        )}
+        {/* Internal Linking Recommendations - SEO optimized related robots */}
+        <InternalLinkingRecommendations
+          currentRobot={robot}
+          allRobots={robots as Robot[]}
+          maxRecommendations={6}
+        />
       </div>
     </Layout>
   );

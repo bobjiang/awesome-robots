@@ -566,3 +566,161 @@ export function generateFAQPageSchema(
     }))
   };
 }
+
+// WebSite Schema with Search Action for Google SiteLinks Search Box
+export interface WebSiteSchema {
+  "@context": "https://schema.org";
+  "@type": "WebSite";
+  name: string;
+  url: string;
+  description: string;
+  publisher: {
+    "@type": "Organization";
+    name: string;
+    logo?: string;
+  };
+  potentialAction?: {
+    "@type": "SearchAction";
+    target: {
+      "@type": "EntryPoint";
+      urlTemplate: string;
+    };
+    "query-input": string;
+  };
+}
+
+/**
+ * Generate WebSite schema with search action
+ * Enables Google SiteLinks search box in SERPs
+ */
+export function generateWebSiteSchema(
+  siteName: string,
+  siteUrl: string,
+  description: string,
+  searchUrl: string,
+  logoUrl?: string
+): WebSiteSchema {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: siteName,
+    url: siteUrl,
+    description,
+    publisher: {
+      "@type": "Organization",
+      name: siteName,
+      ...(logoUrl && { logo: logoUrl })
+    },
+    potentialAction: {
+      "@type": "SearchAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: `${searchUrl}?q={search_term_string}`
+      },
+      "query-input": "required name=search_term_string"
+    }
+  };
+}
+
+// CollectionPage Schema for category and brand pages
+export interface CollectionPageSchema {
+  "@context": "https://schema.org";
+  "@type": "CollectionPage";
+  name: string;
+  description: string;
+  url: string;
+  breadcrumb?: BreadcrumbSchema;
+  mainEntity: {
+    "@type": "ItemList";
+    name: string;
+    description: string;
+    numberOfItems: number;
+    itemListElement: Array<{
+      "@type": "ListItem";
+      position: number;
+      item: {
+        "@type": "Product";
+        name: string;
+        url: string;
+        image?: string;
+        description?: string;
+        brand?: {
+          "@type": "Brand";
+          name: string;
+        };
+        offers?: {
+          "@type": "Offer";
+          price?: string;
+          priceCurrency: "USD";
+          availability: string;
+        };
+      };
+    }>;
+  };
+}
+
+/**
+ * Generate CollectionPage schema for category and brand pages
+ * Improves visibility in search results for listing pages
+ */
+export function generateCollectionPageSchema(
+  pageName: string,
+  pageDescription: string,
+  pageUrl: string,
+  items: Array<{
+    id: string;
+    name: string;
+    brand: string;
+    description?: string;
+    images?: string[];
+    price?: { starting: number | 'Request Quote' };
+  }>,
+  baseUrl: string,
+  breadcrumbs?: Array<{ name: string; url: string }>
+): CollectionPageSchema {
+  return {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: pageName,
+    description: pageDescription,
+    url: pageUrl,
+    ...(breadcrumbs && { breadcrumb: generateBreadcrumbSchema(breadcrumbs, baseUrl) }),
+    mainEntity: {
+      "@type": "ItemList",
+      name: pageName,
+      description: pageDescription,
+      numberOfItems: items.length,
+      itemListElement: items.slice(0, 50).map((item, index) => {
+        const imageUrl = item.images && item.images.length > 0
+          ? item.images[0].startsWith('http') ? item.images[0] : `${baseUrl}${item.images[0]}`
+          : undefined;
+
+        const hasPrice = item.price && typeof item.price.starting === 'number';
+
+        return {
+          "@type": "ListItem",
+          position: index + 1,
+          item: {
+            "@type": "Product",
+            name: `${item.brand} ${item.name}`,
+            url: `${baseUrl}/robots/${item.id}`,
+            ...(imageUrl && { image: imageUrl }),
+            ...(item.description && { description: item.description }),
+            brand: {
+              "@type": "Brand",
+              name: item.brand
+            },
+            ...(hasPrice && {
+              offers: {
+                "@type": "Offer",
+                price: item.price!.starting.toString(),
+                priceCurrency: "USD",
+                availability: "https://schema.org/InStock"
+              }
+            })
+          }
+        };
+      })
+    }
+  };
+}

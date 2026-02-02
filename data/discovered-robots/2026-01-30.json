@@ -1,0 +1,60 @@
+{
+  "fetch_date": "2026-01-30T04:46:09.096Z",
+  "week_range": "Jan 23–29",
+  "summary": {
+    "total_discovered": 2,
+    "duplicates_filtered": 0,
+    "new_robots": 2,
+    "quality_breakdown": {
+      "high": 0,
+      "medium": 2,
+      "low": 0
+    },
+    "source_breakdown": {
+      "ieee": 0,
+      "robotreport": 2,
+      "arxiv": 0
+    }
+  },
+  "robots": [
+    {
+      "company": "Fauna Robotics",
+      "robot_name": "Sprout",
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/introducing-sprout-a-new-humanoid-development-platform/",
+      "discovered_at": "2026-01-30T04:46:09.096Z",
+      "source_type": "robotreport",
+      "confidence_score": 85,
+      "quality_score": {
+        "overall": 50,
+        "completeness": 50,
+        "reliability": 50,
+        "flags": []
+      },
+      "description": "A specialized humanoid development platform designed for safe, lightweight operation in unstructured environments."
+    },
+    {
+      "company": "August Robotics",
+      "robot_name": "DEWALT Robotic Drilling System",
+      "type": null,
+      "status": "commercial",
+      "image_link": "https://www.therobotreport.com/wp-content/uploads/2026/01/DEWALT-Robotic-Drilling-featured.jpg",
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/dewalt-drilling-robot/",
+      "discovered_at": "2026-01-30T04:46:09.096Z",
+      "source_type": "robotreport",
+      "confidence_score": 90,
+      "quality_score": {
+        "overall": 50,
+        "completeness": 50,
+        "reliability": 50,
+        "flags": []
+      },
+      "description": "An autonomous mobile robot with industrial DEWALT drilling rig for concrete floor drilling in data center construction."
+    }
+  ],
+  "errors": []
+}
