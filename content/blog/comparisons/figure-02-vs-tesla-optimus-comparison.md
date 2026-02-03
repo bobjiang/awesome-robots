@@ -1,9 +1,10 @@
 ---
 title: "Figure 02 vs Tesla Optimus: Which AI Humanoid Robot Leads? (2026)"
 slug: "figure-02-vs-tesla-optimus-comparison"
-date: 2026-01-30
-author: awesome-robots-team
-category: buying-guides
+date: "2026-01-30"
+author: "awesome-robots-team"
+category: "buying-guides"
+published: true
 tags: [humanoid robots, figure 02, tesla optimus, ai robots, commercial robotics, warehouse automation]
 excerpt: "Compare Figure 02 vs Tesla Optimus humanoid robots. AI capabilities, deployment status, and commercial readiness analysis for enterprise buyers evaluating next-gen humanoid automation."
 featured: true

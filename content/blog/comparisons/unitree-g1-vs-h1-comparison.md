@@ -1,7 +1,7 @@
 ---
 title: "Unitree G1 vs H1: Which Humanoid Robot is Better? (2026)"
 slug: "unitree-g1-vs-h1-comparison"
-date: 2026-01-30
+date: "2026-01-30"
 author: "awesome-robots-team"
 category: "buying-guides"
 tags: ["unitree-g1", "unitree-h1", "comparison", "humanoid", "unitree"]

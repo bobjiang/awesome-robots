@@ -1284,6 +1284,6 @@ Technology and markets evolve rapidly. We update this encyclopedia quarterly as 
 **Words:** 4,500
 **Next Update:** April 2026
 
-**Questions or Corrections?** This guide is maintained as a living resource. If you spot errors or have suggestions for improvement, contact us through the [Awesome Robots homepage](/).
+**Questions or Corrections?** This guide is maintained as a living resource. If you spot errors or have suggestions for improvement, contact us through the [Awesome Robots homepage](https://www.awesomerobots.xyz).
 
 **Ready to Purchase?** Explore our complete catalog of [28 quadruped robots](/categories/quadruped) with specifications, pricing, and instant quote requests.

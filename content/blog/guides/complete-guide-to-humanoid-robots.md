@@ -1219,6 +1219,6 @@ Technology evolves rapidly. We update this encyclopedia as major developments oc
 **Words:** 8,500
 **Next Update:** Quarterly (April 2026)
 
-**Questions or Corrections?** This guide is maintained as a living resource. If you spot errors or have suggestions for improvement, contact us through the [Awesome Robots homepage](/).
+**Questions or Corrections?** This guide is maintained as a living resource. If you spot errors or have suggestions for improvement, contact us through the [Awesome Robots homepage](https://www.awesomerobots.xyz).
 
 **Ready to Purchase?** Explore our complete catalog of [75 humanoid robots](/categories/humanoid) with specifications, pricing, and instant quote requests.
