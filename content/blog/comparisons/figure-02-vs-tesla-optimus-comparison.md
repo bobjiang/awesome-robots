@@ -1,5 +1,6 @@
 ---
 title: "Figure 02 vs Tesla Optimus: Which AI Humanoid Robot Leads? (2026)"
+slug: "figure-02-vs-tesla-optimus-comparison"
 date: 2026-01-30
 author: awesome-robots-team
 category: buying-guides
