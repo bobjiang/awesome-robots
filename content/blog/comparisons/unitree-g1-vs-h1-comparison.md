@@ -1,8 +1,9 @@
 ---
 title: "Unitree G1 vs H1: Which Humanoid Robot is Better? (2026)"
+slug: "unitree-g1-vs-h1-comparison"
 date: 2026-01-30
 author: "awesome-robots-team"
-category: "Comparisons"
+category: "buying-guides"
 tags: ["unitree-g1", "unitree-h1", "comparison", "humanoid", "unitree"]
 excerpt: "Detailed comparison of Unitree G1 vs H1 humanoid robots. Compare specs, pricing ($16K vs $150K), DOF (43 vs 21), and real-world performance to choose the right robot for your research or industrial needs."
 featured: true
