@@ -1,13 +1,17 @@
 ---
 title: "Physical AI: How NVIDIA's Full-Stack Approach Is Accelerating Real-World Robotics"
+slug: "physical-ai-ecosystem-nvidia-robotics-2026"
 date: 2026-02-07
-draft: false
-description: "Explore Physical AI—the next frontier in robotics where AI models understand the physical world, reason about actions, and operate autonomously. Learn how NVIDIA's ecosystem is democratizing advanced robotics development."
-keywords: ["Physical AI", "NVIDIA robotics", "Jetson", "Omniverse", "embodied AI", "humanoid robots", "CES 2026", "robot simulation"]
-categories: ["tutorials"]
-tags: ["Physical AI", "NVIDIA", "Jetson", "Omniverse", "embodied AI", "robot training", "simulation"]
-author: "Awesome Robots Team"
-image: "/images/blog/physical-ai-nvidia-robotics.jpg"
+author: awesome-robots-team
+category: tutorials
+tags: [Physical AI, NVIDIA, Jetson, Omniverse, embodied AI, robot training, simulation, humanoid robots, CES 2026]
+excerpt: "Explore Physical AI—the next frontier in robotics where AI models understand the physical world, reason about actions, and operate autonomously. Learn how NVIDIA's ecosystem is democratizing advanced robotics development."
+featured: true
+published: true
+seo:
+  title: "Physical AI: NVIDIA's Full-Stack Robotics Ecosystem in 2026"
+  description: "Physical AI enables robots to understand the physical world and act autonomously. Discover how NVIDIA's Jetson, Omniverse, and Isaac platform are democratizing advanced robotics development."
+  keywords: ["Physical AI", "NVIDIA robotics", "Jetson", "Omniverse", "embodied AI", "humanoid robots", "CES 2026", "robot simulation"]
 ---
 
 If you've been following robotics news lately, you've probably heard the term **"Physical AI"** thrown around at CES 2026 and in NVIDIA's recent announcements. But what exactly is Physical AI, and why is it being called "the ChatGPT moment for robotics"?
