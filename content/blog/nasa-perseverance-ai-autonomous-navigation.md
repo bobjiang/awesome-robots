@@ -1,14 +1,17 @@
 ---
-title: 'NASA Perseverance Makes History: First AI-Planned Drive on Mars'
-description: 'NASA's Perseverance rover completed its first autonomous drives using vision-language models to plan routes on Mars. Learn how generative AI is transforming space exploration and autonomous navigation in the harshest environments.'
-date: '2026-02-06'
-category: 'tutorials'
-published: true
+title: "NASA Perseverance Makes History: First AI-Planned Drive on Mars"
+slug: "nasa-perseverance-ai-autonomous-navigation"
+date: "2026-02-06"
+author: "bob-jiang"
+category: "tutorials"
+tags: ["NASA", "autonomous navigation", "vision-language models", "Mars exploration", "space robotics", "AI", "generative AI"]
+excerpt: "NASA's Perseverance rover completed its first autonomous drives using vision-language models to plan routes on Mars. Learn how generative AI is transforming space exploration and autonomous navigation in the harshest environments."
 featured: true
-image: '/images/blog/nasa-perseverance-ai-navigation.jpg'
-tags: ['NASA', 'autonomous navigation', 'vision-language models', 'Mars exploration', 'space robotics', 'AI', 'generative AI']
-author: 'awesomerobots-team'
-slug: 'nasa-perseverance-ai-autonomous-navigation'
+published: true
+seo:
+  title: "NASA Perseverance First AI-Planned Drive on Mars"
+  description: "NASA's Perseverance rover completed its first autonomous drives using vision-language models to plan routes on Mars, transforming space exploration and autonomous navigation."
+  keywords: ["NASA Perseverance", "AI navigation", "Mars rover", "vision-language models", "autonomous driving", "space robotics"]
 ---
 
 On December 8 and 10, 2025, something remarkable happened on Mars. For the first time in history, NASA's Perseverance rover drove across the Martian surface following routes planned entirely by artificial intelligence—specifically, using vision-language models (VLMs) rather than human operators.
