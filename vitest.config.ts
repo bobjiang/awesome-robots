@@ -3,7 +3,8 @@ import path from 'path';
 
 export default defineConfig({
   test: {
-    // Test environment
+    // Default test environment (node for E2E tests)
+    // Unit tests use @vitest-environment jsdom directive in-file
     environment: 'node',
 
     // Global test timeout (60s for E2E tests)
@@ -16,7 +17,7 @@ export default defineConfig({
     setupFiles: ['./tests/setup.ts'],
 
     // Include patterns
-    include: ['tests/**/*.test.ts'],
+    include: ['tests/**/*.test.ts', 'tests/**/*.test.tsx'],
 
     // Exclude patterns
     exclude: [
