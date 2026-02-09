@@ -1,0 +1,23 @@
+{
+  "fetch_date": "2026-02-10T22:00:00.000Z",
+  "week_range": "Feb 3–9",
+  "summary": {
+    "total_discovered": 0,
+    "duplicates_filtered": 3,
+    "new_robots": 0,
+    "quality_breakdown": {
+      "high": 0,
+      "medium": 0,
+      "low": 0
+    },
+    "source_breakdown": {
+      "ieee": 0,
+      "robotreport": 0,
+      "arxiv": 0,
+      "other": 3
+    }
+  },
+  "robots": [],
+  "errors": [],
+  "notes": "Week of Feb 3-9, 2026: No new unique humanoid or quadruped robots meeting quality constraints. Announcements reviewed: (1) Faraday Future FF Futurist, FF Master, FX Aegis - confirmed as rebranded AGIBOT A2/X2/D1 models (already cataloged), (2) MirrorMe Technology Bolt - insufficient verifiable specs and images available, (3) Tesla Optimus V3 - announcement only, no detailed specs or images released yet. All filtered as duplicates or incomplete data."
+}
