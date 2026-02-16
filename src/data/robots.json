@@ -11214,9 +11214,10 @@
       "batteryCapacityRuntime": "48V 15Ah Li-ion pack (runtime depends on activity)",
       "charger": "Aviation plug charger (WEIPU SF1212/S2)",
       "sensorsIncluded": [
-        "HIPNUC HI13 IMU (Chaohe HI13 M0-USB)",
-        "Camera module (configurable)",
-        "Motor encoders on all actuators"
+        "HIPNUC HI13 IMU (Chaohe HI13 M0-USB, 921600 baud serial)",
+        "Livox MID-360 LiDAR (optional, for autonomous navigation)",
+        "NLink LinkTrack UWB positioning (optional)",
+        "Motor encoders on all 23 actuators"
       ],
       "interfaces": [
         "USB-to-CAN (4x adapters)",
@@ -11227,16 +11228,19 @@
       ]
     },
     "softwareEcosystem": {
-      "rosSupport": "Yes (ROS2 deployment framework)",
-      "sdkLanguages": ["Python", "C++"],
+      "rosSupport": "ROS2 Humble with modular deployment framework and Nav2 navigation stack",
+      "sdkLanguages": ["Python 3.10", "C++ 17", "Shell"],
       "openSourceRepos": "https://github.com/Roboparty/roboto_origin",
       "aiFrameworksSupported": [
-        "SMPL-X human model adaptation",
-        "Sim2Real training pipeline",
-        "Isaac Sim compatible",
-        "MuJoCo compatible"
+        "NVIDIA Isaac Sim 5.1.0",
+        "NVIDIA Isaac Lab 2.3.2",
+        "RSL_RL 3.3.0 (ETH Zurich RL library)",
+        "MuJoCo (Sim2Sim transfer)",
+        "SMPL-X human motion model adaptation",
+        "AMP (Adversarial Motion Priors) gait algorithm",
+        "FAST-LIO 2 (LiDAR-Inertial Odometry for SLAM)"
       ],
-      "apiDocumentationQuality": "Excellent (full open-source documentation, EBOM, SOP, Sim2Real guides)"
+      "apiDocumentationQuality": "Excellent (full open-source documentation, EBOM with supplier links, SOP, assembly guide v1.14, Sim2Real gap solutions, 200,000+ documentation views)"
     },
     "supplierReliability": {
       "warranty": {
@@ -11257,8 +11261,8 @@
       "communication": "USB-to-CAN bus (4 channels)",
       "frameMaterial": "CNC-machined aluminum alloy (120-grit sandblasted, black anodized)",
       "actuators": {
-        "hipKnee": "9x DM 10010L (high torque)",
-        "ankleArm": "14x DM 4340P (48V)"
+        "hipKnee": "9x DM 10010L (120 Nm effort, 25 rad/s velocity)",
+        "ankleArm": "14x DM 4340P 48V (27 Nm effort, 8 rad/s velocity)"
       },
       "softwarePlatform": "ROS2 with modular middleware",
       "simulation": "Isaac Sim, MuJoCo compatible URDF"
@@ -11276,7 +11280,8 @@
     "images": [
       "/images/robots/roboparty-roboto-origin/robot-1.png",
       "/images/robots/roboparty-roboto-origin/robot-2.webp",
-      "/images/robots/roboparty-roboto-origin/robot-3.webp"
+      "/images/robots/roboparty-roboto-origin/robot-3.webp",
+      "/images/robots/roboparty-roboto-origin/robot-4.png"
     ],
     "officialUrl": "https://roboparty.com/",
     "description": "ROBOTO ORIGIN is the world's first full-stack open-source bipedal humanoid robot, developed by Xiaomi-backed RoboParty in just 120 days. Standing 1.25m tall at 34kg with 23 DOF and 3m/s running speed, it features complete hardware designs, software stack, and engineering documentation open-sourced on GitHub for developers and researchers."
@@ -11331,26 +11336,30 @@
       "charger": "Standard charging dock",
       "sensorsIncluded": [
         "IMU",
-        "Wide-angle camera",
-        "Optional LiDAR",
-        "Optional depth cameras"
+        "Wide-angle camera (DFOV 122, HFOV 111, VFOV 70 degrees)",
+        "Optional 3D LiDAR",
+        "Optional depth cameras (RGB-D)",
+        "Optional RTK positioning"
       ],
       "interfaces": [
         "WiFi",
         "5G (optional)",
-        "Remote control module (expandable)",
         "Ethernet",
-        "USB"
+        "USB",
+        "SBUS",
+        "UART",
+        "12V/24V power outputs for payloads"
       ]
     },
     "softwareEcosystem": {
-      "rosSupport": "FF EAI Robotics proprietary platform",
-      "sdkLanguages": ["Proprietary"],
+      "rosSupport": "ROS2 Humble (via underlying AgiBot D1 platform with AimRT middleware)",
+      "sdkLanguages": ["C++", "Python"],
       "openSourceRepos": "No",
       "aiFrameworksSupported": [
-        "FF EAI Brain (open-source and open platform)",
-        "EAI Decentralized Data Factory",
-        "Reinforcement learning gait control"
+        "FF EAI Brain platform",
+        "Reinforcement learning gait control",
+        "Isaac Sim and MuJoCo compatible (via AgiBot D1 URDF)",
+        "EAI Decentralized Data Factory"
       ],
       "apiDocumentationQuality": "Ecosystem Skills Marketplace (expanding)"
     },
