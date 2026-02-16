@@ -11085,8 +11085,11 @@
       "Powered by NVIDIA Jetson Thor with 2,070 FP4 TFLOPS computing power",
       "Geek+ Brain embodied intelligence system with Vision-Language-Action (VLA) model",
       "Multi-eye vision system for comprehensive spatial awareness and navigation",
-      "Three-finger dexterous hands for precise grasping and manipulation",
-      "Force-controlled dual arms with 20kg combined load capacity",
+      "Three-finger dexterous hands with 7 active DOF each for adaptive grasping",
+      "Force-controlled dual arms (7 DOF each) with 20kg combined load capacity",
+      "50Ah battery with industry-first 3kW wireless ultra-fast charging",
+      "Omnidirectional wheeled chassis with hemispherical 3D LiDAR navigation",
+      "Palm-integrated dual cameras and tactile sensors for precise object handling",
       "Fast/slow cognitive architecture combining high-level planning with real-time execution",
       "Capable of picking, packing, box handling, and quality inspection tasks",
       "Mass production ready with enterprise-scale deployment support",
@@ -11097,15 +11100,16 @@
       "Seamless integration with existing warehouse management systems"
     ],
     "hardwareBuildQuality": {
-      "totalDegreesOfFreedom": "Full humanoid DOF (not publicly disclosed)",
+      "totalDegreesOfFreedom": "28+ (14 DOF dual arms + 14 DOF dexterous hands, plus omnidirectional wheeled chassis)",
       "payloadCapacity": "20kg dual-arm combined load",
-      "batteryCapacityRuntime": "Enterprise-grade with efficient charging (details under NDA)",
-      "charger": "Industrial fast-charging system",
+      "batteryCapacityRuntime": "50Ah battery with 3kW wireless ultra-fast charging",
+      "charger": "Industry-first 3kW wireless ultra-fast charging system",
       "sensorsIncluded": [
-        "Multi-eye vision system",
-        "Depth cameras",
-        "Force/torque sensors in arms",
-        "Spatial awareness sensors"
+        "Triple-camera head unit for primary vision",
+        "Front/rear fisheye cameras for 360-degree awareness",
+        "Dual palm cameras with tactile sensors",
+        "Front/rear hemispherical 3D LiDAR",
+        "Force/torque sensors in arms"
       ],
       "interfaces": [
         "WiFi",
@@ -11134,9 +11138,11 @@
       "trackRecord": "Founded 2015, HKEX listed (2590.HK), 56,000+ robots deployed, 800+ customers including UPS, Adidas, Walmart"
     },
     "specifications": {
-      "computing": "NVIDIA Jetson Thor (2,070 FP4 TFLOPS, 128GB LPDDR5X, 14x Arm Neoverse V3AE cores)",
-      "vision": "Multi-eye vision system with spatial awareness",
-      "manipulation": "Three-finger dexterous hands, force-controlled dual arms",
+      "computing": "NVIDIA Jetson Thor (2,070 FP4 TFLOPS, 128GB LPDDR5X, 14x Arm Neoverse V3AE cores, 2560 CUDA cores, 96 Tensor Cores)",
+      "vision": "Triple-camera head + front/rear fisheye for 360-degree awareness, dual palm cameras with tactile sensors, hemispherical 3D LiDAR",
+      "manipulation": "Three-finger dexterous hands (7 DOF each), force-controlled dual arms (7 DOF each)",
+      "chassis": "Omnidirectional wheeled mobile base with 3D LiDAR-based trajectory planning",
+      "battery": "50Ah with 3kW wireless ultra-fast charging",
       "payload": "20kg dual-arm combined",
       "aiPlatform": "Geek+ Brain with VLA (Vision-Language-Action) model",
       "cognitiveArchitecture": "Fast/slow dual-process architecture",
