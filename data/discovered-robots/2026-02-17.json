@@ -1,0 +1,79 @@
+{
+  "fetch_date": "2026-02-17T00:00:00.000Z",
+  "week_range": "Feb 10–17",
+  "summary": {
+    "total_discovered": 3,
+    "duplicates_filtered": 0,
+    "new_robots": 3,
+    "quality_breakdown": {
+      "high": 2,
+      "medium": 1,
+      "low": 0
+    },
+    "source_breakdown": {
+      "ieee": 0,
+      "robotreport": 0,
+      "news": 3
+    }
+  },
+  "robots": [
+    {
+      "company": "Geek+",
+      "robot_name": "Gino 1",
+      "type": "humanoid",
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": "https://www.geekplus.com/",
+      "source_link": "https://interestingengineering.com/ai-robotics/geek-humanoid-robot-warehouse-operations",
+      "discovered_at": "2026-02-17T00:00:00.000Z",
+      "source_type": "news",
+      "confidence_score": 95,
+      "quality_score": {
+        "overall": 90,
+        "completeness": 90,
+        "reliability": 90,
+        "flags": ["missing_image"]
+      },
+      "description": "World's first general-purpose humanoid robot built specifically for warehouse operations. Powered by Geek+ Brain embodied intelligence system with multi-eye vision, dexterous hands, and AI planning. Capable of picking, packing, box handling, and inspection tasks. Mass production ready."
+    },
+    {
+      "company": "RoboParty",
+      "robot_name": "ROBOTO ORIGIN",
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": "https://github.com/roboparty",
+      "source_link": "https://markets.businessinsider.com/news/stocks/xiaomi-backed-roboparty-launches-origin-world-s-first-tier-full-stack-open-source-bipedal-humanoid-robot-forging-embodied-infrastructure-1035820136",
+      "discovered_at": "2026-02-17T00:00:00.000Z",
+      "source_type": "news",
+      "confidence_score": 95,
+      "quality_score": {
+        "overall": 95,
+        "completeness": 100,
+        "reliability": 90,
+        "flags": ["missing_image"]
+      },
+      "description": "World's first-tier full-stack open-source bipedal humanoid robot. Developed in 120 days (April-August 2025), officially open-sourced January 2026. Specifications: 1.25m tall, 34kg weight, 3m/s running speed. Xiaomi-backed with complete hardware and software stack open-sourced for developers."
+    },
+    {
+      "company": "Faraday Future",
+      "robot_name": "FX Aegis",
+      "type": "quadruped",
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.albawaba.com/business/pr/faraday-future-launches-three-series-1621754",
+      "discovered_at": "2026-02-17T00:00:00.000Z",
+      "source_type": "news",
+      "confidence_score": 85,
+      "quality_score": {
+        "overall": 70,
+        "completeness": 60,
+        "reliability": 80,
+        "flags": ["missing_image", "limited_specs"]
+      },
+      "description": "Quadruped security and companion robot built for patrol and industrial applications. Starting price $2,499. Part of Faraday Future's three-robot lineup unveiled at NADA Show 2026. First deliveries planned for end of February 2026."
+    }
+  ],
+  "errors": []
+}
