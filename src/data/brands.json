@@ -459,5 +459,32 @@
     "website": "https://augustrobotics.com/",
     "logo": "",
     "country": "USA"
+  },
+  {
+    "id": "geekplus",
+    "name": "Geek+",
+    "description": "World's largest warehouse fulfillment robotics provider, founded in 2015 and listed on HKEX (2590.HK). With 950+ employees and 56,000+ robots deployed across 40+ countries serving 800+ customers including UPS, Adidas, and Walmart. Pioneered the Gino 1 humanoid robot for warehouse operations powered by NVIDIA Jetson Thor.",
+    "website": "https://www.geekplus.com/",
+    "logo": "",
+    "country": "China",
+    "founded": "2015"
+  },
+  {
+    "id": "roboparty",
+    "name": "RoboParty",
+    "description": "Shanghai-based open-source humanoid robotics startup founded in April 2025 by 21-year-old Huang Yi. Backed by Xiaomi Strategic Investment, Matrix Partners China, and Galbot with a $10M seed round. Creator of ROBOTO ORIGIN, the world's first full-stack open-source bipedal humanoid robot with complete hardware and software stack on GitHub.",
+    "website": "https://roboparty.com/",
+    "logo": "",
+    "country": "China",
+    "founded": "2025"
+  },
+  {
+    "id": "faraday-future",
+    "name": "Faraday Future",
+    "description": "EV and robotics company founded in 2014 by YT Jia, listed on NASDAQ (FFIE). Established FF EAI-Robotics Inc. in California to develop embodied AI robots. Launched three robot series at NADA Show 2026: FF Futurist humanoid, FF Master humanoid, and FX Aegis quadruped, with hardware sourced from AgiBot and custom FF software stack.",
+    "website": "https://www.ff.com/",
+    "logo": "",
+    "country": "USA",
+    "founded": "2014"
   }
 ]
