@@ -11056,5 +11056,352 @@
     ],
     "officialUrl": "https://augustrobotics.com/",
     "description": "The DEWALT Robotic Drilling System combines August Robotics' Lionel autonomous mobile robot with DEWALT's industrial drilling rig for data center construction. With 99.97% accuracy across 108,000+ holes, fleet-capable coordination, and CAD-driven navigation, it reduces floor preparation time from 8–9 weeks to 7–9 days."
+  },
+  {
+    "id": "geekplus-gino-1",
+    "name": "Gino 1",
+    "brand": "Geek+",
+    "category": "humanoid",
+    "price": {
+      "starting": 0,
+      "currency": "USD",
+      "models": [
+        {
+          "name": "Enterprise",
+          "price": "request"
+        }
+      ]
+    },
+    "generalInfo": {
+      "manufacturer": "Geek+ (Beijing Geekplus Technology)",
+      "modelName": "Gino 1",
+      "dimensions": {
+        "standing": "Full-size humanoid form factor",
+        "weight": "Enterprise-grade (not publicly disclosed)"
+      }
+    },
+    "keyFeatures": [
+      "World's first general-purpose humanoid robot built specifically for warehouse operations",
+      "Powered by NVIDIA Jetson Thor with 2,070 FP4 TFLOPS computing power",
+      "Geek+ Brain embodied intelligence system with Vision-Language-Action (VLA) model",
+      "Multi-eye vision system for comprehensive spatial awareness and navigation",
+      "Three-finger dexterous hands with 7 active DOF each for adaptive grasping",
+      "Force-controlled dual arms (7 DOF each) with 20kg combined load capacity",
+      "50Ah battery with industry-first 3kW wireless ultra-fast charging",
+      "Omnidirectional wheeled chassis with hemispherical 3D LiDAR navigation",
+      "Palm-integrated dual cameras and tactile sensors for precise object handling",
+      "Fast/slow cognitive architecture combining high-level planning with real-time execution",
+      "Capable of picking, packing, box handling, and quality inspection tasks",
+      "Mass production ready with enterprise-scale deployment support",
+      "Multi-agent collaboration with existing Geek+ AMR fleet",
+      "Designed and trained specifically on warehouse operation data",
+      "Full in-house technology stack from hardware to AI software",
+      "99.99% picking accuracy leveraging Geek+ warehouse expertise",
+      "Seamless integration with existing warehouse management systems"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "28+ (14 DOF dual arms + 14 DOF dexterous hands, plus omnidirectional wheeled chassis)",
+      "payloadCapacity": "20kg dual-arm combined load",
+      "batteryCapacityRuntime": "50Ah battery with 3kW wireless ultra-fast charging",
+      "charger": "Industry-first 3kW wireless ultra-fast charging system",
+      "sensorsIncluded": [
+        "Triple-camera head unit for primary vision",
+        "Front/rear fisheye cameras for 360-degree awareness",
+        "Dual palm cameras with tactile sensors",
+        "Front/rear hemispherical 3D LiDAR",
+        "Force/torque sensors in arms"
+      ],
+      "interfaces": [
+        "WiFi",
+        "5G (optional)",
+        "Industrial Ethernet",
+        "Integration with Geek+ fleet management"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Proprietary Geek+ Brain platform",
+      "sdkLanguages": ["Proprietary"],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [
+        "NVIDIA Isaac",
+        "Vision-Language-Action (VLA) model",
+        "Geek+ Brain embodied intelligence"
+      ],
+      "apiDocumentationQuality": "Enterprise (available to customers)"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Enterprise contract (custom terms)",
+        "coverage": "Full hardware and software support with SLA"
+      },
+      "postSalesSupport": "Global service centers across 40+ countries, 52+ service stations, 310+ engineers, 12 spare parts centers",
+      "trackRecord": "Founded 2015, HKEX listed (2590.HK), 56,000+ robots deployed, 800+ customers including UPS, Adidas, Walmart"
+    },
+    "specifications": {
+      "computing": "NVIDIA Jetson Thor (2,070 FP4 TFLOPS, 128GB LPDDR5X, 14x Arm Neoverse V3AE cores, 2560 CUDA cores, 96 Tensor Cores)",
+      "vision": "Triple-camera head + front/rear fisheye for 360-degree awareness, dual palm cameras with tactile sensors, hemispherical 3D LiDAR",
+      "manipulation": "Three-finger dexterous hands (7 DOF each), force-controlled dual arms (7 DOF each)",
+      "chassis": "Omnidirectional wheeled mobile base with 3D LiDAR-based trajectory planning",
+      "battery": "50Ah with 3kW wireless ultra-fast charging",
+      "payload": "20kg dual-arm combined",
+      "aiPlatform": "Geek+ Brain with VLA (Vision-Language-Action) model",
+      "cognitiveArchitecture": "Fast/slow dual-process architecture",
+      "deploymentScale": "Mass production ready",
+      "fleetIntegration": "Compatible with Geek+ AMR ecosystem"
+    },
+    "features": [
+      "NVIDIA Jetson Thor with 2,070 TFLOPS",
+      "Geek+ Brain embodied intelligence",
+      "Multi-eye vision spatial awareness",
+      "Three-finger dexterous hands",
+      "20kg dual-arm payload",
+      "Mass production ready",
+      "Multi-agent fleet collaboration",
+      "Warehouse-optimized VLA model"
+    ],
+    "images": [
+      "/images/robots/geekplus-gino1/robot-1.webp",
+      "/images/robots/geekplus-gino1/robot-2.webp",
+      "/images/robots/geekplus-gino1/robot-3.webp",
+      "/images/robots/geekplus-gino1/robot-4.webp"
+    ],
+    "officialUrl": "https://www.geekplus.com/",
+    "description": "Gino 1 is the world's first general-purpose humanoid robot built specifically for warehouse operations. Powered by NVIDIA Jetson Thor with 2,070 TFLOPS and the Geek+ Brain embodied intelligence system, it features multi-eye vision, three-finger dexterous hands, and force-controlled dual arms for picking, packing, box handling, and inspection tasks. Mass production ready for enterprise-scale deployment."
+  },
+  {
+    "id": "roboparty-roboto-origin",
+    "name": "ROBOTO ORIGIN",
+    "brand": "RoboParty",
+    "category": "humanoid",
+    "price": {
+      "starting": 6800,
+      "currency": "USD",
+      "models": [
+        {
+          "name": "DIY Kit (BOM cost)",
+          "price": 6800
+        }
+      ]
+    },
+    "generalInfo": {
+      "manufacturer": "RoboParty (Shanghai Roboparty Technology Co., Ltd.)",
+      "modelName": "ROBOTO ORIGIN (ATOM-01)",
+      "dimensions": {
+        "standing": "1.25m tall",
+        "weight": "34kg"
+      }
+    },
+    "keyFeatures": [
+      "World's first full-stack open-source bipedal humanoid robot",
+      "Complete hardware, software, and engineering documentation open-sourced on GitHub",
+      "Developed in just 120 days (April-August 2025), open-sourced January 2026",
+      "23 degrees of freedom using DM 4340P and DM 10010L servo actuators",
+      "Running speed up to 3m/s, ranking among top open-source humanoids",
+      "Powered by Orange Pi 5 Plus (RK3588) single-board computer",
+      "HIPNUC HI13 IMU for precise orientation and balance sensing",
+      "48V 15Ah lithium-ion battery pack for extended operation",
+      "Full EBOM (Engineering Bill of Materials) with domestic supplier lists",
+      "SMPL-X human model adaptation for natural motion generation",
+      "Sim2Real pipeline with gap solutions and debugging documentation",
+      "ROS2 deployment framework with modular architecture middleware",
+      "Xiaomi-backed with $10M seed funding from Matrix Partners and Galbot",
+      "1,000+ GitHub stars and 100+ development kit pre-orders",
+      "Total BOM cost approximately 49,743 CNY (~$6,800 USD)"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "23 (14x DM 4340P + 9x DM 10010L actuators)",
+      "payloadCapacity": "Research platform (payload varies by configuration)",
+      "batteryCapacityRuntime": "48V 15Ah Li-ion pack (runtime depends on activity)",
+      "charger": "Aviation plug charger (WEIPU SF1212/S2)",
+      "sensorsIncluded": [
+        "HIPNUC HI13 IMU (Chaohe HI13 M0-USB, 921600 baud serial)",
+        "Livox MID-360 LiDAR (optional, for autonomous navigation)",
+        "NLink LinkTrack UWB positioning (optional)",
+        "Motor encoders on all 23 actuators"
+      ],
+      "interfaces": [
+        "USB-to-CAN (4x adapters)",
+        "USB hub",
+        "48V to 5V DC-DC module",
+        "CAN bus adapter boards",
+        "Power distribution center board"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "ROS2 Humble with modular deployment framework and Nav2 navigation stack",
+      "sdkLanguages": ["Python 3.10", "C++ 17", "Shell"],
+      "openSourceRepos": "https://github.com/Roboparty/roboto_origin",
+      "aiFrameworksSupported": [
+        "NVIDIA Isaac Sim 5.1.0",
+        "NVIDIA Isaac Lab 2.3.2",
+        "RSL_RL 3.3.0 (ETH Zurich RL library)",
+        "MuJoCo (Sim2Sim transfer)",
+        "SMPL-X human motion model adaptation",
+        "AMP (Adversarial Motion Priors) gait algorithm",
+        "FAST-LIO 2 (LiDAR-Inertial Odometry for SLAM)"
+      ],
+      "apiDocumentationQuality": "Excellent (full open-source documentation, EBOM with supplier links, SOP, assembly guide v1.14, Sim2Real gap solutions, 200,000+ documentation views)"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Open-source project (community-supported)",
+        "coverage": "DIY kit - components sourced from domestic suppliers per EBOM"
+      },
+      "postSalesSupport": "GitHub community, open-source documentation, developer Discord/WeChat groups",
+      "trackRecord": "Founded April 2025, backed by Xiaomi and Matrix Partners China, 4,000+ GitHub stars across repos, 200,000+ documentation views"
+    },
+    "specifications": {
+      "height": "1.25m",
+      "weight": "34kg",
+      "maxSpeed": "3m/s running",
+      "degreesOfFreedom": "23 (14x DM 4340P hip/ankle/arm + 9x DM 10010L knee/waist)",
+      "computing": "Orange Pi 5 Plus (RK3588, 4GB RAM)",
+      "imu": "HIPNUC HI13 M0-USB",
+      "battery": "48V 15Ah Li-ion (140x140x115mm)",
+      "communication": "USB-to-CAN bus (4 channels)",
+      "frameMaterial": "CNC-machined aluminum alloy (120-grit sandblasted, black anodized)",
+      "actuators": {
+        "hipKnee": "9x DM 10010L (120 Nm effort, 25 rad/s velocity)",
+        "ankleArm": "14x DM 4340P 48V (27 Nm effort, 8 rad/s velocity)"
+      },
+      "softwarePlatform": "ROS2 with modular middleware",
+      "simulation": "Isaac Sim, MuJoCo compatible URDF"
+    },
+    "features": [
+      "Full-stack open-source humanoid",
+      "3m/s running speed",
+      "23 DOF servo actuators",
+      "ROS2 deployment framework",
+      "Sim2Real training pipeline",
+      "CNC aluminum alloy frame",
+      "48V battery system",
+      "Complete EBOM and SOP documentation"
+    ],
+    "images": [
+      "/images/robots/roboparty-roboto-origin/robot-1.png",
+      "/images/robots/roboparty-roboto-origin/robot-2.webp",
+      "/images/robots/roboparty-roboto-origin/robot-3.webp",
+      "/images/robots/roboparty-roboto-origin/robot-4.png"
+    ],
+    "officialUrl": "https://roboparty.com/",
+    "description": "ROBOTO ORIGIN is the world's first full-stack open-source bipedal humanoid robot, developed by Xiaomi-backed RoboParty in just 120 days. Standing 1.25m tall at 34kg with 23 DOF and 3m/s running speed, it features complete hardware designs, software stack, and engineering documentation open-sourced on GitHub for developers and researchers."
+  },
+  {
+    "id": "faraday-future-fx-aegis",
+    "name": "FX Aegis",
+    "brand": "Faraday Future",
+    "category": "quadruped",
+    "price": {
+      "starting": 2499,
+      "currency": "USD",
+      "models": [
+        {
+          "name": "Standard",
+          "price": 2499
+        },
+        {
+          "name": "Standard + Ecosystem Skills Package",
+          "price": 3499
+        }
+      ]
+    },
+    "generalInfo": {
+      "manufacturer": "Faraday Future (FF EAI-Robotics Inc.)",
+      "modelName": "FX Aegis",
+      "dimensions": {
+        "standing": "63cm x 36cm x 42cm (standing), 67cm x 43cm x 15cm (folded)",
+        "weight": "~15kg"
+      }
+    },
+    "keyFeatures": [
+      "Professional embodied-AI quadruped robot for security and companionship",
+      "Peak joint torque of 48 Nm for powerful obstacle traversal",
+      "Maximum speed of 3.7 m/s with agile quadruped locomotion",
+      "35cm obstacle crossing height and 40-degree slope climbing",
+      "IP54 dust and water resistant aluminum alloy construction",
+      "120-minute battery life with hot-swappable battery system",
+      "WiFi and 5G connectivity with remote control capability",
+      "Autonomous patrol and intelligent follow-me modes",
+      "Dual configuration: quadruped and optional four-wheeled version",
+      "Expandable with LiDAR, depth cameras, robotic arm, and security modules",
+      "Integration with home, campus, and industrial security systems",
+      "Part of FF EAI Robotics ecosystem with skills marketplace",
+      "10kg maximum payload capacity for carrying accessories",
+      "Fire extinguisher and shopping basket expansion options"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "12 (joint motors)",
+      "payloadCapacity": "~10kg maximum",
+      "batteryCapacityRuntime": "120 minutes operation, hot-swappable battery",
+      "charger": "Standard charging dock",
+      "sensorsIncluded": [
+        "IMU",
+        "Wide-angle camera (DFOV 122, HFOV 111, VFOV 70 degrees)",
+        "Optional 3D LiDAR",
+        "Optional depth cameras (RGB-D)",
+        "Optional RTK positioning"
+      ],
+      "interfaces": [
+        "WiFi",
+        "5G (optional)",
+        "Ethernet",
+        "USB",
+        "SBUS",
+        "UART",
+        "12V/24V power outputs for payloads"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "ROS2 Humble (via underlying AgiBot D1 platform with AimRT middleware)",
+      "sdkLanguages": ["C++", "Python"],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [
+        "FF EAI Brain platform",
+        "Reinforcement learning gait control",
+        "Isaac Sim and MuJoCo compatible (via AgiBot D1 URDF)",
+        "EAI Decentralized Data Factory"
+      ],
+      "apiDocumentationQuality": "Ecosystem Skills Marketplace (expanding)"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Standard warranty (details at purchase)",
+        "coverage": "Hardware and software support"
+      },
+      "postSalesSupport": "FF EAI Robotics support, ecosystem skills marketplace, OTA updates",
+      "trackRecord": "Faraday Future founded 2014, NASDAQ listed (FFIE), hardware by AgiBot, 1,200+ B2B pre-order deposits received"
+    },
+    "specifications": {
+      "dimensions": "63cm x 36cm x 42cm (standing), 67cm x 43cm x 15cm (folded)",
+      "weight": "~15kg",
+      "maxSpeed": "3.7 m/s",
+      "peakJointTorque": "48 Nm",
+      "obstacleCrossing": "35cm height",
+      "maxSlope": "40 degrees",
+      "payload": "~10kg maximum",
+      "batteryLife": "120 minutes",
+      "batteryType": "Hot-swappable",
+      "material": "Aluminum alloy + high-strength engineering plastics",
+      "ingressProtection": "IP54",
+      "connectivity": ["WiFi", "5G (optional)"],
+      "autonomousPatrol": "Yes",
+      "autonomousFollowing": "Yes",
+      "configurations": "Quadruped and wheeled versions"
+    },
+    "features": [
+      "48 Nm peak joint torque",
+      "3.7 m/s max speed",
+      "35cm obstacle crossing",
+      "IP54 dust/water resistant",
+      "120-min hot-swap battery",
+      "Autonomous patrol mode",
+      "WiFi + 5G connectivity",
+      "Expandable with LiDAR and robotic arm"
+    ],
+    "images": [
+      "/images/robots/faraday-future-fx-aegis/robot-1.jpg"
+    ],
+    "officialUrl": "https://www.ff.com/us/preorder/robotics?model=fx-aegis",
+    "description": "FX Aegis is a professional embodied-AI quadruped robot from Faraday Future designed for security patrol, companionship, and industrial applications. Starting at $2,499, it features 3.7 m/s speed, 48 Nm joint torque, 35cm obstacle crossing, IP54 protection, and 120-minute hot-swappable battery. Expandable with LiDAR, robotic arms, and security modules."
   }
 ]
