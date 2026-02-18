@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import NewsletterSignup from './NewsletterSignup';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -144,7 +145,15 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </div>
           </div>
           
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+          <div className="border-t border-gray-800 mt-8 pt-8">
+            <div className="max-w-xl mx-auto text-center mb-8">
+              <h4 className="text-lg font-semibold text-white mb-2">Stay in the Loop</h4>
+              <p className="text-gray-400 text-sm mb-4">Get weekly robot news, new product launches, and industry insights delivered to your inbox.</p>
+              <NewsletterSignup />
+            </div>
+          </div>
+
+          <div className="border-t border-gray-800 mt-0 pt-8 text-center text-gray-400">
             <p>&copy; 2024 Awesome Robots. All rights reserved.</p>
           </div>
         </div>
