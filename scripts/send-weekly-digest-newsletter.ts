@@ -163,6 +163,8 @@ async function sendDiscordWebhook(webhookUrl: string, lines: string[]) {
   }
 }
 
+const MAX_EXCERPT_LENGTH = 200;
+
 async function main() {
   const repoRoot = process.cwd();
 
@@ -170,34 +172,38 @@ async function main() {
   const afterSha = process.env.GITHUB_SHA;
   const webhookUrl = process.env.DISCORD_NEWSLETTER_WEBHOOK_URL;
 
-  if (!beforeSha || !afterSha) {
-    throw new Error("Missing GITHUB_EVENT_BEFORE or GITHUB_SHA environment variables");
-  }
   if (!webhookUrl) {
     throw new Error("Missing DISCORD_NEWSLETTER_WEBHOOK_URL secret/env");
   }
-  try {
-    new URL(webhookUrl);
-  } catch {
-    throw new Error(
-      "DISCORD_NEWSLETTER_WEBHOOK_URL is not a valid URL. " +
-      "Please set the repository secret to a full Discord webhook URL " +
-      "(e.g. https://discord.com/api/webhooks/...)."
-    );
+
+  let current: DigestMeta;
+
+  if (beforeSha && afterSha) {
+    const changed = gitDiffNames(beforeSha, afterSha);
+    const digestChanged = changed.filter(isDigestFile);
+
+    if (digestChanged.length === 0) {
+      console.log("No digest issue file changed; skipping newsletter.");
+      return;
+    }
+
+    // If multiple digests changed in one push (rare), send for the highest issue.
+    const digestMetas = digestChanged.map((f) => loadDigestMeta(f, repoRoot));
+    digestMetas.sort((a, b) => a.issue - b.issue);
+    current = digestMetas[digestMetas.length - 1];
+  } else {
+    // Manual dispatch: use the latest digest
+    console.log("No GITHUB_EVENT_BEFORE/GITHUB_SHA; using latest digest (manual dispatch).");
+    const allFiles = listAllDigestFiles(repoRoot);
+    if (allFiles.length === 0) {
+      console.log("No digest files found; nothing to send.");
+      return;
+    }
+    const allMetas = allFiles
+      .map((f) => loadDigestMeta(f, repoRoot))
+      .sort((a, b) => a.issue - b.issue);
+    current = allMetas[allMetas.length - 1];
   }
-
-  const changed = gitDiffNames(beforeSha, afterSha);
-  const digestChanged = changed.filter(isDigestFile);
-
-  if (digestChanged.length === 0) {
-    console.log("No digest issue file changed; skipping newsletter.");
-    return;
-  }
-
-  // If multiple digests changed in one push (rare), send for the highest issue.
-  const digestMetas = digestChanged.map((f) => loadDigestMeta(f, repoRoot));
-  digestMetas.sort((a, b) => a.issue - b.issue);
-  const current = digestMetas[digestMetas.length - 1];
 
   const allDigestFiles = listAllDigestFiles(repoRoot);
   const allDigestMetas = allDigestFiles
@@ -231,7 +237,10 @@ async function main() {
 
   for (const p of filtered) {
     // Keep it single-line; Discord will auto-link.
-    const abstract = p.excerpt.replace(/\s+/g, " ").trim();
+    let abstract = p.excerpt.replace(/\s+/g, " ").trim();
+    if (abstract.length > MAX_EXCERPT_LENGTH) {
+      abstract = abstract.slice(0, MAX_EXCERPT_LENGTH - 3) + "...";
+    }
     lines.push(`- ${p.title} - ${buildBlogUrl(p.slug)} : ${abstract}`);
   }
 
