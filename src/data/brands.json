@@ -2,7 +2,7 @@
   {
     "id": "unitree",
     "name": "Unitree",
-    "description": "Leading manufacturer of quadruped and humanoid robots, pioneering AI-powered robotics for consumer, educational, and industrial applications.",
+    "description": "Hangzhou-based manufacturer of quadruped and humanoid robots, founded in 2016 by Wang Xingxing. Shipped over 5,500 humanoid robots in 2025 and targets 20,000 units in 2026. Product lineup spans consumer quadrupeds (Go2), industrial platforms (B2, H2), and affordable humanoids (G1, R1).",
     "website": "https://www.unitree.com/",
     "logo": "/images/brands/unitree-logo.svg",
     "imagePatterns": [
@@ -20,7 +20,7 @@
   {
     "id": "deep-robotics",
     "name": "Deep Robotics",
-    "description": "Global quadruped robot leader focused on pioneering innovation & application of embodied AI for industrial, rescue, and research applications.",
+    "description": "Global leader in embodied AI robotics, founded in 2017 in Hangzhou. Develops quadrupeds (Lite3, X20, X30), humanoids (DR01, DR02), and wheel-legged platforms (Lynx M20). Secured $70M Series C in December 2025 and planning a 2026 IPO. Won CES 2026 Innovation Award for Lynx M20 Pro.",
     "website": "https://www.deeprobotics.cn/en/",
     "logo": "/images/brands/deep-robotics-logo.svg",
     "imagePatterns": [
@@ -38,14 +38,14 @@
   {
     "id": "ubtech",
     "name": "UBTech",
-    "description": "Global leader in humanoid robotics and AI education, developing cutting-edge commercial and industrial humanoid robots with advanced AI capabilities.",
+    "description": "Shenzhen-based global leader in humanoid robotics and AI education, listed on the Hong Kong Stock Exchange since December 2023. Walker S2 industrial humanoid entered mass production in 2025 with orders exceeding 800 million yuan. Targets 5,000 units annual capacity by 2026.",
     "website": "https://www.ubtrobot.com/",
     "logo": "/images/brands/ubtech-logo.svg"
   },
   {
     "id": "boston-dynamics",
     "name": "Boston Dynamics",
-    "description": "Pioneer in advanced robotics with 30+ years of innovation, creating industry-leading quadruped and humanoid robots for industrial, research, and defense applications.",
+    "description": "Pioneer in advanced robotics with 30+ years of innovation (Hyundai subsidiary since 2020). Atlas production humanoid unveiled at CES 2026 with 56 DOF and 50kg lift capacity, deploying to Hyundai RMAC and Google DeepMind. Spot quadruped remains industry-leading for inspection and mapping.",
     "website": "https://bostondynamics.com/",
     "logo": "/images/brands/boston-dynamics-logo.svg",
     "imagePatterns": [
@@ -59,111 +59,111 @@
   {
     "id": "anybotics",
     "name": "ANYbotics",
-    "description": "Swiss robotics company specializing in autonomous legged robots for industrial inspection, delivering robust solutions that enhance operational reliability through automated monitoring in harsh environments.",
+    "description": "Swiss robotics company specializing in autonomous inspection quadrupeds. ANYmal D (IP67) and ANYmal X (ATEX Zone 1 explosion-proof, launching 2026). 200+ units shipped, thousands of inspections weekly. €127M Series C (late 2025), $150M+ total raised. Yokogawa partnership for oil/gas. 200+ employees.",
     "website": "https://www.anybotics.com/",
     "logo": "/images/brands/anybotics-logo.svg"
   },
   {
     "id": "ghost-robotics",
     "name": "Ghost Robotics",
-    "description": "Advanced quadrupedal unmanned ground vehicles for defense, commercial, and industrial applications. Creating versatile robotic solutions with unstoppable agility for the most critical missions.",
+    "description": "Quadrupedal UGV maker for defense and industrial applications. Acquired by South Korean LIG Nex1 for $240M (July 2024). Vision 60 (51kg, IP67) deployed with U.S. Army, Marines, Air Force, and Japan GSDF. New 6-DOF manipulator arm (Dec 2025). Patent settlement with Boston Dynamics.",
     "website": "https://www.ghostrobotics.io/",
     "logo": "/images/brands/ghost-robotics-logo.svg"
   },
   {
     "id": "unix-ai",
     "name": "UniX AI",
-    "description": "Embodied intelligent robotics company founded in 2024 in Suzhou, China. Develops full-size wheeled and bipedal humanoid robots with Unitouch visual-tactile large model technology for commercial service applications.",
+    "description": "Embodied intelligent robotics company founded in 2024 in Suzhou, China. Wanda 2.0 wheeled humanoid at 100 units/month production, hundreds deployed across hotels, retail, and security. New Panther platform and UniFlex imitation learning framework. $14M raised.",
     "website": "https://www.unix-group.ai/",
     "logo": "/images/brands/unix-ai-logo.svg"
   },
   {
     "id": "rainbow-robotics",
     "name": "Rainbow Robotics",
-    "description": "Founded in 2011 by researchers from KAIST Humanoid Robot Research Center, Rainbow Robotics specializes in developing advanced humanoid robotic systems. Creator of the world's first commercialized humanoid robot platform HUBO2, with robots deployed at world-class institutions like MIT and Google.",
+    "description": "Samsung subsidiary (35% stake, $180M, Feb 2025) specializing in advanced humanoid robotics. Founded 2011 by KAIST researchers. New RB-Y1 dual-arm mobile manipulator at $80K. Part of Korean M.AX Alliance ($525M gov investment). HUBO2 deployed at MIT and Google.",
     "website": "https://www.rainbow-robotics.com/",
     "logo": "/images/brands/rainbow-robotics-logo.svg"
   },
   {
     "id": "engineai",
     "name": "EngineAI",
-    "description": "Shenzhen-based robotics company founded in 2023, specializing in general intelligent humanoid robots for research, education, industrial manufacturing, commercial services, and home applications. Develops full-stack robotics technology from core components to embodied intelligence.",
+    "description": "Shenzhen-based robotics company founded in October 2023 by Zhao Tongyang, specializing in general-purpose humanoid robots with full-stack technology. Produced 6 robot models in 16 months including the T800 ($25K) debuted at CES 2026. Product lineup spans affordable bipedals (SA01, PM01), full-size humanoids (SE01, T800), and a quadruped (JS01).",
     "website": "https://www.engineai.com.cn/",
     "logo": "/images/brands/engineai-logo.svg"
   },
   {
     "id": "galaxea-ai",
     "name": "Galaxea AI",
-    "description": "Beijing-based embodied intelligence company founded in 2023, focused on embodied intelligence basic models and embodied intelligent robot research and development. Vision to deploy 10 billion AI robots serving the global population with advanced teleoperation and multi-dimensional perception capabilities.",
+    "description": "Beijing-based embodied intelligence company founded in 2023. R1 series wheeled humanoids with 26 DOF and NVIDIA Jetson Orin. G0 Plus VLA model (Jan 2026) trained on 500+ hours of real-world data. $144M Series B (Feb 2026) at $1.4B valuation, ~$400M total raised.",
     "website": "https://galaxea-ai.com/",
     "logo": "/images/brands/galaxea-ai-logo.svg"
   },
   {
     "id": "booster-robotics",
     "name": "Booster Robotics",
-    "description": "Founded in June 2023 by Tsinghua University graduates, Booster Robotics develops humanoid robot products and platforms to promote productivity change. Specializes in scientific research and education scenarios with advanced software and hardware platforms for embodied intelligence.",
+    "description": "Founded in June 2023 by Tsinghua University graduates, Booster Robotics develops humanoid platforms now shipping globally. T1 full-scale humanoid and K1 ($5,999) compact platform. RoboCup world champions (IEEE-RAS Humanoids). $27.9M raised including $13.9M Series A (June 2025). NVIDIA partnership.",
     "website": "https://www.boosterobotics.com/",
     "logo": "/images/brands/booster-robotics-logo.svg"
   },
   {
     "id": "tesla",
     "name": "Tesla",
-    "description": "Automotive and energy company investing heavily in general-purpose humanoid robots for factory automation, leveraging its AI and manufacturing expertise. Planning deployment of 5,000 Optimus Gen 3 units in Tesla factories during 2025.",
+    "description": "Automotive and energy company mass-producing Optimus Gen 3 humanoid robots at Fremont factory (internal deployment). 50 actuators per hand for unprecedented dexterity. Target $30K for limited external sales in late 2026, long-term goal under $20K. Leveraging Tesla AI and battery expertise for humanoid scale.",
     "website": "https://www.tesla.com/"
   },
   {
     "id": "figure-ai",
     "name": "Figure AI",
-    "description": "California startup building deployable humanoids for human-scale industrial tasks with rapid commercial adoption. $2.6B valuation with robots already deployed at BMW factories, backed by Jeff Bezos, Microsoft, OpenAI, NVIDIA, and Intel.",
+    "description": "California startup building deployable humanoids for industrial and home markets. Figure 02 deployed at BMW factories, Figure 03 ($20K home robot) announced for late 2026. Helix 02 AI for full-body autonomy released Jan 2026. BotQ manufacturing facility planned. Backed by Jeff Bezos, Microsoft, OpenAI, NVIDIA, and Intel with $2.6B+ valuation.",
     "website": "https://www.figure.ai/",
     "logo": "/images/brands/figure-ai-logo.svg"
   },
   {
     "id": "agility-robotics",
     "name": "Agility Robotics",
-    "description": "Commercializes bipedal robots designed to work safely alongside people in logistics. First company to build dedicated humanoid robot manufacturing facility (RoboFab) capable of 10,000 units/year, with pilots at Amazon fulfillment centers.",
+    "description": "Commercializes bipedal robots for logistics and warehouse automation. Digit has moved 100K+ totes at GXO Logistics and secured Toyota contract for 7 units (Feb 2026). $400M Series C raised. RoboFab manufacturing facility capable of 10,000 units/year, with deployments at Amazon and GXO fulfillment centers.",
     "website": "https://agilityrobotics.com/",
     "logo": "/images/brands/agility-robotics-logo.png"
   },
   {
     "id": "apptronik",
     "name": "Apptronik",
-    "description": "Austin-based firm translating NASA legged research into modular workforce humanoids for industrial applications. Raised $522M with partnerships including Amazon, Mercedes-Benz, Walmart, and Jabil.",
+    "description": "Austin-based firm translating NASA legged research into modular workforce humanoids for industrial applications. Raised $935M total ($520M Series A extension Feb 2026) with partnerships including Mercedes-Benz, GXO, Jabil, and Amazon. New robot to debut in 2026.",
     "website": "https://apptronik.com/",
     "logo": "/images/brands/apptronik-logo.svg"
   },
   {
     "id": "sanctuary-ai",
     "name": "Sanctuary AI",
-    "description": "Canadian company combining cognition software with humanoid embodiments for real work, addressing labor challenges. Leading Canadian robotics company with mission to deploy millions of industrial-grade humanoid robots.",
+    "description": "Canadian company combining Carbon AI cognition with humanoid embodiments for manufacturing and retail. Phoenix Gen 8 (Jan 2025) features wheeled base, 21-DOF hydraulic hands with 5mN tactile sensitivity. Partnerships with Microsoft, NVIDIA, and Magna International. $140M+ raised, 163 employees.",
     "website": "https://www.sanctuary.ai/",
     "logo": "/images/brands/sanctuary-ai-logo.png"
   },
   {
     "id": "1x-technologies",
     "name": "1X Technologies",
-    "description": "Norwegian-American startup deploying androids for security and frontline services with embodied AI. EVE available at $24K, NEO Beta in home trials, backed by OpenAI with biologically-inspired design for home environments.",
+    "description": "Norwegian-American startup backed by OpenAI building humanoids for home and industrial markets. NEO Gamma ($20K) consumer robot with World Model AI (Jan 2026) learns tasks from video. EVE industrial robot deployed for logistics. EQT partnership for 10,000 robots across 300+ portfolio companies. $126M+ raised, targeting 100K units/year production.",
     "website": "https://1x.tech/",
     "logo": "/images/brands/1x-technologies-logo.svg"
   },
   {
     "id": "fourier-intelligence",
     "name": "Fourier Intelligence",
-    "description": "Rehab robotics leader expanding into full-scale humanoids with high-output actuators, dominating Asian rehabilitation market. Production capacity of 5,000 units/year, deployed in Chinese Tier-1 hospitals and European automotive factories.",
+    "description": "Shanghai-based rehab robotics leader expanding into general-purpose humanoids. GR-3 unveiled at CES 2026 with 53 DOF and Fourier N1 chip. GR-2 in mass production at 5,000 units/year for healthcare and automotive. Raised $193M+ total funding including $118M Series C (2024).",
     "website": "https://www.fourierintelligence.com/",
     "logo": "/images/brands/fourier-intelligence-logo.png"
   },
   {
     "id": "pal-robotics",
     "name": "PAL Robotics",
-    "description": "Barcelona robotics specialist producing humanoids for research, industry, and service roles with advanced manipulation. TALOS features 32-DOF, 1.75m tall, 7-DOF arms lifting 6kg at full extension.",
+    "description": "Barcelona-based robotics specialist (est. 2004) producing humanoids and mobile platforms for research, industry, and service. TALOS features 32-DOF torque-controlled manipulation. Launched KANGAROO bipedal platform at MWC 2026 targeting logistics. Partners with EU Horizon projects and major automotive manufacturers.",
     "website": "https://pal-robotics.com/",
     "logo": "/images/brands/pal-robotics-logo.png"
   },
   {
     "id": "engineered-arts",
     "name": "Engineered Arts",
-    "description": "UK studio crafting expressive humanoids for entertainment, research, and customer engagement. Ameca renowned for stunningly lifelike facial expressions, popular in exhibitions, research labs, and media productions globally.",
+    "description": "UK studio crafting expressive humanoids for entertainment, research, and customer engagement. Ameca Gen 3 ($100K-$500K) renowned for lifelike facial expressions using Mesmer technology. New Ami desktop companion for broader market. $16.2M raised including $10M Series A (Dec 2024).",
     "website": "https://www.engineeredarts.co.uk/",
     "logo": "/images/brands/engineered-arts-logo.svg"
   },
@@ -191,7 +191,7 @@
   {
     "id": "softbank-robotics",
     "name": "SoftBank Robotics",
-    "description": "Global service robotics firm deploying humanoids across retail, banking, and education sectors. Part of SoftBank Group with 20% Boston Dynamics stake, pioneered commercial service robots at scale with Pepper.",
+    "description": "Formerly Aldebaran Robotics. Filed bankruptcy Feb 2025, acquired by Maxvision Technology (China) for EUR 900K (July 2025). Pepper production halted 2021 (27K units made). NAO still available. New ownership plans eldercare, education, and security applications from Shenzhen operations.",
     "website": "https://www.softbankrobotics.com/",
     "logo": "/images/brands/softbank-robotics-logo.svg"
   },
@@ -212,39 +212,39 @@
   {
     "id": "swiss-mile",
     "name": "Swiss-Mile (RIVR)",
-    "description": "ETH Zurich spin-off building wheel-legged robots that switch between driving and walking for delivery. Raised $22M from Jeff Bezos, achieving 22 kph speed with 83% efficiency and 50kg payload.",
+    "description": "ETH Zurich spin-off rebranded from Swiss-Mile to RIVR (Jan 2025). Wheeled-legged delivery robots (30+ kg payload, 30+ km range, 14 km/h). Partnerships with Just Eat Takeaway, Swiss Post, and Migros. Deploying in Milton Keynes UK (Feb 2026). $22M seed from Jeff Bezos and HongShan.",
     "website": "https://www.rivr.ai/"
   },
   {
     "id": "limx-dynamics",
     "name": "LimX Dynamics",
-    "description": "Guangzhou firm developing high-agility quadrupeds with force-controlled joints and transformation capabilities. W1 transforms from quadruped to biped in <1 second, reaching 36 km/h speed.",
+    "description": "Shenzhen robotics company developing humanoid (Oli, 165cm, 31 DOF), multi-modal (TRON 1/2), and wheeled quadruped (W1) robots. COSA agentic OS for autonomous real-world operation. $200M Series B (Feb 2026) from 16 investors including JD.com, NIO Capital, and SAIC Motor.",
     "website": "https://www.limxdynamics.com/",
     "logo": "/images/brands/limx-dynamics-logo.png"
   },
   {
     "id": "weilan",
     "name": "Weilan Technology",
-    "description": "Shenzhen startup scaling AlphaDog quadrupeds for smart city and enterprise deployments. Claimed fastest robot dog at 15 km/h with advanced LIDAR/3D cameras, available from $2,400.",
+    "description": "Nanjing-based consumer robot dog company. BabyAlpha A2 ($1,300) features GPT-4o integration, 360-degree LiDAR, 100+ expressions, and 40 biomimetic movements. Kickstarter campaign raised $277K. Focus on family companion and home monitoring applications.",
     "website": "https://www.weilan.com/"
   },
   {
     "id": "xpeng-robotics",
     "name": "XPeng Robotics",
-    "description": "XPeng-backed enterprise merging autonomous driving tech with advanced humanoid robots. Iron humanoid features 60+ joints, 200 DOF, Turing AI chip with 3,000 TOPS, deployed in XPeng factories and stores.",
+    "description": "XPeng-backed enterprise merging autonomous driving tech with next-gen humanoid robots. IRON features 82+ DOF, 22-DOF hands, 720-degree Eagle-Eye vision, full solid-state batteries, and 2,250 TOPS compute (3 Turing AI chips). VLT Physical World Large Model. Mass production target end of 2026, 1M units by 2030.",
     "website": "https://www.xpengrobotics.com/"
   },
   {
     "id": "neura-robotics",
     "name": "NEURA Robotics",
-    "description": "German company developing cognitive robotics including collaborative robots and humanoid platforms. 4NE-1 is first humanoid designed for series production, aiming to deliver 5M robots by 2030 with NVIDIA partnership.",
+    "description": "German company developing cognitive humanoid and quadruped robots with NVIDIA partnership. 4NE1 ($22K-$44.6K) priced for mass market, available June 2026. Raised €120M Series B (Jan 2025) led by Lingotto. 300+ employees, €1B order book, 10x revenue growth. Neuraverse platform with skill marketplace.",
     "website": "https://neura-robotics.com/",
     "logo": "/images/brands/neura-robotics-logo.svg"
   },
   {
     "id": "elephant-robotics",
     "name": "Elephant Robotics",
-    "description": "Service robotics company offering biomimetic pet-style quadrupeds for consumers and education. Accessible biomimetic quadrupeds available for consumer purchase.",
+    "description": "Shenzhen robotics company with diverse product ecosystem: MarsCat ($1,199 bionic pet), myCobot series (collaborative arms), and Mercury humanoid platforms. CES 2026: myArm M750 dual-arm system and ultraArm P1. Focus on embodied AI, education, and professional robotics.",
     "website": "https://www.elephantrobotics.com/",
     "logo": "/images/brands/elephant-robotics-logo.png"
   },
@@ -329,7 +329,7 @@
     "id": "openloong-noetix-robotics",
     "name": "Noetix Robotics",
     "chineseName": "松延动力",
-    "description": "Noetix Robotics is a Chinese robotics manufacturer specializing in humanoid robot development.",
+    "description": "Chinese humanoid robotics company developing DORA and Bumi platforms for industrial and service applications. Secured 1,000-unit Bumi orders for warehouse logistics. Bumi features 42 DOF with modular end-effectors and autonomous navigation for factory environments.",
     "website": "https://noetixrobotics.com",
     "logo": "",
     "source": "official_website",
@@ -339,7 +339,7 @@
   {
     "id": "agibot",
     "name": "AgiBot",
-    "description": "Shanghai-based robotics company developing advanced commercial humanoid robots. AgiBot A2 holds the Guinness World Record for longest humanoid robot walk (106.286 km), featuring 28 motors, hot-swappable batteries, and AI-powered multilingual capabilities for customer service applications.",
+    "description": "Shanghai-based robotics company developing advanced commercial humanoid and quadruped robots. Shipped 5,000 robots by January 2026 with a 39% global humanoid market share. Product lineup includes the A2 series (service/industrial humanoids), X2 (compact research humanoid), G2 (industrial humanoid), and D1 quadruped series. Debuted at CES 2026 for US market entry.",
     "website": "https://www.agibot.com/",
     "logo": "/images/brands/agibot-logo.svg",
     "country": "China",
@@ -348,7 +348,7 @@
   {
     "id": "k-scale-labs",
     "name": "K-Scale Labs",
-    "description": "Y Combinator-backed robotics company building open-source humanoid robots to democratize robotics. Offers K-Bot ($9,000) and Z-Bot ($1,000) with Python SDK, Raspberry Pi-based computing, and comprehensive GitHub support for developers, researchers, and education.",
+    "description": "Y Combinator-backed open-source humanoid robotics company that shut down in November 2025. Previously offered K-Bot ($9,000) and Z-Bot ($1,000) with Python SDK and Raspberry Pi-based computing. GitHub repos remain available but no longer actively maintained.",
     "website": "https://www.kscale.dev/",
     "logo": "/images/brands/kscale-labs-logo.svg",
     "country": "USA",
