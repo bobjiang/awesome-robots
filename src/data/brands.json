@@ -45,7 +45,7 @@
   {
     "id": "boston-dynamics",
     "name": "Boston Dynamics",
-    "description": "Pioneer in advanced robotics with 30+ years of innovation, creating industry-leading quadruped and humanoid robots for industrial, research, and defense applications.",
+    "description": "Pioneer in advanced robotics with 30+ years of innovation (Hyundai subsidiary since 2020). Atlas production humanoid unveiled at CES 2026 with 56 DOF and 50kg lift capacity, deploying to Hyundai RMAC and Google DeepMind. Spot quadruped remains industry-leading for inspection and mapping.",
     "website": "https://bostondynamics.com/",
     "logo": "/images/brands/boston-dynamics-logo.svg",
     "imagePatterns": [
@@ -108,27 +108,27 @@
   {
     "id": "tesla",
     "name": "Tesla",
-    "description": "Automotive and energy company investing heavily in general-purpose humanoid robots for factory automation, leveraging its AI and manufacturing expertise. Planning deployment of 5,000 Optimus Gen 3 units in Tesla factories during 2025.",
+    "description": "Automotive and energy company mass-producing Optimus Gen 3 humanoid robots at Fremont factory (internal deployment). 50 actuators per hand for unprecedented dexterity. Target $30K for limited external sales in late 2026, long-term goal under $20K. Leveraging Tesla AI and battery expertise for humanoid scale.",
     "website": "https://www.tesla.com/"
   },
   {
     "id": "figure-ai",
     "name": "Figure AI",
-    "description": "California startup building deployable humanoids for human-scale industrial tasks with rapid commercial adoption. $2.6B valuation with robots already deployed at BMW factories, backed by Jeff Bezos, Microsoft, OpenAI, NVIDIA, and Intel.",
+    "description": "California startup building deployable humanoids for industrial and home markets. Figure 02 deployed at BMW factories, Figure 03 ($20K home robot) announced for late 2026. Helix 02 AI for full-body autonomy released Jan 2026. BotQ manufacturing facility planned. Backed by Jeff Bezos, Microsoft, OpenAI, NVIDIA, and Intel with $2.6B+ valuation.",
     "website": "https://www.figure.ai/",
     "logo": "/images/brands/figure-ai-logo.svg"
   },
   {
     "id": "agility-robotics",
     "name": "Agility Robotics",
-    "description": "Commercializes bipedal robots designed to work safely alongside people in logistics. First company to build dedicated humanoid robot manufacturing facility (RoboFab) capable of 10,000 units/year, with pilots at Amazon fulfillment centers.",
+    "description": "Commercializes bipedal robots for logistics and warehouse automation. Digit has moved 100K+ totes at GXO Logistics and secured Toyota contract for 7 units (Feb 2026). $400M Series C raised. RoboFab manufacturing facility capable of 10,000 units/year, with deployments at Amazon and GXO fulfillment centers.",
     "website": "https://agilityrobotics.com/",
     "logo": "/images/brands/agility-robotics-logo.png"
   },
   {
     "id": "apptronik",
     "name": "Apptronik",
-    "description": "Austin-based firm translating NASA legged research into modular workforce humanoids for industrial applications. Raised $522M with partnerships including Amazon, Mercedes-Benz, Walmart, and Jabil.",
+    "description": "Austin-based firm translating NASA legged research into modular workforce humanoids for industrial applications. Raised $935M total ($520M Series A extension Feb 2026) with partnerships including Mercedes-Benz, GXO, Jabil, and Amazon. New robot to debut in 2026.",
     "website": "https://apptronik.com/",
     "logo": "/images/brands/apptronik-logo.svg"
   },

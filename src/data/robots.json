@@ -2713,36 +2713,43 @@
     },
     "generalInfo": {
       "manufacturer": "Boston Dynamics",
-      "modelName": "Atlas",
+      "modelName": "Atlas (Production)",
       "dimensions": {
-        "height": "~150cm",
-        "weight": "~80kg (estimated)"
+        "height": "152 cm (5 ft)",
+        "weight": "89 kg (196 lbs)"
       }
     },
     "keyFeatures": [
-      "Fully electric design",
-      "Lightweight titanium and aluminum construction",
-      "3D printed parts",
-      "Advanced control algorithms",
-      "Whole-body movement control",
-      "Dynamic mobility and agility",
-      "Advanced manipulation with hands",
-      "Athletic intelligence"
+      "Production-ready humanoid unveiled at CES 2026",
+      "56 degrees of freedom for full-body articulation",
+      "2.3m reach span for industrial manipulation",
+      "50 kg single-arm lift capacity",
+      "Fully electric design with titanium and aluminum construction",
+      "3D printed lightweight components",
+      "Advanced whole-body movement control",
+      "Dynamic mobility and athletic intelligence",
+      "Deploying to Hyundai RMAC facilities",
+      "Google DeepMind collaboration for AI research",
+      "Multi-modal perception with advanced sensors",
+      "Hot-swappable battery system"
     ],
     "hardwareBuildQuality": {
-      "totalDegreesOfFreedom": "28+ (full body articulation)",
-      "payloadCapacity": "Various manipulation tasks",
-      "batteryCapacityRuntime": "Custom high-power battery system",
-      "charger": "Custom charging system",
+      "totalDegreesOfFreedom": "56 (full body articulation)",
+      "payloadCapacity": "50 kg single-arm lift",
+      "batteryCapacityRuntime": "Custom high-power battery system, hot-swappable",
+      "charger": "Custom quick-charge system",
       "sensorsIncluded": [
-        "Advanced perception systems",
-        "Force/torque sensors",
-        "Visual perception",
-        "Inertial measurement units"
+        "Multi-modal perception systems",
+        "Force/torque sensors throughout body",
+        "Stereo vision cameras",
+        "LiDAR",
+        "Inertial measurement units",
+        "Tactile sensors in hands"
       ],
       "interfaces": [
-        "Research platform interfaces",
-        "Custom control systems"
+        "Industrial control system integration",
+        "Spot-compatible fleet management",
+        "Custom control APIs"
       ]
     },
     "softwareEcosystem": {
@@ -2768,27 +2775,29 @@
       "trackRecord": "30+ years in advanced robotics research, industry pioneer"
     },
     "specifications": {
-      "height": "~150cm",
-      "weight": "~80kg",
+      "height": "152 cm",
+      "weight": "89 kg",
+      "dof": 56,
+      "reach": "2.3 m span",
+      "payload": "50 kg single-arm lift",
       "material": "Lightweight titanium and aluminum with 3D printed components",
-      "powerSystem": "Fully electric with custom battery",
-      "mobility": "Dynamic humanoid locomotion",
-      "manipulation": "Advanced dexterous hands",
-      "designPhilosophy": "Athletic intelligence and dynamic capability"
+      "powerSystem": "Fully electric with hot-swappable battery",
+      "mobility": "Dynamic humanoid locomotion with athletic agility",
+      "manipulation": "Advanced dexterous hands with 50 kg lift capacity"
     },
     "features": [
-      "Whole-body control",
-      "Dynamic manipulation",
-      "Athletic movement",
-      "Advanced perception",
-      "Research platform",
-      "Embodied AI integration"
+      "56 DOF full-body control",
+      "50 kg single-arm lift",
+      "2.3 m reach span",
+      "CES 2026 production model",
+      "Hyundai RMAC deployment",
+      "Google DeepMind collaboration"
     ],
     "images": [
       "/images/robots/boston-dynamics/atlas/atlas-1.jpg"
     ],
     "officialUrl": "https://bostondynamics.com/atlas/",
-    "description": "World's most advanced humanoid research robot featuring fully electric design, athletic intelligence, and dynamic manipulation capabilities for advancing embodied AI research."
+    "description": "Production-ready humanoid robot unveiled at CES 2026, featuring 56 degrees of freedom, 2.3m reach span, and 50kg single-arm lift capacity. Deploying to Hyundai RMAC facilities and collaborating with Google DeepMind for advanced AI research."
   },
   {
     "id": "anybotics-anymal",
@@ -4092,7 +4101,7 @@
     "brand": "Tesla",
     "category": "humanoid",
     "price": {
-      "starting": 20000,
+      "starting": 30000,
       "currency": "USD",
       "models": [
         {
@@ -4112,16 +4121,20 @@
     },
     "keyFeatures": [
       "28 structural actuators granting human-like movement",
+      "50 actuators per hand for unprecedented dexterity",
       "22 degrees of freedom per hand with five fingers",
       "Tesla on-board AI brain based on Autopilot hardware",
       "Walking gait learned via reinforcement learning",
       "4680 battery cells from Tesla's energy division",
+      "Mass production at Fremont factory (internal deployment)",
+      "Target $30K for limited external sales in late 2026",
+      "Long-term target price under $20K per unit",
       "Designed for factory automation tasks",
-      "Target price of $20,000 per unit",
-      "Planned deployment of 5,000 units in Tesla factories (2025)"
+      "10-12 hours runtime per charge",
+      "Autonomous navigation using Autopilot-derived vision"
     ],
     "hardwareBuildQuality": {
-      "totalDegreesOfFreedom": "28 structural actuators + 22 DoF per hand",
+      "totalDegreesOfFreedom": "28 structural actuators + 50 actuators per hand",
       "payloadCapacity": "Approximately 20 kg",
       "batteryCapacityRuntime": "2.3 kWh battery, 10-12 hours per charge",
       "charger": "Standard charging system",
@@ -4179,7 +4192,7 @@
       "/images/robots/tesla-optimus-gen3.webp"
     ],
     "officialUrl": "https://www.tesla.com/optimus",
-    "description": "Tesla Optimus Gen 3 is a general-purpose humanoid robot designed for factory automation and repetitive tasks. Featuring 28 structural actuators and 22-DoF hands, it uses Tesla's Autopilot AI technology for autonomous navigation and manipulation. With a 2.3 kWh battery providing 10-12 hours of runtime, Optimus is planned for large-scale deployment in Tesla factories starting in 2025, with a target price of $20,000."
+    "description": "Tesla Optimus Gen 3 is a general-purpose humanoid robot in mass production at Tesla's Fremont factory. Featuring 28 structural actuators and 50 actuators per hand for unprecedented dexterity, it uses Tesla's Autopilot AI for autonomous navigation. With a 2.3 kWh battery providing 10-12 hours of runtime, Gen 3 is deployed internally with a target of $30K for limited external sales in late 2026."
   },
   {
     "id": "figure-02",
@@ -4187,12 +4200,12 @@
     "brand": "Figure AI",
     "category": "humanoid",
     "price": {
-      "starting": 0,
+      "starting": 130000,
       "currency": "USD",
       "models": [
         {
-          "name": "Commercial",
-          "price": "request"
+          "name": "Enterprise Lease",
+          "price": 130000
         }
       ]
     },
@@ -4240,6 +4253,7 @@
       ],
       "openSourceRepos": "No",
       "aiFrameworksSupported": [
+        "Helix 02 (full-body autonomy AI, Jan 2026)",
         "Proprietary Figure AI",
         "OpenAI integration"
       ],
@@ -4251,7 +4265,7 @@
         "coverage": "Hardware defects, software updates"
       },
       "postSalesSupport": "Dedicated support team for BMW and commercial partners",
-      "trackRecord": "Successfully deployed at BMW Spartanburg plant. $2.6B valuation backed by Jeff Bezos, Microsoft, OpenAI, NVIDIA, and Intel."
+      "trackRecord": "Successfully deployed at BMW Spartanburg plant. BotQ manufacturing facility planned. $2.6B+ valuation backed by Jeff Bezos, Microsoft, OpenAI, NVIDIA, and Intel."
     },
     "specifications": {
       "height": "168 cm",
@@ -4283,12 +4297,12 @@
     "brand": "Figure AI",
     "category": "humanoid",
     "price": {
-      "starting": 0,
+      "starting": 20000,
       "currency": "USD",
       "models": [
         {
           "name": "Consumer",
-          "price": "request"
+          "price": 20000
         }
       ]
     },
@@ -4446,7 +4460,7 @@
         "coverage": "Hardware, software updates, maintenance"
       },
       "postSalesSupport": "Dedicated support team, RoboFab service center",
-      "trackRecord": "Successfully deployed at Amazon fulfillment centers and GXO Logistics. First humanoid with 10,000 unit/year manufacturing facility."
+      "trackRecord": "100K+ totes moved at GXO Logistics. Toyota contracted 7 units (Feb 2026). $400M Series C raised. Deployed at Amazon fulfillment centers. First humanoid with 10,000 unit/year manufacturing facility (RoboFab)."
     },
     "specifications": {
       "height": "175 cm",
@@ -4546,7 +4560,7 @@
         "coverage": "Hardware, software, battery system"
       },
       "postSalesSupport": "Apptronik support team, Mercedes-Benz partnership",
-      "trackRecord": "Built on NASA Valkyrie heritage with 10+ robots developed. Testing at Mercedes-Benz Hungary. Raised $522M with Amazon, Mercedes, Walmart, Jabil partnerships."
+      "trackRecord": "Built on NASA Valkyrie heritage with 10+ robots developed. Testing at Mercedes-Benz Hungary. Raised $935M total ($520M Series A extension Feb 2026) with partnerships including Mercedes-Benz, GXO, Jabil, and Amazon."
     },
     "specifications": {
       "height": "173 cm",
