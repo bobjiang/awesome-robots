@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import type { Post, Author } from '#site/content'
 import ShareButtons from './ShareButtons'
+import NewsletterSignup from '../NewsletterSignup'
 
 interface BlogPostProps {
   post: Post
@@ -151,6 +152,11 @@ export default function BlogPost({ post, author, url }: BlogPostProps) {
           </div>
         </div>
       )}
+
+      {/* Newsletter Signup */}
+      <div className="mt-12 pt-8 border-t border-gray-200">
+        <NewsletterSignup />
+      </div>
 
       {/* Author Bio */}
       {author && (
