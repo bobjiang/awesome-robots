@@ -125,7 +125,25 @@ function minusDaysYmd(ymd: string, days: number): string {
   return dt.toISOString().slice(0, 10);
 }
 
-async function sendDiscordWebhook(webhookUrl: string, content: string) {
+const DISCORD_MAX_LENGTH = 2000;
+
+function splitIntoChunks(lines: string[], maxLen: number): string[] {
+  const chunks: string[] = [];
+  let current = "";
+  for (const line of lines) {
+    const candidate = current ? current + "\n" + line : line;
+    if (candidate.length > maxLen) {
+      if (current) chunks.push(current);
+      current = line.length > maxLen ? line.slice(0, maxLen - 3) + "..." : line;
+    } else {
+      current = candidate;
+    }
+  }
+  if (current) chunks.push(current);
+  return chunks;
+}
+
+async function sendDiscordMessage(webhookUrl: string, content: string) {
   const res = await fetch(webhookUrl, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
@@ -135,6 +153,13 @@ async function sendDiscordWebhook(webhookUrl: string, content: string) {
   if (!res.ok) {
     const text = await res.text().catch(() => "");
     throw new Error(`Discord webhook failed: ${res.status} ${res.statusText} ${text}`);
+  }
+}
+
+async function sendDiscordWebhook(webhookUrl: string, lines: string[]) {
+  const chunks = splitIntoChunks(lines, DISCORD_MAX_LENGTH);
+  for (const chunk of chunks) {
+    await sendDiscordMessage(webhookUrl, chunk);
   }
 }
 
@@ -210,8 +235,7 @@ async function main() {
     lines.push(`- ${p.title} - ${buildBlogUrl(p.slug)} : ${abstract}`);
   }
 
-  const msg = lines.join("\n");
-  await sendDiscordWebhook(webhookUrl, msg);
+  await sendDiscordWebhook(webhookUrl, lines);
   console.log(`Newsletter sent for digest issue ${current.issue}. Posts included: ${filtered.length}`);
 }
 
