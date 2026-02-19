@@ -149,14 +149,14 @@
   {
     "id": "fourier-intelligence",
     "name": "Fourier Intelligence",
-    "description": "Rehab robotics leader expanding into full-scale humanoids with high-output actuators, dominating Asian rehabilitation market. Production capacity of 5,000 units/year, deployed in Chinese Tier-1 hospitals and European automotive factories.",
+    "description": "Shanghai-based rehab robotics leader expanding into general-purpose humanoids. GR-3 unveiled at CES 2026 with 53 DOF and Fourier N1 chip. GR-2 in mass production at 5,000 units/year for healthcare and automotive. Raised $193M+ total funding including $118M Series C (2024).",
     "website": "https://www.fourierintelligence.com/",
     "logo": "/images/brands/fourier-intelligence-logo.png"
   },
   {
     "id": "pal-robotics",
     "name": "PAL Robotics",
-    "description": "Barcelona robotics specialist producing humanoids for research, industry, and service roles with advanced manipulation. TALOS features 32-DOF, 1.75m tall, 7-DOF arms lifting 6kg at full extension.",
+    "description": "Barcelona-based robotics specialist (est. 2004) producing humanoids and mobile platforms for research, industry, and service. TALOS features 32-DOF torque-controlled manipulation. Launched KANGAROO bipedal platform at MWC 2026 targeting logistics. Partners with EU Horizon projects and major automotive manufacturers.",
     "website": "https://pal-robotics.com/",
     "logo": "/images/brands/pal-robotics-logo.png"
   },
@@ -329,7 +329,7 @@
     "id": "openloong-noetix-robotics",
     "name": "Noetix Robotics",
     "chineseName": "松延动力",
-    "description": "Noetix Robotics is a Chinese robotics manufacturer specializing in humanoid robot development.",
+    "description": "Chinese humanoid robotics company developing DORA and Bumi platforms for industrial and service applications. Secured 1,000-unit Bumi orders for warehouse logistics. Bumi features 42 DOF with modular end-effectors and autonomous navigation for factory environments.",
     "website": "https://noetixrobotics.com",
     "logo": "",
     "source": "official_website",
@@ -348,7 +348,7 @@
   {
     "id": "k-scale-labs",
     "name": "K-Scale Labs",
-    "description": "Y Combinator-backed robotics company building open-source humanoid robots to democratize robotics. Offers K-Bot ($9,000) and Z-Bot ($1,000) with Python SDK, Raspberry Pi-based computing, and comprehensive GitHub support for developers, researchers, and education.",
+    "description": "Y Combinator-backed open-source humanoid robotics company that shut down in November 2025. Previously offered K-Bot ($9,000) and Z-Bot ($1,000) with Python SDK and Raspberry Pi-based computing. GitHub repos remain available but no longer actively maintained.",
     "website": "https://www.kscale.dev/",
     "logo": "/images/brands/kscale-labs-logo.svg",
     "country": "USA",
