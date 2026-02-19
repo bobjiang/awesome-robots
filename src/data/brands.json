@@ -2,7 +2,7 @@
   {
     "id": "unitree",
     "name": "Unitree",
-    "description": "Leading manufacturer of quadruped and humanoid robots, pioneering AI-powered robotics for consumer, educational, and industrial applications.",
+    "description": "Hangzhou-based manufacturer of quadruped and humanoid robots, founded in 2016 by Wang Xingxing. Shipped over 5,500 humanoid robots in 2025 and targets 20,000 units in 2026. Product lineup spans consumer quadrupeds (Go2), industrial platforms (B2, H2), and affordable humanoids (G1, R1).",
     "website": "https://www.unitree.com/",
     "logo": "/images/brands/unitree-logo.svg",
     "imagePatterns": [
@@ -20,7 +20,7 @@
   {
     "id": "deep-robotics",
     "name": "Deep Robotics",
-    "description": "Global quadruped robot leader focused on pioneering innovation & application of embodied AI for industrial, rescue, and research applications.",
+    "description": "Global leader in embodied AI robotics, founded in 2017 in Hangzhou. Develops quadrupeds (Lite3, X20, X30), humanoids (DR01, DR02), and wheel-legged platforms (Lynx M20). Secured $70M Series C in December 2025 and planning a 2026 IPO. Won CES 2026 Innovation Award for Lynx M20 Pro.",
     "website": "https://www.deeprobotics.cn/en/",
     "logo": "/images/brands/deep-robotics-logo.svg",
     "imagePatterns": [
@@ -38,7 +38,7 @@
   {
     "id": "ubtech",
     "name": "UBTech",
-    "description": "Global leader in humanoid robotics and AI education, developing cutting-edge commercial and industrial humanoid robots with advanced AI capabilities.",
+    "description": "Shenzhen-based global leader in humanoid robotics and AI education, listed on the Hong Kong Stock Exchange since December 2023. Walker S2 industrial humanoid entered mass production in 2025 with orders exceeding 800 million yuan. Targets 5,000 units annual capacity by 2026.",
     "website": "https://www.ubtrobot.com/",
     "logo": "/images/brands/ubtech-logo.svg"
   },
@@ -87,7 +87,7 @@
   {
     "id": "engineai",
     "name": "EngineAI",
-    "description": "Shenzhen-based robotics company founded in 2023, specializing in general intelligent humanoid robots for research, education, industrial manufacturing, commercial services, and home applications. Develops full-stack robotics technology from core components to embodied intelligence.",
+    "description": "Shenzhen-based robotics company founded in October 2023 by Zhao Tongyang, specializing in general-purpose humanoid robots with full-stack technology. Produced 6 robot models in 16 months including the T800 ($25K) debuted at CES 2026. Product lineup spans affordable bipedals (SA01, PM01), full-size humanoids (SE01, T800), and a quadruped (JS01).",
     "website": "https://www.engineai.com.cn/",
     "logo": "/images/brands/engineai-logo.svg"
   },
@@ -339,7 +339,7 @@
   {
     "id": "agibot",
     "name": "AgiBot",
-    "description": "Shanghai-based robotics company developing advanced commercial humanoid robots. AgiBot A2 holds the Guinness World Record for longest humanoid robot walk (106.286 km), featuring 28 motors, hot-swappable batteries, and AI-powered multilingual capabilities for customer service applications.",
+    "description": "Shanghai-based robotics company developing advanced commercial humanoid and quadruped robots. Shipped 5,000 robots by January 2026 with a 39% global humanoid market share. Product lineup includes the A2 series (service/industrial humanoids), X2 (compact research humanoid), G2 (industrial humanoid), and D1 quadruped series. Debuted at CES 2026 for US market entry.",
     "website": "https://www.agibot.com/",
     "logo": "/images/brands/agibot-logo.svg",
     "country": "China",

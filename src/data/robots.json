@@ -1221,11 +1221,15 @@
     "brand": "Unitree",
     "category": "humanoid",
     "price": {
-      "starting": 5900,
+      "starting": 4900,
       "currency": "USD",
       "models": [
         {
-          "name": "Base Model",
+          "name": "R1 AIR",
+          "price": 4900
+        },
+        {
+          "name": "R1",
           "price": 5900
         },
         {
@@ -7897,12 +7901,16 @@
     "brand": "AgiBot",
     "category": "humanoid",
     "price": {
-      "starting": "request",
+      "starting": 100000,
       "currency": "USD",
       "models": [
         {
-          "name": "A2 Commercial",
-          "price": "request"
+          "name": "A2 Standard",
+          "price": 100000
+        },
+        {
+          "name": "A2-W Industrial",
+          "price": 150000
         }
       ]
     },
@@ -11403,5 +11411,409 @@
     ],
     "officialUrl": "https://www.ff.com/us/preorder/robotics?model=fx-aegis",
     "description": "FX Aegis is a professional embodied-AI quadruped robot from Faraday Future designed for security patrol, companionship, and industrial applications. Starting at $2,499, it features 3.7 m/s speed, 48 Nm joint torque, 35cm obstacle crossing, IP54 protection, and 120-minute hot-swappable battery. Expandable with LiDAR, robotic arms, and security modules."
+  },
+  {
+    "id": "agibot-a2-max",
+    "name": "A2-Max",
+    "brand": "AgiBot",
+    "category": "humanoid",
+    "price": {
+      "starting": 130000,
+      "currency": "USD",
+      "models": [
+        {
+          "name": "A2-Max Standard",
+          "price": 130000
+        }
+      ]
+    },
+    "description": "Heavy-duty special-purpose humanoid robot built for demanding operations requiring high payload capacity. With over 25 degrees of freedom, reinforced joints, and dual-arm peak torque of 450 Nm, the A2-Max handles tasks from lifting heavy loads to performing delicate operations in industrial environments.",
+    "officialUrl": "https://www.agibot.com/products/A2_Max",
+    "releaseDate": "2025-10-01",
+    "generalInfo": {
+      "manufacturer": "AgiBot",
+      "modelName": "A2-Max",
+      "releaseDate": "October 2025",
+      "dimensions": {
+        "standing": "175 cm (5.74 feet)",
+        "folded": "N/A",
+        "weight": "85 kg (187 lbs)"
+      }
+    },
+    "keyFeatures": [
+      "Heavy-duty industrial humanoid for demanding operations",
+      "Dual-arm system with peak torque of 450 Nm",
+      "Over 25 degrees of freedom with reinforced joints",
+      "Enhanced payload capacity for light industrial tasks",
+      "Successfully moved a 40 kg aviation box with ease",
+      "Dual-ratio reduction joint modules for precision and power",
+      "Modular design based on AgiBot A2 platform",
+      "200 TOPS AI processing power",
+      "PLd-level safety certification",
+      "360-degree LiDAR and six HD cameras",
+      "Hot-swappable battery system",
+      "Suitable for material handling and palletizing"
+    ],
+    "images": [
+      "/images/robots/agibot-a2-max/robot-1.jpg"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "25+ DOF with reinforced joints",
+      "payloadCapacity": "40 kg demonstrated (dual-arm lifting)",
+      "batteryCapacityRuntime": "700 Wh standard / 2,000 Wh industrial variant (2-5+ hours)",
+      "charger": "Hot-swappable battery system",
+      "sensorsIncluded": [
+        "360-degree LiDAR",
+        "6 HD cameras",
+        "Force/torque sensors in arms",
+        "IMU sensors"
+      ],
+      "interfaces": [
+        "Wi-Fi",
+        "4G/LTE connectivity",
+        "API for integration"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Yes",
+      "sdkLanguages": [
+        "Python",
+        "C++"
+      ],
+      "openSourceRepos": "Limited - primarily commercial platform",
+      "aiFrameworksSupported": [
+        "WorkGPT multimodal AI",
+        "Computer Vision",
+        "Custom AI models"
+      ],
+      "apiDocumentationQuality": "Available for commercial partners"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "1 year standard",
+        "coverage": "Hardware defects and software updates"
+      },
+      "postSalesSupport": "Enterprise support with dedicated account management",
+      "trackRecord": "AgiBot shipped 5,000 robots by January 2026, expanding to 6 countries"
+    },
+    "specifications": {
+      "dimensions": "175 cm height",
+      "weight": "85 kg",
+      "dof": 25,
+      "payload": "40 kg (dual-arm)",
+      "battery": "700 Wh standard / 2,000 Wh industrial",
+      "sensors": ["360-degree LiDAR", "6 HD cameras", "Force sensors"],
+      "maxSpeed": "7 km/h walking"
+    },
+    "features": [
+      "Heavy-duty industrial humanoid",
+      "450 Nm dual-arm peak torque",
+      "25+ degrees of freedom",
+      "200 TOPS AI processing",
+      "Hot-swappable batteries"
+    ]
+  },
+  {
+    "id": "agibot-d1-pro",
+    "name": "D1 Pro",
+    "brand": "AgiBot",
+    "category": "quadruped",
+    "price": {
+      "starting": 1800,
+      "currency": "USD",
+      "models": [
+        {
+          "name": "D1 Pro",
+          "price": 1800
+        }
+      ]
+    },
+    "description": "AgiBot D1 Pro is an agile quadruped robot designed for entertainment and consumer applications. Part of the D1 series alongside the D1 Edu (education) and D1 Ultra (industrial), the D1 Pro offers an affordable entry point into quadruped robotics at approximately $1,800 (RMB 13,000).",
+    "officialUrl": "https://www.agibot.com/products/D1_Pro",
+    "releaseDate": "2025-08-01",
+    "generalInfo": {
+      "manufacturer": "AgiBot",
+      "modelName": "D1 Pro",
+      "releaseDate": "August 2025",
+      "dimensions": {
+        "standing": "Compact quadruped form factor",
+        "folded": "N/A",
+        "weight": "Lightweight consumer design"
+      }
+    },
+    "keyFeatures": [
+      "Affordable consumer quadruped robot",
+      "Part of AgiBot D1 series (Pro/Edu/Ultra)",
+      "Designed for entertainment applications",
+      "Dynamic locomotion capabilities",
+      "Compact and lightweight design",
+      "AI-powered autonomous behaviors",
+      "Multiple gait modes for terrain adaptation",
+      "Interactive entertainment features",
+      "Wireless connectivity for remote control",
+      "Modular accessory system",
+      "Integrated camera system",
+      "Mobile app control interface"
+    ],
+    "images": [
+      "/images/robots/agibot-d1-pro/robot-1.jpg"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "12 DOF (4 legs x 3 joints)",
+      "payloadCapacity": "Consumer-grade payload",
+      "batteryCapacityRuntime": "Rechargeable lithium battery, extended runtime",
+      "charger": "Standard charger included",
+      "sensorsIncluded": [
+        "Integrated camera",
+        "IMU sensors",
+        "Foot contact sensors"
+      ],
+      "interfaces": [
+        "Wi-Fi",
+        "Bluetooth",
+        "Mobile app"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Limited - consumer-focused",
+      "sdkLanguages": [
+        "Python"
+      ],
+      "openSourceRepos": "Limited",
+      "aiFrameworksSupported": [
+        "Custom AI behaviors"
+      ],
+      "apiDocumentationQuality": "Consumer documentation available"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "1 year",
+        "coverage": "Hardware defects"
+      },
+      "postSalesSupport": "Online support and community forums",
+      "trackRecord": "AgiBot shipped 5,000 robots by January 2026"
+    },
+    "specifications": {
+      "dimensions": "Compact quadruped",
+      "weight": "Lightweight",
+      "dof": 12,
+      "maxSpeed": "Consumer-grade locomotion"
+    },
+    "features": [
+      "Affordable consumer quadruped",
+      "Entertainment-focused design",
+      "AI-powered behaviors",
+      "Mobile app control",
+      "Modular accessories"
+    ]
+  },
+  {
+    "id": "deep-robotics-dr02",
+    "name": "DR02",
+    "brand": "Deep Robotics",
+    "category": "humanoid",
+    "price": {
+      "starting": "request",
+      "currency": "USD",
+      "models": [
+        {
+          "name": "DR02",
+          "price": "request"
+        }
+      ]
+    },
+    "description": "The DR02 is Deep Robotics' all-weather humanoid robot, featuring the industry's first IP66-rated full-body waterproof and dustproof design. Standing 175 cm tall with 275 TOPS computing power, it operates in temperatures from -20 to +55 degrees Celsius with a modular quick-detach design for field maintenance.",
+    "officialUrl": "https://www.deeprobotics.cn/en",
+    "releaseDate": "2025-10-01",
+    "generalInfo": {
+      "manufacturer": "Deep Robotics",
+      "modelName": "DR02",
+      "releaseDate": "October 2025",
+      "dimensions": {
+        "standing": "175 cm (5.74 feet)",
+        "folded": "N/A",
+        "weight": "65 kg (143 lbs)"
+      }
+    },
+    "keyFeatures": [
+      "Industry-first IP66 full-body waterproof and dustproof rating",
+      "All-weather operation: -20 to +55 degrees Celsius",
+      "275 TOPS AI computing power",
+      "Walking speed up to 4 m/s maximum",
+      "10 kg payload per arm",
+      "Modular quick-detach design for field maintenance",
+      "Replaceable arms, legs, and forearms",
+      "LiDAR and depth camera perception system",
+      "Wide-angle camera for 360-degree awareness",
+      "25 cm continuous stair climbing capability",
+      "20-degree slope traversal",
+      "Self-developed J60 and J100 joint actuators"
+    ],
+    "images": [
+      "/images/robots/deep-robotics-dr02/robot-1.jpg"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "30+ DOF with J60/J100 joints",
+      "payloadCapacity": "10 kg per arm",
+      "batteryCapacityRuntime": "Extended runtime for industrial operations",
+      "charger": "Standard charging system",
+      "sensorsIncluded": [
+        "LiDAR",
+        "Depth cameras",
+        "Wide-angle cameras",
+        "IMU sensors",
+        "Force/torque sensors"
+      ],
+      "interfaces": [
+        "EtherCAT",
+        "Wi-Fi",
+        "4G/LTE"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Yes - ROS2 compatible",
+      "sdkLanguages": [
+        "Python",
+        "C++"
+      ],
+      "openSourceRepos": "Available via DeepRoboticsLab GitHub",
+      "aiFrameworksSupported": [
+        "PyTorch",
+        "Reinforcement Learning frameworks",
+        "Custom AI models"
+      ],
+      "apiDocumentationQuality": "Technical documentation available for enterprise customers"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "1 year standard",
+        "coverage": "Hardware defects and software updates"
+      },
+      "postSalesSupport": "Enterprise support with field service capability",
+      "trackRecord": "Deep Robotics secured $70M Series C (Dec 2025), planning 2026 IPO. Pioneer in autonomous substation inspections."
+    },
+    "specifications": {
+      "dimensions": "175 cm height, 68 cm arm span",
+      "weight": "65 kg",
+      "dof": 30,
+      "payload": "10 kg per arm",
+      "maxSpeed": "1.5 m/s standard, 4 m/s maximum",
+      "sensors": ["LiDAR", "Depth cameras", "Wide-angle cameras"],
+      "ingressProtection": "IP66",
+      "operatingTemperature": "-20 to +55 degrees Celsius",
+      "computing": "275 TOPS"
+    },
+    "features": [
+      "IP66 all-weather humanoid",
+      "275 TOPS computing power",
+      "Modular quick-detach design",
+      "10 kg arm payload",
+      "4 m/s max speed"
+    ]
+  },
+  {
+    "id": "deep-robotics-lynx-m20-pro",
+    "name": "Lynx M20 Pro",
+    "brand": "Deep Robotics",
+    "category": "quadruped",
+    "price": {
+      "starting": 61200,
+      "currency": "USD",
+      "models": [
+        {
+          "name": "Lynx M20 Pro",
+          "price": 61200
+        }
+      ]
+    },
+    "description": "CES 2026 Innovation Award winner. The Lynx M20 Pro is an advanced wheel-legged robot combining the agility of legs with the efficiency of wheels. Features dual octa-core processors, twin 96-line LiDAR, SLAM navigation, and autonomous charging capability for end-to-end autonomous industrial missions.",
+    "officialUrl": "https://www.deeprobotics.us/products/lynx-m20/",
+    "releaseDate": "2025-12-01",
+    "generalInfo": {
+      "manufacturer": "Deep Robotics",
+      "modelName": "Lynx M20 Pro",
+      "releaseDate": "December 2025",
+      "dimensions": {
+        "standing": "820 x 430 x 570 mm",
+        "folded": "N/A",
+        "weight": "33 kg (72.8 lbs) including battery"
+      }
+    },
+    "keyFeatures": [
+      "CES 2026 Innovation Award in Robotics category",
+      "Hybrid wheel-leg locomotion platform",
+      "Dual octa-core 64-bit processors (x3)",
+      "16 GB RAM with 128 GB storage",
+      "Twin 96-line LiDAR (Robosense Airy)",
+      "SLAM positioning and autonomous navigation",
+      "Autonomous charging with compatible dock",
+      "IP66 dust and water protection",
+      "45-degree maximum slope capability",
+      "25 cm continuous stair climbing",
+      "80 cm single-step obstacle capability",
+      "5 m/s tested maximum speed"
+    ],
+    "images": [
+      "/images/robots/deep-robotics-lynx-m20-pro/robot-1.png"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "8 DOF wheel-leg hybrid (4 legs x 2 joints + 4 wheels)",
+      "payloadCapacity": "15 kg effective, 50 kg maximum",
+      "batteryCapacityRuntime": "3 hours unloaded (15 km), 2.5 hours loaded (12 km)",
+      "charger": "Autonomous charging dock compatible",
+      "sensorsIncluded": [
+        "Twin 96-line LiDAR (Robosense Airy)",
+        "Wide-angle cameras",
+        "Bi-directional lighting",
+        "IMU sensors",
+        "Depth perception"
+      ],
+      "interfaces": [
+        "Gigabit Ethernet",
+        "USB",
+        "Wi-Fi",
+        "4G/LTE"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Yes - ROS2 compatible",
+      "sdkLanguages": [
+        "Python",
+        "C++"
+      ],
+      "openSourceRepos": "Available via DeepRoboticsLab GitHub",
+      "aiFrameworksSupported": [
+        "SLAM navigation",
+        "Autonomous path planning",
+        "Custom AI models"
+      ],
+      "apiDocumentationQuality": "Comprehensive documentation for enterprise customers"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "1 year standard",
+        "coverage": "Hardware defects and software updates"
+      },
+      "postSalesSupport": "Global support via Deep Robotics US and partner network",
+      "trackRecord": "CES 2026 Innovation Award winner. Deep Robotics secured $70M Series C (Dec 2025)."
+    },
+    "specifications": {
+      "dimensions": "820 x 430 x 570 mm",
+      "weight": "33 kg",
+      "dof": 8,
+      "payload": "15 kg effective, 50 kg maximum",
+      "maxSpeed": "5 m/s tested, 2 m/s operating",
+      "sensors": ["Twin 96-line LiDAR", "Wide-angle cameras", "Depth perception"],
+      "ingressProtection": "IP66",
+      "operatingTemperature": "-20 to +55 degrees Celsius",
+      "computing": "Dual octa-core 64-bit x3, 16GB RAM"
+    },
+    "features": [
+      "CES 2026 Innovation Award",
+      "Wheel-leg hybrid locomotion",
+      "Autonomous charging dock",
+      "SLAM navigation",
+      "IP66 all-weather protection"
+    ]
   }
 ]
