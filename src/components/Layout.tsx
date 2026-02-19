@@ -35,6 +35,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <Link href="/faq" className="text-gray-700 hover:text-blue-600 transition-colors">
                 FAQ
               </Link>
+              <a
+                href="https://github.com/bobjiang/awesome-robots/issues/new?template=new-robot.yml"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors"
+              >
+                Submit Robot
+              </a>
             </div>
 
             {/* Mobile menu button */}
@@ -89,6 +97,15 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 >
                   FAQ
                 </Link>
+                <a
+                  href="https://github.com/bobjiang/awesome-robots/issues/new?template=new-robot.yml"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block px-3 py-2 text-blue-600 font-medium hover:text-blue-700 transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Submit Robot
+                </a>
               </div>
             </div>
           )}
