@@ -4595,14 +4595,14 @@
       "currency": "USD",
       "models": [
         {
-          "name": "6th Generation",
+          "name": "Gen 8 (Current)",
           "price": "request"
         }
       ]
     },
     "generalInfo": {
       "manufacturer": "Sanctuary AI",
-      "modelName": "Phoenix (6th Generation)",
+      "modelName": "Phoenix (Gen 8)",
       "dimensions": {
         "standing": "170 cm (5 ft 7 in)",
         "folded": "N/A",
@@ -4610,35 +4610,41 @@
       }
     },
     "keyFeatures": [
-      "Powered by Carbon™ AI cognitive architecture",
-      "Most sensor-rich humanoid when released",
-      "20 DoF hands rivaling human dexterity",
-      "Proprietary haptic technology",
-      "Can be teleoperated by humans",
+      "Powered by Carbon AI cognitive architecture",
+      "Gen 8 optimized for high-quality data capture (Jan 2025)",
+      "21-DOF hydraulic hands with in-hand manipulation",
+      "Tactile sensors detecting 5 millinewtons (near human sensitivity)",
+      "Wheeled base design for industrial reliability",
+      "Can be teleoperated for training data generation",
       "Combines symbolic reasoning with LLMs",
-      "Simulates human brain subsystems",
-      "Designed for general-purpose work"
+      "Learns new tasks in under 24 hours",
+      "Microsoft Azure collaboration for AI training",
+      "NVIDIA Isaac Lab sim-to-real transfer",
+      "Deployed at Magna International manufacturing",
+      "100+ tasks completed at retail store pilot"
     ],
     "hardwareBuildQuality": {
-      "totalDegreesOfFreedom": "20 DoF in hands (total body DoF not fully disclosed)",
+      "totalDegreesOfFreedom": "21 DoF hands (total body DoF not fully disclosed)",
       "payloadCapacity": "25 kg (55 lbs)",
       "batteryCapacityRuntime": "Not publicly disclosed",
       "charger": "Standard charging system",
       "sensorsIncluded": [
-        "Proprietary haptic sensors in hands",
-        "Vision systems for perception",
+        "7-cell touch sensor array per fingertip (micro-barometers)",
+        "5mN tactile sensitivity (near-human level)",
+        "Enhanced camera field of view (Gen 8)",
+        "Advanced telemetry system",
         "Force/torque sensors",
-        "Tactile feedback sensors",
         "Multi-modal sensor arrays"
       ],
       "interfaces": [
         "Teleoperation interface",
         "Wireless communication",
-        "Industrial protocols"
+        "Industrial protocols",
+        "Microsoft Azure integration"
       ]
     },
     "softwareEcosystem": {
-      "rosSupport": "Custom Carbon™ AI platform with standard interfaces",
+      "rosSupport": "Custom Carbon AI platform with standard interfaces",
       "sdkLanguages": [
         "Python",
         "C++"
@@ -4658,7 +4664,7 @@
         "coverage": "Hardware, software, AI platform updates"
       },
       "postSalesSupport": "Sanctuary AI support team",
-      "trackRecord": "Leading Canadian robotics company. 6th generation humanoid. Mission to deploy millions of industrial-grade robots with advanced AI cognition."
+      "trackRecord": "Leading Canadian robotics company. Gen 8 humanoid (8 generations of iteration). Microsoft and NVIDIA partnerships. Magna International strategic investor. $140M+ raised. 3rd globally for humanoid-related patents (Morgan Stanley). 163 employees."
     },
     "specifications": {
       "height": "170 cm",
@@ -4667,12 +4673,12 @@
       "maxSpeed": "3 mph"
     },
     "features": [
-      "Carbon™ AI brain",
-      "Human-like dexterity",
-      "Haptic feedback",
-      "Teleoperation capable",
-      "General-purpose design",
-      "Canadian innovation"
+      "Carbon AI brain",
+      "21-DOF hydraulic hands",
+      "5mN tactile sensitivity",
+      "Gen 8 data capture",
+      "Microsoft/NVIDIA partnerships",
+      "Wheeled base design"
     ],
     "images": [
       "/images/robots/sanctuary-phoenix.webp"
@@ -4681,7 +4687,7 @@
       "/images/robots/sanctuary-phoenix.webp"
     ],
     "officialUrl": "https://www.sanctuary.ai/",
-    "description": "Phoenix by Sanctuary AI is a 6th generation general-purpose humanoid robot powered by Carbon™, an AI cognitive architecture that simulates human brain subsystems. With 20-DoF hands featuring proprietary haptic technology and the ability to be teleoperated, Phoenix is designed for various industrial work environments. As Canada's leading humanoid robotics platform, Phoenix combines advanced AI with human-like dexterity for complex task execution."
+    "description": "Phoenix Gen 8 by Sanctuary AI is a general-purpose humanoid robot powered by Carbon AI, a cognitive architecture that simulates human brain subsystems. With 21-DOF hydraulic hands featuring tactile sensors detecting forces as small as 5 millinewtons, Phoenix learns new tasks in under 24 hours. Gen 8 features a wheeled base optimized for industrial reliability, enhanced data capture, and partnerships with Microsoft and NVIDIA."
   },
   {
     "id": "1x-neo-gamma",
@@ -4708,26 +4714,31 @@
       }
     },
     "keyFeatures": [
+      "1X World Model AI learns tasks from watching videos (Jan 2026)",
       "Biologically-inspired design for homes",
       "Backed by OpenAI",
       "Can lift 75 kg in deadlift/squat",
-      "Four microphones with beamforming",
-      "Designed for home assistant tasks",
-      "Target price $20,000 (car-comparable)",
-      "Sophisticated home navigation",
-      "Lightweight at only 30 kg"
+      "Four microphones with beamforming and echo cancellation",
+      "Target price $20,000 or $499/month subscription",
+      "360-degree LiDAR and binocular RGB cameras",
+      "10x hardware reliability improvement",
+      "10 dB noise reduction (refrigerator-quiet)",
+      "EQT partnership for 10,000 unit deployment",
+      "Emotive Ear Rings for visual feedback",
+      "Tendon-drive joint actuation with soft covers"
     ],
     "hardwareBuildQuality": {
-      "totalDegreesOfFreedom": "Not specifically disclosed",
+      "totalDegreesOfFreedom": "22 DoF hands (additional in arms/legs)",
       "payloadCapacity": "20 kg carrying, 75 kg lift capacity",
       "batteryCapacityRuntime": "2-4 hours per charge",
       "charger": "Standard charging system",
       "sensorsIncluded": [
-        "Sophisticated cameras for navigation",
-        "4 microphones (front, back, left, right)",
-        "Beamforming and echo cancellation",
-        "Obstacle avoidance sensors",
-        "Vision systems for object recognition"
+        "Binocular RGB camera (head)",
+        "360-degree LiDAR (chassis)",
+        "5 monocular cameras (chassis)",
+        "2 monocular depth cameras (wrist, optional)",
+        "4 microphones with beamforming and echo cancellation",
+        "3-speaker system (chest + pelvis)"
       ],
       "interfaces": [
         "Wi-Fi",
@@ -4744,6 +4755,7 @@
       ],
       "openSourceRepos": "No",
       "aiFrameworksSupported": [
+        "1X World Model (autonomous learning from video, Jan 2026)",
         "OpenAI integration",
         "Proprietary 1X AI"
       ],
@@ -4755,7 +4767,7 @@
         "coverage": "Hardware and software support"
       },
       "postSalesSupport": "1X Technologies support network (expanding for home)",
-      "trackRecord": "Norwegian-American startup backed by OpenAI. NEO Beta in home trials. Raised $100M Series B funding."
+      "trackRecord": "Norwegian-American startup backed by OpenAI. Pre-orders exceeded expectations, consumer delivery starting 2026. EQT partnership for 10,000 robots across 300+ portfolio companies. $126M+ raised. Targeting 100K units/year production."
     },
     "specifications": {
       "height": "165 cm",
@@ -4780,7 +4792,7 @@
       "/images/robots/1x-neo-gamma.webp"
     ],
     "officialUrl": "https://www.1x.tech/",
-    "description": "NEO Gamma by 1X Technologies is an OpenAI-backed humanoid robot designed specifically for home environments. At just 30 kg, it's one of the lightest humanoids while capable of lifting 75 kg. With biologically-inspired design, four-microphone array with beamforming, and sophisticated home navigation, NEO Gamma aims to be an affordable ($20,000) home assistant robot. Currently in beta home trials with consumer release planned."
+    "description": "NEO Gamma by 1X Technologies is an OpenAI-backed humanoid robot for home environments. At just 30 kg, it lifts 75 kg with tendon-drive actuation. Its World Model AI (Jan 2026) learns tasks from watching videos without explicit programming. Pre-orders starting at $20K or $499/month with consumer delivery in 2026. EQT partnership for 10,000 unit deployment across global portfolio companies."
   },
   {
     "id": "fourier-gr1",
@@ -5088,12 +5100,16 @@
     "brand": "Engineered Arts",
     "category": "humanoid",
     "price": {
-      "starting": 0,
-      "currency": "GBP",
+      "starting": 100000,
+      "currency": "USD",
       "models": [
         {
-          "name": "Standard",
-          "price": "request"
+          "name": "Head Only",
+          "price": 100000
+        },
+        {
+          "name": "Full Body",
+          "price": 500000
         }
       ]
     },
@@ -6433,32 +6449,28 @@
     "brand": "NEURA Robotics",
     "category": "humanoid",
     "price": {
-      "starting": "request",
-      "currency": "EUR",
+      "starting": 22000,
+      "currency": "USD",
       "models": [
         {
-          "name": "4NE-1 Gen3",
-          "price": "request"
+          "name": "4NE1 Gen 3.5",
+          "price": 22000
         },
         {
-          "name": "4NE-1 Industrial",
-          "price": "request"
-        },
-        {
-          "name": "4NE-1 Service",
-          "price": "request"
+          "name": "4NE1 Industrial",
+          "price": 44600
         }
       ]
     },
-    "description": "NEURA Robotics 4NE-1 is Europe's first humanoid robot designed for series production, featuring cognitive AI capabilities, patented Omnisensor technology, and innovative touchless human detection. Capable of 24/7 operation with dual-battery system.",
+    "description": "NEURA Robotics 4NE-1 is Europe's first humanoid robot designed for series production, featuring 45 DOF, NVIDIA Thor T5000 processor, and AURA AI. Gen 3.5 available June 2026 starting at $22K. Capable of lifting 100kg with artificial skin proximity detection and SwapBatt system for continuous operation.",
     "images": [
       "/images/robots/neura-4ne1.webp"
     ],
     "officialUrl": "https://neura-robotics.com/products/4ne1/",
     "generalInfo": {
       "manufacturer": "NEURA Robotics (Germany)",
-      "modelName": "4NE-1 (Third Generation)",
-      "releaseDate": "June 2025 (Gen3)",
+      "modelName": "4NE-1 (Gen 3.5)",
+      "releaseDate": "June 2026 (Gen 3.5)",
       "dimensions": {
         "standing": "180cm (1.8m / 5.9 feet) tall",
         "folded": "N/A",
@@ -6478,7 +6490,7 @@
       "Goal: 5 million robots by 2030"
     ],
     "hardwareBuildQuality": {
-      "totalDegreesOfFreedom": "High DOF with advanced joint technology",
+      "totalDegreesOfFreedom": "45 DOF",
       "payloadCapacity": "15kg carrying capacity, joints lift up to 100kg",
       "batteryCapacityRuntime": "Dual-battery system for 24/7 operation",
       "charger": "Hot-swappable dual battery system",
@@ -6531,7 +6543,7 @@
         "coverage": "Full hardware and software support with European standards"
       },
       "postSalesSupport": "Comprehensive enterprise support with NVIDIA backing",
-      "trackRecord": "Established in cognitive cobots, expanding to humanoids with strong European presence"
+      "trackRecord": "€120M Series B (Jan 2025) led by Lingotto. 300+ employees. €1B order book. 10x revenue growth. NVIDIA partnership. Porsche-designed variant. First Western humanoid for series production."
     },
     "specifications": {
       "Height": "180cm (Gen3)",

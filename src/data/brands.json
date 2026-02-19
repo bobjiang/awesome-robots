@@ -135,14 +135,14 @@
   {
     "id": "sanctuary-ai",
     "name": "Sanctuary AI",
-    "description": "Canadian company combining cognition software with humanoid embodiments for real work, addressing labor challenges. Leading Canadian robotics company with mission to deploy millions of industrial-grade humanoid robots.",
+    "description": "Canadian company combining Carbon AI cognition with humanoid embodiments for manufacturing and retail. Phoenix Gen 8 (Jan 2025) features wheeled base, 21-DOF hydraulic hands with 5mN tactile sensitivity. Partnerships with Microsoft, NVIDIA, and Magna International. $140M+ raised, 163 employees.",
     "website": "https://www.sanctuary.ai/",
     "logo": "/images/brands/sanctuary-ai-logo.png"
   },
   {
     "id": "1x-technologies",
     "name": "1X Technologies",
-    "description": "Norwegian-American startup deploying androids for security and frontline services with embodied AI. EVE available at $24K, NEO Beta in home trials, backed by OpenAI with biologically-inspired design for home environments.",
+    "description": "Norwegian-American startup backed by OpenAI building humanoids for home and industrial markets. NEO Gamma ($20K) consumer robot with World Model AI (Jan 2026) learns tasks from video. EVE industrial robot deployed for logistics. EQT partnership for 10,000 robots across 300+ portfolio companies. $126M+ raised, targeting 100K units/year production.",
     "website": "https://1x.tech/",
     "logo": "/images/brands/1x-technologies-logo.svg"
   },
@@ -163,7 +163,7 @@
   {
     "id": "engineered-arts",
     "name": "Engineered Arts",
-    "description": "UK studio crafting expressive humanoids for entertainment, research, and customer engagement. Ameca renowned for stunningly lifelike facial expressions, popular in exhibitions, research labs, and media productions globally.",
+    "description": "UK studio crafting expressive humanoids for entertainment, research, and customer engagement. Ameca Gen 3 ($100K-$500K) renowned for lifelike facial expressions using Mesmer technology. New Ami desktop companion for broader market. $16.2M raised including $10M Series A (Dec 2024).",
     "website": "https://www.engineeredarts.co.uk/",
     "logo": "/images/brands/engineered-arts-logo.svg"
   },
@@ -237,7 +237,7 @@
   {
     "id": "neura-robotics",
     "name": "NEURA Robotics",
-    "description": "German company developing cognitive robotics including collaborative robots and humanoid platforms. 4NE-1 is first humanoid designed for series production, aiming to deliver 5M robots by 2030 with NVIDIA partnership.",
+    "description": "German company developing cognitive humanoid and quadruped robots with NVIDIA partnership. 4NE1 ($22K-$44.6K) priced for mass market, available June 2026. Raised €120M Series B (Jan 2025) led by Lingotto. 300+ employees, €1B order book, 10x revenue growth. Neuraverse platform with skill marketplace.",
     "website": "https://neura-robotics.com/",
     "logo": "/images/brands/neura-robotics-logo.svg"
   },
