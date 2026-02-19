@@ -1,0 +1,32 @@
+name: Weekly Digest Newsletter
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "content/blog/awesome-robots-digest-issue-*.md"
+
+jobs:
+  send-newsletter:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install
+        run: npm ci
+      - name: Send newsletter to Discord
+        env:
+          DISCORD_NEWSLETTER_WEBHOOK_URL: ${{ secrets.DISCORD_NEWSLETTER_WEBHOOK_URL }}
+          GITHUB_EVENT_BEFORE: ${{ github.event.before }}
+          GITHUB_SHA: ${{ github.sha }}
+        run: npx tsx scripts/send-weekly-digest-newsletter.ts
