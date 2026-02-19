@@ -10,7 +10,7 @@ export default function NewsletterSignup({ className }: NewsletterSignupProps) {
   return (
     <div className={className}>
       <iframe
-        src="https://embeds.beehiiv.com/ccd23b92-3d64-4f8c-b267-8a69739700af"
+        src="https://subscribe-forms.beehiiv.com/2ee91aa5-2585-40f5-b43c-d5c2600ea21c"
         data-test-id="beehiiv-embed"
         width="100%"
         height="320"
