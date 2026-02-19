@@ -113,6 +113,18 @@ function compareDate(a: string, b: string): number {
   return a.localeCompare(b);
 }
 
+function parseDateYmd(ymd: string): Date {
+  // Interpret as UTC date to avoid TZ issues
+  const [y, m, d] = ymd.split("-").map((x) => Number(x));
+  return new Date(Date.UTC(y, (m ?? 1) - 1, d ?? 1));
+}
+
+function minusDaysYmd(ymd: string, days: number): string {
+  const dt = parseDateYmd(ymd);
+  dt.setUTCDate(dt.getUTCDate() - days);
+  return dt.toISOString().slice(0, 10);
+}
+
 async function sendDiscordWebhook(webhookUrl: string, content: string) {
   const res = await fetch(webhookUrl, {
     method: "POST",
@@ -170,9 +182,13 @@ async function main() {
     .filter((p): p is PostMeta => Boolean(p))
     .filter((p) => p.category !== "digest");
 
-  const filtered = prev
+  // Limit to last 7 days ending at the current digest date (inclusive)
+  const windowStart = minusDaysYmd(current.date, 7);
+
+  const filtered = (prev
     ? posts.filter((p) => compareDate(p.date, prev.date) > 0 && compareDate(p.date, current.date) <= 0)
-    : posts.filter((p) => compareDate(p.date, current.date) <= 0);
+    : posts.filter((p) => compareDate(p.date, current.date) <= 0))
+    .filter((p) => compareDate(p.date, windowStart) >= 0);
 
   filtered.sort((a, b) => compareDate(a.date, b.date));
 
