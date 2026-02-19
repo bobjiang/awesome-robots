@@ -163,7 +163,7 @@ async function sendDiscordWebhook(webhookUrl: string, lines: string[]) {
   }
 }
 
-const MAX_EXCERPT_LENGTH = 200;
+const MAX_EXCERPT_LENGTH = 1000;
 
 async function main() {
   const repoRoot = process.cwd();
