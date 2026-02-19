@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - "content/blog/awesome-robots-digest-issue-*.md"
+  workflow_dispatch:
 
 jobs:
   send-newsletter:
