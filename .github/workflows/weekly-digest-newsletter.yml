@@ -25,6 +25,7 @@ jobs:
       - name: Install
         run: npm ci
       - name: Send newsletter to Discord
+        if: ${{ secrets.DISCORD_NEWSLETTER_WEBHOOK_URL != '' }}
         env:
           DISCORD_NEWSLETTER_WEBHOOK_URL: ${{ secrets.DISCORD_NEWSLETTER_WEBHOOK_URL }}
           GITHUB_EVENT_BEFORE: ${{ github.event.before }}

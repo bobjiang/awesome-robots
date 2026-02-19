@@ -151,6 +151,15 @@ async function main() {
   if (!webhookUrl) {
     throw new Error("Missing DISCORD_NEWSLETTER_WEBHOOK_URL secret/env");
   }
+  try {
+    new URL(webhookUrl);
+  } catch {
+    throw new Error(
+      "DISCORD_NEWSLETTER_WEBHOOK_URL is not a valid URL. " +
+      "Please set the repository secret to a full Discord webhook URL " +
+      "(e.g. https://discord.com/api/webhooks/...)."
+    );
+  }
 
   const changed = gitDiffNames(beforeSha, afterSha);
   const digestChanged = changed.filter(isDigestFile);
