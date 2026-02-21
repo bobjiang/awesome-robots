@@ -2,7 +2,7 @@
 title: "Physical AI: How NVIDIA's Full-Stack Approach Is Accelerating Real-World Robotics"
 slug: "physical-ai-ecosystem-nvidia-robotics-2026"
 date: 2026-02-07
-author: awesome-robots-team
+author: bob-jiang
 category: tutorials
 tags: [Physical AI, NVIDIA, Jetson, Omniverse, embodied AI, robot training, simulation, humanoid robots, CES 2026]
 excerpt: "Explore Physical AI—the next frontier in robotics where AI models understand the physical world, reason about actions, and operate autonomously. Learn how NVIDIA's ecosystem is democratizing advanced robotics development."

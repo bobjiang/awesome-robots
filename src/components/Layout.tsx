@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import NewsletterSignup from './NewsletterSignup';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -34,6 +35,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <Link href="/faq" className="text-gray-700 hover:text-blue-600 transition-colors">
                 FAQ
               </Link>
+              <a
+                href="https://github.com/bobjiang/awesome-robots/issues/new?template=new-robot.yml"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors"
+              >
+                Submit Robot
+              </a>
             </div>
 
             {/* Mobile menu button */}
@@ -88,6 +97,15 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 >
                   FAQ
                 </Link>
+                <a
+                  href="https://github.com/bobjiang/awesome-robots/issues/new?template=new-robot.yml"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block px-3 py-2 text-blue-600 font-medium hover:text-blue-700 transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Submit Robot
+                </a>
               </div>
             </div>
           )}
@@ -144,7 +162,15 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </div>
           </div>
           
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+          <div className="border-t border-gray-800 mt-8 pt-8">
+            <div className="max-w-xl mx-auto text-center mb-8">
+              <h4 className="text-lg font-semibold text-white mb-2">Stay in the Loop</h4>
+              <p className="text-gray-400 text-sm mb-4">Get weekly robot news, new product launches, and industry insights delivered to your inbox.</p>
+              <NewsletterSignup />
+            </div>
+          </div>
+
+          <div className="border-t border-gray-800 mt-0 pt-8 text-center text-gray-400">
             <p>&copy; 2024 Awesome Robots. All rights reserved.</p>
           </div>
         </div>
