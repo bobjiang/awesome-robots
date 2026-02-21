@@ -1,13 +1,16 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import type { Post, Author } from '#site/content'
+import ShareButtons from './ShareButtons'
+import NewsletterSignup from '../NewsletterSignup'
 
 interface BlogPostProps {
   post: Post
   author?: Author
+  url: string
 }
 
-export default function BlogPost({ post, author }: BlogPostProps) {
+export default function BlogPost({ post, author, url }: BlogPostProps) {
   const formatDate = (date: string) => {
     return new Date(date).toLocaleDateString('en-US', {
       year: 'numeric',
@@ -92,6 +95,11 @@ export default function BlogPost({ post, author }: BlogPostProps) {
           </div>
         </div>
 
+        {/* Share Buttons */}
+        <div className="mb-8">
+          <ShareButtons title={post.title} url={url} excerpt={post.excerpt} />
+        </div>
+
         {/* Featured Image */}
         {post.image && (
           <div className="relative h-64 md:h-96 mb-8 rounded-xl overflow-hidden">
@@ -122,6 +130,12 @@ export default function BlogPost({ post, author }: BlogPostProps) {
         dangerouslySetInnerHTML={{ __html: post.content }}
       />
 
+      {/* Share Buttons */}
+      <div className="mt-12 pt-8 border-t border-gray-200">
+        <h3 className="text-sm font-medium text-gray-900 mb-4">Share this article:</h3>
+        <ShareButtons title={post.title} url={url} excerpt={post.excerpt} />
+      </div>
+
       {/* Tags */}
       {post.tags.length > 0 && (
         <div className="mt-12 pt-8 border-t border-gray-200">
@@ -138,6 +152,11 @@ export default function BlogPost({ post, author }: BlogPostProps) {
           </div>
         </div>
       )}
+
+      {/* Newsletter Signup */}
+      <div className="mt-12 pt-8 border-t border-gray-200">
+        <NewsletterSignup />
+      </div>
 
       {/* Author Bio */}
       {author && (

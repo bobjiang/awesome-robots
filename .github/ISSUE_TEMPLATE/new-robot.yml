@@ -1,0 +1,261 @@
+name: Add New Robot
+description: Submit a new robot to be added to the Awesome Robots catalog
+title: "[New Robot] "
+labels: ["new-robot"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for submitting a new robot! Please fill in as much information as you can.
+        Fields marked with * are required. The more detail you provide, the faster we can add it.
+
+  - type: input
+    id: robot-name
+    attributes:
+      label: Robot Name
+      description: Official product/model name
+      placeholder: "e.g. Unitree G1"
+    validations:
+      required: true
+
+  - type: input
+    id: manufacturer
+    attributes:
+      label: Manufacturer / Brand
+      description: Company that makes this robot
+      placeholder: "e.g. Unitree Robotics"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - humanoid
+        - quadruped
+        - accessory
+        - other
+    validations:
+      required: true
+
+  - type: input
+    id: official-url
+    attributes:
+      label: Official Website
+      description: Link to the official product page
+      placeholder: "https://..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: 2-3 sentence summary of the robot
+      placeholder: "A brief overview of what this robot is and what it's designed for."
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "## General Info"
+
+  - type: input
+    id: dimensions-standing
+    attributes:
+      label: Dimensions (Standing)
+      placeholder: "e.g. 1270 x 450 x 200 mm"
+
+  - type: input
+    id: dimensions-folded
+    attributes:
+      label: Dimensions (Folded) — if applicable
+      placeholder: "e.g. 500 x 450 x 300 mm"
+
+  - type: input
+    id: weight
+    attributes:
+      label: Weight
+      placeholder: "e.g. 35 kg"
+
+  - type: markdown
+    attributes:
+      value: "## Pricing"
+
+  - type: input
+    id: price
+    attributes:
+      label: Starting Price (USD)
+      description: Enter a number or "Request Quote" if pricing is not public
+      placeholder: "e.g. 16000 or Request Quote"
+
+  - type: textarea
+    id: price-models
+    attributes:
+      label: Model Variants & Pricing
+      description: "List each variant on a separate line: Name - Price"
+      placeholder: |
+        Standard - $16,000
+        Pro - $27,000
+        EDU - $8,500
+
+  - type: markdown
+    attributes:
+      value: "## Key Features"
+
+  - type: textarea
+    id: key-features
+    attributes:
+      label: Key Features
+      description: List the standout capabilities (aim for 12+). One feature per line.
+      placeholder: |
+        Real-time whole-body dynamic control
+        23 degrees of freedom
+        2-hour battery life
+        Built-in LiDAR and depth cameras
+        ROS2 compatible
+        ...
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "## Hardware — Build Quality"
+
+  - type: input
+    id: dof
+    attributes:
+      label: Total Degrees of Freedom (DoF)
+      placeholder: "e.g. 23 DoF"
+
+  - type: input
+    id: payload
+    attributes:
+      label: Payload Capacity
+      placeholder: "e.g. 3 kg per arm, 5 kg total"
+
+  - type: input
+    id: battery
+    attributes:
+      label: Battery Capacity & Runtime
+      placeholder: "e.g. 9000 mAh, ~2 hours typical use"
+
+  - type: input
+    id: charger
+    attributes:
+      label: Charger
+      placeholder: "e.g. Included 54.6V/2A charger"
+
+  - type: textarea
+    id: sensors
+    attributes:
+      label: Sensors Included
+      description: One sensor per line
+      placeholder: |
+        3D LiDAR
+        Intel RealSense D435i depth camera
+        IMU
+        Force/torque sensors on feet
+
+  - type: textarea
+    id: interfaces
+    attributes:
+      label: Interfaces
+      description: One interface per line
+      placeholder: |
+        Ethernet
+        Wi-Fi 6
+        USB 3.0
+        HDMI
+
+  - type: markdown
+    attributes:
+      value: "## Software — Ecosystem"
+
+  - type: input
+    id: ros-support
+    attributes:
+      label: ROS/ROS2 Support
+      placeholder: "e.g. Full ROS2 Humble support"
+
+  - type: textarea
+    id: sdk-languages
+    attributes:
+      label: SDK Languages
+      description: One per line
+      placeholder: |
+        Python
+        C++
+
+  - type: input
+    id: open-source-repos
+    attributes:
+      label: Open-source Repos / Community
+      description: GitHub URL or "No"
+      placeholder: "https://github.com/..."
+
+  - type: textarea
+    id: ai-frameworks
+    attributes:
+      label: AI Frameworks Supported
+      description: One per line
+      placeholder: |
+        PyTorch
+        TensorFlow
+        Isaac Sim
+
+  - type: input
+    id: api-docs-quality
+    attributes:
+      label: API Documentation Quality
+      placeholder: "e.g. Excellent — comprehensive docs with tutorials"
+
+  - type: markdown
+    attributes:
+      value: "## Supplier Reliability"
+
+  - type: input
+    id: warranty-duration
+    attributes:
+      label: Warranty Duration
+      placeholder: "e.g. 1 year"
+
+  - type: input
+    id: warranty-coverage
+    attributes:
+      label: Warranty Coverage
+      placeholder: "e.g. Manufacturing defects, battery, motors"
+
+  - type: input
+    id: post-sales-support
+    attributes:
+      label: Post-sales Support
+      placeholder: "e.g. Dedicated technical support team, online forum"
+
+  - type: input
+    id: track-record
+    attributes:
+      label: Track Record
+      placeholder: "e.g. Established company since 2016, 10,000+ units shipped"
+
+  - type: markdown
+    attributes:
+      value: "## Images"
+
+  - type: textarea
+    id: image-urls
+    attributes:
+      label: Image URLs
+      description: Links to high-resolution product photos. One URL per line.
+      placeholder: |
+        https://example.com/robot-front.jpg
+        https://example.com/robot-side.jpg
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-notes
+    attributes:
+      label: Additional Notes
+      description: Any other relevant information (video links, comparison notes, etc.)

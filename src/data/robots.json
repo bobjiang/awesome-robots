@@ -1221,11 +1221,15 @@
     "brand": "Unitree",
     "category": "humanoid",
     "price": {
-      "starting": 5900,
+      "starting": 4900,
       "currency": "USD",
       "models": [
         {
-          "name": "Base Model",
+          "name": "R1 AIR",
+          "price": 4900
+        },
+        {
+          "name": "R1",
           "price": 5900
         },
         {
@@ -2709,36 +2713,43 @@
     },
     "generalInfo": {
       "manufacturer": "Boston Dynamics",
-      "modelName": "Atlas",
+      "modelName": "Atlas (Production)",
       "dimensions": {
-        "height": "~150cm",
-        "weight": "~80kg (estimated)"
+        "height": "152 cm (5 ft)",
+        "weight": "89 kg (196 lbs)"
       }
     },
     "keyFeatures": [
-      "Fully electric design",
-      "Lightweight titanium and aluminum construction",
-      "3D printed parts",
-      "Advanced control algorithms",
-      "Whole-body movement control",
-      "Dynamic mobility and agility",
-      "Advanced manipulation with hands",
-      "Athletic intelligence"
+      "Production-ready humanoid unveiled at CES 2026",
+      "56 degrees of freedom for full-body articulation",
+      "2.3m reach span for industrial manipulation",
+      "50 kg single-arm lift capacity",
+      "Fully electric design with titanium and aluminum construction",
+      "3D printed lightweight components",
+      "Advanced whole-body movement control",
+      "Dynamic mobility and athletic intelligence",
+      "Deploying to Hyundai RMAC facilities",
+      "Google DeepMind collaboration for AI research",
+      "Multi-modal perception with advanced sensors",
+      "Hot-swappable battery system"
     ],
     "hardwareBuildQuality": {
-      "totalDegreesOfFreedom": "28+ (full body articulation)",
-      "payloadCapacity": "Various manipulation tasks",
-      "batteryCapacityRuntime": "Custom high-power battery system",
-      "charger": "Custom charging system",
+      "totalDegreesOfFreedom": "56 (full body articulation)",
+      "payloadCapacity": "50 kg single-arm lift",
+      "batteryCapacityRuntime": "Custom high-power battery system, hot-swappable",
+      "charger": "Custom quick-charge system",
       "sensorsIncluded": [
-        "Advanced perception systems",
-        "Force/torque sensors",
-        "Visual perception",
-        "Inertial measurement units"
+        "Multi-modal perception systems",
+        "Force/torque sensors throughout body",
+        "Stereo vision cameras",
+        "LiDAR",
+        "Inertial measurement units",
+        "Tactile sensors in hands"
       ],
       "interfaces": [
-        "Research platform interfaces",
-        "Custom control systems"
+        "Industrial control system integration",
+        "Spot-compatible fleet management",
+        "Custom control APIs"
       ]
     },
     "softwareEcosystem": {
@@ -2764,27 +2775,29 @@
       "trackRecord": "30+ years in advanced robotics research, industry pioneer"
     },
     "specifications": {
-      "height": "~150cm",
-      "weight": "~80kg",
+      "height": "152 cm",
+      "weight": "89 kg",
+      "dof": 56,
+      "reach": "2.3 m span",
+      "payload": "50 kg single-arm lift",
       "material": "Lightweight titanium and aluminum with 3D printed components",
-      "powerSystem": "Fully electric with custom battery",
-      "mobility": "Dynamic humanoid locomotion",
-      "manipulation": "Advanced dexterous hands",
-      "designPhilosophy": "Athletic intelligence and dynamic capability"
+      "powerSystem": "Fully electric with hot-swappable battery",
+      "mobility": "Dynamic humanoid locomotion with athletic agility",
+      "manipulation": "Advanced dexterous hands with 50 kg lift capacity"
     },
     "features": [
-      "Whole-body control",
-      "Dynamic manipulation",
-      "Athletic movement",
-      "Advanced perception",
-      "Research platform",
-      "Embodied AI integration"
+      "56 DOF full-body control",
+      "50 kg single-arm lift",
+      "2.3 m reach span",
+      "CES 2026 production model",
+      "Hyundai RMAC deployment",
+      "Google DeepMind collaboration"
     ],
     "images": [
       "/images/robots/boston-dynamics/atlas/atlas-1.jpg"
     ],
     "officialUrl": "https://bostondynamics.com/atlas/",
-    "description": "World's most advanced humanoid research robot featuring fully electric design, athletic intelligence, and dynamic manipulation capabilities for advancing embodied AI research."
+    "description": "Production-ready humanoid robot unveiled at CES 2026, featuring 56 degrees of freedom, 2.3m reach span, and 50kg single-arm lift capacity. Deploying to Hyundai RMAC facilities and collaborating with Google DeepMind for advanced AI research."
   },
   {
     "id": "anybotics-anymal",
@@ -4088,7 +4101,7 @@
     "brand": "Tesla",
     "category": "humanoid",
     "price": {
-      "starting": 20000,
+      "starting": 30000,
       "currency": "USD",
       "models": [
         {
@@ -4108,16 +4121,20 @@
     },
     "keyFeatures": [
       "28 structural actuators granting human-like movement",
+      "50 actuators per hand for unprecedented dexterity",
       "22 degrees of freedom per hand with five fingers",
       "Tesla on-board AI brain based on Autopilot hardware",
       "Walking gait learned via reinforcement learning",
       "4680 battery cells from Tesla's energy division",
+      "Mass production at Fremont factory (internal deployment)",
+      "Target $30K for limited external sales in late 2026",
+      "Long-term target price under $20K per unit",
       "Designed for factory automation tasks",
-      "Target price of $20,000 per unit",
-      "Planned deployment of 5,000 units in Tesla factories (2025)"
+      "10-12 hours runtime per charge",
+      "Autonomous navigation using Autopilot-derived vision"
     ],
     "hardwareBuildQuality": {
-      "totalDegreesOfFreedom": "28 structural actuators + 22 DoF per hand",
+      "totalDegreesOfFreedom": "28 structural actuators + 50 actuators per hand",
       "payloadCapacity": "Approximately 20 kg",
       "batteryCapacityRuntime": "2.3 kWh battery, 10-12 hours per charge",
       "charger": "Standard charging system",
@@ -4175,7 +4192,7 @@
       "/images/robots/tesla-optimus-gen3.webp"
     ],
     "officialUrl": "https://www.tesla.com/optimus",
-    "description": "Tesla Optimus Gen 3 is a general-purpose humanoid robot designed for factory automation and repetitive tasks. Featuring 28 structural actuators and 22-DoF hands, it uses Tesla's Autopilot AI technology for autonomous navigation and manipulation. With a 2.3 kWh battery providing 10-12 hours of runtime, Optimus is planned for large-scale deployment in Tesla factories starting in 2025, with a target price of $20,000."
+    "description": "Tesla Optimus Gen 3 is a general-purpose humanoid robot in mass production at Tesla's Fremont factory. Featuring 28 structural actuators and 50 actuators per hand for unprecedented dexterity, it uses Tesla's Autopilot AI for autonomous navigation. With a 2.3 kWh battery providing 10-12 hours of runtime, Gen 3 is deployed internally with a target of $30K for limited external sales in late 2026."
   },
   {
     "id": "figure-02",
@@ -4183,12 +4200,12 @@
     "brand": "Figure AI",
     "category": "humanoid",
     "price": {
-      "starting": 0,
+      "starting": 130000,
       "currency": "USD",
       "models": [
         {
-          "name": "Commercial",
-          "price": "request"
+          "name": "Enterprise Lease",
+          "price": 130000
         }
       ]
     },
@@ -4236,6 +4253,7 @@
       ],
       "openSourceRepos": "No",
       "aiFrameworksSupported": [
+        "Helix 02 (full-body autonomy AI, Jan 2026)",
         "Proprietary Figure AI",
         "OpenAI integration"
       ],
@@ -4247,7 +4265,7 @@
         "coverage": "Hardware defects, software updates"
       },
       "postSalesSupport": "Dedicated support team for BMW and commercial partners",
-      "trackRecord": "Successfully deployed at BMW Spartanburg plant. $2.6B valuation backed by Jeff Bezos, Microsoft, OpenAI, NVIDIA, and Intel."
+      "trackRecord": "Successfully deployed at BMW Spartanburg plant. BotQ manufacturing facility planned. $2.6B+ valuation backed by Jeff Bezos, Microsoft, OpenAI, NVIDIA, and Intel."
     },
     "specifications": {
       "height": "168 cm",
@@ -4279,12 +4297,12 @@
     "brand": "Figure AI",
     "category": "humanoid",
     "price": {
-      "starting": 0,
+      "starting": 20000,
       "currency": "USD",
       "models": [
         {
           "name": "Consumer",
-          "price": "request"
+          "price": 20000
         }
       ]
     },
@@ -4442,7 +4460,7 @@
         "coverage": "Hardware, software updates, maintenance"
       },
       "postSalesSupport": "Dedicated support team, RoboFab service center",
-      "trackRecord": "Successfully deployed at Amazon fulfillment centers and GXO Logistics. First humanoid with 10,000 unit/year manufacturing facility."
+      "trackRecord": "100K+ totes moved at GXO Logistics. Toyota contracted 7 units (Feb 2026). $400M Series C raised. Deployed at Amazon fulfillment centers. First humanoid with 10,000 unit/year manufacturing facility (RoboFab)."
     },
     "specifications": {
       "height": "175 cm",
@@ -4542,7 +4560,7 @@
         "coverage": "Hardware, software, battery system"
       },
       "postSalesSupport": "Apptronik support team, Mercedes-Benz partnership",
-      "trackRecord": "Built on NASA Valkyrie heritage with 10+ robots developed. Testing at Mercedes-Benz Hungary. Raised $522M with Amazon, Mercedes, Walmart, Jabil partnerships."
+      "trackRecord": "Built on NASA Valkyrie heritage with 10+ robots developed. Testing at Mercedes-Benz Hungary. Raised $935M total ($520M Series A extension Feb 2026) with partnerships including Mercedes-Benz, GXO, Jabil, and Amazon."
     },
     "specifications": {
       "height": "173 cm",
@@ -4577,14 +4595,14 @@
       "currency": "USD",
       "models": [
         {
-          "name": "6th Generation",
+          "name": "Gen 8 (Current)",
           "price": "request"
         }
       ]
     },
     "generalInfo": {
       "manufacturer": "Sanctuary AI",
-      "modelName": "Phoenix (6th Generation)",
+      "modelName": "Phoenix (Gen 8)",
       "dimensions": {
         "standing": "170 cm (5 ft 7 in)",
         "folded": "N/A",
@@ -4592,35 +4610,41 @@
       }
     },
     "keyFeatures": [
-      "Powered by Carbon™ AI cognitive architecture",
-      "Most sensor-rich humanoid when released",
-      "20 DoF hands rivaling human dexterity",
-      "Proprietary haptic technology",
-      "Can be teleoperated by humans",
+      "Powered by Carbon AI cognitive architecture",
+      "Gen 8 optimized for high-quality data capture (Jan 2025)",
+      "21-DOF hydraulic hands with in-hand manipulation",
+      "Tactile sensors detecting 5 millinewtons (near human sensitivity)",
+      "Wheeled base design for industrial reliability",
+      "Can be teleoperated for training data generation",
       "Combines symbolic reasoning with LLMs",
-      "Simulates human brain subsystems",
-      "Designed for general-purpose work"
+      "Learns new tasks in under 24 hours",
+      "Microsoft Azure collaboration for AI training",
+      "NVIDIA Isaac Lab sim-to-real transfer",
+      "Deployed at Magna International manufacturing",
+      "100+ tasks completed at retail store pilot"
     ],
     "hardwareBuildQuality": {
-      "totalDegreesOfFreedom": "20 DoF in hands (total body DoF not fully disclosed)",
+      "totalDegreesOfFreedom": "21 DoF hands (total body DoF not fully disclosed)",
       "payloadCapacity": "25 kg (55 lbs)",
       "batteryCapacityRuntime": "Not publicly disclosed",
       "charger": "Standard charging system",
       "sensorsIncluded": [
-        "Proprietary haptic sensors in hands",
-        "Vision systems for perception",
+        "7-cell touch sensor array per fingertip (micro-barometers)",
+        "5mN tactile sensitivity (near-human level)",
+        "Enhanced camera field of view (Gen 8)",
+        "Advanced telemetry system",
         "Force/torque sensors",
-        "Tactile feedback sensors",
         "Multi-modal sensor arrays"
       ],
       "interfaces": [
         "Teleoperation interface",
         "Wireless communication",
-        "Industrial protocols"
+        "Industrial protocols",
+        "Microsoft Azure integration"
       ]
     },
     "softwareEcosystem": {
-      "rosSupport": "Custom Carbon™ AI platform with standard interfaces",
+      "rosSupport": "Custom Carbon AI platform with standard interfaces",
       "sdkLanguages": [
         "Python",
         "C++"
@@ -4640,7 +4664,7 @@
         "coverage": "Hardware, software, AI platform updates"
       },
       "postSalesSupport": "Sanctuary AI support team",
-      "trackRecord": "Leading Canadian robotics company. 6th generation humanoid. Mission to deploy millions of industrial-grade robots with advanced AI cognition."
+      "trackRecord": "Leading Canadian robotics company. Gen 8 humanoid (8 generations of iteration). Microsoft and NVIDIA partnerships. Magna International strategic investor. $140M+ raised. 3rd globally for humanoid-related patents (Morgan Stanley). 163 employees."
     },
     "specifications": {
       "height": "170 cm",
@@ -4649,12 +4673,12 @@
       "maxSpeed": "3 mph"
     },
     "features": [
-      "Carbon™ AI brain",
-      "Human-like dexterity",
-      "Haptic feedback",
-      "Teleoperation capable",
-      "General-purpose design",
-      "Canadian innovation"
+      "Carbon AI brain",
+      "21-DOF hydraulic hands",
+      "5mN tactile sensitivity",
+      "Gen 8 data capture",
+      "Microsoft/NVIDIA partnerships",
+      "Wheeled base design"
     ],
     "images": [
       "/images/robots/sanctuary-phoenix.webp"
@@ -4663,7 +4687,7 @@
       "/images/robots/sanctuary-phoenix.webp"
     ],
     "officialUrl": "https://www.sanctuary.ai/",
-    "description": "Phoenix by Sanctuary AI is a 6th generation general-purpose humanoid robot powered by Carbon™, an AI cognitive architecture that simulates human brain subsystems. With 20-DoF hands featuring proprietary haptic technology and the ability to be teleoperated, Phoenix is designed for various industrial work environments. As Canada's leading humanoid robotics platform, Phoenix combines advanced AI with human-like dexterity for complex task execution."
+    "description": "Phoenix Gen 8 by Sanctuary AI is a general-purpose humanoid robot powered by Carbon AI, a cognitive architecture that simulates human brain subsystems. With 21-DOF hydraulic hands featuring tactile sensors detecting forces as small as 5 millinewtons, Phoenix learns new tasks in under 24 hours. Gen 8 features a wheeled base optimized for industrial reliability, enhanced data capture, and partnerships with Microsoft and NVIDIA."
   },
   {
     "id": "1x-neo-gamma",
@@ -4690,26 +4714,31 @@
       }
     },
     "keyFeatures": [
+      "1X World Model AI learns tasks from watching videos (Jan 2026)",
       "Biologically-inspired design for homes",
       "Backed by OpenAI",
       "Can lift 75 kg in deadlift/squat",
-      "Four microphones with beamforming",
-      "Designed for home assistant tasks",
-      "Target price $20,000 (car-comparable)",
-      "Sophisticated home navigation",
-      "Lightweight at only 30 kg"
+      "Four microphones with beamforming and echo cancellation",
+      "Target price $20,000 or $499/month subscription",
+      "360-degree LiDAR and binocular RGB cameras",
+      "10x hardware reliability improvement",
+      "10 dB noise reduction (refrigerator-quiet)",
+      "EQT partnership for 10,000 unit deployment",
+      "Emotive Ear Rings for visual feedback",
+      "Tendon-drive joint actuation with soft covers"
     ],
     "hardwareBuildQuality": {
-      "totalDegreesOfFreedom": "Not specifically disclosed",
+      "totalDegreesOfFreedom": "22 DoF hands (additional in arms/legs)",
       "payloadCapacity": "20 kg carrying, 75 kg lift capacity",
       "batteryCapacityRuntime": "2-4 hours per charge",
       "charger": "Standard charging system",
       "sensorsIncluded": [
-        "Sophisticated cameras for navigation",
-        "4 microphones (front, back, left, right)",
-        "Beamforming and echo cancellation",
-        "Obstacle avoidance sensors",
-        "Vision systems for object recognition"
+        "Binocular RGB camera (head)",
+        "360-degree LiDAR (chassis)",
+        "5 monocular cameras (chassis)",
+        "2 monocular depth cameras (wrist, optional)",
+        "4 microphones with beamforming and echo cancellation",
+        "3-speaker system (chest + pelvis)"
       ],
       "interfaces": [
         "Wi-Fi",
@@ -4726,6 +4755,7 @@
       ],
       "openSourceRepos": "No",
       "aiFrameworksSupported": [
+        "1X World Model (autonomous learning from video, Jan 2026)",
         "OpenAI integration",
         "Proprietary 1X AI"
       ],
@@ -4737,7 +4767,7 @@
         "coverage": "Hardware and software support"
       },
       "postSalesSupport": "1X Technologies support network (expanding for home)",
-      "trackRecord": "Norwegian-American startup backed by OpenAI. NEO Beta in home trials. Raised $100M Series B funding."
+      "trackRecord": "Norwegian-American startup backed by OpenAI. Pre-orders exceeded expectations, consumer delivery starting 2026. EQT partnership for 10,000 robots across 300+ portfolio companies. $126M+ raised. Targeting 100K units/year production."
     },
     "specifications": {
       "height": "165 cm",
@@ -4762,7 +4792,7 @@
       "/images/robots/1x-neo-gamma.webp"
     ],
     "officialUrl": "https://www.1x.tech/",
-    "description": "NEO Gamma by 1X Technologies is an OpenAI-backed humanoid robot designed specifically for home environments. At just 30 kg, it's one of the lightest humanoids while capable of lifting 75 kg. With biologically-inspired design, four-microphone array with beamforming, and sophisticated home navigation, NEO Gamma aims to be an affordable ($20,000) home assistant robot. Currently in beta home trials with consumer release planned."
+    "description": "NEO Gamma by 1X Technologies is an OpenAI-backed humanoid robot for home environments. At just 30 kg, it lifts 75 kg with tendon-drive actuation. Its World Model AI (Jan 2026) learns tasks from watching videos without explicit programming. Pre-orders starting at $20K or $499/month with consumer delivery in 2026. EQT partnership for 10,000 unit deployment across global portfolio companies."
   },
   {
     "id": "fourier-gr1",
@@ -5070,12 +5100,16 @@
     "brand": "Engineered Arts",
     "category": "humanoid",
     "price": {
-      "starting": 0,
-      "currency": "GBP",
+      "starting": 100000,
+      "currency": "USD",
       "models": [
         {
-          "name": "Standard",
-          "price": "request"
+          "name": "Head Only",
+          "price": 100000
+        },
+        {
+          "name": "Full Body",
+          "price": 500000
         }
       ]
     },
@@ -6415,32 +6449,28 @@
     "brand": "NEURA Robotics",
     "category": "humanoid",
     "price": {
-      "starting": "request",
-      "currency": "EUR",
+      "starting": 22000,
+      "currency": "USD",
       "models": [
         {
-          "name": "4NE-1 Gen3",
-          "price": "request"
+          "name": "4NE1 Gen 3.5",
+          "price": 22000
         },
         {
-          "name": "4NE-1 Industrial",
-          "price": "request"
-        },
-        {
-          "name": "4NE-1 Service",
-          "price": "request"
+          "name": "4NE1 Industrial",
+          "price": 44600
         }
       ]
     },
-    "description": "NEURA Robotics 4NE-1 is Europe's first humanoid robot designed for series production, featuring cognitive AI capabilities, patented Omnisensor technology, and innovative touchless human detection. Capable of 24/7 operation with dual-battery system.",
+    "description": "NEURA Robotics 4NE-1 is Europe's first humanoid robot designed for series production, featuring 45 DOF, NVIDIA Thor T5000 processor, and AURA AI. Gen 3.5 available June 2026 starting at $22K. Capable of lifting 100kg with artificial skin proximity detection and SwapBatt system for continuous operation.",
     "images": [
       "/images/robots/neura-4ne1.webp"
     ],
     "officialUrl": "https://neura-robotics.com/products/4ne1/",
     "generalInfo": {
       "manufacturer": "NEURA Robotics (Germany)",
-      "modelName": "4NE-1 (Third Generation)",
-      "releaseDate": "June 2025 (Gen3)",
+      "modelName": "4NE-1 (Gen 3.5)",
+      "releaseDate": "June 2026 (Gen 3.5)",
       "dimensions": {
         "standing": "180cm (1.8m / 5.9 feet) tall",
         "folded": "N/A",
@@ -6460,7 +6490,7 @@
       "Goal: 5 million robots by 2030"
     ],
     "hardwareBuildQuality": {
-      "totalDegreesOfFreedom": "High DOF with advanced joint technology",
+      "totalDegreesOfFreedom": "45 DOF",
       "payloadCapacity": "15kg carrying capacity, joints lift up to 100kg",
       "batteryCapacityRuntime": "Dual-battery system for 24/7 operation",
       "charger": "Hot-swappable dual battery system",
@@ -6513,7 +6543,7 @@
         "coverage": "Full hardware and software support with European standards"
       },
       "postSalesSupport": "Comprehensive enterprise support with NVIDIA backing",
-      "trackRecord": "Established in cognitive cobots, expanding to humanoids with strong European presence"
+      "trackRecord": "€120M Series B (Jan 2025) led by Lingotto. 300+ employees. €1B order book. 10x revenue growth. NVIDIA partnership. Porsche-designed variant. First Western humanoid for series production."
     },
     "specifications": {
       "Height": "180cm (Gen3)",
@@ -7897,12 +7927,16 @@
     "brand": "AgiBot",
     "category": "humanoid",
     "price": {
-      "starting": "request",
+      "starting": 100000,
       "currency": "USD",
       "models": [
         {
-          "name": "A2 Commercial",
-          "price": "request"
+          "name": "A2 Standard",
+          "price": 100000
+        },
+        {
+          "name": "A2-W Industrial",
+          "price": 150000
         }
       ]
     },
@@ -11056,5 +11090,756 @@
     ],
     "officialUrl": "https://augustrobotics.com/",
     "description": "The DEWALT Robotic Drilling System combines August Robotics' Lionel autonomous mobile robot with DEWALT's industrial drilling rig for data center construction. With 99.97% accuracy across 108,000+ holes, fleet-capable coordination, and CAD-driven navigation, it reduces floor preparation time from 8–9 weeks to 7–9 days."
+  },
+  {
+    "id": "geekplus-gino-1",
+    "name": "Gino 1",
+    "brand": "Geek+",
+    "category": "humanoid",
+    "price": {
+      "starting": 0,
+      "currency": "USD",
+      "models": [
+        {
+          "name": "Enterprise",
+          "price": "request"
+        }
+      ]
+    },
+    "generalInfo": {
+      "manufacturer": "Geek+ (Beijing Geekplus Technology)",
+      "modelName": "Gino 1",
+      "dimensions": {
+        "standing": "Full-size humanoid form factor",
+        "weight": "Enterprise-grade (not publicly disclosed)"
+      }
+    },
+    "keyFeatures": [
+      "World's first general-purpose humanoid robot built specifically for warehouse operations",
+      "Powered by NVIDIA Jetson Thor with 2,070 FP4 TFLOPS computing power",
+      "Geek+ Brain embodied intelligence system with Vision-Language-Action (VLA) model",
+      "Multi-eye vision system for comprehensive spatial awareness and navigation",
+      "Three-finger dexterous hands with 7 active DOF each for adaptive grasping",
+      "Force-controlled dual arms (7 DOF each) with 20kg combined load capacity",
+      "50Ah battery with industry-first 3kW wireless ultra-fast charging",
+      "Omnidirectional wheeled chassis with hemispherical 3D LiDAR navigation",
+      "Palm-integrated dual cameras and tactile sensors for precise object handling",
+      "Fast/slow cognitive architecture combining high-level planning with real-time execution",
+      "Capable of picking, packing, box handling, and quality inspection tasks",
+      "Mass production ready with enterprise-scale deployment support",
+      "Multi-agent collaboration with existing Geek+ AMR fleet",
+      "Designed and trained specifically on warehouse operation data",
+      "Full in-house technology stack from hardware to AI software",
+      "99.99% picking accuracy leveraging Geek+ warehouse expertise",
+      "Seamless integration with existing warehouse management systems"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "28+ (14 DOF dual arms + 14 DOF dexterous hands, plus omnidirectional wheeled chassis)",
+      "payloadCapacity": "20kg dual-arm combined load",
+      "batteryCapacityRuntime": "50Ah battery with 3kW wireless ultra-fast charging",
+      "charger": "Industry-first 3kW wireless ultra-fast charging system",
+      "sensorsIncluded": [
+        "Triple-camera head unit for primary vision",
+        "Front/rear fisheye cameras for 360-degree awareness",
+        "Dual palm cameras with tactile sensors",
+        "Front/rear hemispherical 3D LiDAR",
+        "Force/torque sensors in arms"
+      ],
+      "interfaces": [
+        "WiFi",
+        "5G (optional)",
+        "Industrial Ethernet",
+        "Integration with Geek+ fleet management"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Proprietary Geek+ Brain platform",
+      "sdkLanguages": ["Proprietary"],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [
+        "NVIDIA Isaac",
+        "Vision-Language-Action (VLA) model",
+        "Geek+ Brain embodied intelligence"
+      ],
+      "apiDocumentationQuality": "Enterprise (available to customers)"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Enterprise contract (custom terms)",
+        "coverage": "Full hardware and software support with SLA"
+      },
+      "postSalesSupport": "Global service centers across 40+ countries, 52+ service stations, 310+ engineers, 12 spare parts centers",
+      "trackRecord": "Founded 2015, HKEX listed (2590.HK), 56,000+ robots deployed, 800+ customers including UPS, Adidas, Walmart"
+    },
+    "specifications": {
+      "computing": "NVIDIA Jetson Thor (2,070 FP4 TFLOPS, 128GB LPDDR5X, 14x Arm Neoverse V3AE cores, 2560 CUDA cores, 96 Tensor Cores)",
+      "vision": "Triple-camera head + front/rear fisheye for 360-degree awareness, dual palm cameras with tactile sensors, hemispherical 3D LiDAR",
+      "manipulation": "Three-finger dexterous hands (7 DOF each), force-controlled dual arms (7 DOF each)",
+      "chassis": "Omnidirectional wheeled mobile base with 3D LiDAR-based trajectory planning",
+      "battery": "50Ah with 3kW wireless ultra-fast charging",
+      "payload": "20kg dual-arm combined",
+      "aiPlatform": "Geek+ Brain with VLA (Vision-Language-Action) model",
+      "cognitiveArchitecture": "Fast/slow dual-process architecture",
+      "deploymentScale": "Mass production ready",
+      "fleetIntegration": "Compatible with Geek+ AMR ecosystem"
+    },
+    "features": [
+      "NVIDIA Jetson Thor with 2,070 TFLOPS",
+      "Geek+ Brain embodied intelligence",
+      "Multi-eye vision spatial awareness",
+      "Three-finger dexterous hands",
+      "20kg dual-arm payload",
+      "Mass production ready",
+      "Multi-agent fleet collaboration",
+      "Warehouse-optimized VLA model"
+    ],
+    "images": [
+      "/images/robots/geekplus-gino1/robot-1.webp",
+      "/images/robots/geekplus-gino1/robot-2.webp",
+      "/images/robots/geekplus-gino1/robot-3.webp",
+      "/images/robots/geekplus-gino1/robot-4.webp"
+    ],
+    "officialUrl": "https://www.geekplus.com/",
+    "description": "Gino 1 is the world's first general-purpose humanoid robot built specifically for warehouse operations. Powered by NVIDIA Jetson Thor with 2,070 TFLOPS and the Geek+ Brain embodied intelligence system, it features multi-eye vision, three-finger dexterous hands, and force-controlled dual arms for picking, packing, box handling, and inspection tasks. Mass production ready for enterprise-scale deployment."
+  },
+  {
+    "id": "roboparty-roboto-origin",
+    "name": "ROBOTO ORIGIN",
+    "brand": "RoboParty",
+    "category": "humanoid",
+    "price": {
+      "starting": 6800,
+      "currency": "USD",
+      "models": [
+        {
+          "name": "DIY Kit (BOM cost)",
+          "price": 6800
+        }
+      ]
+    },
+    "generalInfo": {
+      "manufacturer": "RoboParty (Shanghai Roboparty Technology Co., Ltd.)",
+      "modelName": "ROBOTO ORIGIN (ATOM-01)",
+      "dimensions": {
+        "standing": "1.25m tall",
+        "weight": "34kg"
+      }
+    },
+    "keyFeatures": [
+      "World's first full-stack open-source bipedal humanoid robot",
+      "Complete hardware, software, and engineering documentation open-sourced on GitHub",
+      "Developed in just 120 days (April-August 2025), open-sourced January 2026",
+      "23 degrees of freedom using DM 4340P and DM 10010L servo actuators",
+      "Running speed up to 3m/s, ranking among top open-source humanoids",
+      "Powered by Orange Pi 5 Plus (RK3588) single-board computer",
+      "HIPNUC HI13 IMU for precise orientation and balance sensing",
+      "48V 15Ah lithium-ion battery pack for extended operation",
+      "Full EBOM (Engineering Bill of Materials) with domestic supplier lists",
+      "SMPL-X human model adaptation for natural motion generation",
+      "Sim2Real pipeline with gap solutions and debugging documentation",
+      "ROS2 deployment framework with modular architecture middleware",
+      "Xiaomi-backed with $10M seed funding from Matrix Partners and Galbot",
+      "1,000+ GitHub stars and 100+ development kit pre-orders",
+      "Total BOM cost approximately 49,743 CNY (~$6,800 USD)"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "23 (14x DM 4340P + 9x DM 10010L actuators)",
+      "payloadCapacity": "Research platform (payload varies by configuration)",
+      "batteryCapacityRuntime": "48V 15Ah Li-ion pack (runtime depends on activity)",
+      "charger": "Aviation plug charger (WEIPU SF1212/S2)",
+      "sensorsIncluded": [
+        "HIPNUC HI13 IMU (Chaohe HI13 M0-USB, 921600 baud serial)",
+        "Livox MID-360 LiDAR (optional, for autonomous navigation)",
+        "NLink LinkTrack UWB positioning (optional)",
+        "Motor encoders on all 23 actuators"
+      ],
+      "interfaces": [
+        "USB-to-CAN (4x adapters)",
+        "USB hub",
+        "48V to 5V DC-DC module",
+        "CAN bus adapter boards",
+        "Power distribution center board"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "ROS2 Humble with modular deployment framework and Nav2 navigation stack",
+      "sdkLanguages": ["Python 3.10", "C++ 17", "Shell"],
+      "openSourceRepos": "https://github.com/Roboparty/roboto_origin",
+      "aiFrameworksSupported": [
+        "NVIDIA Isaac Sim 5.1.0",
+        "NVIDIA Isaac Lab 2.3.2",
+        "RSL_RL 3.3.0 (ETH Zurich RL library)",
+        "MuJoCo (Sim2Sim transfer)",
+        "SMPL-X human motion model adaptation",
+        "AMP (Adversarial Motion Priors) gait algorithm",
+        "FAST-LIO 2 (LiDAR-Inertial Odometry for SLAM)"
+      ],
+      "apiDocumentationQuality": "Excellent (full open-source documentation, EBOM with supplier links, SOP, assembly guide v1.14, Sim2Real gap solutions, 200,000+ documentation views)"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Open-source project (community-supported)",
+        "coverage": "DIY kit - components sourced from domestic suppliers per EBOM"
+      },
+      "postSalesSupport": "GitHub community, open-source documentation, developer Discord/WeChat groups",
+      "trackRecord": "Founded April 2025, backed by Xiaomi and Matrix Partners China, 4,000+ GitHub stars across repos, 200,000+ documentation views"
+    },
+    "specifications": {
+      "height": "1.25m",
+      "weight": "34kg",
+      "maxSpeed": "3m/s running",
+      "degreesOfFreedom": "23 (14x DM 4340P hip/ankle/arm + 9x DM 10010L knee/waist)",
+      "computing": "Orange Pi 5 Plus (RK3588, 4GB RAM)",
+      "imu": "HIPNUC HI13 M0-USB",
+      "battery": "48V 15Ah Li-ion (140x140x115mm)",
+      "communication": "USB-to-CAN bus (4 channels)",
+      "frameMaterial": "CNC-machined aluminum alloy (120-grit sandblasted, black anodized)",
+      "actuators": {
+        "hipKnee": "9x DM 10010L (120 Nm effort, 25 rad/s velocity)",
+        "ankleArm": "14x DM 4340P 48V (27 Nm effort, 8 rad/s velocity)"
+      },
+      "softwarePlatform": "ROS2 with modular middleware",
+      "simulation": "Isaac Sim, MuJoCo compatible URDF"
+    },
+    "features": [
+      "Full-stack open-source humanoid",
+      "3m/s running speed",
+      "23 DOF servo actuators",
+      "ROS2 deployment framework",
+      "Sim2Real training pipeline",
+      "CNC aluminum alloy frame",
+      "48V battery system",
+      "Complete EBOM and SOP documentation"
+    ],
+    "images": [
+      "/images/robots/roboparty-roboto-origin/robot-1.png",
+      "/images/robots/roboparty-roboto-origin/robot-2.webp",
+      "/images/robots/roboparty-roboto-origin/robot-3.webp",
+      "/images/robots/roboparty-roboto-origin/robot-4.png"
+    ],
+    "officialUrl": "https://roboparty.com/",
+    "description": "ROBOTO ORIGIN is the world's first full-stack open-source bipedal humanoid robot, developed by Xiaomi-backed RoboParty in just 120 days. Standing 1.25m tall at 34kg with 23 DOF and 3m/s running speed, it features complete hardware designs, software stack, and engineering documentation open-sourced on GitHub for developers and researchers."
+  },
+  {
+    "id": "faraday-future-fx-aegis",
+    "name": "FX Aegis",
+    "brand": "Faraday Future",
+    "category": "quadruped",
+    "price": {
+      "starting": 2499,
+      "currency": "USD",
+      "models": [
+        {
+          "name": "Standard",
+          "price": 2499
+        },
+        {
+          "name": "Standard + Ecosystem Skills Package",
+          "price": 3499
+        }
+      ]
+    },
+    "generalInfo": {
+      "manufacturer": "Faraday Future (FF EAI-Robotics Inc.)",
+      "modelName": "FX Aegis",
+      "dimensions": {
+        "standing": "63cm x 36cm x 42cm (standing), 67cm x 43cm x 15cm (folded)",
+        "weight": "~15kg"
+      }
+    },
+    "keyFeatures": [
+      "Professional embodied-AI quadruped robot for security and companionship",
+      "Peak joint torque of 48 Nm for powerful obstacle traversal",
+      "Maximum speed of 3.7 m/s with agile quadruped locomotion",
+      "35cm obstacle crossing height and 40-degree slope climbing",
+      "IP54 dust and water resistant aluminum alloy construction",
+      "120-minute battery life with hot-swappable battery system",
+      "WiFi and 5G connectivity with remote control capability",
+      "Autonomous patrol and intelligent follow-me modes",
+      "Dual configuration: quadruped and optional four-wheeled version",
+      "Expandable with LiDAR, depth cameras, robotic arm, and security modules",
+      "Integration with home, campus, and industrial security systems",
+      "Part of FF EAI Robotics ecosystem with skills marketplace",
+      "10kg maximum payload capacity for carrying accessories",
+      "Fire extinguisher and shopping basket expansion options"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "12 (joint motors)",
+      "payloadCapacity": "~10kg maximum",
+      "batteryCapacityRuntime": "120 minutes operation, hot-swappable battery",
+      "charger": "Standard charging dock",
+      "sensorsIncluded": [
+        "IMU",
+        "Wide-angle camera (DFOV 122, HFOV 111, VFOV 70 degrees)",
+        "Optional 3D LiDAR",
+        "Optional depth cameras (RGB-D)",
+        "Optional RTK positioning"
+      ],
+      "interfaces": [
+        "WiFi",
+        "5G (optional)",
+        "Ethernet",
+        "USB",
+        "SBUS",
+        "UART",
+        "12V/24V power outputs for payloads"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "ROS2 Humble (via underlying AgiBot D1 platform with AimRT middleware)",
+      "sdkLanguages": ["C++", "Python"],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [
+        "FF EAI Brain platform",
+        "Reinforcement learning gait control",
+        "Isaac Sim and MuJoCo compatible (via AgiBot D1 URDF)",
+        "EAI Decentralized Data Factory"
+      ],
+      "apiDocumentationQuality": "Ecosystem Skills Marketplace (expanding)"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Standard warranty (details at purchase)",
+        "coverage": "Hardware and software support"
+      },
+      "postSalesSupport": "FF EAI Robotics support, ecosystem skills marketplace, OTA updates",
+      "trackRecord": "Faraday Future founded 2014, NASDAQ listed (FFIE), hardware by AgiBot, 1,200+ B2B pre-order deposits received"
+    },
+    "specifications": {
+      "dimensions": "63cm x 36cm x 42cm (standing), 67cm x 43cm x 15cm (folded)",
+      "weight": "~15kg",
+      "maxSpeed": "3.7 m/s",
+      "peakJointTorque": "48 Nm",
+      "obstacleCrossing": "35cm height",
+      "maxSlope": "40 degrees",
+      "payload": "~10kg maximum",
+      "batteryLife": "120 minutes",
+      "batteryType": "Hot-swappable",
+      "material": "Aluminum alloy + high-strength engineering plastics",
+      "ingressProtection": "IP54",
+      "connectivity": ["WiFi", "5G (optional)"],
+      "autonomousPatrol": "Yes",
+      "autonomousFollowing": "Yes",
+      "configurations": "Quadruped and wheeled versions"
+    },
+    "features": [
+      "48 Nm peak joint torque",
+      "3.7 m/s max speed",
+      "35cm obstacle crossing",
+      "IP54 dust/water resistant",
+      "120-min hot-swap battery",
+      "Autonomous patrol mode",
+      "WiFi + 5G connectivity",
+      "Expandable with LiDAR and robotic arm"
+    ],
+    "images": [
+      "/images/robots/faraday-future-fx-aegis/robot-1.jpg"
+    ],
+    "officialUrl": "https://www.ff.com/us/preorder/robotics?model=fx-aegis",
+    "description": "FX Aegis is a professional embodied-AI quadruped robot from Faraday Future designed for security patrol, companionship, and industrial applications. Starting at $2,499, it features 3.7 m/s speed, 48 Nm joint torque, 35cm obstacle crossing, IP54 protection, and 120-minute hot-swappable battery. Expandable with LiDAR, robotic arms, and security modules."
+  },
+  {
+    "id": "agibot-a2-max",
+    "name": "A2-Max",
+    "brand": "AgiBot",
+    "category": "humanoid",
+    "price": {
+      "starting": 130000,
+      "currency": "USD",
+      "models": [
+        {
+          "name": "A2-Max Standard",
+          "price": 130000
+        }
+      ]
+    },
+    "description": "Heavy-duty special-purpose humanoid robot built for demanding operations requiring high payload capacity. With over 25 degrees of freedom, reinforced joints, and dual-arm peak torque of 450 Nm, the A2-Max handles tasks from lifting heavy loads to performing delicate operations in industrial environments.",
+    "officialUrl": "https://www.agibot.com/products/A2_Max",
+    "releaseDate": "2025-10-01",
+    "generalInfo": {
+      "manufacturer": "AgiBot",
+      "modelName": "A2-Max",
+      "releaseDate": "October 2025",
+      "dimensions": {
+        "standing": "175 cm (5.74 feet)",
+        "folded": "N/A",
+        "weight": "85 kg (187 lbs)"
+      }
+    },
+    "keyFeatures": [
+      "Heavy-duty industrial humanoid for demanding operations",
+      "Dual-arm system with peak torque of 450 Nm",
+      "Over 25 degrees of freedom with reinforced joints",
+      "Enhanced payload capacity for light industrial tasks",
+      "Successfully moved a 40 kg aviation box with ease",
+      "Dual-ratio reduction joint modules for precision and power",
+      "Modular design based on AgiBot A2 platform",
+      "200 TOPS AI processing power",
+      "PLd-level safety certification",
+      "360-degree LiDAR and six HD cameras",
+      "Hot-swappable battery system",
+      "Suitable for material handling and palletizing"
+    ],
+    "images": [
+      "/images/robots/agibot-a2-max/robot-1.jpg"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "25+ DOF with reinforced joints",
+      "payloadCapacity": "40 kg demonstrated (dual-arm lifting)",
+      "batteryCapacityRuntime": "700 Wh standard / 2,000 Wh industrial variant (2-5+ hours)",
+      "charger": "Hot-swappable battery system",
+      "sensorsIncluded": [
+        "360-degree LiDAR",
+        "6 HD cameras",
+        "Force/torque sensors in arms",
+        "IMU sensors"
+      ],
+      "interfaces": [
+        "Wi-Fi",
+        "4G/LTE connectivity",
+        "API for integration"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Yes",
+      "sdkLanguages": [
+        "Python",
+        "C++"
+      ],
+      "openSourceRepos": "Limited - primarily commercial platform",
+      "aiFrameworksSupported": [
+        "WorkGPT multimodal AI",
+        "Computer Vision",
+        "Custom AI models"
+      ],
+      "apiDocumentationQuality": "Available for commercial partners"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "1 year standard",
+        "coverage": "Hardware defects and software updates"
+      },
+      "postSalesSupport": "Enterprise support with dedicated account management",
+      "trackRecord": "AgiBot shipped 5,000 robots by January 2026, expanding to 6 countries"
+    },
+    "specifications": {
+      "dimensions": "175 cm height",
+      "weight": "85 kg",
+      "dof": 25,
+      "payload": "40 kg (dual-arm)",
+      "battery": "700 Wh standard / 2,000 Wh industrial",
+      "sensors": ["360-degree LiDAR", "6 HD cameras", "Force sensors"],
+      "maxSpeed": "7 km/h walking"
+    },
+    "features": [
+      "Heavy-duty industrial humanoid",
+      "450 Nm dual-arm peak torque",
+      "25+ degrees of freedom",
+      "200 TOPS AI processing",
+      "Hot-swappable batteries"
+    ]
+  },
+  {
+    "id": "agibot-d1-pro",
+    "name": "D1 Pro",
+    "brand": "AgiBot",
+    "category": "quadruped",
+    "price": {
+      "starting": 1800,
+      "currency": "USD",
+      "models": [
+        {
+          "name": "D1 Pro",
+          "price": 1800
+        }
+      ]
+    },
+    "description": "AgiBot D1 Pro is an agile quadruped robot designed for entertainment and consumer applications. Part of the D1 series alongside the D1 Edu (education) and D1 Ultra (industrial), the D1 Pro offers an affordable entry point into quadruped robotics at approximately $1,800 (RMB 13,000).",
+    "officialUrl": "https://www.agibot.com/products/D1_Pro",
+    "releaseDate": "2025-08-01",
+    "generalInfo": {
+      "manufacturer": "AgiBot",
+      "modelName": "D1 Pro",
+      "releaseDate": "August 2025",
+      "dimensions": {
+        "standing": "Compact quadruped form factor",
+        "folded": "N/A",
+        "weight": "Lightweight consumer design"
+      }
+    },
+    "keyFeatures": [
+      "Affordable consumer quadruped robot",
+      "Part of AgiBot D1 series (Pro/Edu/Ultra)",
+      "Designed for entertainment applications",
+      "Dynamic locomotion capabilities",
+      "Compact and lightweight design",
+      "AI-powered autonomous behaviors",
+      "Multiple gait modes for terrain adaptation",
+      "Interactive entertainment features",
+      "Wireless connectivity for remote control",
+      "Modular accessory system",
+      "Integrated camera system",
+      "Mobile app control interface"
+    ],
+    "images": [
+      "/images/robots/agibot-d1-pro/robot-1.jpg"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "12 DOF (4 legs x 3 joints)",
+      "payloadCapacity": "Consumer-grade payload",
+      "batteryCapacityRuntime": "Rechargeable lithium battery, extended runtime",
+      "charger": "Standard charger included",
+      "sensorsIncluded": [
+        "Integrated camera",
+        "IMU sensors",
+        "Foot contact sensors"
+      ],
+      "interfaces": [
+        "Wi-Fi",
+        "Bluetooth",
+        "Mobile app"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Limited - consumer-focused",
+      "sdkLanguages": [
+        "Python"
+      ],
+      "openSourceRepos": "Limited",
+      "aiFrameworksSupported": [
+        "Custom AI behaviors"
+      ],
+      "apiDocumentationQuality": "Consumer documentation available"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "1 year",
+        "coverage": "Hardware defects"
+      },
+      "postSalesSupport": "Online support and community forums",
+      "trackRecord": "AgiBot shipped 5,000 robots by January 2026"
+    },
+    "specifications": {
+      "dimensions": "Compact quadruped",
+      "weight": "Lightweight",
+      "dof": 12,
+      "maxSpeed": "Consumer-grade locomotion"
+    },
+    "features": [
+      "Affordable consumer quadruped",
+      "Entertainment-focused design",
+      "AI-powered behaviors",
+      "Mobile app control",
+      "Modular accessories"
+    ]
+  },
+  {
+    "id": "deep-robotics-dr02",
+    "name": "DR02",
+    "brand": "Deep Robotics",
+    "category": "humanoid",
+    "price": {
+      "starting": "request",
+      "currency": "USD",
+      "models": [
+        {
+          "name": "DR02",
+          "price": "request"
+        }
+      ]
+    },
+    "description": "The DR02 is Deep Robotics' all-weather humanoid robot, featuring the industry's first IP66-rated full-body waterproof and dustproof design. Standing 175 cm tall with 275 TOPS computing power, it operates in temperatures from -20 to +55 degrees Celsius with a modular quick-detach design for field maintenance.",
+    "officialUrl": "https://www.deeprobotics.cn/en",
+    "releaseDate": "2025-10-01",
+    "generalInfo": {
+      "manufacturer": "Deep Robotics",
+      "modelName": "DR02",
+      "releaseDate": "October 2025",
+      "dimensions": {
+        "standing": "175 cm (5.74 feet)",
+        "folded": "N/A",
+        "weight": "65 kg (143 lbs)"
+      }
+    },
+    "keyFeatures": [
+      "Industry-first IP66 full-body waterproof and dustproof rating",
+      "All-weather operation: -20 to +55 degrees Celsius",
+      "275 TOPS AI computing power",
+      "Walking speed up to 4 m/s maximum",
+      "10 kg payload per arm",
+      "Modular quick-detach design for field maintenance",
+      "Replaceable arms, legs, and forearms",
+      "LiDAR and depth camera perception system",
+      "Wide-angle camera for 360-degree awareness",
+      "25 cm continuous stair climbing capability",
+      "20-degree slope traversal",
+      "Self-developed J60 and J100 joint actuators"
+    ],
+    "images": [
+      "/images/robots/deep-robotics-dr02/robot-1.jpg"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "30+ DOF with J60/J100 joints",
+      "payloadCapacity": "10 kg per arm",
+      "batteryCapacityRuntime": "Extended runtime for industrial operations",
+      "charger": "Standard charging system",
+      "sensorsIncluded": [
+        "LiDAR",
+        "Depth cameras",
+        "Wide-angle cameras",
+        "IMU sensors",
+        "Force/torque sensors"
+      ],
+      "interfaces": [
+        "EtherCAT",
+        "Wi-Fi",
+        "4G/LTE"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Yes - ROS2 compatible",
+      "sdkLanguages": [
+        "Python",
+        "C++"
+      ],
+      "openSourceRepos": "Available via DeepRoboticsLab GitHub",
+      "aiFrameworksSupported": [
+        "PyTorch",
+        "Reinforcement Learning frameworks",
+        "Custom AI models"
+      ],
+      "apiDocumentationQuality": "Technical documentation available for enterprise customers"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "1 year standard",
+        "coverage": "Hardware defects and software updates"
+      },
+      "postSalesSupport": "Enterprise support with field service capability",
+      "trackRecord": "Deep Robotics secured $70M Series C (Dec 2025), planning 2026 IPO. Pioneer in autonomous substation inspections."
+    },
+    "specifications": {
+      "dimensions": "175 cm height, 68 cm arm span",
+      "weight": "65 kg",
+      "dof": 30,
+      "payload": "10 kg per arm",
+      "maxSpeed": "1.5 m/s standard, 4 m/s maximum",
+      "sensors": ["LiDAR", "Depth cameras", "Wide-angle cameras"],
+      "ingressProtection": "IP66",
+      "operatingTemperature": "-20 to +55 degrees Celsius",
+      "computing": "275 TOPS"
+    },
+    "features": [
+      "IP66 all-weather humanoid",
+      "275 TOPS computing power",
+      "Modular quick-detach design",
+      "10 kg arm payload",
+      "4 m/s max speed"
+    ]
+  },
+  {
+    "id": "deep-robotics-lynx-m20-pro",
+    "name": "Lynx M20 Pro",
+    "brand": "Deep Robotics",
+    "category": "quadruped",
+    "price": {
+      "starting": 61200,
+      "currency": "USD",
+      "models": [
+        {
+          "name": "Lynx M20 Pro",
+          "price": 61200
+        }
+      ]
+    },
+    "description": "CES 2026 Innovation Award winner. The Lynx M20 Pro is an advanced wheel-legged robot combining the agility of legs with the efficiency of wheels. Features dual octa-core processors, twin 96-line LiDAR, SLAM navigation, and autonomous charging capability for end-to-end autonomous industrial missions.",
+    "officialUrl": "https://www.deeprobotics.us/products/lynx-m20/",
+    "releaseDate": "2025-12-01",
+    "generalInfo": {
+      "manufacturer": "Deep Robotics",
+      "modelName": "Lynx M20 Pro",
+      "releaseDate": "December 2025",
+      "dimensions": {
+        "standing": "820 x 430 x 570 mm",
+        "folded": "N/A",
+        "weight": "33 kg (72.8 lbs) including battery"
+      }
+    },
+    "keyFeatures": [
+      "CES 2026 Innovation Award in Robotics category",
+      "Hybrid wheel-leg locomotion platform",
+      "Dual octa-core 64-bit processors (x3)",
+      "16 GB RAM with 128 GB storage",
+      "Twin 96-line LiDAR (Robosense Airy)",
+      "SLAM positioning and autonomous navigation",
+      "Autonomous charging with compatible dock",
+      "IP66 dust and water protection",
+      "45-degree maximum slope capability",
+      "25 cm continuous stair climbing",
+      "80 cm single-step obstacle capability",
+      "5 m/s tested maximum speed"
+    ],
+    "images": [
+      "/images/robots/deep-robotics-lynx-m20-pro/robot-1.png"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "8 DOF wheel-leg hybrid (4 legs x 2 joints + 4 wheels)",
+      "payloadCapacity": "15 kg effective, 50 kg maximum",
+      "batteryCapacityRuntime": "3 hours unloaded (15 km), 2.5 hours loaded (12 km)",
+      "charger": "Autonomous charging dock compatible",
+      "sensorsIncluded": [
+        "Twin 96-line LiDAR (Robosense Airy)",
+        "Wide-angle cameras",
+        "Bi-directional lighting",
+        "IMU sensors",
+        "Depth perception"
+      ],
+      "interfaces": [
+        "Gigabit Ethernet",
+        "USB",
+        "Wi-Fi",
+        "4G/LTE"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Yes - ROS2 compatible",
+      "sdkLanguages": [
+        "Python",
+        "C++"
+      ],
+      "openSourceRepos": "Available via DeepRoboticsLab GitHub",
+      "aiFrameworksSupported": [
+        "SLAM navigation",
+        "Autonomous path planning",
+        "Custom AI models"
+      ],
+      "apiDocumentationQuality": "Comprehensive documentation for enterprise customers"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "1 year standard",
+        "coverage": "Hardware defects and software updates"
+      },
+      "postSalesSupport": "Global support via Deep Robotics US and partner network",
+      "trackRecord": "CES 2026 Innovation Award winner. Deep Robotics secured $70M Series C (Dec 2025)."
+    },
+    "specifications": {
+      "dimensions": "820 x 430 x 570 mm",
+      "weight": "33 kg",
+      "dof": 8,
+      "payload": "15 kg effective, 50 kg maximum",
+      "maxSpeed": "5 m/s tested, 2 m/s operating",
+      "sensors": ["Twin 96-line LiDAR", "Wide-angle cameras", "Depth perception"],
+      "ingressProtection": "IP66",
+      "operatingTemperature": "-20 to +55 degrees Celsius",
+      "computing": "Dual octa-core 64-bit x3, 16GB RAM"
+    },
+    "features": [
+      "CES 2026 Innovation Award",
+      "Wheel-leg hybrid locomotion",
+      "Autonomous charging dock",
+      "SLAM navigation",
+      "IP66 all-weather protection"
+    ]
   }
 ]

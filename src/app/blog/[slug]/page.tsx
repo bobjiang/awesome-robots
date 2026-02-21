@@ -105,7 +105,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       </Script>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <BlogPost post={post} author={author} />
+        <BlogPost post={post} author={author} url={postUrl} />
 
         {/* Related Posts */}
         {relatedPosts.length > 0 && (
