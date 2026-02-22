@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "velite build && next build",
+    "build": "npm run pre-build && velite build && next build",
     "start": "next start",
     "lint": "next lint",
     "analyze": "ANALYZE=true next build",
