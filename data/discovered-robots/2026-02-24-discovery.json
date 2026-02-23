@@ -1,0 +1,25 @@
+{
+  "fetch_date": "2026-02-24T00:00:00.000Z",
+  "week_range": "Feb 17–24",
+  "summary": {
+    "total_discovered": 0,
+    "duplicates_filtered": 0,
+    "new_robots": 0,
+    "quality_breakdown": {
+      "high": 0,
+      "medium": 0,
+      "low": 0
+    },
+    "source_breakdown": {
+      "ieee": 0,
+      "robotreport": 0,
+      "news": 0
+    }
+  },
+  "robots": [],
+  "errors": [
+    {
+      "message": "No new humanoid/quadruped robots met the discovery quality bar this week with verifiable specs and direct image links."
+    }
+  ]
+}
