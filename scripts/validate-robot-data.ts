@@ -1,36 +1,47 @@
 #!/usr/bin/env node
 
 /**
- * Validate robot data against schemas and check for consistency
+ * Validate robot data against schemas and check for consistency.
  *
- * Single source of truth for Robot shape: src/lib/robot-schema.mjs
+ * Single source of truth for Robot shape: src/lib/robot-schema.ts
  */
 
-const fs = require('fs');
-const path = require('path');
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { z } from 'zod';
+import { RobotsSchema } from '../src/lib/robot-schema';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const ROBOTS_PATH = path.join(__dirname, '../src/data/robots.json');
 const BRANDS_PATH = path.join(__dirname, '../src/data/brands.json');
 const CATEGORIES_PATH = path.join(__dirname, '../src/data/categories.json');
 
-function loadJsonFile(filePath) {
+function loadJsonFile<T = unknown>(filePath: string): T {
   try {
     const content = fs.readFileSync(filePath, 'utf8');
-    return JSON.parse(content);
+    return JSON.parse(content) as T;
   } catch (error) {
-    console.error(`Error loading ${path.basename(filePath)}:`, error.message);
+    const msg = error instanceof Error ? error.message : String(error);
+    console.error(`Error loading ${path.basename(filePath)}:`, msg);
     process.exit(1);
   }
 }
 
-function validateRobotData(robots, brands, categories) {
-  const errors = [];
+function validateRobotData(
+  robots: z.infer<typeof RobotsSchema>,
+  brands: Array<{ id: string; name: string }>,
+  categories: Array<{ id: string }>
+) {
+  const errors: string[] = [];
   const brandIds = new Set(brands.map(b => b.id));
   const categoryIds = new Set(categories.map(c => c.id));
-  const robotIds = new Set();
+  const robotIds = new Set<string>();
 
   robots.forEach((robot) => {
-    // Check for duplicate IDs
+    // Duplicate IDs
     if (robotIds.has(robot.id)) {
       errors.push(`Duplicate robot ID: ${robot.id}`);
     } else {
@@ -38,16 +49,14 @@ function validateRobotData(robots, brands, categories) {
     }
 
     // Validate brand exists
-    if (robot.brand) {
-      const normalizedBrandId = robot.brand.toLowerCase().replace(/\s+/g, '-');
-      if (!brandIds.has(normalizedBrandId)) {
-        const brandExists = brands.some(b =>
-          b.name.toLowerCase() === robot.brand.toLowerCase() ||
-          b.id === normalizedBrandId
-        );
-        if (!brandExists) {
-          errors.push(`Robot ${robot.id}: Brand "${robot.brand}" not found in brands.json`);
-        }
+    const normalizedBrandId = robot.brand.toLowerCase().replace(/\s+/g, '-');
+    if (robot.brand && !brandIds.has(normalizedBrandId)) {
+      const brandExists = brands.some(b =>
+        b.name.toLowerCase() === robot.brand.toLowerCase() ||
+        b.id === normalizedBrandId
+      );
+      if (!brandExists) {
+        errors.push(`Robot ${robot.id}: Brand "${robot.brand}" not found in brands.json`);
       }
     }
 
@@ -57,49 +66,43 @@ function validateRobotData(robots, brands, categories) {
     }
 
     // Check image paths
-    if (robot.images && Array.isArray(robot.images)) {
-      robot.images.forEach((image, imgIndex) => {
-        if (typeof image !== 'string') {
-          errors.push(`Robot ${robot.id}: Image ${imgIndex} must be a string`);
-        } else if (image.startsWith('/') && !image.startsWith('http')) {
-          const imagePath = path.join(__dirname, '../public', image);
-          if (!fs.existsSync(imagePath)) {
-            errors.push(`Robot ${robot.id}: Local image not found: ${image}`);
-          }
+    robot.images.forEach((image, imgIndex) => {
+      if (typeof image !== 'string') {
+        errors.push(`Robot ${robot.id}: Image ${imgIndex} must be a string`);
+      } else if (image.startsWith('/') && !image.startsWith('http')) {
+        const imagePath = path.join(__dirname, '../public', image);
+        if (!fs.existsSync(imagePath)) {
+          errors.push(`Robot ${robot.id}: Local image not found: ${image}`);
         }
-      });
-    }
+      }
+    });
   });
 
   return errors;
 }
 
-function checkBrandConsistency(brands) {
-  const errors = [];
-  const brandIds = new Set();
+function checkBrandConsistency(brands: Array<any>) {
+  const errors: string[] = [];
+  const brandIds = new Set<string>();
 
   brands.forEach((brand, index) => {
-    // Check required fields
-    const required = ['id', 'name', 'description', 'website', 'logo'];
-    required.forEach(field => {
+    const required = ['id', 'name', 'description', 'website', 'logo'] as const;
+    required.forEach((field) => {
       if (!brand[field]) {
         errors.push(`Brand ${index} (${brand.id || 'unknown'}): Missing required field: ${field}`);
       }
     });
 
-    // Check for duplicate IDs
     if (brandIds.has(brand.id)) {
       errors.push(`Duplicate brand ID: ${brand.id}`);
     } else {
       brandIds.add(brand.id);
     }
 
-    // Validate website URL
     if (brand.website && !String(brand.website).match(/^https?:\/\/.+/)) {
       errors.push(`Brand ${brand.id}: Invalid website URL format`);
     }
 
-    // Check logo file exists
     if (brand.logo && String(brand.logo).startsWith('/')) {
       const logoPath = path.join(__dirname, '../public', brand.logo);
       if (!fs.existsSync(logoPath)) {
@@ -107,9 +110,8 @@ function checkBrandConsistency(brands) {
       }
     }
 
-    // Validate imagePatterns structure if present
     if (brand.imagePatterns && Array.isArray(brand.imagePatterns)) {
-      brand.imagePatterns.forEach((pattern, patternIndex) => {
+      brand.imagePatterns.forEach((pattern: any, patternIndex: number) => {
         if (!pattern.hostname) {
           errors.push(`Brand ${brand.id}: Image pattern ${patternIndex} missing hostname`);
         }
@@ -123,16 +125,20 @@ function checkBrandConsistency(brands) {
   return errors;
 }
 
-function generateReport(robots, brands, categories, errors) {
+function generateReport(
+  robots: z.infer<typeof RobotsSchema>,
+  brands: any[],
+  categories: any[],
+  errors: string[]
+) {
   console.log('\n📊 VALIDATION REPORT');
   console.log('===================');
   console.log(`Robots: ${robots.length}`);
   console.log(`Brands: ${brands.length}`);
   console.log(`Categories: ${categories.length}`);
 
-  // Count robots by category
-  const categoryStats = {};
-  robots.forEach(robot => {
+  const categoryStats: Record<string, number> = {};
+  robots.forEach((robot) => {
     categoryStats[robot.category] = (categoryStats[robot.category] || 0) + 1;
   });
 
@@ -141,15 +147,14 @@ function generateReport(robots, brands, categories, errors) {
     console.log(`  ${category}: ${count}`);
   });
 
-  // Count robots by brand
-  const brandStats = {};
-  robots.forEach(robot => {
+  const brandStats: Record<string, number> = {};
+  robots.forEach((robot) => {
     brandStats[robot.brand] = (brandStats[robot.brand] || 0) + 1;
   });
 
   console.log('\nTop brands by robot count:');
   Object.entries(brandStats)
-    .sort(([,a], [,b]) => b - a)
+    .sort(([, a], [, b]) => b - a)
     .slice(0, 5)
     .forEach(([brand, count]) => {
       console.log(`  ${brand}: ${count}`);
@@ -159,16 +164,14 @@ function generateReport(robots, brands, categories, errors) {
     console.log('\n✅ All validations passed!');
   } else {
     console.log(`\n❌ Found ${errors.length} validation errors:`);
-    errors.forEach(error => {
+    errors.forEach((error) => {
       console.log(`  ${error}`);
     });
   }
 }
 
-async function main() {
+function main() {
   console.log('🔍 Starting robot data validation...');
-
-  const { RobotsSchema } = await import('../src/lib/robot-schema.mjs');
 
   const robotsRaw = loadJsonFile(ROBOTS_PATH);
   const robotsParsed = RobotsSchema.safeParse(robotsRaw);
@@ -180,8 +183,8 @@ async function main() {
   }
 
   const robots = robotsParsed.data;
-  const brands = loadJsonFile(BRANDS_PATH);
-  const categories = loadJsonFile(CATEGORIES_PATH);
+  const brands = loadJsonFile<any[]>(BRANDS_PATH);
+  const categories = loadJsonFile<any[]>(CATEGORIES_PATH);
 
   console.log(`📁 Loaded ${robots.length} robots, ${brands.length} brands, ${categories.length} categories`);
 
@@ -197,5 +200,3 @@ async function main() {
 }
 
 main();
-
-module.exports = { validateRobotData, checkBrandConsistency };
