@@ -3,47 +3,10 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Robot } from '@/types/robot';
-
-interface ExtendedRobot extends Robot {
-  generalInfo?: {
-    manufacturer: string;
-    modelName: string;
-    dimensions: {
-      standing: string;
-      folded?: string;
-      weight: string;
-    };
-  };
-  keyFeatures?: string[];
-  hardwareBuildQuality?: {
-    totalDegreesOfFreedom: string;
-    payloadCapacity: string;
-    batteryCapacityRuntime: string;
-    charger: string;
-    sensorsIncluded: string[];
-    interfaces: string[];
-  };
-  softwareEcosystem?: {
-    rosSupport: string;
-    sdkLanguages: string[];
-    openSourceRepos: string;
-    aiFrameworksSupported: string[];
-    apiDocumentationQuality: string;
-  };
-  supplierReliability?: {
-    warranty: {
-      duration: string;
-      coverage: string;
-    };
-    postSalesSupport: string;
-    trackRecord: string;
-  };
-  highResPhotos?: string[];
-}
+import type { Robot } from '@/types/robot';
 
 interface RobotDetailTemplateProps {
-  robot: ExtendedRobot;
+  robot: Robot;
 }
 
 export default function RobotDetailTemplate({ robot }: RobotDetailTemplateProps) {
