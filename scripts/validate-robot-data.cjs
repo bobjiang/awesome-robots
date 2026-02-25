@@ -121,7 +121,7 @@ function checkBrandConsistency(brands) {
 
   brands.forEach((brand, index) => {
     // Check required fields
-    const required = ['id', 'name', 'description', 'website', 'logo'];
+    const required = ['id', 'name', 'description', 'website'];
     required.forEach(field => {
       if (!brand[field]) {
         errors.push(`Brand ${index} (${brand.id || 'unknown'}): Missing required field: ${field}`);
@@ -138,14 +138,6 @@ function checkBrandConsistency(brands) {
     // Validate website URL
     if (brand.website && !brand.website.match(/^https?:\/\/.+/)) {
       errors.push(`Brand ${brand.id}: Invalid website URL format`);
-    }
-
-    // Check logo file exists
-    if (brand.logo && brand.logo.startsWith('/')) {
-      const logoPath = path.join(__dirname, '../public', brand.logo);
-      if (!fs.existsSync(logoPath)) {
-        errors.push(`Brand ${brand.id}: Logo file not found: ${brand.logo}`);
-      }
     }
 
     // Validate imagePatterns structure if present

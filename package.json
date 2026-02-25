@@ -7,7 +7,7 @@
     "dev": "next dev --turbopack",
     "build": "npm run pre-build && velite build && next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint .",
     "analyze": "ANALYZE=true next build",
     "validate-data": "node scripts/validate-robot-data.cjs",
     "update-configs": "node scripts/update-image-patterns.cjs",
@@ -46,7 +46,6 @@
     "zod": "^4.0.17"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3",
     "@next/bundle-analyzer": "^16.1.1",
     "@tailwindcss/postcss": "^4",
     "@testing-library/jest-dom": "^6.9.1",
