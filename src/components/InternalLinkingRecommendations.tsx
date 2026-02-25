@@ -36,7 +36,7 @@ export default function InternalLinkingRecommendations({
    */
   const calculateSimilarityScore = (robot: Robot): number => {
     let score = 0;
-    let reason = '';
+    const reason = '';
 
     // Same category (highest weight)
     if (robot.category === currentRobot.category) {
