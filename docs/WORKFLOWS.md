@@ -289,6 +289,52 @@ graph LR
 
 ---
 
+## 📬 Newsletter & Distribution
+
+### Beehiiv Newsletter
+- **Component**: `src/components/NewsletterSignup.tsx`
+- Embeds beehiiv subscription form via iframe
+- Available on the site for email newsletter signups
+
+### Discord Newsletter
+- **Script**: `scripts/send-weekly-digest-newsletter.ts`
+- Automatically sends when a new digest post is pushed to main
+- Parses the digest + all daily posts from the last 7 days
+- Splits messages to respect Discord's 2000-character limit
+- **Workflow**: `.github/workflows/weekly-digest-newsletter.yml`
+- **Required secret**: `DISCORD_NEWSLETTER_WEBHOOK_URL`
+
+### Weekly Digest Newsletter Workflow
+
+**File**: `.github/workflows/weekly-digest-newsletter.yml`
+**Trigger**: Push to `main` matching `content/blog/awesome-robots-digest-issue-*.md`, or manual `workflow_dispatch`
+
+**What it does:**
+1. Detects new digest posts pushed to main
+2. Parses the digest and collects daily posts from the last 7 days
+3. Sends formatted newsletter to Discord webhook
+4. Handles Discord's 2000-character message limit by splitting into chunks
+
+### Claude Code PR Review Workflow
+
+**File**: `.github/workflows/claude-code-review.yml`
+**Trigger**: Pull requests (opened, synchronized, ready_for_review, reopened)
+
+**What it does:**
+1. Runs automated code review on every PR using `anthropics/claude-code-action@v1`
+2. Posts review comments directly on the PR
+3. **Required secret**: `CLAUDE_CODE_OAUTH_TOKEN`
+
+---
+
+## 🔗 Data Sources
+
+- **IEEE TV RSS**: https://ieeetv.ieee.org/channel_rss/channel_77/rss
+- **The Robot Report RSS**: https://www.therobotreport.com/feed/
+- **arXiv cs.RO**: https://arxiv.org/list/cs.RO/new
+
+---
+
 ## 🎯 Best Practices
 
 1. **Review PRs Promptly**: Discovery data is time-sensitive
@@ -303,9 +349,9 @@ graph LR
 
 - **Setup Guide**: `docs/SETUP.md`
 - **Placeholder Documentation**: `docs/GITHUB-ACTIONS-PLACEHOLDERS.md`
-- **Project Documentation**: `docs/CLAUDE.md`
-- **Robot Addition Guide**: `docs/2026-01-26-new-robots-added.md`
+- **Adding Robots**: `docs/ADDING-ROBOTS.md`
+- **SEO Guide**: `docs/SEO.md`
 
 ---
 
-**Last Updated**: January 26, 2026
+**Last Updated**: February 26, 2026
