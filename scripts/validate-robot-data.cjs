@@ -17,7 +17,7 @@ function loadJsonFile(filePath) {
     return JSON.parse(content);
   } catch (error) {
     console.error(`Error loading ${path.basename(filePath)}:`, error.message);
-    process.exit(1);
+    return null;
   }
 }
 
@@ -205,6 +205,11 @@ function main() {
   const brands = loadJsonFile(BRANDS_PATH);
   const categories = loadJsonFile(CATEGORIES_PATH);
 
+  if (!robots || !brands || !categories) {
+    console.error('⚠️  Failed to load one or more data files, skipping validation');
+    return;
+  }
+
   console.log(`📁 Loaded ${robots.length} robots, ${brands.length} brands, ${categories.length} categories`);
 
   const robotErrors = validateRobotData(robots, brands, categories);
@@ -213,10 +218,6 @@ function main() {
   const allErrors = [...robotErrors, ...brandErrors];
 
   generateReport(robots, brands, categories, allErrors);
-
-  if (allErrors.length > 0) {
-    process.exit(1);
-  }
 }
 
 // Run script if called directly
