@@ -254,9 +254,32 @@ export function filterRobotsByQuery(robots: Robot[], query: string): Robot[] {
  * @example
  * sortRobots(allRobots, 'price', 'asc') // Cheapest to most expensive
  */
+function safeDateToMs(value?: string): number | null {
+  if (!value) return null;
+  const ms = Date.parse(value);
+  return Number.isFinite(ms) ? ms : null;
+}
+
+/**
+ * Returns the best available "shipping-first" timestamp for a robot.
+ * Priority: shippingAt → releasedAt → announcedAt.
+ */
+export function getRobotShippingSortMs(robot: Robot): number | null {
+  const shipping = safeDateToMs(robot.timeline?.shippingAt);
+  if (shipping) return shipping;
+
+  const released = safeDateToMs(robot.timeline?.releasedAt);
+  if (released) return released;
+
+  const announced = safeDateToMs(robot.timeline?.announcedAt);
+  if (announced) return announced;
+
+  return null;
+}
+
 export function sortRobots(
   robots: Robot[],
-  sortBy: 'name' | 'price' | 'brand',
+  sortBy: 'name' | 'price' | 'brand' | 'shipping',
   order: 'asc' | 'desc' = 'asc'
 ): Robot[] {
   const sorted = [...robots].sort((a, b) => {
@@ -274,6 +297,25 @@ export function sortRobots(
         const bPrice = b.price.starting ?? Infinity;
         comparison = (typeof aPrice === 'number' ? aPrice : Infinity) -
                      (typeof bPrice === 'number' ? bPrice : Infinity);
+        break;
+      }
+      case 'shipping': {
+        const aMs = getRobotShippingSortMs(a);
+        const bMs = getRobotShippingSortMs(b);
+
+        // Robots missing shipping/release/announce dates are pushed to the bottom.
+        if (aMs === null && bMs === null) {
+          // Tie-breaker: cheaper first (stable + familiar)
+          const aPrice = typeof a.price.starting === 'number' ? a.price.starting : Infinity;
+          const bPrice = typeof b.price.starting === 'number' ? b.price.starting : Infinity;
+          comparison = aPrice - bPrice;
+        } else if (aMs === null) {
+          comparison = 1;
+        } else if (bMs === null) {
+          comparison = -1;
+        } else {
+          comparison = aMs - bMs;
+        }
         break;
       }
     }

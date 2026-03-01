@@ -6,6 +6,7 @@ import Layout from '@/components/Layout';
 import ProductCard from '@/components/ProductCard';
 import { Robot } from '@/types/robot';
 import { generateBreadcrumbSchema, generateCategoryFAQSchema } from '@/lib/structured-data';
+import { sortRobots } from '@/utils/robot-utils';
 import robots from '@/data/robots.json';
 
 export const metadata: Metadata = {
@@ -26,14 +27,12 @@ export const metadata: Metadata = {
 export default function QuadrupedRobotsPage() {
   const baseUrl = env.NEXT_PUBLIC_BASE_URL;
 
-  // Filter quadruped robots and sort by price
-  const quadrupedRobots = (robots as Robot[])
-    .filter(robot => robot.category === 'quadruped')
-    .sort((a, b) => {
-      const priceA = typeof a.price.starting === 'number' ? a.price.starting : 999999;
-      const priceB = typeof b.price.starting === 'number' ? b.price.starting : 999999;
-      return priceA - priceB;
-    });
+  // Filter quadruped robots and sort by shipping date (default)
+  const quadrupedRobots = sortRobots(
+    (robots as Robot[]).filter(robot => robot.category === 'quadruped'),
+    'shipping',
+    'desc'
+  );
 
   // Generate structured data
   const breadcrumbSchema = generateBreadcrumbSchema([
