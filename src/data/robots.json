@@ -175,7 +175,21 @@
       "SDK Documentation"
     ],
     "officialUrl": "https://www.unitree.com/go2",
-    "description": "New Creature of Embodied AI - Consumer/Education quadruped robot with advanced AI capabilities and robust performance for various terrains."
+    "description": "New Creature of Embodied AI - Consumer/Education quadruped robot with advanced AI capabilities and robust performance for various terrains.",
+    "timeline": {
+      "releasedAt": "2023-07-01"
+    },
+    "availability": {
+      "status": "commercial",
+      "orderLink": "https://shop.unitree.com/products/unitree-go2"
+    },
+    "sources": [
+      {
+        "kind": "official",
+        "url": "https://shop.unitree.com/products/unitree-go2"
+      }
+    ],
+    "lastVerifiedAt": "2026-03-02T02:50:46.106Z"
   },
   {
     "id": "unitree-go2-w",
@@ -389,7 +403,21 @@
       "SDK Documentation"
     ],
     "officialUrl": "https://www.unitree.com/g1",
-    "description": "Humanoid agent AI avatar - Advanced humanoid robot with high degrees of freedom and AI capabilities for research and development."
+    "description": "Humanoid agent AI avatar - Advanced humanoid robot with high degrees of freedom and AI capabilities for research and development.",
+    "timeline": {
+      "releasedAt": "2024-01-01"
+    },
+    "availability": {
+      "status": "commercial",
+      "orderLink": "https://shop.unitree.com/products/unitree-g1"
+    },
+    "sources": [
+      {
+        "kind": "official",
+        "url": "https://shop.unitree.com/products/unitree-g1"
+      }
+    ],
+    "lastVerifiedAt": "2026-03-02T02:50:46.106Z"
   },
   {
     "id": "unitree-h1",
@@ -1594,7 +1622,21 @@
       "/images/robots/high-res/deep-robotics-x30/x30-official-2.jpg"
     ],
     "officialUrl": "https://www.deeprobotics.cn/en/index/product3.html",
-    "description": "Professional industrial quadruped robot designed for extreme environments with advanced perception, autonomous navigation, and robust build quality for inspection, security, and mapping applications."
+    "description": "Professional industrial quadruped robot designed for extreme environments with advanced perception, autonomous navigation, and robust build quality for inspection, security, and mapping applications.",
+    "timeline": {
+      "releasedAt": "2023-01-01"
+    },
+    "availability": {
+      "status": "commercial",
+      "orderLink": "https://www.deeprobotics.cn/en/wap/product3.html"
+    },
+    "sources": [
+      {
+        "kind": "official",
+        "url": "https://www.deeprobotics.cn/en/wap/product3.html"
+      }
+    ],
+    "lastVerifiedAt": "2026-03-02T02:50:46.106Z"
   },
   {
     "id": "deep-robotics-lite3",
@@ -1695,7 +1737,21 @@
       "/images/robots/high-res/deep-robotics-lite3/lite3-official-2.jpg"
     ],
     "officialUrl": "https://www.deeprobotics.cn/en/index/product1.html",
-    "description": "Advanced bionic quadruped robot designed for education, research, and development with exceptional locomotion capabilities, modular design, and comprehensive SDK support."
+    "description": "Advanced bionic quadruped robot designed for education, research, and development with exceptional locomotion capabilities, modular design, and comprehensive SDK support.",
+    "timeline": {
+      "releasedAt": "2022-01-01"
+    },
+    "availability": {
+      "status": "commercial",
+      "orderLink": "https://www.deeprobotics.cn/en/wap/product1.html"
+    },
+    "sources": [
+      {
+        "kind": "official",
+        "url": "https://www.deeprobotics.cn/en/wap/product1.html"
+      }
+    ],
+    "lastVerifiedAt": "2026-03-02T02:50:46.106Z"
   },
   {
     "id": "deep-robotics-lynx",
@@ -2694,7 +2750,21 @@
       "/images/robots/boston-dynamics/spot/spot-1.jpg"
     ],
     "officialUrl": "https://bostondynamics.com/products/spot/",
-    "description": "Industry-leading quadruped robot with 360° terrain sensing, autonomous navigation, and robust payload integration for industrial inspection and mobile sensing applications."
+    "description": "Industry-leading quadruped robot with 360° terrain sensing, autonomous navigation, and robust payload integration for industrial inspection and mobile sensing applications.",
+    "timeline": {
+      "releasedAt": "2020-06-01"
+    },
+    "availability": {
+      "status": "commercial",
+      "orderLink": "https://www.bostondynamics.com/products/spot"
+    },
+    "sources": [
+      {
+        "kind": "official",
+        "url": "https://www.bostondynamics.com/products/spot"
+      }
+    ],
+    "lastVerifiedAt": "2026-03-02T02:50:46.106Z"
   },
   {
     "id": "boston-dynamics-atlas",
@@ -2898,7 +2968,21 @@
       "/images/robots/anybotics/anymal/anymal-1.jpg"
     ],
     "officialUrl": "https://www.anybotics.com/robotics/anymal/",
-    "description": "Autonomous robotic inspection solution designed for harsh industrial environments, featuring IP67 rating, multi-sensor capabilities, and modular design for reliable industrial monitoring and equipment health assessment."
+    "description": "Autonomous robotic inspection solution designed for harsh industrial environments, featuring IP67 rating, multi-sensor capabilities, and modular design for reliable industrial monitoring and equipment health assessment.",
+    "timeline": {
+      "releasedAt": "2019-01-01"
+    },
+    "availability": {
+      "status": "commercial",
+      "orderLink": "https://www.anybotics.com/anymal/"
+    },
+    "sources": [
+      {
+        "kind": "official",
+        "url": "https://www.anybotics.com/anymal/"
+      }
+    ],
+    "lastVerifiedAt": "2026-03-02T02:50:46.106Z"
   },
   {
     "id": "ghost-robotics-vision-60",
@@ -9818,7 +9902,9 @@
     },
     "softwareEcosystem": {
       "rosSupport": "Not publicly disclosed",
-      "sdkLanguages": ["Not publicly disclosed"],
+      "sdkLanguages": [
+        "Not publicly disclosed"
+      ],
       "openSourceRepos": "No",
       "aiFrameworksSupported": [
         "NVIDIA Isaac platform",
@@ -9914,7 +10000,9 @@
     },
     "softwareEcosystem": {
       "rosSupport": "Not publicly disclosed",
-      "sdkLanguages": ["Not publicly disclosed"],
+      "sdkLanguages": [
+        "Not publicly disclosed"
+      ],
       "openSourceRepos": "No",
       "aiFrameworksSupported": [
         "Vision-Language-Model (VLM)",
@@ -10010,7 +10098,9 @@
     },
     "softwareEcosystem": {
       "rosSupport": "Not publicly disclosed",
-      "sdkLanguages": ["Neuraverse platform"],
+      "sdkLanguages": [
+        "Neuraverse platform"
+      ],
       "openSourceRepos": "No",
       "aiFrameworksSupported": [
         "Natural language processing",
@@ -10109,7 +10199,9 @@
     },
     "softwareEcosystem": {
       "rosSupport": "Not publicly disclosed",
-      "sdkLanguages": ["Neuraverse platform"],
+      "sdkLanguages": [
+        "Neuraverse platform"
+      ],
       "openSourceRepos": "No",
       "aiFrameworksSupported": [
         "Multimodal cognitive interaction",
@@ -10208,7 +10300,9 @@
     },
     "softwareEcosystem": {
       "rosSupport": "Not publicly disclosed",
-      "sdkLanguages": ["SwitchBot platform (TBA)"],
+      "sdkLanguages": [
+        "SwitchBot platform (TBA)"
+      ],
       "openSourceRepos": "No",
       "aiFrameworksSupported": [
         "OmniSense VLA model",
@@ -10303,7 +10397,9 @@
     },
     "softwareEcosystem": {
       "rosSupport": "Not publicly disclosed",
-      "sdkLanguages": ["Proprietary surgical software"],
+      "sdkLanguages": [
+        "Proprietary surgical software"
+      ],
       "openSourceRepos": "No",
       "aiFrameworksSupported": [
         "Future: NVIDIA Isaac Healthcare",
@@ -10397,7 +10493,9 @@
     },
     "softwareEcosystem": {
       "rosSupport": "Not publicly disclosed",
-      "sdkLanguages": ["Open platform (TBA)"],
+      "sdkLanguages": [
+        "Open platform (TBA)"
+      ],
       "openSourceRepos": "Developer platform",
       "aiFrameworksSupported": [
         "Real-time data capture",
@@ -10494,7 +10592,9 @@
     },
     "softwareEcosystem": {
       "rosSupport": "Not publicly disclosed",
-      "sdkLanguages": ["Contact manufacturer"],
+      "sdkLanguages": [
+        "Contact manufacturer"
+      ],
       "openSourceRepos": "No",
       "aiFrameworksSupported": [
         "Large Language Model",
@@ -11154,7 +11254,9 @@
     },
     "softwareEcosystem": {
       "rosSupport": "Proprietary Geek+ Brain platform",
-      "sdkLanguages": ["Proprietary"],
+      "sdkLanguages": [
+        "Proprietary"
+      ],
       "openSourceRepos": "No",
       "aiFrameworksSupported": [
         "NVIDIA Isaac",
@@ -11263,7 +11365,11 @@
     },
     "softwareEcosystem": {
       "rosSupport": "ROS2 Humble with modular deployment framework and Nav2 navigation stack",
-      "sdkLanguages": ["Python 3.10", "C++ 17", "Shell"],
+      "sdkLanguages": [
+        "Python 3.10",
+        "C++ 17",
+        "Shell"
+      ],
       "openSourceRepos": "https://github.com/Roboparty/roboto_origin",
       "aiFrameworksSupported": [
         "NVIDIA Isaac Sim 5.1.0",
@@ -11387,7 +11493,10 @@
     },
     "softwareEcosystem": {
       "rosSupport": "ROS2 Humble (via underlying AgiBot D1 platform with AimRT middleware)",
-      "sdkLanguages": ["C++", "Python"],
+      "sdkLanguages": [
+        "C++",
+        "Python"
+      ],
       "openSourceRepos": "No",
       "aiFrameworksSupported": [
         "FF EAI Brain platform",
@@ -11417,7 +11526,10 @@
       "batteryType": "Hot-swappable",
       "material": "Aluminum alloy + high-strength engineering plastics",
       "ingressProtection": "IP54",
-      "connectivity": ["WiFi", "5G (optional)"],
+      "connectivity": [
+        "WiFi",
+        "5G (optional)"
+      ],
       "autonomousPatrol": "Yes",
       "autonomousFollowing": "Yes",
       "configurations": "Quadruped and wheeled versions"
@@ -11528,7 +11640,11 @@
       "dof": 25,
       "payload": "40 kg (dual-arm)",
       "battery": "700 Wh standard / 2,000 Wh industrial",
-      "sensors": ["360-degree LiDAR", "6 HD cameras", "Force sensors"],
+      "sensors": [
+        "360-degree LiDAR",
+        "6 HD cameras",
+        "Force sensors"
+      ],
       "maxSpeed": "7 km/h walking"
     },
     "features": [
@@ -11724,7 +11840,11 @@
       "dof": 30,
       "payload": "10 kg per arm",
       "maxSpeed": "1.5 m/s standard, 4 m/s maximum",
-      "sensors": ["LiDAR", "Depth cameras", "Wide-angle cameras"],
+      "sensors": [
+        "LiDAR",
+        "Depth cameras",
+        "Wide-angle cameras"
+      ],
       "ingressProtection": "IP66",
       "operatingTemperature": "-20 to +55 degrees Celsius",
       "computing": "275 TOPS"
@@ -11829,7 +11949,11 @@
       "dof": 8,
       "payload": "15 kg effective, 50 kg maximum",
       "maxSpeed": "5 m/s tested, 2 m/s operating",
-      "sensors": ["Twin 96-line LiDAR", "Wide-angle cameras", "Depth perception"],
+      "sensors": [
+        "Twin 96-line LiDAR",
+        "Wide-angle cameras",
+        "Depth perception"
+      ],
       "ingressProtection": "IP66",
       "operatingTemperature": "-20 to +55 degrees Celsius",
       "computing": "Dual octa-core 64-bit x3, 16GB RAM"

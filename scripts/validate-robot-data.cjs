@@ -56,6 +56,37 @@ function validateRobotSchema(robot) {
     errors.push(`Invalid category: ${robot.category}`);
   }
 
+  // Timeline / shipping validations (new)
+  if (robot.timeline) {
+    const { announcedAt, releasedAt, shippingAt } = robot.timeline;
+    [
+      ['timeline.announcedAt', announcedAt],
+      ['timeline.releasedAt', releasedAt],
+      ['timeline.shippingAt', shippingAt],
+    ].forEach(([field, value]) => {
+      if (value && Number.isNaN(Date.parse(value))) {
+        errors.push(`${field} must be a valid ISO date string (got: ${value})`);
+      }
+    });
+  }
+
+  // If a robot is marked commercial, require shippingAt or shippingWindow (shipping-first site contract)
+  const status = robot.availability && robot.availability.status;
+  if (status === 'commercial') {
+    const hasShippingAt = Boolean(robot.timeline && robot.timeline.shippingAt);
+    const hasShippingWindow = Boolean(robot.timeline && robot.timeline.shippingWindow);
+    const hasReleasedAt = Boolean(robot.timeline && robot.timeline.releasedAt);
+
+    // We allow releasedAt as a temporary fallback while we backfill, but encourage shippingAt/window.
+    if (!hasShippingAt && !hasShippingWindow && !hasReleasedAt) {
+      errors.push('Commercial robots must include timeline.shippingAt or timeline.shippingWindow (or at minimum timeline.releasedAt as temporary fallback)');
+    }
+
+    if (!robot.sources || !Array.isArray(robot.sources) || robot.sources.length === 0) {
+      errors.push('Commercial robots should include at least 1 source URL (sources[])');
+    }
+  }
+
   return errors;
 }
 
