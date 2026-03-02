@@ -218,16 +218,104 @@ export default async function RobotDetailPage({ params }: RobotDetailPageProps) 
               robotBrand={robot.brand}
             />
 
-            {robot.officialUrl && (
-              <Link
-                href={robot.officialUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-center border-2 border-gray-300 text-gray-700 py-3 rounded-lg hover:border-gray-400 hover:text-gray-900 transition-colors"
-              >
-                View Official Page →
-              </Link>
-            )}
+            <div className="mt-4 space-y-3">
+              {robot.availability?.orderLink && (
+                <Link
+                  href={robot.availability.orderLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-center bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition-colors font-medium"
+                >
+                  Order / Buy Now →
+                </Link>
+              )}
+
+              {robot.officialUrl && (
+                <Link
+                  href={robot.officialUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-center border-2 border-gray-300 text-gray-700 py-3 rounded-lg hover:border-gray-400 hover:text-gray-900 transition-colors"
+                >
+                  View Official Page →
+                </Link>
+              )}
+
+              {(robot.timeline || robot.availability || robot.lastVerifiedAt) && (
+                <div className="bg-gray-50 rounded-lg p-4 text-sm text-gray-700">
+                  <div className="font-semibold text-gray-900 mb-2">Availability & Timeline</div>
+
+                  {robot.availability?.status && (
+                    <div className="flex justify-between gap-4">
+                      <span className="text-gray-500">Status</span>
+                      <span className="font-medium">{robot.availability.status}</span>
+                    </div>
+                  )}
+
+                  {robot.availability?.regions && robot.availability.regions.length > 0 && (
+                    <div className="flex justify-between gap-4 mt-1">
+                      <span className="text-gray-500">Regions</span>
+                      <span className="font-medium text-right">{robot.availability.regions.join(', ')}</span>
+                    </div>
+                  )}
+
+                  {robot.timeline?.shippingAt && (
+                    <div className="flex justify-between gap-4 mt-1">
+                      <span className="text-gray-500">Shipping since</span>
+                      <span className="font-medium">{robot.timeline.shippingAt}</span>
+                    </div>
+                  )}
+
+                  {(!robot.timeline?.shippingAt && robot.timeline?.shippingWindow) && (
+                    <div className="flex justify-between gap-4 mt-1">
+                      <span className="text-gray-500">Shipping window</span>
+                      <span className="font-medium">{robot.timeline.shippingWindow}</span>
+                    </div>
+                  )}
+
+                  {robot.timeline?.releasedAt && (
+                    <div className="flex justify-between gap-4 mt-1">
+                      <span className="text-gray-500">Released</span>
+                      <span className="font-medium">{robot.timeline.releasedAt}</span>
+                    </div>
+                  )}
+
+                  {robot.timeline?.announcedAt && (
+                    <div className="flex justify-between gap-4 mt-1">
+                      <span className="text-gray-500">Announced</span>
+                      <span className="font-medium">{robot.timeline.announcedAt}</span>
+                    </div>
+                  )}
+
+                  {robot.lastVerifiedAt && (
+                    <div className="flex justify-between gap-4 mt-2 pt-2 border-t border-gray-200">
+                      <span className="text-gray-500">Last verified</span>
+                      <span className="font-medium">{robot.lastVerifiedAt}</span>
+                    </div>
+                  )}
+
+                  {robot.sources && robot.sources.length > 0 && (
+                    <div className="mt-3 pt-2 border-t border-gray-200">
+                      <div className="text-gray-500 mb-1">Sources</div>
+                      <ul className="list-disc pl-5 space-y-1">
+                        {robot.sources.slice(0, 5).map((s, i) => (
+                          <li key={i}>
+                            <Link
+                              href={s.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-blue-600 hover:underline break-all"
+                            >
+                              {s.kind}: {s.url}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
           </div>
         </div>
 
