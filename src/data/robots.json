@@ -189,7 +189,7 @@
         "url": "https://shop.unitree.com/products/unitree-go2"
       }
     ],
-    "lastVerifiedAt": "2026-03-02T02:50:46.106Z"
+    "lastVerifiedAt": "2026-03-02T23:16:42.039Z"
   },
   {
     "id": "unitree-go2-w",
@@ -417,7 +417,7 @@
         "url": "https://shop.unitree.com/products/unitree-g1"
       }
     ],
-    "lastVerifiedAt": "2026-03-02T02:50:46.106Z"
+    "lastVerifiedAt": "2026-03-02T23:16:42.039Z"
   },
   {
     "id": "unitree-h1",
@@ -567,7 +567,25 @@
       "/images/robots/high-res/unitree-h1/h1-official-1.jpg"
     ],
     "officialUrl": "https://www.unitree.com/h1",
-    "description": "Unitree's First Universal Humanoid Robot - Full-size humanoid robot capable of running and navigating complex terrains with advanced mobility."
+    "description": "Unitree's First Universal Humanoid Robot - Full-size humanoid robot capable of running and navigating complex terrains with advanced mobility.",
+    "timeline": {
+      "releasedAt": "2023-01-01"
+    },
+    "availability": {
+      "status": "commercial",
+      "orderLink": "https://shop.unitree.com/products/unitree-h1"
+    },
+    "sources": [
+      {
+        "kind": "official",
+        "url": "https://shop.unitree.com/products/unitree-h1"
+      },
+      {
+        "kind": "official",
+        "url": "https://www.unitree.com/h1/"
+      }
+    ],
+    "lastVerifiedAt": "2026-03-02T23:16:42.039Z"
   },
   {
     "id": "unitree-b2",
@@ -698,7 +716,25 @@
       "/images/robots/high-res/unitree-go1/go1-official-2.jpg"
     ],
     "officialUrl": "https://www.unitree.com/b2",
-    "description": "Go Beyond the Limits - Industrial quadruped robot designed for demanding environments and heavy-duty applications."
+    "description": "Go Beyond the Limits - Industrial quadruped robot designed for demanding environments and heavy-duty applications.",
+    "timeline": {
+      "releasedAt": "2024-01-01"
+    },
+    "availability": {
+      "status": "commercial",
+      "orderLink": "https://shop.unitree.com/products/unitree-b2"
+    },
+    "sources": [
+      {
+        "kind": "official",
+        "url": "https://shop.unitree.com/products/unitree-b2"
+      },
+      {
+        "kind": "official",
+        "url": "https://www.unitree.com/b2/"
+      }
+    ],
+    "lastVerifiedAt": "2026-03-02T23:16:42.039Z"
   },
   {
     "id": "unitree-a2",
@@ -1636,7 +1672,7 @@
         "url": "https://www.deeprobotics.cn/en/wap/product3.html"
       }
     ],
-    "lastVerifiedAt": "2026-03-02T02:50:46.106Z",
+    "lastVerifiedAt": "2026-03-02T23:16:42.039Z",
     "specifications": {},
     "features": []
   },
@@ -1753,7 +1789,7 @@
         "url": "https://www.deeprobotics.cn/en/wap/product1.html"
       }
     ],
-    "lastVerifiedAt": "2026-03-02T02:50:46.106Z",
+    "lastVerifiedAt": "2026-03-02T23:16:42.039Z",
     "specifications": {},
     "features": []
   },
@@ -2770,7 +2806,7 @@
         "url": "https://www.bostondynamics.com/products/spot"
       }
     ],
-    "lastVerifiedAt": "2026-03-02T02:50:46.106Z"
+    "lastVerifiedAt": "2026-03-02T23:16:42.039Z"
   },
   {
     "id": "boston-dynamics-atlas",
@@ -2988,7 +3024,7 @@
         "url": "https://www.anybotics.com/anymal/"
       }
     ],
-    "lastVerifiedAt": "2026-03-02T02:50:46.106Z"
+    "lastVerifiedAt": "2026-03-02T23:16:42.039Z"
   },
   {
     "id": "ghost-robotics-vision-60",
@@ -8093,7 +8129,25 @@
       ]
     },
     "specifications": {},
-    "features": []
+    "features": [],
+    "timeline": {
+      "releasedAt": "2026-01-01"
+    },
+    "availability": {
+      "status": "commercial",
+      "orderLink": "https://shop.unitree.com/products/unitree-h2"
+    },
+    "sources": [
+      {
+        "kind": "official",
+        "url": "https://shop.unitree.com/products/unitree-h2"
+      },
+      {
+        "kind": "official",
+        "url": "https://www.unitree.com/mobile/H2/"
+      }
+    ],
+    "lastVerifiedAt": "2026-03-02T23:16:42.039Z"
   },
   {
     "id": "agibot-a2",

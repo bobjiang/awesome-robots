@@ -61,6 +61,36 @@ function main() {
       sources: [{ kind: 'official', url: 'https://shop.unitree.com/products/unitree-g1' }],
       timeline: { releasedAt: '2024-01-01' },
     },
+
+    // Unitree (additional backfill)
+    'unitree-b2': {
+      availability: { status: 'commercial', orderLink: 'https://shop.unitree.com/products/unitree-b2' },
+      sources: [
+        { kind: 'official', url: 'https://shop.unitree.com/products/unitree-b2' },
+        { kind: 'official', url: 'https://www.unitree.com/b2/' },
+      ],
+      // NOTE: Unitree does not publish a precise first-shipping date on the product page.
+      // We use releasedAt as a stable fallback for shipping sort.
+      timeline: { releasedAt: '2024-01-01' },
+    },
+    'unitree-h1': {
+      availability: { status: 'commercial', orderLink: 'https://shop.unitree.com/products/unitree-h1' },
+      sources: [
+        { kind: 'official', url: 'https://shop.unitree.com/products/unitree-h1' },
+        { kind: 'official', url: 'https://www.unitree.com/h1/' },
+      ],
+      // NOTE: Use a conservative releasedAt placeholder until we have an explicit shippingAt.
+      timeline: { releasedAt: '2023-01-01' },
+    },
+    'unitree-h2': {
+      availability: { status: 'commercial', orderLink: 'https://shop.unitree.com/products/unitree-h2' },
+      sources: [
+        { kind: 'official', url: 'https://shop.unitree.com/products/unitree-h2' },
+        { kind: 'official', url: 'https://www.unitree.com/mobile/H2/' },
+      ],
+      // NOTE: Use releasedAt placeholder until we can verify the first shipping date.
+      timeline: { releasedAt: '2026-01-01' },
+    },
     'boston-dynamics-spot': {
       availability: { status: 'commercial', orderLink: 'https://www.bostondynamics.com/products/spot' },
       sources: [{ kind: 'official', url: 'https://www.bostondynamics.com/products/spot' }],
