@@ -25,10 +25,19 @@ export interface DiscoveredRobot {
 
   // Metadata
   discovered_at: string;
-  source_type: 'ieee' | 'robotreport' | 'arxiv';
+  /**
+   * Source taxonomy for where this robot mention was found.
+   * Note: existing discovery files include "news".
+   */
+  source_type: 'ieee' | 'robotreport' | 'arxiv' | 'news' | 'press_release' | 'company';
   confidence_score: number;
   quality_score: QualityScore;
   description?: string;
+
+  // Shipping/availability signals (used during promotion to canonical robots.json)
+  shipping_signal?: 'shipping_now' | 'shipping_announced' | 'preorder' | 'pilot_only' | 'unknown';
+  shippingAt_guess?: string | null; // ISO date (best-effort)
+  shippingEvidenceLinks?: string[];
 }
 
 export interface FetchError {
