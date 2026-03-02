@@ -12,6 +12,36 @@ export interface BaseRobot {
       price: number | 'request';
     }>;
   };
+
+  /**
+   * Timeline metadata used for “latest” sorting.
+   *
+   * shippingAt is the primary sort key (newest shipping first).
+   * If shippingAt is missing, we fall back to releasedAt then announcedAt.
+   */
+  timeline?: {
+    announcedAt?: string; // ISO date
+    releasedAt?: string; // ISO date
+    shippingAt?: string; // ISO date
+    shippingWindow?: string; // e.g. "2026 Q2" when exact shippingAt is unknown
+  };
+
+  /** Commercial availability metadata (optional, but useful for filters/badges). */
+  availability?: {
+    status?: 'research' | 'prototype' | 'commercial';
+    regions?: string[];
+    orderLink?: string | null;
+  };
+
+  /** Evidence links for facts like pricing + shipping dates. */
+  sources?: Array<{
+    kind: 'official' | 'retailer' | 'press' | 'review';
+    url: string;
+  }>;
+
+  /** ISO date when we last verified pricing/specs/shipping info. */
+  lastVerifiedAt?: string;
+
   specifications: Record<string, unknown>;
   features: string[];
   images: string[];
