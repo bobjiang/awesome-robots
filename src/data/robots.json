@@ -1636,7 +1636,9 @@
         "url": "https://www.deeprobotics.cn/en/wap/product3.html"
       }
     ],
-    "lastVerifiedAt": "2026-03-02T02:50:46.106Z"
+    "lastVerifiedAt": "2026-03-02T02:50:46.106Z",
+    "specifications": {},
+    "features": []
   },
   {
     "id": "deep-robotics-lite3",
@@ -1751,7 +1753,9 @@
         "url": "https://www.deeprobotics.cn/en/wap/product1.html"
       }
     ],
-    "lastVerifiedAt": "2026-03-02T02:50:46.106Z"
+    "lastVerifiedAt": "2026-03-02T02:50:46.106Z",
+    "specifications": {},
+    "features": []
   },
   {
     "id": "deep-robotics-lynx",
@@ -1940,7 +1944,9 @@
       "/images/robots/high-res/deep-robotics-dr01/dr01-official-2.jpg"
     ],
     "officialUrl": "https://www.deeprobotics.cn/en/wap/humanoid.html",
-    "description": "Revolutionary embodied intelligence humanoid robot featuring advanced AI capabilities, autonomous learning, and exceptional mobility for next-generation industrial and research applications."
+    "description": "Revolutionary embodied intelligence humanoid robot featuring advanced AI capabilities, autonomous learning, and exceptional mobility for next-generation industrial and research applications.",
+    "specifications": {},
+    "features": []
   },
   {
     "id": "ubtech-walker-s2",
@@ -4093,7 +4099,8 @@
       "/images/robots/booster-t1.webp"
     ],
     "officialUrl": "https://www.boosterobotics.com/booster-t1/",
-    "description": "T1 is Booster Robotics' humanoid robot designed specifically for developers. Made to be lightweight, flexible, and durable, it serves as a platform for research, education, and embodied intelligence development."
+    "description": "T1 is Booster Robotics' humanoid robot designed specifically for developers. Made to be lightweight, flexible, and durable, it serves as a platform for research, education, and embodied intelligence development.",
+    "specifications": {}
   },
   {
     "id": "booster-k1",
@@ -4177,7 +4184,8 @@
       "/images/robots/booster-k1.webp"
     ],
     "officialUrl": "https://www.boosterobotics.com/booster-k1/",
-    "description": "K1 is Booster Robotics' Brazil RoboCup Champion humanoid robot. Designed to be safe, reliable, and education-empowering, it features a compact size with powerful computing capabilities, making it ideal for competitive robotics and educational applications."
+    "description": "K1 is Booster Robotics' Brazil RoboCup Champion humanoid robot. Designed to be safe, reliable, and education-empowering, it features a compact size with powerful computing capabilities, making it ideal for competitive robotics and educational applications.",
+    "specifications": {}
   },
   {
     "id": "tesla-optimus-gen3",
@@ -7121,9 +7129,10 @@
     "chineseBrand": "星海图（GALAXEA AI）",
     "category": "humanoid",
     "price": {
-      "starting": null,
+      "starting": "request",
       "currency": "USD",
-      "note": "Contact manufacturer - Estimated $10,000-$20,000 range based on market positioning"
+      "note": "Contact manufacturer - Estimated $10,000-$20,000 range based on market positioning",
+      "models": []
     },
     "images": [
       "/images/robots/galaxea-r1pro/robot-1.png"
@@ -7236,7 +7245,16 @@
     },
     "pricingInfo": {},
     "manuallyEnriched": true,
-    "enrichedAt": "2025-10-20T04:33:32.369Z"
+    "enrichedAt": "2025-10-20T04:33:32.369Z",
+    "specifications": {},
+    "features": [],
+    "officialUrl": "https://github.com/OpenRobotLab/OpenLoong",
+    "sources": [
+      {
+        "kind": "official",
+        "url": "https://github.com/OpenRobotLab/OpenLoong"
+      }
+    ]
   },
   {
     "id": "openloong-kuavo-my",
@@ -7246,9 +7264,10 @@
     "chineseBrand": "乐聚机器人",
     "category": "humanoid",
     "price": {
-      "starting": null,
+      "starting": "request",
       "currency": "CNY",
-      "note": "Contact Leju Robotics for commercial pricing"
+      "note": "Contact Leju Robotics for commercial pricing",
+      "models": []
     },
     "images": [
       "/images/robots/leju-kuavo-my/robot-1.png"
@@ -7333,7 +7352,16 @@
     },
     "pricingInfo": {},
     "manuallyEnriched": true,
-    "enrichedAt": "2025-10-20T04:33:32.369Z"
+    "enrichedAt": "2025-10-20T04:33:32.369Z",
+    "specifications": {},
+    "features": [],
+    "officialUrl": "https://github.com/OpenRobotLab/OpenLoong",
+    "sources": [
+      {
+        "kind": "official",
+        "url": "https://github.com/OpenRobotLab/OpenLoong"
+      }
+    ]
   },
   {
     "id": "openloong-sa01",
@@ -7345,7 +7373,8 @@
     "price": {
       "starting": 5400,
       "currency": "USD",
-      "note": "$5,400 USD - Professional-grade open-source platform for education/research"
+      "note": "$5,400 USD - Professional-grade open-source platform for education/research",
+      "models": []
     },
     "images": [
       "/images/robots/engineai-sa01/robot-1.png"
@@ -7425,7 +7454,16 @@
     },
     "pricingInfo": {},
     "manuallyEnriched": true,
-    "enrichedAt": "2025-10-20T04:33:32.369Z"
+    "enrichedAt": "2025-10-20T04:33:32.369Z",
+    "specifications": {},
+    "features": [],
+    "officialUrl": "https://github.com/OpenRobotLab/OpenLoong",
+    "sources": [
+      {
+        "kind": "official",
+        "url": "https://github.com/OpenRobotLab/OpenLoong"
+      }
+    ]
   },
   {
     "id": "openloong-pioneer-k2-forerunner-k2",
@@ -7435,9 +7473,10 @@
     "chineseBrand": "上海开普勒探索机器人有限公司",
     "category": "humanoid",
     "price": {
-      "starting": null,
+      "starting": "request",
       "currency": "CNY",
-      "note": "Contact Kepler for enterprise pricing - Industrial-grade pricing expected"
+      "note": "Contact Kepler for enterprise pricing - Industrial-grade pricing expected",
+      "models": []
     },
     "images": [
       "/images/robots/kepler-k2/robot-1.jpg"
@@ -7515,7 +7554,16 @@
     "technicalDetails": {},
     "pricingInfo": {},
     "manuallyEnriched": true,
-    "enrichedAt": "2025-10-20T04:33:32.369Z"
+    "enrichedAt": "2025-10-20T04:33:32.369Z",
+    "specifications": {},
+    "features": [],
+    "officialUrl": "https://github.com/OpenRobotLab/OpenLoong",
+    "sources": [
+      {
+        "kind": "official",
+        "url": "https://github.com/OpenRobotLab/OpenLoong"
+      }
+    ]
   },
   {
     "id": "openloong-astribot-s1",
@@ -7525,9 +7573,10 @@
     "chineseBrand": "星尘智能",
     "category": "humanoid",
     "price": {
-      "starting": null,
+      "starting": "request",
       "currency": "CNY",
-      "note": "Contact manufacturer - Expected to be competitively priced for consumer market"
+      "note": "Contact manufacturer - Expected to be competitively priced for consumer market",
+      "models": []
     },
     "images": [
       "/images/robots/astribot-s1/robot-1.png"
@@ -7609,7 +7658,16 @@
     },
     "pricingInfo": {},
     "manuallyEnriched": true,
-    "enrichedAt": "2025-10-20T04:33:32.369Z"
+    "enrichedAt": "2025-10-20T04:33:32.369Z",
+    "specifications": {},
+    "features": [],
+    "officialUrl": "https://github.com/OpenRobotLab/OpenLoong",
+    "sources": [
+      {
+        "kind": "official",
+        "url": "https://github.com/OpenRobotLab/OpenLoong"
+      }
+    ]
   },
   {
     "id": "openloong-tora-one",
@@ -7619,9 +7677,10 @@
     "chineseBrand": "帕西尼感知科技",
     "category": "humanoid",
     "price": {
-      "starting": null,
+      "starting": "request",
       "currency": "CNY",
-      "note": "Available for purchase on PaXini online store - Contact for pricing"
+      "note": "Available for purchase on PaXini online store - Contact for pricing",
+      "models": []
     },
     "images": [
       "/images/robots/paxini-tora-one/robot-1.png"
@@ -7703,7 +7762,16 @@
       "found": "¥0"
     },
     "manuallyEnriched": true,
-    "enrichedAt": "2025-10-20T04:33:32.370Z"
+    "enrichedAt": "2025-10-20T04:33:32.370Z",
+    "specifications": {},
+    "features": [],
+    "officialUrl": "https://github.com/OpenRobotLab/OpenLoong",
+    "sources": [
+      {
+        "kind": "official",
+        "url": "https://github.com/OpenRobotLab/OpenLoong"
+      }
+    ]
   },
   {
     "id": "openloong-walker-x02-xingzhe-no-2",
@@ -7713,9 +7781,10 @@
     "chineseBrand": "上海卓益得机器人有限公司",
     "category": "humanoid",
     "price": {
-      "starting": null,
+      "starting": "request",
       "currency": "CNY",
-      "note": "Contact manufacturer - Research/commercial pricing TBD"
+      "note": "Contact manufacturer - Research/commercial pricing TBD",
+      "models": []
     },
     "images": [
       "/images/robots/droidup-x02/robot-1.png"
@@ -7788,7 +7857,16 @@
     "technicalDetails": {},
     "pricingInfo": {},
     "manuallyEnriched": true,
-    "enrichedAt": "2025-10-20T04:33:32.370Z"
+    "enrichedAt": "2025-10-20T04:33:32.370Z",
+    "specifications": {},
+    "features": [],
+    "officialUrl": "https://github.com/OpenRobotLab/OpenLoong",
+    "sources": [
+      {
+        "kind": "official",
+        "url": "https://github.com/OpenRobotLab/OpenLoong"
+      }
+    ]
   },
   {
     "id": "openloong-dora",
@@ -7800,7 +7878,8 @@
     "price": {
       "starting": 5500,
       "currency": "USD",
-      "note": "$5,500 USD - Positioned as affordable humanoid platform"
+      "note": "$5,500 USD - Positioned as affordable humanoid platform",
+      "models": []
     },
     "images": [
       "/images/robots/noetix-dora/robot-1.png"
@@ -7878,7 +7957,16 @@
     "technicalDetails": {},
     "pricingInfo": {},
     "manuallyEnriched": true,
-    "enrichedAt": "2025-10-20T04:33:32.370Z"
+    "enrichedAt": "2025-10-20T04:33:32.370Z",
+    "specifications": {},
+    "features": [],
+    "officialUrl": "https://github.com/OpenRobotLab/OpenLoong",
+    "sources": [
+      {
+        "kind": "official",
+        "url": "https://github.com/OpenRobotLab/OpenLoong"
+      }
+    ]
   },
   {
     "id": "unitree-h2",
@@ -8003,7 +8091,9 @@
         "research humanoid robot",
         "dexterous robot hands"
       ]
-    }
+    },
+    "specifications": {},
+    "features": []
   },
   {
     "id": "agibot-a2",
@@ -8127,7 +8217,9 @@
         "service robot",
         "AI humanoid 2025"
       ]
-    }
+    },
+    "specifications": {},
+    "features": []
   },
   {
     "id": "kscale-kbot",
@@ -8249,7 +8341,9 @@
         "research humanoid",
         "university robot platform"
       ]
-    }
+    },
+    "specifications": {},
+    "features": []
   },
   {
     "id": "kscale-zbot",
@@ -8368,7 +8462,9 @@
         "affordable humanoid",
         "STEM robotics education"
       ]
-    }
+    },
+    "specifications": {},
+    "features": []
   },
   {
     "id": "noetix-bumi",
@@ -8489,7 +8585,9 @@
         "STEM education robot",
         "JD.com humanoid"
       ]
-    }
+    },
+    "specifications": {},
+    "features": []
   },
   {
     "id": "mentee-robotics-menteebot",
@@ -9036,7 +9134,8 @@
     "category": "humanoid",
     "price": {
       "starting": "request",
-      "currency": "USD"
+      "currency": "USD",
+      "models": []
     },
     "generalInfo": {
       "manufacturer": "AgiBot",
@@ -9125,7 +9224,8 @@
     "category": "humanoid",
     "price": {
       "starting": "request",
-      "currency": "USD"
+      "currency": "USD",
+      "models": []
     },
     "generalInfo": {
       "manufacturer": "AgiBot",
@@ -9223,7 +9323,8 @@
     "category": "humanoid",
     "price": {
       "starting": "request",
-      "currency": "USD"
+      "currency": "USD",
+      "models": []
     },
     "generalInfo": {
       "manufacturer": "AgiBot",
@@ -9324,7 +9425,8 @@
     "category": "humanoid",
     "price": {
       "starting": "request",
-      "currency": "USD"
+      "currency": "USD",
+      "models": []
     },
     "generalInfo": {
       "manufacturer": "AgiBot",
@@ -9432,7 +9534,8 @@
     "category": "quadruped",
     "price": {
       "starting": "request",
-      "currency": "USD"
+      "currency": "USD",
+      "models": []
     },
     "generalInfo": {
       "manufacturer": "AgiBot",
@@ -9539,7 +9642,8 @@
     "category": "humanoid",
     "price": {
       "starting": "request",
-      "currency": "USD"
+      "currency": "USD",
+      "models": []
     },
     "generalInfo": {
       "manufacturer": "AgiBot",
@@ -9644,7 +9748,8 @@
     "category": "humanoid",
     "price": {
       "starting": "request",
-      "currency": "USD"
+      "currency": "USD",
+      "models": []
     },
     "generalInfo": {
       "manufacturer": "AgiBot",
@@ -9747,7 +9852,8 @@
     "category": "humanoid",
     "price": {
       "starting": "request",
-      "currency": "USD"
+      "currency": "USD",
+      "models": []
     },
     "generalInfo": {
       "manufacturer": "AgiBot",
