@@ -1,171 +1,58 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
-
 ## Project Overview
 
-**Awesome Robots** — a catalog website for AI-powered robots (humanoids, quadrupeds, accessories). Production Next.js app with content management and SEO optimization.
+**Awesome Robots** — a Next.js 15 catalog website for AI-powered robots (humanoids, quadrupeds, accessories). TypeScript, Tailwind CSS v4, Velite blog, static generation.
 
-- Next.js 15.4.6 with App Router and TypeScript
-- Static site generation with client-side filtering and search
-- Quotation-based sales model using FormBold integration
-- Educational blog powered by Velite markdown processor
-- Comprehensive SEO optimization with dynamic sitemaps
-- Target audience: researchers, educators, hobbyists, tech enthusiasts
+## Commands
 
-## Development Commands
-
-### Core Development
 ```bash
-npm run dev        # Start development server (uses --turbopack)
-npm run build      # Build production application
-npm run start      # Start production server
-npm run lint       # Run ESLint for code quality
+npm run dev          # Dev server (turbopack)
+npm run build        # Production build
+npm run lint         # ESLint
+npm run test         # All tests (Vitest)
+npm run test:unit    # Unit tests only
+npm run test:e2e     # E2E tests only
 ```
 
-### Robot Discovery & Automation
-```bash
-npm run fetch-articles              # Collect articles from RSS/arXiv (runs weekly via GitHub Actions)
-npm run fetch-articles -- --dry-run # Preview without saving
-npm run extract-robots              # Extract robot data from collected articles (requires ANTHROPIC_API_KEY)
-npm run generate-digest             # Generate weekly digest blog post (requires ANTHROPIC_API_KEY)
-npm run update-analytics            # Update analytics dashboard metrics
-```
+Verify before commit: `npm run lint && npm run type-check && npm run build`
 
-### Content Management
-The project uses **Velite** for markdown-based content:
-- Blog posts are in `content/blog/` and auto-processed during build
-- Blog subdirectories: `content/blog/comparisons/` and `content/blog/guides/`
-- Authors are in `content/authors/`
-- Content is compiled to `.velite/` directory with full type safety
+## Consistency & Conflict Prevention
 
-### Blog Publishing
-```bash
-npm run publish-blog                # Publish blog posts to dev.to
-npm run digest-and-publish          # Generate digest and publish as draft
-```
+**Before coding:**
+1. Read related files, imports, and types first. Match existing patterns.
+2. Check for duplicate names, conflicting types, circular deps, inconsistent patterns.
 
-### Testing
-```bash
-npm run test             # Run all tests (Vitest)
-npm run test:unit        # Unit tests only
-npm run test:e2e         # E2E tests only
-npm run test:critical    # Critical path E2E tests
-npm run test:watch       # Watch mode
-npm run test:coverage    # Coverage report (V8 provider)
-npm run test:ui          # Vitest UI
-```
+**During coding:**
+3. One pattern per concern — don't introduce alternatives without approval.
+4. Check imports after every edit. Follow sibling file conventions.
 
-### Data Validation & Utilities
-```bash
-npm run validate-data    # Validate robot data integrity
-npm run update-configs   # Update image patterns in next.config
-npm run organize-brands  # Organize robots by brand
-npm run seo-audit        # Run SEO audit
-npm run analyze          # Bundle analyzer (ANALYZE=true)
-```
+**After coding:**
+5. Run the full check suite (lint, type-check, build).
+6. Log any conflicts in `CONFLICTS.md` with date, files, and resolution.
 
-### Quality Assurance
-- Run `npm run lint` before commits to ensure code quality
-- Run `npm run test` to verify no regressions
-- Build process includes Velite content compilation and Next.js optimization
-- Production builds remove console logs and optimize for performance
+## Self-Learning
 
-## Project Architecture
+Treat every error/conflict/failure as a learning signal.
 
-### Technical Stack
-- **Framework**: Next.js 15.4.6 with App Router
-- **Language**: TypeScript with strict type checking
-- **Styling**: Tailwind CSS v4 with custom postcss integration
-- **Content**: Velite for markdown processing with Zod schema validation
-- **Forms**: FormBold React integration for quote requests
-- **Analytics**: Google Analytics 4 with custom tracking
-- **Testing**: Vitest with Playwright MCP for E2E tests
-- **Newsletter**: Beehiiv subscription + Discord webhook distribution
-- **Publishing**: Dev.to cross-posting via API
+1. **Diagnose root cause** — ask "why?" before "how to fix?"
+2. **Record in `LEARNINGS.md`** — error, root cause, fix, prevention.
+3. **Update this file** if the error reveals a missing rule.
+4. After multi-step tasks, self-review for inconsistencies and simplification opportunities.
 
-### Data Architecture
+## Don'ts
 
-**Core Data Sources** — Robot data is centralized in JSON files with TypeScript interfaces:
-- `src/data/robots.json` - Complete robot specifications and metadata
-- `src/data/brands.json` - Brand information and official websites
-- `src/data/categories.json` - Product categories with descriptions
-- `src/types/robot.ts` - Comprehensive TypeScript interfaces
+- No new deps without justification and checking `package.json` first.
+- No shared type changes without checking all consumers.
+- No `console.log` in committed code.
+- No files outside established directory structure.
+- No inline styles — use Tailwind.
+- No `@ts-ignore` / `eslint-disable` without an explaining comment.
 
-**Discovery Data** (weekly automation):
-- `data/collected-articles/YYYY-MM-DD.json` - Weekly collected articles from RSS/arXiv
-- `data/discovered-robots/YYYY-MM-DD.json` - Extracted robot data awaiting review
+## Docs (read on demand)
 
-**Content Structure**:
-```
-content/
-├── blog/               # Markdown blog posts with frontmatter
-│   ├── comparisons/    # Robot comparison guides
-│   └── guides/         # Buying guides and comprehensive guides
-├── authors/            # Author profiles and bios
-└── templates/          # Content templates for consistency
-```
-
-### Page Types and Routing
-- `/robots/[id]` - Robot detail pages | `/browse` - Product browsing with filters
-- `/categories/[category]` - Category listings | `/brands/[brand]` - Brand collections
-- `/blog/[slug]` - Blog posts | `/blog/category/[category]` - Blog category listings
-- `/compare` - Robot comparison tool | `/sitemap.xml` - Dynamic sitemap (381+ URLs)
-
-## Testing Infrastructure
-
-- **Vitest** for unit and E2E tests with `vitest.config.ts`
-- Tests live in `tests/` directory with `@tests` path alias
-- Default environment: `node` (unit tests use `@vitest-environment jsdom` directive)
-- 60s test timeout, 1 retry for flakiness, sequential execution (`pool: 'forks'`)
-
-```
-tests/
-├── setup.ts              # Global test setup
-├── e2e/                  # End-to-end tests (critical-paths/, share-buttons, etc.)
-├── unit/components/      # Component unit tests
-├── helpers/              # Browser helpers, selectors, assertions
-└── fixtures/             # Test data
-```
-
-## Data Management
-
-For detailed procedures on adding robots, brands, and content, see **[docs/ADDING-ROBOTS.md](docs/ADDING-ROBOTS.md)**.
-
-Key rules:
-- **Always download images locally** to `public/images/robots/[brand]-[model]/` — never use remote URLs in `robots.json`
-- **Complete specifications required** — all fields from `RobotDetailTemplate.tsx` schema
-- **Research official sources** before adding any robot
-- Robot IDs must be SEO-friendly: lowercase, hyphens only (e.g., `unitree-g1`)
-- Community submissions via GitHub Issue template at `.github/ISSUE_TEMPLATE/new-robot.yml`
-
-## Environment and Configuration
-
-### Required Environment Variables
-```bash
-NEXT_PUBLIC_BASE_URL=https://www.awesomerobots.xyz
-# Google Analytics tracking ID already configured in layout.tsx
-```
-
-### Optional Environment Variables (for automation & publishing)
-```bash
-ANTHROPIC_API_KEY=             # Required for extract-robots and generate-digest scripts
-DEV_TO_API_KEY=                # Required for publish-blog cross-posting to dev.to
-DISCORD_NEWSLETTER_WEBHOOK_URL= # Required for Discord newsletter distribution
-CLAUDE_CODE_OAUTH_TOKEN=       # Required for Claude Code PR review workflow (GitHub secret)
-```
-
-### Build Configuration
-- **Velite Integration**: Custom webpack plugin processes content during build
-- **Image Domains**: Configure robot manufacturer domains for image optimization in `next.config.js`
-- **SEO Optimization**: Automatic sitemap generation includes all content types
-- **Production Optimizations**: Console removal, compression, and caching headers
-
-## Reference Documentation
-
-Detailed docs are available on-demand (use Read tool when needed):
-
-- **[docs/SEO.md](docs/SEO.md)** — SEO implementation, structured data, OG images, metadata, audit script, image optimization
-- **[docs/ADDING-ROBOTS.md](docs/ADDING-ROBOTS.md)** — Adding robots, brands, content creation, community submissions, data file structures
-- **[docs/WORKFLOWS.md](docs/WORKFLOWS.md)** — Weekly discovery, digest, analytics automation, newsletter distribution, GitHub Actions
-- **[docs/SETUP.md](docs/SETUP.md)** — GitHub Actions setup and secrets configuration
+- **[docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)** — Tech stack, data architecture, routing, testing, env vars
+- **[docs/ADDING-ROBOTS.md](docs/ADDING-ROBOTS.md)** — Adding robots, brands, content, data files
+- **[docs/SEO.md](docs/SEO.md)** — Structured data, OG images, metadata, audit
+- **[docs/WORKFLOWS.md](docs/WORKFLOWS.md)** — Weekly discovery, digest, analytics automation
+- **[docs/SETUP.md](docs/SETUP.md)** — GitHub Actions and secrets config
