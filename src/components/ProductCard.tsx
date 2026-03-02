@@ -50,13 +50,30 @@ export default function ProductCard({ robot }: ProductCardProps) {
       </div>
       
       <div className="p-6">
-        <div className="flex items-center justify-between mb-2">
+        <div className="flex items-center justify-between mb-2 gap-2">
           <h3 className="text-xl font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
             {robot.name}
           </h3>
-          <span className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full uppercase tracking-wide">
-            {robot.brand}
-          </span>
+          <div className="flex items-center gap-2 flex-shrink-0">
+            {robot.availability?.status && (
+              <span
+                className={
+                  "text-xs px-2 py-1 rounded-full uppercase tracking-wide " +
+                  (robot.availability.status === 'commercial'
+                    ? 'bg-green-100 text-green-700'
+                    : robot.availability.status === 'research'
+                      ? 'bg-purple-100 text-purple-700'
+                      : 'bg-yellow-100 text-yellow-800')
+                }
+                title="Market availability"
+              >
+                {robot.availability.status}
+              </span>
+            )}
+            <span className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full uppercase tracking-wide">
+              {robot.brand}
+            </span>
+          </div>
         </div>
         
         <p className="text-gray-600 mb-4 line-clamp-2">
