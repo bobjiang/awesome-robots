@@ -3,7 +3,7 @@ import { env } from "@/env.mjs";
 import Link from 'next/link';
 import Script from 'next/script';
 import Layout from '@/components/Layout';
-import ProductCard from '@/components/ProductCard';
+import CategoryRobotGridWithFilters from '@/components/CategoryRobotGridWithFilters';
 import { Robot } from '@/types/robot';
 import { generateBreadcrumbSchema, generateCategoryFAQSchema } from '@/lib/structured-data';
 import { sortRobots } from '@/utils/robot-utils';
@@ -138,25 +138,11 @@ export default function HumanoidRobotsPage() {
         </div>
 
         {/* Product Grid */}
-        <section>
-          <div className="flex items-center justify-between mb-6">
-            <h2 className="text-2xl font-bold text-gray-900">
-              All Humanoid Robots ({humanoidRobots.length})
-            </h2>
-            <Link
-              href="/browse?category=humanoid"
-              className="text-blue-600 hover:text-blue-700 font-medium"
-            >
-              Advanced Filters →
-            </Link>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {humanoidRobots.map((robot) => (
-              <ProductCard key={robot.id} robot={robot} />
-            ))}
-          </div>
-        </section>
+        <CategoryRobotGridWithFilters
+          robots={humanoidRobots}
+          title="All Humanoid Robots"
+          browseHref="/browse?category=humanoid"
+        />
 
         {/* Related Categories */}
         <section className="mt-16 pt-12 border-t border-gray-200">
