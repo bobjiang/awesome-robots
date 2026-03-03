@@ -189,7 +189,7 @@
         "url": "https://shop.unitree.com/products/unitree-go2"
       }
     ],
-    "lastVerifiedAt": "2026-03-02T23:16:42.039Z"
+    "lastVerifiedAt": "2026-03-03T06:56:10.066Z"
   },
   {
     "id": "unitree-go2-w",
@@ -417,7 +417,7 @@
         "url": "https://shop.unitree.com/products/unitree-g1"
       }
     ],
-    "lastVerifiedAt": "2026-03-02T23:16:42.039Z"
+    "lastVerifiedAt": "2026-03-03T06:56:10.066Z"
   },
   {
     "id": "unitree-h1",
@@ -585,7 +585,7 @@
         "url": "https://www.unitree.com/h1/"
       }
     ],
-    "lastVerifiedAt": "2026-03-02T23:16:42.039Z"
+    "lastVerifiedAt": "2026-03-03T06:56:10.066Z"
   },
   {
     "id": "unitree-b2",
@@ -734,7 +734,7 @@
         "url": "https://www.unitree.com/b2/"
       }
     ],
-    "lastVerifiedAt": "2026-03-02T23:16:42.039Z"
+    "lastVerifiedAt": "2026-03-03T06:56:10.066Z"
   },
   {
     "id": "unitree-a2",
@@ -1672,7 +1672,7 @@
         "url": "https://www.deeprobotics.cn/en/wap/product3.html"
       }
     ],
-    "lastVerifiedAt": "2026-03-02T23:16:42.039Z",
+    "lastVerifiedAt": "2026-03-03T06:56:10.066Z",
     "specifications": {},
     "features": []
   },
@@ -1789,7 +1789,7 @@
         "url": "https://www.deeprobotics.cn/en/wap/product1.html"
       }
     ],
-    "lastVerifiedAt": "2026-03-02T23:16:42.039Z",
+    "lastVerifiedAt": "2026-03-03T06:56:10.066Z",
     "specifications": {},
     "features": []
   },
@@ -2806,7 +2806,7 @@
         "url": "https://www.bostondynamics.com/products/spot"
       }
     ],
-    "lastVerifiedAt": "2026-03-02T23:16:42.039Z"
+    "lastVerifiedAt": "2026-03-03T06:56:10.066Z"
   },
   {
     "id": "boston-dynamics-atlas",
@@ -3024,7 +3024,7 @@
         "url": "https://www.anybotics.com/anymal/"
       }
     ],
-    "lastVerifiedAt": "2026-03-02T23:16:42.039Z"
+    "lastVerifiedAt": "2026-03-03T06:56:10.066Z"
   },
   {
     "id": "ghost-robotics-vision-60",
@@ -4136,7 +4136,21 @@
     ],
     "officialUrl": "https://www.boosterobotics.com/booster-t1/",
     "description": "T1 is Booster Robotics' humanoid robot designed specifically for developers. Made to be lightweight, flexible, and durable, it serves as a platform for research, education, and embodied intelligence development.",
-    "specifications": {}
+    "specifications": {},
+    "timeline": {
+      "releasedAt": "2025-01-01"
+    },
+    "availability": {
+      "status": "commercial",
+      "orderLink": "https://www.booster.tech/booster-t1/"
+    },
+    "sources": [
+      {
+        "kind": "official",
+        "url": "https://www.booster.tech/booster-t1/"
+      }
+    ],
+    "lastVerifiedAt": "2026-03-03T06:56:10.066Z"
   },
   {
     "id": "booster-k1",
@@ -4221,7 +4235,21 @@
     ],
     "officialUrl": "https://www.boosterobotics.com/booster-k1/",
     "description": "K1 is Booster Robotics' Brazil RoboCup Champion humanoid robot. Designed to be safe, reliable, and education-empowering, it features a compact size with powerful computing capabilities, making it ideal for competitive robotics and educational applications.",
-    "specifications": {}
+    "specifications": {},
+    "timeline": {
+      "releasedAt": "2025-01-01"
+    },
+    "availability": {
+      "status": "commercial",
+      "orderLink": "https://www.booster.tech/booster-k1/"
+    },
+    "sources": [
+      {
+        "kind": "official",
+        "url": "https://www.booster.tech/booster-k1/"
+      }
+    ],
+    "lastVerifiedAt": "2026-03-03T06:56:10.066Z"
   },
   {
     "id": "tesla-optimus-gen3",
@@ -6824,7 +6852,21 @@
     "highResPhotos": [
       "/images/robots/marscat.webp"
     ],
-    "image": "/images/robots/marscat.webp"
+    "image": "/images/robots/marscat.webp",
+    "timeline": {
+      "releasedAt": "2020-01-01"
+    },
+    "availability": {
+      "status": "commercial",
+      "orderLink": "https://www.elephantrobotics.com/en/mars-en/"
+    },
+    "sources": [
+      {
+        "kind": "official",
+        "url": "https://www.elephantrobotics.com/en/mars-en/"
+      }
+    ],
+    "lastVerifiedAt": "2026-03-03T06:56:10.066Z"
   },
   {
     "id": "stanford-doggo",
@@ -8147,7 +8189,7 @@
         "url": "https://www.unitree.com/mobile/H2/"
       }
     ],
-    "lastVerifiedAt": "2026-03-02T23:16:42.039Z"
+    "lastVerifiedAt": "2026-03-03T06:56:10.066Z"
   },
   {
     "id": "agibot-a2",
@@ -11248,7 +11290,21 @@
       "/images/robots/fauna-robotics-sprout/robot-5.jpg"
     ],
     "officialUrl": "https://faunarobotics.com/product",
-    "description": "Sprout is a lightweight humanoid development platform by Fauna Robotics designed for safe operation in unstructured environments. With 29 degrees of freedom, NVIDIA Jetson AGX Orin compute, ZED 2i stereoscopic vision, and soft deformable exterior panels, it targets developers, researchers, and enterprises building embodied AI applications."
+    "description": "Sprout is a lightweight humanoid development platform by Fauna Robotics designed for safe operation in unstructured environments. With 29 degrees of freedom, NVIDIA Jetson AGX Orin compute, ZED 2i stereoscopic vision, and soft deformable exterior panels, it targets developers, researchers, and enterprises building embodied AI applications.",
+    "timeline": {
+      "releasedAt": "2025-01-01"
+    },
+    "availability": {
+      "status": "commercial",
+      "orderLink": "https://faunarobotics.com/product"
+    },
+    "sources": [
+      {
+        "kind": "official",
+        "url": "https://faunarobotics.com/product"
+      }
+    ],
+    "lastVerifiedAt": "2026-03-03T06:56:10.066Z"
   },
   {
     "id": "august-robotics-dewalt-drilling",
@@ -11708,7 +11764,21 @@
       "/images/robots/faraday-future-fx-aegis/robot-1.jpg"
     ],
     "officialUrl": "https://www.ff.com/us/preorder/robotics?model=fx-aegis",
-    "description": "FX Aegis is a professional embodied-AI quadruped robot from Faraday Future designed for security patrol, companionship, and industrial applications. Starting at $2,499, it features 3.7 m/s speed, 48 Nm joint torque, 35cm obstacle crossing, IP54 protection, and 120-minute hot-swappable battery. Expandable with LiDAR, robotic arms, and security modules."
+    "description": "FX Aegis is a professional embodied-AI quadruped robot from Faraday Future designed for security patrol, companionship, and industrial applications. Starting at $2,499, it features 3.7 m/s speed, 48 Nm joint torque, 35cm obstacle crossing, IP54 protection, and 120-minute hot-swappable battery. Expandable with LiDAR, robotic arms, and security modules.",
+    "timeline": {
+      "releasedAt": "2026-01-01"
+    },
+    "availability": {
+      "status": "commercial",
+      "orderLink": "https://www.ff.com/us/preorder/robotics?model=fx-aegis"
+    },
+    "sources": [
+      {
+        "kind": "official",
+        "url": "https://www.ff.com/us/preorder/robotics?model=fx-aegis"
+      }
+    ],
+    "lastVerifiedAt": "2026-03-03T06:56:10.066Z"
   },
   {
     "id": "agibot-a2-max",

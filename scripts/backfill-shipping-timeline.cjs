@@ -111,6 +111,33 @@ function main() {
       sources: [{ kind: 'official', url: 'https://www.deeprobotics.cn/en/wap/product1.html' }],
       timeline: { releasedAt: '2022-01-01' },
     },
+
+    // Additional commercial/backfillable robots with public product pages
+    'elephant-marscat': {
+      availability: { status: 'commercial', orderLink: 'https://www.elephantrobotics.com/en/mars-en/' },
+      sources: [{ kind: 'official', url: 'https://www.elephantrobotics.com/en/mars-en/' }],
+      timeline: { releasedAt: '2020-01-01' },
+    },
+    'fauna-robotics-sprout': {
+      availability: { status: 'commercial', orderLink: 'https://faunarobotics.com/product' },
+      sources: [{ kind: 'official', url: 'https://faunarobotics.com/product' }],
+      timeline: { releasedAt: '2025-01-01' },
+    },
+    'booster-k1': {
+      availability: { status: 'commercial', orderLink: 'https://www.booster.tech/booster-k1/' },
+      sources: [{ kind: 'official', url: 'https://www.booster.tech/booster-k1/' }],
+      timeline: { releasedAt: '2025-01-01' },
+    },
+    'booster-t1': {
+      availability: { status: 'commercial', orderLink: 'https://www.booster.tech/booster-t1/' },
+      sources: [{ kind: 'official', url: 'https://www.booster.tech/booster-t1/' }],
+      timeline: { releasedAt: '2025-01-01' },
+    },
+    'faraday-future-fx-aegis': {
+      availability: { status: 'commercial', orderLink: 'https://www.ff.com/us/preorder/robotics?model=fx-aegis' },
+      sources: [{ kind: 'official', url: 'https://www.ff.com/us/preorder/robotics?model=fx-aegis' }],
+      timeline: { releasedAt: '2026-01-01' },
+    },
   };
 
   let updated = 0;
