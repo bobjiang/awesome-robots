@@ -189,7 +189,7 @@
         "url": "https://shop.unitree.com/products/unitree-go2"
       }
     ],
-    "lastVerifiedAt": "2026-03-03T21:39:21.013Z"
+    "lastVerifiedAt": "2026-03-03T22:20:32.945Z"
   },
   {
     "id": "unitree-go2-w",
@@ -417,7 +417,7 @@
         "url": "https://shop.unitree.com/products/unitree-g1"
       }
     ],
-    "lastVerifiedAt": "2026-03-03T21:39:21.013Z"
+    "lastVerifiedAt": "2026-03-03T22:20:32.945Z"
   },
   {
     "id": "unitree-h1",
@@ -585,7 +585,7 @@
         "url": "https://www.unitree.com/h1/"
       }
     ],
-    "lastVerifiedAt": "2026-03-03T21:39:21.013Z"
+    "lastVerifiedAt": "2026-03-03T22:20:32.945Z"
   },
   {
     "id": "unitree-b2",
@@ -734,7 +734,7 @@
         "url": "https://www.unitree.com/b2/"
       }
     ],
-    "lastVerifiedAt": "2026-03-03T21:39:21.013Z"
+    "lastVerifiedAt": "2026-03-03T22:20:32.945Z"
   },
   {
     "id": "unitree-a2",
@@ -1563,7 +1563,21 @@
       "/images/robots/deep-robotics-x20/x20-3.jpg"
     ],
     "officialUrl": "https://www.deeprobotics.cn/en/index/product.html",
-    "description": "Industrial quadruped robot designed for complex environments with advanced navigation and 20kg payload capacity."
+    "description": "Industrial quadruped robot designed for complex environments with advanced navigation and 20kg payload capacity.",
+    "timeline": {
+      "releasedAt": "2021-01-01"
+    },
+    "availability": {
+      "status": "commercial",
+      "orderLink": "https://www.deeprobotics.cn/en/index/product.html"
+    },
+    "sources": [
+      {
+        "kind": "official",
+        "url": "https://www.deeprobotics.cn/en/index/product.html"
+      }
+    ],
+    "lastVerifiedAt": "2026-03-03T22:20:32.945Z"
   },
   {
     "id": "deep-robotics-x30",
@@ -1672,7 +1686,7 @@
         "url": "https://www.deeprobotics.cn/en/wap/product3.html"
       }
     ],
-    "lastVerifiedAt": "2026-03-03T21:39:21.013Z",
+    "lastVerifiedAt": "2026-03-03T22:20:32.945Z",
     "specifications": {},
     "features": []
   },
@@ -1789,7 +1803,7 @@
         "url": "https://www.deeprobotics.cn/en/wap/product1.html"
       }
     ],
-    "lastVerifiedAt": "2026-03-03T21:39:21.013Z",
+    "lastVerifiedAt": "2026-03-03T22:20:32.945Z",
     "specifications": {},
     "features": []
   },
@@ -2078,7 +2092,21 @@
       "/images/robots/ubtech/walker-s2-1.jpg"
     ],
     "officialUrl": "https://www.ubtrobot.com/en/humanoid/products/WalkerS2",
-    "description": "Industrial humanoid robot featuring autonomous battery swapping technology and advanced AI capabilities for manufacturing and logistics applications."
+    "description": "Industrial humanoid robot featuring autonomous battery swapping technology and advanced AI capabilities for manufacturing and logistics applications.",
+    "timeline": {
+      "releasedAt": "2025-01-01"
+    },
+    "availability": {
+      "status": "commercial",
+      "orderLink": "https://www.ubtrobot.com/en/humanoid/products/walker-s2"
+    },
+    "sources": [
+      {
+        "kind": "official",
+        "url": "https://www.ubtrobot.com/en/humanoid/products/walker-s2"
+      }
+    ],
+    "lastVerifiedAt": "2026-03-03T22:20:32.945Z"
   },
   {
     "id": "ubtech-walker-s1",
@@ -2169,7 +2197,21 @@
       "/images/robots/ubtech/walker-s1-1.jpg"
     ],
     "officialUrl": "https://www.ubtrobot.com/en/humanoid/products/WalkerS1/",
-    "description": "Advanced industrial humanoid robot with AI-powered task planning and semantic navigation for collaborative manufacturing environments."
+    "description": "Advanced industrial humanoid robot with AI-powered task planning and semantic navigation for collaborative manufacturing environments.",
+    "timeline": {
+      "releasedAt": "2024-01-01"
+    },
+    "availability": {
+      "status": "commercial",
+      "orderLink": "https://www.ubtrobot.com/en/humanoid/products/walker-s1"
+    },
+    "sources": [
+      {
+        "kind": "official",
+        "url": "https://www.ubtrobot.com/en/humanoid/products/walker-s1"
+      }
+    ],
+    "lastVerifiedAt": "2026-03-03T22:20:32.945Z"
   },
   {
     "id": "ubtech-walker-s",
@@ -2806,7 +2848,7 @@
         "url": "https://www.bostondynamics.com/products/spot"
       }
     ],
-    "lastVerifiedAt": "2026-03-03T21:39:21.013Z"
+    "lastVerifiedAt": "2026-03-03T22:20:32.945Z"
   },
   {
     "id": "boston-dynamics-atlas",
@@ -3024,7 +3066,7 @@
         "url": "https://www.anybotics.com/anymal/"
       }
     ],
-    "lastVerifiedAt": "2026-03-03T21:39:21.013Z"
+    "lastVerifiedAt": "2026-03-03T22:20:32.945Z"
   },
   {
     "id": "ghost-robotics-vision-60",
@@ -3953,7 +3995,21 @@
       "/images/robots/galaxea-r1.png"
     ],
     "officialUrl": "https://galaxea-ai.com/cn/products/R1",
-    "description": "R1 is Galaxea AI's flagship embodied intelligence robot combining extreme aesthetics with advanced functionality. Featuring 24 DOF, high-resolution multi-camera systems, and remote teleoperation with force mapping, it redefines the robot era with its sophisticated design and capabilities."
+    "description": "R1 is Galaxea AI's flagship embodied intelligence robot combining extreme aesthetics with advanced functionality. Featuring 24 DOF, high-resolution multi-camera systems, and remote teleoperation with force mapping, it redefines the robot era with its sophisticated design and capabilities.",
+    "timeline": {
+      "releasedAt": "2025-01-01"
+    },
+    "availability": {
+      "status": "commercial",
+      "orderLink": "https://galaxea-ai.com/cn/products/R1"
+    },
+    "sources": [
+      {
+        "kind": "official",
+        "url": "https://galaxea-ai.com/cn/products/R1"
+      }
+    ],
+    "lastVerifiedAt": "2026-03-03T22:20:32.945Z"
   },
   {
     "id": "galaxea-r1-lite",
@@ -4150,7 +4206,7 @@
         "url": "https://www.booster.tech/booster-t1/"
       }
     ],
-    "lastVerifiedAt": "2026-03-03T21:39:21.013Z"
+    "lastVerifiedAt": "2026-03-03T22:20:32.945Z"
   },
   {
     "id": "booster-k1",
@@ -4249,7 +4305,7 @@
         "url": "https://www.booster.tech/booster-k1/"
       }
     ],
-    "lastVerifiedAt": "2026-03-03T21:39:21.013Z"
+    "lastVerifiedAt": "2026-03-03T22:20:32.945Z"
   },
   {
     "id": "tesla-optimus-gen3",
@@ -4654,7 +4710,7 @@
         "url": "https://www.agilityrobotics.com/"
       }
     ],
-    "lastVerifiedAt": "2026-03-03T21:39:21.013Z"
+    "lastVerifiedAt": "2026-03-03T22:20:32.945Z"
   },
   {
     "id": "apptronik-apollo",
@@ -5378,7 +5434,7 @@
         "url": "https://engineeredarts.com/"
       }
     ],
-    "lastVerifiedAt": "2026-03-03T21:39:21.013Z"
+    "lastVerifiedAt": "2026-03-03T22:20:32.945Z"
   },
   {
     "id": "hanson-sophia",
@@ -6756,7 +6812,21 @@
     "highResPhotos": [
       "/images/robots/neura-4ne1.webp"
     ],
-    "image": "/images/robots/neura-4ne1.webp"
+    "image": "/images/robots/neura-4ne1.webp",
+    "timeline": {
+      "releasedAt": "2025-01-01"
+    },
+    "availability": {
+      "status": "commercial",
+      "orderLink": "https://neura-robotics.com/products/4ne1/"
+    },
+    "sources": [
+      {
+        "kind": "official",
+        "url": "https://neura-robotics.com/products/4ne1/"
+      }
+    ],
+    "lastVerifiedAt": "2026-03-03T22:20:32.945Z"
   },
   {
     "id": "elephant-marscat",
@@ -6894,7 +6964,7 @@
         "url": "https://www.elephantrobotics.com/en/mars-en/"
       }
     ],
-    "lastVerifiedAt": "2026-03-03T21:39:21.013Z"
+    "lastVerifiedAt": "2026-03-03T22:20:32.945Z"
   },
   {
     "id": "stanford-doggo",
@@ -8217,7 +8287,7 @@
         "url": "https://www.unitree.com/mobile/H2/"
       }
     ],
-    "lastVerifiedAt": "2026-03-03T21:39:21.013Z"
+    "lastVerifiedAt": "2026-03-03T22:20:32.945Z"
   },
   {
     "id": "agibot-a2",
@@ -10984,7 +11054,7 @@
         "url": "https://www.diligentrobots.com/moxi"
       }
     ],
-    "lastVerifiedAt": "2026-03-03T21:39:21.013Z"
+    "lastVerifiedAt": "2026-03-03T22:20:32.945Z"
   },
   {
     "id": "serve-robotics-serve",
@@ -11346,7 +11416,7 @@
         "url": "https://faunarobotics.com/product"
       }
     ],
-    "lastVerifiedAt": "2026-03-03T21:39:21.013Z"
+    "lastVerifiedAt": "2026-03-03T22:20:32.945Z"
   },
   {
     "id": "august-robotics-dewalt-drilling",
@@ -11820,7 +11890,7 @@
         "url": "https://www.ff.com/us/preorder/robotics?model=fx-aegis"
       }
     ],
-    "lastVerifiedAt": "2026-03-03T21:39:21.013Z"
+    "lastVerifiedAt": "2026-03-03T22:20:32.945Z"
   },
   {
     "id": "agibot-a2-max",
