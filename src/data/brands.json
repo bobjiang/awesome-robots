@@ -200,6 +200,15 @@
     "logo": "/images/brands/honda-logo.svg"
   },
   {
+    "id": "honor",
+    "name": "Honor",
+    "description": "Chinese consumer electronics giant entering humanoid robotics. Unveiled its first AI-powered humanoid service robot at MWC 2026, running at 4 m/s and designed for shopping assistance, workplace inspections, and supportive companionship. Backed by a $10 billion five-year AI investment and Honor's Augmented Human Intelligence (AHI) framework.",
+    "website": "https://www.honor.com/global/",
+    "logo": "/images/brands/honor-logo.svg",
+    "country": "China",
+    "founded": "2013"
+  },
+  {
     "id": "k-scale-labs",
     "name": "K-Scale Labs",
     "description": "Y Combinator-backed open-source humanoid robotics company that shut down in November 2025. Previously offered K-Bot ($9,000) and Z-Bot ($1,000) with Python SDK and Raspberry Pi-based computing. GitHub repos remain available but no longer actively maintained.",
