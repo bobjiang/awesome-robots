@@ -12195,5 +12195,202 @@
       "SLAM navigation",
       "IP66 all-weather protection"
     ]
+  },
+  {
+    "id": "honor-humanoid-robot",
+    "name": "Humanoid Service Robot",
+    "brand": "Honor",
+    "category": "humanoid",
+    "price": {
+      "starting": "request",
+      "currency": "USD",
+      "models": []
+    },
+    "description": "Honor's first AI-powered humanoid service robot, unveiled at MWC 2026. Capable of running at 4 m/s (14% faster than Boston Dynamics Atlas), it features a matte black design with blue LED accents, bionic joint design, and dynamic balance algorithms. Designed for shopping assistance, workplace inspections, and supportive companionship through Honor's Augmented Human Intelligence (AHI) framework.",
+    "officialUrl": "https://www.honor.com/global/news/honor-mwc2026-launch/",
+    "generalInfo": {
+      "manufacturer": "Honor",
+      "modelName": "Humanoid Service Robot",
+      "dimensions": {
+        "standing": "Not disclosed",
+        "folded": "N/A",
+        "weight": "Not disclosed"
+      }
+    },
+    "keyFeatures": [
+      "4 m/s running speed (14% faster than Atlas)",
+      "Augmented Human Intelligence (AHI) framework",
+      "Bionic joint design with dynamic balance algorithms",
+      "Shopping assistance and retail guidance",
+      "Workplace inspection capabilities",
+      "Supportive companionship mode",
+      "Matte black design with blue LED accents",
+      "Front-facing camera system",
+      "Environmental perception sensors",
+      "AI-powered autonomous behaviors",
+      "Integration with Honor device ecosystem",
+      "Multi-language interaction support"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "Not disclosed",
+      "payloadCapacity": "Not disclosed",
+      "batteryCapacityRuntime": "Not disclosed",
+      "charger": "Not disclosed",
+      "sensorsIncluded": [
+        "Front-facing camera",
+        "Environmental sensors"
+      ],
+      "interfaces": [
+        "Honor ecosystem connectivity"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Not disclosed",
+      "sdkLanguages": [],
+      "openSourceRepos": "Not available",
+      "aiFrameworksSupported": [
+        "Honor AHI (Augmented Human Intelligence)",
+        "Personal intelligence (device-level)",
+        "Global intelligence (cloud-based)",
+        "Edge-end intelligence (physical world perception)"
+      ],
+      "apiDocumentationQuality": "Not yet available"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Not disclosed",
+        "coverage": "Not disclosed"
+      },
+      "postSalesSupport": "Consumer electronics support infrastructure",
+      "trackRecord": "Founded 2013, first humanoid robot"
+    },
+    "specifications": {
+      "maxSpeed": "4 m/s (14.4 km/h)",
+      "aiFramework": "Honor AHI (Augmented Human Intelligence)",
+      "design": "Matte black with blue LED accents",
+      "camera": "Front-facing camera on forehead",
+      "status": "Prototype (MWC 2026 debut)"
+    },
+    "features": [
+      "4 m/s running speed",
+      "AHI AI framework",
+      "Shopping assistance",
+      "Workplace inspection",
+      "Honor ecosystem integration"
+    ],
+    "images": [
+      "/images/robots/honor-humanoid-robot/robot-1.png"
+    ]
+  },
+  {
+    "id": "agibot-d1-edu",
+    "name": "D1 Edu",
+    "brand": "AgiBot",
+    "category": "quadruped",
+    "price": {
+      "starting": 5000,
+      "currency": "USD",
+      "models": [
+        {
+          "name": "D1 Edu",
+          "price": 5000
+        }
+      ]
+    },
+    "description": "AgiBot D1 Edu is the education and research variant of the D1 quadruped series, priced at approximately $5,000 (RMB 36,000). It shares the D1 Pro's 12 DOF platform with 3.7 m/s speed and 8 kg payload, but adds an open SDK, URDF modeling, simulation testing support, and expanded interfaces for secondary development.",
+    "officialUrl": "https://www.agibot.com/products/D1_Pro",
+    "releaseDate": "2025-08-01",
+    "generalInfo": {
+      "manufacturer": "AgiBot",
+      "modelName": "D1 Edu",
+      "releaseDate": "August 2025",
+      "dimensions": {
+        "standing": "610mm x 370mm x 406mm",
+        "folded": "680mm x 370mm x 115mm",
+        "weight": "15 kg (with battery)"
+      }
+    },
+    "keyFeatures": [
+      "12 DOF quadruped platform (3 joints per leg)",
+      "3.7 m/s maximum speed",
+      "8 kg static load capacity",
+      "Open SDK for secondary development",
+      "URDF modeling support",
+      "Isaac Sim and Mujoco simulation compatible",
+      "Expandable sensor payload integration",
+      "6 km unloaded range at 1.8 m/s",
+      "35 cm jumping height",
+      "Continuous 16 cm stair climbing",
+      "30-degree maximum climbing angle",
+      "43.2V 5Ah battery system"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "12 DOF (3 per leg)",
+      "payloadCapacity": "8 kg static load",
+      "batteryCapacityRuntime": "43.2V, 5Ah rated (4.6Ah nominal), 6 km range",
+      "charger": "Standard charging",
+      "sensorsIncluded": [
+        "Camera (DFOV 122, HFOV 111, VFOV 70 degrees)",
+        "IMU",
+        "Supports: 3D LiDAR",
+        "Supports: Depth camera",
+        "Supports: RTK module",
+        "Supports: 4G/5G module"
+      ],
+      "interfaces": [
+        "Ethernet",
+        "USB",
+        "Power (12V/24V)",
+        "SBUS",
+        "UART"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Yes (URDF modeling)",
+      "sdkLanguages": [
+        "Open SDK"
+      ],
+      "openSourceRepos": "Open SDK for secondary development",
+      "aiFrameworksSupported": [
+        "Isaac Sim compatible",
+        "Mujoco simulation compatible"
+      ],
+      "apiDocumentationQuality": "Open SDK documentation"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "12 months",
+        "coverage": "Standard hardware"
+      },
+      "postSalesSupport": "Email: business@zhiyuan-robot.com",
+      "trackRecord": "AgiBot shipped 5,000 robots by January 2026"
+    },
+    "specifications": {
+      "standingDimensions": "610mm x 370mm x 406mm",
+      "lyingDimensions": "680mm x 370mm x 115mm",
+      "weight": "15 kg",
+      "degreesOfFreedom": "12 DOF",
+      "staticLoad": "8 kg",
+      "maxSpeed": "3.7 m/s",
+      "unloadedRange": "6 km at 1.8 m/s",
+      "peakPower": "~3,500W",
+      "jointTorque": "~48 Nm",
+      "maxClimbAngle": "30 degrees",
+      "jumpHeight": "35 cm",
+      "stairClimb": "Continuous 16 cm",
+      "battery": "43.2V, 5Ah",
+      "protectionRating": "IP32",
+      "operatingTemp": "0-40 degrees C"
+    },
+    "features": [
+      "12 DOF education platform",
+      "Open SDK development",
+      "3.7 m/s speed",
+      "URDF + simulation support",
+      "Expandable sensor payload"
+    ],
+    "images": [
+      "/images/robots/agibot-d1-edu/robot-1.png"
+    ]
   }
 ]
