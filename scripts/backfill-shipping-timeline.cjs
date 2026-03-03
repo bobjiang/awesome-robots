@@ -155,6 +155,33 @@ function main() {
       sources: [{ kind: 'official', url: 'https://www.diligentrobots.com/moxi' }],
       timeline: { releasedAt: '2020-01-01' },
     },
+
+    // More enterprise/commercial robots with public product pages
+    'ubtech-walker-s2': {
+      availability: { status: 'commercial', orderLink: 'https://www.ubtrobot.com/en/humanoid/products/walker-s2' },
+      sources: [{ kind: 'official', url: 'https://www.ubtrobot.com/en/humanoid/products/walker-s2' }],
+      timeline: { releasedAt: '2025-01-01' },
+    },
+    'ubtech-walker-s1': {
+      availability: { status: 'commercial', orderLink: 'https://www.ubtrobot.com/en/humanoid/products/walker-s1' },
+      sources: [{ kind: 'official', url: 'https://www.ubtrobot.com/en/humanoid/products/walker-s1' }],
+      timeline: { releasedAt: '2024-01-01' },
+    },
+    'neura-4ne1': {
+      availability: { status: 'commercial', orderLink: 'https://neura-robotics.com/products/4ne1/' },
+      sources: [{ kind: 'official', url: 'https://neura-robotics.com/products/4ne1/' }],
+      timeline: { releasedAt: '2025-01-01' },
+    },
+    'galaxea-r1': {
+      availability: { status: 'commercial', orderLink: 'https://galaxea-ai.com/cn/products/R1' },
+      sources: [{ kind: 'official', url: 'https://galaxea-ai.com/cn/products/R1' }],
+      timeline: { releasedAt: '2025-01-01' },
+    },
+    'deep-robotics-x20': {
+      availability: { status: 'commercial', orderLink: 'https://www.deeprobotics.cn/en/index/product.html' },
+      sources: [{ kind: 'official', url: 'https://www.deeprobotics.cn/en/index/product.html' }],
+      timeline: { releasedAt: '2021-01-01' },
+    },
   };
 
   let updated = 0;
