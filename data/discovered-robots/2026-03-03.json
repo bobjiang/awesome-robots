@@ -1,0 +1,60 @@
+{
+  "fetch_date": "2026-03-03T20:06:44.000Z",
+  "week_range": "Feb 24–Mar 3",
+  "summary": {
+    "total_discovered": 2,
+    "duplicates_filtered": 0,
+    "new_robots": 2,
+    "quality_breakdown": {
+      "high": 0,
+      "medium": 2,
+      "low": 0
+    },
+    "source_breakdown": {
+      "official": 0,
+      "press": 2,
+      "news": 0
+    }
+  },
+  "robots": [
+    {
+      "company": "Honor",
+      "robot_name": "Unnamed humanoid service robot",
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": "https://helios-i.mashable.com/imagery/articles/014e2YbryaVUFirukui7w7J/hero-image.fill.size_1200x675.v1771844501.png",
+      "specs_link": null,
+      "source_link": "https://mashable.com/article/honor-humanoid-robot",
+      "discovered_at": "2026-03-03T20:06:44.000Z",
+      "source_type": "press",
+      "confidence_score": 60,
+      "quality_score": {
+        "overall": 55,
+        "completeness": 40,
+        "reliability": 70,
+        "flags": ["limited_specs"]
+      },
+      "description": "Honor teased its first AI-powered humanoid ‘service robot’ ahead of MWC 2026. Early details suggest it is intended for assistance tasks (e.g., shopping) but specs have not been disclosed publicly yet."
+    },
+    {
+      "company": "AGIBOT",
+      "robot_name": "D1",
+      "type": "quadruped",
+      "status": "commercial",
+      "image_link": "https://www.gizmochina.com/wp-content/uploads/2026/03/image-15.png",
+      "specs_link": "https://store.agibot.com/",
+      "source_link": "https://www.gizmochina.com/2026/03/02/agibot-unveils-full-humanoid-robot-lineup-and-rental-service-at-mwc-2026/",
+      "discovered_at": "2026-03-03T20:06:44.000Z",
+      "source_type": "press",
+      "confidence_score": 70,
+      "quality_score": {
+        "overall": 60,
+        "completeness": 50,
+        "reliability": 70,
+        "flags": ["limited_specs"]
+      },
+      "description": "AGIBOT showcased the D1 quadruped robot at MWC 2026, positioning it for logistics and patrol use cases, including a demo emphasizing advanced connectivity (6G-based sensing/connectivity at the China Telecom pavilion)."
+    }
+  ],
+  "errors": []
+}
