@@ -138,6 +138,23 @@ function main() {
       sources: [{ kind: 'official', url: 'https://www.ff.com/us/preorder/robotics?model=fx-aegis' }],
       timeline: { releasedAt: '2026-01-01' },
     },
+
+    // Commercial robots with clear enterprise ordering / contact pages
+    'agility-digit': {
+      availability: { status: 'commercial', orderLink: 'https://www.agilityrobotics.com/' },
+      sources: [{ kind: 'official', url: 'https://www.agilityrobotics.com/' }],
+      timeline: { releasedAt: '2024-01-01' },
+    },
+    'engineered-arts-ameca': {
+      availability: { status: 'commercial', orderLink: 'https://engineeredarts.com/' },
+      sources: [{ kind: 'official', url: 'https://engineeredarts.com/' }],
+      timeline: { releasedAt: '2022-01-01' },
+    },
+    'diligent-robotics-moxi': {
+      availability: { status: 'commercial', orderLink: 'https://www.diligentrobots.com/moxi' },
+      sources: [{ kind: 'official', url: 'https://www.diligentrobots.com/moxi' }],
+      timeline: { releasedAt: '2020-01-01' },
+    },
   };
 
   let updated = 0;
