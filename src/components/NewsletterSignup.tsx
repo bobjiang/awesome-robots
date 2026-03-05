@@ -12,6 +12,7 @@ export default function NewsletterSignup({ className }: NewsletterSignupProps) {
       <iframe
         src="https://subscribe-forms.beehiiv.com/2ee91aa5-2585-40f5-b43c-d5c2600ea21c"
         data-test-id="beehiiv-embed"
+        title="Newsletter signup form"
         width="100%"
         height="320"
         frameBorder="0"

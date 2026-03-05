@@ -133,7 +133,7 @@ class SEOAuditor {
 
       // Check pricing
       this.addResult('Robot Data', {
-        passed: !!robot.price && (typeof robot.price.starting === 'number' || robot.price.starting === 'Request Quote'),
+        passed: !!robot.price && (typeof robot.price.starting === 'number' || robot.price.starting === 'request'),
         message: `${robot.brand} ${robot.name}: Has pricing information`,
         severity: 'warning',
       });

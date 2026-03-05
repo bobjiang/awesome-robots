@@ -1,9 +1,17 @@
-'use client';
-
+import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import Layout from '@/components/Layout';
 import categories from '@/data/categories.json';
+
+export const metadata: Metadata = {
+  title: 'Robot Categories - Humanoid, Quadruped & More | Awesome Robots',
+  description: 'Explore our comprehensive collection of AI-powered robots organized by category. From humanoid companions to quadruped explorers, find the perfect robot for your needs.',
+  openGraph: {
+    title: 'Robot Categories - Humanoid, Quadruped & More | Awesome Robots',
+    description: 'Explore our comprehensive collection of AI-powered robots organized by category. From humanoid companions to quadruped explorers, find the perfect robot for your needs.',
+  },
+};
 
 export default function CategoriesPage() {
   return (

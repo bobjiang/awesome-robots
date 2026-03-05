@@ -1,9 +1,17 @@
-'use client';
-
+import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import Layout from '@/components/Layout';
 import brands from '@/data/brands.json';
+
+export const metadata: Metadata = {
+  title: 'Robot Brands - Leading Robotics Companies | Awesome Robots',
+  description: 'Explore leading robotics companies and their innovative AI-powered robots. From established industry leaders to cutting-edge pioneers, discover the brands shaping the future of robotics.',
+  openGraph: {
+    title: 'Robot Brands - Leading Robotics Companies | Awesome Robots',
+    description: 'Explore leading robotics companies and their innovative AI-powered robots. From established industry leaders to cutting-edge pioneers, discover the brands shaping the future of robotics.',
+  },
+};
 
 export default function BrandsPage() {
   return (

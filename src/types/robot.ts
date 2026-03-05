@@ -5,7 +5,7 @@ export interface BaseRobot {
   brand: string;
   category: 'humanoid' | 'quadruped' | 'accessory' | 'other';
   price: {
-    starting: number;
+    starting: number | 'request';
     currency: string;
     models: Array<{
       name: string;
