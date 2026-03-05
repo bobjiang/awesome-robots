@@ -512,7 +512,7 @@ The humanoid robotics space is evolving rapidly. Follow **Awesome Robots** for:
 - Market analysis and investment insights
 - Product launches and deployments
 
-**Subscribe**: [Newsletter](https://awesomerobotsxyz.substack.com/)
+**Subscribe**: [Newsletter](https://magic.beehiiv.com/v1/6fe709b7-c290-4fa5-a05b-14355504a3b1)
 **Follow**: [Twitter/X](https://x.com/awesome__robots)
 **Website**: [awesomerobots.xyz](https://www.awesomerobots.xyz/)
 

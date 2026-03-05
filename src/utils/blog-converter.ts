@@ -87,7 +87,7 @@ Visit [Awesome Robots](${this.baseUrl}) for:
 
 **Follow us for more robotics content:**
 - 🐦 [Twitter/X](https://x.com/awesome__robots)
-- 📧 [Newsletter](https://awesomerobotsxyz.substack.com/)
+- 📧 [Newsletter](https://magic.beehiiv.com/v1/6fe709b7-c290-4fa5-a05b-14355504a3b1)
 
 *What robots or topics would you like us to cover next? Let us know in the comments!*`;
 

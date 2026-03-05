@@ -150,7 +150,7 @@ For practitioners and community builders, the clear action is to scout where dev
 
 ## 📧 Stay Connected
 
-- **Subscribe:** [Newsletter signup](https://awesomerobotsxyz.substack.com/)
+- **Subscribe:** [Newsletter signup](https://magic.beehiiv.com/v1/6fe709b7-c290-4fa5-a05b-14355504a3b1)
 - **Follow us:** [Twitter (X)](https://x.com/awesome__robots)
 - **Website:** [Awesome Robots](https://www.awesomerobots.xyz/)
 
