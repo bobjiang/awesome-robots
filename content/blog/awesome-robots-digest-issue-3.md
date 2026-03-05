@@ -169,7 +169,7 @@ Stay tuned—Issue #4 is likely to be packed with conference-fresh papers, new d
 
 ## 📧 Stay Connected
 
-- **Subscribe:** [Newsletter signup link](https://awesomerobotsxyz.substack.com/)
+- **Subscribe:** [Newsletter signup link](https://magic.beehiiv.com/v1/6fe709b7-c290-4fa5-a05b-14355504a3b1)
 - **Follow us:** [Twitter (X) links](https://x.com/awesome__robots)
 - **Website:** [Official Website](https://www.awesomerobots.xyz/)
 

@@ -148,6 +148,6 @@ If you want humanoids to leave the stage and enter real workplaces, you need rec
 
 ## Stay Connected
 
-- Subscribe: https://awesomerobotsxyz.substack.com/
+- Subscribe: https://magic.beehiiv.com/v1/6fe709b7-c290-4fa5-a05b-14355504a3b1
 - Follow on X: https://x.com/awesome__robots
 - Website: https://www.awesomerobots.xyz/
