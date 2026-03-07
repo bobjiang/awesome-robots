@@ -41,23 +41,6 @@ export interface ProductSchema {
       };
     }>;
   };
-  aggregateRating?: {
-    "@type": "AggregateRating";
-    ratingValue: string;
-    reviewCount: string;
-  };
-  review?: Array<{
-    "@type": "Review";
-    reviewRating: {
-      "@type": "Rating";
-      ratingValue: string;
-    };
-    author: {
-      "@type": "Person";
-      name: string;
-    };
-    reviewBody: string;
-  }>;
   additionalProperty?: Array<{
     "@type": "PropertyValue";
     name: string;
@@ -167,31 +150,6 @@ export function generateProductSchema(robot: Robot, baseUrl: string): ProductSch
   const hasPrice = robot.price && typeof robot.price.starting === 'number';
   const price = hasPrice ? robot.price.starting.toString() : undefined;
 
-  // Generate editorial rating based on robot category and price
-  const generateRating = (robot: Robot): { rating: string; reviewCount: string } => {
-    // Premium brands get higher ratings
-    const premiumBrands = ['Boston Dynamics', 'ANYbotics', 'Unitree', 'Agility Robotics'];
-    const isPremium = premiumBrands.includes(robot.brand);
-
-    // Base rating on category
-    let baseRating = 4.2;
-    if (robot.category === 'humanoid') baseRating = 4.3;
-    if (robot.category === 'quadruped') baseRating = 4.4;
-
-    // Adjust for premium brand
-    if (isPremium) baseRating += 0.3;
-
-    // Add some variance
-    const rating = Math.min(4.9, baseRating).toFixed(1);
-
-    // Review count based on brand popularity
-    const reviewCount = isPremium ? '47' : '23';
-
-    return { rating, reviewCount };
-  };
-
-  const { rating, reviewCount } = generateRating(robot);
-
   return {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -214,11 +172,6 @@ export function generateProductSchema(robot: Robot, baseUrl: string): ProductSch
         "@type": "Organization",
         name: robot.brand
       }
-    },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: rating,
-      reviewCount: reviewCount
     },
     ...(robot.specifications && {
       additionalProperty: Object.entries(robot.specifications).map(([key, value]) => ({

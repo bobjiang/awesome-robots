@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { validateQuoteForm } from '@/lib/validations/quote';
 
 interface QuoteFormProps {
@@ -32,6 +32,16 @@ export default function QuoteForm({ robotName, robotBrand, onClose }: QuoteFormP
     error: null,
     fieldErrors: {}
   });
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        onClose();
+      }
+    };
+    document.addEventListener('keydown', handleKeyDown);
+    return () => document.removeEventListener('keydown', handleKeyDown);
+  }, [onClose]);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -112,14 +122,15 @@ export default function QuoteForm({ robotName, robotBrand, onClose }: QuoteFormP
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
-      <div className="bg-white rounded-xl max-w-2xl w-full max-h-[90vh] overflow-hidden">
+      <div className="bg-white rounded-xl max-w-2xl w-full max-h-[90vh] overflow-hidden" role="dialog" aria-modal="true" aria-labelledby="quote-form-title">
         <div className="flex justify-between items-center p-6 border-b border-gray-200">
-          <h3 className="text-xl font-semibold text-gray-900">Request Quote</h3>
+          <h3 id="quote-form-title" className="text-xl font-semibold text-gray-900">Request Quote</h3>
           <button
             onClick={onClose}
             className="text-gray-400 hover:text-gray-600"
+            aria-label="Close quote form"
           >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>

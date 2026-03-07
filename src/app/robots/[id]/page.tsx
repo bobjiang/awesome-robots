@@ -4,7 +4,6 @@ import Image from 'next/image';
 import Script from 'next/script';
 import Layout from '@/components/Layout';
 import Breadcrumb from '@/components/Breadcrumb';
-import ProductCard from '@/components/ProductCard';
 import SpecificationTable from '@/components/SpecificationTable';
 import InternalLinkingRecommendations from '@/components/InternalLinkingRecommendations';
 import RobotDetailTemplate from '@/components/RobotDetailTemplate';
@@ -27,10 +26,9 @@ interface RobotDetailPageProps {
 // Error: "Cannot destructure property 'auth' of 'a' as it is undefined"
 // Occurs during prerendering of specific robots (limx-w1, swiss-mile-rivr, etc.)
 // Tested with Next.js 16.0.10 and 16.1.1 - bug persists in both versions
-// Error happens in minified server chunks - not related to our code
-// Workaround: Use dynamic rendering until Next.js 17 or bug is fixed upstream
-// TODO: Retry with Next.js 17 when released
-export const dynamic = 'force-dynamic';
+// Using ISR (revalidate) instead of full static generation as workaround
+// TODO: Retry with generateStaticParams when Next.js fixes this upstream
+export const revalidate = 3600;
 
 // Generate metadata for SEO optimization
 export async function generateMetadata({ params }: RobotDetailPageProps): Promise<Metadata> {

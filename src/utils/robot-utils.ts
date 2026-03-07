@@ -293,10 +293,9 @@ export function sortRobots(
         comparison = a.brand.localeCompare(b.brand);
         break;
       case 'price': {
-        const aPrice = a.price.starting ?? Infinity;
-        const bPrice = b.price.starting ?? Infinity;
-        comparison = (typeof aPrice === 'number' ? aPrice : Infinity) -
-                     (typeof bPrice === 'number' ? bPrice : Infinity);
+        const aPrice = typeof a.price.starting === 'number' ? a.price.starting : Infinity;
+        const bPrice = typeof b.price.starting === 'number' ? b.price.starting : Infinity;
+        comparison = aPrice - bPrice;
         break;
       }
       case 'shipping': {

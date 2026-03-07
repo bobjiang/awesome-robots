@@ -50,8 +50,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 className="text-gray-700 hover:text-blue-600 focus:outline-none"
+                aria-label={isMenuOpen ? "Close main menu" : "Open main menu"}
+                aria-expanded={isMenuOpen}
+                aria-controls="mobile-navigation"
               >
-                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
               </button>
@@ -60,7 +63,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
           {/* Mobile Navigation */}
           {isMenuOpen && (
-            <div className="md:hidden">
+            <div className="md:hidden" id="mobile-navigation">
               <div className="px-2 pt-2 pb-3 space-y-1">
                 <Link
                   href="/browse"
