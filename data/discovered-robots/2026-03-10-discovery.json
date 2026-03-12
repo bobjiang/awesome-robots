@@ -1,0 +1,22 @@
+[
+  {
+    "id": "aeon-hexagon",
+    "name": "AEON",
+    "description": "AEON is a wheeled humanoid robot from Hexagon Robotics that BMW is piloting at its Leipzig plant as part of a ‘Physical AI’ initiative, targeting tasks like high-voltage battery assembly and component manufacturing.",
+    "manufacturer": "Hexagon Robotics",
+    "type": "humanoid",
+    "image": "/images/robots/aeon-hexagon/hero.png",
+    "specs": {
+      "height": "165 cm",
+      "weight": "60 kg",
+      "maxSpeed": "2.4 m/s",
+      "payload": {
+        "shortTerm": "15 kg",
+        "extended": "8 kg"
+      },
+      "runtime": "~4 hours",
+      "mobility": "Wheeled (wheels at bottom of legs)",
+      "battery": "Auto-swap batteries"
+    }
+  }
+]
