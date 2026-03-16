@@ -3,6 +3,7 @@ import { env } from "@/env.mjs";
 import { posts, authors } from '#site/content'
 import Layout from '@/components/Layout'
 import BlogPost from '@/components/blog/BlogPost'
+import ReadNext from '@/components/blog/ReadNext'
 import BlogCard from '@/components/blog/BlogCard'
 import Link from 'next/link'
 import Script from 'next/script'
@@ -107,12 +108,14 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <BlogPost post={post} author={author} url={postUrl} />
 
-        {/* Related Posts */}
-        {relatedPosts.length > 0 && (
+        <ReadNext posts={relatedPosts} />
+
+        {/* Related Posts (skip the first one since ReadNext already shows it) */}
+        {relatedPosts.length > 1 && (
           <section className="mt-16 pt-12 border-t border-gray-200">
             <h2 className="text-2xl font-bold text-gray-900 mb-8">Related Articles</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {relatedPosts.map(relatedPost => (
+              {relatedPosts.slice(1).map(relatedPost => (
                 <BlogCard key={relatedPost.slug} post={relatedPost} />
               ))}
             </div>

@@ -2,12 +2,22 @@ import Image from 'next/image'
 import Link from 'next/link'
 import type { Post, Author } from '#site/content'
 import ShareButtons from './ShareButtons'
+import FreshnessBadge from './FreshnessBadge'
 import NewsletterSignup from '../NewsletterSignup'
+import TableOfContents, { generateSlug } from './TableOfContents'
 
 interface BlogPostProps {
   post: Post
   author?: Author
   url: string
+}
+
+function addHeadingIds(html: string): string {
+  return html.replace(/<h2([^>]*)>(.*?)<\/h2>/gi, (_match, attrs, inner) => {
+    const text = inner.replace(/<[^>]*>/g, '')
+    const id = generateSlug(text)
+    return `<h2${attrs} id="${id}">${inner}</h2>`
+  })
 }
 
 export default function BlogPost({ post, author, url }: BlogPostProps) {
@@ -76,7 +86,11 @@ export default function BlogPost({ post, author, url }: BlogPostProps) {
                 )}
                 <div>
                   <p className="font-medium text-gray-900">{author.name}</p>
-                  <p className="text-sm text-gray-500">{formatDate(post.date)}</p>
+                  <p className="text-sm text-gray-500">
+                    {formatDate(post.date)}
+                    {' '}
+                    <FreshnessBadge date={post.date} updated={post.updated} />
+                  </p>
                 </div>
               </div>
             )}
@@ -113,8 +127,11 @@ export default function BlogPost({ post, author, url }: BlogPostProps) {
         )}
       </header>
 
+      {/* Table of Contents */}
+      <TableOfContents content={post.content} />
+
       {/* Content */}
-      <div 
+      <div
         className="prose prose-lg prose-gray max-w-none
                    prose-headings:text-gray-900 prose-headings:font-bold
                    prose-p:text-gray-700 prose-p:leading-relaxed
@@ -127,7 +144,7 @@ export default function BlogPost({ post, author, url }: BlogPostProps) {
                    prose-table:border-collapse prose-table:border prose-table:border-gray-300
                    prose-th:border prose-th:border-gray-300 prose-th:bg-gray-50 prose-th:p-2
                    prose-td:border prose-td:border-gray-300 prose-td:p-2"
-        dangerouslySetInnerHTML={{ __html: post.content }}
+        dangerouslySetInnerHTML={{ __html: addHeadingIds(post.content) }}
       />
 
       {/* Share Buttons */}

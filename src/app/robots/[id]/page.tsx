@@ -10,6 +10,7 @@ import RobotDetailTemplate from '@/components/RobotDetailTemplate';
 import RobotQuoteButton from '@/components/RobotQuoteButton';
 import AISpecificationSummary from '@/components/AISpecificationSummary';
 import ContentRelationships from '@/components/ContentRelationships';
+import LastUpdated from '@/components/LastUpdated';
 import { Robot } from '@/types/robot';
 import { generateProductSchema, generateBreadcrumbSchema, generateRobotFAQSchema } from '@/lib/structured-data';
 import { formatPrice } from '@/utils/price-utils';
@@ -180,9 +181,15 @@ export default async function RobotDetailPage({ params }: RobotDetailPageProps) 
               </h1>
             </div>
 
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+            <p className="text-lg text-gray-600 mb-4 leading-relaxed">
               {robot.description || `Advanced ${robot.category} robot by ${robot.brand}`}
             </p>
+
+            {robot.lastVerifiedAt && (
+              <div className="mb-8">
+                <LastUpdated date={robot.lastVerifiedAt} />
+              </div>
+            )}
 
             {/* Pricing */}
             <div className="mb-8 bg-gray-50 rounded-lg p-6">
