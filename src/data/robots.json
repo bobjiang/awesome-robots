@@ -12504,5 +12504,310 @@
     "images": [
       "/images/robots/agibot-d1-edu/robot-1.png"
     ]
+  },
+  {
+    "id": "sunday-memo",
+    "name": "Memo",
+    "brand": "Sunday",
+    "category": "humanoid",
+    "price": {
+      "starting": 10000,
+      "currency": "USD",
+      "models": [
+        {
+          "name": "Memo (Beta)",
+          "price": 20000
+        }
+      ]
+    },
+    "generalInfo": {
+      "manufacturer": "Sunday",
+      "modelName": "Memo",
+      "releaseDate": "Late 2026 (Beta)",
+      "dimensions": {
+        "standing": "170 x 60 x 60 cm",
+        "weight": "77 kg"
+      }
+    },
+    "keyFeatures": [
+      "Wheeled base for stability — no risk of falling",
+      "Two multi-DOF arms with dual grippers",
+      "Height-adjustable torso reaches from floor to 2.1m",
+      "ACT-1 foundation model trained on 10M+ chore episodes",
+      "Zero-shot generalization to new homes",
+      "Trained on data from 500+ real households",
+      "33-interaction dishwasher loading workflow",
+      "Soft silicone exterior for safe home interaction",
+      "4-hour battery life with 3-hour recharge",
+      "IP54 rated for kitchen/cleaning environments",
+      "Carrying capacity of 3 kg, deadlift 10 kg",
+      "Cloud-based OTA updates and remote diagnostics",
+      "Voice, app, gesture, and touch panel control",
+      "Handles fragile items like wine glasses"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "20 DOF",
+      "payloadCapacity": "3 kg carry, 10 kg deadlift",
+      "batteryCapacityRuntime": "50,000 mAh lithium-ion polymer, 4 hours",
+      "charger": "3 hours charge time",
+      "sensorsIncluded": [
+        "RGB cameras",
+        "Stereo cameras",
+        "3D depth sensors",
+        "IMU",
+        "Gyroscope",
+        "Force sensors",
+        "Ultrasonic sensors",
+        "Proximity sensors",
+        "Touch/pressure sensors"
+      ],
+      "interfaces": [
+        "WiFi",
+        "Bluetooth",
+        "Ethernet",
+        "USB",
+        "CAN bus"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Not publicly disclosed",
+      "sdkLanguages": [
+        "Proprietary OS"
+      ],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [
+        "ACT-1 foundation model",
+        "Cloud-based OTA updates",
+        "Remote diagnostics"
+      ],
+      "apiDocumentationQuality": "Contact manufacturer"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "TBD (beta phase)",
+        "coverage": "Contact Sunday"
+      },
+      "postSalesSupport": "Cloud-based OTA updates and remote diagnostics",
+      "trackRecord": "Sunday - $1.15B valuation, founded by Eric Jang (Google Brain), beta phase"
+    },
+    "specifications": {
+      "dimensions": "170 x 60 x 60 cm",
+      "weight": "77 kg",
+      "degreesOfFreedom": "20",
+      "maxSpeed": "1.0 m/s (3.6 km/h)",
+      "payload": "3 kg carry, 10 kg deadlift",
+      "battery": "50,000 mAh lithium-ion polymer",
+      "batteryLife": "4 hours",
+      "operatingTemperature": "10-40°C",
+      "ingressProtection": "IP54",
+      "connectivity": [
+        "WiFi",
+        "Bluetooth",
+        "Ethernet",
+        "USB",
+        "CAN bus"
+      ],
+      "sensors": [
+        "RGB cameras",
+        "Stereo cameras",
+        "3D depth sensors",
+        "IMU",
+        "Gyroscope",
+        "Force sensors",
+        "Ultrasonic sensors",
+        "Proximity sensors",
+        "Touch/pressure sensors"
+      ],
+      "computing": "Proprietary OS, ACT-1 foundation model",
+      "mobilityType": "Wheeled (passive stability)",
+      "reach": "Floor level to 2.1m",
+      "power": "150W average, 300W peak",
+      "safety": "CE, UL, ISO/TS 15066, soft silicone exterior, collision detection, emergency stop"
+    },
+    "features": [
+      "Wheeled humanoid",
+      "20 DOF",
+      "ACT-1 foundation model",
+      "Zero-shot generalization",
+      "Dual grippers",
+      "4-hour battery",
+      "IP54 rated",
+      "Soft silicone exterior"
+    ],
+    "images": [
+      "/images/robots/sunday-memo/robot-1.jpg"
+    ],
+    "officialUrl": "https://www.sunday.ai/",
+    "description": "Sunday Memo is a wheeled home humanoid robot with 20 DOF, trained on millions of real household chores from 500+ homes using the ACT-1 foundation model. Performs table-to-dishwasher workflows, laundry folding, surface clearing, and espresso preparation with zero-shot generalization to new homes.",
+    "timeline": {
+      "announcedAt": "2025-11-20",
+      "shippingWindow": "Late 2026"
+    },
+    "availability": {
+      "status": "prototype",
+      "regions": [
+        "US"
+      ]
+    },
+    "sources": [
+      {
+        "kind": "official",
+        "url": "https://www.sunday.ai"
+      },
+      {
+        "kind": "press",
+        "url": "https://techcrunch.com/2026/03/12/humanoid-robotics-maker-sunday-reaches-1-15b-valuation-to-build-household-robots/"
+      },
+      {
+        "kind": "press",
+        "url": "https://www.humanoidsdaily.com/news/sunday-unveils-memo-a-wheeled-domestic-robot-that-learns-from-200-gloves"
+      }
+    ],
+    "lastVerifiedAt": "2026-03-16T00:00:00.000Z"
+  },
+  {
+    "id": "pudu-d5",
+    "name": "D5",
+    "brand": "Pudu Robotics",
+    "category": "quadruped",
+    "price": {
+      "starting": "request",
+      "currency": "USD",
+      "models": [
+        {
+          "name": "D5",
+          "price": "request"
+        }
+      ]
+    },
+    "generalInfo": {
+      "manufacturer": "Pudu Robotics",
+      "modelName": "D5",
+      "releaseDate": "January 2026",
+      "dimensions": {
+        "standing": "900 x 543 x 572 mm (rest height)",
+        "weight": "61 kg (with battery)"
+      }
+    },
+    "keyFeatures": [
+      "Hybrid leg-wheel locomotion with bionic control algorithms",
+      "NVIDIA Orin + RK3588 dual-processor delivering 275 TOPS",
+      "Dual 192-line LiDAR for dense 3D point cloud mapping",
+      "Four 120° fisheye cameras for 360° environmental awareness",
+      "5 m/s maximum speed on flat surfaces",
+      "Climbs 30° slopes and steps over 25 cm obstacles",
+      "30 kg payload capacity for over 2 hours",
+      "IP67 dust and water resistance",
+      "-20°C to 55°C operating temperature range",
+      "14 km single-charge autonomous patrol range",
+      "Maps and navigates up to 1,000,000 m² facilities",
+      "6-microphone array for voice commands and 10+ hand gestures",
+      "Autonomous departure, patrol, obstacle handling, and return-to-charge",
+      "Remote control with live panoramic camera feeds",
+      "IMU-driven stabilization for rough terrain"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "Not publicly disclosed",
+      "payloadCapacity": "30 kg",
+      "batteryCapacityRuntime": "~2-2.5 hours, 14 km range",
+      "charger": "Not publicly disclosed",
+      "sensorsIncluded": [
+        "Dual 192-line LiDAR",
+        "4 fisheye cameras (120° each)",
+        "6-microphone array",
+        "IMU"
+      ],
+      "interfaces": [
+        "WiFi (2.4/5 GHz)",
+        "Bluetooth"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Not publicly disclosed",
+      "sdkLanguages": [
+        "Proprietary platform"
+      ],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [
+        "NVIDIA Orin inference",
+        "Real-time SLAM",
+        "3D reconstruction",
+        "Autonomous patrol workflows"
+      ],
+      "apiDocumentationQuality": "Contact manufacturer"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Contact manufacturer",
+        "coverage": "Enterprise warranty"
+      },
+      "postSalesSupport": "Enterprise support, remote diagnostics",
+      "trackRecord": "Pudu Robotics - founded 2016, 80,000+ service robots deployed globally"
+    },
+    "specifications": {
+      "dimensions": "900 x 543 x 572 mm (rest height)",
+      "weight": "61 kg (with battery)",
+      "maxSpeed": "5 m/s",
+      "payload": "30 kg",
+      "battery": "14 km range per charge",
+      "batteryLife": "~2-2.5 hours",
+      "operatingTemperature": "-20°C to 55°C, cold start at -10°C",
+      "ingressProtection": "IP67",
+      "slopeAngle": "±30°",
+      "obstacleCrossing": "250 mm step height",
+      "connectivity": [
+        "WiFi (2.4/5 GHz)",
+        "Bluetooth"
+      ],
+      "sensors": [
+        "Dual 192-line LiDAR",
+        "4 fisheye cameras (120° each)",
+        "6-microphone array",
+        "IMU"
+      ],
+      "computing": "NVIDIA Orin + RK3588 dual-processor, 275 TOPS",
+      "navigationArea": "Up to 1,000,000 m²",
+      "autonomyLevel": "Level 2 task autonomy with voice and gesture control (10+ hand gestures)"
+    },
+    "features": [
+      "Hybrid leg-wheel locomotion",
+      "275 TOPS dual-processor",
+      "Dual 192-line LiDAR",
+      "360° camera coverage",
+      "5 m/s speed",
+      "30 kg payload",
+      "IP67 rated",
+      "14 km patrol range"
+    ],
+    "images": [
+      "/images/robots/pudu-d5/robot-1.jpg"
+    ],
+    "officialUrl": "https://www.pudurobotics.com/en/news/pudu-d5-series-autonomous-quadruped-robots",
+    "description": "Pudu D5 is an industry-grade autonomous quadruped robot engineered for complex, unstructured, and large-scale outdoor environments. Features hybrid leg-wheel locomotion, all-weather IP67 durability, NVIDIA Orin + RK3588 dual-processor with 275 TOPS, and autonomous patrol workflows across areas up to 1,000,000 m².",
+    "timeline": {
+      "announcedAt": "2025-12-03",
+      "shippingAt": "2026-01-15"
+    },
+    "availability": {
+      "status": "commercial",
+      "regions": [
+        "Global"
+      ]
+    },
+    "sources": [
+      {
+        "kind": "official",
+        "url": "https://www.pudurobotics.com/en/news/pudu-d5-series-autonomous-quadruped-robots"
+      },
+      {
+        "kind": "press",
+        "url": "https://interestingengineering.com/ai-robotics/nimble-meter-long-quadruped-robot"
+      },
+      {
+        "kind": "press",
+        "url": "https://www.robotics247.com/article/pudu-robotics-launches-d5-series-of-industry-grade-autonomous-quadruped-robots"
+      }
+    ],
+    "lastVerifiedAt": "2026-03-16T00:00:00.000Z"
   }
 ]
