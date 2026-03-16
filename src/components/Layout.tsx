@@ -1,11 +1,24 @@
 'use client';
 
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import NewsletterSignup from './NewsletterSignup';
+import SearchDialog from './SearchDialog';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+        e.preventDefault();
+        setSearchOpen((prev) => !prev);
+      }
+    };
+    document.addEventListener('keydown', handleKeyDown);
+    return () => document.removeEventListener('keydown', handleKeyDown);
+  }, []);
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -20,6 +33,19 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
+              <button
+                onClick={() => setSearchOpen(true)}
+                className="flex items-center gap-2 text-gray-500 hover:text-blue-600 transition-colors text-sm"
+                aria-label="Search"
+              >
+                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+                <span className="hidden lg:inline">Search</span>
+                <kbd className="hidden lg:inline-flex items-center px-1.5 py-0.5 text-xs bg-gray-100 text-gray-400 rounded font-mono">
+                  ⌘K
+                </kbd>
+              </button>
               <Link href="/browse" className="text-gray-700 hover:text-blue-600 transition-colors">
                 Browse All
               </Link>
@@ -111,6 +137,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           )}
         </div>
       </nav>
+
+      <SearchDialog isOpen={searchOpen} onClose={() => setSearchOpen(false)} />
 
       <main>{children}</main>
 
