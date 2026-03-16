@@ -187,9 +187,11 @@ export default async function RobotDetailPage({ params }: RobotDetailPageProps) 
               {robot.description || `Advanced ${robot.category} robot by ${robot.brand}`}
             </p>
 
-            <div className="mb-8">
-              <LastUpdated date={robot.lastVerifiedAt || '2026-03-15'} />
-            </div>
+            {robot.lastVerifiedAt && (
+              <div className="mb-8">
+                <LastUpdated date={robot.lastVerifiedAt} />
+              </div>
+            )}
 
             {/* Pricing */}
             <div className="mb-8 bg-gray-50 rounded-lg p-6">
