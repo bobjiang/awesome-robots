@@ -3,6 +3,7 @@ import { env } from "@/env.mjs";
 import { posts, authors } from '#site/content'
 import Layout from '@/components/Layout'
 import BlogPost from '@/components/blog/BlogPost'
+import ReadNext from '@/components/blog/ReadNext'
 import BlogCard from '@/components/blog/BlogCard'
 import Link from 'next/link'
 import Script from 'next/script'
@@ -106,6 +107,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <BlogPost post={post} author={author} url={postUrl} />
+
+        <ReadNext posts={relatedPosts} />
 
         {/* Related Posts */}
         {relatedPosts.length > 0 && (
