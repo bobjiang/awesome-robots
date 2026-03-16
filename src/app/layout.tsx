@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
 import { env } from "@/env.mjs";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
+import PWAInstallPrompt from "@/components/PWAInstallPrompt";
 import { generateWebSiteSchema } from "@/lib/structured-data";
 import "./globals.css";
 
@@ -121,10 +122,17 @@ export default function RootLayout({
           `}
         </Script>
 
+        {/* Service Worker Registration */}
+        <Script id="sw-register" strategy="afterInteractive">
+          {`if ('serviceWorker' in navigator) { navigator.serviceWorker.register('/sw.js') }`}
+        </Script>
+
         {/* Error Boundary for graceful error handling (T3 pattern) */}
         <ErrorBoundary>
           {children}
         </ErrorBoundary>
+
+        <PWAInstallPrompt />
       </body>
     </html>
   );
