@@ -2,8 +2,8 @@ name: Daily Robot Discovery (Ralph Loop)
 
 on:
   schedule:
-    - cron: '7 1 * * *' # 01:07 UTC daily
-  workflow_dispatch: # Allow manual trigger
+    - cron: '7 1 * * *'
+  workflow_dispatch:
 
 jobs:
   discover-robots:
@@ -13,7 +13,7 @@ jobs:
       pull-requests: write
       issues: write
       id-token: write
-    timeout-minutes: 30
+    timeout-minutes: 45
 
     steps:
       - name: Checkout repository
@@ -21,48 +21,66 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Run Claude Code for Robot Discovery
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Fetch RSS feeds
+        run: npx tsx scripts/fetch-rss-feeds.ts
+
+      - name: Process articles with Claude Code
         uses: anthropics/claude-code-action@v1
         with:
-          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-          direct_prompt: |
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: |
             You are running the daily Ralph Loop robot discovery task.
+
+            ## Collected Articles
+
+            Read the JSON file in data/collected-articles/ that matches today's date (YYYY-MM-DD.json).
+            These are robot-related articles from RSS feeds collected in the last 7 days.
+            If the file is empty or has no articles, output "No new robots discovered today" and stop.
 
             ## Instructions
 
-            ### Step 1: Research Sources
-            Read the data sources file at content/sources/awesome-robotics-digest-sources.csv for reference.
-            Search the web for the latest humanoid and quadruped robot announcements from high-quality sources:
-            - IEEE Spectrum Robotics, The Robot Report, Robotics & Automation News
-            - TechCrunch, Interesting Engineering, MIT News
-            - Manufacturer official websites and press releases
-            Focus on robots announced or launched in the last 7 days.
+            ### Step 1: Read existing robots
+            Read src/data/robots.json and extract ALL robot IDs to avoid duplicates.
 
-            ### Step 2: Identify New Robots
-            Read src/data/robots.json to get ALL existing robot IDs.
-            Compare your research findings against the existing database.
-            Only proceed with robots that are genuinely NEW (not already in the database).
-            Each robot must have enough public information for a complete entry.
+            ### Step 2: Identify new robots from articles
+            Analyze the collected articles for NEW robot product announcements.
+            Only consider robots that:
+            - Are humanoid or quadruped category
+            - Have been officially announced with real specifications
+            - Are NOT already in the database (check IDs carefully)
+            - Have enough public information for a complete entry
 
-            ### Step 3: Add New Robots
-            For each new robot found:
-            - Follow the exact structure in src/data/robots.json (match an existing entry)
-            - Follow the RobotDetailTemplate at src/components/RobotDetailTemplate.tsx for required detail fields
-            - Include: generalInfo, keyFeatures (minimum 12), hardwareBuildQuality, softwareEcosystem, supplierReliability
-            - Add the brand to src/data/brands.json if it's a new brand
-            - Use placeholder image paths like "/images/robots/[brand]-[model]/[brand]-[model]-1.jpg"
+            ### Step 3: Add new robots
+            For each genuinely new robot:
+            - Follow the exact JSON structure in src/data/robots.json
+            - Follow src/components/RobotDetailTemplate.tsx for required detail fields
+            - Include: generalInfo, keyFeatures (min 12), hardwareBuildQuality, softwareEcosystem, supplierReliability
+            - Add brand to src/data/brands.json if new
+            - Use placeholder image paths: "/images/robots/[brand]-[model]/[brand]-[model]-1.jpg"
             - Set lastVerifiedAt to today's date
 
-            ### Step 4: Validate and Submit
-            - Run: npm ci && npm run lint
-            - If no new robots were found, exit with a message "No new robots discovered today"
-            - If new robots were added, create a feature branch and PR:
-              - Branch: daily-robots/YYYY-MM-DD
-              - PR title: "Robot Discovery: N robots (YYYY-MM-DD)"
-              - PR body: list each robot with name, brand, category, and one-line description
+            ### Step 4: Validate
+            Run: npm run lint
+            If validation fails, fix the issues.
+
+            ### Step 5: Submit
+            If no new robots found, output "No new robots discovered today" and stop.
+            If new robots added, create a branch and PR:
+            - Branch: daily-robots/YYYY-MM-DD
+            - PR title: "Robot Discovery: N robots (YYYY-MM-DD)"
+            - PR body: list each robot added with name, brand, category
 
             ## Rules
-            - Never add duplicates — always check existing IDs first
-            - Only add robots with sufficient public specifications
-            - Do not modify existing robot entries
-            - Do not add robots that are just concepts/renders with no real specs
+            - Never add duplicates
+            - Only add robots with real specs (not concept renders)
+            - Do not modify existing entries
+          claude_args: "--model claude-sonnet-4-6 --max-turns 25"
