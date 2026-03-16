@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import type { Post } from '#site/content'
+import FreshnessBadge from './FreshnessBadge'
 
 interface BlogCardProps {
   post: Post
@@ -63,6 +64,7 @@ export default function BlogCard({ post }: BlogCardProps) {
           <div className="flex items-center justify-between text-xs text-gray-500">
             <div className="flex items-center space-x-4">
               <span>{formatDate(post.date)}</span>
+              <FreshnessBadge date={post.date} updated={post.updated} />
               <span>•</span>
               <span>{post.readingTime} min read</span>
             </div>

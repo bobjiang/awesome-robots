@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import type { Post, Author } from '#site/content'
 import ShareButtons from './ShareButtons'
+import FreshnessBadge from './FreshnessBadge'
 import NewsletterSignup from '../NewsletterSignup'
 
 interface BlogPostProps {
@@ -76,7 +77,11 @@ export default function BlogPost({ post, author, url }: BlogPostProps) {
                 )}
                 <div>
                   <p className="font-medium text-gray-900">{author.name}</p>
-                  <p className="text-sm text-gray-500">{formatDate(post.date)}</p>
+                  <p className="text-sm text-gray-500">
+                    {formatDate(post.date)}
+                    {' '}
+                    <FreshnessBadge date={post.date} updated={post.updated} />
+                  </p>
                 </div>
               </div>
             )}
