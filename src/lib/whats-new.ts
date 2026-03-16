@@ -1,6 +1,6 @@
 export interface WeekGroup {
   weekLabel: string
-  weekStart: Date
+  weekStart: string
   posts: Array<{ title: string; slug: string; date: string; category: string; [key: string]: unknown }>
 }
 
@@ -49,7 +49,7 @@ export function groupPostsByWeek<T extends { date: string; title: string; slug: 
   const weekMap = new Map<string, { weekStart: Date; posts: T[] }>()
 
   for (const post of posts) {
-    const postDate = new Date(post.date + 'T00:00:00Z')
+    const postDate = new Date(post.date)
     const monday = getMonday(postDate)
     const key = monday.toISOString().slice(0, 10)
 
@@ -61,11 +61,11 @@ export function groupPostsByWeek<T extends { date: string; title: string; slug: 
 
   const groups: WeekGroup[] = Array.from(weekMap.values()).map(({ weekStart, posts: weekPosts }) => ({
     weekLabel: formatWeekLabel(weekStart),
-    weekStart,
+    weekStart: weekStart.toISOString().slice(0, 10),
     posts: weekPosts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()),
   }))
 
-  groups.sort((a, b) => b.weekStart.getTime() - a.weekStart.getTime())
+  groups.sort((a, b) => b.weekStart.localeCompare(a.weekStart))
 
   return groups
 }

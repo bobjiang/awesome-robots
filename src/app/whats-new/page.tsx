@@ -21,6 +21,12 @@ const CATEGORY_COLORS: Record<string, string> = {
 export default function WhatsNewPage() {
   const publishedPosts = posts
     .filter((post) => post.published)
+    .map((post) => ({
+      title: post.title,
+      slug: post.slug,
+      date: post.date,
+      category: post.category,
+    }))
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
 
   const weeks = groupPostsByWeek(publishedPosts).slice(0, 12)
@@ -50,14 +56,14 @@ export default function WhatsNewPage() {
                 </h2>
                 <ul className="space-y-3">
                   {week.posts.map((post) => {
-                    const colorClass = CATEGORY_COLORS[post.category as string] || 'bg-gray-100 text-gray-800'
+                    const colorClass = CATEGORY_COLORS[post.category] || 'bg-gray-100 text-gray-800'
                     return (
-                      <li key={post.slug as string} className="flex items-start gap-3">
+                      <li key={post.slug} className="flex items-start gap-3">
                         <time
-                          dateTime={post.date as string}
+                          dateTime={post.date}
                           className="text-sm text-gray-400 whitespace-nowrap pt-0.5 min-w-[5rem]"
                         >
-                          {new Date(post.date as string + 'T00:00:00Z').toLocaleDateString('en-US', {
+                          {new Date(post.date).toLocaleDateString('en-US', {
                             month: 'short',
                             day: 'numeric',
                             timeZone: 'UTC',
@@ -67,12 +73,12 @@ export default function WhatsNewPage() {
                           href={`/blog/${post.slug}`}
                           className="text-gray-800 hover:text-blue-600 transition-colors font-medium"
                         >
-                          {post.title as string}
+                          {post.title}
                         </Link>
                         <span
                           className={`text-xs font-medium px-2 py-0.5 rounded-full whitespace-nowrap ${colorClass}`}
                         >
-                          {post.category as string}
+                          {post.category}
                         </span>
                       </li>
                     )
