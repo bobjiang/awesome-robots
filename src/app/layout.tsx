@@ -30,6 +30,9 @@ export const metadata: Metadata = {
   metadataBase: new URL(env.NEXT_PUBLIC_BASE_URL),
   alternates: {
     canonical: '/',
+    types: {
+      'application/rss+xml': '/blog/rss.xml',
+    },
   },
   robots: {
     index: true,

@@ -158,6 +158,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <li><Link href="/blog/category/buying-guides" className="hover:text-white">Buying Guides</Link></li>
                 <li><Link href="/blog/category/digest" className="hover:text-white">Weekly Digest</Link></li>
                 <li><Link href="/faq" className="hover:text-white">FAQ</Link></li>
+                <li><a href="/blog/rss.xml" className="hover:text-white">RSS Feed</a></li>
               </ul>
             </div>
           </div>
