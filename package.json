@@ -19,6 +19,7 @@
     "fetch-articles": "tsx scripts/fetch-articles.ts",
     "extract-robots": "tsx scripts/extract-robots.ts",
     "update-analytics": "tsx scripts/update-analytics.ts",
+    "fetch-rss": "npx tsx scripts/fetch-rss-feeds.ts",
     "seo-audit": "tsx scripts/seo-audit.ts",
     "test": "vitest run",
     "test:ui": "vitest --ui",
