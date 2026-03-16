@@ -353,6 +353,15 @@
     "needsManualEnrichment": false
   },
   {
+    "id": "pudu-robotics",
+    "name": "Pudu Robotics",
+    "description": "Shenzhen-based robotics company founded in 2016, specializing in commercial service robots and industry-grade autonomous quadrupeds. Pudu has deployed over 80,000 service robots across 60+ countries. The D5 series marks their entry into autonomous quadruped robots for industrial inspection and patrol in complex outdoor environments.",
+    "website": "https://www.pudurobotics.com/",
+    "logo": "",
+    "country": "China",
+    "founded": "2016"
+  },
+  {
     "id": "pal-robotics",
     "name": "PAL Robotics",
     "description": "Barcelona-based robotics specialist (est. 2004) producing humanoids and mobile platforms for research, industry, and service. TALOS features 32-DOF torque-controlled manipulation. Launched KANGAROO bipedal platform at MWC 2026 targeting logistics. Partners with EU Horizon projects and major automotive manufacturers.",
@@ -420,6 +429,14 @@
     "description": "Electronics giant with long-running Aibo consumer quadruped platform, pioneering consumer robot dogs since 1999. Offers the most sophisticated autonomous companion robot with AI personality development.",
     "website": "https://www.sony.com/",
     "logo": "/images/brands/sony-logo.svg"
+  },
+  {
+    "id": "sunday",
+    "name": "Sunday",
+    "description": "Home robotics company founded by Eric Jang (formerly Google Brain, early contributor to ACT foundation model). Building wheeled humanoid robots trained on millions of real household chores from 500+ homes. Reached $1.15B valuation with focus on zero-shot generalization to new homes using ACT-1 foundation model.",
+    "website": "https://www.sunday.ai/",
+    "logo": "",
+    "country": "USA"
   },
   {
     "id": "stanford-student-robotics",
