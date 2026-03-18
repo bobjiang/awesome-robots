@@ -296,25 +296,6 @@ graph LR
 - Embeds beehiiv subscription form via iframe
 - Available on the site for email newsletter signups
 
-### Discord Newsletter
-- **Script**: `scripts/send-weekly-digest-newsletter.ts`
-- Automatically sends when a new digest post is pushed to main
-- Parses the digest + all daily posts from the last 7 days
-- Splits messages to respect Discord's 2000-character limit
-- **Workflow**: `.github/workflows/weekly-digest-newsletter.yml`
-- **Required secret**: `DISCORD_NEWSLETTER_WEBHOOK_URL`
-
-### Weekly Digest Newsletter Workflow
-
-**File**: `.github/workflows/weekly-digest-newsletter.yml`
-**Trigger**: Push to `main` matching `content/blog/awesome-robots-digest-issue-*.md`, or manual `workflow_dispatch`
-
-**What it does:**
-1. Detects new digest posts pushed to main
-2. Parses the digest and collects daily posts from the last 7 days
-3. Sends formatted newsletter to Discord webhook
-4. Handles Discord's 2000-character message limit by splitting into chunks
-
 ### Claude Code PR Review Workflow
 
 **File**: `.github/workflows/claude-code-review.yml`
