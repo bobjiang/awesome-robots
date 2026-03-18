@@ -32,7 +32,24 @@ The automation requires an Anthropic API key to power the robot extraction and d
 - Rotate keys periodically for security
 - Monitor API usage in Anthropic Console
 
-### 2. Verify Workflow Configuration
+### 2. Add Dev.to API Key to GitHub Secrets
+
+The auto-publish workflow requires a dev.to API key to cross-post blog posts.
+
+**Step 1: Get your API key**
+- Visit https://dev.to/settings/extensions
+- Scroll to "DEV Community API Keys"
+- Generate a new key named "awesome-robots-publish"
+
+**Step 2: Add secret to GitHub**
+1. Go to your repository on GitHub
+2. Navigate to **Settings** → **Secrets and variables** → **Actions**
+3. Click **New repository secret**
+4. Name: `DEV_TO_API_KEY`
+5. Value: Paste your dev.to API key
+6. Click **Add secret**
+
+### 3. Verify Workflow Configuration
 
 The automation workflow is configured in `.github/workflows/weekly-robot-fetch.yml`.
 
