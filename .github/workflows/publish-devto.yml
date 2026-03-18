@@ -49,8 +49,10 @@ jobs:
         env:
           DEV_TO_API_KEY: ${{ secrets.DEV_TO_API_KEY }}
           NEXT_PUBLIC_BASE_URL: ${{ secrets.NEXT_PUBLIC_BASE_URL }}
+          NEW_FILES: ${{ steps.detect.outputs.files }}
         run: |
-          echo "${{ steps.detect.outputs.files }}" | while IFS= read -r file; do
+          set -eo pipefail
+          echo "$NEW_FILES" | while IFS= read -r file; do
             if [ -n "$file" ]; then
               echo "Publishing: $file"
               npx tsx scripts/publish-blog.ts file "$file"
