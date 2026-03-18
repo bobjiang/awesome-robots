@@ -10,6 +10,7 @@ This document explains the automated workflows configured for the Awesome Robots
 |----------|----------|---------|--------|
 | **Weekly Robot Discovery** | Friday 9:00 AM UTC | Discover new robots | PR with discovery data |
 | **Weekly Digest & Analytics** | Friday 10:00 AM UTC | Generate digest & analytics | PR with blog post + analytics |
+| **Publish to Dev.to** | On merge to main | Cross-post new blog posts to dev.to | Published dev.to article |
 
 ---
 
@@ -142,8 +143,9 @@ Both workflows share the same article collection and robot extraction, so the in
 
 ### Required Secrets
 
-Both workflows require:
-- `ANTHROPIC_API_KEY` - Set in GitHub Settings → Secrets → Actions
+Required secrets (GitHub Settings → Secrets → Actions):
+- `ANTHROPIC_API_KEY` - For robot extraction and digest generation
+- `DEV_TO_API_KEY` - For auto-publishing blog posts to dev.to
 
 ### Environment Variables
 
@@ -289,31 +291,30 @@ graph LR
 
 ---
 
-## 📬 Newsletter & Distribution
+## 📬 Distribution & Cross-Posting
+
+### Publish to Dev.to (Automatic)
+
+**File**: `.github/workflows/publish-devto.yml`
+**Trigger**: Push to `main` with new `content/blog/**/*.md` files
+
+**What it does:**
+1. Detects newly added blog posts via `git diff --diff-filter=A`
+2. Converts markdown to dev.to format (canonical URL, attribution header/footer)
+3. Publishes each new post to dev.to via API
+4. Only triggers for *new* files — editing existing posts won't create duplicates
+
+**Required secret**: `DEV_TO_API_KEY`
+
+**Manual alternative:**
+```bash
+npm run publish-blog file content/blog/my-post.md
+```
 
 ### Beehiiv Newsletter
 - **Component**: `src/components/NewsletterSignup.tsx`
 - Embeds beehiiv subscription form via iframe
 - Available on the site for email newsletter signups
-
-### Discord Newsletter
-- **Script**: `scripts/send-weekly-digest-newsletter.ts`
-- Automatically sends when a new digest post is pushed to main
-- Parses the digest + all daily posts from the last 7 days
-- Splits messages to respect Discord's 2000-character limit
-- **Workflow**: `.github/workflows/weekly-digest-newsletter.yml`
-- **Required secret**: `DISCORD_NEWSLETTER_WEBHOOK_URL`
-
-### Weekly Digest Newsletter Workflow
-
-**File**: `.github/workflows/weekly-digest-newsletter.yml`
-**Trigger**: Push to `main` matching `content/blog/awesome-robots-digest-issue-*.md`, or manual `workflow_dispatch`
-
-**What it does:**
-1. Detects new digest posts pushed to main
-2. Parses the digest and collects daily posts from the last 7 days
-3. Sends formatted newsletter to Discord webhook
-4. Handles Discord's 2000-character message limit by splitting into chunks
 
 ### Claude Code PR Review Workflow
 
@@ -354,4 +355,4 @@ graph LR
 
 ---
 
-**Last Updated**: February 26, 2026
+**Last Updated**: March 18, 2026
