@@ -34,7 +34,7 @@
   {
     "id": "anybotics",
     "name": "ANYbotics",
-    "description": "Swiss robotics company specializing in autonomous inspection quadrupeds. ANYmal D (IP67) and ANYmal X (ATEX Zone 1 explosion-proof, launching 2026). 200+ units shipped, thousands of inspections weekly. €127M Series C (late 2025), $150M+ total raised. Yokogawa partnership for oil/gas. 200+ employees.",
+    "description": "Swiss robotics company specializing in autonomous inspection quadrupeds. ANYmal D (IP67) and ANYmal X (ATEX Zone 1 explosion-proof, launching 2026). 200+ units shipped, thousands of inspections weekly. \u20ac127M Series C (late 2025), $150M+ total raised. Yokogawa partnership for oil/gas. 200+ employees.",
     "website": "https://www.anybotics.com/",
     "logo": "/images/brands/anybotics-logo.svg"
   },
@@ -260,14 +260,14 @@
   {
     "id": "neura-robotics",
     "name": "NEURA Robotics",
-    "description": "German company developing cognitive humanoid and quadruped robots with NVIDIA partnership. 4NE1 ($22K-$44.6K) priced for mass market, available June 2026. Raised €120M Series B (Jan 2025) led by Lingotto. 300+ employees, €1B order book, 10x revenue growth. Neuraverse platform with skill marketplace.",
+    "description": "German company developing cognitive humanoid and quadruped robots with NVIDIA partnership. 4NE1 ($22K-$44.6K) priced for mass market, available June 2026. Raised \u20ac120M Series B (Jan 2025) led by Lingotto. 300+ employees, \u20ac1B order book, 10x revenue growth. Neuraverse platform with skill marketplace.",
     "website": "https://neura-robotics.com/",
     "logo": "/images/brands/neura-robotics-logo.svg"
   },
   {
     "id": "openloong-astribot-stardust-intelligence-",
     "name": "Astribot (Stardust Intelligence)",
-    "chineseName": "星尘智能",
+    "chineseName": "\u661f\u5c18\u667a\u80fd",
     "description": "Astribot (Stardust Intelligence) is a Chinese robotics manufacturer specializing in humanoid robot development.",
     "website": "https://www.astribot.com",
     "logo": "",
@@ -278,7 +278,7 @@
   {
     "id": "openloong-engineai",
     "name": "EngineAI",
-    "chineseName": "众擎机器人",
+    "chineseName": "\u4f17\u64ce\u673a\u5668\u4eba",
     "description": "EngineAI is a Chinese robotics manufacturer specializing in humanoid robot development.",
     "website": "http://www.engineai.com.cn",
     "logo": "",
@@ -289,7 +289,7 @@
   {
     "id": "openloong-galaxea-ai",
     "name": "GALAXEA AI",
-    "chineseName": "星海图（GALAXEA AI）",
+    "chineseName": "\u661f\u6d77\u56fe\uff08GALAXEA AI\uff09",
     "description": "GALAXEA AI is a Chinese robotics manufacturer specializing in humanoid robot development.",
     "website": "https://galaxea-dynamics.com",
     "logo": "",
@@ -300,7 +300,7 @@
   {
     "id": "openloong-leju-robotics",
     "name": "Leju Robotics",
-    "chineseName": "乐聚机器人",
+    "chineseName": "\u4e50\u805a\u673a\u5668\u4eba",
     "description": "Leju Robotics is a Chinese robotics manufacturer specializing in humanoid robot development.",
     "website": "https://www.lejurobot.com",
     "logo": "",
@@ -311,7 +311,7 @@
   {
     "id": "openloong-noetix-robotics",
     "name": "Noetix Robotics",
-    "chineseName": "松延动力",
+    "chineseName": "\u677e\u5ef6\u52a8\u529b",
     "description": "Chinese humanoid robotics company developing DORA and Bumi platforms for industrial and service applications. Secured 1,000-unit Bumi orders for warehouse logistics. Bumi features 42 DOF with modular end-effectors and autonomous navigation for factory environments.",
     "website": "https://noetixrobotics.com",
     "logo": "",
@@ -322,7 +322,7 @@
   {
     "id": "openloong-paxini",
     "name": "PaXini",
-    "chineseName": "帕西尼感知科技",
+    "chineseName": "\u5e15\u897f\u5c3c\u611f\u77e5\u79d1\u6280",
     "description": "PaXini is a Chinese robotics manufacturer specializing in humanoid robot development.",
     "website": "https://paxini.com",
     "logo": "",
@@ -333,7 +333,7 @@
   {
     "id": "openloong-shanghai-kepler-exploration-robotics",
     "name": "Shanghai Kepler Exploration Robotics",
-    "chineseName": "上海开普勒探索机器人有限公司",
+    "chineseName": "\u4e0a\u6d77\u5f00\u666e\u52d2\u63a2\u7d22\u673a\u5668\u4eba\u6709\u9650\u516c\u53f8",
     "description": "Shanghai Kepler Exploration Robotics is a Chinese robotics manufacturer specializing in humanoid robot development.",
     "website": "https://www.gotokepler.com",
     "logo": "",
@@ -344,7 +344,7 @@
   {
     "id": "openloong-shanghai-zhuoyide-robot-droidup-",
     "name": "Shanghai Zhuoyide Robot (DroidUp)",
-    "chineseName": "上海卓益得机器人有限公司",
+    "chineseName": "\u4e0a\u6d77\u5353\u76ca\u5f97\u673a\u5668\u4eba\u6709\u9650\u516c\u53f8",
     "description": "Shanghai Zhuoyide Robot (DroidUp) is a Chinese robotics manufacturer specializing in humanoid robot development.",
     "website": "https://www.droidup.com",
     "logo": "",
@@ -530,5 +530,19 @@
     "name": "XPeng Robotics",
     "description": "XPeng-backed enterprise merging autonomous driving tech with next-gen humanoid robots. IRON features 82+ DOF, 22-DOF hands, 720-degree Eagle-Eye vision, full solid-state batteries, and 2,250 TOPS compute (3 Turing AI chips). VLT Physical World Large Model. Mass production target end of 2026, 1M units by 2030.",
     "website": "https://www.xpengrobotics.com/"
+  },
+  {
+    "id": "humanoid-ai",
+    "name": "Humanoid",
+    "description": "European humanoid robotics company developing the HMND 01 Alpha for industrial automation. Completed live PoC with SAP and Martur Fompak in automotive manufacturing logistics (Jan-Feb 2026). Proprietary KinetIQ AI stack enables fleet orchestration and autonomous task execution. Both bipedal (90 kg) and wheeled (300 kg) variants available.",
+    "website": "https://thehumanoid.ai/",
+    "logo": "/images/brands/humanoid-ai-logo.svg"
+  },
+  {
+    "id": "intbot",
+    "name": "IntBot",
+    "description": "San Jose-based robotics company building socially intelligent humanoid robots for customer service in public environments. IntEngine AI combines vision, audio, and language for real-time multilingual interaction. Deployed Jose at San Jose Mineta International Airport in 2026 as part of a 4-month commercial pilot. Supports 50+ languages.",
+    "website": "https://www.intbot.ai/",
+    "logo": "/images/brands/intbot-logo.svg"
   }
 ]
