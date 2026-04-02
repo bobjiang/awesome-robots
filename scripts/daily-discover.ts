@@ -45,6 +45,8 @@ const RSS_SOURCES: { name: string; url: string }[] = [
   { name: 'BAIR Blog', url: 'https://bair.berkeley.edu/blog/feed.xml' },
   { name: 'Robotics & Automation News', url: 'https://roboticsandautomationnews.com/feed' },
   { name: 'arXiv cs.RO', url: 'https://rss.arxiv.org/rss/cs.RO' },
+  { name: 'Science Robotics', url: 'https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=scirobotics' },
+  { name: 'IJRR', url: 'https://journals.sagepub.com/action/showFeed?ui=0&mi=ehikzz&ai=2b4&jc=ijra&type=etoc&feed=rss' },
 ];
 
 const ROBOT_KEYWORDS = [
