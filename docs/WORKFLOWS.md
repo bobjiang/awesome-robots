@@ -4,355 +4,234 @@ This document explains the automated workflows configured for the Awesome Robots
 
 ---
 
-## 📅 Workflow Schedule Overview
+## Workflow Schedule Overview
 
 | Workflow | Schedule | Purpose | Output |
 |----------|----------|---------|--------|
-| **Weekly Robot Discovery** | Friday 9:00 AM UTC | Discover new robots | PR with discovery data |
+| **Daily Robot Discovery** | Daily 01:07 UTC | Discover new robots from 12 RSS sources | PR with discovery data |
 | **Weekly Digest & Analytics** | Friday 10:00 AM UTC | Generate digest & analytics | PR with blog post + analytics |
-| **Publish to Dev.to** | On merge to main | Cross-post new blog posts to dev.to | Published dev.to article |
 
 ---
 
-## 🤖 Weekly Robot Discovery
+## Daily Robot Discovery
 
-**File**: `.github/workflows/weekly-robot-discovery.yml`
-**Schedule**: Every Friday at 9:00 AM UTC
-**Duration**: ~2-3 minutes
+**File**: `.github/workflows/daily-robot-discovery.yml`
+**Schedule**: Every day at 01:07 UTC
+**Duration**: ~1-2 minutes
+**Cost**: ~$0.04/day (~$1.20/month)
 
 ### What It Does
 
-1. **Collects Articles** (`npm run fetch-articles`)
-   - Fetches articles from IEEE TV RSS, Robot Report RSS, arXiv cs.RO
-   - No API costs - pure RSS/HTML parsing
-   - Saves to `data/collected-articles/YYYY-MM-DD.json`
+1. **Fetches RSS Feeds** (12 sources in parallel)
+   - The Robot Report, IEEE Spectrum Robotics, TechCrunch Robotics
+   - New Atlas Robotics, Robohub, NVIDIA Robotics Blog
+   - Google DeepMind Blog, MIT News Robotics, Stanford AI Lab
+   - BAIR Blog, Robotics & Automation News, arXiv cs.RO
+   - No API costs - pure RSS parsing
 
-2. **Extracts Robots** (`npm run extract-robots`)
-   - Uses Claude Sonnet 4.5 API to extract robot information
-   - Deduplicates against existing catalog
+2. **Deduplicates & Filters**
+   - Removes duplicate URLs across feeds
+   - Cross-day dedup against the last 7 days of discoveries
+   - Pre-filters to cap at 60 items (3+ guaranteed per source)
+   - Robot keyword filter (humanoid, quadruped, robotics, company names, etc.)
+
+3. **Extracts Robots** (`npm run daily-discover`)
+   - Uses Claude Sonnet API to extract robot information from filtered articles
+   - Deduplicates against existing catalog (`src/data/robots.json`)
    - Assigns quality scores and confidence ratings
-   - Saves to `data/discovered-robots/YYYY-MM-DD.json`
-   - **Cost**: ~$0.06 per run
+   - Saves to `data/daily-discoveries/YYYY-MM-DD.json`
 
-3. **Creates Pull Request**
-   - Branches: `discovery/weekly-robots-YYYY-MM-DD`
-   - Includes both data files
-   - Ready for manual review and robot addition
+4. **Creates Pull Request** (only when robots found)
+   - Branch: `discovery/daily-YYYY-MM-DD`
+   - Includes the daily discovery JSON file
+   - Ready for manual review
 
-### Pull Request Contents
+### RSS Sources (12)
 
-The PR includes:
-- `data/collected-articles/YYYY-MM-DD.json` - Raw article data
-- `data/discovered-robots/YYYY-MM-DD.json` - Extracted robot data
-- Quality breakdown (high/medium/low scores)
-- Article count from each source
+| Source | URL |
+|--------|-----|
+| The Robot Report | `therobotreport.com/feed/` |
+| IEEE Spectrum Robotics | `spectrum.ieee.org/feeds/topic/robotics.rss` |
+| TechCrunch Robotics | `techcrunch.com/category/robotics/feed/` |
+| New Atlas Robotics | `newatlas.com/robotics/index.rss` |
+| Robohub | `robohub.org/feed` |
+| NVIDIA Robotics Blog | `blogs.nvidia.com/blog/category/robotics/feed` |
+| Google DeepMind Blog | `deepmind.google/blog/feed/basic/` |
+| MIT News Robotics | `news.mit.edu/topic/mitrobotics-rss.xml` |
+| Stanford AI Lab | `ai.stanford.edu/blog/feed.xml` |
+| BAIR Blog | `bair.berkeley.edu/blog/feed.xml` |
+| Robotics & Automation News | `roboticsandautomationnews.com/feed` |
+| arXiv cs.RO | `rss.arxiv.org/rss/cs.RO` |
 
-### Next Steps After PR
+### Pipeline Flow
 
-1. Review discovered robots in the JSON file
-2. Research official specifications from manufacturer websites
-3. Use Claude Code to add robots to catalog:
-   ```bash
-   Add the new robots from @data/discovered-robots/YYYY-MM-DD.json
-   Note: all images must be downloaded locally, follow @src/components/RobotDetailTemplate.tsx
-   ```
-4. Merge the discovery PR
-5. The robots will be added in a separate commit/PR
+```
+12 RSS feeds (parallel) -> URL dedup -> cross-day dedup (7 days)
+  -> pre-filter (60 max) -> robot keyword filter -> Claude extraction
+  -> save JSON -> create PR if robots found
+```
 
 ### Manual Trigger
 
-You can manually trigger this workflow:
-1. Go to GitHub Actions → Weekly Robot Discovery
+1. Go to GitHub Actions -> Daily Robot Discovery
 2. Click "Run workflow"
 3. Select branch and click "Run workflow"
 
+Or run locally:
+```bash
+export ANTHROPIC_API_KEY="your-api-key"
+npm run daily-discover
+```
+
 ---
 
-## 📰 Weekly Digest & Analytics
+## Weekly Digest & Analytics
 
 **File**: `.github/workflows/weekly-robot-fetch.yml`
-**Schedule**: Every Friday at 10:00 AM UTC (1 hour after discovery)
+**Schedule**: Every Friday at 10:00 AM UTC
 **Duration**: ~5-8 minutes
 
 ### What It Does
 
 1. **Collects Articles** (`npm run fetch-articles`)
-   - Same as discovery workflow
    - Fetches from IEEE TV, Robot Report, arXiv
+   - No API costs
 
 2. **Extracts Robots** (`npm run extract-robots`)
-   - Same as discovery workflow
    - Uses Claude API for extraction
    - **Cost**: ~$0.06 per run
 
 3. **Generates Digest** (`npm run generate-digest`)
-   - Creates weekly blog post with insights and trends
+   - Aggregates from daily discovery files (`data/daily-discoveries/`) for the last 7 days
+   - Falls back to `data/discovered-robots/` if no daily files exist
    - Uses Claude API for content generation
    - Saves to `content/blog/YYYY-MM-DD-digest-issue-N.md`
    - **Cost**: ~$0.015 per run
 
 4. **Updates Analytics** (`npm run update-analytics`)
    - Aggregates robot catalog statistics
-   - Tracks discovery trends over time
-   - Updates brand and category distributions
    - No API costs
 
 5. **Creates Pull Request**
-   - Branches: `automation/weekly-digest-YYYY-MM-DD`
-   - Includes all 4 outputs
+   - Branch: `automation/weekly-digest-YYYY-MM-DD`
    - Ready for editorial review
-
-### Pull Request Contents
-
-The PR includes:
-- `data/collected-articles/YYYY-MM-DD.json` - Article data
-- `data/discovered-robots/YYYY-MM-DD.json` - Robot discoveries
-- `content/blog/YYYY-MM-DD-digest-issue-N.md` - Blog post
-- `data/analytics/*.json` - Updated analytics
-
-### Next Steps After PR
-
-1. Review digest blog post for editorial quality
-2. Verify discovered robots against official sources
-3. Check analytics data integrity
-4. Merge to publish the digest
-5. Consider adding high-quality discoveries to main catalog
 
 ### Manual Trigger
 
-You can manually trigger this workflow:
-1. Go to GitHub Actions → Weekly Robot Discovery & Digest Automation
+1. Go to GitHub Actions -> Weekly Robot Discovery & Digest Automation
 2. Click "Run workflow"
-3. Select branch and click "Run workflow"
 
 ---
 
-## 💰 Cost Analysis
+## Cost Analysis
 
-| Workflow | API Calls | Cost per Run | Annual Cost |
-|----------|-----------|--------------|-------------|
-| **Discovery** | 1 extraction | ~$0.06 | ~$3.12/year |
-| **Digest & Analytics** | 1 extraction + 1 digest | ~$0.075 | ~$3.90/year |
-| **Total** | - | ~$0.135/week | ~$7.02/year |
-
-Both workflows share the same article collection and robot extraction, so the incremental cost of the digest workflow is only the digest generation (~$0.015).
+| Workflow | Schedule | Cost per Run | Monthly Cost |
+|----------|----------|--------------|--------------|
+| **Daily Discovery** | Daily | ~$0.04 | ~$1.20 |
+| **Weekly Digest** | Weekly | ~$0.075 | ~$0.30 |
+| **Total** | - | - | ~$1.50/month |
 
 ---
 
-## 🔧 Configuration
+## Configuration
 
 ### Required Secrets
 
-Required secrets (GitHub Settings → Secrets → Actions):
-- `ANTHROPIC_API_KEY` - For robot extraction and digest generation
-- `DEV_TO_API_KEY` - For auto-publishing blog posts to dev.to
+- `ANTHROPIC_API_KEY` - Set in GitHub Settings -> Secrets -> Actions
 
 ### Environment Variables
 
-No additional environment variables needed. The workflows use:
 - `GITHUB_TOKEN` - Automatically provided by GitHub Actions
 - `GH_TOKEN` - Alias for GITHUB_TOKEN (for gh CLI)
 
 ---
 
-## 🚨 Error Handling
+## Error Handling
 
 Both workflows will:
-1. **Automatic Retry**: Claude API calls retry 3 times with exponential backoff
-2. **Failure Issues**: Create GitHub issue with detailed error information
-3. **Manual Recovery**: Instructions provided in failure issue
-
-### Common Failure Scenarios
-
-**Article Collection Failed:**
-- RSS feeds unavailable
-- Network connectivity issues
-- Invalid XML/JSON responses
-
-**Robot Extraction Failed:**
-- ANTHROPIC_API_KEY not configured
-- API rate limits exceeded
-- Invalid article data format
-
-**Digest Generation Failed:**
-- Insufficient article data
-- API errors during generation
-- Invalid markdown output
+1. **Automatic Retry**: Claude API calls retry with exponential backoff
+2. **Graceful degradation**: RSS feed failures don't block other sources
+3. **No PR on empty results**: If no robots found, no PR is created
 
 ### Manual Recovery
 
 If automation fails, run locally:
 
 ```bash
-# Set API key
 export ANTHROPIC_API_KEY="your-api-key"
 
-# Run individual steps
+# Daily discovery
+npm run daily-discover
+
+# Weekly digest
 npm run fetch-articles
 npm run extract-robots
 npm run generate-digest
 npm run update-analytics
 
-# Review outputs
-ls -l data/collected-articles/
+# Check outputs
+ls -l data/daily-discoveries/
 ls -l data/discovered-robots/
 ls -l content/blog/
 ```
 
 ---
 
-## 📊 Workflow Outputs
+## Workflow Outputs
 
-### Discovery Workflow Output Structure
+### Daily Discovery Output
+
+```
+data/
+└── daily-discoveries/
+    ├── 2026-04-01.json
+    ├── 2026-04-02.json
+    └── 2026-04-03.json
+```
+
+### Weekly Digest Output
 
 ```
 data/
 ├── collected-articles/
-│   └── 2026-01-26.json          # Article data with metadata
-└── discovered-robots/
-    └── 2026-01-26.json          # Robot discoveries with quality scores
-```
-
-### Digest Workflow Output Structure
-
-```
-data/
-├── collected-articles/
-│   └── 2026-01-26.json          # Article data
+│   └── 2026-04-04.json
 ├── discovered-robots/
-│   └── 2026-01-26.json          # Robot discoveries
+│   └── 2026-04-04.json
 └── analytics/
-    └── *.json                    # Updated analytics data
+    └── *.json
 
 content/
 └── blog/
-    └── 2026-01-26-digest-issue-N.md  # Generated blog post
+    └── awesome-robots-digest-issue-N.md
 ```
 
 ---
 
-## 🔄 Workflow Dependencies
-
-```mermaid
-graph LR
-    A[Friday 9am: Discovery] --> B[Collect Articles]
-    B --> C[Extract Robots]
-    C --> D[Create Discovery PR]
-
-    E[Friday 10am: Digest] --> F[Collect Articles]
-    F --> G[Extract Robots]
-    G --> H[Generate Digest]
-    H --> I[Update Analytics]
-    I --> J[Create Digest PR]
-```
-
-**Note**: The two workflows run independently. The digest workflow re-runs article collection and extraction to ensure it has fresh data even if the discovery workflow failed.
-
----
-
-## 📝 Troubleshooting
-
-### Discovery PR Not Created
-
-**Check:**
-1. Workflow completed successfully
-2. Articles were collected (check logs)
-3. Robots were extracted (check logs)
-4. Branch was created and pushed
-
-**Fix:**
-- Review workflow run logs in GitHub Actions
-- Check ANTHROPIC_API_KEY is configured
-- Manually trigger workflow to retry
-
-### Digest PR Missing Content
-
-**Check:**
-1. All 4 steps completed (articles, robots, digest, analytics)
-2. Digest file was created in `content/blog/`
-3. No errors in Claude API calls
-
-**Fix:**
-- Review digest generation logs
-- Verify article data quality
-- Check for API rate limiting
-
-### Both Workflows Failed
-
-**Check:**
-1. RSS feeds are accessible
-2. GitHub Actions runner has network access
-3. Dependencies installed correctly
-
-**Fix:**
-- Check GitHub status page
-- Review RSS feed availability
-- Wait 1 hour and retry
-
----
-
-## 📬 Distribution & Cross-Posting
-
-### Publish to Dev.to (Automatic)
-
-**File**: `.github/workflows/publish-devto.yml`
-**Trigger**: Push to `main` with new `content/blog/**/*.md` files
-
-**What it does:**
-1. Detects newly added blog posts via `git diff --diff-filter=A`
-2. Converts markdown to dev.to format (canonical URL, attribution header/footer)
-3. Publishes each new post to dev.to via API
-4. Only triggers for *new* files — editing existing posts won't create duplicates
-
-**Required secret**: `DEV_TO_API_KEY`
-
-**Manual alternative:**
-```bash
-npm run publish-blog file content/blog/my-post.md
-```
+## Newsletter & Distribution
 
 ### Beehiiv Newsletter
 - **Component**: `src/components/NewsletterSignup.tsx`
 - Embeds beehiiv subscription form via iframe
-- Available on the site for email newsletter signups
 
-### Claude Code PR Review Workflow
+### Discord Newsletter
+- **Script**: `scripts/send-weekly-digest-newsletter.ts`
+- **Workflow**: `.github/workflows/weekly-digest-newsletter.yml`
+- **Required secret**: `DISCORD_NEWSLETTER_WEBHOOK_URL`
+- Sends when a new digest post is pushed to main
 
-**File**: `.github/workflows/claude-code-review.yml`
-**Trigger**: Pull requests (opened, synchronized, ready_for_review, reopened)
-
-**What it does:**
-1. Runs automated code review on every PR using `anthropics/claude-code-action@v1`
-2. Posts review comments directly on the PR
-3. **Required secret**: `CLAUDE_CODE_OAUTH_TOKEN`
-
----
-
-## 🔗 Data Sources
-
-- **IEEE TV RSS**: https://ieeetv.ieee.org/channel_rss/channel_77/rss
-- **The Robot Report RSS**: https://www.therobotreport.com/feed/
-- **arXiv cs.RO**: https://arxiv.org/list/cs.RO/new
+### Claude Code PR Review
+- **Workflow**: `.github/workflows/claude-code-review.yml`
+- **Required secret**: `CLAUDE_CODE_OAUTH_TOKEN`
+- Runs automated code review on every PR
 
 ---
 
-## 🎯 Best Practices
-
-1. **Review PRs Promptly**: Discovery data is time-sensitive
-2. **Monitor Costs**: Check Anthropic API usage monthly
-3. **Update Secrets**: Rotate ANTHROPIC_API_KEY periodically
-4. **Test Locally First**: Before relying on automation, test locally
-5. **Keep Documentation Updated**: Update this file when workflows change
-
----
-
-## 📚 Additional Resources
+## Additional Resources
 
 - **Setup Guide**: `docs/SETUP.md`
-- **Placeholder Documentation**: `docs/GITHUB-ACTIONS-PLACEHOLDERS.md`
 - **Adding Robots**: `docs/ADDING-ROBOTS.md`
 - **SEO Guide**: `docs/SEO.md`
 
 ---
 
-**Last Updated**: March 18, 2026
+**Last Updated**: April 3, 2026
