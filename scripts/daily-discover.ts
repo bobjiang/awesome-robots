@@ -4,6 +4,7 @@ import fs from 'fs';
 import path from 'path';
 import Parser from 'rss-parser';
 import Anthropic from '@anthropic-ai/sdk';
+import * as cheerio from 'cheerio';
 import type { DiscoveredRobot, FetchError } from '../src/types/discovered-robot';
 
 // ============================================================================
@@ -48,6 +49,13 @@ const RSS_SOURCES: { name: string; url: string }[] = [
   { name: 'Science Robotics', url: 'https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=scirobotics' },
   { name: 'IJRR', url: 'https://journals.sagepub.com/action/showFeed?ui=0&mi=ehikzz&ai=2b4&jc=ijra&type=etoc&feed=rss' },
   { name: 'npj Robotics', url: 'https://www.nature.com/npjrobot.rss' },
+  { name: 'Boston Dynamics', url: 'https://bostondynamics.com/feed/' },
+];
+
+const SITEMAP_SOURCES: { name: string; sitemapUrl: string; pathPrefix: string }[] = [
+  { name: 'Figure AI', sitemapUrl: 'https://www.figure.ai/sitemap.xml', pathPrefix: '/news/' },
+  { name: 'ANYbotics', sitemapUrl: 'https://www.anybotics.com/post-sitemap.xml', pathPrefix: '/' },
+  { name: 'Agility Robotics', sitemapUrl: 'https://www.agilityrobotics.com/sitemap.xml', pathPrefix: '/content/' },
 ];
 
 const ROBOT_KEYWORDS = [
@@ -98,6 +106,77 @@ export function preFilterItems(items: RSSItem[], maxItems = 60): RSSItem[] {
   }
 
   return [...guaranteed, ...rest.slice(0, maxItems - guaranteed.length)];
+}
+
+// ============================================================================
+// Sitemap parsing
+// ============================================================================
+
+export function parseSitemapXml(xml: string, source: string, pathPrefix?: string): RSSItem[] {
+  try {
+    const $ = cheerio.load(xml, { xmlMode: true });
+    const items: RSSItem[] = [];
+
+    $('url').each((_, el) => {
+      const loc = $(el).find('loc').text().trim();
+      const lastmod = $(el).find('lastmod').text().trim();
+      if (!loc) return;
+
+      if (pathPrefix) {
+        try {
+          const urlPath = new URL(loc).pathname;
+          if (!urlPath.startsWith(pathPrefix)) return;
+        } catch {
+          return;
+        }
+      }
+
+      // Derive title from URL slug
+      const slug = loc.split('/').filter(Boolean).pop() || '';
+      const title = slug.replace(/-/g, ' ').replace(/\.\w+$/, '');
+
+      items.push({ title, link: loc, source, pubDate: lastmod });
+    });
+
+    return items;
+  } catch {
+    return [];
+  }
+}
+
+async function fetchSitemapSources(): Promise<{ items: RSSItem[]; errors: FetchError[] }> {
+  const results = await Promise.all(
+    SITEMAP_SOURCES.map(async ({ name, sitemapUrl, pathPrefix }) => {
+      try {
+        const res = await fetch(sitemapUrl, {
+          headers: { 'User-Agent': 'awesome-robots-discovery/1.0' },
+          signal: AbortSignal.timeout(15000),
+        });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const xml = await res.text();
+        const items = parseSitemapXml(xml, name, pathPrefix);
+
+        // Only keep items from the last 14 days
+        const cutoff = new Date();
+        cutoff.setDate(cutoff.getDate() - 14);
+        const cutoffStr = cutoff.toISOString().split('T')[0];
+        const recent = items.filter((item) => !item.pubDate || item.pubDate >= cutoffStr);
+
+        return { items: recent, error: null };
+      } catch (e) {
+        const error: FetchError = {
+          source: name,
+          error: e instanceof Error ? e.message : String(e),
+          timestamp: new Date().toISOString(),
+        };
+        return { items: [] as RSSItem[], error };
+      }
+    })
+  );
+
+  const items = results.flatMap((r) => r.items);
+  const errors = results.map((r) => r.error).filter((e): e is FetchError => e !== null);
+  return { items, errors };
 }
 
 // ============================================================================
@@ -257,9 +336,16 @@ Return ONLY valid JSON, no markdown fences or explanation.`,
 async function main() {
   const today = new Date().toISOString().split('T')[0];
 
-  // Step 1: Fetch all RSS feeds in parallel
-  const { items: rawItems, errors } = await fetchAllFeeds();
-  const successCount = RSS_SOURCES.length - errors.length;
+  // Step 1: Fetch all sources in parallel (RSS + sitemaps)
+  const [rssResult, sitemapResult] = await Promise.all([
+    fetchAllFeeds(),
+    fetchSitemapSources(),
+  ]);
+
+  const rawItems = [...rssResult.items, ...sitemapResult.items];
+  const errors = [...rssResult.errors, ...sitemapResult.errors];
+  const totalSources = RSS_SOURCES.length + SITEMAP_SOURCES.length;
+  const successCount = totalSources - errors.length;
 
   for (const err of errors) {
     process.stderr.write(`Warning: ${err.source} failed: ${err.error}\n`);
@@ -279,7 +365,7 @@ async function main() {
   const robotItems = preFiltered.filter(isRobotRelated);
 
   process.stdout.write(
-    `Fetched: ${rawItems.length} items from ${successCount}/${RSS_SOURCES.length} sources\n` +
+    `Fetched: ${rawItems.length} items from ${successCount}/${totalSources} sources\n` +
     `After URL dedup: ${dedupedItems.length}\n` +
     `After cross-day dedup: ${crossDayDeduped.length}\n` +
     `After pre-filter: ${preFiltered.length}\n` +

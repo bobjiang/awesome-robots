@@ -8,7 +8,7 @@ This document explains the automated workflows configured for the Awesome Robots
 
 | Workflow | Schedule | Purpose | Output |
 |----------|----------|---------|--------|
-| **Daily Robot Discovery** | Daily 01:07 UTC | Discover new robots from 15 RSS sources | PR with discovery data |
+| **Daily Robot Discovery** | Daily 01:07 UTC | Discover new robots from 19 sources | PR with discovery data |
 | **Weekly Digest & Analytics** | Friday 10:00 AM UTC | Generate digest & analytics | PR with blog post + analytics |
 
 ---
@@ -27,7 +27,8 @@ This document explains the automated workflows configured for the Awesome Robots
    - New Atlas Robotics, Robohub, NVIDIA Robotics Blog
    - Google DeepMind Blog, MIT News Robotics, Stanford AI Lab
    - BAIR Blog, Robotics & Automation News, arXiv cs.RO
-   - Science Robotics, IJRR, npj Robotics (Nature)
+   - Science Robotics, IJRR, npj Robotics (Nature), Boston Dynamics
+   - Figure AI, ANYbotics, Agility Robotics (via sitemap scraping)
    - No API costs - pure RSS parsing
 
 2. **Deduplicates & Filters**
@@ -47,7 +48,7 @@ This document explains the automated workflows configured for the Awesome Robots
    - Includes the daily discovery JSON file
    - Ready for manual review
 
-### RSS Sources (15)
+### Sources (19 total: 16 RSS + 3 sitemap)
 
 | Source | URL |
 |--------|-----|
@@ -66,11 +67,16 @@ This document explains the automated workflows configured for the Awesome Robots
 | Science Robotics | `science.org/action/showFeed?...&jc=scirobotics` |
 | IJRR | `journals.sagepub.com/action/showFeed?...&jc=ijra` |
 | npj Robotics | `nature.com/npjrobot.rss` |
+| Boston Dynamics | `bostondynamics.com/feed/` |
+| **Sitemap-based** | |
+| Figure AI | `figure.ai/sitemap.xml` (filtered to `/news/`) |
+| ANYbotics | `anybotics.com/post-sitemap.xml` |
+| Agility Robotics | `agilityrobotics.com/sitemap.xml` (filtered to `/content/`) |
 
 ### Pipeline Flow
 
 ```
-14 RSS feeds (parallel) -> URL dedup -> cross-day dedup (7 days)
+19 sources (RSS + sitemaps, parallel) -> URL dedup -> cross-day dedup (7 days)
   -> pre-filter (60 max) -> robot keyword filter -> Claude extraction
   -> save JSON -> create PR if robots found
 ```

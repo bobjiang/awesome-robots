@@ -3,6 +3,7 @@ import {
   deduplicateByUrl,
   isRobotRelated,
   preFilterItems,
+  parseSitemapXml,
 } from '../../scripts/daily-discover';
 
 describe('deduplicateByUrl', () => {
@@ -111,5 +112,54 @@ describe('preFilterItems', () => {
 
   it('returns empty array for empty input', () => {
     expect(preFilterItems([], 30)).toHaveLength(0);
+  });
+});
+
+describe('parseSitemapXml', () => {
+  it('extracts URLs and lastmod from sitemap XML', () => {
+    const xml = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://example.com/blog/post-1</loc>
+    <lastmod>2026-04-01</lastmod>
+  </url>
+  <url>
+    <loc>https://example.com/blog/post-2</loc>
+    <lastmod>2026-03-28</lastmod>
+  </url>
+  <url>
+    <loc>https://example.com/about</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+</urlset>`;
+    const items = parseSitemapXml(xml, 'TestSource', '/blog/');
+    expect(items).toHaveLength(2);
+    expect(items[0].link).toBe('https://example.com/blog/post-1');
+    expect(items[0].source).toBe('TestSource');
+    expect(items[0].pubDate).toBe('2026-04-01');
+  });
+
+  it('filters by path prefix', () => {
+    const xml = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://example.com/news/a</loc></url>
+  <url><loc>https://example.com/docs/b</loc></url>
+</urlset>`;
+    const items = parseSitemapXml(xml, 'S', '/news/');
+    expect(items).toHaveLength(1);
+    expect(items[0].link).toBe('https://example.com/news/a');
+  });
+
+  it('returns empty for invalid XML', () => {
+    expect(parseSitemapXml('not xml', 'S')).toHaveLength(0);
+  });
+
+  it('derives title from URL slug', () => {
+    const xml = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://example.com/blog/my-great-post</loc></url>
+</urlset>`;
+    const items = parseSitemapXml(xml, 'S', '/blog/');
+    expect(items[0].title).toBe('my great post');
   });
 });
