@@ -17,6 +17,7 @@
     "generate-digest": "tsx scripts/generate-digest.ts",
     "digest-and-publish": "tsx scripts/generate-digest.ts --publish-draft",
     "fetch-articles": "tsx scripts/fetch-articles.ts",
+    "daily-discover": "tsx scripts/daily-discover.ts",
     "extract-robots": "tsx scripts/extract-robots.ts",
     "update-analytics": "tsx scripts/update-analytics.ts",
     "fetch-rss": "npx tsx scripts/fetch-rss-feeds.ts",

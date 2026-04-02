@@ -1,4 +1,4 @@
-name: Daily Robot Discovery (Ralph Loop)
+name: Daily Robot Discovery
 
 on:
   schedule:
@@ -6,81 +6,55 @@ on:
   workflow_dispatch:
 
 jobs:
-  discover-robots:
+  discover:
     runs-on: ubuntu-latest
     permissions:
       contents: write
       pull-requests: write
-      issues: write
-      id-token: write
-    timeout-minutes: 45
+    timeout-minutes: 10
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
 
-      - name: Install dependencies
-        run: npm ci
+      - run: npm ci
 
-      - name: Fetch RSS feeds
-        run: npx tsx scripts/fetch-rss-feeds.ts
+      - name: Run daily discovery
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: npm run daily-discover
 
-      - name: Process articles with Claude Code
-        uses: anthropics/claude-code-action@v1
-        with:
-          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
-          prompt: |
-            You are running the daily Ralph Loop robot discovery task.
+      - name: Check for discoveries
+        id: check
+        run: |
+          FILE="data/daily-discoveries/$(date -u +%Y-%m-%d).json"
+          if [ -f "$FILE" ]; then
+            COUNT=$(node -e "const d=JSON.parse(require('fs').readFileSync('./$FILE','utf8')); console.log(d.robots?.length || 0)")
+            echo "count=$COUNT" >> $GITHUB_OUTPUT
+          else
+            echo "count=0" >> $GITHUB_OUTPUT
+          fi
 
-            ## Collected Articles
-
-            Read the JSON file in data/collected-articles/ that matches today's date (YYYY-MM-DD.json).
-            These are robot-related articles from RSS feeds collected in the last 7 days.
-            If the file is empty or has no articles, output "No new robots discovered today" and stop.
-
-            ## Instructions
-
-            ### Step 1: Read existing robots
-            Read src/data/robots.json and extract ALL robot IDs to avoid duplicates.
-
-            ### Step 2: Identify new robots from articles
-            Analyze the collected articles for NEW robot product announcements.
-            Only consider robots that:
-            - Are humanoid or quadruped category
-            - Have been officially announced with real specifications
-            - Are NOT already in the database (check IDs carefully)
-            - Have enough public information for a complete entry
-
-            ### Step 3: Add new robots
-            For each genuinely new robot:
-            - Follow the exact JSON structure in src/data/robots.json
-            - Follow src/components/RobotDetailTemplate.tsx for required detail fields
-            - Include: generalInfo, keyFeatures (min 12), hardwareBuildQuality, softwareEcosystem, supplierReliability
-            - Add brand to src/data/brands.json if new
-            - Use placeholder image paths: "/images/robots/[brand]-[model]/[brand]-[model]-1.jpg"
-            - Set lastVerifiedAt to today's date
-
-            ### Step 4: Validate
-            Run: npm run lint
-            If validation fails, fix the issues.
-
-            ### Step 5: Submit
-            If no new robots found, output "No new robots discovered today" and stop.
-            If new robots added, create a branch and PR:
-            - Branch: daily-robots/YYYY-MM-DD
-            - PR title: "Robot Discovery: N robots (YYYY-MM-DD)"
-            - PR body: list each robot added with name, brand, category
-
-            ## Rules
-            - Never add duplicates
-            - Only add robots with real specs (not concept renders)
-            - Do not modify existing entries
-          claude_args: "--model claude-sonnet-4-6 --max-turns 25"
+      - name: Create PR if discoveries found
+        if: steps.check.outputs.count != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          DATE=$(date -u +%Y-%m-%d)
+          BRANCH="discovery/daily-$DATE"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add "data/daily-discoveries/$DATE.json"
+          git commit -m "feat: daily robot discovery ($DATE) - ${{ steps.check.outputs.count }} robots"
+          git push origin "$BRANCH"
+          gh pr create \
+            --title "Robot Discovery: ${{ steps.check.outputs.count }} robots ($DATE)" \
+            --body "Automated daily discovery found ${{ steps.check.outputs.count }} new robot(s). Review the JSON for details." \
+            --base main

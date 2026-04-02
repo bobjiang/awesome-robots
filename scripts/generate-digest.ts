@@ -10,8 +10,85 @@ import {
   extractMarkdownFromResponse,
   DigestPromptData,
 } from '../src/utils/digest-templates';
-import { FetchResult } from '../src/types/discovered-robot';
+import { FetchResult, DiscoveredRobot } from '../src/types/discovered-robot';
 import { BlogPublisher } from './publish-blog';
+
+// ============================================================================
+// Daily Discovery Aggregation
+// ============================================================================
+
+/**
+ * Load and merge daily discovery files from the last 7 days into a FetchResult.
+ * Falls back to the old discovered-robots/ path if no daily files found.
+ */
+function loadWeeklyDiscoveries(dataDir: string, dateStr: string): FetchResult | null {
+  const dailyDir = path.join(dataDir, 'daily-discoveries');
+  if (!fs.existsSync(dailyDir)) return null;
+
+  const endDate = new Date(dateStr);
+  const startDate = new Date(dateStr);
+  startDate.setDate(endDate.getDate() - 6);
+
+  const files = fs
+    .readdirSync(dailyDir)
+    .filter((f) => f.endsWith('.json') && f !== '.gitkeep')
+    .filter((f) => {
+      const d = f.replace('.json', '');
+      return d >= startDate.toISOString().split('T')[0] && d <= dateStr;
+    })
+    .sort();
+
+  if (files.length === 0) return null;
+
+  const allRobots: DiscoveredRobot[] = [];
+  const seen = new Set<string>();
+  let totalErrors = 0;
+  const sourceBreakdown: Record<string, number> = {};
+
+  for (const file of files) {
+    try {
+      const data = JSON.parse(
+        fs.readFileSync(path.join(dailyDir, file), 'utf-8')
+      );
+      for (const robot of data.robots || []) {
+        const key = `${(robot.company || '').toLowerCase()}-${(robot.robot_name || '').toLowerCase()}`;
+        if (!seen.has(key)) {
+          seen.add(key);
+          allRobots.push(robot);
+          const src = robot.source_type || 'news';
+          sourceBreakdown[src] = (sourceBreakdown[src] || 0) + 1;
+        }
+      }
+      totalErrors += (data.errors || []).length;
+    } catch {
+      // skip corrupted files
+    }
+  }
+
+  const startMonth = startDate.toLocaleDateString('en-US', { month: 'short' });
+  const endMonth = endDate.toLocaleDateString('en-US', { month: 'short' });
+  const weekRange =
+    startMonth === endMonth
+      ? `${startMonth} ${startDate.getDate()}\u2013${endDate.getDate()}`
+      : `${startMonth} ${startDate.getDate()}\u2013${endMonth} ${endDate.getDate()}`;
+
+  const high = allRobots.filter((r) => r.confidence_score >= 0.7).length;
+  const low = allRobots.filter((r) => r.confidence_score < 0.4).length;
+
+  return {
+    fetch_date: new Date().toISOString(),
+    week_range: weekRange,
+    summary: {
+      total_discovered: allRobots.length,
+      duplicates_filtered: 0,
+      new_robots: allRobots.length,
+      quality_breakdown: { high, medium: allRobots.length - high - low, low },
+      source_breakdown: sourceBreakdown,
+    },
+    robots: allRobots,
+    errors: [],
+  };
+}
 
 // ============================================================================
 // AI Digest Generator Class
@@ -64,20 +141,30 @@ class AIDigestGenerator {
   ): Promise<{ filePath: string; issueNumber: number }> {
     console.log(`\n🤖 Generating AI-powered digest for ${dateStr}...`);
 
-    // Load discovery data
-    const discoveredPath = path.join(
-      this.dataDir,
-      'discovered-robots',
-      `${dateStr}.json`
-    );
+    // Load discovery data — try daily discoveries first, fall back to old path
+    let discoveredRobots: FetchResult;
+    const weeklyAggregated = loadWeeklyDiscoveries(this.dataDir, dateStr);
 
-    if (!fs.existsSync(discoveredPath)) {
-      throw new Error(`Discovered robots file not found: ${discoveredPath}`);
+    if (weeklyAggregated && weeklyAggregated.robots.length > 0) {
+      console.log(
+        `  Aggregated ${weeklyAggregated.robots.length} robots from daily discoveries`
+      );
+      discoveredRobots = weeklyAggregated;
+    } else {
+      const discoveredPath = path.join(
+        this.dataDir,
+        'discovered-robots',
+        `${dateStr}.json`
+      );
+
+      if (!fs.existsSync(discoveredPath)) {
+        throw new Error(`No discovery data found for ${dateStr}`);
+      }
+
+      discoveredRobots = JSON.parse(
+        fs.readFileSync(discoveredPath, 'utf-8')
+      );
     }
-
-    const discoveredRobots: FetchResult = JSON.parse(
-      fs.readFileSync(discoveredPath, 'utf-8')
-    );
 
     // Load discovery stats
     const discoveryStats = this.engine.loadDiscoveryStats(dateStr);

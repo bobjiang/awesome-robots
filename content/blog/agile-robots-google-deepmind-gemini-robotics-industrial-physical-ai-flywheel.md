@@ -5,7 +5,7 @@ date: "2026-03-29"
 author: "bob-jiang"
 category: "news"
 tags: ["Gemini Robotics", "Google DeepMind", "industrial robotics", "physical AI", "edge inference", "robot foundation models", "automation", "data flywheel"]
-excerpt: "Agile Robots is integrating Google DeepMind's Gemini Robotics foundation models into industrial deployments, highlighting the ""data flywheel"" that turns real-world robot operation into continuous model improvement."
+excerpt: "Agile Robots is integrating Google DeepMind's Gemini Robotics foundation models into industrial deployments, highlighting the 'data flywheel' that turns real-world robot operation into continuous model improvement."
 featured: true
 published: true
 seo:
