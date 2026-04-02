@@ -8,7 +8,7 @@ This document explains the automated workflows configured for the Awesome Robots
 
 | Workflow | Schedule | Purpose | Output |
 |----------|----------|---------|--------|
-| **Daily Robot Discovery** | Daily 01:07 UTC | Discover new robots from 14 RSS sources | PR with discovery data |
+| **Daily Robot Discovery** | Daily 01:07 UTC | Discover new robots from 15 RSS sources | PR with discovery data |
 | **Weekly Digest & Analytics** | Friday 10:00 AM UTC | Generate digest & analytics | PR with blog post + analytics |
 
 ---
@@ -27,7 +27,7 @@ This document explains the automated workflows configured for the Awesome Robots
    - New Atlas Robotics, Robohub, NVIDIA Robotics Blog
    - Google DeepMind Blog, MIT News Robotics, Stanford AI Lab
    - BAIR Blog, Robotics & Automation News, arXiv cs.RO
-   - Science Robotics, IJRR
+   - Science Robotics, IJRR, npj Robotics (Nature)
    - No API costs - pure RSS parsing
 
 2. **Deduplicates & Filters**
@@ -47,7 +47,7 @@ This document explains the automated workflows configured for the Awesome Robots
    - Includes the daily discovery JSON file
    - Ready for manual review
 
-### RSS Sources (14)
+### RSS Sources (15)
 
 | Source | URL |
 |--------|-----|
@@ -65,6 +65,7 @@ This document explains the automated workflows configured for the Awesome Robots
 | arXiv cs.RO | `rss.arxiv.org/rss/cs.RO` |
 | Science Robotics | `science.org/action/showFeed?...&jc=scirobotics` |
 | IJRR | `journals.sagepub.com/action/showFeed?...&jc=ijra` |
+| npj Robotics | `nature.com/npjrobot.rss` |
 
 ### Pipeline Flow
 

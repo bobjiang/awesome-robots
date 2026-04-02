@@ -47,6 +47,7 @@ const RSS_SOURCES: { name: string; url: string }[] = [
   { name: 'arXiv cs.RO', url: 'https://rss.arxiv.org/rss/cs.RO' },
   { name: 'Science Robotics', url: 'https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=scirobotics' },
   { name: 'IJRR', url: 'https://journals.sagepub.com/action/showFeed?ui=0&mi=ehikzz&ai=2b4&jc=ijra&type=etoc&feed=rss' },
+  { name: 'npj Robotics', url: 'https://www.nature.com/npjrobot.rss' },
 ];
 
 const ROBOT_KEYWORDS = [
