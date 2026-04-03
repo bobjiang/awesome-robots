@@ -4,6 +4,7 @@ import {
   isPromotable,
   robotAlreadyExists,
   buildRobotId,
+  buildImagePath,
 } from '../../scripts/promote-robots';
 import type { DiscoveredRobot } from '../../src/types/discovered-robot';
 
@@ -73,5 +74,13 @@ describe('robotAlreadyExists', () => {
   });
   it('returns false for new robot', () => {
     expect(robotAlreadyExists('Acme', 'Walker', existing as never[])).toBe(false);
+  });
+});
+
+describe('buildImagePath', () => {
+  it('returns local path under /images/robots/', () => {
+    const result = buildImagePath('Unitree', 'Go2');
+    expect(result.dir).toContain('public/images/robots/unitree-go2');
+    expect(result.localPath).toBe('/images/robots/unitree-go2/robot-1.jpg');
   });
 });
