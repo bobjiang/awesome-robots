@@ -170,6 +170,110 @@ function ensureBrandExists(
   return true;
 }
 
-// Suppress unused warnings — these will be used in the main promote flow
-void enrichWithClaude;
-void ensureBrandExists;
+// ============================================================================
+// Main promotion pipeline
+// ============================================================================
+
+async function main() {
+  const today = new Date().toISOString().split('T')[0];
+  const discoveryPath = path.join(DAILY_DISCOVERIES_DIR, `${today}.json`);
+
+  if (!fs.existsSync(discoveryPath)) {
+    process.stdout.write(`No discovery file for ${today}, skipping promotion\n`);
+    return;
+  }
+
+  const discovery = JSON.parse(fs.readFileSync(discoveryPath, 'utf-8'));
+  const discovered: DiscoveredRobot[] = discovery.robots || [];
+
+  const candidates = discovered.filter(isPromotable);
+  if (candidates.length === 0) {
+    process.stdout.write('No robots meet promotion criteria, skipping\n');
+    return;
+  }
+
+  const existingRobots: BaseRobot[] = JSON.parse(fs.readFileSync(ROBOTS_JSON_PATH, 'utf-8'));
+  const brands: BrandEntry[] = JSON.parse(fs.readFileSync(BRANDS_JSON_PATH, 'utf-8'));
+
+  const newCandidates = candidates.filter(
+    (r) => !robotAlreadyExists(r.company!, r.robot_name!, existingRobots)
+  );
+  if (newCandidates.length === 0) {
+    process.stdout.write('All promotable robots already exist in catalog, skipping\n');
+    return;
+  }
+
+  process.stdout.write(`Promoting ${newCandidates.length} robot(s) to catalog...\n`);
+
+  const apiKey = process.env.ANTHROPIC_API_KEY;
+  if (!apiKey) throw new Error('ANTHROPIC_API_KEY environment variable is required');
+  const client = new Anthropic({ apiKey });
+
+  let promoted = 0;
+  let brandsAdded = 0;
+
+  for (const robot of newCandidates) {
+    const robotId = buildRobotId(robot.company!, robot.robot_name!);
+    process.stdout.write(`  Processing: ${robot.company} ${robot.robot_name} (${robotId})...\n`);
+
+    const { dir, localPath } = buildImagePath(robot.company!, robot.robot_name!);
+    let imagePath = '';
+    if (robot.image_link) {
+      const ok = await downloadImage(robot.image_link, dir, 'robot-1.jpg');
+      if (ok) {
+        imagePath = localPath;
+        process.stdout.write(`    Image downloaded\n`);
+      } else {
+        process.stdout.write(`    Image download failed, continuing without image\n`);
+      }
+    }
+
+    try {
+      const entry = await enrichWithClaude(client, robot, robotId, imagePath);
+
+      entry.id = robotId;
+      entry.category = robot.type as 'humanoid' | 'quadruped';
+      if (imagePath && (!entry.images || entry.images.length === 0)) {
+        entry.images = [imagePath];
+      }
+
+      existingRobots.push(entry);
+      promoted++;
+
+      if (ensureBrandExists(brands, robot.company!, robot.description || '', robot.specs_link)) {
+        brandsAdded++;
+        process.stdout.write(`    New brand added: ${robot.company}\n`);
+      }
+
+      process.stdout.write(`    Promoted to catalog\n`);
+    } catch (e) {
+      process.stderr.write(
+        `    Failed to enrich ${robotId}: ${e instanceof Error ? e.message : e}\n`
+      );
+    }
+  }
+
+  if (promoted > 0) {
+    existingRobots.sort((a, b) => a.id.localeCompare(b.id));
+    fs.writeFileSync(ROBOTS_JSON_PATH, JSON.stringify(existingRobots, null, 2) + '\n');
+    process.stdout.write(`Updated robots.json (${existingRobots.length} total robots)\n`);
+
+    if (brandsAdded > 0) {
+      fs.writeFileSync(BRANDS_JSON_PATH, JSON.stringify(brands, null, 2) + '\n');
+      process.stdout.write(`Updated brands.json (${brands.length} total brands)\n`);
+    }
+  }
+
+  process.stdout.write(
+    `Done: ${promoted} promoted, ${newCandidates.length - promoted} failed, ${brandsAdded} new brands\n`
+  );
+}
+
+if (import.meta.url === `file://${process.argv[1]}`) {
+  main()
+    .then(() => process.exit(0))
+    .catch((e) => {
+      process.stderr.write(`Fatal error: ${e instanceof Error ? e.message : e}\n`);
+      process.exit(1);
+    });
+}
