@@ -11,7 +11,7 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
-    timeout-minutes: 10
+    timeout-minutes: 15
 
     steps:
       - uses: actions/checkout@v4
@@ -29,6 +29,11 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: npm run daily-discover
+
+      - name: Promote high-confidence robots
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: npm run promote-robots
 
       - name: Check for discoveries
         id: check
@@ -52,6 +57,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git checkout -b "$BRANCH"
           git add "data/daily-discoveries/$DATE.json"
+          git add -A "src/data/robots.json" "src/data/brands.json" "public/images/robots/" || true
           git commit -m "feat: daily robot discovery ($DATE) - ${{ steps.check.outputs.count }} robots"
           git push origin "$BRANCH"
           gh pr create \

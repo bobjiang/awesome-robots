@@ -408,8 +408,10 @@ async function main() {
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
-  main().catch((e) => {
-    process.stderr.write(`Fatal error: ${e instanceof Error ? e.message : e}\n`);
-    process.exit(1);
-  });
+  main()
+    .then(() => process.exit(0))
+    .catch((e) => {
+      process.stderr.write(`Fatal error: ${e instanceof Error ? e.message : e}\n`);
+      process.exit(1);
+    });
 }
