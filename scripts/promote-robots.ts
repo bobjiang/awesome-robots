@@ -66,6 +66,10 @@ export async function downloadImage(
   filename: string
 ): Promise<boolean> {
   try {
+    const parsed = new URL(url);
+    if (!['http:', 'https:'].includes(parsed.protocol)) return false;
+    if (filename.includes('/') || filename.includes('..')) return false;
+
     const res = await fetch(url, {
       headers: { 'User-Agent': 'awesome-robots-promote/1.0' },
       signal: AbortSignal.timeout(15000),
@@ -80,7 +84,8 @@ export async function downloadImage(
     }
     fs.writeFileSync(path.join(destDir, filename), buffer);
     return true;
-  } catch {
+  } catch (e) {
+    process.stderr.write(`    Image download error: ${e instanceof Error ? e.message : e}\n`);
     return false;
   }
 }
@@ -137,7 +142,20 @@ Description: ${robot.description || 'N/A'}`,
 
   const text = response.content[0].type === 'text' ? response.content[0].text : '';
   const cleaned = text.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim();
-  return JSON.parse(cleaned) as BaseRobot;
+  const parsed = JSON.parse(cleaned) as Record<string, unknown>;
+
+  // Validate required fields before accepting
+  if (
+    typeof parsed.name !== 'string' ||
+    typeof parsed.brand !== 'string' ||
+    typeof parsed.description !== 'string' ||
+    !Array.isArray(parsed.features) ||
+    !Array.isArray(parsed.images)
+  ) {
+    throw new Error('Claude returned incomplete robot entry (missing required fields)');
+  }
+
+  return parsed as unknown as BaseRobot;
 }
 
 interface BrandEntry {
@@ -146,6 +164,7 @@ interface BrandEntry {
   description: string;
   website: string;
   logo: string;
+  [key: string]: unknown; // preserve extra fields like country, founded
 }
 
 function ensureBrandExists(
@@ -232,7 +251,11 @@ async function main() {
       const entry = await enrichWithClaude(client, robot, robotId, imagePath);
 
       entry.id = robotId;
-      entry.category = robot.type as 'humanoid' | 'quadruped';
+      const categoryMap: Record<string, BaseRobot['category']> = {
+        humanoid: 'humanoid',
+        quadruped: 'quadruped',
+      };
+      entry.category = categoryMap[robot.type!] ?? 'other';
       if (imagePath && (!entry.images || entry.images.length === 0)) {
         entry.images = [imagePath];
       }
@@ -240,7 +263,7 @@ async function main() {
       existingRobots.push(entry);
       promoted++;
 
-      if (ensureBrandExists(brands, robot.company!, robot.description || '', robot.specs_link)) {
+      if (ensureBrandExists(brands, robot.company!, robot.description || '', entry.officialUrl)) {
         brandsAdded++;
         process.stdout.write(`    New brand added: ${robot.company}\n`);
       }
