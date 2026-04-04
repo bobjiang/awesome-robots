@@ -63,4 +63,5 @@ jobs:
           gh pr create \
             --title "Robot Discovery: ${{ steps.check.outputs.count }} robots ($DATE)" \
             --body "Automated daily discovery found ${{ steps.check.outputs.count }} new robot(s). Review the JSON for details." \
-            --base main
+            --base main \
+            || echo "::warning::PR creation failed. Branch '$BRANCH' was pushed — create PR manually."
