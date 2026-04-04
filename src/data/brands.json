@@ -209,6 +209,13 @@
     "founded": "2013"
   },
   {
+    "id": "humanoid",
+    "name": "Humanoid",
+    "description": "Humanoid robot that completed live proof-of-concept deployment with SAP and Martur Fompak.",
+    "website": "",
+    "logo": "/images/brands/humanoid-logo.svg"
+  },
+  {
     "id": "k-scale-labs",
     "name": "K-Scale Labs",
     "description": "Y Combinator-backed open-source humanoid robotics company that shut down in November 2025. Previously offered K-Bot ($9,000) and Z-Bot ($1,000) with Python SDK and Raspberry Pi-based computing. GitHub repos remain available but no longer actively maintained.",
@@ -353,15 +360,6 @@
     "needsManualEnrichment": false
   },
   {
-    "id": "pudu-robotics",
-    "name": "Pudu Robotics",
-    "description": "Shenzhen-based robotics company founded in 2016, specializing in commercial service robots and industry-grade autonomous quadrupeds. Pudu has deployed over 80,000 service robots across 60+ countries. The D5 series marks their entry into autonomous quadruped robots for industrial inspection and patrol in complex outdoor environments.",
-    "website": "https://www.pudurobotics.com/",
-    "logo": "",
-    "country": "China",
-    "founded": "2016"
-  },
-  {
     "id": "pal-robotics",
     "name": "PAL Robotics",
     "description": "Barcelona-based robotics specialist (est. 2004) producing humanoids and mobile platforms for research, industry, and service. TALOS features 32-DOF torque-controlled manipulation. Launched KANGAROO bipedal platform at MWC 2026 targeting logistics. Partners with EU Horizon projects and major automotive manufacturers.",
@@ -382,6 +380,15 @@
     "website": "https://www.pollen-robotics.com/",
     "logo": "/images/brands/pollen-robotics-logo.svg",
     "country": "France",
+    "founded": "2016"
+  },
+  {
+    "id": "pudu-robotics",
+    "name": "Pudu Robotics",
+    "description": "Shenzhen-based robotics company founded in 2016, specializing in commercial service robots and industry-grade autonomous quadrupeds. Pudu has deployed over 80,000 service robots across 60+ countries. The D5 series marks their entry into autonomous quadruped robots for industrial inspection and patrol in complex outdoor environments.",
+    "website": "https://www.pudurobotics.com/",
+    "logo": "",
+    "country": "China",
     "founded": "2016"
   },
   {
@@ -431,18 +438,18 @@
     "logo": "/images/brands/sony-logo.svg"
   },
   {
+    "id": "stanford-student-robotics",
+    "name": "Stanford Student Robotics",
+    "description": "Student robotics projects from Stanford (brand entry added to satisfy catalog consistency).",
+    "website": "https://stanford.edu"
+  },
+  {
     "id": "sunday",
     "name": "Sunday",
     "description": "Home robotics company founded by Eric Jang (formerly Google Brain, early contributor to ACT foundation model). Building wheeled humanoid robots trained on millions of real household chores from 500+ homes. Reached $1.15B valuation with focus on zero-shot generalization to new homes using ACT-1 foundation model.",
     "website": "https://www.sunday.ai/",
     "logo": "",
     "country": "USA"
-  },
-  {
-    "id": "stanford-student-robotics",
-    "name": "Stanford Student Robotics",
-    "description": "Student robotics projects from Stanford (brand entry added to satisfy catalog consistency).",
-    "website": "https://stanford.edu"
   },
   {
     "id": "swiss-mile",
