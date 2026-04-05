@@ -385,6 +385,15 @@
     "founded": "2016"
   },
   {
+    "id": "rai-institute",
+    "name": "RAI Institute",
+    "description": "Robotics and AI Institute (formerly Boston Dynamics AI Institute), founded in 2022 by Marc Raibert with over $400M funding from Hyundai Motor Group. Headquartered in Cambridge, Massachusetts with a second campus in Zurich, Switzerland. Focuses on cognitive AI, athletic AI, and organic hardware design to create smarter, more agile robots.",
+    "website": "https://rai-inst.com/",
+    "logo": "/images/brands/rai-institute-logo.svg",
+    "country": "United States",
+    "founded": "2022"
+  },
+  {
     "id": "rainbow-robotics",
     "name": "Rainbow Robotics",
     "description": "Samsung subsidiary (35% stake, $180M, Feb 2025) specializing in advanced humanoid robotics. Founded 2011 by KAIST researchers. New RB-Y1 dual-arm mobile manipulator at $80K. Part of Korean M.AX Alliance ($525M gov investment). HUBO2 deployed at MIT and Google.",

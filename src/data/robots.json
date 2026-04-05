@@ -3383,6 +3383,120 @@
     "description": "Full-size bipedal humanoid robot with high-speed movement capabilities and heavy payload capacity, designed for family service, office cleaning, and commercial applications."
   },
   {
+    "id": "rai-institute-roadrunner",
+    "name": "Roadrunner",
+    "brand": "RAI Institute",
+    "category": "other",
+    "price": {
+      "starting": "request",
+      "currency": "USD",
+      "models": [
+        {
+          "name": "Research Platform",
+          "price": "request"
+        }
+      ]
+    },
+    "timeline": {
+      "announcedAt": "2026-03-19"
+    },
+    "availability": {
+      "status": "research",
+      "regions": []
+    },
+    "sources": [
+      {
+        "kind": "official",
+        "url": "https://rai-inst.com/resources/videos/meet-roadrunner-a-bipedal-wheeled-robot-for-multi-modal-locomotion/"
+      },
+      {
+        "kind": "press",
+        "url": "https://newatlas.com/robotics/rai-robotic-legs-roadrunner/"
+      },
+      {
+        "kind": "press",
+        "url": "https://spectrum.ieee.org/roadrunner-bipedal-robot"
+      }
+    ],
+    "lastVerifiedAt": "2026-04-05",
+    "generalInfo": {
+      "manufacturer": "RAI Institute (formerly Boston Dynamics AI Institute)",
+      "modelName": "Roadrunner",
+      "dimensions": {
+        "standing": "Not disclosed",
+        "weight": "~15 kg (33 lbs)"
+      }
+    },
+    "keyFeatures": [
+      "Multi-modal locomotion: seamlessly switches between rolling on wheels and stepping/walking",
+      "Side-by-side wheel configuration for stable, wide-stance driving",
+      "Inline wheel configuration for narrow passages (like inline skating)",
+      "Stair climbing and descending capability",
+      "Single-wheel balancing and maneuvering",
+      "Entirely symmetric leg design — knees can point forward or backward",
+      "Unified single control policy trained in simulation handles all locomotion modes",
+      "Zero-shot sim-to-real transfer — behaviors deployed on hardware without additional training",
+      "Self-recovery: can stand up from various ground configurations autonomously",
+      "Lightweight at only 15 kg, designed as a faster alternative to legged humanoids",
+      "Part of RAI's Ultra Mobility Vehicle (UMV) research program",
+      "Founded by Marc Raibert with over $400M from Hyundai Motor Group"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "Not disclosed (symmetric legs with knee articulation + wheel drive)",
+      "payloadCapacity": "Not disclosed (no torso in current version; future plans to add torso)",
+      "batteryCapacityRuntime": "Not disclosed (custom-tuned lightweight batteries per UMV program)",
+      "charger": "Not disclosed",
+      "sensorsIncluded": [
+        "Joint encoders",
+        "IMU",
+        "High-speed time-of-flight sensors",
+        "LiDAR (UMV platform)",
+        "Forward-looking camera (UMV platform)"
+      ],
+      "interfaces": [
+        "Not disclosed"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Not disclosed",
+      "sdkLanguages": [],
+      "openSourceRepos": "https://github.com/bdaiinstitute",
+      "aiFrameworksSupported": [
+        "Sim-to-real reinforcement learning",
+        "Unified locomotion policy"
+      ],
+      "apiDocumentationQuality": "Research stage — not publicly documented"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Research platform — not commercially available",
+        "coverage": "N/A"
+      },
+      "postSalesSupport": "Research institution — not commercially available",
+      "trackRecord": "Founded 2022 by Marc Raibert (founder of Boston Dynamics), $400M+ funding from Hyundai Motor Group, labs in Cambridge MA and Zurich"
+    },
+    "specifications": {
+      "weight": "~15 kg (33 lbs)",
+      "locomotionModes": "Rolling (skating), walking (stepping), stair climbing, single-wheel balancing",
+      "controlPolicy": "Unified single policy trained in simulation, zero-shot sim-to-real transfer"
+    },
+    "features": [
+      "Bipedal wheeled robot with multi-modal locomotion",
+      "Seamless switching between rolling and walking",
+      "Stair climbing and single-wheel balancing",
+      "Symmetric leg design for obstacle avoidance",
+      "Zero-shot sim-to-real transfer",
+      "Only 15 kg lightweight design",
+      "Self-recovery from ground",
+      "From Marc Raibert's RAI Institute ($400M+ funded)"
+    ],
+    "images": [
+      "/images/robots/rai-institute-roadrunner/robot-1.png"
+    ],
+    "officialUrl": "https://rai-inst.com/",
+    "description": "Roadrunner is a bipedal wheeled robot from RAI Institute (formerly Boston Dynamics AI Institute) that seamlessly switches between rolling on wheels and stepping/walking. Weighing only 15 kg, it can climb stairs, balance on a single wheel, and navigate narrow passages using a unified control policy trained entirely in simulation with zero-shot real-world transfer."
+  },
+  {
     "id": "rainbow-robotics-hubo2",
     "name": "HUBO2",
     "brand": "Rainbow Robotics",
