@@ -1,0 +1,44 @@
+{
+  "fetch_date": "2026-04-05T01:44:53.215Z",
+  "sources_fetched": 17,
+  "sources_failed": 2,
+  "articles_collected": 564,
+  "articles_after_dedup": 564,
+  "articles_after_filter": 31,
+  "robots": [
+    {
+      "company": "RAI Robotics",
+      "robot_name": "Roadrunner",
+      "type": null,
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://newatlas.com/robotics/rai-robotic-legs-roadrunner/",
+      "source_type": "news",
+      "confidence_score": 0.85,
+      "description": "Bipedal robotic legs that can skate, climb stairs, and balance on one wheel.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-04-05T01:44:53.215Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "The Robot Report",
+      "error": "Status code 403",
+      "timestamp": "2026-04-05T01:44:46.777Z"
+    },
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-04-05T01:44:48.417Z"
+    }
+  ]
+}
