@@ -7,6 +7,15 @@
     "logo": "/images/brands/1x-technologies-logo.svg"
   },
   {
+    "id": "aes",
+    "name": "AES",
+    "description": "Fortune 500 global energy company (NYSE: AES) founded in 1981, headquartered in Arlington, Virginia. Developed the Maximo autonomous solar panel installation robot, now spun off as Max Robotics. Maximo 3.0 completed 100 MW of robotic solar installation at the Bellefield complex in California by March 2026, targeting 5 GW of solar capacity using robotic installation.",
+    "website": "https://www.aes.com/",
+    "logo": "",
+    "country": "USA",
+    "founded": "1981"
+  },
+  {
     "id": "agibot",
     "name": "AgiBot",
     "description": "Shanghai-based robotics company developing advanced commercial humanoid and quadruped robots. Shipped 5,000 robots by January 2026 with a 39% global humanoid market share. Product lineup includes the A2 series (service/industrial humanoids), X2 (compact research humanoid), G2 (industrial humanoid), and D1 quadruped series. Debuted at CES 2026 for US market entry.",
@@ -383,6 +392,15 @@
     "logo": "/images/brands/pollen-robotics-logo.svg",
     "country": "France",
     "founded": "2016"
+  },
+  {
+    "id": "rai-institute",
+    "name": "RAI Institute",
+    "description": "Robotics and AI Institute (formerly Boston Dynamics AI Institute), founded in 2022 by Marc Raibert with over $400M funding from Hyundai Motor Group. Headquartered in Cambridge, Massachusetts with a second campus in Zurich, Switzerland. Focuses on cognitive AI, athletic AI, and organic hardware design to create smarter, more agile robots.",
+    "website": "https://rai-inst.com/",
+    "logo": "/images/brands/rai-institute-logo.svg",
+    "country": "United States",
+    "founded": "2022"
   },
   {
     "id": "rainbow-robotics",
