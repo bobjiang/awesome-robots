@@ -12923,5 +12923,122 @@
       }
     ],
     "lastVerifiedAt": "2026-03-16T00:00:00.000Z"
+  },
+  {
+    "id": "aes-maximo",
+    "name": "Maximo",
+    "brand": "AES",
+    "category": "other",
+    "price": {
+      "starting": "request",
+      "currency": "USD",
+      "models": [
+        {
+          "name": "Maximo 3.0",
+          "price": "request"
+        }
+      ]
+    },
+    "timeline": {
+      "releasedAt": "2024-08-01"
+    },
+    "availability": {
+      "status": "commercial",
+      "regions": [
+        "United States"
+      ]
+    },
+    "sources": [
+      {
+        "kind": "official",
+        "url": "https://www.aes.com/about-us/innovation/maximo"
+      },
+      {
+        "kind": "press",
+        "url": "https://www.therobotreport.com/aes-maximo-robot-installs-100-megawatts-of-solar-capacity/"
+      },
+      {
+        "kind": "press",
+        "url": "https://www.prnewswire.com/news-releases/maximo-completes-100-mw-of-robotic-solar-installation-302723835.html"
+      }
+    ],
+    "lastVerifiedAt": "2026-04-06",
+    "generalInfo": {
+      "manufacturer": "AES Corporation / Max Robotics",
+      "modelName": "Maximo 3.0",
+      "dimensions": {
+        "standing": "Not disclosed",
+        "weight": "Not disclosed"
+      }
+    },
+    "keyFeatures": [
+      "Autonomous solar panel installation on utility-scale solar farms",
+      "Installs over 1 module per minute, nearly 2x traditional methods",
+      "Completed 100 MW milestone at AES Bellefield complex in California (March 2026)",
+      "Two-person crew operation (driver + monitor) replacing larger manual teams",
+      "Computer vision with neural networks for detecting tracker structures and modules",
+      "Operates on sandy, muddy, bumpy, and sloped terrain",
+      "Technology agnostic: works with various solar modules, clamps, rails, and trackers",
+      "Mobile microgrid with lithium-ion iron phosphate (LFP) batteries for power",
+      "Designed by Fuseproject (Yves Behar) with integrated LED safety communication band",
+      "Fleet scalable: 4 Maximo units operated in parallel at Bellefield",
+      "Claims 50% reduction in time and cost vs conventional installation",
+      "AES targeting 5 GW of solar installation using Maximo over three years"
+    ],
+    "hardwareBuildQuality": {
+      "totalDegreesOfFreedom": "Not disclosed (tracked base with multi-jointed robotic arm)",
+      "payloadCapacity": "Handles solar panels ~6.5 x 3.25 ft weighing 60+ lbs each",
+      "batteryCapacityRuntime": "Mobile microgrid with LFP batteries, AC/DC inverters, and three-phase power",
+      "charger": "Mobile microgrid power system",
+      "sensorsIncluded": [
+        "Computer vision cameras",
+        "Object detection sensors",
+        "Neural network-based panel recognition"
+      ],
+      "interfaces": [
+        "NVIDIA AI infrastructure",
+        "NVIDIA Omniverse",
+        "NVIDIA Isaac Sim"
+      ]
+    },
+    "softwareEcosystem": {
+      "rosSupport": "Not disclosed",
+      "sdkLanguages": [],
+      "openSourceRepos": "No",
+      "aiFrameworksSupported": [
+        "NVIDIA Omniverse",
+        "NVIDIA Isaac Sim",
+        "Computer vision / neural networks"
+      ],
+      "apiDocumentationQuality": "Not publicly available — commercial deployment only"
+    },
+    "supplierReliability": {
+      "warranty": {
+        "duration": "Not disclosed",
+        "coverage": "Commercial deployment contracts"
+      },
+      "postSalesSupport": "Full fleet deployment support through AES and Max Robotics teams",
+      "trackRecord": "100 MW installed at AES Bellefield complex; AES is a Fortune 500 global energy company (NYSE: AES) founded 1981"
+    },
+    "specifications": {
+      "type": "Tracked mobile robot with robotic arm",
+      "installationRate": "1+ module per minute, ~24 modules per shift-hour per person",
+      "crewSize": "2 people (driver + monitor)",
+      "terrain": "Sandy, muddy, bumpy, sloped terrain capable",
+      "powerSystem": "Mobile microgrid with LFP batteries"
+    },
+    "features": [
+      "Autonomous solar panel installation robot",
+      "100 MW installed at utility-scale solar farms",
+      "Tracked mobile base with multi-jointed robotic arm",
+      "NVIDIA AI-powered computer vision",
+      "Operates on rough terrain",
+      "2x faster than traditional manual installation",
+      "Designed by Fuseproject with LED safety communication",
+      "Fortune 500 backed (AES Corporation)"
+    ],
+    "images": [],
+    "officialUrl": "https://www.aes.com/about-us/innovation/maximo",
+    "description": "Maximo is an autonomous solar panel installation robot developed by AES Corporation (now spun off as Max Robotics). The tracked mobile robot with a multi-jointed robotic arm installs over 1 solar module per minute on utility-scale farms, nearly 2x faster than traditional methods. It completed 100 MW of installation at the AES Bellefield complex in California by March 2026, using NVIDIA AI-powered computer vision to detect and place panels across rough terrain with just a 2-person crew."
   }
 ]
