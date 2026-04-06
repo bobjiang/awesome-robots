@@ -1,0 +1,61 @@
+{
+  "fetch_date": "2026-04-06T01:45:18.477Z",
+  "sources_fetched": 18,
+  "sources_failed": 1,
+  "articles_collected": 579,
+  "articles_after_dedup": 579,
+  "articles_after_filter": 31,
+  "robots": [
+    {
+      "company": "AES",
+      "robot_name": "Maximo",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/aes-maximo-robot-installs-100-megawatts-of-solar-capacity/",
+      "source_type": "robotreport",
+      "confidence_score": 0.85,
+      "description": "Solar panel installation robot that has deployed 100 megawatts of solar capacity.",
+      "shipping_signal": "shipping_now",
+      "discovered_at": "2026-04-06T01:45:18.477Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "RAI",
+      "robot_name": "Roadrunner",
+      "type": null,
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://newatlas.com/robotics/rai-robotic-legs-roadrunner/",
+      "source_type": "news",
+      "confidence_score": 0.9,
+      "description": "Bipedal robotic legs that can skate, climb stairs, and balance on one wheel.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-04-06T01:45:18.477Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-04-06T01:45:08.247Z"
+    }
+  ]
+}
