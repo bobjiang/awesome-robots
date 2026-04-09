@@ -1,0 +1,39 @@
+{
+  "fetch_date": "2026-04-09T01:44:39.696Z",
+  "sources_fetched": 18,
+  "sources_failed": 1,
+  "articles_collected": 652,
+  "articles_after_dedup": 652,
+  "articles_after_filter": 30,
+  "robots": [
+    {
+      "company": "Tennibot",
+      "robot_name": "Partner V2",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/tennibot-launches-partner-v2-latest-robotic-tennis-ball-machine/",
+      "source_type": "robotreport",
+      "confidence_score": 0.85,
+      "description": "Latest robotic tennis ball collection machine from Tennibot.",
+      "shipping_signal": "shipping_now",
+      "discovered_at": "2026-04-09T01:44:39.696Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-04-09T01:44:33.848Z"
+    }
+  ]
+}
