@@ -1,0 +1,45 @@
+{
+  "fetch_date": "2026-04-18T01:44:44.676Z",
+  "sources_fetched": 17,
+  "sources_failed": 2,
+  "articles_collected": 602,
+  "articles_after_dedup": 602,
+  "articles_after_filter": 30,
+  "robots": [
+    {
+      "company": null,
+      "robot_name": "ATHENA",
+      "type": null,
+      "status": "research",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://newatlas.com/robotics/athena-robot-tracked-flippers-rough-terrain/",
+      "source_type": "news",
+      "confidence_score": 0.85,
+      "description": "Versatile robot with tracked flippers designed to traverse varying terrain.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-04-18T01:44:44.676Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_company",
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "The Robot Report",
+      "error": "Status code 403",
+      "timestamp": "2026-04-18T01:44:35.790Z"
+    },
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-04-18T01:44:37.848Z"
+    }
+  ]
+}
