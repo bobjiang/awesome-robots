@@ -1,0 +1,84 @@
+{
+  "fetch_date": "2026-04-21T01:44:55.691Z",
+  "sources_fetched": 18,
+  "sources_failed": 1,
+  "articles_collected": 605,
+  "articles_after_dedup": 605,
+  "articles_after_filter": 35,
+  "robots": [
+    {
+      "company": "RobCo",
+      "robot_name": "Autonomous Alfie",
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://roboticsandautomationnews.com/2026/04/20/robco-unveils-autonomous-alfie-humanoid-robot-for-industrial-automation-at-hannover-messe/100762/",
+      "source_type": "news",
+      "confidence_score": 0.95,
+      "description": "Humanoid robot unveiled at Hannover Messe for industrial automation applications.",
+      "shipping_signal": "prototype",
+      "discovered_at": "2026-04-21T01:44:55.691Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Humanoid",
+      "robot_name": "HMND 01 Alpha",
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/siemens-and-humanoid-test-hmnd0-01-alpha-logistics-tasks/",
+      "source_type": "robotreport",
+      "confidence_score": 0.92,
+      "description": "Humanoid robot being tested by Siemens for logistics tasks.",
+      "shipping_signal": "pilot_only",
+      "discovered_at": "2026-04-21T01:44:55.691Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": null,
+      "robot_name": "ATHENA",
+      "type": null,
+      "status": "research",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://newatlas.com/robotics/athena-robot-tracked-flippers-rough-terrain/",
+      "source_type": "news",
+      "confidence_score": 0.88,
+      "description": "Versatile robot with tracked flippers designed to traverse varying and rough terrain.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-04-21T01:44:55.691Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_company",
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-04-21T01:44:47.426Z"
+    }
+  ]
+}
