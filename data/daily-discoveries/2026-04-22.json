@@ -1,0 +1,84 @@
+{
+  "fetch_date": "2026-04-22T01:45:01.567Z",
+  "sources_fetched": 18,
+  "sources_failed": 1,
+  "articles_collected": 687,
+  "articles_after_dedup": 687,
+  "articles_after_filter": 36,
+  "robots": [
+    {
+      "company": "Humanoid",
+      "robot_name": "HMND 01 Alpha",
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/siemens-and-humanoid-test-hmnd0-01-alpha-logistics-tasks/",
+      "source_type": "robotreport",
+      "confidence_score": 0.85,
+      "description": "Humanoid robot being tested by Siemens for logistics tasks in warehouse environments.",
+      "shipping_signal": "pilot_only",
+      "discovered_at": "2026-04-22T01:45:01.567Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "A&K Robotics",
+      "robot_name": "Micro-vehicle",
+      "type": null,
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://roboticsandautomationnews.com/2026/04/21/ak-robotics-raises-c8-million-to-build-autonomous-micro-vehicle-for-airports/100839/",
+      "source_type": "news",
+      "confidence_score": 0.75,
+      "description": "Autonomous micro-vehicle designed for airport operations, funded with C$8 million raise.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-04-22T01:45:01.567Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": null,
+      "robot_name": "ATHENA",
+      "type": null,
+      "status": "research",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://newatlas.com/robotics/athena-robot-tracked-flippers-rough-terrain/",
+      "source_type": "news",
+      "confidence_score": 0.8,
+      "description": "Versatile robot using tracked flippers to traverse varying and rough terrain environments.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-04-22T01:45:01.567Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_company",
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-04-22T01:44:51.392Z"
+    }
+  ]
+}
