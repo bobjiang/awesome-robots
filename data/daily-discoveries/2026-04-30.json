@@ -1,0 +1,84 @@
+{
+  "fetch_date": "2026-04-30T01:46:02.568Z",
+  "sources_fetched": 18,
+  "sources_failed": 1,
+  "articles_collected": 624,
+  "articles_after_dedup": 624,
+  "articles_after_filter": 30,
+  "robots": [
+    {
+      "company": "Hexagon",
+      "robot_name": "Hexagon Humanoid",
+      "type": "humanoid",
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/schaeffler-plans-to-deploy-1000-hexagon-humanoids-2032/",
+      "source_type": "robotreport",
+      "confidence_score": 0.85,
+      "description": "Humanoid robot being deployed by Schaeffler with plans for 1,000 units by 2032.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-04-30T01:46:02.568Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "VinDynamics",
+      "robot_name": "VinDynamics Humanoid",
+      "type": "humanoid",
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://roboticsandautomationnews.com/2026/04/29/schaeffler-partners-with-vietnamese-humanoid-robot-manufacturer-vindynamics/101111/",
+      "source_type": "news",
+      "confidence_score": 0.8,
+      "description": "Vietnamese humanoid robot manufacturer partnering with Schaeffler for deployment.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-04-30T01:46:02.568Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": null,
+      "robot_name": "ATHENA",
+      "type": null,
+      "status": "research",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://newatlas.com/robotics/athena-robot-tracked-flippers-rough-terrain/",
+      "source_type": "news",
+      "confidence_score": 0.75,
+      "description": "Versatile robot using tracked flippers to traverse varying terrain types.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-04-30T01:46:02.568Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_company",
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-04-30T01:45:48.217Z"
+    }
+  ]
+}
