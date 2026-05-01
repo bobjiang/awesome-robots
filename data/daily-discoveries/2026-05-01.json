@@ -1,0 +1,61 @@
+{
+  "fetch_date": "2026-05-01T01:45:53.667Z",
+  "sources_fetched": 18,
+  "sources_failed": 1,
+  "articles_collected": 626,
+  "articles_after_dedup": 626,
+  "articles_after_filter": 29,
+  "robots": [
+    {
+      "company": "Hexagon",
+      "robot_name": "Hexagon Humanoid",
+      "type": "humanoid",
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/schaeffler-plans-to-deploy-1000-hexagon-humanoids-2032/",
+      "source_type": "robotreport",
+      "confidence_score": 0.85,
+      "description": "Humanoid robot being deployed by Schaeffler with plans for 1,000 units by 2032.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-05-01T01:45:53.667Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "ABB Robotics",
+      "robot_name": "PoWa",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/abb-robotics-launches-powa-cobot-family-targeting-industrial-tasks/",
+      "source_type": "robotreport",
+      "confidence_score": 0.75,
+      "description": "Collaborative robot family launched by ABB Robotics targeting industrial tasks.",
+      "shipping_signal": "shipping_now",
+      "discovered_at": "2026-05-01T01:45:53.667Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-05-01T01:45:43.282Z"
+    }
+  ]
+}
