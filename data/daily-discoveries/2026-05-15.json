@@ -1,0 +1,89 @@
+{
+  "fetch_date": "2026-05-15T01:46:16.390Z",
+  "sources_fetched": 17,
+  "sources_failed": 2,
+  "articles_collected": 634,
+  "articles_after_dedup": 634,
+  "articles_after_filter": 25,
+  "robots": [
+    {
+      "company": "Hello Robot",
+      "robot_name": "Stretch 4",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://spectrum.ieee.org/stretch-4-home-robot",
+      "source_type": "ieee",
+      "confidence_score": 0.85,
+      "description": "A practical and safe home robot designed for domestic use by Hello Robot.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-05-15T01:46:16.390Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Familiar Machines",
+      "robot_name": "Magic",
+      "type": null,
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://spectrum.ieee.org/familiar-machines-and-magic",
+      "source_type": "ieee",
+      "confidence_score": 0.75,
+      "description": "A robotic familiar for home use being developed by iRobot founder's new company.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-05-15T01:46:16.390Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Mind Robotics",
+      "robot_name": null,
+      "type": null,
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://techcrunch.com/2026/05/13/rivian-spinoff-mind-robotics-raises-another-400m/",
+      "source_type": "news",
+      "confidence_score": 0.65,
+      "description": "Rivian spinoff developing robotics technology with $400M in new funding.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-05-15T01:46:16.390Z",
+      "quality_score": {
+        "overall": 5,
+        "completeness": 4,
+        "reliability": 5,
+        "flags": [
+          "missing_robot_name",
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "The Robot Report",
+      "error": "Status code 403",
+      "timestamp": "2026-05-15T01:46:05.268Z"
+    },
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-05-15T01:46:07.406Z"
+    }
+  ]
+}
