@@ -1,0 +1,44 @@
+{
+  "fetch_date": "2026-05-19T01:49:32.078Z",
+  "sources_fetched": 17,
+  "sources_failed": 2,
+  "articles_collected": 622,
+  "articles_after_dedup": 622,
+  "articles_after_filter": 24,
+  "robots": [
+    {
+      "company": "Hello Robot",
+      "robot_name": "Stretch 4",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://spectrum.ieee.org/stretch-4-home-robot",
+      "source_type": "ieee",
+      "confidence_score": 0.85,
+      "description": "A practical and safe home robot designed for domestic use, representing the fourth generation of Hello Robot's Stretch platform.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-05-19T01:49:32.078Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "The Robot Report",
+      "error": "Status code 403",
+      "timestamp": "2026-05-19T01:49:17.194Z"
+    },
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-05-19T01:49:19.328Z"
+    }
+  ]
+}
