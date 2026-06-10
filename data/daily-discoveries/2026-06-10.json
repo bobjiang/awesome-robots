@@ -1,0 +1,108 @@
+{
+  "fetch_date": "2026-06-10T01:52:01.657Z",
+  "sources_fetched": 18,
+  "sources_failed": 1,
+  "articles_collected": 730,
+  "articles_after_dedup": 730,
+  "articles_after_filter": 28,
+  "robots": [
+    {
+      "company": "Hello Robot",
+      "robot_name": "Stretch",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://techcrunch.com/2026/06/04/is-silicon-valley-ready-to-put-robots-in-peoples-homes-hello-robot-is/",
+      "source_type": "news",
+      "confidence_score": 0.85,
+      "description": "Hello Robot is deploying home robots for consumer use in Silicon Valley.",
+      "shipping_signal": "shipping_now",
+      "discovered_at": "2026-06-10T01:52:01.656Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": null,
+      "robot_name": "Argus",
+      "type": null,
+      "status": "research",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://newatlas.com/robotics/argus-symmetrical-locomotion-robot/",
+      "source_type": "news",
+      "confidence_score": 0.9,
+      "description": "A 20-eyed, 20-legged robot with symmetrical locomotion that can move in any direction with equal ease.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-06-10T01:52:01.656Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_company",
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "GENISOM AI",
+      "robot_name": null,
+      "type": null,
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/genisom-ai-debuts-deployable-robotics-platforms-icra-2026/",
+      "source_type": "robotreport",
+      "confidence_score": 0.75,
+      "description": "GENISOM AI debuted deployable robotics platforms at ICRA 2026 conference.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-06-10T01:52:01.656Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_robot_name",
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": null,
+      "robot_name": "Shadow Walker",
+      "type": "humanoid",
+      "status": "research",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://spectrum.ieee.org/shadow-walker-biped-humanoid-robot",
+      "source_type": "ieee",
+      "confidence_score": 0.85,
+      "description": "A DIY bipedal humanoid robot that uses pneumatic air-muscles instead of traditional motors.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-06-10T01:52:01.656Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_company",
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-06-10T01:51:48.206Z"
+    }
+  ]
+}
