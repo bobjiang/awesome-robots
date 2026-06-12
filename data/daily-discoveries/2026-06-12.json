@@ -1,0 +1,111 @@
+{
+  "fetch_date": "2026-06-12T01:57:51.047Z",
+  "sources_fetched": 17,
+  "sources_failed": 2,
+  "articles_collected": 650,
+  "articles_after_dedup": 650,
+  "articles_after_filter": 29,
+  "robots": [
+    {
+      "company": "Theker",
+      "robot_name": "Theker Factory Robot",
+      "type": null,
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://techcrunch.com/2026/06/11/theker-just-raised-85m-to-build-the-factory-robot-that-doesnt-specialize-in-anything/",
+      "source_type": "news",
+      "confidence_score": 0.75,
+      "description": "A general-purpose factory robot designed to handle multiple tasks without specialization, backed by $85M Series funding.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-06-12T01:57:51.047Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "GENISOM AI",
+      "robot_name": "GENISOM Deployable Platform",
+      "type": null,
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/genisom-ai-debuts-deployable-robotics-platforms-icra-2026/",
+      "source_type": "robotreport",
+      "confidence_score": 0.7,
+      "description": "Deployable robotics platforms debuted at ICRA 2026 by GENISOM AI for various applications.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-06-12T01:57:51.047Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Daimon Robotics",
+      "robot_name": "RobOmni",
+      "type": null,
+      "status": "research",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/daimon-robotics-and-galbot-jointly-launches-robomni-for-benchmarking-tactile-perception-and-dexterous-manipulation/",
+      "source_type": "robotreport",
+      "confidence_score": 0.65,
+      "description": "A benchmarking platform for tactile perception and dexterous manipulation jointly developed by Daimon Robotics and Galbot.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-06-12T01:57:51.047Z",
+      "quality_score": {
+        "overall": 5,
+        "completeness": 8,
+        "reliability": 5,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": null,
+      "robot_name": "Shadow Walker",
+      "type": "humanoid",
+      "status": "research",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://spectrum.ieee.org/shadow-walker-biped-humanoid-robot",
+      "source_type": "ieee",
+      "confidence_score": 0.8,
+      "description": "A DIY bipedal humanoid robot that uses pneumatic air-muscles instead of traditional electric motors for locomotion.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-06-12T01:57:51.047Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_company",
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-06-12T01:57:34.350Z"
+    },
+    {
+      "source": "Boston Dynamics",
+      "error": "Status code 415",
+      "timestamp": "2026-06-12T01:57:33.566Z"
+    }
+  ]
+}
