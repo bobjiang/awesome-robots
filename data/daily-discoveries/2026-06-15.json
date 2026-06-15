@@ -1,0 +1,89 @@
+{
+  "fetch_date": "2026-06-15T01:59:07.647Z",
+  "sources_fetched": 17,
+  "sources_failed": 2,
+  "articles_collected": 565,
+  "articles_after_dedup": 565,
+  "articles_after_filter": 29,
+  "robots": [
+    {
+      "company": "Theker",
+      "robot_name": "Theker Factory Robot",
+      "type": null,
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://techcrunch.com/2026/06/11/theker-just-raised-85m-to-build-the-factory-robot-that-doesnt-specialize-in-anything/",
+      "source_type": "news",
+      "confidence_score": 0.75,
+      "description": "A general-purpose factory robot designed to handle multiple tasks without specialization, backed by $85M in funding.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-06-15T01:59:07.647Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Hello Robot",
+      "robot_name": "Stretch",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://techcrunch.com/2026/06/04/is-silicon-valley-ready-to-put-robots-in-peoples-homes-hello-robot-is/",
+      "source_type": "news",
+      "confidence_score": 0.65,
+      "description": "A home robot designed for consumer deployment in residential environments.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-06-15T01:59:07.647Z",
+      "quality_score": {
+        "overall": 5,
+        "completeness": 8,
+        "reliability": 5,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": null,
+      "robot_name": "Shadow Walker",
+      "type": "humanoid",
+      "status": "research",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://spectrum.ieee.org/shadow-walker-biped-humanoid-robot",
+      "source_type": "ieee",
+      "confidence_score": 0.85,
+      "description": "A DIY bipedal humanoid robot that uses pneumatic air-muscles instead of traditional electric motors for actuation.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-06-15T01:59:07.647Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_company",
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-06-15T01:58:55.239Z"
+    },
+    {
+      "source": "Boston Dynamics",
+      "error": "Status code 415",
+      "timestamp": "2026-06-15T01:58:54.479Z"
+    }
+  ]
+}
