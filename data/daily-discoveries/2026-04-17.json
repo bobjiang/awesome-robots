@@ -1,0 +1,61 @@
+{
+  "fetch_date": "2026-04-17T01:44:56.795Z",
+  "sources_fetched": 18,
+  "sources_failed": 1,
+  "articles_collected": 634,
+  "articles_after_dedup": 634,
+  "articles_after_filter": 30,
+  "robots": [
+    {
+      "company": "Path Robotics",
+      "robot_name": "Mobile Robotic Welding System",
+      "type": "quadruped",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://roboticsandautomationnews.com/2026/04/16/path-robotics-unveils-mobile-robotic-welding-system-combining-ai-and-quadruped-mobility/100600/",
+      "source_type": "news",
+      "confidence_score": 0.85,
+      "description": "Mobile robotic welding system combining AI and quadruped mobility for industrial welding applications.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-04-17T01:44:56.795Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Binghamton University",
+      "robot_name": "Robotic Guide Dog",
+      "type": "quadruped",
+      "status": "research",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/binghamton-researchers-create-robotic-guide-dogs-that-walk-and-talk/",
+      "source_type": "news",
+      "confidence_score": 0.9,
+      "description": "Conversational robotic guide dog developed by Binghamton researchers that can walk and communicate with owners.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-04-17T01:44:56.795Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-04-17T01:44:50.066Z"
+    }
+  ]
+}
