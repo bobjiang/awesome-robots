@@ -1,0 +1,89 @@
+{
+  "fetch_date": "2026-04-14T01:45:09.290Z",
+  "sources_fetched": 17,
+  "sources_failed": 2,
+  "articles_collected": 633,
+  "articles_after_dedup": 633,
+  "articles_after_filter": 29,
+  "robots": [
+    {
+      "company": "Chery",
+      "robot_name": "Chery Humanoid Robot",
+      "type": "humanoid",
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://roboticsandautomationnews.com/2026/04/13/chinese-automaker-chery-begins-selling-humanoid-robot-to-consumers-for-42000-each/100544/",
+      "source_type": "news",
+      "confidence_score": 0.85,
+      "description": "Chinese automaker Chery is selling a humanoid robot to consumers for $42,000.",
+      "shipping_signal": "shipping_now",
+      "discovered_at": "2026-04-14T01:45:09.290Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Binghamton University",
+      "robot_name": "Binghamton Robotic Guide Dog",
+      "type": "quadruped",
+      "status": "research",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/binghamton-researchers-create-robotic-guide-dogs-that-walk-and-talk/",
+      "source_type": "news",
+      "confidence_score": 0.75,
+      "description": "Binghamton University researchers created robotic guide dogs that can walk and talk with their owners.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-04-14T01:45:09.290Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": null,
+      "robot_name": "ATHENA",
+      "type": null,
+      "status": "research",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://newatlas.com/robotics/athena-robot-tracked-flippers-rough-terrain/",
+      "source_type": "news",
+      "confidence_score": 0.8,
+      "description": "ATHENA is a versatile robot that uses tracked flippers to traverse varying terrain.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-04-14T01:45:09.290Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_company",
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-04-14T01:44:57.965Z"
+    },
+    {
+      "source": "Boston Dynamics",
+      "error": "Status code 415",
+      "timestamp": "2026-04-14T01:44:56.880Z"
+    }
+  ]
+}
