@@ -1,0 +1,83 @@
+{
+  "fetch_date": "2026-06-17T01:59:44.056Z",
+  "sources_fetched": 18,
+  "sources_failed": 1,
+  "articles_collected": 750,
+  "articles_after_dedup": 750,
+  "articles_after_filter": 26,
+  "robots": [
+    {
+      "company": "Kawasaki Robotics",
+      "robot_name": "RL030N",
+      "type": null,
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/kawasaki-robotics-debut-rl030n-physical-ai-platform-automate/",
+      "source_type": "robotreport",
+      "confidence_score": 0.85,
+      "description": "Physical AI platform being debuted at Automate trade show by Kawasaki Robotics.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-06-17T01:59:44.055Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Genesis AI",
+      "robot_name": "Eno",
+      "type": "humanoid",
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/genesis-ai-launches-eno-general-purpose-robot/",
+      "source_type": "robotreport",
+      "confidence_score": 0.9,
+      "description": "General-purpose robot launched by Genesis AI for commercial applications.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-06-17T01:59:44.055Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Theker",
+      "robot_name": "Theker Factory Robot",
+      "type": null,
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://techcrunch.com/2026/06/11/theker-just-raised-85m-to-build-the-factory-robot-that-doesnt-specialize-in-anything/",
+      "source_type": "news",
+      "confidence_score": 0.75,
+      "description": "General-purpose factory robot being developed by Theker with $85M in funding.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-06-17T01:59:44.055Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-06-17T01:59:25.964Z"
+    }
+  ]
+}
