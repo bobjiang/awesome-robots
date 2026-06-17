@@ -1,0 +1,61 @@
+[
+  {
+    "id": "panther-unix-ai",
+    "name": "Panther",
+    "brand": "UniX AI",
+    "category": "humanoid",
+    "price": {
+      "starting": "request",
+      "currency": "USD",
+      "models": [
+        {
+          "name": "Panther",
+          "price": "request"
+        }
+      ]
+    },
+    "timeline": {
+      "announcedAt": "2026-04-11"
+    },
+    "availability": {
+      "status": "prototype",
+      "regions": [
+        "China"
+      ],
+      "orderLink": null
+    },
+    "sources": [
+      {
+        "kind": "official",
+        "url": "https://www.unix-group.ai/panther/2023.html"
+      },
+      {
+        "kind": "press",
+        "url": "https://markets.businessinsider.com/news/stocks/unix-ai-claims-first-real-home-deployment-of-mass-produced-humanoid-robot-panther-1036012996"
+      }
+    ],
+    "lastVerifiedAt": "2026-04-14",
+    "specifications": {
+      "height": "1600–1750 mm",
+      "degreesOfFreedom": "34 high-DoF joints",
+      "armDegreesOfFreedom": "8-DoF bionic arms (per arm)",
+      "computePower": "Up to 2070 TOPS",
+      "drivePlatform": "48 V high-voltage drive",
+      "mobility": "Omnidirectional four-wheel steering and drive chassis",
+      "liftStroke": "80 cm upper-body lift"
+    },
+    "features": [
+      "Full-size service humanoid designed for unmodified home environments",
+      "34 high-DoF joints and mass-produced 8-DoF bionic arms",
+      "Adaptive intelligent grippers for household object handling",
+      "Omnidirectional wheeled base for maneuvering in narrow, cluttered spaces",
+      "80 cm upper-body lift for ground-level reach and full-height task coverage",
+      "Up to 2070 TOPS edge compute for perception and real-time control"
+    ],
+    "images": [
+      "/images/robots/discovered/2026-04-14/panther-unix-ai.jpg"
+    ],
+    "officialUrl": "https://www.unix-group.ai/panther/2023.html",
+    "description": "UniX AI’s Panther is a full-size home-service humanoid robot built around 34 high-DoF joints, mass-produced 8-DoF bionic arms, adaptive grippers, and an omnidirectional wheeled chassis. It is positioned for real-world household task execution in complex, cluttered environments."
+  }
+]
