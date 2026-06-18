@@ -63,6 +63,13 @@
     "country": "USA"
   },
   {
+    "id": "autonomique",
+    "name": "Autonomique",
+    "description": "Semi-humanoid robot deployed at Canadian Tier 1 automotive supplier for manufacturing applications.",
+    "website": "",
+    "logo": "/images/brands/autonomique-logo.svg"
+  },
+  {
     "id": "booster-robotics",
     "name": "Booster Robotics",
     "description": "Founded in June 2023 by Tsinghua University graduates, Booster Robotics develops humanoid platforms now shipping globally. T1 full-scale humanoid and K1 ($5,999) compact platform. RoboCup world champions (IEEE-RAS Humanoids). $27.9M raised including $13.9M Series A (June 2025). NVIDIA partnership.",
@@ -188,6 +195,13 @@
     "founded": "2015"
   },
   {
+    "id": "genesis-ai",
+    "name": "Genesis AI",
+    "description": "General-purpose humanoid robot launched by Genesis AI for commercial applications.",
+    "website": "",
+    "logo": "/images/brands/genesis-ai-logo.svg"
+  },
+  {
     "id": "ghost-robotics",
     "name": "Ghost Robotics",
     "description": "Quadrupedal UGV maker for defense and industrial applications. Acquired by South Korean LIG Nex1 for $240M (July 2024). Vision 60 (51kg, IP67) deployed with U.S. Army, Marines, Air Force, and Japan GSDF. New 6-DOF manipulator arm (Dec 2025). Patent settlement with Boston Dynamics.",
@@ -225,6 +239,13 @@
     "logo": "/images/brands/kscale-labs-logo.svg",
     "country": "USA",
     "founded": "2024"
+  },
+  {
+    "id": "kawasaki-robotics",
+    "name": "Kawasaki Robotics",
+    "description": "Physical AI platform humanoid robot debuting at Automate trade show.",
+    "website": "",
+    "logo": "/images/brands/kawasaki-robotics-logo.svg"
   },
   {
     "id": "lem-surgical",
@@ -362,15 +383,6 @@
     "needsManualEnrichment": false
   },
   {
-    "id": "pudu-robotics",
-    "name": "Pudu Robotics",
-    "description": "Shenzhen-based robotics company founded in 2016, specializing in commercial service robots and industry-grade autonomous quadrupeds. Pudu has deployed over 80,000 service robots across 60+ countries. The D5 series marks their entry into autonomous quadruped robots for industrial inspection and patrol in complex outdoor environments.",
-    "website": "https://www.pudurobotics.com/",
-    "logo": "",
-    "country": "China",
-    "founded": "2016"
-  },
-  {
     "id": "pal-robotics",
     "name": "PAL Robotics",
     "description": "Barcelona-based robotics specialist (est. 2004) producing humanoids and mobile platforms for research, industry, and service. TALOS features 32-DOF torque-controlled manipulation. Launched KANGAROO bipedal platform at MWC 2026 targeting logistics. Partners with EU Horizon projects and major automotive manufacturers.",
@@ -391,6 +403,15 @@
     "website": "https://www.pollen-robotics.com/",
     "logo": "/images/brands/pollen-robotics-logo.svg",
     "country": "France",
+    "founded": "2016"
+  },
+  {
+    "id": "pudu-robotics",
+    "name": "Pudu Robotics",
+    "description": "Shenzhen-based robotics company founded in 2016, specializing in commercial service robots and industry-grade autonomous quadrupeds. Pudu has deployed over 80,000 service robots across 60+ countries. The D5 series marks their entry into autonomous quadruped robots for industrial inspection and patrol in complex outdoor environments.",
+    "website": "https://www.pudurobotics.com/",
+    "logo": "",
+    "country": "China",
     "founded": "2016"
   },
   {
@@ -449,18 +470,18 @@
     "logo": "/images/brands/sony-logo.svg"
   },
   {
+    "id": "stanford-student-robotics",
+    "name": "Stanford Student Robotics",
+    "description": "Student robotics projects from Stanford (brand entry added to satisfy catalog consistency).",
+    "website": "https://stanford.edu"
+  },
+  {
     "id": "sunday",
     "name": "Sunday",
     "description": "Home robotics company founded by Eric Jang (formerly Google Brain, early contributor to ACT foundation model). Building wheeled humanoid robots trained on millions of real household chores from 500+ homes. Reached $1.15B valuation with focus on zero-shot generalization to new homes using ACT-1 foundation model.",
     "website": "https://www.sunday.ai/",
     "logo": "",
     "country": "USA"
-  },
-  {
-    "id": "stanford-student-robotics",
-    "name": "Stanford Student Robotics",
-    "description": "Student robotics projects from Stanford (brand entry added to satisfy catalog consistency).",
-    "website": "https://stanford.edu"
   },
   {
     "id": "swiss-mile",

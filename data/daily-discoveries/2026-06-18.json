@@ -1,0 +1,105 @@
+{
+  "fetch_date": "2026-06-18T01:59:59.509Z",
+  "sources_fetched": 18,
+  "sources_failed": 1,
+  "articles_collected": 650,
+  "articles_after_dedup": 650,
+  "articles_after_filter": 26,
+  "robots": [
+    {
+      "company": "Autonomique",
+      "robot_name": "Autonomique Semi-Humanoid",
+      "type": "humanoid",
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/autonomique-deploys-semi-humanoid-robots-canadian-tier-1/",
+      "source_type": "robotreport",
+      "confidence_score": 0.75,
+      "description": "Semi-humanoid robot deployed at Canadian Tier 1 automotive supplier for manufacturing applications.",
+      "shipping_signal": "shipping_now",
+      "discovered_at": "2026-06-18T01:59:59.509Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Theker",
+      "robot_name": "Theker Factory Robot",
+      "type": null,
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://techcrunch.com/2026/06/11/theker-just-raised-85m-to-build-the-factory-robot-that-doesnt-specialize-in-anything/",
+      "source_type": "news",
+      "confidence_score": 0.7,
+      "description": "General-purpose factory robot that doesn't specialize in any particular task, backed by $85M funding.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-06-18T01:59:59.509Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Kawasaki Robotics",
+      "robot_name": "RL030N",
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/kawasaki-robotics-debut-rl030n-physical-ai-platform-automate/",
+      "source_type": "robotreport",
+      "confidence_score": 0.85,
+      "description": "Physical AI platform humanoid robot debuting at Automate trade show.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-06-18T01:59:59.509Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Genesis AI",
+      "robot_name": "Eno",
+      "type": "humanoid",
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/genesis-ai-launches-eno-general-purpose-robot/",
+      "source_type": "robotreport",
+      "confidence_score": 0.9,
+      "description": "General-purpose humanoid robot launched by Genesis AI for commercial applications.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-06-18T01:59:59.509Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-06-18T01:59:43.171Z"
+    }
+  ]
+}
