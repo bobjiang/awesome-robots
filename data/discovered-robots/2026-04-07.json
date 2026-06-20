@@ -1,0 +1,59 @@
+{
+  "fetch_date": "2026-04-06T23:10:00.000Z",
+  "week_range": "Mar 31–Apr 7",
+  "summary": {
+    "total_discovered": 2,
+    "duplicates_filtered": 0,
+    "new_robots": 2,
+    "quality_breakdown": {
+      "high": 0,
+      "medium": 2,
+      "low": 0
+    },
+    "source_breakdown": {
+      "press_release": 1,
+      "news": 1
+    }
+  },
+  "robots": [
+    {
+      "company": "Faraday Future",
+      "robot_name": "FX Aegis",
+      "type": "quadruped",
+      "status": "commercial",
+      "image_link": "/images/robots/discovered/2026-04-07/fx-aegis.webp",
+      "specs_link": "https://robotics.ff.com/us/",
+      "source_link": "https://investors.ff.com/news-releases/news-release-details/faraday-future-announces-its-latest-robot-fx-aegis-quadruped-has",
+      "discovered_at": "2026-04-06T23:10:00.000Z",
+      "source_type": "press_release",
+      "confidence_score": 70,
+      "quality_score": {
+        "overall": 65,
+        "completeness": 55,
+        "reliability": 75,
+        "flags": []
+      },
+      "description": "Faraday Future’s FX Aegis is an embodied-AI quadruped robot positioned for security/companionship and outdoor patrol. The company’s FCC compliance certification announcement includes key performance claims (e.g., peak joint torque 48 N·m, obstacle height ~13 in, slope 40°) and connectivity options (Wi‑Fi/5G) plus expansion modules (LiDAR, depth cameras, optional wheeled variant)."
+    },
+    {
+      "company": "DEEP Robotics",
+      "robot_name": "Year of the Horse Special Edition (Lynx M20-based)",
+      "type": "quadruped",
+      "status": "prototype",
+      "image_link": "/images/robots/discovered/2026-04-07/deep-robot-horse.jpg",
+      "specs_link": "https://www.deeprobotics.cn/en/wap/article/id/243.html",
+      "source_link": "https://interestingengineering.com/ai-robotics/china-robot-horse-deep-robotics",
+      "discovered_at": "2026-04-06T23:10:00.000Z",
+      "source_type": "news",
+      "confidence_score": 65,
+      "quality_score": {
+        "overall": 60,
+        "completeness": 55,
+        "reliability": 65,
+        "flags": []
+      },
+      "description": "DEEP Robotics unveiled a limited-edition ‘robot horse’ variant built on the Lynx M20 series platform, emphasizing bionic leg/hoof styling while retaining rugged inspection/rescue capabilities. Reported specs include ~30 kg mass, up to 50 kg payload, max speed 5 m/s, IP66 rating, hot-swappable batteries (~3 hours), and 96-line LiDAR + SLAM for 360° perception and obstacle avoidance."
+    }
+  ],
+  "errors": []
+}
