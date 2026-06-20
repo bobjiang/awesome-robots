@@ -1,0 +1,128 @@
+{
+  "fetch_date": "2026-06-20T01:51:07.905Z",
+  "sources_fetched": 18,
+  "sources_failed": 1,
+  "articles_collected": 684,
+  "articles_after_dedup": 684,
+  "articles_after_filter": 28,
+  "robots": [
+    {
+      "company": "Richtech Robotics",
+      "robot_name": "ADAM",
+      "type": "humanoid",
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/richtech-robotics-launches-livestream-adam-ai-powered-humanoid/",
+      "source_type": "robotreport",
+      "confidence_score": 0.95,
+      "description": "AI-powered humanoid robot from Richtech Robotics with livestream capabilities.",
+      "shipping_signal": "shipping_now",
+      "discovered_at": "2026-06-20T01:51:07.904Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Autonomique",
+      "robot_name": null,
+      "type": "humanoid",
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/autonomique-deploys-semi-humanoid-robots-canadian-tier-1/",
+      "source_type": "robotreport",
+      "confidence_score": 0.85,
+      "description": "Semi-humanoid robots deployed by Autonomique at Canadian Tier 1 automotive supplier with AI capabilities.",
+      "shipping_signal": "shipping_now",
+      "discovered_at": "2026-06-20T01:51:07.904Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_robot_name",
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Kawasaki Robotics",
+      "robot_name": "RL030N",
+      "type": null,
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/kawasaki-robotics-debut-rl030n-physical-ai-platform-automate/",
+      "source_type": "robotreport",
+      "confidence_score": 0.75,
+      "description": "Physical AI platform from Kawasaki Robotics debuting at Automate trade show.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-06-20T01:51:07.904Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Genesis AI",
+      "robot_name": "Eno",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/genesis-ai-launches-eno-general-purpose-robot/",
+      "source_type": "robotreport",
+      "confidence_score": 0.9,
+      "description": "General-purpose robot launched by Genesis AI for various applications.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-06-20T01:51:07.904Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Kinova",
+      "robot_name": "KIMA",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/kinova-launches-kima-medical-robotic-arm/",
+      "source_type": "robotreport",
+      "confidence_score": 0.7,
+      "description": "Medical robotic arm launched by Kinova for healthcare applications.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-06-20T01:51:07.904Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-06-20T01:50:54.584Z"
+    }
+  ]
+}
