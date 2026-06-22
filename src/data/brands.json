@@ -227,6 +227,13 @@
     "founded": "2024"
   },
   {
+    "id": "kawasaki-robotics",
+    "name": "Kawasaki Robotics",
+    "description": "Physical AI platform humanoid robot debuting at Automate trade show.",
+    "website": "",
+    "logo": "/images/brands/kawasaki-robotics-logo.svg"
+  },
+  {
     "id": "lem-surgical",
     "name": "LEM Surgical",
     "description": "Swiss medical robotics company developing humanoid-style dual-arm surgical robot systems. Dynamis is FDA-cleared for spine and orthopedic procedures with bimanual manipulation, sub-millimeter accuracy, and 3D vision synchronized with surgical arm movements.",
@@ -362,15 +369,6 @@
     "needsManualEnrichment": false
   },
   {
-    "id": "pudu-robotics",
-    "name": "Pudu Robotics",
-    "description": "Shenzhen-based robotics company founded in 2016, specializing in commercial service robots and industry-grade autonomous quadrupeds. Pudu has deployed over 80,000 service robots across 60+ countries. The D5 series marks their entry into autonomous quadruped robots for industrial inspection and patrol in complex outdoor environments.",
-    "website": "https://www.pudurobotics.com/",
-    "logo": "",
-    "country": "China",
-    "founded": "2016"
-  },
-  {
     "id": "pal-robotics",
     "name": "PAL Robotics",
     "description": "Barcelona-based robotics specialist (est. 2004) producing humanoids and mobile platforms for research, industry, and service. TALOS features 32-DOF torque-controlled manipulation. Launched KANGAROO bipedal platform at MWC 2026 targeting logistics. Partners with EU Horizon projects and major automotive manufacturers.",
@@ -394,6 +392,15 @@
     "founded": "2016"
   },
   {
+    "id": "pudu-robotics",
+    "name": "Pudu Robotics",
+    "description": "Shenzhen-based robotics company founded in 2016, specializing in commercial service robots and industry-grade autonomous quadrupeds. Pudu has deployed over 80,000 service robots across 60+ countries. The D5 series marks their entry into autonomous quadruped robots for industrial inspection and patrol in complex outdoor environments.",
+    "website": "https://www.pudurobotics.com/",
+    "logo": "",
+    "country": "China",
+    "founded": "2016"
+  },
+  {
     "id": "rai-institute",
     "name": "RAI Institute",
     "description": "Robotics and AI Institute (formerly Boston Dynamics AI Institute), founded in 2022 by Marc Raibert with over $400M funding from Hyundai Motor Group. Headquartered in Cambridge, Massachusetts with a second campus in Zurich, Switzerland. Focuses on cognitive AI, athletic AI, and organic hardware design to create smarter, more agile robots.",
@@ -408,6 +415,13 @@
     "description": "Samsung subsidiary (35% stake, $180M, Feb 2025) specializing in advanced humanoid robotics. Founded 2011 by KAIST researchers. New RB-Y1 dual-arm mobile manipulator at $80K. Part of Korean M.AX Alliance ($525M gov investment). HUBO2 deployed at MIT and Google.",
     "website": "https://www.rainbow-robotics.com/",
     "logo": "/images/brands/rainbow-robotics-logo.svg"
+  },
+  {
+    "id": "richtech-robotics",
+    "name": "Richtech Robotics",
+    "description": "AI-powered humanoid robot from Richtech Robotics with livestream capabilities.",
+    "website": "",
+    "logo": "/images/brands/richtech-robotics-logo.svg"
   },
   {
     "id": "roboparty",
@@ -449,18 +463,18 @@
     "logo": "/images/brands/sony-logo.svg"
   },
   {
+    "id": "stanford-student-robotics",
+    "name": "Stanford Student Robotics",
+    "description": "Student robotics projects from Stanford (brand entry added to satisfy catalog consistency).",
+    "website": "https://stanford.edu"
+  },
+  {
     "id": "sunday",
     "name": "Sunday",
     "description": "Home robotics company founded by Eric Jang (formerly Google Brain, early contributor to ACT foundation model). Building wheeled humanoid robots trained on millions of real household chores from 500+ homes. Reached $1.15B valuation with focus on zero-shot generalization to new homes using ACT-1 foundation model.",
     "website": "https://www.sunday.ai/",
     "logo": "",
     "country": "USA"
-  },
-  {
-    "id": "stanford-student-robotics",
-    "name": "Stanford Student Robotics",
-    "description": "Student robotics projects from Stanford (brand entry added to satisfy catalog consistency).",
-    "website": "https://stanford.edu"
   },
   {
     "id": "swiss-mile",
