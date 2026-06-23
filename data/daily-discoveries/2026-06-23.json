@@ -1,0 +1,61 @@
+{
+  "fetch_date": "2026-06-23T01:49:22.210Z",
+  "sources_fetched": 18,
+  "sources_failed": 1,
+  "articles_collected": 572,
+  "articles_after_dedup": 572,
+  "articles_after_filter": 30,
+  "robots": [
+    {
+      "company": "Cobot",
+      "robot_name": "Proxie Gen 2",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/cobots-proxie-gen-2-robot-adds-autotasking-mobile-manipulation/",
+      "source_type": "robotreport",
+      "confidence_score": 0.85,
+      "description": "Mobile manipulation robot with autotasking capabilities for commercial applications.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-06-23T01:49:22.210Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Richtech Robotics",
+      "robot_name": "ADAM",
+      "type": "humanoid",
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/richtech-robotics-launches-livestream-adam-ai-powered-humanoid/",
+      "source_type": "robotreport",
+      "confidence_score": 0.9,
+      "description": "AI-powered humanoid robot with livestream capabilities launched by Richtech Robotics.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-06-23T01:49:22.210Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-06-23T01:49:08.954Z"
+    }
+  ]
+}
