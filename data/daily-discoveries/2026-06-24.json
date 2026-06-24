@@ -1,0 +1,61 @@
+{
+  "fetch_date": "2026-06-24T01:47:41.519Z",
+  "sources_fetched": 18,
+  "sources_failed": 1,
+  "articles_collected": 829,
+  "articles_after_dedup": 829,
+  "articles_after_filter": 25,
+  "robots": [
+    {
+      "company": "ExRobotics",
+      "robot_name": "UL-certified inspection robot",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/exrobotics-launches-ul-certified-inspection-robot-for-hazardous-environments/",
+      "source_type": "robotreport",
+      "confidence_score": 0.75,
+      "description": "UL-certified inspection robot designed for hazardous environments launched by ExRobotics.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-06-24T01:47:41.519Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Cobot",
+      "robot_name": "Proxie Gen 2",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/cobots-proxie-gen-2-robot-adds-autotasking-mobile-manipulation/",
+      "source_type": "robotreport",
+      "confidence_score": 0.85,
+      "description": "Mobile manipulation robot with autotasking capabilities, second generation of Proxie platform.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-06-24T01:47:41.519Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-06-24T01:47:31.742Z"
+    }
+  ]
+}
