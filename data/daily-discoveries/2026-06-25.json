@@ -1,0 +1,115 @@
+{
+  "fetch_date": "2026-06-25T01:49:58.622Z",
+  "sources_fetched": 16,
+  "sources_failed": 3,
+  "articles_collected": 646,
+  "articles_after_dedup": 646,
+  "articles_after_filter": 26,
+  "robots": [
+    {
+      "company": "Mantis Robotics",
+      "robot_name": "Mantis",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/mantis-robotics-launches-dual-arm-fenceless-robot/",
+      "source_type": "robotreport",
+      "confidence_score": 0.85,
+      "description": "Dual-arm fenceless robot for industrial automation and manufacturing applications.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-06-25T01:49:58.622Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "ExRobotics",
+      "robot_name": "ExRobotics Inspection Robot",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/exrobotics-launches-ul-certified-inspection-robot-for-hazardous-environments/",
+      "source_type": "robotreport",
+      "confidence_score": 0.8,
+      "description": "UL-certified inspection robot designed for hazardous environments and industrial safety applications.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-06-25T01:49:58.622Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Cobot",
+      "robot_name": "Proxie Gen 2",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/cobots-proxie-gen-2-robot-adds-autotasking-mobile-manipulation/",
+      "source_type": "robotreport",
+      "confidence_score": 0.9,
+      "description": "Mobile manipulation robot with autotasking capabilities for warehouse and logistics operations.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-06-25T01:49:58.622Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Theker",
+      "robot_name": "Theker Factory Robot",
+      "type": null,
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://techcrunch.com/2026/06/11/theker-just-raised-85m-to-build-the-factory-robot-that-doesnt-specialize-in-anything/",
+      "source_type": "news",
+      "confidence_score": 0.75,
+      "description": "General-purpose factory robot designed to handle multiple tasks without specialization, backed by $85M funding.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-06-25T01:49:58.622Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-06-25T01:49:45.370Z"
+    },
+    {
+      "source": "Boston Dynamics",
+      "error": "Status code 415",
+      "timestamp": "2026-06-25T01:49:44.272Z"
+    },
+    {
+      "source": "ANYbotics",
+      "error": "HTTP 403",
+      "timestamp": "2026-06-25T01:49:44.387Z"
+    }
+  ]
+}
