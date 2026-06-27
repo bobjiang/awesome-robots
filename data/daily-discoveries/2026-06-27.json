@@ -1,0 +1,88 @@
+{
+  "fetch_date": "2026-06-27T01:47:22.119Z",
+  "sources_fetched": 17,
+  "sources_failed": 2,
+  "articles_collected": 664,
+  "articles_after_dedup": 664,
+  "articles_after_filter": 27,
+  "robots": [
+    {
+      "company": "Robust.AI",
+      "robot_name": "Carter Gen 3",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/robust-ai-chooses-aptiv-pulse-sensor-for-gen-3-carter-mobile-robot/",
+      "source_type": "robotreport",
+      "confidence_score": 0.85,
+      "description": "Third generation Carter mobile robot from Robust.AI featuring Aptiv PULSE sensor technology.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-06-27T01:47:22.119Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Mantis Robotics",
+      "robot_name": "Mantis",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/mantis-robotics-launches-dual-arm-fenceless-robot/",
+      "source_type": "robotreport",
+      "confidence_score": 0.9,
+      "description": "Dual-arm fenceless collaborative robot designed for industrial automation applications.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-06-27T01:47:22.119Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "ExRobotics",
+      "robot_name": "ExRobotics Inspection Robot",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/exrobotics-launches-ul-certified-inspection-robot-for-hazardous-environments/",
+      "source_type": "robotreport",
+      "confidence_score": 0.85,
+      "description": "UL-certified inspection robot designed for operation in hazardous and explosive environments.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-06-27T01:47:22.119Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-06-27T01:47:06.878Z"
+    },
+    {
+      "source": "Boston Dynamics",
+      "error": "Status code 415",
+      "timestamp": "2026-06-27T01:47:05.288Z"
+    }
+  ]
+}
