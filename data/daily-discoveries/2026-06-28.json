@@ -1,0 +1,132 @@
+{
+  "fetch_date": "2026-06-28T01:51:29.215Z",
+  "sources_fetched": 17,
+  "sources_failed": 2,
+  "articles_collected": 508,
+  "articles_after_dedup": 508,
+  "articles_after_filter": 31,
+  "robots": [
+    {
+      "company": "Robust.AI",
+      "robot_name": "Carter Gen 3",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/robust-ai-chooses-aptiv-pulse-sensor-for-gen-3-carter-mobile-robot/",
+      "source_type": "robotreport",
+      "confidence_score": 0.85,
+      "description": "Third generation Carter mobile robot from Robust.AI featuring Aptiv PULSE sensor technology.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-06-28T01:51:29.215Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Mantis Robotics",
+      "robot_name": "Mantis",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/mantis-robotics-launches-dual-arm-fenceless-robot/",
+      "source_type": "robotreport",
+      "confidence_score": 0.9,
+      "description": "Dual-arm fenceless robot designed for collaborative industrial automation applications.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-06-28T01:51:29.215Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "ExRobotics",
+      "robot_name": "ExRobotics Inspection Robot",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/exrobotics-launches-ul-certified-inspection-robot-for-hazardous-environments/",
+      "source_type": "robotreport",
+      "confidence_score": 0.85,
+      "description": "UL-certified inspection robot designed for operation in hazardous industrial environments.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-06-28T01:51:29.215Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Kawasaki Robotics",
+      "robot_name": "8-axis Physical AI Robot",
+      "type": null,
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://roboticsandautomationnews.com/2026/06/26/kawasaki-robotics-showcases-8-axis-physical-ai-robot-and-intelligent-automation-technologies-at-automate-2026/102869/",
+      "source_type": "news",
+      "confidence_score": 0.75,
+      "description": "Eight-axis physical AI robot showcased by Kawasaki Robotics at Automate 2026 trade show.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-06-28T01:51:29.215Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Flexiv",
+      "robot_name": "Adaptive Robot",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://roboticsandautomationnews.com/2026/06/26/flexiv-launches-new-adaptive-robots-for-industrial-automation/102857/",
+      "source_type": "news",
+      "confidence_score": 0.8,
+      "description": "New adaptive robot platform from Flexiv designed for industrial automation applications.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-06-28T01:51:29.215Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "Robohub",
+      "error": "Request timed out after 15000ms",
+      "timestamp": "2026-06-28T01:51:16.689Z"
+    },
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-06-28T01:51:04.223Z"
+    }
+  ]
+}
