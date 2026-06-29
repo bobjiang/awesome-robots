@@ -1,0 +1,110 @@
+{
+  "fetch_date": "2026-06-29T01:53:17.594Z",
+  "sources_fetched": 17,
+  "sources_failed": 2,
+  "articles_collected": 583,
+  "articles_after_dedup": 583,
+  "articles_after_filter": 31,
+  "robots": [
+    {
+      "company": "Kawasaki Robotics",
+      "robot_name": "8-axis Physical AI robot",
+      "type": null,
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://roboticsandautomationnews.com/2026/06/26/kawasaki-robotics-showcases-8-axis-physical-ai-robot-and-intelligent-automation-technologies-at-automate-2026/102869/",
+      "source_type": "news",
+      "confidence_score": 0.75,
+      "description": "Kawasaki Robotics showcased an 8-axis Physical AI robot at Automate 2026 for intelligent automation applications.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-06-29T01:53:17.594Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Robust.AI",
+      "robot_name": "Carter Gen 3",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/robust-ai-chooses-aptiv-pulse-sensor-for-gen-3-carter-mobile-robot/",
+      "source_type": "robotreport",
+      "confidence_score": 0.85,
+      "description": "Robust.AI's third-generation Carter mobile robot features Aptiv PULSE sensor integration for enhanced navigation.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-06-29T01:53:17.594Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Mantis Robotics",
+      "robot_name": "Mantis dual-arm robot",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/mantis-robotics-launches-dual-arm-fenceless-robot/",
+      "source_type": "robotreport",
+      "confidence_score": 0.8,
+      "description": "Mantis Robotics launched a dual-arm, fenceless collaborative robot for industrial automation tasks.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-06-29T01:53:17.594Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "ExRobotics",
+      "robot_name": "ExRobotics inspection robot",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/exrobotics-launches-ul-certified-inspection-robot-for-hazardous-environments/",
+      "source_type": "robotreport",
+      "confidence_score": 0.85,
+      "description": "ExRobotics launched a UL-certified inspection robot designed for operation in hazardous environments.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-06-29T01:53:17.594Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-06-29T01:53:04.856Z"
+    },
+    {
+      "source": "Boston Dynamics",
+      "error": "Status code 415",
+      "timestamp": "2026-06-29T01:53:03.825Z"
+    }
+  ]
+}
