@@ -1,0 +1,83 @@
+{
+  "fetch_date": "2026-07-04T04:46:20.330Z",
+  "sources_fetched": 18,
+  "sources_failed": 1,
+  "articles_collected": 578,
+  "articles_after_dedup": 578,
+  "articles_after_filter": 26,
+  "robots": [
+    {
+      "company": "Weave Robotics",
+      "robot_name": "Isaac1",
+      "type": "humanoid",
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://newatlas.com/robotics/weave-robot-isaac1-laundry-bed/",
+      "source_type": "news",
+      "confidence_score": 0.85,
+      "description": "An $8,000 humanoid robot designed to handle laundry and bed-making duties in homes.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-07-04T04:46:20.330Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Apptronik",
+      "robot_name": "Apollo 2",
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/apptronik-unveils-apollo-2-flagship-data-collection-training-facility/",
+      "source_type": "robotreport",
+      "confidence_score": 0.9,
+      "description": "Apptronik's second-generation Apollo humanoid robot unveiled alongside a new data collection and training facility.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-07-04T04:46:20.330Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Figure AI",
+      "robot_name": "Figure 03",
+      "type": "humanoid",
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/bmw-group-deploys-figure-03-humanoid-after-tests-previous-version/",
+      "source_type": "robotreport",
+      "confidence_score": 0.95,
+      "description": "BMW Group has deployed Figure's third-generation humanoid robot after testing previous versions in manufacturing operations.",
+      "shipping_signal": "shipping_now",
+      "discovered_at": "2026-07-04T04:46:20.330Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-07-04T04:46:10.469Z"
+    }
+  ]
+}
