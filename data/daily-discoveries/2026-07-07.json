@@ -1,0 +1,61 @@
+{
+  "fetch_date": "2026-07-07T05:03:04.560Z",
+  "sources_fetched": 18,
+  "sources_failed": 1,
+  "articles_collected": 783,
+  "articles_after_dedup": 783,
+  "articles_after_filter": 28,
+  "robots": [
+    {
+      "company": "Weave Robotics",
+      "robot_name": "Isaac1",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://newatlas.com/robotics/weave-robot-isaac1-laundry-bed/",
+      "source_type": "news",
+      "confidence_score": 0.85,
+      "description": "An $8,000 robot designed to automate laundry and bed-making duties in homes.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-07-07T05:03:04.560Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Apptronik",
+      "robot_name": "Apollo 2",
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/apptronik-unveils-apollo-2-flagship-data-collection-training-facility/",
+      "source_type": "robotreport",
+      "confidence_score": 0.95,
+      "description": "Apptronik's next-generation humanoid robot unveiled alongside a flagship data collection and training facility.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-07-07T05:03:04.560Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-07-07T05:02:53.153Z"
+    }
+  ]
+}
