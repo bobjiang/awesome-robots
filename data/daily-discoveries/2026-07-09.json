@@ -1,0 +1,39 @@
+{
+  "fetch_date": "2026-07-09T05:07:47.643Z",
+  "sources_fetched": 18,
+  "sources_failed": 1,
+  "articles_collected": 652,
+  "articles_after_dedup": 652,
+  "articles_after_filter": 25,
+  "robots": [
+    {
+      "company": "Weave Robotics",
+      "robot_name": "Isaac1",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://newatlas.com/robotics/weave-robot-isaac1-laundry-bed/",
+      "source_type": "news",
+      "confidence_score": 0.85,
+      "description": "An $8,000 robot designed to handle laundry and bed-making duties in homes.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-07-09T05:07:47.642Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-07-09T05:07:39.607Z"
+    }
+  ]
+}
