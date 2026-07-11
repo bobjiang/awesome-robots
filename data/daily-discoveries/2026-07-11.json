@@ -1,0 +1,55 @@
+{
+  "fetch_date": "2026-07-11T04:22:13.885Z",
+  "sources_fetched": 19,
+  "sources_failed": 0,
+  "articles_collected": 589,
+  "articles_after_dedup": 589,
+  "articles_after_filter": 34,
+  "robots": [
+    {
+      "company": "AI² Robotics",
+      "robot_name": "AI² wheeled humanoid",
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/ai%c2%b2-robotics-raises-735m-3b-valuation-wheeled-humanoid-robots/",
+      "source_type": "robotreport",
+      "confidence_score": 0.85,
+      "description": "Wheeled humanoid robot from AI² Robotics which raised $735M at $3B valuation.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-07-11T04:22:13.885Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Weave Robotics",
+      "robot_name": "Isaac1",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://newatlas.com/robotics/weave-robot-isaac1-laundry-bed/",
+      "source_type": "news",
+      "confidence_score": 0.9,
+      "description": "An $8,000 robot designed to handle laundry and bed-making duties autonomously.",
+      "shipping_signal": "shipping_now",
+      "discovered_at": "2026-07-11T04:22:13.885Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": []
+}
