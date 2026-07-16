@@ -1,0 +1,130 @@
+{
+  "fetch_date": "2026-07-16T04:19:14.968Z",
+  "sources_fetched": 18,
+  "sources_failed": 1,
+  "articles_collected": 671,
+  "articles_after_dedup": 671,
+  "articles_after_filter": 34,
+  "robots": [
+    {
+      "company": "Walden Robotics",
+      "robot_name": null,
+      "type": null,
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/walden-robotics-launches-1-1b-valuation-general-purpose-robots/",
+      "source_type": "robotreport",
+      "confidence_score": 0.7,
+      "description": "Walden Robotics launches with $1.1B valuation to develop general-purpose robots.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-07-16T04:19:14.967Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_robot_name",
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "MIT/EPFL",
+      "robot_name": null,
+      "type": null,
+      "status": "research",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://newatlas.com/robotics/first-bird-robot-swim-dive-launch-mit-epfl/",
+      "source_type": "news",
+      "confidence_score": 0.85,
+      "description": "First bird-scale robot capable of swimming, diving, and launching back into flight.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-07-16T04:19:14.967Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_robot_name",
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Weave",
+      "robot_name": "Isaac1",
+      "type": "humanoid",
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://newatlas.com/robotics/weave-robot-isaac1-laundry-bed/",
+      "source_type": "news",
+      "confidence_score": 0.9,
+      "description": "Eight-thousand-dollar robot designed to handle laundry and bed-making duties.",
+      "shipping_signal": "shipping_now",
+      "discovered_at": "2026-07-16T04:19:14.967Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Icarus Robotics",
+      "robot_name": "JOY",
+      "type": null,
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/icarus-robotics-uses-kulr-technology-to-power-joy-free-flying-space-robot/",
+      "source_type": "robotreport",
+      "confidence_score": 0.8,
+      "description": "Free-flying space robot powered by KULR battery technology.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-07-16T04:19:14.967Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "AI² Robotics",
+      "robot_name": null,
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/ai%c2%b2-robotics-raises-735m-3b-valuation-wheeled-humanoid-robots/",
+      "source_type": "robotreport",
+      "confidence_score": 0.85,
+      "description": "Wheeled humanoid robots from AI² Robotics raising $735M at $3B valuation.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-07-16T04:19:14.967Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_robot_name",
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-07-16T04:18:59.857Z"
+    }
+  ]
+}
