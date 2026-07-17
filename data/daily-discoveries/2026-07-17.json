@@ -1,0 +1,61 @@
+{
+  "fetch_date": "2026-07-17T04:17:38.526Z",
+  "sources_fetched": 18,
+  "sources_failed": 1,
+  "articles_collected": 659,
+  "articles_after_dedup": 659,
+  "articles_after_filter": 34,
+  "robots": [
+    {
+      "company": "Weave Robotics",
+      "robot_name": "Isaac1",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://newatlas.com/robotics/weave-robot-isaac1-laundry-bed/",
+      "source_type": "news",
+      "confidence_score": 0.85,
+      "description": "An $8,000 robot designed to handle laundry and bed-making duties in homes.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-07-17T04:17:38.526Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Icarus Robotics",
+      "robot_name": "JOY",
+      "type": null,
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/icarus-robotics-uses-kulr-technology-to-power-joy-free-flying-space-robot/",
+      "source_type": "robotreport",
+      "confidence_score": 0.9,
+      "description": "A free-flying space robot powered by KULR thermal management technology for orbital operations.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-07-17T04:17:38.526Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-07-17T04:17:29.632Z"
+    }
+  ]
+}
