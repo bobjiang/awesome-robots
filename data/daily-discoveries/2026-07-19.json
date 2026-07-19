@@ -1,0 +1,84 @@
+{
+  "fetch_date": "2026-07-19T04:30:09.106Z",
+  "sources_fetched": 18,
+  "sources_failed": 1,
+  "articles_collected": 576,
+  "articles_after_dedup": 576,
+  "articles_after_filter": 37,
+  "robots": [
+    {
+      "company": "Weave Robotics",
+      "robot_name": "Isaac",
+      "type": "humanoid",
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/weave-robotics-launches-isaac-first-mobile-humanoid-robot/",
+      "source_type": "robotreport",
+      "confidence_score": 0.95,
+      "description": "Weave Robotics' first mobile humanoid robot designed for commercial deployment.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-07-19T04:30:09.105Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Walden Robotics",
+      "robot_name": null,
+      "type": "humanoid",
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/walden-robotics-launches-1-1b-valuation-general-purpose-robots/",
+      "source_type": "robotreport",
+      "confidence_score": 0.85,
+      "description": "Walden Robotics launches general-purpose robots at $1.1B valuation for commercial applications.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-07-19T04:30:09.105Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_robot_name",
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Icarus Robotics",
+      "robot_name": "JOY",
+      "type": null,
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/icarus-robotics-uses-kulr-technology-to-power-joy-free-flying-space-robot/",
+      "source_type": "robotreport",
+      "confidence_score": 0.9,
+      "description": "Free-flying space robot powered by KULR technology for orbital operations.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-07-19T04:30:09.105Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-07-19T04:29:58.171Z"
+    }
+  ]
+}
