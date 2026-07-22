@@ -1,0 +1,108 @@
+{
+  "fetch_date": "2026-07-22T04:27:50.937Z",
+  "sources_fetched": 18,
+  "sources_failed": 1,
+  "articles_collected": 650,
+  "articles_after_dedup": 650,
+  "articles_after_filter": 38,
+  "robots": [
+    {
+      "company": "Humanoid",
+      "robot_name": null,
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/uk-based-humanoid-secures-152m-in-series-a-funding/",
+      "source_type": "robotreport",
+      "confidence_score": 0.75,
+      "description": "U.K.-based company Humanoid secured $152M in Series A funding for humanoid robot development.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-07-22T04:27:50.937Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_robot_name",
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Generative Bionics",
+      "robot_name": null,
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/generative-bionics-unveils-humanoid-robot-with-full-body-tactile-sensing/",
+      "source_type": "robotreport",
+      "confidence_score": 0.85,
+      "description": "Generative Bionics unveiled a humanoid robot featuring full-body tactile sensing capabilities.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-07-22T04:27:50.937Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_robot_name",
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": null,
+      "robot_name": "U1",
+      "type": "humanoid",
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://newatlas.com/robotics/u1-worlds-first-mass-produced-humanoid-robot/",
+      "source_type": "news",
+      "confidence_score": 0.9,
+      "description": "U1 is marketed as the world's first mass-produced humanoid robot in China.",
+      "shipping_signal": "shipping_now",
+      "discovered_at": "2026-07-22T04:27:50.937Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_company",
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Weave Robotics",
+      "robot_name": "Isaac",
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/weave-robotics-launches-isaac-first-mobile-humanoid-robot/",
+      "source_type": "robotreport",
+      "confidence_score": 0.9,
+      "description": "Weave Robotics launched Isaac, its first mobile humanoid robot platform.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-07-22T04:27:50.937Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-07-22T04:27:39.717Z"
+    }
+  ]
+}
