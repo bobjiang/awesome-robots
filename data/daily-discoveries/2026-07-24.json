@@ -1,0 +1,84 @@
+{
+  "fetch_date": "2026-07-24T04:25:22.127Z",
+  "sources_fetched": 18,
+  "sources_failed": 1,
+  "articles_collected": 637,
+  "articles_after_dedup": 637,
+  "articles_after_filter": 33,
+  "robots": [
+    {
+      "company": "Holiday Robotics",
+      "robot_name": "FRIDAY",
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/holiday-robotics-raises-105m-wheeled-humanoid-friday/",
+      "source_type": "robotreport",
+      "confidence_score": 0.95,
+      "description": "A wheeled humanoid robot developed by Holiday Robotics with $105M in funding.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-07-24T04:25:22.127Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Unknown",
+      "robot_name": "U1",
+      "type": "humanoid",
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://newatlas.com/robotics/u1-worlds-first-mass-produced-humanoid-robot/",
+      "source_type": "news",
+      "confidence_score": 0.9,
+      "description": "Claimed to be the world's first mass-produced humanoid robot, now available in China.",
+      "shipping_signal": "shipping_now",
+      "discovered_at": "2026-07-24T04:25:22.127Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Generative Bionics",
+      "robot_name": null,
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/generative-bionics-unveils-humanoid-robot-with-full-body-tactile-sensing/",
+      "source_type": "robotreport",
+      "confidence_score": 0.92,
+      "description": "A humanoid robot featuring full-body tactile sensing capabilities unveiled by Generative Bionics.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-07-24T04:25:22.127Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_robot_name",
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-07-24T04:25:13.011Z"
+    }
+  ]
+}
