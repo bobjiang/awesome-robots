@@ -1,0 +1,150 @@
+{
+  "fetch_date": "2026-07-26T04:35:37.159Z",
+  "sources_fetched": 18,
+  "sources_failed": 1,
+  "articles_collected": 579,
+  "articles_after_dedup": 579,
+  "articles_after_filter": 36,
+  "robots": [
+    {
+      "company": "Johnson & Johnson",
+      "robot_name": "Ottava",
+      "type": null,
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/photos-first-look-at-jjs-ottava-surgical-robot/",
+      "source_type": "robotreport",
+      "confidence_score": 0.95,
+      "description": "Surgical robot system from Johnson & Johnson designed for minimally invasive procedures.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-07-26T04:35:37.159Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Gritt",
+      "robot_name": "Gritt Solar Construction Robot",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://techcrunch.com/2026/07/21/gritt-exits-stealth-with-34-million-for-robots-to-build-solar-plants-then-everything-else/",
+      "source_type": "news",
+      "confidence_score": 0.85,
+      "description": "Mobile construction robot designed to autonomously build solar plants and other infrastructure.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-07-26T04:35:37.159Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": null,
+      "robot_name": "U1",
+      "type": "humanoid",
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://newatlas.com/robotics/u1-worlds-first-mass-produced-humanoid-robot/",
+      "source_type": "news",
+      "confidence_score": 0.9,
+      "description": "Mass-produced humanoid robot launched in China, claimed as world's first mass-produced humanoid.",
+      "shipping_signal": "shipping_now",
+      "discovered_at": "2026-07-26T04:35:37.159Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_company",
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Holiday Robotics",
+      "robot_name": "FRIDAY",
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/holiday-robotics-raises-105m-wheeled-humanoid-friday/",
+      "source_type": "robotreport",
+      "confidence_score": 0.95,
+      "description": "Wheeled humanoid robot developed by Holiday Robotics with $105M in funding.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-07-26T04:35:37.159Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Humanoid",
+      "robot_name": "Humanoid Robot",
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/uk-based-humanoid-secures-152m-in-series-a-funding/",
+      "source_type": "robotreport",
+      "confidence_score": 0.85,
+      "description": "UK-based humanoid robot platform with $152M Series A funding.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-07-26T04:35:37.159Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Generative Bionics",
+      "robot_name": "Generative Bionics Humanoid",
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/generative-bionics-unveils-humanoid-robot-with-full-body-tactile-sensing/",
+      "source_type": "robotreport",
+      "confidence_score": 0.9,
+      "description": "Humanoid robot featuring full-body tactile sensing capabilities for enhanced interaction.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-07-26T04:35:37.159Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-07-26T04:35:21.270Z"
+    }
+  ]
+}
