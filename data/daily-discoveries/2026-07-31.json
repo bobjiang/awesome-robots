@@ -1,0 +1,40 @@
+{
+  "fetch_date": "2026-07-31T04:33:00.437Z",
+  "sources_fetched": 18,
+  "sources_failed": 1,
+  "articles_collected": 647,
+  "articles_after_dedup": 647,
+  "articles_after_filter": 31,
+  "robots": [
+    {
+      "company": null,
+      "robot_name": "1Rollo",
+      "type": null,
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://newatlas.com/robotics/1rollo-monowheel-security-robot/",
+      "source_type": "news",
+      "confidence_score": 0.85,
+      "description": "One-wheeled monowheel robot designed for future security patrol applications.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-07-31T04:33:00.436Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_company",
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-07-31T04:32:50.969Z"
+    }
+  ]
+}
