@@ -1,0 +1,109 @@
+{
+  "fetch_date": "2026-08-07T04:01:36.083Z",
+  "sources_fetched": 18,
+  "sources_failed": 1,
+  "articles_collected": 659,
+  "articles_after_dedup": 659,
+  "articles_after_filter": 33,
+  "robots": [
+    {
+      "company": "Walden Robotics",
+      "robot_name": null,
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://spectrum.ieee.org/humanoid-robots-walden-robotics-toyota",
+      "source_type": "ieee",
+      "confidence_score": 0.85,
+      "description": "Walden Robotics is partnering with Toyota to develop practical humanoid robots for real-world applications.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-08-07T04:01:36.083Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_robot_name",
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": null,
+      "robot_name": "1Rollo",
+      "type": null,
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://newatlas.com/robotics/1rollo-monowheel-security-robot/",
+      "source_type": "news",
+      "confidence_score": 0.9,
+      "description": "A monowheel AI security robot that rolls on one wheel for security patrol applications.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-08-07T04:01:36.083Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_company",
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Icarus Robotics",
+      "robot_name": null,
+      "type": null,
+      "status": "research",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://roboticsandautomationnews.com/2026/08/06/interview-with-icarus-robotics-co-founder-jamie-palmer-building-a-robotic-labor-force-for-space/103978/",
+      "source_type": "news",
+      "confidence_score": 0.75,
+      "description": "Icarus Robotics is building a robotic labor force designed for space applications and environments.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-08-07T04:01:36.083Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_robot_name",
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Reimagine Robotics",
+      "robot_name": null,
+      "type": null,
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/reimagine-robotics-emerges-stealth-with-robotslearn-on-the-job/",
+      "source_type": "robotreport",
+      "confidence_score": 0.8,
+      "description": "Reimagine Robotics emerged from stealth with robots that can learn on the job using adaptive AI.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-08-07T04:01:36.083Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_robot_name",
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-08-07T04:01:18.234Z"
+    }
+  ]
+}
