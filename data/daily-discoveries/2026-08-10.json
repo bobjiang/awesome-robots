@@ -1,0 +1,91 @@
+{
+  "fetch_date": "2026-08-10T03:17:18.059Z",
+  "sources_fetched": 17,
+  "sources_failed": 2,
+  "articles_collected": 2381,
+  "articles_after_dedup": 2381,
+  "articles_after_filter": 34,
+  "robots": [
+    {
+      "company": "Walden Robotics",
+      "robot_name": null,
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://spectrum.ieee.org/humanoid-robots-walden-robotics-toyota",
+      "source_type": "ieee",
+      "confidence_score": 0.85,
+      "description": "Walden Robotics is developing practical humanoid robots in partnership with Toyota for industrial applications.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-08-10T03:17:18.059Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_robot_name",
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": null,
+      "robot_name": "1Rollo",
+      "type": null,
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://newatlas.com/robotics/1rollo-monowheel-security-robot/",
+      "source_type": "news",
+      "confidence_score": 0.9,
+      "description": "A monowheel AI security robot that rolls on one wheel for security patrol applications.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-08-10T03:17:18.059Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_company",
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Avatar Robotics",
+      "robot_name": null,
+      "type": null,
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/avatar-robotics-raises-6-5-m-seed-round-address-industrial-labor-constraints/",
+      "source_type": "robotreport",
+      "confidence_score": 0.75,
+      "description": "Avatar Robotics raised seed funding to develop robots addressing industrial labor constraints.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-08-10T03:17:18.059Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_robot_name",
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "IJRR",
+      "error": "Status code 403",
+      "timestamp": "2026-08-10T03:17:05.395Z"
+    },
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-08-10T03:17:06.922Z"
+    }
+  ]
+}
