@@ -1,0 +1,63 @@
+{
+  "fetch_date": "2026-08-11T03:09:01.283Z",
+  "sources_fetched": 18,
+  "sources_failed": 1,
+  "articles_collected": 2550,
+  "articles_after_dedup": 2550,
+  "articles_after_filter": 31,
+  "robots": [
+    {
+      "company": "Walden Robotics",
+      "robot_name": null,
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://spectrum.ieee.org/humanoid-robots-walden-robotics-toyota",
+      "source_type": "ieee",
+      "confidence_score": 0.75,
+      "description": "Walden Robotics is partnering with Toyota to develop practical humanoid robots for real-world applications.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-08-11T03:09:01.283Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_robot_name",
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": null,
+      "robot_name": "1Rollo",
+      "type": null,
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://newatlas.com/robotics/1rollo-monowheel-security-robot/",
+      "source_type": "news",
+      "confidence_score": 0.85,
+      "description": "A monowheel AI security robot that rolls on one wheel for security patrol applications.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-08-11T03:09:01.283Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_company",
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-08-11T03:08:50.732Z"
+    }
+  ]
+}
