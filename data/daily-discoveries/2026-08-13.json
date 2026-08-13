@@ -1,0 +1,71 @@
+{
+  "fetch_date": "2026-08-13T03:31:27.846Z",
+  "sources_fetched": 16,
+  "sources_failed": 3,
+  "articles_collected": 571,
+  "articles_after_dedup": 571,
+  "articles_after_filter": 28,
+  "robots": [
+    {
+      "company": "1Rollo",
+      "robot_name": "1Rollo",
+      "type": null,
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://newatlas.com/robotics/1rollo-monowheel-security-robot/",
+      "source_type": "news",
+      "confidence_score": 0.85,
+      "description": "A monowheel AI security robot designed for surveillance and patrol applications.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-08-13T03:31:27.846Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Walden Robotics",
+      "robot_name": "Walden Humanoid",
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://spectrum.ieee.org/humanoid-robots-walden-robotics-toyota",
+      "source_type": "ieee",
+      "confidence_score": 0.75,
+      "description": "A practical humanoid robot being developed in partnership with Toyota for real-world applications.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-08-13T03:31:27.846Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "Robohub",
+      "error": "Request timed out after 15000ms",
+      "timestamp": "2026-08-13T03:31:21.781Z"
+    },
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-08-13T03:31:09.235Z"
+    },
+    {
+      "source": "Boston Dynamics",
+      "error": "Status code 415",
+      "timestamp": "2026-08-13T03:31:08.150Z"
+    }
+  ]
+}
