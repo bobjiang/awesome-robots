@@ -1,0 +1,66 @@
+{
+  "fetch_date": "2026-08-16T02:24:49.528Z",
+  "sources_fetched": 17,
+  "sources_failed": 2,
+  "articles_collected": 506,
+  "articles_after_dedup": 506,
+  "articles_after_filter": 26,
+  "robots": [
+    {
+      "company": "1Rollo",
+      "robot_name": "1Rollo",
+      "type": null,
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://newatlas.com/robotics/1rollo-monowheel-security-robot/",
+      "source_type": "news",
+      "confidence_score": 0.85,
+      "description": "A monowheel security robot designed for autonomous patrol and surveillance applications.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-08-16T02:24:49.528Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Walden Robotics",
+      "robot_name": "Walden Humanoid",
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://spectrum.ieee.org/humanoid-robots-walden-robotics-toyota",
+      "source_type": "ieee",
+      "confidence_score": 0.75,
+      "description": "A practical humanoid robot being developed in partnership with Toyota for real-world applications.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-08-16T02:24:49.528Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "Robohub",
+      "error": "Request timed out after 15000ms",
+      "timestamp": "2026-08-16T02:24:43.377Z"
+    },
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-08-16T02:24:30.593Z"
+    }
+  ]
+}
