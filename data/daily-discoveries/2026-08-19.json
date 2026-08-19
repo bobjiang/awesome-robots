@@ -1,0 +1,62 @@
+{
+  "fetch_date": "2026-08-19T02:22:08.626Z",
+  "sources_fetched": 18,
+  "sources_failed": 1,
+  "articles_collected": 723,
+  "articles_after_dedup": 723,
+  "articles_after_filter": 31,
+  "robots": [
+    {
+      "company": "Diligent Robotics",
+      "robot_name": "Moxi 2.0",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/five-years-operation-shape-diligent-robotics-rollout-moxi-2-0/",
+      "source_type": "robotreport",
+      "confidence_score": 0.95,
+      "description": "Updated version of Diligent Robotics' hospital delivery robot with five years of operational experience informing its design.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-08-19T02:22:08.626Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": null,
+      "robot_name": "1Rollo",
+      "type": null,
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://newatlas.com/robotics/1rollo-monowheel-security-robot/",
+      "source_type": "news",
+      "confidence_score": 0.85,
+      "description": "Monowheel security robot designed for AI-powered surveillance and patrol applications.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-08-19T02:22:08.626Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_company",
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-08-19T02:21:58.648Z"
+    }
+  ]
+}
