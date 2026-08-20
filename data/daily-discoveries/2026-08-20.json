@@ -1,0 +1,83 @@
+{
+  "fetch_date": "2026-08-20T02:21:23.725Z",
+  "sources_fetched": 18,
+  "sources_failed": 1,
+  "articles_collected": 653,
+  "articles_after_dedup": 653,
+  "articles_after_filter": 31,
+  "robots": [
+    {
+      "company": "Diligent Robotics",
+      "robot_name": "Moxi 2.0",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/five-years-operation-shape-diligent-robotics-rollout-moxi-2-0/",
+      "source_type": "robotreport",
+      "confidence_score": 0.95,
+      "description": "Updated version of Diligent Robotics' hospital delivery robot with five years of operational experience informing its design.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-08-20T02:21:23.725Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "1Rollo",
+      "robot_name": "1Rollo",
+      "type": null,
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://newatlas.com/robotics/1rollo-monowheel-security-robot/",
+      "source_type": "news",
+      "confidence_score": 0.85,
+      "description": "Monowheel security robot designed for autonomous patrol and surveillance applications.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-08-20T02:21:23.725Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Pudu Robotics",
+      "robot_name": "MP2000",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/pudu-robotics-launches-new-mp2000-autonomous-forklift/",
+      "source_type": "robotreport",
+      "confidence_score": 0.9,
+      "description": "Autonomous forklift for warehouse and logistics operations launched by Pudu Robotics.",
+      "shipping_signal": "shipping_now",
+      "discovered_at": "2026-08-20T02:21:23.725Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-08-20T02:21:15.798Z"
+    }
+  ]
+}
