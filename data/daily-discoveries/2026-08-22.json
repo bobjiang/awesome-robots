@@ -1,0 +1,61 @@
+{
+  "fetch_date": "2026-08-22T02:19:36.261Z",
+  "sources_fetched": 18,
+  "sources_failed": 1,
+  "articles_collected": 654,
+  "articles_after_dedup": 654,
+  "articles_after_filter": 28,
+  "robots": [
+    {
+      "company": "Diligent Robotics",
+      "robot_name": "Moxi 2.0",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/five-years-operation-shape-diligent-robotics-rollout-moxi-2-0/",
+      "source_type": "robotreport",
+      "confidence_score": 0.85,
+      "description": "Updated version of Diligent Robotics' hospital delivery robot Moxi shaped by five years of operational experience.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-08-22T02:19:36.261Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Pudu Robotics",
+      "robot_name": "MP2000",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/pudu-robotics-launches-new-mp2000-autonomous-forklift/",
+      "source_type": "robotreport",
+      "confidence_score": 0.9,
+      "description": "New autonomous forklift launched by Pudu Robotics for warehouse and logistics applications.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-08-22T02:19:36.261Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-08-22T02:19:25.893Z"
+    }
+  ]
+}
