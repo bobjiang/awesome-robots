@@ -1,0 +1,66 @@
+{
+  "fetch_date": "2026-08-23T02:35:38.791Z",
+  "sources_fetched": 17,
+  "sources_failed": 2,
+  "articles_collected": 575,
+  "articles_after_dedup": 575,
+  "articles_after_filter": 32,
+  "robots": [
+    {
+      "company": "Persona AI",
+      "robot_name": "Persona AI Welding Humanoid",
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://spectrum.ieee.org/persona-ai-humanoid-robot-welding",
+      "source_type": "ieee",
+      "confidence_score": 0.75,
+      "description": "Humanoid robot designed for shipyard welding applications.",
+      "shipping_signal": "pilot_only",
+      "discovered_at": "2026-08-23T02:35:38.791Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Walden Robotics",
+      "robot_name": "Walden Humanoid",
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://spectrum.ieee.org/humanoid-robots-walden-robotics-toyota",
+      "source_type": "ieee",
+      "confidence_score": 0.8,
+      "description": "Practical humanoid robot developed in partnership with Toyota.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-08-23T02:35:38.791Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "BAIR Blog",
+      "error": "Status code 404",
+      "timestamp": "2026-08-23T02:35:29.164Z"
+    },
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-08-23T02:35:29.255Z"
+    }
+  ]
+}
