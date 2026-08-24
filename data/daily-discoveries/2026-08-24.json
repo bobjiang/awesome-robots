@@ -1,0 +1,71 @@
+{
+  "fetch_date": "2026-08-24T02:35:39.708Z",
+  "sources_fetched": 16,
+  "sources_failed": 3,
+  "articles_collected": 575,
+  "articles_after_dedup": 575,
+  "articles_after_filter": 31,
+  "robots": [
+    {
+      "company": "Persona AI",
+      "robot_name": "Persona AI Welding Humanoid",
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://spectrum.ieee.org/persona-ai-humanoid-robot-welding",
+      "source_type": "ieee",
+      "confidence_score": 0.75,
+      "description": "Humanoid robot designed for shipyard welding applications.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-08-24T02:35:39.708Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Walden Robotics",
+      "robot_name": "Walden Humanoid",
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://spectrum.ieee.org/humanoid-robots-walden-robotics-toyota",
+      "source_type": "ieee",
+      "confidence_score": 0.8,
+      "description": "Practical humanoid robot developed in partnership with Toyota.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-08-24T02:35:39.708Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "BAIR Blog",
+      "error": "Request timed out after 15000ms",
+      "timestamp": "2026-08-24T02:35:33.474Z"
+    },
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-08-24T02:35:20.475Z"
+    },
+    {
+      "source": "Boston Dynamics",
+      "error": "Status code 415",
+      "timestamp": "2026-08-24T02:35:19.743Z"
+    }
+  ]
+}
