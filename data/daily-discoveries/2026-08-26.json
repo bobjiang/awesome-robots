@@ -1,0 +1,110 @@
+{
+  "fetch_date": "2026-08-26T02:37:53.793Z",
+  "sources_fetched": 17,
+  "sources_failed": 2,
+  "articles_collected": 661,
+  "articles_after_dedup": 661,
+  "articles_after_filter": 32,
+  "robots": [
+    {
+      "company": "Ollobot",
+      "robot_name": "Ollobot",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://spectrum.ieee.org/ollobot-ai-companion-robot",
+      "source_type": "ieee",
+      "confidence_score": 0.85,
+      "description": "AI companion robot designed to close the human connection gap in modern homes.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-08-26T02:37:53.793Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Nori",
+      "robot_name": "Nori A3",
+      "type": "humanoid",
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://newatlas.com/robotics/household-robot-chores-nori-a3/",
+      "source_type": "news",
+      "confidence_score": 0.9,
+      "description": "Sub-$1,700 household robot that promises to handle chores and more.",
+      "shipping_signal": "preorder",
+      "discovered_at": "2026-08-26T02:37:53.793Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Persona AI",
+      "robot_name": "Persona AI Humanoid",
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://spectrum.ieee.org/persona-ai-humanoid-robot-welding",
+      "source_type": "ieee",
+      "confidence_score": 0.85,
+      "description": "Humanoid robot designed for shipyard welding applications.",
+      "shipping_signal": "pilot_only",
+      "discovered_at": "2026-08-26T02:37:53.793Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Walden Robotics",
+      "robot_name": "Walden Humanoid",
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://spectrum.ieee.org/humanoid-robots-walden-robotics-toyota",
+      "source_type": "ieee",
+      "confidence_score": 0.88,
+      "description": "Practical humanoid robot developed in partnership with Toyota.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-08-26T02:37:53.793Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "BAIR Blog",
+      "error": "Request timed out after 15000ms",
+      "timestamp": "2026-08-26T02:37:45.971Z"
+    },
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-08-26T02:37:32.644Z"
+    }
+  ]
+}
