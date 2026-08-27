@@ -274,6 +274,13 @@
     "logo": "/images/brands/neura-robotics-logo.svg"
   },
   {
+    "id": "nori-robotics",
+    "name": "Nori Robotics",
+    "description": "Sub-$1,700 household robot designed to handle chores and domestic tasks.",
+    "website": "",
+    "logo": "/images/brands/nori-robotics-logo.svg"
+  },
+  {
     "id": "openloong-astribot-stardust-intelligence-",
     "name": "Astribot (Stardust Intelligence)",
     "chineseName": "星尘智能",
@@ -362,20 +369,18 @@
     "needsManualEnrichment": false
   },
   {
-    "id": "pudu-robotics",
-    "name": "Pudu Robotics",
-    "description": "Shenzhen-based robotics company founded in 2016, specializing in commercial service robots and industry-grade autonomous quadrupeds. Pudu has deployed over 80,000 service robots across 60+ countries. The D5 series marks their entry into autonomous quadruped robots for industrial inspection and patrol in complex outdoor environments.",
-    "website": "https://www.pudurobotics.com/",
-    "logo": "",
-    "country": "China",
-    "founded": "2016"
-  },
-  {
     "id": "pal-robotics",
     "name": "PAL Robotics",
     "description": "Barcelona-based robotics specialist (est. 2004) producing humanoids and mobile platforms for research, industry, and service. TALOS features 32-DOF torque-controlled manipulation. Launched KANGAROO bipedal platform at MWC 2026 targeting logistics. Partners with EU Horizon projects and major automotive manufacturers.",
     "website": "https://pal-robotics.com/",
     "logo": "/images/brands/pal-robotics-logo.png"
+  },
+  {
+    "id": "persona-ai",
+    "name": "Persona AI",
+    "description": "Humanoid robot designed for shipyard welding applications.",
+    "website": "",
+    "logo": "/images/brands/persona-ai-logo.svg"
   },
   {
     "id": "petoi",
@@ -391,6 +396,15 @@
     "website": "https://www.pollen-robotics.com/",
     "logo": "/images/brands/pollen-robotics-logo.svg",
     "country": "France",
+    "founded": "2016"
+  },
+  {
+    "id": "pudu-robotics",
+    "name": "Pudu Robotics",
+    "description": "Shenzhen-based robotics company founded in 2016, specializing in commercial service robots and industry-grade autonomous quadrupeds. Pudu has deployed over 80,000 service robots across 60+ countries. The D5 series marks their entry into autonomous quadruped robots for industrial inspection and patrol in complex outdoor environments.",
+    "website": "https://www.pudurobotics.com/",
+    "logo": "",
+    "country": "China",
     "founded": "2016"
   },
   {
@@ -449,18 +463,18 @@
     "logo": "/images/brands/sony-logo.svg"
   },
   {
+    "id": "stanford-student-robotics",
+    "name": "Stanford Student Robotics",
+    "description": "Student robotics projects from Stanford (brand entry added to satisfy catalog consistency).",
+    "website": "https://stanford.edu"
+  },
+  {
     "id": "sunday",
     "name": "Sunday",
     "description": "Home robotics company founded by Eric Jang (formerly Google Brain, early contributor to ACT foundation model). Building wheeled humanoid robots trained on millions of real household chores from 500+ homes. Reached $1.15B valuation with focus on zero-shot generalization to new homes using ACT-1 foundation model.",
     "website": "https://www.sunday.ai/",
     "logo": "",
     "country": "USA"
-  },
-  {
-    "id": "stanford-student-robotics",
-    "name": "Stanford Student Robotics",
-    "description": "Student robotics projects from Stanford (brand entry added to satisfy catalog consistency).",
-    "website": "https://stanford.edu"
   },
   {
     "id": "swiss-mile",
@@ -529,6 +543,13 @@
     "logo": "/images/brands/vinmotion-logo.svg",
     "country": "Vietnam",
     "founded": "2022"
+  },
+  {
+    "id": "walden-robotics",
+    "name": "Walden Robotics",
+    "description": "Practical humanoid robot developed in partnership with Toyota for industrial applications.",
+    "website": "",
+    "logo": "/images/brands/walden-robotics-logo.svg"
   },
   {
     "id": "weilan",
