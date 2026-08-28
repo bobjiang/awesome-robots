@@ -1,0 +1,155 @@
+{
+  "fetch_date": "2026-08-28T12:42:16.237Z",
+  "sources_fetched": 17,
+  "sources_failed": 2,
+  "articles_collected": 590,
+  "articles_after_dedup": 590,
+  "articles_after_filter": 31,
+  "robots": [
+    {
+      "company": "Ollobot",
+      "robot_name": "Ollobot",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://spectrum.ieee.org/ollobot-ai-companion-robot",
+      "source_type": "ieee",
+      "confidence_score": 0.75,
+      "description": "AI companion robot designed to close human connection gaps in modern homes.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-08-28T12:42:16.237Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Hugging Face",
+      "robot_name": "Microduck",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://techcrunch.com/2026/08/27/hugging-face-is-selling-a-cute-399-open-source-duck-robot-microduck/",
+      "source_type": "news",
+      "confidence_score": 0.9,
+      "description": "Open source duck robot sold by Hugging Face for $399.",
+      "shipping_signal": "shipping_now",
+      "discovered_at": "2026-08-28T12:42:16.237Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": null,
+      "robot_name": "R-Dog",
+      "type": "quadruped",
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://newatlas.com/robotics/r-dog-quadruped-delivery-robot/",
+      "source_type": "news",
+      "confidence_score": 0.85,
+      "description": "Wheel-legged quadruped robot designed for package delivery with advertising capabilities.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-08-28T12:42:16.237Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_company",
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Nori",
+      "robot_name": "Nori A3",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://newatlas.com/robotics/household-robot-chores-nori-a3/",
+      "source_type": "news",
+      "confidence_score": 0.85,
+      "description": "Sub-$1,700 household robot designed to handle chores and other domestic tasks.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-08-28T12:42:16.237Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Persona AI",
+      "robot_name": "Persona AI Humanoid",
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://spectrum.ieee.org/persona-ai-humanoid-robot-welding",
+      "source_type": "ieee",
+      "confidence_score": 0.8,
+      "description": "Humanoid robot designed for shipyard welding applications.",
+      "shipping_signal": "pilot_only",
+      "discovered_at": "2026-08-28T12:42:16.237Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Walden Robotics",
+      "robot_name": "Walden Humanoid",
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://spectrum.ieee.org/humanoid-robots-walden-robotics-toyota",
+      "source_type": "ieee",
+      "confidence_score": 0.85,
+      "description": "Practical humanoid robot developed by Walden Robotics in partnership with Toyota.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-08-28T12:42:16.237Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "BAIR Blog",
+      "error": "Request timed out after 15000ms",
+      "timestamp": "2026-08-28T12:42:04.933Z"
+    },
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-08-28T12:41:52.174Z"
+    }
+  ]
+}
