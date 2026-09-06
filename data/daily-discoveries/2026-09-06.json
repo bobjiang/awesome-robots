@@ -1,0 +1,151 @@
+{
+  "fetch_date": "2026-09-06T05:50:49.632Z",
+  "sources_fetched": 14,
+  "sources_failed": 5,
+  "articles_collected": 395,
+  "articles_after_dedup": 395,
+  "articles_after_filter": 28,
+  "robots": [
+    {
+      "company": "Pollen Robotics",
+      "robot_name": "MicroDuck",
+      "type": null,
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://newatlas.com/robotics/adorable-waddling-robot-pick-up-hugging-face-microduck-pollen-robotics/",
+      "source_type": "news",
+      "confidence_score": 0.85,
+      "description": "Adorable waddling robot that can pick up objects and learn new tricks through Hugging Face integration.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-09-06T05:50:49.632Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": null,
+      "robot_name": "R-Dog",
+      "type": "quadruped",
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://newatlas.com/robotics/r-dog-quadruped-delivery-robot/",
+      "source_type": "news",
+      "confidence_score": 0.8,
+      "description": "Wheel-legged quadruped robot designed for package delivery with advertising capabilities.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-09-06T05:50:49.632Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_company",
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": null,
+      "robot_name": "Nori A3",
+      "type": "humanoid",
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://newatlas.com/robotics/household-robot-chores-nori-a3/",
+      "source_type": "news",
+      "confidence_score": 0.9,
+      "description": "Sub-$1,700 household robot designed to handle chores and various domestic tasks.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-09-06T05:50:49.632Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_company",
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Walden Robotics",
+      "robot_name": null,
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://spectrum.ieee.org/humanoid-robots-walden-robotics-toyota",
+      "source_type": "ieee",
+      "confidence_score": 0.75,
+      "description": "Practical humanoid robot being developed in partnership with Toyota for real-world applications.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-09-06T05:50:49.632Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_robot_name",
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Persona AI",
+      "robot_name": null,
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://spectrum.ieee.org/persona-ai-humanoid-robot-welding",
+      "source_type": "ieee",
+      "confidence_score": 0.8,
+      "description": "Humanoid robot designed specifically for shipyard welding applications.",
+      "shipping_signal": "pilot_only",
+      "discovered_at": "2026-09-06T05:50:49.632Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_robot_name",
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "BAIR Blog",
+      "error": "Request timed out after 15000ms",
+      "timestamp": "2026-09-06T05:50:40.169Z"
+    },
+    {
+      "source": "Robotics & Automation News",
+      "error": "unable to verify the first certificate",
+      "timestamp": "2026-09-06T05:50:26.158Z"
+    },
+    {
+      "source": "IJRR",
+      "error": "Status code 403",
+      "timestamp": "2026-09-06T05:50:26.301Z"
+    },
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-09-06T05:50:27.009Z"
+    },
+    {
+      "source": "ANYbotics",
+      "error": "HTTP 403",
+      "timestamp": "2026-09-06T05:50:26.597Z"
+    }
+  ]
+}
