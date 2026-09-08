@@ -1,0 +1,191 @@
+{
+  "fetch_date": "2026-09-08T05:53:41.767Z",
+  "sources_fetched": 15,
+  "sources_failed": 4,
+  "articles_collected": 508,
+  "articles_after_dedup": 508,
+  "articles_after_filter": 29,
+  "robots": [
+    {
+      "company": "Pollen Robotics",
+      "robot_name": "MicroDuck",
+      "type": null,
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://newatlas.com/robotics/adorable-waddling-robot-pick-up-hugging-face-microduck-pollen-robotics/",
+      "source_type": "news",
+      "confidence_score": 0.85,
+      "description": "A small waddling robot capable of picking up objects and learning new tricks through Hugging Face integration.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-09-08T05:53:41.767Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": null,
+      "robot_name": "R-Dog",
+      "type": "quadruped",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://newatlas.com/robotics/r-dog-quadruped-delivery-robot/",
+      "source_type": "news",
+      "confidence_score": 0.8,
+      "description": "A wheel-legged quadruped robot designed for package delivery with advertising capabilities.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-09-08T05:53:41.767Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_company",
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": null,
+      "robot_name": "Nori A3",
+      "type": "humanoid",
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://newatlas.com/robotics/household-robot-chores-nori-a3/",
+      "source_type": "news",
+      "confidence_score": 0.75,
+      "description": "A sub-$1,700 household robot designed to handle chores and various domestic tasks.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-09-08T05:53:41.767Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_company",
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Vitestro",
+      "robot_name": "Aletta",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://spectrum.ieee.org/blood-draw-robot-vitestro-aletta",
+      "source_type": "ieee",
+      "confidence_score": 0.9,
+      "description": "An automated blood-drawing robot designed for medical applications.",
+      "shipping_signal": "shipping_now",
+      "discovered_at": "2026-09-08T05:53:41.767Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Persona AI",
+      "robot_name": null,
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://spectrum.ieee.org/persona-ai-humanoid-robot-welding",
+      "source_type": "ieee",
+      "confidence_score": 0.85,
+      "description": "A humanoid robot designed for shipyard welding applications.",
+      "shipping_signal": "pilot_only",
+      "discovered_at": "2026-09-08T05:53:41.767Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_robot_name",
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Walden Robotics",
+      "robot_name": null,
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://spectrum.ieee.org/humanoid-robots-walden-robotics-toyota",
+      "source_type": "ieee",
+      "confidence_score": 0.8,
+      "description": "A practical humanoid robot developed in partnership with Toyota for industrial applications.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-09-08T05:53:41.767Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_robot_name",
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": null,
+      "robot_name": "Ollobot",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://spectrum.ieee.org/ollobot-ai-companion-robot",
+      "source_type": "ieee",
+      "confidence_score": 0.75,
+      "description": "An AI companion robot designed to provide human connection in modern homes.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-09-08T05:53:41.767Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_company",
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "BAIR Blog",
+      "error": "Request timed out after 15000ms",
+      "timestamp": "2026-09-08T05:53:29.617Z"
+    },
+    {
+      "source": "Robotics & Automation News",
+      "error": "unable to verify the first certificate",
+      "timestamp": "2026-09-08T05:53:15.643Z"
+    },
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-09-08T05:53:16.639Z"
+    },
+    {
+      "source": "ANYbotics",
+      "error": "HTTP 403",
+      "timestamp": "2026-09-08T05:53:15.922Z"
+    }
+  ]
+}
