@@ -1,0 +1,144 @@
+{
+  "fetch_date": "2026-09-09T05:55:39.188Z",
+  "sources_fetched": 15,
+  "sources_failed": 4,
+  "articles_collected": 625,
+  "articles_after_dedup": 625,
+  "articles_after_filter": 30,
+  "robots": [
+    {
+      "company": "Vitestro",
+      "robot_name": "Aletta",
+      "type": null,
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://spectrum.ieee.org/blood-draw-robot-vitestro-aletta",
+      "source_type": "ieee",
+      "confidence_score": 0.85,
+      "description": "A robotic system designed to autonomously draw blood from patients.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-09-09T05:55:39.188Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Pollen Robotics",
+      "robot_name": "MicroDuck",
+      "type": null,
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://newatlas.com/robotics/adorable-waddling-robot-pick-up-hugging-face-microduck-pollen-robotics/",
+      "source_type": "news",
+      "confidence_score": 0.9,
+      "description": "A small waddling robot capable of picking up objects and learning new tasks through Hugging Face integration.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-09-09T05:55:39.188Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "BBC",
+      "robot_name": "Ann Droid",
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://robohub.org/could-robots-help-tackle-loneliness-bbcs-ann-droid-raises-questions-about-the-future-of-care/",
+      "source_type": "news",
+      "confidence_score": 0.75,
+      "description": "A humanoid robot developed by BBC to explore the potential of robots in addressing loneliness and care applications.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-09-09T05:55:39.188Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": null,
+      "robot_name": "Ollobot",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://spectrum.ieee.org/ollobot-ai-companion-robot",
+      "source_type": "ieee",
+      "confidence_score": 0.8,
+      "description": "An AI companion robot designed to enhance human connection in modern homes.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-09-09T05:55:39.188Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_company",
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Persona AI",
+      "robot_name": null,
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://spectrum.ieee.org/persona-ai-humanoid-robot-welding",
+      "source_type": "ieee",
+      "confidence_score": 0.85,
+      "description": "A humanoid robot being developed for shipyard welding applications.",
+      "shipping_signal": "pilot_only",
+      "discovered_at": "2026-09-09T05:55:39.188Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_robot_name",
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "BAIR Blog",
+      "error": "Request timed out after 15000ms",
+      "timestamp": "2026-09-09T05:55:29.765Z"
+    },
+    {
+      "source": "Robotics & Automation News",
+      "error": "unable to verify the first certificate",
+      "timestamp": "2026-09-09T05:55:15.662Z"
+    },
+    {
+      "source": "IJRR",
+      "error": "Status code 403",
+      "timestamp": "2026-09-09T05:55:16.222Z"
+    },
+    {
+      "source": "ANYbotics",
+      "error": "HTTP 403",
+      "timestamp": "2026-09-09T05:55:16.581Z"
+    }
+  ]
+}
