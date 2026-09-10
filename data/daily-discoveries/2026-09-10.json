@@ -1,0 +1,122 @@
+{
+  "fetch_date": "2026-09-10T05:53:37.546Z",
+  "sources_fetched": 15,
+  "sources_failed": 4,
+  "articles_collected": 586,
+  "articles_after_dedup": 586,
+  "articles_after_filter": 29,
+  "robots": [
+    {
+      "company": "Vitestro",
+      "robot_name": "Aletta",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://spectrum.ieee.org/blood-draw-robot-vitestro-aletta",
+      "source_type": "ieee",
+      "confidence_score": 0.85,
+      "description": "Automated blood-drawing robot designed for medical applications.",
+      "shipping_signal": "shipping_now",
+      "discovered_at": "2026-09-10T05:53:37.546Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Dynamic Creatures",
+      "robot_name": null,
+      "type": null,
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/boston-dynamics-veterans-launch-dynamic-creatures-to-bring-characters-to-life-with-robotics/",
+      "source_type": "robotreport",
+      "confidence_score": 0.65,
+      "description": "Character robotics company launched by Boston Dynamics veterans to create entertainment robots.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-09-10T05:53:37.546Z",
+      "quality_score": {
+        "overall": 5,
+        "completeness": 4,
+        "reliability": 5,
+        "flags": [
+          "missing_robot_name",
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Persona AI",
+      "robot_name": null,
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://spectrum.ieee.org/persona-ai-humanoid-robot-welding",
+      "source_type": "ieee",
+      "confidence_score": 0.75,
+      "description": "Humanoid robot designed for shipyard welding applications.",
+      "shipping_signal": "pilot_only",
+      "discovered_at": "2026-09-10T05:53:37.546Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_robot_name",
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Ollobot",
+      "robot_name": "Ollobot",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://spectrum.ieee.org/ollobot-ai-companion-robot",
+      "source_type": "ieee",
+      "confidence_score": 0.8,
+      "description": "AI companion robot designed for human connection in modern homes.",
+      "shipping_signal": "shipping_now",
+      "discovered_at": "2026-09-10T05:53:37.546Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "BAIR Blog",
+      "error": "Request timed out after 15000ms",
+      "timestamp": "2026-09-10T05:53:28.168Z"
+    },
+    {
+      "source": "Robotics & Automation News",
+      "error": "unable to verify the first certificate",
+      "timestamp": "2026-09-10T05:53:14.097Z"
+    },
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-09-10T05:53:15.260Z"
+    },
+    {
+      "source": "ANYbotics",
+      "error": "HTTP 403",
+      "timestamp": "2026-09-10T05:53:14.672Z"
+    }
+  ]
+}
