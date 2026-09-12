@@ -1,0 +1,128 @@
+{
+  "fetch_date": "2026-09-12T05:40:41.566Z",
+  "sources_fetched": 14,
+  "sources_failed": 5,
+  "articles_collected": 393,
+  "articles_after_dedup": 393,
+  "articles_after_filter": 34,
+  "robots": [
+    {
+      "company": "Vitestro",
+      "robot_name": "Aletta",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://spectrum.ieee.org/blood-draw-robot-vitestro-aletta",
+      "source_type": "ieee",
+      "confidence_score": 0.85,
+      "description": "A robotic system designed to autonomously draw blood from patients.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-09-12T05:40:41.566Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Persona AI",
+      "robot_name": null,
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://spectrum.ieee.org/persona-ai-humanoid-robot-welding",
+      "source_type": "ieee",
+      "confidence_score": 0.75,
+      "description": "A humanoid robot being developed for shipyard welding applications.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-09-12T05:40:41.566Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_robot_name",
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Walden Robotics",
+      "robot_name": null,
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://spectrum.ieee.org/humanoid-robots-walden-robotics-toyota",
+      "source_type": "ieee",
+      "confidence_score": 0.8,
+      "description": "A practical humanoid robot being developed in partnership with Toyota.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-09-12T05:40:41.566Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_robot_name",
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Ollobot",
+      "robot_name": null,
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://spectrum.ieee.org/ollobot-ai-companion-robot",
+      "source_type": "ieee",
+      "confidence_score": 0.7,
+      "description": "An AI companion robot designed to provide human connection in modern homes.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-09-12T05:40:41.566Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_robot_name",
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "BAIR Blog",
+      "error": "Request timed out after 15000ms",
+      "timestamp": "2026-09-12T05:40:33.410Z"
+    },
+    {
+      "source": "Robotics & Automation News",
+      "error": "unable to verify the first certificate",
+      "timestamp": "2026-09-12T05:40:19.244Z"
+    },
+    {
+      "source": "IJRR",
+      "error": "Status code 403",
+      "timestamp": "2026-09-12T05:40:19.449Z"
+    },
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-09-12T05:40:21.063Z"
+    },
+    {
+      "source": "ANYbotics",
+      "error": "HTTP 403",
+      "timestamp": "2026-09-12T05:40:20.237Z"
+    }
+  ]
+}
