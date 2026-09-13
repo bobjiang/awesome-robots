@@ -1,0 +1,123 @@
+{
+  "fetch_date": "2026-09-13T06:00:56.911Z",
+  "sources_fetched": 15,
+  "sources_failed": 4,
+  "articles_collected": 504,
+  "articles_after_dedup": 504,
+  "articles_after_filter": 34,
+  "robots": [
+    {
+      "company": "Vitestro",
+      "robot_name": "Aletta",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://spectrum.ieee.org/blood-draw-robot-vitestro-aletta",
+      "source_type": "ieee",
+      "confidence_score": 0.85,
+      "description": "A robotic system designed to autonomously draw blood from patients.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-09-13T06:00:56.910Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Dynamic Creatures",
+      "robot_name": null,
+      "type": null,
+      "status": "research",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/boston-dynamics-veterans-launch-dynamic-creatures-to-bring-characters-to-life-with-robotics/",
+      "source_type": "robotreport",
+      "confidence_score": 0.7,
+      "description": "A new robotics company founded by Boston Dynamics veterans to create character-based robots for entertainment applications.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-09-13T06:00:56.910Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_robot_name",
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Persona AI",
+      "robot_name": null,
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://spectrum.ieee.org/persona-ai-humanoid-robot-welding",
+      "source_type": "ieee",
+      "confidence_score": 0.8,
+      "description": "A humanoid robot designed for shipyard welding applications.",
+      "shipping_signal": "pilot_only",
+      "discovered_at": "2026-09-13T06:00:56.910Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_robot_name",
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Walden Robotics",
+      "robot_name": null,
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://spectrum.ieee.org/humanoid-robots-walden-robotics-toyota",
+      "source_type": "ieee",
+      "confidence_score": 0.85,
+      "description": "A practical humanoid robot being developed in partnership with Toyota for real-world applications.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-09-13T06:00:56.910Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_robot_name",
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "BAIR Blog",
+      "error": "Request timed out after 15000ms",
+      "timestamp": "2026-09-13T06:00:48.048Z"
+    },
+    {
+      "source": "Robotics & Automation News",
+      "error": "unable to verify the first certificate",
+      "timestamp": "2026-09-13T06:00:33.923Z"
+    },
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-09-13T06:00:36.495Z"
+    },
+    {
+      "source": "ANYbotics",
+      "error": "HTTP 403",
+      "timestamp": "2026-09-13T06:00:35.243Z"
+    }
+  ]
+}
