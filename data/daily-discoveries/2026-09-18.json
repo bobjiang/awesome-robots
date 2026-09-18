@@ -1,0 +1,95 @@
+{
+  "fetch_date": "2026-09-18T05:50:24.282Z",
+  "sources_fetched": 16,
+  "sources_failed": 3,
+  "articles_collected": 699,
+  "articles_after_dedup": 699,
+  "articles_after_filter": 31,
+  "robots": [
+    {
+      "company": "Agility Robotics",
+      "robot_name": "Digit 5",
+      "type": "humanoid",
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": "https://www.agilityrobotics.com/content/agility-unveils-digit-5-humanoid-robot-built-for-cooperatively-safe-work-at-scale",
+      "source_link": "https://www.agilityrobotics.com/content/agility-unveils-digit-5-humanoid-robot-built-for-cooperatively-safe-work-at-scale",
+      "source_type": "company",
+      "confidence_score": 0.98,
+      "description": "Fifth generation humanoid robot from Agility Robotics with new legs, batteries, and enhanced safety features for cooperative work at scale.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-09-18T05:50:24.282Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": null,
+      "robot_name": "AthenaZero",
+      "type": null,
+      "status": "research",
+      "image_link": null,
+      "specs_link": "https://arxiv.org/abs/2609.19194",
+      "source_link": "https://arxiv.org/abs/2609.19194",
+      "source_type": "arxiv",
+      "confidence_score": 0.95,
+      "description": "Low-inertia bimanual robot system designed for dynamic manipulation tasks.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-09-18T05:50:24.282Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_company",
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": null,
+      "robot_name": "ULOHA",
+      "type": null,
+      "status": "research",
+      "image_link": null,
+      "specs_link": "https://arxiv.org/abs/2609.19200",
+      "source_link": "https://arxiv.org/abs/2609.19200",
+      "source_type": "arxiv",
+      "confidence_score": 0.92,
+      "description": "Underwater bimanual robot system developed for robot learning applications.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-09-18T05:50:24.282Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_company",
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "Robotics & Automation News",
+      "error": "unable to verify the first certificate",
+      "timestamp": "2026-09-18T05:50:14.106Z"
+    },
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-09-18T05:50:15.868Z"
+    },
+    {
+      "source": "ANYbotics",
+      "error": "HTTP 403",
+      "timestamp": "2026-09-18T05:50:14.331Z"
+    }
+  ]
+}
