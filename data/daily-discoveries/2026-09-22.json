@@ -1,0 +1,116 @@
+{
+  "fetch_date": "2026-09-22T06:05:29.297Z",
+  "sources_fetched": 16,
+  "sources_failed": 3,
+  "articles_collected": 822,
+  "articles_after_dedup": 822,
+  "articles_after_filter": 31,
+  "robots": [
+    {
+      "company": "Agility Robotics",
+      "robot_name": "Digit 5",
+      "type": "humanoid",
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.agilityrobotics.com/content/agility-unveils-digit-5-humanoid-robot-built-for-cooperatively-safe-work-at-scale",
+      "source_type": "company",
+      "confidence_score": 0.95,
+      "description": "Fifth generation humanoid robot from Agility Robotics built for cooperatively safe work at scale.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-09-22T06:05:29.297Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": null,
+      "robot_name": "AthenaZero",
+      "type": null,
+      "status": "research",
+      "image_link": null,
+      "specs_link": "https://www.science.org/doi/abs/10.1126/scirobotics.aee1868?af=R",
+      "source_link": "https://www.science.org/doi/abs/10.1126/scirobotics.aee1868?af=R",
+      "source_type": "news",
+      "confidence_score": 0.85,
+      "description": "A low-inertia bimanual robot designed for dynamic manipulation tasks.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-09-22T06:05:29.297Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_company",
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Vitestro",
+      "robot_name": "Aletta",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://spectrum.ieee.org/blood-draw-robot-vitestro-aletta",
+      "source_type": "ieee",
+      "confidence_score": 0.9,
+      "description": "Autonomous blood-drawing robot designed for medical applications.",
+      "shipping_signal": "shipping_now",
+      "discovered_at": "2026-09-22T06:05:29.297Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Neptune Medical",
+      "robot_name": "Triton 1",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/neptune-medical-earns-fda-clearance-triton-1-robotic-system/",
+      "source_type": "robotreport",
+      "confidence_score": 0.92,
+      "description": "FDA-cleared robotic system for medical procedures from Neptune Medical.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-09-22T06:05:29.297Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "Robotics & Automation News",
+      "error": "unable to verify the first certificate",
+      "timestamp": "2026-09-22T06:05:19.192Z"
+    },
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-09-22T06:05:20.094Z"
+    },
+    {
+      "source": "ANYbotics",
+      "error": "HTTP 403",
+      "timestamp": "2026-09-22T06:05:19.711Z"
+    }
+  ]
+}
