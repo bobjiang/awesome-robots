@@ -1,0 +1,138 @@
+{
+  "fetch_date": "2026-09-23T05:53:08.426Z",
+  "sources_fetched": 16,
+  "sources_failed": 3,
+  "articles_collected": 668,
+  "articles_after_dedup": 668,
+  "articles_after_filter": 32,
+  "robots": [
+    {
+      "company": "Hello Robot",
+      "robot_name": "Stretch 4",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://techcrunch.com/2026/09/22/techcrunch-disrupt-2026-aaron-edsinger-brings-hello-robots-stretch-4-to-life-onstage/",
+      "source_type": "news",
+      "confidence_score": 0.95,
+      "description": "Hello Robot's latest mobile manipulator platform demonstrated at TechCrunch Disrupt 2026.",
+      "shipping_signal": "shipping_now",
+      "discovered_at": "2026-09-23T05:53:08.425Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Agility Robotics",
+      "robot_name": "Digit 5",
+      "type": "humanoid",
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.agilityrobotics.com/content/agility-unveils-digit-5-humanoid-robot-built-for-cooperatively-safe-work-at-scale",
+      "source_type": "press_release",
+      "confidence_score": 0.98,
+      "description": "Agility Robotics' fifth-generation humanoid robot built for cooperatively safe work at scale.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-09-23T05:53:08.425Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Neptune Medical",
+      "robot_name": "Triton 1",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/neptune-medical-earns-fda-clearance-triton-1-robotic-system/",
+      "source_type": "news",
+      "confidence_score": 0.92,
+      "description": "Neptune Medical's FDA-cleared robotic system for medical procedures.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-09-23T05:53:08.425Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": null,
+      "robot_name": "AthenaZero",
+      "type": null,
+      "status": "research",
+      "image_link": null,
+      "specs_link": "https://www.science.org/doi/abs/10.1126/scirobotics.aee1868?af=R",
+      "source_link": "https://www.science.org/doi/abs/10.1126/scirobotics.aee1868?af=R",
+      "source_type": "arxiv",
+      "confidence_score": 0.88,
+      "description": "A low-inertia bimanual robot designed for dynamic manipulation tasks.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-09-23T05:53:08.425Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_company",
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Vitestro",
+      "robot_name": "Aletta",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://spectrum.ieee.org/blood-draw-robot-vitestro-aletta",
+      "source_type": "ieee",
+      "confidence_score": 0.9,
+      "description": "Vitestro's autonomous blood-drawing robot for medical applications.",
+      "shipping_signal": "pilot_only",
+      "discovered_at": "2026-09-23T05:53:08.425Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "Robotics & Automation News",
+      "error": "unable to verify the first certificate",
+      "timestamp": "2026-09-23T05:52:51.907Z"
+    },
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-09-23T05:52:52.816Z"
+    },
+    {
+      "source": "ANYbotics",
+      "error": "HTTP 403",
+      "timestamp": "2026-09-23T05:52:52.378Z"
+    }
+  ]
+}
