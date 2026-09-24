@@ -1,0 +1,98 @@
+{
+  "fetch_date": "2026-09-24T06:06:04.270Z",
+  "sources_fetched": 15,
+  "sources_failed": 4,
+  "articles_collected": 571,
+  "articles_after_dedup": 571,
+  "articles_after_filter": 35,
+  "robots": [
+    {
+      "company": "Hello Robot",
+      "robot_name": "Stretch 4",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://techcrunch.com/2026/09/22/techcrunch-disrupt-2026-aaron-edsinger-brings-hello-robots-stretch-4-to-life-onstage/",
+      "source_type": "news",
+      "confidence_score": 0.85,
+      "description": "Hello Robot's Stretch 4 mobile manipulator demonstrated live at TechCrunch Disrupt 2026.",
+      "shipping_signal": "shipping_now",
+      "discovered_at": "2026-09-24T06:06:04.270Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Agility Robotics",
+      "robot_name": "Digit 5",
+      "type": "humanoid",
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.agilityrobotics.com/content/agility-unveils-digit-5-humanoid-robot-built-for-cooperatively-safe-work-at-scale",
+      "source_type": "company",
+      "confidence_score": 0.95,
+      "description": "Agility Robotics unveiled Digit 5 humanoid robot built for cooperatively safe work at scale.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-09-24T06:06:04.270Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Vitestro",
+      "robot_name": "Aletta",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://spectrum.ieee.org/blood-draw-robot-vitestro-aletta",
+      "source_type": "ieee",
+      "confidence_score": 0.9,
+      "description": "Vitestro's Aletta is an autonomous blood-drawing robot for medical applications.",
+      "shipping_signal": "shipping_now",
+      "discovered_at": "2026-09-24T06:06:04.270Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "Google DeepMind Blog",
+      "error": "Non-whitespace before first tag.\nLine: 0\nColumn: 1\nChar: \u001f",
+      "timestamp": "2026-09-24T06:05:51.542Z"
+    },
+    {
+      "source": "Robotics & Automation News",
+      "error": "unable to verify the first certificate",
+      "timestamp": "2026-09-24T06:05:50.953Z"
+    },
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-09-24T06:05:52.081Z"
+    },
+    {
+      "source": "ANYbotics",
+      "error": "HTTP 403",
+      "timestamp": "2026-09-24T06:05:51.575Z"
+    }
+  ]
+}
