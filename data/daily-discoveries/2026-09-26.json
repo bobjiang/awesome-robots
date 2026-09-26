@@ -1,0 +1,66 @@
+{
+  "fetch_date": "2026-09-26T06:05:59.308Z",
+  "sources_fetched": 17,
+  "sources_failed": 2,
+  "articles_collected": 529,
+  "articles_after_dedup": 529,
+  "articles_after_filter": 30,
+  "robots": [
+    {
+      "company": "Agility Robotics",
+      "robot_name": "Digit 5",
+      "type": "humanoid",
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.agilityrobotics.com/content/agility-unveils-digit-5-humanoid-robot-built-for-cooperatively-safe-work-at-scale",
+      "source_type": "press_release",
+      "confidence_score": 0.95,
+      "description": "Fifth generation humanoid robot from Agility Robotics built for cooperatively safe work at scale.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-09-26T06:05:59.308Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Epson",
+      "robot_name": "AX6",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/epson-introduces-ax6-cobot-compact-design-no-code-programming/",
+      "source_type": "robotreport",
+      "confidence_score": 0.85,
+      "description": "Compact collaborative robot with no-code programming capabilities introduced by Epson.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-09-26T06:05:59.308Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "Robotics & Automation News",
+      "error": "unable to verify the first certificate",
+      "timestamp": "2026-09-26T06:05:49.959Z"
+    },
+    {
+      "source": "ANYbotics",
+      "error": "HTTP 403",
+      "timestamp": "2026-09-26T06:05:50.179Z"
+    }
+  ]
+}
