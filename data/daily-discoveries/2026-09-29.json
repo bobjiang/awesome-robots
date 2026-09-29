@@ -1,0 +1,98 @@
+{
+  "fetch_date": "2026-09-29T06:49:11.823Z",
+  "sources_fetched": 15,
+  "sources_failed": 4,
+  "articles_collected": 874,
+  "articles_after_dedup": 874,
+  "articles_after_filter": 34,
+  "robots": [
+    {
+      "company": "Wandercraft",
+      "robot_name": "EVE",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://newatlas.com/robotics/wandercraft-eve-exoskeleton-self-balancing/",
+      "source_type": "news",
+      "confidence_score": 0.95,
+      "description": "FDA-cleared self-balancing exoskeleton that enables spinal-cord injury patients to walk independently.",
+      "shipping_signal": "shipping_now",
+      "discovered_at": "2026-09-29T06:49:11.823Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Agility Robotics",
+      "robot_name": "Digit 5",
+      "type": "humanoid",
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.agilityrobotics.com/content/agility-unveils-digit-5-humanoid-robot-built-for-cooperatively-safe-work-at-scale",
+      "source_type": "press_release",
+      "confidence_score": 0.98,
+      "description": "Next-generation humanoid robot built for cooperatively safe work at scale with enhanced safety features.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-09-29T06:49:11.823Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Epson",
+      "robot_name": "AX6",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/epson-introduces-ax6-cobot-compact-design-no-code-programming/",
+      "source_type": "robotreport",
+      "confidence_score": 0.85,
+      "description": "Compact collaborative robot with no-code programming capabilities for industrial applications.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-09-29T06:49:11.823Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "Robotics & Automation News",
+      "error": "unable to verify the first certificate",
+      "timestamp": "2026-09-29T06:48:53.171Z"
+    },
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-09-29T06:48:54.258Z"
+    },
+    {
+      "source": "Boston Dynamics",
+      "error": "Status code 415",
+      "timestamp": "2026-09-29T06:48:53.342Z"
+    },
+    {
+      "source": "ANYbotics",
+      "error": "HTTP 403",
+      "timestamp": "2026-09-29T06:48:53.671Z"
+    }
+  ]
+}
