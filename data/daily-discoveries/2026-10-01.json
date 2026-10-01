@@ -1,0 +1,71 @@
+{
+  "fetch_date": "2026-10-01T07:08:36.045Z",
+  "sources_fetched": 16,
+  "sources_failed": 3,
+  "articles_collected": 728,
+  "articles_after_dedup": 728,
+  "articles_after_filter": 34,
+  "robots": [
+    {
+      "company": "Wandercraft",
+      "robot_name": "EVE",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://newatlas.com/robotics/wandercraft-eve-exoskeleton-self-balancing/",
+      "source_type": "news",
+      "confidence_score": 0.95,
+      "description": "FDA-cleared self-balancing exoskeleton that enables spinal-cord injury patients to walk independently.",
+      "shipping_signal": "shipping_now",
+      "discovered_at": "2026-10-01T07:08:36.045Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Flourish",
+      "robot_name": "Flourish One",
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/meet-flourish-one-raspberry-pi-powered-humanoid-built-busy-parents/",
+      "source_type": "robotreport",
+      "confidence_score": 0.9,
+      "description": "Raspberry Pi-powered humanoid robot designed to assist busy parents with household tasks.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-10-01T07:08:36.045Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "Robotics & Automation News",
+      "error": "unable to verify the first certificate",
+      "timestamp": "2026-10-01T07:08:24.133Z"
+    },
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-10-01T07:08:25.550Z"
+    },
+    {
+      "source": "ANYbotics",
+      "error": "HTTP 403",
+      "timestamp": "2026-10-01T07:08:25.119Z"
+    }
+  ]
+}
