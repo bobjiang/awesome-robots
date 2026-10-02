@@ -1,0 +1,61 @@
+{
+  "fetch_date": "2026-10-02T06:57:23.365Z",
+  "sources_fetched": 18,
+  "sources_failed": 1,
+  "articles_collected": 705,
+  "articles_after_dedup": 705,
+  "articles_after_filter": 36,
+  "robots": [
+    {
+      "company": "Wandercraft",
+      "robot_name": "EVE",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://newatlas.com/robotics/wandercraft-eve-exoskeleton-self-balancing/",
+      "source_type": "news",
+      "confidence_score": 0.95,
+      "description": "FDA-cleared self-balancing exoskeleton that enables spinal-cord injury patients to walk independently.",
+      "shipping_signal": "shipping_now",
+      "discovered_at": "2026-10-02T06:57:23.365Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Flourish",
+      "robot_name": "Flourish One",
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/meet-flourish-one-raspberry-pi-powered-humanoid-built-busy-parents/",
+      "source_type": "robotreport",
+      "confidence_score": 0.9,
+      "description": "Raspberry Pi-powered humanoid robot designed to assist busy parents with household tasks.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-10-02T06:57:23.365Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "ANYbotics",
+      "error": "HTTP 403",
+      "timestamp": "2026-10-02T06:57:14.895Z"
+    }
+  ]
+}
