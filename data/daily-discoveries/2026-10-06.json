@@ -1,0 +1,67 @@
+{
+  "fetch_date": "2026-10-06T07:29:28.948Z",
+  "sources_fetched": 17,
+  "sources_failed": 2,
+  "articles_collected": 808,
+  "articles_after_dedup": 808,
+  "articles_after_filter": 36,
+  "robots": [
+    {
+      "company": "Wandercraft",
+      "robot_name": "EVE",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://newatlas.com/robotics/wandercraft-eve-exoskeleton-self-balancing/",
+      "source_type": "news",
+      "confidence_score": 0.95,
+      "description": "FDA-cleared self-balancing exoskeleton that enables spinal-cord injury patients to walk independently.",
+      "shipping_signal": "shipping_now",
+      "discovered_at": "2026-10-06T07:29:28.948Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Donut Robotics",
+      "robot_name": null,
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://roboticsandautomationnews.com/2026/10/05/japanese-nursing-home-operator-charm-care-invests-in-humanoid-company-donut-robotics/105545/",
+      "source_type": "news",
+      "confidence_score": 0.75,
+      "description": "Japanese humanoid robotics company receiving investment from nursing home operator Charm Care for healthcare applications.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-10-06T07:29:28.948Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_robot_name",
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-10-06T07:29:19.810Z"
+    },
+    {
+      "source": "ANYbotics",
+      "error": "HTTP 403",
+      "timestamp": "2026-10-06T07:29:19.082Z"
+    }
+  ]
+}
