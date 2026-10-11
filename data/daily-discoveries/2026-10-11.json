@@ -1,0 +1,44 @@
+{
+  "fetch_date": "2026-10-11T07:04:35.122Z",
+  "sources_fetched": 17,
+  "sources_failed": 2,
+  "articles_collected": 449,
+  "articles_after_dedup": 449,
+  "articles_after_filter": 37,
+  "robots": [
+    {
+      "company": "Pollen Robotics",
+      "robot_name": "Reachy Mini",
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://spectrum.ieee.org/video-friday-reachy-mini-raps",
+      "source_type": "ieee",
+      "confidence_score": 0.85,
+      "description": "A smaller version of the Reachy humanoid robot featured in a decommissioning demonstration.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-10-11T07:04:35.122Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "Google DeepMind Blog",
+      "error": "Non-whitespace before first tag.\nLine: 0\nColumn: 1\nChar: \u001f",
+      "timestamp": "2026-10-11T07:04:27.279Z"
+    },
+    {
+      "source": "ANYbotics",
+      "error": "HTTP 403",
+      "timestamp": "2026-10-11T07:04:27.317Z"
+    }
+  ]
+}
