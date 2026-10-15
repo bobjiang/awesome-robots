@@ -1,0 +1,39 @@
+{
+  "fetch_date": "2026-10-15T05:50:12.202Z",
+  "sources_fetched": 18,
+  "sources_failed": 1,
+  "articles_collected": 687,
+  "articles_after_dedup": 687,
+  "articles_after_filter": 32,
+  "robots": [
+    {
+      "company": "Science Robotics",
+      "robot_name": "Ultra Mobility Vehicle",
+      "type": null,
+      "status": "research",
+      "image_link": null,
+      "specs_link": "https://www.science.org/doi/abs/10.1126/scirobotics.aed3627?af=R",
+      "source_link": "https://www.science.org/doi/abs/10.1126/scirobotics.aed3627?af=R",
+      "source_type": "ieee",
+      "confidence_score": 0.85,
+      "description": "A bicycle robot capable of driving, balancing, and jumping.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-10-15T05:50:12.202Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "ANYbotics",
+      "error": "HTTP 403",
+      "timestamp": "2026-10-15T05:50:04.401Z"
+    }
+  ]
+}
