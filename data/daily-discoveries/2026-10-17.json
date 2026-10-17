@@ -1,0 +1,62 @@
+{
+  "fetch_date": "2026-10-17T05:31:53.520Z",
+  "sources_fetched": 18,
+  "sources_failed": 1,
+  "articles_collected": 529,
+  "articles_after_dedup": 529,
+  "articles_after_filter": 32,
+  "robots": [
+    {
+      "company": null,
+      "robot_name": "Ultra Mobility Vehicle",
+      "type": null,
+      "status": "research",
+      "image_link": null,
+      "specs_link": "https://www.science.org/doi/abs/10.1126/scirobotics.aed3627?af=R",
+      "source_link": "https://www.science.org/doi/abs/10.1126/scirobotics.aed3627?af=R",
+      "source_type": "arxiv",
+      "confidence_score": 0.85,
+      "description": "A bicycle robot capable of driving, balancing, and jumping.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-10-17T05:31:53.520Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_company",
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Agility Robotics",
+      "robot_name": "Digit 5",
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/agility-robotics-chooses-nyobolt-ultra-fast-charging-digit-5-humanoid/",
+      "source_type": "robotreport",
+      "confidence_score": 0.9,
+      "description": "Next-generation humanoid robot from Agility Robotics featuring ultra-fast charging capability.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-10-17T05:31:53.520Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "ANYbotics",
+      "error": "HTTP 403",
+      "timestamp": "2026-10-17T05:31:45.410Z"
+    }
+  ]
+}
