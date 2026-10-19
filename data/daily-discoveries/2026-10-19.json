@@ -1,0 +1,44 @@
+{
+  "fetch_date": "2026-10-19T06:03:58.941Z",
+  "sources_fetched": 17,
+  "sources_failed": 2,
+  "articles_collected": 642,
+  "articles_after_dedup": 642,
+  "articles_after_filter": 30,
+  "robots": [
+    {
+      "company": "Agility Robotics",
+      "robot_name": "Digit 5",
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/agility-robotics-chooses-nyobolt-ultra-fast-charging-digit-5-humanoid/",
+      "source_type": "robotreport",
+      "confidence_score": 0.85,
+      "description": "Next-generation humanoid robot from Agility Robotics featuring ultra-fast charging capability via Nyobolt technology.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-10-19T06:03:58.941Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-10-19T06:03:51.578Z"
+    },
+    {
+      "source": "ANYbotics",
+      "error": "HTTP 403",
+      "timestamp": "2026-10-19T06:03:51.053Z"
+    }
+  ]
+}
