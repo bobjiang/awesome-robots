@@ -1,0 +1,77 @@
+{
+  "fetch_date": "2026-10-25T05:59:13.786Z",
+  "sources_fetched": 15,
+  "sources_failed": 4,
+  "articles_collected": 409,
+  "articles_after_dedup": 409,
+  "articles_after_filter": 34,
+  "robots": [
+    {
+      "company": "Agility Robotics",
+      "robot_name": "Digit 5",
+      "type": "humanoid",
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://spectrum.ieee.org/agility-robotics-digit-5-redesign",
+      "source_type": "ieee",
+      "confidence_score": 0.95,
+      "description": "Redesigned humanoid robot worker focused on safety improvements over previous Digit versions.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-10-25T05:59:13.786Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": null,
+      "robot_name": "Ultra Mobility Vehicle",
+      "type": null,
+      "status": "research",
+      "image_link": null,
+      "specs_link": "https://www.science.org/doi/abs/10.1126/scirobotics.aed3627?af=R",
+      "source_link": "https://www.science.org/doi/abs/10.1126/scirobotics.aed3627?af=R",
+      "source_type": "arxiv",
+      "confidence_score": 0.85,
+      "description": "A bicycle robot capable of driving, balancing, and jumping.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-10-25T05:59:13.786Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_company",
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "Google DeepMind Blog",
+      "error": "Non-whitespace before first tag.\nLine: 0\nColumn: 1\nChar: \u001f",
+      "timestamp": "2026-10-25T05:58:51.164Z"
+    },
+    {
+      "source": "Stanford AI Lab",
+      "error": "Request timed out after 15000ms",
+      "timestamp": "2026-10-25T05:59:04.945Z"
+    },
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-10-25T05:58:51.887Z"
+    },
+    {
+      "source": "ANYbotics",
+      "error": "HTTP 403",
+      "timestamp": "2026-10-25T05:58:51.285Z"
+    }
+  ]
+}
