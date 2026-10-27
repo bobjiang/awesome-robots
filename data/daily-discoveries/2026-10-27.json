@@ -1,0 +1,72 @@
+{
+  "fetch_date": "2026-10-27T06:12:22.703Z",
+  "sources_fetched": 16,
+  "sources_failed": 3,
+  "articles_collected": 738,
+  "articles_after_dedup": 738,
+  "articles_after_filter": 32,
+  "robots": [
+    {
+      "company": "RAIWAY Research Team",
+      "robot_name": "RAIWAY",
+      "type": null,
+      "status": "research",
+      "image_link": null,
+      "specs_link": "https://arxiv.org/abs/2610.33172",
+      "source_link": "https://arxiv.org/abs/2610.33172",
+      "source_type": "arxiv",
+      "confidence_score": 0.85,
+      "description": "A large-wheeled bipedal robot with contact-informed blind locomotion capabilities.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-10-27T06:12:22.703Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": null,
+      "robot_name": "Ultra Mobility Vehicle",
+      "type": null,
+      "status": "research",
+      "image_link": null,
+      "specs_link": "https://www.science.org/doi/abs/10.1126/scirobotics.aed3627?af=R",
+      "source_link": "https://www.science.org/doi/abs/10.1126/scirobotics.aed3627?af=R",
+      "source_type": "arxiv",
+      "confidence_score": 0.9,
+      "description": "A bicycle robot capable of driving, balancing, and jumping.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-10-27T06:12:22.703Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_company",
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "Stanford AI Lab",
+      "error": "Request timed out after 15000ms",
+      "timestamp": "2026-10-27T06:12:17.943Z"
+    },
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-10-27T06:12:04.386Z"
+    },
+    {
+      "source": "ANYbotics",
+      "error": "HTTP 403",
+      "timestamp": "2026-10-27T06:12:03.895Z"
+    }
+  ]
+}
