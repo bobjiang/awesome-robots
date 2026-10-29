@@ -1,0 +1,66 @@
+{
+  "fetch_date": "2026-10-29T06:58:26.564Z",
+  "sources_fetched": 17,
+  "sources_failed": 2,
+  "articles_collected": 528,
+  "articles_after_dedup": 528,
+  "articles_after_filter": 33,
+  "robots": [
+    {
+      "company": "Neura Robotics",
+      "robot_name": "New Humanoid (unveiled at RoboGym)",
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://roboticsandautomationnews.com/2026/10/28/neura-robotics-and-tum-open-e17-million-robogym-and-unveil-new-humanoid/106435/",
+      "source_type": "news",
+      "confidence_score": 0.85,
+      "description": "Neura Robotics unveiled a new humanoid robot at the opening of the €17 million RoboGym facility with TUM.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-10-29T06:58:26.564Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "ANYbotics",
+      "robot_name": "ANYmal X",
+      "type": "quadruped",
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/anybotics-begins-delivering-anymal-x-legged-robot-explosive-atmospheres/",
+      "source_type": "robotreport",
+      "confidence_score": 0.95,
+      "description": "ANYbotics begins delivering ANYmal X legged robot designed for explosive atmospheres.",
+      "shipping_signal": "shipping_now",
+      "discovered_at": "2026-10-29T06:58:26.564Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "Stanford AI Lab",
+      "error": "Request timed out after 15000ms",
+      "timestamp": "2026-10-29T06:58:19.055Z"
+    },
+    {
+      "source": "ANYbotics",
+      "error": "HTTP 403",
+      "timestamp": "2026-10-29T06:58:05.448Z"
+    }
+  ]
+}
