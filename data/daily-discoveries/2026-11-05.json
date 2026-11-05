@@ -1,0 +1,140 @@
+{
+  "fetch_date": "2026-11-05T07:52:24.642Z",
+  "sources_fetched": 16,
+  "sources_failed": 3,
+  "articles_collected": 626,
+  "articles_after_dedup": 626,
+  "articles_after_filter": 36,
+  "robots": [
+    {
+      "company": "Haystack Robotics",
+      "robot_name": "UV Disinfection Robot",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/how-globallogic-helped-haystack-robotics-build-uv-disinfection-robot/",
+      "source_type": "robotreport",
+      "confidence_score": 0.75,
+      "description": "A UV disinfection robot developed by Haystack Robotics with assistance from GlobalLogic for cleaning and sanitization applications.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-11-05T07:52:24.642Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": null,
+      "robot_name": "Hopcopter",
+      "type": null,
+      "status": "research",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://newatlas.com/robotics/hopcopter-hopping-robot-flexible-foot-pad/",
+      "source_type": "news",
+      "confidence_score": 0.85,
+      "description": "A hopping and flying robot with an all-terrain upgrade featuring flexible foot pads for improved mobility.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-11-05T07:52:24.642Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_company",
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": null,
+      "robot_name": "Ultra Mobility Vehicle",
+      "type": null,
+      "status": "research",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.science.org/doi/abs/10.1126/scirobotics.aed3627?af=R",
+      "source_type": "ieee",
+      "confidence_score": 0.9,
+      "description": "A bicycle robot capable of driving, balancing, and jumping, representing a novel approach to mobile robotics.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-11-05T07:52:24.642Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_company",
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Agility Robotics",
+      "robot_name": "Digit 5",
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.agilityrobotics.com/content/agility-robotics-expands-nvidia-collaboration-as-it-prepares-digit-5-for-commercial-scale",
+      "source_type": "company",
+      "confidence_score": 0.95,
+      "description": "The next generation humanoid robot from Agility Robotics being prepared for commercial scale deployment with NVIDIA collaboration.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-11-05T07:52:24.642Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": null,
+      "robot_name": "Walking Robotic Hand",
+      "type": null,
+      "status": "research",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://spectrum.ieee.org/walking-robotic-hand",
+      "source_type": "ieee",
+      "confidence_score": 0.85,
+      "description": "A disembodied robotic hand capable of walking locomotion, demonstrating novel manipulation and mobility capabilities.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-11-05T07:52:24.642Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_company",
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "Stanford AI Lab",
+      "error": "Request timed out after 15000ms",
+      "timestamp": "2026-11-05T07:52:11.097Z"
+    },
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-11-05T07:51:58.424Z"
+    },
+    {
+      "source": "ANYbotics",
+      "error": "HTTP 403",
+      "timestamp": "2026-11-05T07:51:57.576Z"
+    }
+  ]
+}
