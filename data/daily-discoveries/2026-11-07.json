@@ -1,0 +1,49 @@
+{
+  "fetch_date": "2026-11-07T07:01:50.573Z",
+  "sources_fetched": 16,
+  "sources_failed": 3,
+  "articles_collected": 525,
+  "articles_after_dedup": 525,
+  "articles_after_filter": 40,
+  "robots": [
+    {
+      "company": "Boston Dynamics",
+      "robot_name": "Stretch Gen 2",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://www.therobotreport.com/boston-dynamics-built-stretch-gen-2-for-reliable-consistent-performance/",
+      "source_type": "robotreport",
+      "confidence_score": 0.95,
+      "description": "Second generation warehouse mobile manipulator robot designed for reliable and consistent performance in logistics operations.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-11-07T07:01:50.572Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "Stanford AI Lab",
+      "error": "Request timed out after 15000ms",
+      "timestamp": "2026-11-07T07:01:46.249Z"
+    },
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-11-07T07:01:32.998Z"
+    },
+    {
+      "source": "ANYbotics",
+      "error": "HTTP 403",
+      "timestamp": "2026-11-07T07:01:32.290Z"
+    }
+  ]
+}
