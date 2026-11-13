@@ -1,0 +1,93 @@
+{
+  "fetch_date": "2026-11-13T07:50:17.281Z",
+  "sources_fetched": 16,
+  "sources_failed": 3,
+  "articles_collected": 682,
+  "articles_after_dedup": 682,
+  "articles_after_filter": 38,
+  "robots": [
+    {
+      "company": "Ring",
+      "robot_name": "Ring Enterprise Security Robot",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://techcrunch.com/2026/11/10/ring-known-for-its-doorbell-cameras-launches-a-home-security-drone-and-an-enterprise-security-robot/",
+      "source_type": "news",
+      "confidence_score": 0.85,
+      "description": "Ring launches an enterprise security robot alongside their home security drone product.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-11-13T07:50:17.281Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Cainiao",
+      "robot_name": "Cainiao Climbing Robot",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://roboticsandautomationnews.com/2026/11/12/cainiao-introduces-upgraded-climbing-robot-with-four-side-retrieval-and-denser-storage/107042/",
+      "source_type": "news",
+      "confidence_score": 0.9,
+      "description": "Cainiao introduces upgraded climbing robot with four-side retrieval and denser storage capabilities for warehouse operations.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-11-13T07:50:17.281Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "XPENG",
+      "robot_name": "XPENG Humanoid Robot",
+      "type": "humanoid",
+      "status": "prototype",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://roboticsandautomationnews.com/2026/11/12/xpeng-expands-uk-operations-with-new-vehicles-robotaxis-and-humanoid-robots/107054/",
+      "source_type": "news",
+      "confidence_score": 0.75,
+      "description": "XPENG expands UK operations including humanoid robots alongside vehicles and robotaxis.",
+      "shipping_signal": "unknown",
+      "discovered_at": "2026-11-13T07:50:17.281Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "Stanford AI Lab",
+      "error": "Request timed out after 15000ms",
+      "timestamp": "2026-11-13T07:50:07.677Z"
+    },
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-11-13T07:49:54.383Z"
+    },
+    {
+      "source": "ANYbotics",
+      "error": "HTTP 403",
+      "timestamp": "2026-11-13T07:49:54.016Z"
+    }
+  ]
+}
