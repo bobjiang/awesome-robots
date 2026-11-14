@@ -1,0 +1,49 @@
+{
+  "fetch_date": "2026-11-14T07:32:28.900Z",
+  "sources_fetched": 16,
+  "sources_failed": 3,
+  "articles_collected": 518,
+  "articles_after_dedup": 518,
+  "articles_after_filter": 38,
+  "robots": [
+    {
+      "company": "Ring",
+      "robot_name": "Ring Enterprise Security Robot",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://techcrunch.com/2026/11/10/ring-known-for-its-doorbell-cameras-launches-a-home-security-drone-and-an-enterprise-security-robot/",
+      "source_type": "news",
+      "confidence_score": 0.85,
+      "description": "Ring launches an enterprise security robot alongside their home security drone product.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-11-14T07:32:28.900Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "Stanford AI Lab",
+      "error": "Request timed out after 15000ms",
+      "timestamp": "2026-11-14T07:32:24.312Z"
+    },
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-11-14T07:32:11.083Z"
+    },
+    {
+      "source": "ANYbotics",
+      "error": "HTTP 403",
+      "timestamp": "2026-11-14T07:32:10.295Z"
+    }
+  ]
+}
