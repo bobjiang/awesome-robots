@@ -1,0 +1,59 @@
+{
+  "fetch_date": "2026-11-16T07:53:29.979Z",
+  "sources_fetched": 14,
+  "sources_failed": 5,
+  "articles_collected": 469,
+  "articles_after_dedup": 469,
+  "articles_after_filter": 39,
+  "robots": [
+    {
+      "company": "Ring",
+      "robot_name": "Ring Enterprise Security Robot",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://techcrunch.com/2026/11/10/ring-known-for-its-doorbell-cameras-launches-a-home-security-drone-and-an-enterprise-security-robot/",
+      "source_type": "news",
+      "confidence_score": 0.85,
+      "description": "Ring launches an enterprise security robot alongside their home security drone product.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-11-16T07:53:29.979Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "Google DeepMind Blog",
+      "error": "Non-whitespace before first tag.\nLine: 0\nColumn: 1\nChar: \u001f",
+      "timestamp": "2026-11-16T07:53:11.453Z"
+    },
+    {
+      "source": "Stanford AI Lab",
+      "error": "Request timed out after 15000ms",
+      "timestamp": "2026-11-16T07:53:25.328Z"
+    },
+    {
+      "source": "BAIR Blog",
+      "error": "Request timed out after 15000ms",
+      "timestamp": "2026-11-16T07:53:25.328Z"
+    },
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-11-16T07:53:12.216Z"
+    },
+    {
+      "source": "ANYbotics",
+      "error": "HTTP 403",
+      "timestamp": "2026-11-16T07:53:11.511Z"
+    }
+  ]
+}
