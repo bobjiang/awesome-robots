@@ -1,0 +1,71 @@
+{
+  "fetch_date": "2026-11-18T08:28:08.822Z",
+  "sources_fetched": 16,
+  "sources_failed": 3,
+  "articles_collected": 651,
+  "articles_after_dedup": 651,
+  "articles_after_filter": 39,
+  "robots": [
+    {
+      "company": "Genesis AI",
+      "robot_name": "Genesis AI Glove-Wearing Robot",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://techcrunch.com/2026/11/17/genesis-ai-raises-500-million-to-deploy-electric-glove-wearing-robots/",
+      "source_type": "news",
+      "confidence_score": 0.75,
+      "description": "Genesis AI raised $500M to deploy robots that wear electric gloves for manipulation tasks.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-11-18T08:28:08.822Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Ring",
+      "robot_name": "Ring Enterprise Security Robot",
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://techcrunch.com/2026/11/10/ring-known-for-its-doorbell-cameras-launches-a-home-security-drone-and-an-enterprise-security-robot/",
+      "source_type": "news",
+      "confidence_score": 0.85,
+      "description": "Ring launched an enterprise security robot alongside their home security drone product.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-11-18T08:28:08.822Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 8,
+        "reliability": 8,
+        "flags": [
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "Stanford AI Lab",
+      "error": "Request timed out after 15000ms",
+      "timestamp": "2026-11-18T08:28:03.925Z"
+    },
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-11-18T08:27:51.031Z"
+    },
+    {
+      "source": "ANYbotics",
+      "error": "HTTP 403",
+      "timestamp": "2026-11-18T08:27:50.430Z"
+    }
+  ]
+}
