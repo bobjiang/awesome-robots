@@ -1,0 +1,91 @@
+{
+  "fetch_date": "2026-11-25T09:45:34.529Z",
+  "sources_fetched": 17,
+  "sources_failed": 2,
+  "articles_collected": 687,
+  "articles_after_dedup": 687,
+  "articles_after_filter": 30,
+  "robots": [
+    {
+      "company": "Ascentiz",
+      "robot_name": null,
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://roboticsandautomationnews.com/2026/11/25/tuv-sud-awards-human-machine-performance-certification-to-ascentiz-exoskeletons/107662/",
+      "source_type": "news",
+      "confidence_score": 0.85,
+      "description": "Ascentiz exoskeletons received TÜV SÜD human-machine performance certification for workplace use.",
+      "shipping_signal": "commercial",
+      "discovered_at": "2026-11-25T09:45:34.528Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_robot_name",
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Bentic",
+      "robot_name": null,
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://roboticsandautomationnews.com/2026/11/25/bentic-prepares-for-us-expansion-as-physical-ai-robot-installations-approach-100/107656/",
+      "source_type": "news",
+      "confidence_score": 0.75,
+      "description": "Bentic physical AI robots approaching 100 installations and preparing for US market expansion.",
+      "shipping_signal": "shipping_now",
+      "discovered_at": "2026-11-25T09:45:34.528Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_robot_name",
+          "missing_image"
+        ]
+      }
+    },
+    {
+      "company": "Genesis AI",
+      "robot_name": null,
+      "type": null,
+      "status": "commercial",
+      "image_link": null,
+      "specs_link": null,
+      "source_link": "https://techcrunch.com/2026/11/17/genesis-ai-raises-500-million-to-deploy-electric-glove-wearing-robots/",
+      "source_type": "news",
+      "confidence_score": 0.7,
+      "description": "Genesis AI raised $500M to deploy electric glove-wearing robots for manipulation tasks.",
+      "shipping_signal": "shipping_announced",
+      "discovered_at": "2026-11-25T09:45:34.528Z",
+      "quality_score": {
+        "overall": 8,
+        "completeness": 4,
+        "reliability": 8,
+        "flags": [
+          "missing_robot_name",
+          "missing_image"
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "npj Robotics",
+      "error": "Status code 406",
+      "timestamp": "2026-11-25T09:45:26.649Z"
+    },
+    {
+      "source": "ANYbotics",
+      "error": "HTTP 403",
+      "timestamp": "2026-11-25T09:45:26.123Z"
+    }
+  ]
+}
